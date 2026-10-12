@@ -1,0 +1,27 @@
+{
+  "summary": "This study investigates L-lysine-containing chiral polypeptide nanoparticles (P_L-K and P_D-K) as nanoadjuvants for cancer nanovaccines. The D-lysine variant (P_D-K) more effectively induced dendritic cell maturation, antigen cross-presentation, and adaptive immunity, achieving 94.9% tumor inhibition in a B16-OVA melanoma model. The L-lysine variant (P_L-K) was also tested and showed weaker effects, directly addressing the query.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Dendritic cell maturation",
+    "Antigen cross-presentation",
+    "Adaptive immune response",
+    "Tumor prevention and therapy"
+  ],
+  "reported_numeric_results": [
+    "loading efficiencies of almost 100%",
+    "tumor inhibition rate of 94.9%",
+    "97.0% by combining with anti-PD-1 antibody"
+  ],
+  "reported_qualitative_findings": [
+    "Compared to P_L-K-OVA, P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response",
+    "effectively prevented and treated the OVA-expressed B16-OVA melanoma model"
+  ],
+  "material_or_molecular_context": "Chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K)",
+  "biological_context": "Dendritic cell maturation, antigen cross-presentation, adaptive immune response in vitro and in vivo; B16-OVA melanoma model in mice",
+  "limitations_for_current_question": [
+    "The D-lysine variant showed superior efficacy; the L-lysine variant was studied but with weaker effects",
+    "Only tested with OVA as model antigen",
+    "Results are for cancer vaccine context, not directly generalizable to infectious disease vaccines or other adjuvants"
+  ],
+  "supporting_text": "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response"
+}

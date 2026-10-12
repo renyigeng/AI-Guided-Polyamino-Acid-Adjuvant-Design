@@ -1,0 +1,26 @@
+{
+  "summary": "This study shows that polyhistidine-tagged Pfs25 antigen binds to cobalt porphyrin-phospholipid liposomes (SNAP), enhancing immunogenicity by promoting antigen uptake by phagocytic antigen-presenting cells and generating strong antibody responses in mice and rabbits. This demonstrates adjuvant activity and vaccine response improvement via his-tag-mediated antigen display.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "Functional antibody generation",
+    "Antigen uptake by phagocytic antigen-presenting cells",
+    "Long-lived antigen-specific plasma cell generation",
+    "Multiplexed antibody production with multiple his-tagged polypeptides"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Orders-of-magnitude higher functional antibody generation compared to other 'mix-and-inject' adjuvants",
+    "Serum-stable antigen binding during transit to draining lymph nodes",
+    "Enhanced antigen uptake by phagocytic antigen-presenting cells",
+    "Long-lived antigen-specific plasma cells",
+    "Strong and balanced antibody production with multiplexing"
+  ],
+  "material_or_molecular_context": "Polyhistidine-tagged recombinant Pfs25 and other his-tagged Plasmodium falciparum polypeptides; liposomes containing cobalt porphyrin-phospholipid",
+  "biological_context": "Mice and rabbits immunized subcutaneously",
+  "limitations_for_current_question": [
+    "Does not directly assess dendritic cell activation or cross-presentation",
+    "Focused on antibody responses rather than T cell responses",
+    "No direct measurement of innate immune activation markers"
+  ],
+  "supporting_text": "Serum-stable antigen binding during transit to draining lymph nodes leads to enhanced antigen uptake by phagocytic antigen-presenting cells"
+}

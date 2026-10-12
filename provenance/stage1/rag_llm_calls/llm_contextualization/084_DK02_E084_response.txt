@@ -1,0 +1,26 @@
+{
+  "summary": "This study describes PLGA microspheres coated with poly-D-lysine that adsorb glioma cell antigens for anti-tumour vaccination. Epitope integrity was preserved, and the system was proposed as an adjuvant matrix for antigen presenting cells, but direct evidence for dendritic cell maturation or cross-presentation is absent.",
+  "relevance_score": 6,
+  "reported_outcomes": [
+    "adsorption of tumour antigens onto PDL-coated PLGA microspheres",
+    "preservation of epitope integrity after loading",
+    "potential as injectable adjuvant matrices presenting tumour antigens to antigen presenting cells"
+  ],
+  "reported_numeric_results": [
+    "Only a panel (34%) of the proteins isolated from both cell fractions adsorbed onto PDL-coated PLGA microspheres."
+  ],
+  "reported_qualitative_findings": [
+    "The integrity of the epitopes after loading was preserved",
+    "the particulate systems not only serve as injectable adjuvant matrices presenting tumour antigens to antigen presenting cells, but also as potential reservoirs for controlled delivery of active immunostimulant molecules"
+  ],
+  "material_or_molecular_context": "poly(D,L-lactide-co-glycolide) (PLGA) microspheres coated with poly-D-lysine (PDL)",
+  "biological_context": "glioma cell fractions (plasma membranes and cell lysates); in vitro adsorption and epitope characterization",
+  "limitations_for_current_question": [
+    "No direct assessment of dendritic cell maturation or cross-presentation",
+    "No in vivo immune response data",
+    "No comparison with L-lysine systems",
+    "Only 34% of proteins adsorbed",
+    "No quantification of immune activation"
+  ],
+  "supporting_text": "poly-D-lysine (PDL)-coated PLGA microspheres presenting tumour antigens to antigen presenting cells"
+}

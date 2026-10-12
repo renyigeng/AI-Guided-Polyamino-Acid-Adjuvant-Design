@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: LK01
+CANDIDATE HINT: K
+CHIRALITY HINT: L
+PMID: 22126373
+DOI: 10.1111/j.1365-2796.2011.02496.x
+
+TITLE:
+Dendritic cell-targeted protein vaccines: a novel approach to induce T-cell immunity.
+
+ABSTRACT:
+Current vaccines primarily work by inducing protective antibodies. However, in many infections like HIV, malaria and tuberculosis as well as cancers, there remains a need for durable and protective T-cell immunity. Here, we summarize our efforts to develop a safe T-cell-based protein vaccine that exploits the pivotal role of dendritic cells (DC) in initiating adaptive immunity. Focusing on HIV, gag-p24 protein antigen is introduced into a monoclonal antibody (mAb) that efficiently and specifically targets the DEC-205 antigen uptake receptor on DC. When administered together with synthetic double-stranded RNA, polyriboinosinic:polyribocytidylic acid (poly IC) or its analogue poly IC stabilized with carboxymethylcellulose and poly-L-lysine (poly ICLC), as adjuvant, HIV gag-p24 within anti-DEC-205 mAb is highly immunogenic in mice, rhesus macaques, and in ongoing research, healthy human volunteers. Human subjects form both T- and B-cell responses to DC-targeted protein. Thus, DC-targeted protein vaccines are a potential new vaccine platform, either alone or in combination with highly attenuated viral vectors, to induce integrated immune responses against microbial or cancer antigens, with improved ease of manufacturing and clinical use.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

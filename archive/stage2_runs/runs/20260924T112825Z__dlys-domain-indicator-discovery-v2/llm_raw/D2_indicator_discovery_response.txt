@@ -1,0 +1,74 @@
+{
+  "domain_id": "D2",
+  "indicators": [
+    {
+      "indicator_id": "I1",
+      "indicator_name": "single-residue hydrophobicity",
+      "measurement_target": "hydrophobicity",
+      "scientific_definition": "Standard single-residue hydrophobicity scale value for amino acid X, quantifying the free-energy cost or preference for transferring the side chain from water to a nonpolar environment.",
+      "why_relevant_to_dlys_system": "The fixed D-lysine block provides cationic, hydrophilic character. The second block X is intended to provide complementary hydrophobic cohesion. Within the non-aromatic hydrophobic-conformational domain, hydrophobicity is the primary driving force for hydrophobic self-association and is explicitly preregistered as a main ranking axis with direction higher.",
+      "role": "primary_rank",
+      "preferred_direction": "higher",
+      "target_value": null,
+      "basis": "both",
+      "supporting_evidence_ids": [
+        "I:hydrophobic:IE02",
+        "L:hydrophobic:LE01",
+        "L:hydrophobic:LE04",
+        "V:hydrophobic:VE06"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "Measures the thermodynamic driving force for hydrophobic association, distinct from side-chain volume (spatial occupancy) and from beta-branching (side-chain geometry).",
+      "notes": "Multiple mature single-residue hydrophobicity scales exist; the exact scale is not specified here. Direction higher is preregistered by the domain guidance. Evidence for C is absent, but evidence quantity is not a candidate score."
+    },
+    {
+      "indicator_id": "I2",
+      "indicator_name": "side-chain volume",
+      "measurement_target": "side_chain_volume",
+      "scientific_definition": "Standard single-residue side-chain volume (e.g., in Å³) for amino acid X, representing the spatial extent of the side chain.",
+      "why_relevant_to_dlys_system": "After fixing the cationic D-lysine block, the second block X can contribute to non-repetitive packing and spatial occupancy. Side-chain volume is a mature descriptor for side-chain scale and is preregistered as a secondary material cohesion/space-filling axis with direction higher, subject to redundancy audit against hydrophobicity.",
+      "role": "primary_rank",
+      "preferred_direction": "higher",
+      "target_value": null,
+      "basis": "both",
+      "supporting_evidence_ids": [
+        "I:steric_packing:IE05"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "Measures spatial occupancy of the side chain, distinct from hydrophobicity (thermodynamic driving force) and from beta-branching (geometric branching pattern).",
+      "notes": "Direction higher is preregistered by the domain guidance. Redundancy with hydrophobicity must be audited at the ranking stage. Evidence for C is absent, but evidence quantity is not a candidate score."
+    },
+    {
+      "indicator_id": "I3",
+      "indicator_name": "beta-branching",
+      "measurement_target": "beta_branching",
+      "scientific_definition": "Presence or absence of a branch at the beta-carbon of the amino acid side chain (e.g., I, V, T have beta-branching; L, A, C, M do not).",
+      "why_relevant_to_dlys_system": "Beta-branching is a geometric constraint on side-chain packing and is associated with beta-structure preference. The domain guidance explicitly states that beta-branching is not an automatic benefit and that if it enters primary ranking, the only acceptable direction is absence. This descriptor helps distinguish candidates by side-chain geometry within the non-aromatic domain.",
+      "role": "primary_rank",
+      "preferred_direction": "absence",
+      "target_value": null,
+      "basis": "literature",
+      "supporting_evidence_ids": [
+        "I:steric_packing:IE05",
+        "V:secondary_structure:VE04",
+        "V:secondary_structure:VE06"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "Measures side-chain branching geometry, distinct from side-chain volume (spatial size) and hydrophobicity (thermodynamic driving force).",
+      "notes": "Direction absence is mandated by the domain guardrail. This descriptor is binary/categorical at the single-residue level. Evidence for C is absent, but evidence quantity is not a candidate score."
+    }
+  ],
+  "knowledge_gaps": [
+    "No qualified native-X evidence was supplied for cysteine (C) in this domain; its neutral thiol special chemistry is flagged but not represented by a mature single-residue descriptor in the supplied evidence.",
+    "Mature single-residue descriptors for side-chain flexibility or conformational entropy are not represented in the supplied evidence and are not included as primary_rank indicators.",
+    "Alpha-helix propensity and beta-sheet propensity are competing conformational preferences and are not included as primary_rank indicators per domain guardrails; they remain validation_only/context_dependent.",
+    "The exact hydrophobicity scale and side-chain volume scale are not specified; tool mapping will occur later."
+  ],
+  "notes": [
+    "Domain D2 focuses on non-aromatic hydrophobic-conformational candidates: A, C, I, L, M, V.",
+    "Primary_rank indicators are limited to three nonredundant descriptors: hydrophobicity, side-chain volume, and beta-branching (absence).",
+    "Alpha-helix propensity, beta-sheet propensity, and other conformational preferences are not promoted to primary_rank because they represent competing structural outcomes and the domain guidance does not preregister both as simultaneous same-direction benefits.",
+    "Evidence quantity is not used as a candidate score; candidates with fewer evidence items are not penalized.",
+    "No numerical weights, composite scores, or candidate rankings are provided."
+  ]
+}

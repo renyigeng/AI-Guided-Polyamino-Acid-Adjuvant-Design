@@ -1,0 +1,31 @@
+{
+  "summary": "Polyhistidine peptides (PHPs), especially H16, are internalized efficiently via macropinocytosis in a charge-independent manner, localize to lysosome and Golgi, and show partial escape to cytoplasm. H16 achieves up to 14.6-fold higher uptake than octa-arginine and accumulates in tumor tissue for up to 132 h in vivo.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "Cellular uptake and internalization of polyhistidine peptides",
+    "Localization in lysosome and Golgi apparatus",
+    "Endosomal escape from macropinosome to cytoplasm",
+    "In vivo tumor accumulation and retention"
+  ],
+  "reported_numeric_results": [
+    "H16 showed up to 14.6-fold higher cell-penetrating capacity relative to octa-arginine against HT1080 cells",
+    "H16 peptide accumulates in tumor tissue and is retained up to 132 h following injection"
+  ],
+  "reported_qualitative_findings": [
+    "Cellular uptake of PHPs increased with chain length, reaching maximum at H16",
+    "Uptake is positive charge-independent",
+    "Main uptake mechanism is macropinocytosis",
+    "H16 localizes in lysosome and Golgi apparatus",
+    "A proportion of H16 escapes from macropinosome to cytoplasm",
+    "H16 functions as a His-tag and protein transduction domain"
+  ],
+  "material_or_molecular_context": "Polyhistidine peptides (PHPs), specifically H16 (16-mer, HHHHHHHHHHHHHHHH-NH2) and shorter variants, with or without GFP fusion",
+  "biological_context": "HT1080 human fibrosarcoma cells (in vitro); HT1080 tumor-bearing mice (in vivo)",
+  "limitations_for_current_question": [
+    "Only one cell line tested in vitro; different cell types may behave differently",
+    "Endosomal escape mechanism is inferred only from functional cytotoxicity assay, not directly visualized",
+    "Study focuses on H16; shorter polyhistidine lengths not fully characterized for uptake or endosomal behavior",
+    "No comparison with other polyhistidine materials (e.g., copolymers, nanoparticles) beyond linear peptides"
+  ],
+  "supporting_text": "Cellular uptake of PHPs increased as chain length increased, reaching a maximum at H16"
+}

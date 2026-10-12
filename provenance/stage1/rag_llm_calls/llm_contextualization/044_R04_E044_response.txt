@@ -1,0 +1,26 @@
+{
+  "summary": "Polyarginine (R9) PTD delivers antigen to dendritic cells more efficiently than other PTDs, leading to enhanced MHC class I and II presentation, CD4+ and CD8+ T-cell activation, and superior antitumor immunity in mice, especially when combined with adjuvants.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "antigen delivery to dendritic cells",
+    "presentation onto MHC class I and II",
+    "CD4+ and CD8+ T-cell activation in vitro and in vivo",
+    "antitumor immunity in tumor-bearing mice"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "R9-PTD-containing OVA transduced DCs most efficiently",
+    "transduction efficacy correlated with extent of Ag-specific CD4+ and CD8+ T-cell activation",
+    "repeated vaccination with R9-PTD-OVA-transduced DCs induced enhanced antitumor immunity",
+    "complete rejection of tumors when DC was co-injected with adjuvants"
+  ],
+  "material_or_molecular_context": "polyarginine (R9) protein transduction domain (PTD) fused to ovalbumin (OVA)",
+  "biological_context": "dendritic cells in vitro and in vivo, mouse model with OVA-expressing tumors",
+  "limitations_for_current_question": [
+    "study used only OVA as model antigen",
+    "complete tumor rejection required co-injection with adjuvants",
+    "cross-presentation not explicitly examined",
+    "results are in murine models and may not directly translate to humans"
+  ],
+  "supporting_text": "Polyarginine-mediated protein delivery to dendritic cells presents antigen more efficiently onto MHC class I and class II"
+}

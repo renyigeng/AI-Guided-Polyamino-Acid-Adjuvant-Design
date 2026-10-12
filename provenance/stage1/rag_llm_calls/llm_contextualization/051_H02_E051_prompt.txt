@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H02
+CANDIDATE HINT: R;H
+CHIRALITY HINT: 
+PMID: 39839495
+DOI: 10.1016/j.mtbio.2024.101425
+
+TITLE:
+Precise intracellular uptake and endosomal release of diverse functional mRNA payloads via glutathione-responsive nanogels.
+
+ABSTRACT:
+We present a novel, highly customizable glutathione-responsive nanogel (NG) platform for efficient mRNA delivery with precise mRNA payload release control. Optimization of various cationic monomers, including newly synthesized cationic polyarginine, polyhistidine, and acrylated guanidine monomers, allowed fine-tuning of NG properties for mRNA binding. By incorporating a poly(ethylene) glycol-based disulphide crosslinker, we achieved glutathione-triggered mRNA release, enabling targeted intracellular delivery. Our NGs demonstrated superior encapsulation (up to 89.3 %) and loading (10.7 %) efficiencies, with controlled mRNA release kinetics at intracellular glutathione concentrations. NGs outperformed commercial transfection reagents across multiple cell lines, including traditionally difficult-to-transfect lines. We demonstrate the platform's versatility by successfully delivering GFP mRNA, Mango II RNA aptamers, and functionally relevant β2-AMPK mRNA. Furthermore, we used TIRF microscopy to measure exact RNA copy number within the NGs. Notably, mechanistic cellular uptake studies revealed that disulphide-containing NGs exhibit enhanced cellular uptake and endosomal escape, potentially due to interactions with cell surface thiols. This work represents a highly tuneable, efficient, and biocompatible platform for mRNA delivery with relevance for gene therapy and vaccine development.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

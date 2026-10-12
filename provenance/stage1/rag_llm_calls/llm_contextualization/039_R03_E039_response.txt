@@ -1,0 +1,34 @@
+{
+  "summary": "R15, a synthetic polyarginine peptide (15 arginines), was evaluated for safety in vitro and in vivo as a potential heparin reversal agent. It induced erythrocyte aggregation, thickened fibrin fibers, activated complement, and caused anticoagulation in a concentration-dependent manner, but these effects were mitigated in whole blood or when complexed with heparin. R15 degraded rapidly in rat plasma, was nonimmunogenic, and showed no significant renal dysfunction at therapeutic doses, in contrast to protamine sulfate. The study supports the safety of R15 for heparin reversal but does not directly assess general cytotoxicity or hemolysis.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "erythrocyte aggregation",
+    "fibrin fiber thickness",
+    "complement activation",
+    "anticoagulation",
+    "degradation in rat plasma",
+    "immunogenicity",
+    "renal function (creatinine levels)"
+  ],
+  "reported_numeric_results": [
+    "900 U·kg^-1 body weight (single intravenous injection dose for creatinine study)"
+  ],
+  "reported_qualitative_findings": [
+    "R15 and PS both induce erythrocyte aggregation, thicken fibrin fibers, activate complement, and cause anticoagulation in a concentration-dependent manner",
+    "These influences weakened in whole blood or in live animals and were avoided when R15 was in a complex with UFH",
+    "Dramatically enhanced complement activation with excess UFH in UFH-PS complexes, slight increase in UFH-R15 complexes",
+    "R15 degraded within 2 h in rat plasma in vitro, whereas PS was not degraded",
+    "Enhanced creatinine after single injection of PS or R15 suggests possible abnormal renal function",
+    "UFH-PS complex exhibited obvious immunogenicity; UFH-R15 complex did not",
+    "R15 is nonimmunogenic and potentially safe at therapeutic dose to reverse UFH effects"
+  ],
+  "material_or_molecular_context": "R15, a linear synthetic polyarginine peptide composed of 15 L-arginine residues",
+  "biological_context": "In vitro: human erythrocytes, fibrin, complement system, rat plasma. In vivo: rats (intravenous injection), assessment of immunogenicity and renal function.",
+  "limitations_for_current_question": [
+    "Study focused on heparin reversal context, not general cytotoxicity or hemolysis as primary endpoints",
+    "Only 15-mer polyarginine tested; different chain lengths may behave differently",
+    "No direct measurement of cell viability or hemolysis percentage",
+    "Erythrocyte aggregation and complement activation are related to hemocompatibility but not directly cytotoxicity"
+  ],
+  "supporting_text": "R15 is nonimmunogenic and potentially safe at a therapeutic dose to reverse the effects of UFH."
+}

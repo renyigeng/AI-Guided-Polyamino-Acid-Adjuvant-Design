@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?
+
+QUERY ID: DK02
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 16386390
+DOI: 10.1016/j.ijpharm.2005.10.046
+
+TITLE:
+Development of new polymer-based particulate systems for anti-glioma vaccination.
+
+ABSTRACT:
+Biodegradable and biocompatible microspheres represent a promising alternative to conventional adjuvants for anti-tumour vaccination. Focusing on glioma, we developed two poly(D,L-lactide-co-glycolide) (PLGA)-based particulate systems presenting tumour antigens associated with plasma membranes or with cell lysates. Glioma cell fractions were prepared for adsorption onto poly-D-lysine (PDL)-coated PLGA microspheres formulated using a double-emulsion procedure. Adsorption was followed by (125)I-radiolabelling, Western blot and confocal laser scanning microscopy. Only a panel (34%) of the proteins isolated from both cell fractions adsorbed onto PDL-coated PLGA microspheres. The integrity of the epitopes after loading was preserved, as shown by identification of plasma membrane and cytoplasmic markers. Finally, one of the major potential advantages of those particulate systems resides in the fact they not only serve as injectable adjuvant matrices presenting tumour antigens to antigen presenting cells, but also as potential reservoirs for controlled delivery of active immunostimulant molecules.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

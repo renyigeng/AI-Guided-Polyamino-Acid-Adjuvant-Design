@@ -1,0 +1,22 @@
+{
+  "summary": "This study used a co-polymer of D-glutamic acid and D-lysine to generate TNP-reactive helper T cells, which prevented tolerance in effector T cells against syngeneic tumor cells. The D-lysine-containing polymer was employed as a non-immunogenic carrier to induce helper T cell activity that circumvented tolerance, demonstrating a role for helper T cells in adaptive anti-tumor immunity.",
+  "relevance_score": 6,
+  "reported_outcomes": [
+    "Prevention of tolerance induction in effector T cells against syngeneic tumor",
+    "Role of helper T cells in circumventing tolerance"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Intravenous inoculation with TNP-modified tumor cells induced tolerance in unprimed mice",
+    "Tolerance was prevented in mice with generated TNP-reactive helper T cell activity"
+  ],
+  "material_or_molecular_context": "Co-polymer of D-glutamic acid and D-lysine, conjugated to TNP hapten",
+  "biological_context": "C3H/He mice, X5563 plasmacytoma, TNP-modified tumor cells, in vivo tolerance model",
+  "limitations_for_current_question": [
+    "Not a nanoparticle or nanoadjuvant system",
+    "Uses hapten-carrier system with TNP, not directly applicable to general D-lysine-containing adjuvants",
+    "Study from 1982; may not reflect modern immunotherapy contexts",
+    "No direct measurement of adaptive immune outcomes like antibody titers or T-cell responses beyond tolerance"
+  ],
+  "supporting_text": "Helper T cell activity generated using D-glutamic acid/D-lysine co-polymer prevented tolerance."
+}

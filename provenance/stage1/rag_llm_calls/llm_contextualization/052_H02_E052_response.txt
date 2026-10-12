@@ -1,0 +1,25 @@
+{
+  "summary": "This study demonstrates that poly(histidine-arginine)6 (H6R6) modification of chitosan nanoparticles enhances endosomal escape via the histidine component, facilitating siRNA release into the cytoplasm, and also improves cellular internalization via the arginine component. The H6R6-modified nanoparticles showed higher transfection efficiency and better endosomal escape compared to unmodified chitosan nanoparticles in vitro, and effectively inhibited tumor growth and metastasis in vivo.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "transfection efficiency",
+    "endosomal escape capacity",
+    "inhibition of tumor cell growth and metastases in vivo",
+    "improved survival ratio"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "H6R6-modified CS nanoparticles showed higher transfection efficiency and better endosomal escape capacity compared to ungroomed CS nanoparticle in vitro",
+    "H6R6-modified CS nanoparticles effectively inhibited tumor cell growth and metastases in vivo and significantly improved survival ratio"
+  ],
+  "material_or_molecular_context": "poly(histidine-arginine)6-modified chitosan nanoparticle (H6R6-CS)",
+  "biological_context": "in vitro cancer cell models and in vivo breast tumor metastasis model",
+  "limitations_for_current_question": [
+    "The material is a copolymer of histidine and arginine, not pure polyhistidine or a histidine-only polypeptide",
+    "The cell-penetrating and endosomal escape functionalities are combination contributions, not solely from histidine",
+    "Specific to siRNA delivery and breast cancer context; may not generalize to other cargos or cell types",
+    "Endosomal escape is attributed to histidine but not isolated from the arginine component in this study",
+    "No direct measurement of intracellular uptake kinetics or mechanisms for polyhistidine alone"
+  ],
+  "supporting_text": "6-polyhistidine (H6) mediated the nanoparticle endosome escape resulted in the siRNA rapid releasing into tumor cytoplasm."
+}

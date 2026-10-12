@@ -1,0 +1,15 @@
+{
+  "version": "6.9",
+  "hitCount": 134,
+  "request": {
+    "queryString": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(cytotoxic OR \"cell death\" OR hemolytic OR \"membrane integrity\" OR biocompatible OR \"tissue compatibility\" OR \"viability assay\" OR \"live/dead\")",
+    "resultType": "core",
+    "cursorMark": "AoIIPgtrJic2ODYwODEy",
+    "pageSize": 66,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": []
+  }
+}

@@ -1,0 +1,5288 @@
+{
+  "version": "6.9",
+  "hitCount": 116,
+  "nextCursorMark": "AoIIPmzw3CgxNzQ4NTI5NQ==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS:(polyarginine OR \"poly-L-arginine\" OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(antigen OR protein OR vaccine OR biomacromolecule OR mRNA) AND TITLE_ABS:(delivery OR carrier OR uptake OR presentation)&cursorMark=AoIIPmzw3CgxNzQ4NTI5NQ==&resultType=core&pageSize=100&format=json",
+  "request": {
+    "queryString": "TITLE_ABS:(polyarginine OR \"poly-L-arginine\" OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(antigen OR protein OR vaccine OR biomacromolecule OR mRNA) AND TITLE_ABS:(delivery OR carrier OR uptake OR presentation)",
+    "resultType": "core",
+    "cursorMark": "AoIIPs808ygxODc5NDQxOQ==",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "17978353",
+        "source": "MED",
+        "pmid": "17978353",
+        "doi": "10.2967/jnumed.106.039339",
+        "title": "Cell culture and xenograft-bearing animal studies of radiolabeled antisense DNA carrier nanoparticles with streptavidin as a linker.",
+        "authorString": "Nakamura K, Wang Y, Liu X, Kubo A, Hnatowich DJ.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Nakamura K",
+              "lastName": "Nakamura",
+              "firstName": "Kayoko",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiology, Keio University School of Medicine, Tokyo, Japan. [email removed for public release]"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang Y",
+              "lastName": "Wang",
+              "firstName": "Yi",
+              "initials": "Y"
+            },
+            {
+              "fullName": "Liu X",
+              "lastName": "Liu",
+              "firstName": "Xinrong",
+              "initials": "X"
+            },
+            {
+              "fullName": "Kubo A",
+              "lastName": "Kubo",
+              "firstName": "Atsushi",
+              "initials": "A"
+            },
+            {
+              "fullName": "Hnatowich DJ",
+              "lastName": "Hnatowich",
+              "firstName": "Donald J",
+              "initials": "DJ"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "11",
+          "volume": "48",
+          "journalIssueId": 1478243,
+          "dateOfPublication": "2007 Nov",
+          "monthOfPublication": 11,
+          "yearOfPublication": 2007,
+          "journal": {
+            "medlineAbbreviation": "J Nucl Med",
+            "title": "Journal of nuclear medicine : official publication, Society of Nuclear Medicine",
+            "essn": "1535-5667",
+            "issn": "0161-5505",
+            "isoabbreviation": "J Nucl Med",
+            "nlmid": "0217410"
+          },
+          "printPublicationDate": "2007-11-01"
+        },
+        "pubYear": "2007",
+        "pageInfo": "1845-1852",
+        "abstractText": "<h4>Unlabelled</h4>Transmembrane transfectors (carriers) are increasingly being viewed as helpful or even necessary to improve cellular delivery in connection with antisense tumor targeting and other applications requiring cell membrane transport of DNAs, RNAs, and other oligomers. We are investigating streptavidin as a convenient linker for biotinylated carriers and oligomers because it requires only simple mixing for preparation. The goal of this study was to evaluate antisense DNA-streptavidin-carrier nanoparticles for accumulation in cell culture and in xenograft-bearing mice.<h4>Methods</h4>The 3 carriers were cholesterol, a 10-mer Tat peptide, and a 10-mer polyarginine peptide. A 20-mer DNA targeting the mdr1 messenger RNA coding for Pgp expression was used as the phosphodiester (PO) DNA as well as the phosphorothioate (PS) DNA. In all cases, the (99m)Tc radiolabel was on the DNA. The 8 nanoparticles were first tested in mdr1(++) KB-G2 and TCO-1 cells and in mdr1(+/-) KB-31 cells in culture for evidence of improved accumulation and antisense targeting. Thereafter, the PS DNA-streptavidin-Tat, PO DNA-streptavidin-Tat, and PS DNA-streptavidin-cholesterol nanoparticles were administered intravenously to KB-G2 xenograft-bearing mice, and tissue distributions were measured.<h4>Results</h4>In culture, the PO nanoparticles showed increased accumulation compared with the corresponding nanoparticles without the carrier in all 3 cell types; in contrast, with the PS nanoparticles, any similar carrier-mediated increase may have been obscured by the much higher protein-binding affinity of PS DNA. As evidence of antisense targeting, the Tat and cholesterol PS nanoparticles showed statistically significant accumulation at 23 h in cells in the descending order TCO-1, KB-G2, and KB-31, although there were no significant differences among the PO nanoparticles. In xenograft-bearing mice, the tissue accumulation of both forms of the PS nanoparticles greatly exceeded that of the PO nanoparticles and, including in the tumor, were similar to that obtained previously for naked PS DNA.<h4>Conclusion</h4>The presence of the streptavidin linker had no obvious detrimental effect on the functions of the carriers and antisense DNAs. The higher protein-binding affinity of the PS nanoparticles than the PO nanoparticles was still apparent both in vitro and in vivo, the pharmacokinetics of the PS nanoparticles were similar to that of naked PS DNA, and the carriers improved cellular accumulation, at least for the PO nanoparticles. These observations, taken together with the higher accumulation of both forms of the antisense PS nanoparticles in mdr1(++) KB-G2 and TCO-1 cells than in mdr1(+/-) KB-31 cells, suggest that further effort is justified to confirm that the antisense properties of the DNAs were not compromised by the presence of streptavidin.",
+        "affiliation": "Department of Radiology, Keio University School of Medicine, Tokyo, Japan. [email removed for public release]",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Research Support, U.S. Gov't, Non-P.H.S.",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "SR21 CA100092",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Nude"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Sodium Pertechnetate Tc 99m"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cholesterol",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Streptavidin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "DNA, Antisense",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Carriers"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Radiopharmaceuticals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transplantation, Heterologous"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Tissue Distribution"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Resistance, Neoplasm"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nanoparticles"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "tat Gene Products, Human Immunodeficiency Virus",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "ATP Binding Cassette Transporter, Subfamily B, Member 1",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Radiopharmaceuticals",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Streptavidin",
+              "registryNumber": "9013-20-1"
+            },
+            {
+              "name": "Drug Carriers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "DNA, Antisense",
+              "registryNumber": "0"
+            },
+            {
+              "name": "tat Gene Products, Human Immunodeficiency Virus",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Cholesterol",
+              "registryNumber": "97C5T2UQ7J"
+            },
+            {
+              "name": "Sodium Pertechnetate Tc 99m",
+              "registryNumber": "A0730CX801"
+            },
+            {
+              "name": "ATP Binding Cassette Transporter, Subfamily B, Member 1",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://jnm.snmjournals.org/content/jnumed/48/11/1845.full.pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.2967/jnumed.106.039339"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 12,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2008-01-30",
+        "dateOfCreation": "2007-11-06",
+        "dateOfRevision": "2018-12-01",
+        "firstPublicationDate": "2007-11-01",
+        "firstIndexDate": "2008-01-31",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "9096380",
+        "source": "MED",
+        "pmid": "9096380",
+        "pmcid": "PMC20356",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC20356"
+          ]
+        },
+        "doi": "10.1073/pnas.94.7.3256",
+        "title": "Transloading of tumor antigen-derived peptides into antigen-presenting cells.",
+        "authorString": "Buschle M, Schmidt W, Zauner W, Mechtler K, Trska B, Kirlappos H, Birnstiel ML.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Buschle M",
+              "lastName": "Buschle",
+              "firstName": "M",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Research Institute of Molecular Pathology, Vienna, Austria."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Schmidt W",
+              "lastName": "Schmidt",
+              "firstName": "W",
+              "initials": "W"
+            },
+            {
+              "fullName": "Zauner W",
+              "lastName": "Zauner",
+              "firstName": "W",
+              "initials": "W"
+            },
+            {
+              "fullName": "Mechtler K",
+              "lastName": "Mechtler",
+              "firstName": "K",
+              "initials": "K",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3392-9946"
+              }
+            },
+            {
+              "fullName": "Trska B",
+              "lastName": "Trska",
+              "firstName": "B",
+              "initials": "B"
+            },
+            {
+              "fullName": "Kirlappos H",
+              "lastName": "Kirlappos",
+              "firstName": "H",
+              "initials": "H"
+            },
+            {
+              "fullName": "Birnstiel ML",
+              "lastName": "Birnstiel",
+              "firstName": "M L",
+              "initials": "ML"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3392-9946"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "7",
+          "volume": "94",
+          "journalIssueId": 1021354,
+          "dateOfPublication": "1997 Apr",
+          "monthOfPublication": 4,
+          "yearOfPublication": 1997,
+          "journal": {
+            "medlineAbbreviation": "Proc Natl Acad Sci U S A",
+            "title": "Proceedings of the National Academy of Sciences of the United States of America",
+            "essn": "1091-6490",
+            "issn": "0027-8424",
+            "isoabbreviation": "Proc Natl Acad Sci U S A",
+            "nlmid": "7505876"
+          },
+          "printPublicationDate": "1997-04-01"
+        },
+        "pubYear": "1997",
+        "pageInfo": "3256-3261",
+        "abstractText": "The discovery of a steadily growing number of tumor antigens (TAs) has made generic, cell-free, peptide-based cancer vaccines a possible alternative to cytokine-transfected autologous cellular cancer vaccines. The major drawback of peptide vaccines, however, is the poor immunogenicity of peptides. It is commonly thought that for the induction of an effective anticancer immune response, antigen-presenting cells (APCs) have to display TA-derived peptides to T lymphocytes. Polycationic amino acids have been employed in the past to enhance transport of proteins into cells. In a systematic study, the ability of different cationic polymers to transfer fluorescence-tagged peptides to APCs was investigated. We were able to show that several compounds enhance uptake of fluorescence-labeled peptides by APCs to different degrees. The most efficient compound identified, polyarginine (pArg), enhanced peptide delivery by more than 2 logs as compared with cells treated with peptide alone, whereas polylysine (pLys) treatment resulted in approximately 10-fold increased levels of fluorescence. Augmentation of peptide uptake was concentration-dependent, and the molecular weight of pArg or pLys also influenced peptide delivery. Furthermore, highly negatively charged peptides appear to be delivered with higher efficiency, although neutral peptides were also taken up at enhanced rates. Whereas peptide uptake mediated by pLys appears to be due to an at least transient permeabilization of cell membranes, peptide delivery in the presence of pArg may rely on endocytic processes. TA-derived peptides applied as cancer vaccines in conjunction with polycations afforded antitumor protection in animal models.",
+        "affiliation": "Research Institute of Molecular Pathology, Vienna, Austria.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antigen-Presenting Cells",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cations"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "L-Lactate Dehydrogenase",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antigens, Neoplasm",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acid Sequence"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Molecular Sequence Data"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "L-Lactate Dehydrogenase",
+              "registryNumber": "EC 1.1.1.27"
+            },
+            {
+              "name": "Cations",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antigens, Neoplasm",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "http://www.pnas.org/content/94/7/3256.full.pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1073/pnas.94.7.3256"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC20356"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC20356?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1073/pnas.94.7.3256"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 36,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1997-05-08",
+        "dateOfCreation": "1997-04-01",
+        "dateOfRevision": "2019-05-01",
+        "firstPublicationDate": "1997-04-01",
+        "firstIndexDate": "2009-12-24",
+        "fullTextReceivedDate": "2025-02-02",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "18673146",
+        "source": "MED",
+        "pmid": "18673146",
+        "doi": "10.2174/157340608784872217",
+        "title": "A novel polyarginine containing Smac peptide conjugate that mediates cell death in tumor and healthy cells.",
+        "authorString": "Heckl S, Sturzu A, Regenbogen M, Beck A, Feil G, Gharabaghi A, Echner H.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Heckl S",
+              "lastName": "Heckl",
+              "firstName": "S",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuroradiology, University of Tübingen, Medical School, Tübingen, Germany. [email removed for public release]"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sturzu A",
+              "lastName": "Sturzu",
+              "firstName": "A",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1922-8609"
+              }
+            },
+            {
+              "fullName": "Regenbogen M",
+              "lastName": "Regenbogen",
+              "firstName": "M",
+              "initials": "M"
+            },
+            {
+              "fullName": "Beck A",
+              "lastName": "Beck",
+              "firstName": "A",
+              "initials": "A"
+            },
+            {
+              "fullName": "Feil G",
+              "lastName": "Feil",
+              "firstName": "G",
+              "initials": "G"
+            },
+            {
+              "fullName": "Gharabaghi A",
+              "lastName": "Gharabaghi",
+              "firstName": "A",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9782-5281"
+              }
+            },
+            {
+              "fullName": "Echner H",
+              "lastName": "Echner",
+              "firstName": "H",
+              "initials": "H"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1922-8609"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9782-5281"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "4",
+          "volume": "4",
+          "journalIssueId": 1546344,
+          "dateOfPublication": "2008 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2008,
+          "journal": {
+            "medlineAbbreviation": "Med Chem",
+            "title": "Medicinal chemistry (Shariqah (United Arab Emirates))",
+            "essn": "1875-6638",
+            "issn": "1573-4064",
+            "isoabbreviation": "Med Chem",
+            "nlmid": "101240303"
+          },
+          "printPublicationDate": "2008-07-01"
+        },
+        "pubYear": "2008",
+        "pageInfo": "348-354",
+        "abstractText": "The seven N-terminal amino acids AVPIAQK (SmacN7) of the mitochondrial protein Smac (second mitochondria-derived activator of caspase) promote caspase activation by binding specifically to inhibitor of apoptosis proteins (IAPs) and blocking their inhibitory activity. SmacN7 cannot pass through the cell membrane, but to be of therapeutic use it would be essential for it to enter the cell. To achieve transmembrane transport of SmacN7 we coupled it to a novel fluorescein isothiocyanate (FITC)-labelled transmembrane transport peptide RRRRK(FITC)RRRR via ss-alanine to produce the conjugate AVPIAQKssA RRRRK(FITC)RRRR. Because IAPs are much more strongly expressed in the cytoplasm of tumor cells, we expected this conjugate to produce staining of the cytoplasm, and for this to be stronger in tumor cells than in healthy cells. Surprisingly, we found strong nuclear uptake of the Smac conjugate and of the transport peptide alone without subsequent release in both tumor cells and healthy cells from the bladder, prostate, and brain. This was accompanied by cell death. In contrast to expectations, it appears that the apoptotic effects observed do not result from the SmacN7 cargo alone.",
+        "affiliation": "Department of Neuroradiology, University of Tübingen, Medical School, Tübingen, Germany. [email removed for public release]",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Astrocytes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Prostatic Neoplasms",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PA",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mitochondrial Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CS",
+                    "qualifierName": "chemical synthesis"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Death",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acid Sequence"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Health"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Mitochondrial Proteins",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.2174/157340608784872217"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 9,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2008-09-25",
+        "dateOfCreation": "2008-08-05",
+        "dateOfRevision": "2019-10-27",
+        "firstPublicationDate": "2008-07-01",
+        "firstIndexDate": "2008-10-06",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "18312666",
+        "source": "MED",
+        "pmid": "18312666",
+        "pmcid": "PMC2287181",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC2287181"
+          ]
+        },
+        "doi": "10.1186/1472-6750-8-24",
+        "title": "Intracellular delivery of peptides via association with ubiquitin or SUMO-1 coupled to protein transduction domains.",
+        "authorString": "Vitte AL, Jalinot P.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Vitte AL",
+              "lastName": "Vitte",
+              "firstName": "Anne-Laure",
+              "initials": "AL",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "LBMC, UMR5239 CNRS - ENS de Lyon, IFR 128 Biosciences Lyon Gerland 46 Allée d'Italie, 69364 Lyon cedex 07, France. [email removed for public release]"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jalinot P",
+              "lastName": "Jalinot",
+              "firstName": "Pierre",
+              "initials": "P"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "volume": "8",
+          "journalIssueId": 2466023,
+          "dateOfPublication": "2008 Feb",
+          "monthOfPublication": 2,
+          "yearOfPublication": 2008,
+          "journal": {
+            "medlineAbbreviation": "BMC Biotechnol",
+            "title": "BMC biotechnology",
+            "essn": "1472-6750",
+            "issn": "1472-6750",
+            "isoabbreviation": "BMC Biotechnol",
+            "nlmid": "101088663"
+          },
+          "printPublicationDate": "2008-02-01"
+        },
+        "pubYear": "2008",
+        "pageInfo": "24",
+        "abstractText": "<h4>Background</h4>We previously developed small hybrid proteins consisting of SUMO-1 linked to an heptapeptide fused to the Tat protein transduction domain (PTD). The heptapeptide motif was selected from a library of random sequences to specifically bind HIV-1 regulatory proteins Tat or Rev. These constructs, named SHP, are able to enter primary lymphocytes and some of them inhibit HIV-1 replication. Considering these positive results and other data from the literature, we further tested the ability of ubiquitin or SUMO-1 linked to various PTD at their N-terminus to deliver within cells proteins or peptides fused downstream of their diglycine motif. In this system it is expected that the intracellular ubiquitin or SUMO-1 hydrolases cleave the PTD-Ub or PTD-SUMO-1 modules from the cargo polypeptide, thereby allowing its delivery under an unmodified form.<h4>Results</h4>Several bacterial expression vectors have been constructed to produce modular proteins containing from the N- to the C-terminus: the FLAG epitope, a cleavage site for a protease, a PTD, human ubiquitin or SUMO-1, and either GFP or the HA epitope. Nine different PTDs were tested, including the Tat basic domain, wild type or with various mutations, and stretches of arginine or lysine. It was observed that some of these PTDs, mainly the Tat PTD and seven or nine residues long polyarginine motifs, caused association of the hybrid proteins with cells, but none of these constructs were delivered to the cytosol. This conclusion was derived from biochemical and immunofluorescence studies, and also from the fact that free cargo protein resulting from cleavage by proteases after ubiquitin or SUMO-1 was never observed. However, in agreement with our previous observations, mutation of the diglycine motif into alanine-arginine, as in the SHP constructs, allows cytosol entry demonstrated by immunofluorescence observations on living cells and by cell fractionation analyses. This process results from a non-endocytic pathway.<h4>Conclusion</h4>Our observations indicate that fusion of SUMO-1 to a peptide-PTD module allows generation of a stable hybrid protein that is easily produced in bacteria and which efficiently enters into cells but this property necessitates mutation of the diglycine motif at the end of SUMO-1, thereby impairing delivery of the peptide alone.",
+        "affiliation": "LBMC, UMR5239 CNRS - ENS de Lyon, IFR 128 Biosciences Lyon Gerland 46 Allée d'Italie, 69364 Lyon cedex 07, France. [email removed for public release]",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Jurkat Cells"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Recombinant Fusion Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "SUMO-1 Protein",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Ubiquitin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Gene Products, tat",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transduction, Genetic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Engineering",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Structure, Tertiary"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Recombinant Fusion Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Gene Products, tat",
+              "registryNumber": "0"
+            },
+            {
+              "name": "SUMO-1 Protein",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Ubiquitin",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "abs",
+              "site": "BioMedCentral",
+              "url": "http://www.biomedcentral.com/1472-6750/8/24/abstract"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "BioMedCentral",
+              "url": "http://www.biomedcentral.com/1472-6750/8/24"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "BioMedCentral",
+              "url": "http://www.biomedcentral.com/content/pdf/1472-6750-8-24.pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/1472-6750-8-24"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC2287181"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC2287181?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 3,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2008-04-28",
+        "dateOfCreation": "2008-03-04",
+        "dateOfRevision": "2021-10-20",
+        "electronicPublicationDate": "2008-02-29",
+        "firstPublicationDate": "2008-02-29",
+        "firstIndexDate": "2009-12-24",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "11020349",
+        "source": "MED",
+        "pmid": "11020349",
+        "doi": "10.1006/mthe.2000.0137",
+        "title": "Characterization of a class of cationic peptides able to facilitate efficient protein transduction in vitro and in vivo.",
+        "authorString": "Mi Z, Mai J, Lu X, Robbins PD.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Mi Z",
+              "lastName": "Mi",
+              "firstName": "Z",
+              "initials": "Z",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Molecular Genetics and Biochemistry, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania 15261, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mai J",
+              "lastName": "Mai",
+              "firstName": "J",
+              "initials": "J"
+            },
+            {
+              "fullName": "Lu X",
+              "lastName": "Lu",
+              "firstName": "X",
+              "initials": "X"
+            },
+            {
+              "fullName": "Robbins PD",
+              "lastName": "Robbins",
+              "firstName": "P D",
+              "initials": "PD"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "4",
+          "volume": "2",
+          "journalIssueId": 1066188,
+          "dateOfPublication": "2000 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2000,
+          "journal": {
+            "medlineAbbreviation": "Mol Ther",
+            "title": "Molecular therapy : the journal of the American Society of Gene Therapy",
+            "essn": "1525-0024",
+            "issn": "1525-0016",
+            "isoabbreviation": "Mol Ther",
+            "nlmid": "100890581"
+          },
+          "printPublicationDate": "2000-10-01"
+        },
+        "pubYear": "2000",
+        "pageInfo": "339-347",
+        "abstractText": "Protein transduction domains (PTDs), such as the third helix of the Drosophila Antennapedia homeobox gene (Antp) and the HIV TAT PTD, possess a characteristic positive charge on the basis of their enrichment for arginine and lysine residues. To determine whether cationic peptides are able to function as protein transduction domains, 12-mer peptide sequences from an M13 phage library were selected for synthesis on the basis of their varying cationic charge content. In addition, polylysine and polyarginine peptides were synthesized in order to assess the effect of charge contribution in protein transduction. Coupling of the biotinylated peptides to avidin-beta-galactosidase facilitated transduction in a wide variety of cell lines and primary cells, including islet beta-cells, synovial cells, polarized airway epithelial cells, dendritic cells, myoblasts, and tumor cells. Two of the peptides, PTD-4 and PTD-5, mediated transduction nearly 600-fold more efficiently than a random control peptide, but with an efficiency similar to the TAT PTD and the 12 mers of polylysine and polyarginine. Furthermore, confocal analysis of biotinylated peptide-streptavidin-Cy3 conjugates demonstrated that the internalized PTDs are found in both the nuclei and the cytoplasm of treated cells. When tested in vivo, the PTDs were able to facilitate efficient and rapid protein delivery into rabbit synovium and mouse solid tumors following intraarticular and intratumoral administration, respectively. These novel PTDs can be used to transfer therapeutic proteins and DNA for the treatment of a wide variety of diseases, including arthritis and cancer.",
+        "affiliation": "Department of Molecular Genetics and Biochemistry, University of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania 15261, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIAMS NIH HHS",
+              "acronym": "AR",
+              "grantId": "AR-6-2225",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Knee Joint",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cells, Cultured",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred C57BL"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rabbits"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Fibrosarcoma",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cations"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "ran GTP-Binding Protein",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "beta-Galactosidase",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptide Fragments",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TU",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Luminescent Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Recombinant Fusion Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Gene Products, tat",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Microscopy, Confocal"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Injections, Intra-Articular"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transduction, Genetic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acid Sequence"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "In Vitro Techniques"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Cations",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptide Fragments",
+              "registryNumber": "0"
+            },
+            {
+              "name": "beta-Galactosidase",
+              "registryNumber": "EC 3.2.1.23"
+            },
+            {
+              "name": "Luminescent Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Recombinant Fusion Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Gene Products, tat",
+              "registryNumber": "0"
+            },
+            {
+              "name": "ran GTP-Binding Protein",
+              "registryNumber": "EC 3.6.5.2"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "http://www.cell.com/article/S1525001600901370/pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1006/mthe.2000.0137"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 105,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "license": "cc by-nc-nd",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2000-11-15",
+        "dateOfCreation": "2000-10-06",
+        "dateOfRevision": "2014-11-20",
+        "firstPublicationDate": "2000-10-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "16959453",
+        "source": "MED",
+        "pmid": "16959453",
+        "doi": "10.1016/j.ijpharm.2006.07.038",
+        "title": "Rapid-onset intranasal delivery of metoclopramide hydrochloride Part II: Safety of various absorption enhancers and pharmacokinetic evaluation.",
+        "authorString": "Zaki NM, Mortada ND, Awad GA, Abd ElHady SS.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Zaki NM",
+              "lastName": "Zaki",
+              "firstName": "N M",
+              "initials": "NM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Faculty of Pharmacy, Ain Shams University, Abbassia, Cairo, Egypt. [email removed for public release]"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mortada ND",
+              "lastName": "Mortada",
+              "firstName": "N D",
+              "initials": "ND",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2017-4676"
+              }
+            },
+            {
+              "fullName": "Awad GA",
+              "lastName": "Awad",
+              "firstName": "G A S",
+              "initials": "GA",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0357-3114"
+              }
+            },
+            {
+              "fullName": "Abd ElHady SS",
+              "lastName": "Abd ElHady",
+              "firstName": "S S",
+              "initials": "SS"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6413-6359"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0357-3114"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2017-4676"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "1-2",
+          "volume": "327",
+          "journalIssueId": 1360296,
+          "dateOfPublication": "2006 Dec",
+          "monthOfPublication": 12,
+          "yearOfPublication": 2006,
+          "journal": {
+            "medlineAbbreviation": "Int J Pharm",
+            "title": "International journal of pharmaceutics",
+            "essn": "1873-3476",
+            "issn": "0378-5173",
+            "isoabbreviation": "Int J Pharm",
+            "nlmid": "7804127"
+          },
+          "printPublicationDate": "2006-12-01"
+        },
+        "pubYear": "2006",
+        "pageInfo": "97-103",
+        "abstractText": "In the present study, several nasal absorption enhancers, used in metoclopramide hydrochloride (MCP HCl) nasal solutions, have been screened for their possible damaging effect in the in vitro human erythrocytes lysis experiment. Moreover, the in vivo leaching of biological markers from the rat nasal epithelium was used as a quantitative assessment for possible nasal mucosal irritation whereby the extent of release of total protein and lactate dehydrogenase (LDH) in the nasal lavage fluid was determined. Results showed that insignificant hemolysis from normal saline (P<0.05) occurred with the enhancer protamine sulphate while poly-l-arginine and sodium cholate demonstrated very low (<15%) hemolysis and caused insignificant protein and LDH release from the rat nasal mucosa. Conversely, sodium deoxycholate and chitosan polymers (either of low or high molecular weight) showed high (>60%) hemolysis in vitro and the release of the biological markers in vivo was significantly higher (P<0.05) than the control solution (no enhancer). A significant correlation (P<0.05) existed between the enhancement effect of MCP HCl nasal absorption and the amounts of protein (r=0.85) and LDH (r=0.88). Furthermore, the pharmacokinetics of MCP HCl was determined after intravenous (IV), per-oral and intranasal administration of 10mg drug dose in rabbits. The application of a nasal spray (NS) solution containing 0.5% sodium cholate resulted in a significant improvement (P<0.05) in both the rate and extent of absorption of MCP HCl where the T(max) achieved was 23.3min as compared to 50min in case of the oral solution while the area under the serum concentration-time curve (AUC(0-infinity)) were 506.1, 434.9 and 278.7microg/mlmin for IV, NS and oral solutions, respectively. These values corresponded to absolute bioavailabilities of 87.21 and 55.61% for the NS and oral solutions, respectively. It could thus be concluded that NS of MCP HCl represents a viable approach to achieving rapid and high systemic drug absorption during the emergency treatment of severe emesis.",
+        "affiliation": "Department of Pharmaceutics, Faculty of Pharmacy, Ain Shams University, Abbassia, Cairo, Egypt. [email removed for public release]",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Comparative Study",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nasal Mucosa",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Erythrocytes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PA",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nasal Lavage Fluid",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats, Inbred Strains"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hemolysis",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Metoclopramide",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "BL",
+                    "qualifierName": "blood"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Sodium Cholate",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Deoxycholic Acid",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Chitosan",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "L-Lactate Dehydrogenase",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protamines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antiemetics",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "BL",
+                    "qualifierName": "blood"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Administration, Intranasal"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Absorption",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biological Availability"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "L-Lactate Dehydrogenase",
+              "registryNumber": "EC 1.1.1.27"
+            },
+            {
+              "name": "Protamines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antiemetics",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Chitosan",
+              "registryNumber": "9012-76-4"
+            },
+            {
+              "name": "Deoxycholic Acid",
+              "registryNumber": "005990WHZZ"
+            },
+            {
+              "name": "Metoclopramide",
+              "registryNumber": "L4YEB44I46"
+            },
+            {
+              "name": "Sodium Cholate",
+              "registryNumber": "NU3Y4CCH8Z"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.ijpharm.2006.07.038"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 26,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2007-03-13",
+        "dateOfCreation": "2006-09-09",
+        "dateOfRevision": "2022-03-30",
+        "electronicPublicationDate": "2006-07-25",
+        "firstPublicationDate": "2006-07-25",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "11755391",
+        "source": "MED",
+        "pmid": "11755391",
+        "doi": "10.1016/s1074-5521(01)00076-x",
+        "title": "Molecular transporters for peptides: delivery of a cardioprotective epsilonPKC agonist peptide into cells and intact ischemic heart using a transport system, R(7).",
+        "authorString": "Chen L, Wright LR, Chen CH, Oliver SF, Wender PA, Mochly-Rosen D.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Chen L",
+              "lastName": "Chen",
+              "firstName": "L",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Molecular Pharmacology, Stanford University School of Medicine, Stanford, CA 94305-5174, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wright LR",
+              "lastName": "Wright",
+              "firstName": "L R",
+              "initials": "LR"
+            },
+            {
+              "fullName": "Chen CH",
+              "lastName": "Chen",
+              "firstName": "C H",
+              "initials": "CH"
+            },
+            {
+              "fullName": "Oliver SF",
+              "lastName": "Oliver",
+              "firstName": "S F",
+              "initials": "SF"
+            },
+            {
+              "fullName": "Wender PA",
+              "lastName": "Wender",
+              "firstName": "P A",
+              "initials": "PA"
+            },
+            {
+              "fullName": "Mochly-Rosen D",
+              "lastName": "Mochly-Rosen",
+              "firstName": "D",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6691-8733"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6691-8733"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "12",
+          "volume": "8",
+          "journalIssueId": 1039997,
+          "dateOfPublication": "2001 Dec",
+          "monthOfPublication": 12,
+          "yearOfPublication": 2001,
+          "journal": {
+            "medlineAbbreviation": "Chem Biol",
+            "title": "Chemistry & biology",
+            "essn": "1879-1301",
+            "issn": "1074-5521",
+            "isoabbreviation": "Chem Biol",
+            "nlmid": "9500160"
+          },
+          "printPublicationDate": "2001-12-01"
+        },
+        "pubYear": "2001",
+        "pageInfo": "1123-1129",
+        "abstractText": "<h4>Background</h4>Recently, we reported a novel oligoguanidine transporter system, polyarginine (R(7)), which, when conjugated to spectroscopic probes (e.g., fluorescein) and drugs (e.g., cyclosporin A), results in highly water-soluble conjugates that rapidly enter cells and tissues. We report herein the preparation of the first R(7) peptide conjugates and a study of their cellular and organ uptake and functional activity. The octapeptide (psi)(epsilon)RACK was selected for this study as it is known to exhibit selective epsilon protein kinase C isozyme agonist activity and to reduce ischemia-induced damage in cardiomyocytes. However, (psi)(epsilon)RACK is not cell-permeable.<h4>Results</h4>Here we show that an R(7)-(psi)(epsilon)RACK conjugate readily enters cardiomyocytes, significantly outperforming (psi)(epsilon)RACK conjugates of the transporters derived from HIV Tat and from Antennapedia. Moreover, R(7)-(psi)(epsilon)RACK conjugate reduced ischemic damage when delivered into intact hearts either prior to or after the ischemic insult.<h4>Conclusions</h4>Our data suggest that R(7) converts a peptide lead into a potential therapeutic agent for the ischemic heart.",
+        "affiliation": "Department of Molecular Pharmacology, Stanford University School of Medicine, Stanford, CA 94305-5174, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "PHS HHS",
+              "grantId": "52141",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "CA31841",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "CA31845",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats, Sprague-Dawley"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Myocardial Reperfusion Injury",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PC",
+                    "qualifierName": "prevention & control"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Myocardial Ischemia",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PC",
+                    "qualifierName": "prevention & control"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Isoenzymes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AI",
+                    "qualifierName": "antagonists & inhibitors"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Kinase C",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AI",
+                    "qualifierName": "antagonists & inhibitors"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Oligopeptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cardiotonic Agents",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drug Delivery Systems"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Enzyme Activation",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biological Transport"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Permeability"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Kinase C-epsilon"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "In Vitro Techniques"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Isoenzymes",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Oligopeptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Cardiotonic Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Prkce protein, rat",
+              "registryNumber": "EC 2.7.1.-"
+            },
+            {
+              "name": "Protein Kinase C",
+              "registryNumber": "EC 2.7.11.13"
+            },
+            {
+              "name": "Protein Kinase C-epsilon",
+              "registryNumber": "EC 2.7.11.13"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "http://www.cell.com/article/S107455210100076X/pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/s1074-5521(01)00076-x"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 114,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2002-05-17",
+        "dateOfCreation": "2002-01-05",
+        "dateOfRevision": "2022-02-27",
+        "firstPublicationDate": "2001-12-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "12519756",
+        "source": "MED",
+        "pmid": "12519756",
+        "doi": "10.1074/jbc.m211891200",
+        "title": "Oligomers of the arginine-rich motif of the HIV-1 TAT protein are capable of transferring plasmid DNA into cells.",
+        "authorString": "Rudolph C, Plank C, Lausier J, Schillinger U, Müller RH, Rosenecker J.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Rudolph C",
+              "lastName": "Rudolph",
+              "firstName": "Carsten",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pediatrics, Ludwig-Maximilians University, 80337 Munich, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Plank C",
+              "lastName": "Plank",
+              "firstName": "Christian",
+              "initials": "C",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6072-4903"
+              }
+            },
+            {
+              "fullName": "Lausier J",
+              "lastName": "Lausier",
+              "firstName": "James",
+              "initials": "J"
+            },
+            {
+              "fullName": "Schillinger U",
+              "lastName": "Schillinger",
+              "firstName": "Ulrike",
+              "initials": "U"
+            },
+            {
+              "fullName": "Müller RH",
+              "lastName": "Müller",
+              "firstName": "Rainer H",
+              "initials": "RH"
+            },
+            {
+              "fullName": "Rosenecker J",
+              "lastName": "Rosenecker",
+              "firstName": "Joseph",
+              "initials": "J"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6072-4903"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "wikipedia"
+          ]
+        },
+        "journalInfo": {
+          "issue": "13",
+          "volume": "278",
+          "journalIssueId": 1179216,
+          "dateOfPublication": "2003 Mar",
+          "monthOfPublication": 3,
+          "yearOfPublication": 2003,
+          "journal": {
+            "medlineAbbreviation": "J Biol Chem",
+            "title": "The Journal of biological chemistry",
+            "essn": "1083-351X",
+            "issn": "0021-9258",
+            "isoabbreviation": "J Biol Chem",
+            "nlmid": "2985121R"
+          },
+          "printPublicationDate": "2003-03-01"
+        },
+        "pubYear": "2003",
+        "pageInfo": "11411-11418",
+        "abstractText": "We constructed multimers of the TAT-(47-57) peptide. This polycationic peptide is known to be a protein and particle transduction domain and at the same time to comprise a nuclear localization function. Here we show that oligomers of the TAT-(47-57) peptide compact plasmid DNA to nanometric particles and stabilize DNA toward nuclease degradation. At optimized vector compositions, these peptides mediated gene delivery to cells in culture 6-8-fold more efficiently than poly-L-arginine or the mutant TAT(2)-M1. When DNA was precompacted with TAT peptides and polyethyleneimine (PEI), Superfect, or LipofectAMINE was added, transfection efficiency was enhanced up to 390-fold compared with the standard vectors. As early as after 4 h of transfection, reporter gene expression mediated by TAT-containing complexes was higher than the 24-h transfection level achieved with a standard PEI transfection. When cells were cell cycle-arrested by serum starvation or aphidicolin, TAT-mediated transfection was 3-fold more efficient than a standard PEI transfection in proliferating cells. In primary nasal epithelial cells and upon intratracheal instillation in vivo, TAT-containing complexes were superior to standard PEI vectors. These data together with confocal imaging of TAT-DNA complexes in cells support the hypothesis that the TAT nuclear localization sequence function is involved in enhancing gene transfer.",
+        "affiliation": "Department of Pediatrics, Ludwig-Maximilians University, 80337 Munich, Germany.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cells, Cultured"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biopolymers"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Arginine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Gene Products, tat",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "In Situ Hybridization, Fluorescence"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Amino Acid Motifs"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosphorylation"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Kinetics"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Genetic Vectors"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Plasmids"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Biopolymers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Gene Products, tat",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Arginine",
+              "registryNumber": "94ZLA3W45F"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "http://www.jbc.org/article/S0021925819324275/pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1074/jbc.M211891200"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 189,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2003-05-02",
+        "dateOfCreation": "2003-01-10",
+        "dateOfRevision": "2022-03-09",
+        "electronicPublicationDate": "2003-01-08",
+        "firstPublicationDate": "2003-01-08",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "18089813",
+        "source": "MED",
+        "pmid": "18089813",
+        "doi": "10.1158/0008-5472.can-07-1160",
+        "title": "Recombinant immunoproapoptotic proteins with furin site can translocate and kill HER2-positive cancer cells.",
+        "authorString": "Wang T, Zhao J, Ren JL, Zhang L, Wen WH, Zhang R, Qin WW, Jia LT, Yao LB, Zhang YQ, Chen SY, Yang AG.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Wang T",
+              "lastName": "Wang",
+              "firstName": "Tao",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Cancer Biology, Department of Biochemistry and Molecular Biology, Fourth Military Medical University, Xi'an, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhao J",
+              "lastName": "Zhao",
+              "firstName": "Jing",
+              "initials": "J",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0764-8179"
+              }
+            },
+            {
+              "fullName": "Ren JL",
+              "lastName": "Ren",
+              "firstName": "Jun-Lin",
+              "initials": "JL"
+            },
+            {
+              "fullName": "Zhang L",
+              "lastName": "Zhang",
+              "firstName": "Li",
+              "initials": "L"
+            },
+            {
+              "fullName": "Wen WH",
+              "lastName": "Wen",
+              "firstName": "Wei-Hong",
+              "initials": "WH"
+            },
+            {
+              "fullName": "Zhang R",
+              "lastName": "Zhang",
+              "firstName": "Rui",
+              "initials": "R"
+            },
+            {
+              "fullName": "Qin WW",
+              "lastName": "Qin",
+              "firstName": "Wei-Wei",
+              "initials": "WW"
+            },
+            {
+              "fullName": "Jia LT",
+              "lastName": "Jia",
+              "firstName": "Lin-Tao",
+              "initials": "LT",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6329-0453"
+              }
+            },
+            {
+              "fullName": "Yao LB",
+              "lastName": "Yao",
+              "firstName": "Li-Bo",
+              "initials": "LB"
+            },
+            {
+              "fullName": "Zhang YQ",
+              "lastName": "Zhang",
+              "firstName": "Ying-Qi",
+              "initials": "YQ"
+            },
+            {
+              "fullName": "Chen SY",
+              "lastName": "Chen",
+              "firstName": "Si-Yi",
+              "initials": "SY"
+            },
+            {
+              "fullName": "Yang AG",
+              "lastName": "Yang",
+              "firstName": "An-Gang",
+              "initials": "AG"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6329-0453"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0764-8179"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "24",
+          "volume": "67",
+          "journalIssueId": 1488195,
+          "dateOfPublication": "2007 Dec",
+          "monthOfPublication": 12,
+          "yearOfPublication": 2007,
+          "journal": {
+            "medlineAbbreviation": "Cancer Res",
+            "title": "Cancer research",
+            "essn": "1538-7445",
+            "issn": "0008-5472",
+            "isoabbreviation": "Cancer Res",
+            "nlmid": "2984705R"
+          },
+          "printPublicationDate": "2007-12-01"
+        },
+        "pubYear": "2007",
+        "pageInfo": "11830-11839",
+        "abstractText": "We previously reported the selective killing of HER2-positive tumor cells by a class of immunoproapoptotic proteins containing single-chain antibody, translocation domain of Pseudomonas exotoxin A (domain II; PEA II), and constitutively active human apoptotic molecules. In this study, a novel class of antitumor immunoproapoptotic proteins was explored to mediate tumor-specific apoptosis both in vitro and in vivo. Three furin cleavage sequences, including a synthetic polyarginine tract, and two furin cleavable sequences from PEA and diphtheria toxin were respectively used to replace PEA II in the previously constructed immunoproapoptotic protein. When produced and secreted by the genetically modified Jurkat cells, the novel targeted proapoptotic proteins selectively bound to HER2, which is often overexpressed on tumor cell surface. Followed by receptor-mediated endocytosis and furin cleavage in the endosome, the recombinant proteins could translocate into the cytosol, leading to irreversible cell death. Moreover, delivery of these proteins by either i.m. plasmid injection or i.v. injection of plasmid-expressing Jurkat cells led to tumor regression and prolonged animal survival in a nude mouse xenograft tumor model, indicating in vivo antitumor activity of the recombinant proteins. We conclude that the new class of immunoproapoptotic proteins show comparable activity with PEA II-containing counterpart and provide an attractive therapeutic alternative as they contain much less exogenous fragments.",
+        "affiliation": "State Key Laboratory of Cancer Biology, Department of Biochemistry and Molecular Biology, Fourth Military Medical University, Xi'an, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Breast Neoplasms",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PA",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Furin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Bacterial Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Recombinant Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polymerase Chain Reaction"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Apoptosis"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Survival"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Genes, erbB-2"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Plasmids"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Caspase 3",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "pseudomonas exoprotein A protein, Pseudomonas aeruginosa",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Bacterial Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Recombinant Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Furin",
+              "registryNumber": "EC 3.4.21.75"
+            },
+            {
+              "name": "Caspase 3",
+              "registryNumber": "EC 3.4.22.-"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://figshare.com/ndownloader/files/39815717"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1158/0008-5472.CAN-07-1160"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "40518802",
+              "reference": "Cancer Res. 2025 Jun 16;85(12):2340. doi: 10.1158/0008-5472.CAN-25-1561.",
+              "type": "Erratum in",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 37,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2008-01-15",
+        "dateOfCreation": "2007-12-20",
+        "dateOfRevision": "2025-06-16",
+        "firstPublicationDate": "2007-12-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "11192933",
+        "source": "MED",
+        "pmid": "11192933",
+        "title": "Regulation of cyclooxygenase isoforms in the renal thick ascending limb: effects of extracellular calcium.",
+        "authorString": "Wang D, McGiff JC, Ferreri NR.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Wang D",
+              "lastName": "Wang",
+              "firstName": "D",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmacology, New York Medical College, Valhalla 10595, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "McGiff JC",
+              "lastName": "McGiff",
+              "firstName": "J C",
+              "initials": "JC"
+            },
+            {
+              "fullName": "Ferreri NR",
+              "lastName": "Ferreri",
+              "firstName": "N R",
+              "initials": "NR"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "4 Pt 1",
+          "volume": "51",
+          "journalIssueId": 1090720,
+          "dateOfPublication": "2000 Dec",
+          "monthOfPublication": 12,
+          "yearOfPublication": 2000,
+          "journal": {
+            "medlineAbbreviation": "J Physiol Pharmacol",
+            "title": "Journal of physiology and pharmacology : an official journal of the Polish Physiological Society",
+            "essn": "1899-1505",
+            "issn": "0867-5910",
+            "isoabbreviation": "J Physiol Pharmacol",
+            "nlmid": "9114501"
+          },
+          "printPublicationDate": "2000-12-01"
+        },
+        "pubYear": "2000",
+        "pageInfo": "587-595",
+        "abstractText": "We previously showed that primary cultures of mTAL cells express cyclooxygenase 2 (COX-2) when challenged with tumor necrosis factor alpha (TNFalpha) or phorbol myristate acetate (PMA). Moreover, expression of COX-2 was linked to decreases in TNFalpha-mediated 86Rb uptake, an in vitro correlate of natriuresis. mTAL cells in primary culture express calcium sensing receptor (CaR), a G-protein coupled receptor that senses changes in extracellular calcium concentration and ultimately increases intracellular calcium concentration ([Ca2+]i) and protein kinase C (PKC) activity. PGE2 synthesis by mTAL cells increases in a dose- and time-dependent manner after exposure of these cells to extracellular Ca2+. Similar effects were observed when cells were challenged with the CaR-selective agonist, poly-L-arginine. These data suggest that intracellular signaling mechanisms initiated via activation of CaR contribute to mTAL PGE2 synthesis. As TNF production is calcium-sensitive in some cells types, we postulate that these effects involve the regulation of COX-2 expression via a TNF-dependent mechanism. The functional implications of these studies relate to a cytokine-mediated mechanism that contributes to salt and water balance, and suggests that small changes in Ca(2+)o may contribute to the regulation of these events. The possibility that the effects of Ca(2+)o involve activation of CaR suggests that novel calcimimetic molecules might be useful in conditions, such as hypertension or other conditions, in which manipulation of extracellular fluid volume provides beneficial effects.",
+        "affiliation": "Department of Pharmacology, New York Medical College, Valhalla 10595, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Loop of Henle",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cells, Cultured"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hypercalcemia",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Calcium",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Prostaglandins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Arginine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Calcium-Binding Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Isoforms"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Homeostasis"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Prostaglandin-Endoperoxide Synthases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Prostaglandins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Protein Isoforms",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Calcium-Binding Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Prostaglandin-Endoperoxide Synthases",
+              "registryNumber": "EC 1.14.99.1"
+            },
+            {
+              "name": "Calcium",
+              "registryNumber": "SY7Q814VUP"
+            },
+            {
+              "name": "Arginine",
+              "registryNumber": "94ZLA3W45F"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 8,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2001-04-12",
+        "dateOfCreation": "2001-02-24",
+        "dateOfRevision": "2013-11-21",
+        "firstPublicationDate": "2000-12-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "15800129",
+        "source": "MED",
+        "pmid": "15800129",
+        "doi": "10.1681/asn.2004080631",
+        "title": "Aminoglycosides induce acute cell signaling and chronic cell death in renal cells that express the calcium-sensing receptor.",
+        "authorString": "Ward DT, Maldonado-Pérez D, Hollins L, Riccardi D.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Ward DT",
+              "lastName": "Ward",
+              "firstName": "Donald T",
+              "initials": "DT",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1342-9458"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Life Sciences, The University of Manchester, Oxford Road, Manchester, M13 9PT United Kingdom. [email removed for public release]"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Maldonado-Pérez D",
+              "lastName": "Maldonado-Pérez",
+              "firstName": "David",
+              "initials": "D"
+            },
+            {
+              "fullName": "Hollins L",
+              "lastName": "Hollins",
+              "firstName": "Laura",
+              "initials": "L"
+            },
+            {
+              "fullName": "Riccardi D",
+              "lastName": "Riccardi",
+              "firstName": "Daniela",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7322-3163"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7322-3163"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1342-9458"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "5",
+          "volume": "16",
+          "journalIssueId": 1229219,
+          "dateOfPublication": "2005 May",
+          "monthOfPublication": 5,
+          "yearOfPublication": 2005,
+          "journal": {
+            "medlineAbbreviation": "J Am Soc Nephrol",
+            "title": "Journal of the American Society of Nephrology : JASN",
+            "essn": "1533-3450",
+            "issn": "1046-6673",
+            "isoabbreviation": "J Am Soc Nephrol",
+            "nlmid": "9013836"
+          },
+          "printPublicationDate": "2005-05-01"
+        },
+        "pubYear": "2005",
+        "pageInfo": "1236-1244",
+        "abstractText": "The aminoglycoside antibiotics (AGAs) are calcium-sensing receptor (CaR) agonists that are toxic to the renal proximal tubule. Proximal tubule-derived opossum kidney (OK) cells express CaR-like proteins and respond to AGAs with intracellular Ca2+ mobilization and extracellular regulated protein kinase (ERK) phosphorylation. To examine the possible cellular basis of AGA toxicity, acute and chronic responses to AGA treatment in OK cells and in CaR stably transfected HEK-293 cells (CaR-HEK) were studied. Changes in cell-fate signaling, proliferation, and cell death were detected by semiquantitative Western blotting, Hoechst staining, cell counting, and FACS analysis. Confocal microscopy was used to study the relative internalization of fluorophore-labeled gentamicin in CaR-transfected and -nontransfected cells. Here it is reported that the AGA neomycin and gentamicin elicit acute, phosphatidylinositol-3 kinase-dependent phosphorylation of Akt, glycogen synthase kinase 3beta, and p38 mitogen-activated protein kinase. After 24 h of gentamicin treatment, OK cell proliferation was observed, whereas after 4 d, the OK cells underwent cell death, an effect that was mimicked by the CaR agonists spermine and polyarginine. Furthermore, gentamicin elicited substantially more cell death in CaR-HEK cells than in nontransfected HEK-293 cells. The pan-specific caspase inhibitor Z-VAD significantly inhibited cell death in both OK and CaR-HEK cells. Finally, the intracellular uptake of Texas Red-labeled gentamicin was equivalent in both CaR-transfected and vector-transfected HEK-293 cells, suggesting that the CaR does not enhance drug uptake. Together, these observations demonstrate that the AGAs induce both acute and chronic cell fate changes in OK cells and CaR-HEK cells and that the proximal tubular CaR is likely to contribute to signaling underlying the renal toxicity of the AGAs.",
+        "affiliation": "Faculty of Life Sciences, The University of Manchester, Oxford Road, Manchester, M13 9PT United Kingdom. [email removed for public release]",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Wellcome Trust",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Kidney",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Opossums"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Spermine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Aminoglycosides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "TO",
+                    "qualifierName": "toxicity"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Gentamicins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TO",
+                    "qualifierName": "toxicity"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Receptors, Calcium-Sensing",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AG",
+                    "qualifierName": "agonists"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Anti-Bacterial Agents",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "TO",
+                    "qualifierName": "toxicity"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transfection"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Signal Transduction",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Division",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Death",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Gene Expression"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Light"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Scattering, Radiation"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Caspase Inhibitors"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Anti-Bacterial Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Gentamicins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Aminoglycosides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Receptors, Calcium-Sensing",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Caspase Inhibitors",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Spermine",
+              "registryNumber": "2FZ7Y3VOQX"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1681/ASN.2004080631"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 37,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2005-08-31",
+        "dateOfCreation": "2005-04-01",
+        "dateOfRevision": "2013-11-21",
+        "electronicPublicationDate": "2005-03-30",
+        "firstPublicationDate": "2005-03-30",
+        "firstIndexDate": "2009-08-18",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "9680375",
+        "source": "MED",
+        "pmid": "9680375",
+        "doi": "10.1182/blood.v92.3.1055.415k10_1055_1061",
+        "title": "Stem cell factor influences mast cell mediator release in response to eosinophil-derived granule major basic protein.",
+        "authorString": "Furuta GT, Ackerman SJ, Lu L, Williams RE, Wershil BK.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Furuta GT",
+              "lastName": "Furuta",
+              "firstName": "G T",
+              "initials": "GT",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Combined Program in Pediatric Gastroenterology and Nutrition, The Children's Hospital and Massachusetts General Hospital, Boston, MA, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ackerman SJ",
+              "lastName": "Ackerman",
+              "firstName": "S J",
+              "initials": "SJ"
+            },
+            {
+              "fullName": "Lu L",
+              "lastName": "Lu",
+              "firstName": "L",
+              "initials": "L"
+            },
+            {
+              "fullName": "Williams RE",
+              "lastName": "Williams",
+              "firstName": "R E",
+              "initials": "RE"
+            },
+            {
+              "fullName": "Wershil BK",
+              "lastName": "Wershil",
+              "firstName": "B K",
+              "initials": "BK"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "3",
+          "volume": "92",
+          "journalIssueId": 921277,
+          "dateOfPublication": "1998 Aug",
+          "monthOfPublication": 8,
+          "yearOfPublication": 1998,
+          "journal": {
+            "medlineAbbreviation": "Blood",
+            "title": "Blood",
+            "essn": "1528-0020",
+            "issn": "0006-4971",
+            "isoabbreviation": "Blood",
+            "nlmid": "7603509"
+          },
+          "printPublicationDate": "1998-08-01"
+        },
+        "pubYear": "1998",
+        "pageInfo": "1055-1061",
+        "abstractText": "Stem cell factor (SCF) is an important mast cell growth, differentiation, and survival factor. We investigated whether SCF influenced the response of mouse mast cells to an IgE-independent stimulus, eosinophil-derived granule major basic protein (MBP). Mouse bone marrow cultured mast cells (BMCMC) were derived in either concanavalin-stimulated mouse spleen conditioned medium (CM) or SCF. The cloned growth, factor-independent mast cell line Cl.MC/C57.1 was also studied. BMCMC in SCF exhibited cytochemical staining properties, protease and histamine content, and increased serotonin uptake consistent with more mature differentiated mast cells as compared with BMCMC in CM or Cl.MC/ C57.1 cells. BMCMC in SCF released serotonin, 14C-labeled arachidonic acid metabolites and tumor necrosis factor-alpha (TNF-alpha) on stimulation with MBP, while no response was seen from either BMCMC in CM or Cl.MC/C57.1 cells. All three mast cell populations released mediators on stimulation with the cationic MBP analog, poly-L-arginine, indicating that the cationic charge did not explain the selective response of BMCMC in SCF to eosinophil-derived granule MBP. These findings show that SCF significantly influences mast cell differentiation and the responsiveness of mast cells to eosinophil-derived granule MBP.",
+        "affiliation": "The Combined Program in Pediatric Gastroenterology and Nutrition, The Children's Hospital and Massachusetts General Hospital, Boston, MA, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Comparative Study",
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIDDK NIH HHS",
+              "acronym": "DK",
+              "grantId": "DK33506",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIDDK NIH HHS",
+              "acronym": "DK",
+              "grantId": "DK46819",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIDDK NIH HHS",
+              "acronym": "DK",
+              "grantId": "DK40561",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Bone Marrow Cells",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mast Cells",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Calcium",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Histamine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Serotonin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Ribonucleases"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Endopeptidases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "BI",
+                    "qualifierName": "biosynthesis"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Arachidonic Acids",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Tumor Necrosis Factor-alpha",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Blood Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Eosinophil Granule Proteins"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunoglobulin E",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Concanavalin A",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Stem Cell Factor",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Ionophores",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Culture Media, Conditioned",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polymerase Chain Reaction"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Lymphocyte Activation",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Differentiation"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Blood Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Ribonucleases",
+              "registryNumber": "EC 3.1.-"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Endopeptidases",
+              "registryNumber": "EC 3.4.-"
+            },
+            {
+              "name": "Concanavalin A",
+              "registryNumber": "11028-71-0"
+            },
+            {
+              "name": "Arachidonic Acids",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Immunoglobulin E",
+              "registryNumber": "37341-29-0"
+            },
+            {
+              "name": "Ionophores",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Culture Media, Conditioned",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Tumor Necrosis Factor-alpha",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Eosinophil Granule Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Stem Cell Factor",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Calcium",
+              "registryNumber": "SY7Q814VUP"
+            },
+            {
+              "name": "Serotonin",
+              "registryNumber": "333DO1RDJY"
+            },
+            {
+              "name": "Histamine",
+              "registryNumber": "820484N8I3"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "abs",
+              "site": "www.bloodjournal.org",
+              "url": "http://www.bloodjournal.org/cgi/content/abstract/92/3/1055"
+            },
+            {
+              "availability": "Free after 12 months",
+              "availabilityCode": "F12",
+              "documentStyle": "html",
+              "site": "www.bloodjournal.org",
+              "url": "http://www.bloodjournal.org/cgi/content/full/92/3/1055"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "OpenAlex",
+              "url": "https://doi.org/10.1182/blood.v92.3.1055.415k10_1055_1061"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 13,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1998-08-27",
+        "dateOfCreation": "1998-07-29",
+        "dateOfRevision": "2021-02-16",
+        "firstPublicationDate": "1998-08-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "15180968",
+        "source": "MED",
+        "pmid": "15180968",
+        "doi": "10.1096/fj.03-1346fje",
+        "title": "A strategy for designing inhibitors of alpha-synuclein aggregation and toxicity as a novel treatment for Parkinson's disease and related disorders.",
+        "authorString": "El-Agnaf OM, Paleologou KE, Greer B, Abogrein AM, King JE, Salem SA, Fullwood NJ, Benson FE, Hewitt R, Ford KJ, Martin FL, Harriott P, Cookson MR, Allsop D.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "El-Agnaf OM",
+              "lastName": "El-Agnaf",
+              "firstName": "Omar M A",
+              "initials": "OM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6850-8084"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biological Sciences, Lancaster University, Lancaster, UK. [email removed for public release]"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Paleologou KE",
+              "lastName": "Paleologou",
+              "firstName": "Katerina E",
+              "initials": "KE"
+            },
+            {
+              "fullName": "Greer B",
+              "lastName": "Greer",
+              "firstName": "Brett",
+              "initials": "B"
+            },
+            {
+              "fullName": "Abogrein AM",
+              "lastName": "Abogrein",
+              "firstName": "Abdulmawala M",
+              "initials": "AM"
+            },
+            {
+              "fullName": "King JE",
+              "lastName": "King",
+              "firstName": "Jenny E",
+              "initials": "JE"
+            },
+            {
+              "fullName": "Salem SA",
+              "lastName": "Salem",
+              "firstName": "Sultan A",
+              "initials": "SA"
+            },
+            {
+              "fullName": "Fullwood NJ",
+              "lastName": "Fullwood",
+              "firstName": "Nigel J",
+              "initials": "NJ"
+            },
+            {
+              "fullName": "Benson FE",
+              "lastName": "Benson",
+              "firstName": "Fiona E",
+              "initials": "FE"
+            },
+            {
+              "fullName": "Hewitt R",
+              "lastName": "Hewitt",
+              "firstName": "Rebecca",
+              "initials": "R"
+            },
+            {
+              "fullName": "Ford KJ",
+              "lastName": "Ford",
+              "firstName": "Kirstie J",
+              "initials": "KJ"
+            },
+            {
+              "fullName": "Martin FL",
+              "lastName": "Martin",
+              "firstName": "Francis L",
+              "initials": "FL"
+            },
+            {
+              "fullName": "Harriott P",
+              "lastName": "Harriott",
+              "firstName": "Patrick",
+              "initials": "P"
+            },
+            {
+              "fullName": "Cookson MR",
+              "lastName": "Cookson",
+              "firstName": "Mark R",
+              "initials": "MR"
+            },
+            {
+              "fullName": "Allsop D",
+              "lastName": "Allsop",
+              "firstName": "David",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0513-5575"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8562-4944"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0513-5575"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6850-8084"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "protocols"
+          ]
+        },
+        "journalInfo": {
+          "issue": "11",
+          "volume": "18",
+          "journalIssueId": 1200176,
+          "dateOfPublication": "2004 Aug",
+          "monthOfPublication": 8,
+          "yearOfPublication": 2004,
+          "journal": {
+            "medlineAbbreviation": "FASEB J",
+            "title": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+            "essn": "1530-6860",
+            "issn": "0892-6638",
+            "isoabbreviation": "FASEB J",
+            "nlmid": "8804484"
+          },
+          "printPublicationDate": "2004-08-01"
+        },
+        "pubYear": "2004",
+        "pageInfo": "1315-1317",
+        "abstractText": "Convergent biochemical and genetic evidence suggests that the formation of alpha-synuclein (alpha-syn) protein deposits is an important and, probably, seminal step in the development of Parkinson's disease (PD), dementia with Lewy bodies (DLB) and multiple system atrophy (MSA). It has been reported that transgenic animals overexpressing human alpha-syn develop lesions similar to those found in the brain in PD, together with a progressive loss of dopaminergic cells and associated abnormalities of motor function. Inhibiting and/or reversing alpha-syn self-aggregation could, therefore, provide a novel approach to treating the underlying cause of these diseases. We synthesized a library of overlapping 7-mer peptides spanning the entire alpha-syn sequence, and identified amino acid residues 64-100 of alpha-syn as the binding region responsible for its self-association. Modified short peptides containing alpha-syn amino acid sequences from part of this binding region (residues 69-72), named alpha-syn inhibitors (ASI), were found to interact with full-length alpha-syn and block its assembly into both early oligomers and mature amyloid-like fibrils. We also developed a cell-permeable inhibitor of alpha-syn aggregation (ASID), using the polyarginine peptide delivery system. This ASID peptide was able to inhibit the DNA damage induced by Fe(II) in neuronal cells transfected with alpha-syn(A53T), a familial PD-associated mutation. ASI peptides without this delivery system did not reverse levels of Fe(II)-induced DNA damage. Furthermore, the ASID peptide increased (P<0.0005) the number of cells stained positive for Bcl-2, while significantly (P<0.05) decreasing the percentage of cells stained positive for BAX. These short peptides could serve as lead compounds for the design of peptidomimetic drugs to treat PD and related disorders.",
+        "affiliation": "Department of Biological Sciences, Lancaster University, Lancaster, UK. [email removed for public release]",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Lancaster University",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neuroblastoma",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PA",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Parkinson Disease",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DT",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "DNA Damage",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Iron",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TO",
+                    "qualifierName": "toxicity"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amyloid",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptide Fragments",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CS",
+                    "qualifierName": "chemical synthesis"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IP",
+                    "qualifierName": "isolation & purification"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptide Library"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Proto-Oncogene Proteins c-bcl-2",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nerve Tissue Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AI",
+                    "qualifierName": "antagonists & inhibitors"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TO",
+                    "qualifierName": "toxicity"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "UL",
+                    "qualifierName": "ultrastructure"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Recombinant Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AI",
+                    "qualifierName": "antagonists & inhibitors"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antiparkinson Agents",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Evaluation, Preclinical"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acid Sequence"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acid Motifs"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Binding"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Design"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Molecular Sequence Data"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "bcl-2-Associated X Protein"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Synucleins"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "alpha-Synuclein"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amyloid beta-Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "amyloid beta-protein (1-40)",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptide Fragments",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Nerve Tissue Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antiparkinson Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Amyloid",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Recombinant Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Proto-Oncogene Proteins c-bcl-2",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptide Library",
+              "registryNumber": "0"
+            },
+            {
+              "name": "BAX protein, human",
+              "registryNumber": "0"
+            },
+            {
+              "name": "bcl-2-Associated X Protein",
+              "registryNumber": "0"
+            },
+            {
+              "name": "SNCA protein, human",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Synucleins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "alpha-Synuclein",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Amyloid beta-Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Iron",
+              "registryNumber": "E1UOL152H7"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1096/fj.03-1346fje"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 137,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2005-02-08",
+        "dateOfCreation": "2004-06-08",
+        "dateOfRevision": "2013-11-21",
+        "electronicPublicationDate": "2004-06-04",
+        "firstPublicationDate": "2004-06-04",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "2476444",
+        "source": "MED",
+        "pmid": "2476444",
+        "doi": "10.1016/s0021-9258(19)84754-3",
+        "title": "Modulation by polyelectrolytes of canine cardiac microsomal calcium uptake and the possible relationship to phospholamban.",
+        "authorString": "Xu ZC, Kirchberger MA.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Xu ZC",
+              "lastName": "Xu",
+              "firstName": "Z C",
+              "initials": "ZC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology and Biophysics, Mount Sinai School of Medicine, City University of New York, New York 10029."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Kirchberger MA",
+              "lastName": "Kirchberger",
+              "firstName": "M A",
+              "initials": "MA"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "28",
+          "volume": "264",
+          "journalIssueId": 689022,
+          "dateOfPublication": "1989 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 1989,
+          "journal": {
+            "medlineAbbreviation": "J Biol Chem",
+            "title": "The Journal of biological chemistry",
+            "essn": "1083-351X",
+            "issn": "0021-9258",
+            "isoabbreviation": "J Biol Chem",
+            "nlmid": "2985121R"
+          },
+          "printPublicationDate": "1989-10-01"
+        },
+        "pubYear": "1989",
+        "pageInfo": "16644-16651",
+        "abstractText": "Calcium uptake and (Ca2+ + Mg2+)-ATPase activity in canine cardiac microsomes were found to be stimulated by heparin and various other polyanions. Prior treatment of the microsomes with the ionophores alamethicin or A23187 produced no change in the extent of stimulation of the ATPase activity by heparin yet eliminated net calcium uptake. This finding and a lack of change in the stoichiometric ratio of mol of calcium transported/mol of ATP hydrolyzed (calcium:ATP) suggest that the effect of heparin is on the calcium pump rather than on a parallel calcium efflux pathway. Certain polycationic compounds including poly-L-arginine and histone inhibited both cardiac and fast skeletal muscle microsomal calcium uptake and also produced no change in the stoichiometric ratio of calcium to ATP. Several lines of evidence indicate that the polyanionic compounds tested stimulate calcium uptake by interacting with phospholamban, the putative phosphorylatable regulator of the cardiac sarcoplasmic reticulum calcium pump, whereas polycationic compounds appear to interact with the pump. (i) Heparin stimulated calcium uptake to the same extent as protein kinase A or trypsin, whereas prior phosphorylation or tryptic cleavage of phospholamban from the membrane abolished the stimulatory effect of heparin. (ii) Calcium uptake and (Ca2+ + Mg2+)-ATPase activity in fast skeletal muscle microsomes, which lack phospholamban, were unaffected by heparin. (iii) Purified cardiac (Ca2+ + Mg2+)-ATPase activity was no longer stimulated by heparin yet was still inhibited by polycationic compounds. The heparin-induced stimulation of calcium uptake was dependent on the pH and ionic strength of the heparin-containing preincubation medium, hence electrostatic interactions appear to play a significant role in heparin's stimulatory action. The data are consistent with an inhibitory role of the positively charged cytoplasmic domain of phospholamban with respect to calcium pump activity and the relief of the inhibition upon reduction in phospholamban's positive charge by phosphorylation or binding of polyanions.",
+        "affiliation": "Department of Physiology and Biophysics, Mount Sinai School of Medicine, City University of New York, New York 10029.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NHLBI NIH HHS",
+              "acronym": "HL",
+              "grantId": "HL-15764",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Sarcoplasmic Reticulum",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Myocardium",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Microsomes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Dogs"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Calcium",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polyamines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Calcimycin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Alamethicin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Dextrans",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Ca(2+) Mg(2+)-ATPase",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Dextran Sulfate"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Heparin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Calcium-Binding Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosvitin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Histones",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Kinetics"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adenosine Triphosphatases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Calcium-Transporting ATPases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phospholamban"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "phospholamban",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Heparin",
+              "registryNumber": "9005-49-6"
+            },
+            {
+              "name": "Histones",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Polyamines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Alamethicin",
+              "registryNumber": "27061-78-5"
+            },
+            {
+              "name": "Phosvitin",
+              "registryNumber": "9008-96-2"
+            },
+            {
+              "name": "Ca(2+) Mg(2+)-ATPase",
+              "registryNumber": "EC 3.6.1.-"
+            },
+            {
+              "name": "Calcium-Binding Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Dextran Sulfate",
+              "registryNumber": "9042-14-2"
+            },
+            {
+              "name": "Adenosine Triphosphatases",
+              "registryNumber": "EC 3.6.1.-"
+            },
+            {
+              "name": "Calcium",
+              "registryNumber": "SY7Q814VUP"
+            },
+            {
+              "name": "Calcimycin",
+              "registryNumber": "37H9VM9WZL"
+            },
+            {
+              "name": "Dextrans",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Calcium-Transporting ATPases",
+              "registryNumber": "EC 7.2.2.10"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1016/s0021-9258(19)84754-3"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "abs",
+              "site": "intl.jbc.org",
+              "url": "http://intl.jbc.org/cgi/content/abstract/264/28/16644"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/S0021-9258(19)84754-3"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 36,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1989-10-25",
+        "dateOfCreation": "1989-10-05",
+        "dateOfRevision": "2026-01-28",
+        "firstPublicationDate": "1989-10-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "EP0673412",
+        "source": "PAT",
+        "title": "CLEANING COMPOSITIONS AND METHOD FOR HYDROPHILIC CONTACT LENSES",
+        "authorString": "POWELL Charles Hayes, KARAGEOZIAN Hampar, CURRIE James P..",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "POWELL Charles Hayes",
+              "lastName": "POWELL Charles Hayes"
+            },
+            {
+              "fullName": "KARAGEOZIAN Hampar",
+              "lastName": "KARAGEOZIAN Hampar"
+            },
+            {
+              "fullName": "CURRIE James P.",
+              "lastName": "CURRIE James P."
+            }
+          ]
+        },
+        "pubYear": "1995",
+        "abstractText": "Disclosed are compositions and methods for inhibiting the uptake of proteins and reducing the formation of lysozyme deposits on the outer surface and inner bulk matrix of hydrophilic contact lenses. One method comprises contacting a contact lens with a chemical agent selected from the group consisting of protamines, polyarginine, polylysine, chitosan and mixtures thereof. Another method comprises placing the lens in a hypotonic solution for a period of time sufficient to cause the lens to swell and the pores of the matrix to expand. A negatively charged chemical agent selected from the group consisting of chloride salts, chlorite salts, ethylenediaminetetraacetic acid sodium salts, cysteine salts and mixtures thereof is then added to the solution such that the osmotic pressure of the solution causes the lens and its pores to constrict to their normal size. The chemical agent is also present in an amount sufficient to cause desorption of the protein deposits from the surface and matrix of the lenss. Subsequently, the lens is soaked in the solution having the chemical agent for a period of time to appreciably reduce and/or inhibit the formation of protein deposits on and/or in the lens. Another method of this invention comprises contacting a contact lens with a high molecular weight, negatively charged chemical agent selected from the group consisting of, for example, alginic acid, xanthan gum and mixtures thereof.",
+        "affiliation": "ALLERGAN, INC.",
+        "language": "eng",
+        "pubTypeList": {
+          "pubType": [
+            "Patent"
+          ]
+        },
+        "patentDetails": {
+          "typeCode": "A1",
+          "typeDescription": "Publ. of Application with search report",
+          "countryCode": "EP",
+          "country": "European Patent Office",
+          "classifierList": {
+            "classifier": [
+              {
+                "classification": "A61L02/00",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/A/scheme-A61L.pdf"
+              },
+              {
+                "classification": "C11D03/33",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/34",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/37",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/38",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/384",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/22",
+                "classificationType": "MC",
+                "hyperlink": "http://worldwide.espacenet.com/classification?locale=en_EP#!/CPC=C11D03/22"
+              }
+            ]
+          },
+          "application": {
+            "applicationNumber": "EP19940902494",
+            "applicationDate": "1993-12-03",
+            "orderIn": 0
+          },
+          "priorityList": {
+            "priority": [
+              {
+                "priorityNumber": "US19920986959",
+                "orderIn": 1,
+                "priorityDate": "1993-12-03"
+              }
+            ]
+          }
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "SureChembl",
+              "url": "https://www.surechembl.org/document/EP-0673412-A1"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "EPO",
+              "url": "http://v3.espacenet.com/textdoc?DB=EPODOC&IDX=EP0673412"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1995-09-27",
+        "dateOfCreation": "1993-12-03",
+        "firstPublicationDate": "1993-12-03",
+        "firstIndexDate": "2006-02-20",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "WO9413774",
+        "source": "PAT",
+        "title": "CLEANING COMPOSITIONS AND METHOD FOR HYDROPHILIC CONTACT LENSES",
+        "authorString": "POWELL Charles Hayes, KARAGEOZIAN Hampar, CURRIE James P..",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "POWELL Charles Hayes",
+              "lastName": "POWELL Charles Hayes"
+            },
+            {
+              "fullName": "KARAGEOZIAN Hampar",
+              "lastName": "KARAGEOZIAN Hampar"
+            },
+            {
+              "fullName": "CURRIE James P.",
+              "lastName": "CURRIE James P."
+            }
+          ]
+        },
+        "pubYear": "1994",
+        "abstractText": "Disclosed are compositions and methods for inhibiting the uptake of proteins and reducing the formation of lysozyme deposits on the outer surface and inner bulk matrix of hydrophilic contact lenses. One method comprises contacting a contact lens with a chemical agent selected from the group consisting of protamines, polyarginine, polylysine, chitosan and mixtures thereof. Another method comprises placing the lens in a hypotonic solution for a period of time sufficient to cause the lens to swell and the pores of the matrix to expand. A negatively charged chemical agent selected from the group consisting of chloride salts, chlorite salts, ethylenediaminetetraacetic acid sodium salts, cysteine salts and mixtures thereof is then added to the solution such that the osmotic pressure of the solution causes the lens and its pores to constrict to their normal size. The chemical agent is also present in an amount sufficient to cause desorption of the protein deposits from the surface and matrix of the lenss. Subsequently, the lens is soaked in the solution having the chemical agent for a period of time to appreciably reduce and/or inhibit the formation of protein deposits on and/or in the lens. Another method of this invention comprises contacting a contact lens with a high molecular weight, negatively charged chemical agent selected from the group consisting of, for example, alginic acid, xanthan gum and mixtures thereof.",
+        "affiliation": "ALLERGAN, INC.",
+        "language": "eng",
+        "pubTypeList": {
+          "pubType": [
+            "Patent"
+          ]
+        },
+        "patentDetails": {
+          "typeCode": "A1",
+          "typeDescription": "Publ.of the Int.Appl. with Int.search report",
+          "countryCode": "WO",
+          "country": "World Intellectual Property Organization",
+          "classifierList": {
+            "classifier": [
+              {
+                "classification": "A61L02/00",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/A/scheme-A61L.pdf"
+              },
+              {
+                "classification": "C11D03/33",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/34",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/37",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/38",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/384",
+                "classificationType": "IPC",
+                "hyperlink": "http://www.cooperativepatentclassification.org/cpc/scheme/C/scheme-C11D.pdf"
+              },
+              {
+                "classification": "C11D03/22",
+                "classificationType": "MC",
+                "hyperlink": "http://worldwide.espacenet.com/classification?locale=en_EP#!/CPC=C11D03/22"
+              }
+            ]
+          },
+          "application": {
+            "applicationNumber": "WO1993US11732",
+            "applicationDate": "1993-12-03",
+            "orderIn": 0
+          },
+          "priorityList": {
+            "priority": [
+              {
+                "priorityNumber": "US19920986959",
+                "orderIn": 1,
+                "priorityDate": "1993-12-03"
+              }
+            ]
+          }
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "EPO",
+              "url": "http://v3.espacenet.com/textdoc?DB=EPODOC&IDX=WO9413774"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "SureChembl",
+              "url": "https://www.surechembl.org/document/WO-1994013774-A1"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1994-06-23",
+        "dateOfCreation": "1993-12-03",
+        "firstPublicationDate": "1993-12-03",
+        "firstIndexDate": "2006-02-21",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

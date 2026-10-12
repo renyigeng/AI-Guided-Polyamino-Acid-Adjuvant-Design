@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: LK01
+CANDIDATE HINT: K
+CHIRALITY HINT: L
+PMID: 23742880
+DOI: 10.1016/j.jconrel.2013.05.027
+
+TITLE:
+Cationic polypeptide micelle-based antigen delivery system: a simple and robust adjuvant to improve vaccine efficacy.
+
+ABSTRACT:
+Modern subunit vaccines with purified or recombinant antigens are important alternatives to the traditional vaccines. However, there remains a big challenge to elicit potent antibody production and CD8 T cell response. Nanoparticle-based antigen delivery systems have emerged as an innovative strategy to improve the efficacy of subunit vaccines. The present study reported self-assembled cationic micelles based on poly(ethylene glycol)-b-poly(L-lysine)-b-poly(L-leucine) (PEG-PLL-PLLeu) hybrid polypeptides as a simple and potent vaccine delivery system. The results showed that the PEG-PLL-PLLeu micelles spontaneously encapsulated OVA antigens with great loading capacity (LC=55%) and stability. More importantly, the polypeptide micelle formulations robustly enhanced vaccine-induced antibody production by 70-90 fold, which could be due to their capability of inducing dendritic cell maturation, enhancing antigen uptake and presentation, as well as promoting germinal center formation. Furthermore, the polypeptide micelles could simultaneously encapsulate OVA and polyriboinosinic: polyribocytidylic acid (PIC), a TLR3 agonist, to synergistically augment tumor specific cytotoxic-T-lymphocyte (CTL) response. Hence, the polypeptide micelle-based antigen delivery system could be a robust adjuvant to enhance vaccine-induced immune responses.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

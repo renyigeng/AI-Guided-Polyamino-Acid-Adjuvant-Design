@@ -1,0 +1,27 @@
+{
+  "summary": "This study investigates cellular uptake of short polyhistidine peptides (PHPs) into plant (Nicotiana tabacum) and yeast (Saccharomyces cerevisiae) cells. Uptake depends on histidine number; H6-H10 peptides internalize effectively, with H8 showing highest capacity and vacuole localization. Low temperature and net charge neutralization inhibit uptake in plant cells, but only temperature inhibits in yeast. The findings support PHPs as cell-penetrating peptides for non-mammalian cells.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "cellular uptake of PHPs into plant and yeast cells",
+    "vacuole localization of H8 peptide",
+    "dependence of penetration on number of histidines"
+  ],
+  "reported_numeric_results": [
+    "H6-H10 peptides" "short PHPs (H6-H10 peptides) showed effective internalization",
+    "H8 peptide showed the highest cell-penetrating capacity"
+  ],
+  "reported_qualitative_findings": [
+    "Low-temperature conditions significantly inhibited the cellular uptake of short PHPs by both cells.",
+    "Net charge neutralization of PHPs completely inhibited cellular uptake by plant cells, but not by yeast cells.",
+    "Mechanism of penetration is similar except for net charge dependency."
+  ],
+  "material_or_molecular_context": "short polyhistidine peptides (PHPs) of lengths H6, H7, H8, H9, H10",
+  "biological_context": "Nicotiana tabacum-cultured cells (plant) and Saccharomyces cerevisiae cells (yeast)",
+  "limitations_for_current_question": [
+    "Study does not explicitly address endosomal behavior or endocytic pathways.",
+    "Only plant and yeast cells were tested, not mammalian or immune cells.",
+    "Only short PHPs (H6-H10) were examined, not longer or histidine-based copolymers.",
+    "No details on intracellular trafficking beyond vacuolar localization in these cell types."
+  ],
+  "supporting_text": "short PHPs (H6-H10 peptides) showed effective internalization"
+}

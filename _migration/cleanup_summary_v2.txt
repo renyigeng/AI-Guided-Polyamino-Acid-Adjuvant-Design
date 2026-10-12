@@ -1,0 +1,78 @@
+=== CORE DATA ===
+data\stage1\decisions\candidate_evidence_packets.json
+data\stage1\decisions\functional_block_project_fit_decision.json
+data\stage1\decisions\functional_block_project_fit_summary.md
+data\stage1\decisions\functional_block_stage1_decision.json
+data\stage1\decisions\functional_block_stage1_summary.md
+data\stage1\decisions\kr_project_fit_evidence_packets.json
+data\stage1\decisions\lys_chirality_evidence.json
+data\stage1\decisions\manifest.json
+data\stage1\literature\manifest.json
+data\stage1\literature\query_expansion_snapshot.json
+data\stage1\literature\query_summary.csv
+data\stage1\literature\retrieved_metadata.csv
+data\stage1\literature\screening_all.csv
+data\stage1\literature\screening_worklist.csv
+data\stage1\literature\search_snapshot.json
+data\stage1\medcpt\manifest.json
+data\stage1\medcpt\medcpt_ranked_pairs.csv
+data\stage1\medcpt\rag_query_document_pairs.csv
+data\stage1\medcpt\rag_unique_documents.csv
+data\stage1\rag\contextual_evidence.csv
+data\stage1\rag\contextual_evidence.jsonl
+data\stage1\rag\manifest.json
+data\stage2\frozen\intrinsic_properties_candidate17.csv
+data\stage2\frozen\snapshot_manifest.json
+data\stage2\frozen\configs\dlys_metric_registry_v2.json
+data\stage2\frozen\configs\dlys_multicriteria_ranking_v2.json
+data\stage2\frozen\configs\dlys_posthoc_reference_targets_v1.json
+data\stage2\frozen\configs\dlys_stage2_taxonomy_v3.json
+data\stage2\frozen\d1_hydropathy_audit\hydropathy_scale_results.csv
+data\stage2\frozen\d1_hydropathy_audit\hydropathy_scale_summary.csv
+data\stage2\frozen\d1_hydropathy_audit\manifest.json
+data\stage2\frozen\d1_hydropathy_audit\summary.md
+data\stage2\frozen\discovery\discovered_indicators.csv
+data\stage2\frozen\discovery\domain_taxonomy.json
+data\stage2\frozen\discovery\indicator_evidence.csv
+data\stage2\frozen\discovery\indicator_validation_warnings.csv
+data\stage2\frozen\discovery\manifest.json
+data\stage2\frozen\discovery\summary.md
+data\stage2\frozen\final\criteria_unresolved.csv
+data\stage2\frozen\final\criteria_used.csv
+data\stage2\frozen\final\criterion_individual_ranks.csv
+data\stage2\frozen\final\final_candidates.csv
+data\stage2\frozen\final\final_diagnostics.csv
+data\stage2\frozen\final\final_report.md
+data\stage2\frozen\final\leave_one_criterion_out.csv
+data\stage2\frozen\final\pareto_dominance.csv
+data\stage2\frozen\final\pipeline_manifest.json
+data\stage2\frozen\final\ranking_agreement.csv
+data\stage2\frozen\final\weight_perturbation_sensitivity.csv
+data\stage2\frozen\ranking\borda_rankings.csv
+data\stage2\frozen\ranking\criteria_unresolved.csv
+data\stage2\frozen\ranking\criteria_used.csv
+data\stage2\frozen\ranking\criterion_individual_ranks.csv
+data\stage2\frozen\ranking\decision_diagnostics.csv
+data\stage2\frozen\ranking\decision_matrix_long.csv
+data\stage2\frozen\ranking\decision_matrix_wide.csv
+data\stage2\frozen\ranking\leave_one_criterion_out.csv
+data\stage2\frozen\ranking\manifest.json
+data\stage2\frozen\ranking\pareto_dominance.csv
+data\stage2\frozen\ranking\ranking_agreement.csv
+data\stage2\frozen\ranking\selected_representatives.csv
+data\stage2\frozen\ranking\single_criterion_rankings.csv
+data\stage2\frozen\ranking\summary.md
+data\stage2\frozen\ranking\topsis_rankings.csv
+data\stage2\frozen\ranking\weight_perturbation_sensitivity.csv
+
+=== PROMPTS ===
+prompts\stage1_icl_prompt.txt
+prompts\stage1_pairwise_fewshot.json
+prompts\stage1_target_query.txt
+
+=== PROVENANCE COUNTS ===
+provenance\stage1\europe_pmc_raw : 60 files
+provenance\stage1\rag_llm_calls : 291 files
+provenance\stage1\pairwise_calls : 36 files
+provenance\stage1\project_fit_calls : 8 files
+provenance\stage2\indicator_discovery : 0 files

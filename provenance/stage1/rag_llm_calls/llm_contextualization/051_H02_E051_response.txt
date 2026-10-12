@@ -1,0 +1,25 @@
+{
+  "summary": "This study uses polyhistidine as a cationic monomer in glutathione-responsive nanogels. The nanogels exhibit enhanced cellular uptake and endosomal escape, potentially due to thiol interactions, but the specific contribution of polyhistidine alone is not isolated.",
+  "relevance_score": 6,
+  "reported_outcomes": [
+    "intracellular uptake",
+    "endosomal escape",
+    "mRNA delivery"
+  ],
+  "reported_numeric_results": [
+    "encapsulation up to 89.3 %",
+    "loading 10.7 %"
+  ],
+  "reported_qualitative_findings": [
+    "disulphide-containing NGs exhibit enhanced cellular uptake and endosomal escape",
+    "NGs outperformed commercial transfection reagents across multiple cell lines"
+  ],
+  "material_or_molecular_context": "Glutathione-responsive nanogels composed of cationic monomers including polyhistidine, polyarginine, and acrylated guanidine, crosslinked with PEG-disulfide.",
+  "biological_context": "multiple cell lines including difficult-to-transfect lines; TIRF microscopy for RNA copy number",
+  "limitations_for_current_question": [
+    "Polyhistidine is used as a component of nanogels, not as a standalone material.",
+    "Enhanced uptake is attributed to thiol interactions, not specifically to histidine.",
+    "No direct evidence of histidine-mediated endosomal escape mechanism."
+  ],
+  "supporting_text": "disulphide-containing NGs exhibit enhanced cellular uptake and endosomal escape, potentially due to interactions with cell surface thiols."
+}

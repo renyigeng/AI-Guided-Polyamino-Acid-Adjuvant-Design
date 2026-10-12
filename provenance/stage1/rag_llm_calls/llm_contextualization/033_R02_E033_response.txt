@@ -1,0 +1,25 @@
+{
+  "summary": "Nonaarginine (R9) internalizes into mammalian cells exclusively via endocytosis, requiring binding to cell surface heparan sulfate, with subsequent release from endocytic vesicles. In live cells, R9 is confined to endocytic vesicles, contradicting earlier fixation-artifact claims of cytosolic/nucleolar localization.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "elucidate the pathway for PTD internalization",
+    "demonstrate that PTD internalization occurs via endocytosis rather than direct plasma membrane crossing"
+  ],
+  "reported_numeric_results": [
+    "K(d) = 109 nM (affinity of R9 for heparin)"
+  ],
+  "reported_qualitative_findings": [
+    "R9 is observed only in endocytic vesicles of live cells",
+    "R9 does not enter living cells deficient in heparan sulfate",
+    "R9 promotes leakage of liposomes but only at high peptide:lipid ratios",
+    "PTD-mediated delivery involves binding to cell surface HS, uptake by endocytosis, release upon HS degradation, and leakage from endocytic vesicles"
+  ],
+  "material_or_molecular_context": "nonaarginine (R9) – a cationic polyarginine peptide used as a protein transduction domain",
+  "biological_context": "mammalian cells (including heparan sulfate-deficient cells) and liposomes",
+  "limitations_for_current_question": [
+    "Only nonaarginine (R9) was studied; shorter or longer polyarginine chains may behave differently",
+    "Liposome leakage observed only at high peptide:lipid ratios, limiting direct physiological relevance",
+    "No direct measurement of endosomal escape efficiency or intracellular trafficking kinetics"
+  ],
+  "supporting_text": "PTD-mediated delivery involves binding to cell surface HS, uptake by endocytosis, release upon HS degradation, and leakage from endocytic vesicles."
+}

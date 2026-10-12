@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What direct comparative evidence is most relevant to differences between L-lysine and D-lysine in polypeptide, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, antigen-presentation, or immunotherapy systems?
+
+QUERY ID: KD02
+CANDIDATE HINT: K
+CHIRALITY HINT: L_vs_D
+PMID: 7935506
+DOI: 10.1016/0161-5890(94)90033-7
+
+TITLE:
+Lipophilic multiple antigen peptide system for peptide immunogen and synthetic vaccine.
+
+ABSTRACT:
+We describe the development and structural requirements of a new lipophilic multiple antigen peptide (lipoMAP) system for immunogens that contains a built-in lipophilic adjuvant and has the ability to elicit cytotoxic T-lymphocytes (CTLs). In addition to the peptide antigens of choice at the amino terminus, the basic lipoMAP design consists of three components: a tetravalent symmetrical core matrix containing two levels of branching beta-alanyl-lysine as a building unit, a hydrophilic Ser-Ser dipeptide linker, and at the carboxyl terminus, palmitoyl lysines (PL) with alternating chirality. An 18-residue peptide from the third variable region in the gp120 of HIV-1 was used as antigen in eight models for a structure-function study. Alternating palmitoyl lysine (PL) was introduced as the lipid anchor and built-in adjuvant because D and L Lys (Pal) was found via molecular modeling to best mimic phosphatidylcholine and thus provide the most stable peptide antigens on the ordered lipid membranes. The requirements of the palmitoyl lysines and the L-Ser-L-Ser linker were crucial, since replacement with palmitoyl serines or L-Ser-D-Ser linkers led to a marked decrease in immune response. The stoichimetric ratio of PL vs MAP was also important. Multiple antigen peptide (MAP) constructs without the lipophilic PLs, those that were underlipidated and contained one PL, or those that were overlipidated containing four PLs, were ineffective. LipoMAPs containing three palmitic acids elicited significant humoral responses in oil-based emulsion and liposomes, but not in water or alum formulations. LipoMAP containing only two PLs was found best to be incorporated in liposomes and elicited a significant immune response and cytotoxic T-lymphocytes (CTLs). These models were compared favorably with a preparation using tripalmitoyl-S-glyceryl cysteine (P3C) as the lipid anchor. We also developed a modular synthesis of MAP-P3C that incorporated P3C as a premade unit containing a thiopyridine, which simplified the overall scheme and minimized oxidation during stepwise peptide synthesis. This lipoMAP model is a new addition to the design of our macromolecular assemblage approach mimicking peptide antigens on the surface of micro-organisms. It may be a potentially useful approach to the design of a synthetic vaccine for humans.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: LK01
+CANDIDATE HINT: K
+CHIRALITY HINT: L;D;L_vs_D
+PMID: 41293927
+DOI: 10.1021/acsami.5c17645
+
+TITLE:
+Chiral-Structured Aluminum Oxyhydroxide Nanoadjuvants for Prophylactic Vaccines.
+
+ABSTRACT:
+The chirality of biomaterials plays a critical role in biological interactions, such as cellular uptake, receptor binding, and immune activation. Despite the widespread use of aluminum-based adjuvants in vaccines and significant advances in optimizing their physicochemical properties, the impact of chirality on immunological performance remains poorly understood. Here, we present a chiral engineering strategy for chiral aluminum oxyhydroxide (l-/d-AlOOH) nanoadjuvants using enantiomeric l- or d-lysine hydrochloride as the structure-directing agents. Both enantiomers modulate crystal growth by introducing anisotropic atomic arrangements. Owing to its stronger interaction with aluminum, l-lysine inhibits longitudinal growth of l-AlOOH and induces chiral structure formation with a lower aspect ratio. Adsorption studies reveal that l-AlOOH exhibits a lower adsorption coefficient for human papillomavirus antigen (HPV) type 18 L1 virus-like particles (VLPs), the antigen particles with spatial chirality, which was attributed to the intrinsic chirality mismatch between l-AlOOH and HPV 18 L1 VLPs. Correspondingly, l-AlOOH facilitates accelerated antigen release from the injection site and trafficking into the lymph nodes. Additionally, l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH. In HPV and hepatitis B surface antigen (HBsAg) vaccination models, l-AlOOH boosts antigen-specific antibody titers, indicating chirality-controlled humoral immunity. These findings demonstrate that the chiral configuration of AlOOH modulates its adjuvanticity through chirality-driven antigen delivery, providing a blueprint for the rational design of next-generation vaccine adjuvants.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

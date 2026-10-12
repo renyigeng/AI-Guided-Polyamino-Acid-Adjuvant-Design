@@ -1,0 +1,28 @@
+{
+  "summary": "Polyarginine (R9) protein transduction domain efficiently delivers protein antigen (OVA) to dendritic cells (DCs), resulting in enhanced MHC class I and II presentation, potent CD4+ and CD8+ T-cell activation, and superior antitumor immunity in a mouse tumor model.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Antigen presentation onto MHC class I and II",
+    "Activation of CD8+ and CD4+ T cells",
+    "Antitumor immunity and tumor regression",
+    "Complete rejection of tumors with adjuvant co-injection"
+  ],
+  "reported_numeric_results": [
+    "polyarginine (R9)-PTD (noted as most efficacious)"
+  ],
+  "reported_qualitative_findings": [
+    "R9-PTD-containing OVA transduced DCs most efficiently among tested PTDs",
+    "Transduction efficacy correlated with extent of Ag-specific CD4+ and CD8+ T-cell activation in vitro and in vivo",
+    "Repeated vaccination with R9-PTD-OVA-transduced DC induced enhanced antitumor immunity",
+    "Complete rejection of tumors when DC was co-injected with adjuvants"
+  ],
+  "material_or_molecular_context": "Recombinant fusion Ovalbumin (OVA) containing polyarginine (R9) protein transduction domain (PTD)",
+  "biological_context": "Dendritic cells (DCs) in vitro and in vivo mouse model with OVA-expressing tumors",
+  "limitations_for_current_question": [
+    "Only tested with OVA protein antigen; not directly with mRNA or other biomacromolecules",
+    "Antitumor immunity required adjuvants for complete rejection",
+    "Study limited to mouse model and dendritic cell delivery",
+    "No direct comparison with other arginine-based polypeptide materials beyond R9-PTD"
+  ],
+  "supporting_text": "R9-PTD-containing OVA transduced DCs most efficiently"
+}

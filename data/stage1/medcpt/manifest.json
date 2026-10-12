@@ -1,0 +1,44 @@
+{
+  "step": "functional_block_medcpt_rerank",
+  "version": "1.0",
+  "created_at_utc": "2026-09-22T07:16:45.708627+00:00",
+  "source_run": "E:\\Project\\tiaozhansai\\runs\\20260922T070718Z__functional-block-screening-prep",
+  "source_file": "E:\\Project\\tiaozhansai\\runs\\20260922T070718Z__functional-block-screening-prep\\screening_all.csv",
+  "model_id": "ncbi/MedCPT-Cross-Encoder",
+  "device": "cpu",
+  "selection_policy": "top_k_only_no_score_threshold",
+  "top_k": {
+    "background": 5,
+    "candidate": 6,
+    "lys_chirality": 8,
+    "synthetic_feasibility": 4
+  },
+  "query_ids": [
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "LK01",
+    "DK01",
+    "DK02",
+    "DK03",
+    "KD02",
+    "KD03"
+  ],
+  "ranked_query_document_pairs": 2111,
+  "selected_query_document_pairs": 97,
+  "selected_unique_documents": 76,
+  "scientific_boundary": {
+    "medcpt_score_meaning": "biomedical query-document relevance only",
+    "medcpt_score_is_not_immune_effect": true,
+    "no_hard_relevance_threshold": true
+  }
+}

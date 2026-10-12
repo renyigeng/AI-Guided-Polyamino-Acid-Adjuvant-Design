@@ -1,0 +1,23 @@
+{
+  "summary": "Tetragalloyl-D-lysine dendrimer (TGDK) targets primate M cells for oral vaccine delivery, inducing stool IgA and neutralizing activity against SIV, and is transcytosed by human M-like cells.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "M cell targeting and transcytosis in nonhuman primate and human M-like cells",
+    "Stool IgA response against rhesus CCR5-derived cyclopeptide",
+    "Neutralizing activity against SIV infection"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "TGDK was efficiently transported from intestinal lumen into rhesus Peyer's patches by M cells and accumulated in germinal centers",
+    "Oral administration of TGDK-conjugated cyclopeptide resulted in a statistically significant increase in stool IgA",
+    "TGDK specifically bound to human M-like cells and was efficiently transcytosed from apical to basolateral side"
+  ],
+  "material_or_molecular_context": "tetragalloyl-D-lysine dendrimer (TGDK)",
+  "biological_context": "nonhuman primate (rhesus macaque) in vivo and human M-like cell culture in vitro",
+  "limitations_for_current_question": [
+    "Study focuses on M cell targeting, not directly on dendritic cells, antigen presentation, or adjuvant effects",
+    "No explicit comparison of D-lysine dendrimer to other chiralities or non-dendrimer systems",
+    "Does not assess dendritic cell activation or maturation directly"
+  ],
+  "supporting_text": "tetragalloyl-D-lysine dendrimer (TGDK) to target M cells"
+}

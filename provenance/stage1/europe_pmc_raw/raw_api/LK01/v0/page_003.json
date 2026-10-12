@@ -1,0 +1,15 @@
+{
+  "version": "6.9",
+  "hitCount": 127,
+  "request": {
+    "queryString": "TITLE_ABS:(\"L-lysine\" OR \"poly-L-lysine\" OR \"poly(L-lysine)\") AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant OR vaccine OR adjuvant) AND TITLE_ABS:(dendritic OR immune OR immunotherapy OR \"antigen presentation\" OR \"cross-presentation\")",
+    "resultType": "core",
+    "cursorMark": "AoIIPeH7/yc0ODkwOTQ0",
+    "pageSize": 73,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": []
+  }
+}

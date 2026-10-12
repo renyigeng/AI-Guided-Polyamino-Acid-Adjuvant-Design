@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?
+
+QUERY ID: DK02
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 42624951
+DOI: 10.1038/s41598-026-67677-6
+
+TITLE:
+Comparative analysis of surface coatings for human neural co-cultures identifies fibronectin as a robust MEA substrate.
+
+ABSTRACT:
+Human induced pluripotent stem cell (hiPSC)-derived neurons offer a promising, physiologically relevant alternative to animal-based neurotoxicity models. However, the influence of the surface coating, a basic but important variable, has often been neglected. Here, the impact of commonly used surface coatings including polymers (polyethylenimine, poly-L-ornithine, poly-D-lysine, poly-L-lysine) as well as extracellular matrix proteins (laminin, fibronectin, Matrigel) on NGN2 neurons, primary human astrocytes, and neuron/astrocyte co-cultures was systematically investigated. Neurons cultured on polymer-only coatings exhibited a less mature neuronal network. Interestingly, neurons on polymers with laminin, laminin only, fibronectin and Matrigel exhibited no differences in protein and gene expression but displayed different electrophysiological profiles in co-culture with human primary astrocytes. The peak in number of network bursts was reached at different time points, with fibronectin and Matrigel as early as week 2. Co-cultures on fibronectin exhibited stable cell-electrode coupling and robust activity patterns up to week 6, despite being rarely used in MEA. In a proof-of-principle experiment, laminin, fibronectin and Matrigel were further evaluated in a donor-matched hiPSC-derived co-culture system, supporting the observed effects. This study highlights the importance of the coating selection for establishing neural cultures, ultimately improving the maturation and robustness of hiPSC-derived neuronal models for drug development.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

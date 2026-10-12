@@ -1,0 +1,23 @@
+{
+  "summary": "This study directly investigates the cellular uptake mechanisms of polylysine-based branched polypeptides. In HT-29 and HepG2 cells, uptake is mediated by macropinocytosis and caveolae/lipid raft-dependent endocytosis, with side chain structure and amino acid X's hydrophobicity/charge influencing internalization efficiency.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Cellular uptake characterization and mechanism identification for nine polylysine-based polypeptides"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Uptake is highly dependent on side chain structure (length, amino acid X identity, distance from backbone) and cell line",
+    "Internalization involves macropinocytosis and caveolae/lipid raft mediated endocytosis",
+    "Hydrophobicity and charge properties of amino acid X markedly influence efficacy of internalization",
+    "Uptake properties show similarities to cell penetrating peptides"
+  ],
+  "material_or_molecular_context": "Cationic branched polypeptides with poly[Lys] backbone: poly[Lys(X_i)], AK, XAK, AXK variants",
+  "biological_context": "HT-29 human colon carcinoma and HepG2 human hepatocarcinoma cell lines, in vitro",
+  "limitations_for_current_question": [
+    "Only two cell lines tested (colon and liver carcinoma)",
+    "No quantitative uptake or endosomal escape data provided",
+    "Does not assess intracellular trafficking or fate beyond initial entry",
+    "Concentration-dependent cytotoxicity only noted as 'essentially nontoxic' without numeric thresholds"
+  ],
+  "supporting_text": "predominantly macropinocytosis and caveole/lipid raft mediated endocytosis are involved"
+}

@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R02
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 30830784
+DOI: 10.1021/acs.jpcb.8b10483
+
+TITLE:
+Improved Intracellular Delivery of Polyarginine Peptides with Cargoes.
+
+ABSTRACT:
+Complementary to endocytosis, cell-penetrating peptides (CPPs) at high concentrations can penetrate the cell membrane in a direct way, which further makes CPPs popular candidates for delivering therapeutic or diagnostic agents. Although featured as rapid uptake, the translocation efficiency and potential toxicity of the direct penetration are usually affected by cargoes, which is still unclear. Here, using coarse-grained molecular dynamics simulations, we show that the polyarginine (R<sub>8</sub>) peptides penetrate the membrane through a water pore in the membrane, and the transmembrane efficiency is improved by conjugating to small nanoparticles (NPs) with proper linkers. It can be attributed to both the extension of the lifetime of the water pore by the NPs and outward diffusion of negative lipids in the asymmetry membrane, which induces the surrounding R<sub>8</sub>-NP conjugates to the water pore before it is closed. The translocation efficiency is closely related to the length of the linkers, and it gets the maximum value when the length of the linkers is around half of the membrane thickness. Overlong linkers not only decrease the transmembrane efficiency because of the blockage of NPs in the water pore but may also cause cytotoxicity because of the unclosed water pore. The results provide insights into the internalization of CPPs and facilitate the design of CPP and drug conjugates with high efficiency and low toxicity.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

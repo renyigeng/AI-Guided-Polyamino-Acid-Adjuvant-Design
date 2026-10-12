@@ -1,0 +1,30 @@
+{
+  "preference": "A",
+  "basis": [
+    "Polyhistidine provides strong endosomal escape via the proton-sponge mechanism and pH-responsive membrane disruption, which is critical for cytosolic antigen delivery and cross-presentation. Multiple studies directly demonstrate efficient cellular uptake, endosomal escape, and subsequent immune activation (E049, E050, E052, E057, E058, E064).",
+    "Evidence from polyhistidine-based block copolymers shows reinforced dendritic cell maturation, antigen cross-presentation, and cytotoxic T lymphocyte activation in tumor models (E063, E064), directly supporting the target vaccine function.",
+    "Polylysine-based materials have a well-documented limitation in endosomal escape, which is identified as the rate-limiting step for transfection even when internalization is efficient (E010). Although lysine-based constructs achieve strong immune responses, they often require additional help (e.g., chloroquine, other components) or are combined with hydrophobic blocks that may compensate, making the intrinsic lysine block less reliable for endosomal escape.",
+    "Both candidates have safety trade-offs, but polyhistidine shows low cytotoxicity in PEGylated forms (E059) and a proton-sponge mechanism that avoids membrane rupture (E058), whereas polylysine can be hemolytic and cytotoxic at higher concentrations (E013) and requires extensive modification to improve biocompatibility."
+  ],
+  "supporting_evidence_ids": [
+    "E049",
+    "E050",
+    "E052",
+    "E057",
+    "E058",
+    "E059",
+    "E062",
+    "E063",
+    "E064"
+  ],
+  "counter_evidence_ids": [
+    "E010",
+    "E013"
+  ],
+  "uncertainties": [
+    "Polyhistidine evidence for immune activation often combines it with other materials (e.g., PEG, PLA, cobalt porphyrin), so its independent contribution in a simple binary amphiphilic poly(amino acid) may be less established.",
+    "Polylysine-based nanovaccines (e.g., chiral polypeptide nanoparticles) show very high tumor inhibition rates and DC activation, but the role of the lysine block versus the hydrophobic block in facilitating endosomal escape and immune responses is not isolated.",
+    "Safety and biocompatibility data for both candidates are largely from modified or hybrid forms; pure polyhistidine or polylysine blocks at high molecular weights may have different toxicity profiles.",
+    "Most studies are in mice; transferability to human vaccine contexts remains unclear."
+  ]
+}

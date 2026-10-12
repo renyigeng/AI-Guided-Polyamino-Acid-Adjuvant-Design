@@ -1,0 +1,21 @@
+{
+  "summary": "This study explores an adenovirus-polylysine (AdpL) strategy for piggyback mRNA delivery, exploiting adenovirus entry biology. AdpL mediated effective gene transfer of mRNA vectors in vitro and in vivo, offering potential for mRNA therapeutics.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "Effective gene transfer of mRNA vectors in vitro and in vivo",
+    "Transgene expression via capsid-mediated endosome escape"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "AdpL could mediate effective gene transfer of mRNA vectors in vitro and in vivo",
+    "Method may offer key utilities to actualize mRNA-based therapeutics"
+  ],
+  "material_or_molecular_context": "Adenovirus-polylysine (AdpL), a conjugate of adenovirus capsid and polylysine for mRNA binding",
+  "biological_context": "In vitro cell studies and in vivo animal studies (not specified in abstract)",
+  "limitations_for_current_question": [
+    "Only one specific conjugate (AdpL) tested, not a broad library of lysine-based materials",
+    "No direct comparison with other polylysine or lysine-polypeptide delivery systems",
+    "Specific in vivo model not stated, limiting generalizability"
+  ],
+  "supporting_text": "AdpL could mediate effective gene transfer of mRNA vectors in vitro and in vivo."
+}

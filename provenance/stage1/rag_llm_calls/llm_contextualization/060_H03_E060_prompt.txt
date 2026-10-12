@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H03
+CANDIDATE HINT: H
+CHIRALITY HINT: 
+PMID: 
+DOI: 
+
+TITLE:
+CELL DELIVERY COMPOSITIONS
+
+ABSTRACT:
+The present invention provides improved cell delivery  compositions. In particular, the invention provides biocompatible endosomolytic  agents. In a preferred embodiment, the endosomolytic agents are also biodegradable  and can be broken down within cells into components that the cells can either  reuse or dispose of. Preferred endosomolytic agents include cationic polymers,  particularly those comprised of biomolecules, such as histidine, polyhistidine,  polylysine or any combination thereof. Other exemplary endosomolytic agents  include, but are not limited to, other imidazole containing compounds such as  vinylimidazole and histamine. More particularly preferred are those agents having  multiple proton acceptor sites and acting as a "proton sponge", disrupting the  endosome by osmolytic action. In preferred embodiments, the endosomolytic agent  comprises a plurality of proton acceptor sites having pKas within the range  of 4 to 7, which endosomal lysing component is polycationic at pH 4. The present  invention also contemplates the use of these endosomolytic agents as delivery  agents by complexation with the desired compound to be delivered. Thus, the  present invention also acts as a cell delivery system comprising an endosomolytic  agent, a delivery agent, and a compound to be delivered.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

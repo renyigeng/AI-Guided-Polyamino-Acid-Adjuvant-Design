@@ -1,0 +1,26 @@
+{
+  "summary": "This review covers K16ApoE, a polylysine-containing peptide shuttle that delivers therapeutic proteins and other large biomolecules across the blood-brain barrier, with demonstrated efficacy in animal models of lysosomal storage disorders, brain tumors, and neurodegenerative diseases, but also notes toxicity and translational challenges.",
+  "relevance_score": 5,
+  "reported_outcomes": [
+    "Co-administration of K16ApoE with therapeutic proteins mediates high brain concentrations",
+    "Significant substrate clearance and neurologic improvement in LINCL animal models",
+    "Efficacy in promoting delivery of chemotherapeutic agents, antibodies, and biologics for brain tumors and neurodegenerative diseases"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Co-administration of K16ApoE with therapeutic proteins can mediate high concentrations of this protein in brain tissue",
+    "Yield significant substrate clearance (pathological storage) and profound neurologic improvement and survival benefits in animal models",
+    "Peptide has shown efficacy in promoting delivery of chemotherapeutic agents, antibodies and biologics",
+    "Dose-dependent toxicity or nonspecific BBB permeability and immunogenicity persist",
+    "High levels of uncertainty in referencing animal findings to humans"
+  ],
+  "material_or_molecular_context": "K16ApoE, a synthetic peptide combining a polylysine-associated moiety with the receptor binding domain of apolipoprotein E (apoE)",
+  "biological_context": "Animal models of late-infantile neuronal ceroid lipofuscinosis (LINCL; CLN2 disease), brain tumors, and neurodegenerative diseases",
+  "limitations_for_current_question": [
+    "Study focuses on brain delivery, not general antigen/protein/vaccine/mRNA delivery",
+    "No direct evidence for antigen, vaccine, or mRNA delivery applications",
+    "Toxicity and immunogenicity issues limit translational potential",
+    "Results based on animal models with uncertain human relevance"
+  ],
+  "supporting_text": "K16ApoE, a synthetic peptide that combines a polylysine-associated moiety with the receptor binding domain of apolipoprotein E"
+}

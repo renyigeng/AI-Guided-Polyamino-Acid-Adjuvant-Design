@@ -1,0 +1,25 @@
+{
+  "preference": "A",
+  "basis": [
+    "Direct antigen/protein delivery relevance: multiple studies show lysine-based materials deliver mRNA (E001), protein antigens (E019, E002), and self-assembled nanovaccines (E022) with strong in vivo efficacy.",
+    "Dendritic-cell and immune activation: E001, E019, and E022 each report dendritic cell maturation, cross-presentation, and antigen-specific immune responses, including tumor inhibition (94.9% in E022).",
+    "Safety evidence is more comprehensive for lysine, with several studies reporting low hemolysis and cytotoxicity (E014, E015, E016, E018), despite some toxicity in star-configurations (E013).",
+    "For a tumor-vaccine functional block, direct vaccine-relevant immune outcomes are more informative than endosomal escape alone."
+  ],
+  "supporting_evidence_ids": [
+    "E001",
+    "E019",
+    "E022",
+    "E002",
+    "E010"
+  ],
+  "counter_evidence_ids": [
+    "E013",
+    "E057"
+  ],
+  "uncertainties": [
+    "Lysine-based materials show variable cytotoxicity depending on architecture (e.g., linear vs hyperbranched vs star); optimal formulation for the binary amphiphilic design is not specified.",
+    "Histidine's endosomal escape advantage (E049) could complement the vaccine design, but no supplied histidine evidence demonstrates comparable DC activation or vaccine efficacy in a poly(amino acid) functional block context.",
+    "Direct transferability of either candidate to the exact binary amphiphilic poly(amino acid) architecture is inferred from existing block copolymer examples (E022 for lysine, E064 for histidine) but not proven."
+  ]
+}

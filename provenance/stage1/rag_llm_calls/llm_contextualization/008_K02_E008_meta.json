@@ -1,0 +1,16 @@
+{
+  "model": "deepseek-v4-flash",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 946,
+    "total_tokens": 1844,
+    "completion_tokens_details": {
+      "reasoning_tokens": 570
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "response_id": "chatcmpl-c3ea8a52-bae3-91a7-ac07-6eb652b3e84a",
+  "prompt_sha256": "69711ff7c045d1a41bbc9e161d7edac79d8ee27839ac49aca0e54d5616d49733"
+}

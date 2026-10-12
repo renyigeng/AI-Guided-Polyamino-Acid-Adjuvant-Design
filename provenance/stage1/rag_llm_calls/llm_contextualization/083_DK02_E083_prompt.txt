@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?
+
+QUERY ID: DK02
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 42662463
+DOI: 10.1016/j.bioactmat.2026.08.009
+
+TITLE:
+Increasing hydrophobicity in poly(amino acid) adjuvants elicits potent and durable anti-tumor immunity &lt;i&gt;via&lt;/i&gt; coordinated cellular and humoral responses.
+
+ABSTRACT:
+The coordinated activation of cellular and humoral immunity is essential for robust anti-tumor efficacy and durable immune memory in tumor vaccination. However, most current strategies are biased toward one immune arm, and the rational adjuvant design that efficiently engages both immune arms remains a challenge. Here, the hydrophobic segment content in an amphiphilic poly(amino acid) was optimized to boost both immune responses. The copolymers, poly(L-phenylalanine)<sub>m</sub>-<i>block</i>-poly(D-lysine)<sub>10</sub> (m = 5, 10, or 15; F-<sub>D</sub>K), were synthesized with identical cationic components and different hydrophobic components. Increasing the phenylalanine ratio induced coordinated changes in nanoparticle size, surface charge, and structural rigidity, thereby enhancing dendritic cell uptake, TLR4-mediated activation, and antigen presentation. After subcutaneous injection into mice, F<sub>15</sub>-<sub>D</sub>K<sub>10</sub>/OVA, with longest chain of poly(L-phenylalanine), triggered robust CD8<sup>+</sup> T cell cytotoxicity and strong B cell-mediated antibody response. Meanwhile, splenic central memory T cells and lymph node memory B cells increased by 1.46- and 2.19-fold, compared with the free ovalbumin (OVA). In the OVA-expressing Lewis lung cancer (LLC-OVA) therapeutic model, vaccines with increasing phenylalanine achieved tumor inhibition rates of 31.62%, 65.35%, and 97.81%. Importantly, F<sub>15</sub>-<sub>D</sub>K<sub>10</sub>/OVA achieved 100% tumor-free survival in the LLC-OVA prevention model. Even after two tumor re-challenges, 54.55% of mice remained tumor-free for 644 days, demonstrating durable antigen-specific protection in this model. A CT26 whole-cell-lysate study provided supporting evidence of therapeutic efficacy in one additional syngeneic tumor model. Within the tumor and antigen systems evaluated here, rational tuning of hydrophobic moieties in poly(amino acid) is an effective strategy to enhance tumor vaccine efficacy and long-term anti-tumor immune memory.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,24 @@
+{
+  "preference": "K",
+  "architecture_fit": {
+    "verdict": "K",
+    "reason": "Evidence for K includes amphiphilic block copolymers (PEG-PLL-PLLeu, L15K6) and polypeptide nanoparticles (chiral poly(phe)-block-poly(lys)), closely matching the target amphiphilic binary poly(amino acid) architecture. R evidence is limited to PTD fusions and nanofibers, lacking direct block copolymer analogues.",
+    "evidence_ids": ["E003", "E022", "E002"]
+  },
+  "vaccine_mechanism_fit": {
+    "verdict": "K",
+    "reason": "K evidence demonstrates robust dendritic cell maturation, antigen cross-presentation, CTL responses, and in vivo tumor inhibition, often outperforming alum (E002, E022). R evidence shows strong T-cell activation and MHC presentation but lacks explicit cross-presentation and direct adjuvant superiority.",
+    "evidence_ids": ["E002", "E022", "E003"]
+  },
+  "delivery_safety_balance": {
+    "verdict": "TIE",
+    "reason": "K evidence shows excellent biocompatibility with low hemolysis and high cell viability (E014, E015, E016), while R evidence indicates context-dependent safety (some hemolysis at high doses) but superior endosomal escape (E032). Both have acceptable trade-offs; no clear advantage for this project.",
+    "evidence_ids": ["E014", "E015", "E016", "E037", "E038", "E032"]
+  },
+  "counter_evidence_ids": ["E032"],
+  "uncertainties": [
+    "Direct head-to-head comparison of K vs R in the exact project architecture is lacking.",
+    "Endosomal escape advantage of R (E032) may be critical for biomacromolecule delivery but safety concerns are mitigated in specific formulations.",
+    "Cross-presentation evidence for K is robust but limited to OVA model; generalizability to other antigens is assumed."
+  ]
+}

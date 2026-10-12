@@ -1,0 +1,23 @@
+{
+  "summary": "Lipo-poly(L-histidine) hybrid materials conjugated with IR820 dye exhibit pH-sensitivity, efficient intracellular delivery of doxorubicin, and intrinsic targetability to cancer cells. The abstract explicitly reports active internalization, endosomal-triggered release, and drug escape from endosomes, supporting relevance to intracellular uptake and endosomal behavior of histidine-based polypeptide materials.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "intracellular delivery of doxorubicin",
+    "suppression of MCF-7 tumors in vitro and in vivo"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "pH-sensitivity",
+    "efficient intracellular delivery",
+    "intrinsic targetability to cancer cells",
+    "good stability under physiological conditions",
+    "combined mechanisms of EPR effect, active internalization, endosomal-triggered release, drug escape from endosomes, and long blood circulation time"
+  ],
+  "material_or_molecular_context": "lipo-poly(L-histidine) hybrid materials conjugated with IR820 dye",
+  "biological_context": "MCF-7 breast cancer cells and tumor model",
+  "limitations_for_current_question": [
+    "Material is a hybrid (lipo + poly(L-histidine) + IR820), not pure polyhistidine or histidine-based polypeptide",
+    "Results are specific to MCF-7 cancer cells; generalizability to other cell types or systems is not shown"
+  ],
+  "supporting_text": "active internalization, endosomal-triggered release, and drug escape from endosomes"
+}

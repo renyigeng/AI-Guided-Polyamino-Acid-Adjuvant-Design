@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: DK01
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 6219908
+DOI: 
+
+TITLE:
+Effect of helper T cells on prevention of tolerance induction in effector T cells responsible for syngeneic tumor immunity.
+
+ABSTRACT:
+The present study investigates the role of helper T cells in preventing tolerance in effector T cells responsible for syngeneic tumor immunity. Tolerance in T cell-mediated immune responses against X5563 plasmacytoma was induced in syngeneic C3H/He mice by intravenous (iv) administration of 7,000 R X-irradiated X5563 tumor cells. Since the anti-X5563 tumor tolerance was observed irrespective of whether the tumor cells had been modified with trinitrophenyl (TNP) hapten prior to iv inoculation, the ability of TNP-reactive helper T cells to prevent the tolerance induced by iv inoculation of TNP-X5563 tumor cells was examined. TNP-reactive helper T cell activity was generated in C3H/He mice by immunization with TNP-isologous mouse gamma-globulin after inoculation with the TNP-conjugate of a non-immunogenic co-polymer of D-glutamic acid and D-lysine. Intravenous inoculation with TNP-modified X5563 cells induced tolerance in mice not primed with TNP. However, such tolerance was prevented in mice in which TNP-reactive helper T cell activity had been generated. These results indicate that helper T cells play a crucial role in preventing effector T cell tolerance. The mechanisms by which tolerance induction in effector T cells is circumvented are discussed in relation to the generation and delivery of signals required for T cell activation.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,29 @@
+{
+  "preference": "B",
+  "basis": [
+    "Polyarginine (R9/R18) provides more direct evidence for dendritic-cell antigen delivery, MHC I/II presentation, and potent antitumor T-cell responses in vaccine contexts (E044, E025, E043).",
+    "Polyarginine synergizes with adjuvants (CpG-ODN, CDNs) to produce prolonged, systemic T-cell immunity lasting >372 days (E027, E045, E047).",
+    "Arginine-specific endosomal leakage activity is demonstrated, with a clear structure-activity relationship for cytosolic delivery (E032, E033).",
+    "Safety profiles for polyarginine are explicitly assessed in relevant ex vivo and in vivo models, showing tolerability and low hemolysis/immunogenicity (E037, E038, E039).",
+    "His evidence often relies on polyhistidine as a tag or in hybrid systems, with less direct demonstration of intrinsic immune activation or antigen presentation by the poly(amino acid) block alone."
+  ],
+  "supporting_evidence_ids": [
+    "E025",
+    "E027",
+    "E032",
+    "E033",
+    "E037",
+    "E038",
+    "E039",
+    "E043",
+    "E044",
+    "E045",
+    "E047"
+  ],
+  "counter_evidence_ids": [],
+  "uncertainties": [
+    "Polyarginine's endosomolytic activity and safety have a narrow arginine-content window; the optimal block length for the target architecture is not specified in the supplied evidence.",
+    "His-based materials show pH-dependent endosomal escape and in vivo antitumor immune responses, but these outcomes are often achieved in combination with other components (e.g., PEG, cargo), making the intrinsic contribution of polyhistidine less certain.",
+    "Transferability to an amphiphilic binary poly(amino acid) block is plausible for both, but direct comparisons within the same architecture are missing."
+  ]
+}

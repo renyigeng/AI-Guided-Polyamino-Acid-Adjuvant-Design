@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R03
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 35812346
+DOI: 10.1016/j.bbrep.2022.101305
+
+TITLE:
+Assessment of the safety of the cationic arginine-rich peptides (CARPs) poly-arginine-18 (R18 and R18D) in <i>ex vivo</i> models of mast cell degranulation and red blood cell hemolysis.
+
+ABSTRACT:
+Our laboratory focuses on the development of novel neuroprotective cationic peptides, such poly-arginine-18 (R18: 18-mer of l-arginine; net charge +18) and its d-enantiomer R18D in stroke and other brain injuries. In the clinical development of R18/R18D, their cationic property raises potential safety concerns on their non-specific effects to induce mast cell degranulation and hemolysis. To address this, we first utilised primary human cultured mast cells (HCMCs) to examine anaphylactoid effects. We also included as controls, the well-characterised neuroprotective TAT-NR2B9c peptide and the widely used heparin reversal peptide, protamine. Degranulation assay based on β-hexosaminidase release demonstrated that R18 and R18D did not induce significant mast cell degranulation in both untreated (naïve) and IgE-sensitised HCMCs in a dose-response study to a maximum peptide concentration of 16 μM. Similarly, TAT-NR2B9c and protamine did not induce significant mast cell degranulation. To examine hemolytic effects, red blood cells (RBCs), were incubated with the peptides at a concentration range of 1-16 μM in the absence or presence of 2% plasma. Measurement of hemoglobin absorbance revealed that only R18 induced a modest, but significant degree of hemolysis at the 16 μM concentration, and only in the absence of plasma. This study addressed the potential safety concern of the application of the cationic neuroprotective peptides, especially, R18D, on anaphylactoid responses and hemolysis. The findings indicate that R18, R18D, TAT-NR2B9c and protamine are unlikely to induce histamine mediated anaphylactoid reactions or RBC hemolysis when administered intravenously to patients.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

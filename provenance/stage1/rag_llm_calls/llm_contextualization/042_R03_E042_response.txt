@@ -1,0 +1,28 @@
+{
+  "summary": "This study used polyarginine (pARG) in a layer-by-layer assembly with nanoparticle albumin-bound paclitaxel (nab-PTX) to improve stability and systemic performance. It reported increased cytotoxicity in breast cancer cells, inhibited drug-induced hemolysis, and improved pharmacokinetics, indicating enhanced biocompatibility and safety.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "cytotoxicity in MCF-7 and MDA-MB-231 breast cancer cells",
+    "apoptosis induction in MCF-7 and MDA-MB-231 cells",
+    "inhibition of drug-induced hemolysis",
+    "improved blood circulation potential and AUC"
+  ],
+  "reported_numeric_results": [
+    "approximately 52% apoptosis in MCF-7 cells",
+    "approximately 22% apoptosis in MDA-MB-231 cells"
+  ],
+  "reported_qualitative_findings": [
+    "LbL-nab-PTX prevented dissociation and improved colloidal stability at 100-fold dilution",
+    "combined effect of high nanoparticle internalization and controlled release increased cytotoxicity",
+    "LbL assembly prevented exposure of PTX to systemic environment and inhibited hemolysis",
+    "increased blood circulation potential and improved therapeutic efficacy"
+  ],
+  "material_or_molecular_context": "polyarginine (pARG) as one of the polymers in layer-by-layer assembly, along with PEG-b-PLD, on albumin-bound paclitaxel (nab-PTX)",
+  "biological_context": "MCF-7 and MDA-MB-231 human breast cancer cell lines (in vitro); in vivo pharmacokinetic study (likely rodent)",
+  "limitations_for_current_question": [
+    "Polyarginine is used as a coating polymer, not as the primary therapeutic agent; effects on cytotoxicity/hemolysis are from the whole nanoformulation",
+    "No separate evaluation of polyarginine alone for cytotoxicity or hemolysis",
+    "In vivo safety data limited to pharmacokinetics and efficacy, not full biocompatibility assessment"
+  ],
+  "supporting_text": "LbL assembly of polypeptides effectively prevented exposure of PTX to the systemic environment and thereby inhibited drug-induced hemolysis."
+}

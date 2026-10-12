@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polyarginine or arginine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: R01
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 12297395
+DOI: 10.1016/s0264-410x(02)00343-2
+
+TITLE:
+Poly-L-arginine synergizes with oligodeoxynucleotides containing CpG-motifs (CpG-ODN) for enhanced and prolonged immune responses and prevents the CpG-ODN-induced systemic release of pro-inflammatory cytokines.
+
+ABSTRACT:
+This study describes an entirely synthetic vaccine composed of antigenic peptides (T cell epitopes), oligodeoxynucleotides containing CpG-motifs (CpG-ODN) and poly-L-arginine (pR). CpG-ODN are known to be potent inducers of predominantly type 1-like immune responses, while polycationic amino acids, like pR, facilitate the uptake of antigens into antigen presenting cells (APCs). We demonstrate that the application of peptides and pR/CpG-ODN results in strongly enhanced peptide-specific immune responses as compared to the application of peptides with either of the immunomodulators alone. High numbers of antigen-specific T cells can be observed even after only one injection of the vaccine for a remarkably long period of time (at least 372 days). Furthermore, the potentially harmful systemic release of pro-inflammatory cytokines induced upon injection of CpG-ODN is inhibited. Thus, the combined application of CpG-ODN and pR may represent a novel vaccine strategy in humans.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

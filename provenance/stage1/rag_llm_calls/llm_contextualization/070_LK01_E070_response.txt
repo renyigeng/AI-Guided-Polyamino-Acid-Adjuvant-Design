@@ -1,0 +1,25 @@
+{
+  "summary": "This study shows that L-lysine-containing PLL-g-PEG copolymers on microspheres enhance poly(I:C) adjuvant activity for dendritic cell maturation, demonstrating the immune effects of L-lysine-based polymer systems.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "maturation of monocyte-derived dendritic cells (MoDCs)",
+    "cytokine secretion pattern of MoDCs",
+    "ability to stimulate T cell proliferation"
+  ],
+  "reported_numeric_results": [
+    "surface-assembled poly(I:C) enhanced MoDC maturation efficacy by up to two orders of magnitude compared to free poly(I:C)"
+  ],
+  "reported_qualitative_findings": [
+    "cytokine secretion pattern of MoDCs after exposure to surface-assembled poly(I:C) differed from that of free poly(I:C)",
+    "ability to stimulate T cell proliferation was similar between surface-assembled and free poly(I:C)",
+    "phagocytic signaling plays an important role in defining the resulting immune response"
+  ],
+  "material_or_molecular_context": "polystyrene microspheres coated with polycationic poly(l-lysine)-graft-poly(ethylene glycol) copolymers (PLL-g-PEG) and surface-assembled poly(I:C)",
+  "biological_context": "human monocyte-derived dendritic cells (MoDCs) in vitro",
+  "limitations_for_current_question": [
+    "L-lysine polymer (PLL) is used as a coating component, not as a standalone adjuvant; effect is primarily attributed to poly(I:C) and phagocytosis",
+    "study is in vitro only; no in vivo data on vaccine adjuvant effects",
+    "microsphere size and composition (polystyrene) may not be directly translatable to other nanoparticles"
+  ],
+  "supporting_text": "Surface-assembled poly(I:C) exhibited strongly enhanced efficacy to stimulate MoDC maturation by up to two orders of magnitude"
+}

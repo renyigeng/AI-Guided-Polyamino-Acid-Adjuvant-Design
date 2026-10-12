@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K03
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 39268705
+DOI: 10.1099/jmm.0.001886
+
+TITLE:
+Antimicrobial spectrum against wound pathogens and cytotoxicity of star-arranged poly-l-lysine-based antimicrobial peptide polymers.
+
+ABSTRACT:
+<b>Introduction.</b> As growing numbers of patients are at higher risk of infection, novel topical broad-spectrum antimicrobials are urgently required for wound infection management. Robust pre-clinical studies should support the development of such novel antimicrobials.<b>Gap statement.</b> To date, evidence of robust investigation of the cytotoxicity and antimicrobial spectrum of activity of antimicrobial peptides (AMP)s is lacking in published literature. Using a more clinical lens, we address this gap in experimental approach, building on our experience with poly-l-lysine (PLL)-based AMP polymers.<b>Aim.</b> To evaluate the <i>in vitro</i> bactericidal activity and cytotoxicity of a PLL-based 16-armed star AMP polymer, designated 16-PLL<sub>10</sub>, as a novel candidate antimicrobial.<b>Methods.</b> Antimicrobial susceptibilities of clinical isolates and reference strains of ESKAPE (<i>Enterococcus</i> spp., <i>Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa</i>, <i>Enterobacter</i> spp.) pathogens, to 16-PLL<sub>10</sub> were investigated. Human erythrocyte haemolysis and keratinocyte viability assays were used to assess toxicity. Modifications were made to 16-PLL<sub>10</sub> and re-evaluated for improvement.<b>Results.</b> Minimum bactericidal concentration of 16-PLL<sub>10</sub> ranged from 1.25 µM to ≥25 µM. At 2.5 µM, 16-PLL<sub>10</sub> was broadly bactericidal against ESKAPE strains/wound isolates. Log-reduction in colony forming units (c.f.u.) per millilitre after 1 h, ranged from 0.3 (<i>E. cloacae</i>) to 5.6 (<i>K. pneumoniae</i>). At bactericidal concentrations, 16-PLL<sub>10</sub> was toxic to human keratinocyte and erythrocytes. Conjugates of 16-PLL<sub>10</sub>, Trifluoroacetylated (TFA)-16-PLL<sub>10</sub>, and Poly-ethylene glycol (PEG)ylated 16-PLL<sub>10</sub>, synthesised to address toxicity, only moderately reduced cytotoxicity and haemolysis.<b>Conclusions.</b> Due to poor selectivity indices, further development of 16-PLL<sub>10</sub> is unlikely warranted. However, considering the unmet need for novel topical antimicrobials, the ease of AMP polymer synthesises/modification is attractive. To support more rational development, prioritising clinically relevant pathogens and human cells, to establish selective toxicity profiles <i>in vitro</i>, is critical. Further characterisation and discovery utilising artificial intelligence and computational screening approaches can accelerate future AMP nanomaterial development.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

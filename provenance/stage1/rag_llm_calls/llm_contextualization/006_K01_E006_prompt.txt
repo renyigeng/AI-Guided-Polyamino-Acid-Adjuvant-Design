@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: K01
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 36298724
+DOI: 10.3390/v14102169
+
+TITLE:
+A Novel Piggyback Strategy for mRNA Delivery Exploiting Adenovirus Entry Biology.
+
+ABSTRACT:
+Molecular therapies exploiting mRNA vectors embody enormous potential, as evidenced by the utility of this technology for the context of the COVID-19 pandemic. Nonetheless, broad implementation of these promising strategies has been restricted by the limited repertoires of delivery vehicles capable of mRNA transport. On this basis, we explored a strategy based on exploiting the well characterized entry biology of adenovirus. To this end, we studied an adenovirus-polylysine (AdpL) that embodied "piggyback" transport of the mRNA on the capsid exterior of adenovirus. We hypothesized that the efficient steps of Ad binding, receptor-mediated entry, and capsid-mediated endosome escape could provide an effective pathway for transport of mRNA to the cellular cytosol for transgene expression. Our studies confirmed that AdpL could mediate effective gene transfer of mRNA vectors in vitro and in vivo. Facets of this method may offer key utilities to actualize the promise of mRNA-based therapeutics.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

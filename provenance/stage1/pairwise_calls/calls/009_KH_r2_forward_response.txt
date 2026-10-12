@@ -1,0 +1,16 @@
+{
+  "preference": "A",
+  "basis": [
+    "Candidate A (Lys) has direct vaccine-relevant evidence: hyperbranched poly-L-lysine mediates mRNA delivery with dendritic cell maturation and in vivo expression (E001), a polyleucine-polylysine conjugate enhances antigen uptake, DC maturation, TLR4/NF-κB activation, and outperforms alum (E019), and chiral poly(lysine) block nanoparticles induce DC maturation, antigen cross-presentation, and achieve 94.9% tumor inhibition in a melanoma model (E022).",
+    "Candidate A shows strong safety profiles in multiple systems: no hemolysis or organ toxicity (E014), reduced hemolysis compared to PLL alone (E015), and low hemolysis (<5%) with high cell viability (>80%) in hydrogel form (E016).",
+    "Candidate B (His) has strong endosomal escape evidence (E049, E057, E058) and some immune activation (E064, E063), but the immune-relevant evidence often uses polyhistidine as a tag or in complex copolymers where its individual contribution is not isolated, and direct vaccine-efficacy data are less robust than for Lys."
+  ],
+  "supporting_evidence_ids": ["E001", "E019", "E022", "E014", "E015", "E016"],
+  "counter_evidence_ids": ["E013"],
+  "uncertainties": [
+    "Most lysine evidence uses modified or copolymer forms (HBPL, L15K6, P_D-K), not simple polylysine, so transferability to the specific target amphiphilic binary poly(amino acid) architecture is not fully demonstrated.",
+    "One lysine study (star-arranged PLL, E013) shows significant cytotoxicity and hemolysis at bactericidal concentrations, though this is a specific architecture.",
+    "Histidine-based materials have well-documented pH-dependent endosomal escape, which could be advantageous for vaccine delivery, but direct immune activation and in vivo tumor vaccine data for a pure polyhistidine functional block are lacking in the supplied evidence.",
+    "The evidence does not include direct head-to-head comparisons of lysine vs. histidine functional blocks in the same delivery context."
+  ]
+}

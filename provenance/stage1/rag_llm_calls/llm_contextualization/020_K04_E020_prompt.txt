@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K04
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 32565351
+DOI: 10.1016/j.xphs.2020.06.009
+
+TITLE:
+Immunostimulant Complexed With Polylysine Limits Transport and Maintains Immune Cell Activation.
+
+ABSTRACT:
+Activation of the immune system to treat cancer has emerged as a powerful therapy tool, however, treatments must overcome the immunosuppressive microenvironment established by tumors. Toll-like receptor (TLR) agonists like CpG and polyI:C are potent stimulators of non-specific, pro-inflammatory immune responses, targeting TLR9 and TLR3, respectively. While these immunostimulants seem promising, systemic exposure can eventually induce severe side effects. Adverse inflammatory reactions in healthy tissues may be avoided by delivering and retaining immunostimulants in proximity to tumors or to primary sites of tumor metastases. Immunostimulants such as CpG and polyI:C cannot be completely immobilized, however, since the target TLR9 and TLR3 are located intracellularly. Previously, polycations like poly-l-lysine (PLL) have been complexed to the anionic CpG or polyI:C with the purpose of improving intracellular delivery and potency. Here, the relationship between PLL molecular weight and immunostimulant complexation, TLR activation, and transport in a simple, model tumor microenvironment was investigated. The polyplexes could be formulated to dramatically limit immunostimulant transport suggesting the potential for injection site retention and minimized systemic exposure of immunostimulants. The molecular weight of PLL and ratio of PLL to immunostimulant affected the accessibility of the immunostimulant within the polyplex and polyplex interaction strength.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

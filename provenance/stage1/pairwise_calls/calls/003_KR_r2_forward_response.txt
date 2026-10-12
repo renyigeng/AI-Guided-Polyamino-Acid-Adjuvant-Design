@@ -1,0 +1,25 @@
+{
+  "preference": "A",
+  "basis": [
+    "Direct evidence of an amphiphilic diblock poly(amino acid) nanovaccine (poly(L-phenylalanine)-block-poly(lysine); E022) achieving dendritic-cell maturation, antigen cross-presentation, and 94.9% tumor inhibition, which is highly transferable to the target architecture.",
+    "Multiple studies demonstrate antigen/mRNA delivery (E001, E019) and dendritic-cell activation (E001, E019, E022), providing strong immune-activation evidence for lysine-based materials.",
+    "Favorable safety profile across diverse lysine-based formulations (E014, E015, E016, E018), with only one counter-example in a star-arranged form (E013).",
+    "Arginine lacks direct evidence in an amphiphilic poly(amino acid) block copolymer for tumor-vaccine delivery; its endosomal-escape advantage (E032) does not overcome the absence of architecture-matched immune efficacy data."
+  ],
+  "supporting_evidence_ids": [
+    "E022",
+    "E001",
+    "E019",
+    "E014",
+    "E015",
+    "E016"
+  ],
+  "counter_evidence_ids": [
+    "E013"
+  ],
+  "uncertainties": [
+    "The relative endosomal-escape efficiency of lysine-based materials compared to arginine-based materials in the target diblock architecture remains unquantified.",
+    "Generalizability of the antitumor efficacy from the OVA model (E022) to other tumor antigens is not confirmed.",
+    "In vivo safety at therapeutic doses for the specific diblock poly(amino acid) is not directly assessed; extrapolation from other lysine-based materials may not fully capture toxicity trade-offs."
+  ]
+}

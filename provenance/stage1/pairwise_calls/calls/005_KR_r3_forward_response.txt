@@ -1,0 +1,29 @@
+{
+  "preference": "A",
+  "basis": [
+    "Candidate A (Lys) includes direct evidence of an amphiphilic binary poly(amino acid) material (poly(L-phenylalanine)-block-poly(L-lysine)) achieving strong DC maturation, antigen cross-presentation, and high tumor inhibition rate (94.9%) in a melanoma model (E022); this architecture precisely matches the target design.",
+    "Candidate A also shows multiple examples of antigen/protein delivery, DC activation, and immune responses in polylysine-containing block or conjugate systems (E001, E002, E019), providing convergent support for the intended tumor-vaccine role.",
+    "Candidate B (Arg) has strong evidence for arginine-specific endosomal leakage (E032) and T-cell activation (E044, E043), but lacks direct evidence of a binary poly(amino acid) block architecture; the endosomal advantage may not translate to the target amphiphilic system without direct testing.",
+    "Safety evidence for both candidates is mixed, but Candidate A includes several reports of low hemolysis and biocompatibility in lysine-based materials (E014, E015, E016, E018), and the key vaccine-active material (E022) was effective in vivo without reported toxicity.",
+    "The decision dimensions of direct delivery relevance, DC-targeted immune activation, and architectural transferability are more strongly and directly supported by Candidate A evidence."
+  ],
+  "supporting_evidence_ids": [
+    "E022",
+    "E001",
+    "E002",
+    "E019",
+    "E014",
+    "E016",
+    "E010",
+    "E011"
+  ],
+  "counter_evidence_ids": [
+    "E013",
+    "E032"
+  ],
+  "uncertainties": [
+    "The endosomal escape advantage of polyarginine (E032) is not tested in the target amphiphilic binary poly(amino acid) architecture; polylysine-based systems have shown sufficient cytosolic delivery for cross-presentation (E022).",
+    "Safety of the specific poly(L-phenylalanine)-block-poly(L-lysine) material (E022) in a tumor vaccine setting is not detailed in the abstract, but in vivo tumor inhibition implies tolerability.",
+    "Most arginine evidence uses short oligoarginine (R9) or homopolymers, not amphiphilic block copolymers; architectural transferability remains unvalidated."
+  ]
+}

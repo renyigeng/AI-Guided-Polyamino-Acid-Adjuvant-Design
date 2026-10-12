@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: DK01
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 41510149
+DOI: 10.7150/thno.121911
+
+TITLE:
+A novel whole cancer cell vaccine based on modified β-glucan elicits robust anti-tumor immunity.
+
+ABSTRACT:
+<b>Background</b>: Although autologous whole tumour cells provide broad-spectrum antigens for personalised cancer vaccines, their weak immunogenicity necessitates adjuvant co-delivery systems. <b>Methods</b>: We developed a conjugate adjuvant (G-PL) by coupling modified yeast β-glucan with poly-D-lysine. Electron microscopy confirmed its binding to GL261 cell membranes. The adjuvant-cell complex (ICC@G-PL) was constructed by coating irradiated tumour cells with G-PL. We evaluated the recruitment/activation of dendritic cells (DCs), lymph node priming, tumour-specific immunity, and therapeutic efficacy in glioblastoma, colon cancer, and melanoma models. Dectin-1-mediated Th17 induction was analysed via Western blotting and flow cytometry. <b>Results</b>: G-PL (≤ 500 μg/mL) rapidly adhered to cell membranes without cytotoxicity. <i>In vitro</i>, it enhanced DC uptake of tumour components, maturation, and non-pathogenic Th17 differentiation. <i>In vivo</i>, ICC@G-PL recruited DCs at injection sites, activated draining lymph nodes, and elevated plasma levels of IL-12, TNF-α, and IFN-γ. The vaccine prolonged survival in both therapeutic and preventive models, increasing intratumoral CD8<sup>+</sup>/CD4<sup>+</sup> T cell ratios, M1 macrophages, and neutrophils. Dectin-1 downregulation in DCs correlated with Th17-driven anti-tumour responses. <b>Conclusions</b>: G-PL, a novel β-glucan-based adjuvant, enables rapid construction of autologous whole-cell vaccines. This strategy enhances tumour-specific immunity and reprogrammes the tumour microenvironment, offering a universal platform for personalised cancer immunotherapy.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

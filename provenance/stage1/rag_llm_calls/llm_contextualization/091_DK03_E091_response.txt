@@ -1,0 +1,26 @@
+{
+  "summary": "DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL) acts as a B-cell tolerogen: a 6-hr pulse elicits an immune response comparable to antigen, while 48-hr preincubation induces tolerance in DNP-specific B-cell lines.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "immune response in B-cell lines",
+    "tolerance induction in B-cell lines"
+  ],
+  "reported_numeric_results": [
+    "6-hr preincubation with DNP-MGG augments immune response",
+    "at least a 36-hr incubation required for tolerance induction",
+    "6-hr pulse with DNP-dGL elicits the same immune response as DNP-MGG"
+  ],
+  "reported_qualitative_findings": [
+    "Initial binding of tolerogen to Ig receptor elicits an activation signal similar to antigen",
+    "Suppressive effect of tolerogen occurs at a later stage of B-cell activation, proliferation, and differentiation"
+  ],
+  "material_or_molecular_context": "DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL)",
+  "biological_context": "Nonmalignant dinitrophenyl (DNP)-specific B lymphocyte cell lines derived from normal mice, without contaminating T cells",
+  "limitations_for_current_question": [
+    "In vitro cell line study, not in vivo",
+    "Uses DNP as a hapten, not directly a therapeutic vaccine or nanoadjuvant",
+    "Focus on B-cell tolerance/immunity, not directly on T-cell, antibody, or antitumor outcomes",
+    "Polymer composed of D-glutamic acid and D-lysine, not pure D-lysine polymer or nanoparticle system"
+  ],
+  "supporting_text": "A 6-hr pulse with a DNP-conjugated polymer of D-glutamic acid and D-lysine ... elicited the same immune response"
+}

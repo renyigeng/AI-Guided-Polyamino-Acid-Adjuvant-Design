@@ -1,0 +1,22 @@
+{
+  "preference": "A",
+  "basis": [
+    "Direct head-to-head comparison in polypeptide nanoparticle nanoadjuvants (E093, E096) shows that poly(D-lysine)-containing nanoparticles (P_D-K-OVA) more robustly induce dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to poly(L-lysine)-containing nanoparticles (P_L-K-OVA), achieving 94.9% tumor inhibition in a B16-OVA melanoma model.",
+    "These direct comparisons are in the specified systems (polypeptide, nanoparticle, nanoadjuvant, dendritic-cell, vaccine) and are given highest evidentiary priority per the instructions.",
+    "The conflicting direct comparisons in aluminum oxyhydroxide nanoadjuvants (E094, E097) involve lysine only as a structure-directing agent, not as the primary immune component, and are therefore less directly relevant to lysine chirality in polypeptide/nanoparticle systems."
+  ],
+  "direct_comparison_evidence_ids": [
+    "E093",
+    "E096"
+  ],
+  "supporting_evidence_ids": [
+    "E082",
+    "E088",
+    "E075"
+  ],
+  "uncertainties": [
+    "Direct comparison evidence is limited to a single model antigen (OVA) and one tumor model (B16-OVA melanoma).",
+    "A conflicting direct comparison in aluminum oxyhydroxide nanoadjuvants (E094, E097) shows L-lysine-induced material yields better outcomes, but that system uses lysine only as a chiral inducer, not as the active polymer component.",
+    "No direct L-vs-D lysine comparison in human cells or clinical systems is available."
+  ]
+}

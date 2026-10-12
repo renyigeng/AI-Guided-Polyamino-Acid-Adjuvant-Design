@@ -1,0 +1,31 @@
+{
+  "summary": "This study on l-lysine-derived zwitterionic brushes (p(LysAA)) reports excellent biocompatibility: relative cell growth rates over 90%, hemolysis rate below 1%, intradermal reaction scores less than 1.0, and antithrombotic efficacy in vitro and in vivo, directly addressing safety endpoints for lysine-based polypeptide materials.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "relative cell growth rates",
+    "hemolysis rate",
+    "intradermal reaction scores",
+    "platelet and red blood cell adhesion",
+    "thrombus formation in rabbit model"
+  ],
+  "reported_numeric_results": [
+    "relative cell growth rates of over 90%",
+    "hemolysis rate of below 1%",
+    "intradermal reaction scores of less than 1.0"
+  ],
+  "reported_qualitative_findings": [
+    "excellent biocompatibility",
+    "effectively suppressed fouling by proteins, bacteria, platelets, and red blood cells",
+    "antithrombotic efficacy both in vitro and in vivo",
+    "no obvious clotting after 1 h circulation in rabbit arterio-jugular vein shunt model"
+  ],
+  "material_or_molecular_context": "poly(ε-acryloyl l-lysine) (p(LysAA)) zwitterionic brushes; l‑lysine-derived, not polylysine itself but lysine-based",
+  "biological_context": "in vitro cell culture (likely L929 or similar for cell growth), rabbit arterio-jugular vein shunt model for thrombosis, intradermal reaction in rabbits",
+  "limitations_for_current_question": [
+    "Material is a specific zwitterionic brush (p(LysAA)) rather than free polylysine, limiting direct extrapolation to other lysine-based polypeptides",
+    "Only one lysine-based form tested; no comparison to other polypeptide materials",
+    "Safety data are from catheter-specific application; general toxicity (e.g., systemic) not reported",
+    "No long-term cytotoxicity or hemocompatibility data provided"
+  ],
+  "supporting_text": "excellent biocompatibility, as evidenced by relative cell growth rates of over 90%, a hemolysis rate of below 1%"
+}

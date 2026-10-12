@@ -1,0 +1,24 @@
+{
+  "summary": "Polyarginine (11R) protein transduction domain enables efficient in vivo delivery of proteins and bioactive compounds across plasma membranes, with subcellular targeting and broad tissue distribution.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "protein transduction across plasma membrane",
+    "subcellular localization control (nuclei, mitochondria, post-synaptic density)",
+    "in vivo delivery to brain, heart, skeletal muscle, liver, pancreas, lymphocytes"
+  ],
+  "reported_numeric_results": [
+    "most efficient with 11-arginine (11R)"
+  ],
+  "reported_qualitative_findings": [
+    "very efficient method applicable to cultured cells, tissue slices, and whole animals",
+    "useful strategy in post-genomic era for cancer cells and neuroscience"
+  ],
+  "material_or_molecular_context": "polyarginine (11R) protein transduction domain (PTD)",
+  "biological_context": "eukaryotic cells, tissue slices, whole animal models (brain, heart, skeletal muscle, liver, pancreas, lymphocytes)",
+  "limitations_for_current_question": [
+    "focus is on protein delivery; vaccine, mRNA, or antigen delivery not explicitly addressed",
+    "mini-review, not primary experimental data on immune responses",
+    "efficiency for biomacromolecules other than proteins not specified"
+  ],
+  "supporting_text": "polyarginine (most efficiently by 11-arginine, 11R) protein transduction domain"
+}

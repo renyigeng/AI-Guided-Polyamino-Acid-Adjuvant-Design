@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H04
+CANDIDATE HINT: H
+CHIRALITY HINT: 
+PMID: 33955746
+DOI: 10.1021/acsami.1c03709
+
+TITLE:
+Lymph Node Delivery Strategy Enables the Activation of Cytotoxic T Lymphocytes and Natural Killer Cells to Augment Cancer Immunotherapy.
+
+ABSTRACT:
+Lymph nodes are the main sites for immune activation and surveillance. Effective delivery of immunomodulators into lymph nodes to trigger antitumor immunity is essential for cancer treatment. Here, we propose a lymph node delivery strategy to modulate the immune response by activating cytotoxic T lymphocytes (CTLs) and natural killer (NK) cells simultaneously. Novel pH/redox dual-sensitive micelles were prepared using poly(l-histidine)-poly(ethylene glycol) (PLH-PEG) as a skeleton, which can effectively deliver immunomodulators to the lymph nodes due to their suitable particle size. At 48 h after subcutaneous injection, the accumulation efficiency in lymph nodes increased 8.12-fold compared with the control group. Subsequently, Trp2/CpG-coloaded pH/redox dual-sensitive micelles (Trp2/CpG-NPs) acted on antigen-presenting cells, fully promoting CTL activation through dendritic cell antigen cross-presentation and macrophage repolarization. IL-15-loaded pH/redox dual-sensitive micelles (IL-15-NPs) were developed to activate the killing effect of NK cells by interacting with IL-15 receptors. In the tumor-bearing mice model, this lymph node delivery strategy showed significant antitumor efficiency and the tumor inhibition rate reached 93.76%. Meanwhile, the infiltration of CTLs and NK cells in tumor tissues increased, and the immunosuppressive microenvironment was relieved by the repolarization of macrophages from M2-type to M1-type. Overall, this study highlighted the potential of the lymph node delivery strategy for cancer immunotherapy.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,21 @@
+{
+  "summary": "This study uses poly ICLC (poly IC stabilized with carboxymethylcellulose and poly-L-lysine) as an adjuvant in a dendritic cell-targeted protein vaccine. The vaccine, consisting of HIV gag-p24 antigen conjugated to an anti-DEC-205 monoclonal antibody, is administered with poly ICLC to induce T-cell and B-cell immunity in mice, rhesus macaques, and humans. The poly-L-lysine component is part of the adjuvant formulation, relevant to the query's focus on L-lysine-containing systems in immune, dendritic-cell, and adjuvant contexts.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "Induction of T-cell and B-cell responses in mice, rhesus macaques, and healthy human volunteers"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "DC-targeted protein vaccines are highly immunogenic in mice, rhesus macaques, and humans",
+    "Human subjects form both T- and B-cell responses to DC-targeted protein",
+    "Poly ICLC as adjuvant is effective in combination with DC-targeted vaccine"
+  ],
+  "material_or_molecular_context": "poly ICLC (synthetic double-stranded RNA poly IC stabilized with carboxymethylcellulose and poly-L-lysine) used as adjuvant; anti-DEC-205 monoclonal antibody as DC-targeting vehicle; HIV gag-p24 protein antigen",
+  "biological_context": "dendritic cells (DEC-205 receptor); in vivo studies in mice, rhesus macaques, and healthy human volunteers",
+  "limitations_for_current_question": [
+    "Poly-L-lysine is only a minor stabilizing component of the complex adjuvant poly ICLC, not studied in isolation",
+    "The study does not evaluate the specific contribution of poly-L-lysine to immune effects",
+    "Antigen (HIV gag-p24) and targeting antibody are the primary focus, not the L-lysine-containing system itself"
+  ],
+  "supporting_text": "poly ICLC stabilized with carboxymethylcellulose and poly-L-lysine, as adjuvant"
+}

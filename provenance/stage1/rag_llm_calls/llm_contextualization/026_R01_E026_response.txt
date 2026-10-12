@@ -1,0 +1,20 @@
+{
+  "summary": "This commentary discusses the use of cationic peptides, particularly polyarginine, as protein transduction domains to facilitate cellular entry of molecules, relevant to biomacromolecule delivery.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "cellular internalization of molecules"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "cationic peptides including polyarginine can facilitate entry into mammalian cells",
+    "the process has physiological relevance"
+  ],
+  "material_or_molecular_context": "cationic peptides, including polyarginine",
+  "biological_context": "mammalian cells",
+  "limitations_for_current_question": [
+    "review/commentary without primary experimental data",
+    "no specific cargo (antigen, protein, vaccine, mRNA) evaluated",
+    "only covers internalization, not endosomal escape or immune activation"
+  ],
+  "supporting_text": "Facilitating entry of molecules into mammalian cells including polyarginine"
+}

@@ -1,0 +1,26 @@
+{
+  "summary": "This article describes multivalent nanocomplexes containing poly(L-lysine) (PLL), hyaluronic acid (HA), and CpG ODNs that enhance antigen-presenting cell stimulation, cellular uptake, endosomal TLR9 activation, and induce antitumor and memory immune responses. The PLL component is directly relevant to L-lysine-containing polymer systems for immune effects.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "enhanced stimulation of immune cells in vitro",
+    "antitumor and systemic immune memory response in vivo",
+    "tumor growth inhibition",
+    "strong antitumor memory response"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "multivalent HA-CpG nanoconjugate efficiently stimulated antigen-presenting cells",
+    "multivalent PLL/HA-CpG nanocomplex led to enhanced cellular uptake",
+    "continuous stimulation of endosomal TLR9",
+    "mice vaccinated with dendritic cells treated with nanocomplex exhibited tumor growth inhibition and strong memory response"
+  ],
+  "material_or_molecular_context": "hyaluronic acid (HA)-based multivalent nanoconjugates and nanocomplexes containing CpG ODNs (TLR9 ligand) and cationic poly(L-lysine) (PLL) for enhanced cellular uptake",
+  "biological_context": "antigen-presenting cells (APCs), dendritic cells, mouse model (in vivo vaccination)",
+  "limitations_for_current_question": [
+    "The L-lysine is part of a specific formulation with HA and CpG ODNs; direct effects of L-lysine alone cannot be isolated",
+    "The system targets endosomal TLR9, which may not generalize to other immune receptors",
+    "No direct comparison of L-lysine-free controls to quantify its specific contribution",
+    "Study focuses on cancer immunotherapy; other immune contexts not examined"
+  ],
+  "supporting_text": "multivalent PLL/HA-CpG nanocomplex also led to an enhanced cellular uptake as well as continuous stimulation of endosomal TLR9"
+}

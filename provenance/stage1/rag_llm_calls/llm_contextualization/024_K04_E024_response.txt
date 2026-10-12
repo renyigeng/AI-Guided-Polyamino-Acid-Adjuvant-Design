@@ -1,0 +1,27 @@
+{
+  "summary": "Cationic poly-l-lysine was used to assemble polymer DNA wires into nanospheres that improved cellular uptake and continuously stimulated TLR9, enhancing immune cell activation. This shows polylysine-based materials can serve as delivery vectors for CpG adjuvants to boost immunostimulatory activity.",
+  "relevance_score": 7,
+  "reported_outcomes": [
+    "immune response triggered",
+    "pro-inflammatory cytokine secretion stimulated",
+    "cancer cell apoptosis induced",
+    "cellular uptake improved",
+    "lysosomal Toll-like receptor 9 stimulation",
+    "activation of immune cells enhanced"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "polymer DNA wires acted as programmable multivalent immunoadjuvants",
+    "polymer nanospheres assembled from DNA wires and poly-l-lysine further improved cellular uptake and continuously stimulate TLR9",
+    "self-assembled polymer DNA nanoassemblies with multivalent CpG trigger strong immune response and induce cancer cell death"
+  ],
+  "material_or_molecular_context": "self-assembled polymer DNA wires (containing CpG motifs) and polymer nanospheres assembled from those wires and cationic poly-l-lysine",
+  "biological_context": "immune cells (lysosomal TLR9), cancer cells",
+  "limitations_for_current_question": [
+    "does not explicitly mention dendritic cells or antigen presentation/cross-presentation",
+    "poly-l-lysine is used as a cationic component, not as the primary immunostimulant",
+    "study focuses on CpG-mediated TLR9 activation, not on polylysine's direct adjuvant activity",
+    "no comparison of poly-l-lysine alone or other lysine-based polypeptides"
+  ],
+  "supporting_text": "polymer nanospheres assembled from polymer DNA wires and cationic poly-l-lysine further improved cellular uptake and enhanced immune cell activation"
+}

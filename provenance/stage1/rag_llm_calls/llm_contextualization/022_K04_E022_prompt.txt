@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K04
+CANDIDATE HINT: K
+CHIRALITY HINT: L;D;L_vs_D
+PMID: 36732117
+DOI: 10.1016/j.scib.2023.01.024
+
+TITLE:
+Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.
+
+ABSTRACT:
+The chirality of bioactive molecules is closely related to their functions. D-amino acids commonly distributed in the bacterial cell walls trigger a robust anti-infective immune response. Inspired by that, two kinds of chiral polypeptides, poly(L-phenylalanine)-block-poly(L-lysine) (P<sub>L</sub>-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P<sub>D</sub>-K), were synthesized and used as nanoadjuvants of nanovaccines for cancer prevention and therapy. The amphiphilic polypeptides self-assembled into nanoparticles with a diameter of about 30 nm during ultrasonic-assisted dissolution in phosphate-buffered saline. The nanovaccines P<sub>L</sub>-K-OVA and P<sub>D</sub>-K-OVA were easily prepared by mixing solutions of P<sub>L</sub>-K or P<sub>D</sub>-K and the model antigen chicken ovalbumin (OVA), respectively, with loading efficiencies of almost 100%. Compared to P<sub>L</sub>-K-OVA, P<sub>D</sub>-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response. More importantly, it effectively prevented and treated the OVA-expressed B16-OVA melanoma model. P<sub>D</sub>-K-OVA achieved a tumor inhibition rate of 94.9% and even 97.0% by combining with anti-PD-1 antibody. Therefore, the chiral polypeptide nanoparticles represent simple, efficient, and extensively applicable nanoadjuvants for various nanovaccines.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

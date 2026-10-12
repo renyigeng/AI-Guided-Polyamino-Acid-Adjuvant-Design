@@ -1,0 +1,14 @@
+# Core deterministic screening / ranking
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+pymcdm==1.4.0
+
+# Notebook / figures
+matplotlib==3.11.2
+jupyter==1.1.1
+notebook==7.6.2
+ipykernel==7.3.0
+
+# Tests
+pytest==9.1.1

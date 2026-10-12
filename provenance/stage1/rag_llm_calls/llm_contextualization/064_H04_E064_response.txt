@@ -1,0 +1,28 @@
+{
+  "summary": "This study uses poly(l-histidine)-poly(ethylene glycol) (PLH-PEG) pH/redox dual-sensitive micelles to deliver immunomodulators to lymph nodes, demonstrating dendritic cell antigen cross-presentation and CTL activation, along with NK cell activation and macrophage repolarization, in a tumor-bearing mouse model.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "activation of cytotoxic T lymphocytes (CTLs) and natural killer (NK) cells",
+    "dendritic cell antigen cross-presentation",
+    "macrophage repolarization from M2-type to M1-type",
+    "antitumor efficiency with tumor inhibition"
+  ],
+  "reported_numeric_results": [
+    "accumulation efficiency in lymph nodes increased 8.12-fold compared with the control group at 48 h after subcutaneous injection",
+    "tumor inhibition rate reached 93.76%"
+  ],
+  "reported_qualitative_findings": [
+    "pH/redox dual-sensitive micelles can effectively deliver immunomodulators to the lymph nodes due to their suitable particle size",
+    "Trp2/CpG-coloaded pH/redox dual-sensitive micelles fully promoted CTL activation through dendritic cell antigen cross-presentation and macrophage repolarization",
+    "IL-15-loaded pH/redox dual-sensitive micelles activated the killing effect of NK cells by interacting with IL-15 receptors",
+    "the immunosuppressive microenvironment was relieved by the repolarization of macrophages from M2-type to M1-type"
+  ],
+  "material_or_molecular_context": "poly(l-histidine)-poly(ethylene glycol) (PLH-PEG) based pH/redox dual-sensitive micelles",
+  "biological_context": "tumor-bearing mice model; lymph nodes; dendritic cells; macrophages; cytotoxic T lymphocytes; natural killer cells",
+  "limitations_for_current_question": [
+    "The study does not isolate the contribution of the polyhistidine backbone from the cargo (Trp2/CpG and IL-15) or the PEG component",
+    "Results are from a mouse model and may not directly translate to human vaccine responses",
+    "No direct comparison to other adjuvants or materials for dendritic cell activation"
+  ],
+  "supporting_text": "dendritic cell antigen cross-presentation"
+}

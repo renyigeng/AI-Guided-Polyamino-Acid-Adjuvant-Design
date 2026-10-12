@@ -1,0 +1,616 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-09-22T06:44:56.567830+00:00",
+  "method": "candidate-neutral dimension-level LLM query expansion; deterministic K/R/H rendering",
+  "source_search_config": "configs\\functional_block_search.json",
+  "source_search_config_sha256": "0a2580e6163e336157d0d24204c87545e33a5a64be39ae69c50582433a53c99e",
+  "source_expansion_config": "configs\\functional_block_query_expansion_v1.json",
+  "source_expansion_config_sha256": "db0c08f80f9a4e8df385d9bf2292f9f7258055201bc87d0e2a954c766c989442",
+  "llm": {
+    "api_key_env_used": "TIAOZHANSAI_LLM_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "timeout_seconds": 120,
+    "retries": 3
+  },
+  "generation_policy": {
+    "generated_variants_per_dimension": 2,
+    "preserve_canonical_query_as_v0": true,
+    "candidate_neutral_generation": true,
+    "apply_same_dimension_variants_to_K_R_H": true,
+    "no_manual_edit_after_retrieval_results_seen": true,
+    "no_relevance_or_biological_score_generation": true
+  },
+  "generated_variants_per_dimension": 2,
+  "dimension_variants": {
+    "direct_delivery": [
+      {
+        "variant_id": "v1",
+        "concept_groups": [
+          [
+            "vaccine delivery",
+            "antigen delivery"
+          ],
+          [
+            "cellular uptake",
+            "antigen presentation"
+          ]
+        ],
+        "normalization_note": ""
+      },
+      {
+        "variant_id": "v2",
+        "concept_groups": [
+          [
+            "mRNA delivery",
+            "protein delivery"
+          ],
+          [
+            "polymer carrier",
+            "nanoparticle carrier"
+          ]
+        ],
+        "normalization_note": ""
+      }
+    ],
+    "intracellular_endosomal": [
+      {
+        "variant_id": "v1",
+        "concept_groups": [
+          [
+            "cellular uptake",
+            "internalization",
+            "endosomal escape",
+            "endosome release"
+          ]
+        ],
+        "normalization_note": "flattened_2_groups_to_1_or_group"
+      },
+      {
+        "variant_id": "v2",
+        "concept_groups": [
+          [
+            "intracellular trafficking",
+            "subcellular localization",
+            "endosomal localization",
+            "endosome accumulation"
+          ]
+        ],
+        "normalization_note": "flattened_2_groups_to_1_or_group"
+      }
+    ],
+    "safety": [
+      {
+        "variant_id": "v1",
+        "concept_groups": [
+          [
+            "cytotoxicity",
+            "cell viability",
+            "hemolysis",
+            "membrane damage",
+            "biocompatibility",
+            "safety"
+          ]
+        ],
+        "normalization_note": "flattened_3_groups_to_1_or_group"
+      },
+      {
+        "variant_id": "v2",
+        "concept_groups": [
+          [
+            "cytotoxic",
+            "cell death",
+            "hemolytic",
+            "membrane integrity",
+            "biocompatible",
+            "tissue compatibility",
+            "viability assay",
+            "live/dead"
+          ]
+        ],
+        "normalization_note": "flattened_4_groups_to_1_or_group"
+      }
+    ],
+    "immune_activation_dc": [
+      {
+        "variant_id": "v1",
+        "concept_groups": [
+          [
+            "dendritic cell activation",
+            "DC activation",
+            "antigen presentation",
+            "cross-presentation",
+            "dendritic cell maturation",
+            "DC maturation"
+          ]
+        ],
+        "normalization_note": "flattened_3_groups_to_1_or_group"
+      },
+      {
+        "variant_id": "v2",
+        "concept_groups": [
+          [
+            "adjuvant activity",
+            "vaccine adjuvant",
+            "immune activation",
+            "immunostimulation",
+            "vaccine response",
+            "vaccine-induced immunity"
+          ]
+        ],
+        "normalization_note": "flattened_3_groups_to_1_or_group"
+      }
+    ]
+  },
+  "rendered_candidate_queries": {
+    "K01": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "direct_delivery",
+        "concept_groups": [
+          [
+            "vaccine delivery",
+            "antigen delivery"
+          ],
+          [
+            "cellular uptake",
+            "antigen presentation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"vaccine delivery\" OR \"antigen delivery\") AND TITLE_ABS:(\"cellular uptake\" OR \"antigen presentation\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "direct_delivery",
+        "concept_groups": [
+          [
+            "mRNA delivery",
+            "protein delivery"
+          ],
+          [
+            "polymer carrier",
+            "nanoparticle carrier"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"mRNA delivery\" OR \"protein delivery\") AND TITLE_ABS:(\"polymer carrier\" OR \"nanoparticle carrier\")"
+      }
+    ],
+    "K02": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "intracellular_endosomal",
+        "concept_groups": [
+          [
+            "cellular uptake",
+            "internalization",
+            "endosomal escape",
+            "endosome release"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"cellular uptake\" OR internalization OR \"endosomal escape\" OR \"endosome release\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "intracellular_endosomal",
+        "concept_groups": [
+          [
+            "intracellular trafficking",
+            "subcellular localization",
+            "endosomal localization",
+            "endosome accumulation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"intracellular trafficking\" OR \"subcellular localization\" OR \"endosomal localization\" OR \"endosome accumulation\")"
+      }
+    ],
+    "K03": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "safety",
+        "concept_groups": [
+          [
+            "cytotoxicity",
+            "cell viability",
+            "hemolysis",
+            "membrane damage",
+            "biocompatibility",
+            "safety"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(cytotoxicity OR \"cell viability\" OR hemolysis OR \"membrane damage\" OR biocompatibility OR safety)"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "safety",
+        "concept_groups": [
+          [
+            "cytotoxic",
+            "cell death",
+            "hemolytic",
+            "membrane integrity",
+            "biocompatible",
+            "tissue compatibility",
+            "viability assay",
+            "live/dead"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(cytotoxic OR \"cell death\" OR hemolytic OR \"membrane integrity\" OR biocompatible OR \"tissue compatibility\" OR \"viability assay\" OR \"live/dead\")"
+      }
+    ],
+    "K04": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "immune_activation_dc",
+        "concept_groups": [
+          [
+            "dendritic cell activation",
+            "DC activation",
+            "antigen presentation",
+            "cross-presentation",
+            "dendritic cell maturation",
+            "DC maturation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"dendritic cell activation\" OR \"DC activation\" OR \"antigen presentation\" OR cross-presentation OR \"dendritic cell maturation\" OR \"DC maturation\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "immune_activation_dc",
+        "concept_groups": [
+          [
+            "adjuvant activity",
+            "vaccine adjuvant",
+            "immune activation",
+            "immunostimulation",
+            "vaccine response",
+            "vaccine-induced immunity"
+          ]
+        ],
+        "query": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"adjuvant activity\" OR \"vaccine adjuvant\" OR \"immune activation\" OR immunostimulation OR \"vaccine response\" OR \"vaccine-induced immunity\")"
+      }
+    ],
+    "R01": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "direct_delivery",
+        "concept_groups": [
+          [
+            "vaccine delivery",
+            "antigen delivery"
+          ],
+          [
+            "cellular uptake",
+            "antigen presentation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"vaccine delivery\" OR \"antigen delivery\") AND TITLE_ABS:(\"cellular uptake\" OR \"antigen presentation\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "direct_delivery",
+        "concept_groups": [
+          [
+            "mRNA delivery",
+            "protein delivery"
+          ],
+          [
+            "polymer carrier",
+            "nanoparticle carrier"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"mRNA delivery\" OR \"protein delivery\") AND TITLE_ABS:(\"polymer carrier\" OR \"nanoparticle carrier\")"
+      }
+    ],
+    "R02": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "intracellular_endosomal",
+        "concept_groups": [
+          [
+            "cellular uptake",
+            "internalization",
+            "endosomal escape",
+            "endosome release"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"cellular uptake\" OR internalization OR \"endosomal escape\" OR \"endosome release\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "intracellular_endosomal",
+        "concept_groups": [
+          [
+            "intracellular trafficking",
+            "subcellular localization",
+            "endosomal localization",
+            "endosome accumulation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"intracellular trafficking\" OR \"subcellular localization\" OR \"endosomal localization\" OR \"endosome accumulation\")"
+      }
+    ],
+    "R03": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "safety",
+        "concept_groups": [
+          [
+            "cytotoxicity",
+            "cell viability",
+            "hemolysis",
+            "membrane damage",
+            "biocompatibility",
+            "safety"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(cytotoxicity OR \"cell viability\" OR hemolysis OR \"membrane damage\" OR biocompatibility OR safety)"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "safety",
+        "concept_groups": [
+          [
+            "cytotoxic",
+            "cell death",
+            "hemolytic",
+            "membrane integrity",
+            "biocompatible",
+            "tissue compatibility",
+            "viability assay",
+            "live/dead"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(cytotoxic OR \"cell death\" OR hemolytic OR \"membrane integrity\" OR biocompatible OR \"tissue compatibility\" OR \"viability assay\" OR \"live/dead\")"
+      }
+    ],
+    "R04": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "immune_activation_dc",
+        "concept_groups": [
+          [
+            "dendritic cell activation",
+            "DC activation",
+            "antigen presentation",
+            "cross-presentation",
+            "dendritic cell maturation",
+            "DC maturation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"dendritic cell activation\" OR \"DC activation\" OR \"antigen presentation\" OR cross-presentation OR \"dendritic cell maturation\" OR \"DC maturation\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "immune_activation_dc",
+        "concept_groups": [
+          [
+            "adjuvant activity",
+            "vaccine adjuvant",
+            "immune activation",
+            "immunostimulation",
+            "vaccine response",
+            "vaccine-induced immunity"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"adjuvant activity\" OR \"vaccine adjuvant\" OR \"immune activation\" OR immunostimulation OR \"vaccine response\" OR \"vaccine-induced immunity\")"
+      }
+    ],
+    "H01": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "direct_delivery",
+        "concept_groups": [
+          [
+            "vaccine delivery",
+            "antigen delivery"
+          ],
+          [
+            "cellular uptake",
+            "antigen presentation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"vaccine delivery\" OR \"antigen delivery\") AND TITLE_ABS:(\"cellular uptake\" OR \"antigen presentation\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "direct_delivery",
+        "concept_groups": [
+          [
+            "mRNA delivery",
+            "protein delivery"
+          ],
+          [
+            "polymer carrier",
+            "nanoparticle carrier"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"mRNA delivery\" OR \"protein delivery\") AND TITLE_ABS:(\"polymer carrier\" OR \"nanoparticle carrier\")"
+      }
+    ],
+    "H02": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "intracellular_endosomal",
+        "concept_groups": [
+          [
+            "cellular uptake",
+            "internalization",
+            "endosomal escape",
+            "endosome release"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"cellular uptake\" OR internalization OR \"endosomal escape\" OR \"endosome release\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "intracellular_endosomal",
+        "concept_groups": [
+          [
+            "intracellular trafficking",
+            "subcellular localization",
+            "endosomal localization",
+            "endosome accumulation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"intracellular trafficking\" OR \"subcellular localization\" OR \"endosomal localization\" OR \"endosome accumulation\")"
+      }
+    ],
+    "H03": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "safety",
+        "concept_groups": [
+          [
+            "cytotoxicity",
+            "cell viability",
+            "hemolysis",
+            "membrane damage",
+            "biocompatibility",
+            "safety"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(cytotoxicity OR \"cell viability\" OR hemolysis OR \"membrane damage\" OR biocompatibility OR safety)"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "safety",
+        "concept_groups": [
+          [
+            "cytotoxic",
+            "cell death",
+            "hemolytic",
+            "membrane integrity",
+            "biocompatible",
+            "tissue compatibility",
+            "viability assay",
+            "live/dead"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(cytotoxic OR \"cell death\" OR hemolytic OR \"membrane integrity\" OR biocompatible OR \"tissue compatibility\" OR \"viability assay\" OR \"live/dead\")"
+      }
+    ],
+    "H04": [
+      {
+        "variant_id": "v1",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "immune_activation_dc",
+        "concept_groups": [
+          [
+            "dendritic cell activation",
+            "DC activation",
+            "antigen presentation",
+            "cross-presentation",
+            "dendritic cell maturation",
+            "DC maturation"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"dendritic cell activation\" OR \"DC activation\" OR \"antigen presentation\" OR cross-presentation OR \"dendritic cell maturation\" OR \"DC maturation\")"
+      },
+      {
+        "variant_id": "v2",
+        "source": "llm_candidate_neutral_dimension_expansion",
+        "dimension": "immune_activation_dc",
+        "concept_groups": [
+          [
+            "adjuvant activity",
+            "vaccine adjuvant",
+            "immune activation",
+            "immunostimulation",
+            "vaccine response",
+            "vaccine-induced immunity"
+          ]
+        ],
+        "query": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"adjuvant activity\" OR \"vaccine adjuvant\" OR \"immune activation\" OR immunostimulation OR \"vaccine response\" OR \"vaccine-induced immunity\")"
+      }
+    ]
+  },
+  "scientific_boundaries": {
+    "candidate_neutral_generation": true,
+    "same_dimension_variants_applied_to_K_R_H": true,
+    "canonical_v0_preserved_by_retrieval": true,
+    "expansion_does_not_score_candidates": true,
+    "expansion_does_not_use_retrieval_results": true
+  },
+  "usage": [
+    {
+      "dimension": "direct_delivery",
+      "usage": {
+        "prompt_tokens": 492,
+        "completion_tokens": 1513,
+        "total_tokens": 2005,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1400
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "dimension": "intracellular_endosomal",
+      "usage": {
+        "prompt_tokens": 403,
+        "completion_tokens": 822,
+        "total_tokens": 1225,
+        "completion_tokens_details": {
+          "reasoning_tokens": 730
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "dimension": "safety",
+      "usage": {
+        "prompt_tokens": 393,
+        "completion_tokens": 353,
+        "total_tokens": 746,
+        "completion_tokens_details": {
+          "reasoning_tokens": 200
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "dimension": "immune_activation_dc",
+      "usage": {
+        "prompt_tokens": 441,
+        "completion_tokens": 940,
+        "total_tokens": 1381,
+        "completion_tokens_details": {
+          "reasoning_tokens": 821
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ]
+}

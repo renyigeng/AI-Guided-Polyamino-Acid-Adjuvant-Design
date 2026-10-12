@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?
+
+QUERY ID: DK02
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 19812321
+DOI: 10.1523/jneurosci.1381-09.2009
+
+TITLE:
+Rapid assembly of functional presynaptic boutons triggered by adhesive contacts.
+
+ABSTRACT:
+CNS synapse assembly typically follows after stable contacts between "appropriate" axonal and dendritic membranes are made. We show that presynaptic boutons selectively form de novo following neuronal fiber adhesion to beads coated with poly-d-lysine (PDL), an artificial cationic polypeptide. As demonstrated by atomic force and live confocal microscopy, functional presynaptic boutons self-assemble as rapidly as 1 h after bead contact, and are found to contain a variety of proteins characteristic of presynaptic endings. Interestingly, presynaptic compartment assembly does not depend on the presence of a biological postsynaptic membrane surface. Rather, heparan sulfate proteoglycans, including syndecan-2, as well as others possibly adsorbed onto the bead matrix or expressed on the axon surface, are required for assembly to proceed by a mechanism dependent on the dynamic reorganization of F-actin. Our results indicate that certain (but not all) nonspecific cationic molecules like PDL, with presumably electrostatically mediated adhesive properties, can effectively bypass cognate and natural postsynaptic ligands to trigger presynaptic assembly in the absence of specific target recognition. In contrast, we find that postsynaptic compartment assembly depends on the prior presence of a mature presynaptic ending.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

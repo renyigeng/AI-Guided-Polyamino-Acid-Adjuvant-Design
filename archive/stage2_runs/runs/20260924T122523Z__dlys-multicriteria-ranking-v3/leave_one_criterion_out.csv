@@ -1,0 +1,7 @@
+domain_id,omitted_indicator_id,omitted_indicator_name,baseline_winner,new_winner,winner_changed,baseline_winner_rank_after_omission
+D2,I1,single-residue hydrophobicity,L,M,True,2.0
+D2,I2,side-chain volume,L,L,False,1.0
+D2,I3,beta-branching,L,I,True,2.0
+D3,I1,Net side-chain charge at pH 7.4,Q,Q,False,1.0
+D3,I2,Side-chain amide presence,Q,Q,False,1.0
+D3,I3,Side-chain volume,Q,N,True,1.0

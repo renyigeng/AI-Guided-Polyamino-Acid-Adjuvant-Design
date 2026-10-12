@@ -1,0 +1,28 @@
+{
+  "preference": "B",
+  "basis": [
+    "Hyperbranched poly-L-lysine (HBPL) in lipopolyplexes directly enables mRNA delivery and dendritic cell maturation (E001), which is a core design goal for tumor vaccines.",
+    "Polyleucine–polylysine conjugate L15K6 enhances antigen uptake, DC maturation (CD40, CD80/86, MHC-II), and triggers TLR4/NF-κB activation, inducing robust antibody responses outperforming alum (E019).",
+    "Chiral poly(L-phenylalanine)-block-poly(lysine) nanoparticles potently induce DC maturation, antigen cross-presentation, and achieve 94.9% tumor inhibition in a melanoma model (E022), directly relevant to the target amphiphilic binary architecture.",
+    "Multiple studies demonstrate that polylysine-based materials can be formulated with low hemolysis and high cell viability (E014, E016, E018), though unmodified high-MW polylysine shows toxicity (E013).",
+    "Polylysine shows efficient cellular uptake via multiple endocytosis pathways and is trafficked to endosomes (E010, E011), providing a mechanistic basis for intracellular delivery."
+  ],
+  "supporting_evidence_ids": [
+    "E001",
+    "E019",
+    "E022",
+    "E014",
+    "E016",
+    "E018",
+    "E010",
+    "E011"
+  ],
+  "counter_evidence_ids": [
+    "E013"
+  ],
+  "uncertainties": [
+    "The safety of polylysine in the target architecture remains a concern because unmodified star-arranged poly-L-lysine (16-PLL10) causes cytotoxicity and hemolysis (E013); safe formulations rely on copolymerization or grafting.",
+    "The contribution of polyhistidine to DC activation in its supporting evidence (E063, E064) is not isolated from other copolymer components (PLA, PEG), making direct attribution uncertain.",
+    "Polylysine evidence for endosomal escape is less direct than for polyhistidine; polyhistidine studies (E057, E058) show active proton-sponge endosomal escape without membrane rupture, whereas polylysine endosomal escape is described as rate-limiting (E010)."
+  ]
+}

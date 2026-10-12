@@ -1,0 +1,40 @@
+{
+  "summary": "This article demonstrates that poly(D-lysine)-based amphiphilic block copolymers with varying hydrophobic L-phenylalanine content enhance dendritic cell uptake, TLR4 activation, and antigen presentation, leading to potent and durable antitumor immunity in mice. The optimized system (F15-DK10/OVA) elicited robust CD8+ T cell cytotoxicity and antibody responses, with 97.81% tumor inhibition and 100% tumor-free survival in prevention models, and durable protection after rechallenge.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Dendritic cell uptake",
+    "TLR4-mediated activation",
+    "Antigen presentation",
+    "CD8+ T cell cytotoxicity",
+    "B cell-mediated antibody response",
+    "Splenic central memory T cells",
+    "Lymph node memory B cells",
+    "Tumor inhibition in LLC-OVA therapeutic model",
+    "Tumor-free survival in LLC-OVA prevention model",
+    "Durable protection after tumor rechallenge",
+    "Efficacy in CT26 whole-cell-lysate model"
+  ],
+  "reported_numeric_results": [
+    "splenic central memory T cells and lymph node memory B cells increased by 1.46- and 2.19-fold",
+    "vaccines with increasing phenylalanine achieved tumor inhibition rates of 31.62%, 65.35%, and 97.81%",
+    "F15-DK10/OVA achieved 100% tumor-free survival in the LLC-OVA prevention model",
+    "54.55% of mice remained tumor-free for 644 days after two tumor re-challenges"
+  ],
+  "reported_qualitative_findings": [
+    "Increasing phenylalanine ratio induced coordinated changes in nanoparticle size, surface charge, and structural rigidity",
+    "enhancing dendritic cell uptake, TLR4-mediated activation, and antigen presentation",
+    "triggered robust CD8+ T cell cytotoxicity and strong B cell-mediated antibody response",
+    "durable antigen-specific protection in this model",
+    "rational tuning of hydrophobic moieties in poly(amino acid) is an effective strategy to enhance tumor vaccine efficacy and long-term anti-tumor immune memory"
+  ],
+  "material_or_molecular_context": "poly(L-phenylalanine)m-block-poly(D-lysine)10 copolymers (m = 5, 10, or 15); the D-lysine block is fixed at 10 residues, while the hydrophobic L-phenylalanine block length varies.",
+  "biological_context": "Bone marrow-derived dendritic cells (in vitro), TLR4 pathway, subcutaneous injection in mice, OVA-expressing Lewis lung cancer (LLC-OVA) model (therapeutic and prevention), CT26 whole-cell-lysate model; outcomes measured in spleen and lymph nodes.",
+  "limitations_for_current_question": [
+    "Only mouse models; human relevance not directly assessed.",
+    "D-lysine block length was fixed at 10; effects of varying D-lysine length or chirality are not studied.",
+    "Only two antigens tested (OVA and CT26 whole-cell lysate); generalizability to other antigens unknown.",
+    "Hydrophobic block is L-phenylalanine; no comparison to other hydrophobic residues or D-configured hydrophobic blocks.",
+    "The specific role of D-lysine vs. L-lysine in immune activation is not isolated; the study focuses on hydrophobicity, not chirality per se."
+  ],
+  "supporting_text": "enhancing dendritic cell uptake, TLR4-mediated activation, and antigen presentation"
+}

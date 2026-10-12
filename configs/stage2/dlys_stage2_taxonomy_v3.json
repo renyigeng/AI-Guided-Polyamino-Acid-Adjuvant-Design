@@ -1,0 +1,60 @@
+{
+  "schema_version": "3.0.0",
+  "contract_name": "dlys_stage2_preregistered_domain_taxonomy",
+  "status": "frozen_before_final_ranking",
+  "purpose": "Single source of truth for assigning the 17 non-D-Lys amino-acid candidates to three material-mechanism comparison domains. This contract is independent of post-hoc F/L/Q reference targets.",
+  "stage_context": {
+    "functional_block_fixed_upstream": "D-lysine",
+    "second_block": "X",
+    "architecture": "C6-X_m-D-Lys_10",
+    "cross_domain_total_score": false
+  },
+  "domains": [
+    {
+      "domain_id": "D1",
+      "canonical_key": "aromatic_hydrophobic",
+      "name_zh": "芳香疏水-π作用域",
+      "candidates": ["F", "W", "Y"],
+      "role_zh": "比较芳香侧链提供的疏水内聚、芳香相互作用与水相溶剂化平衡。"
+    },
+    {
+      "domain_id": "D2",
+      "canonical_key": "nonaromatic_hydrophobic",
+      "name_zh": "非芳香疏水-构象域",
+      "candidates": ["A", "C", "I", "L", "M", "V"],
+      "role_zh": "比较近中性非芳香侧链的疏水驱动、支化/packing与构象几何。"
+    },
+    {
+      "domain_id": "D3",
+      "canonical_key": "polar_interaction_conformational",
+      "name_zh": "极性-氢键-构象相容域",
+      "candidates": ["N", "Q", "S", "T", "D", "E", "G", "P"],
+      "role_zh": "比较极性/氢键化学、电荷相容以及构象控制；G/P作为构象边界候选保留，不预先删除。"
+    }
+  ],
+  "candidate_names_zh": {
+    "A": "丙氨酸",
+    "C": "半胱氨酸",
+    "D": "天冬氨酸",
+    "E": "谷氨酸",
+    "F": "苯丙氨酸",
+    "G": "甘氨酸",
+    "I": "异亮氨酸",
+    "L": "亮氨酸",
+    "M": "甲硫氨酸",
+    "N": "天冬酰胺",
+    "P": "脯氨酸",
+    "Q": "谷氨酰胺",
+    "S": "丝氨酸",
+    "T": "苏氨酸",
+    "V": "缬氨酸",
+    "W": "色氨酸",
+    "Y": "酪氨酸"
+  },
+  "invariants": [
+    "All 17 candidates occur exactly once.",
+    "Domain assignment is fixed before final indicator discovery/ranking.",
+    "Post-hoc reference winners are not part of this contract.",
+    "No candidate may move domains merely to improve agreement with a desired winner."
+  ]
+}

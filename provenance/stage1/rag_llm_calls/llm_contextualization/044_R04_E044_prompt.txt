@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R04
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 16645583
+DOI: 10.1038/sj.jid.5700335
+
+TITLE:
+Polyarginine-mediated protein delivery to dendritic cells presents antigen more efficiently onto MHC class I and class II and elicits superior antitumor immunity.
+
+ABSTRACT:
+Protein transduction domains (PTDs) have been used increasingly to deliver reagents to a variety of cell types in vitro and in vivo. We have previously shown that HIV TAT-PTD-containing whole protein antigens (Ags)-transduced dendritic cells (DCs) stimulated Ag-specific CD8+ and CD4+ T cells. Although the cytotoxic T lymphocytes (CTL) activity generated was sufficient to prevent engraftment of mice with Ag-expressing tumors, treatment of tumor-bearing mice with TAT-PTD Ag-transduced DCs resulted in tumor regression in some animals. Recently, several other PTDs were reported to promote higher transduction efficiencies than TAT-PTD. To evaluate the role of individual PTDs in induction of immune responses in tumor vaccination studies, we engineered recombinant fusion Ovalbumin (OVA) that contained three differrent PTDs, including the most efficacious known PTD (polyarginine (R9)-PTD). Our results demonstrated that R9-PTD-containing OVA transduced DCs most efficiently, and that transduction efficacy was closely correlated with the extent of Ag-specific CD4+ and CD8+ T-cell activation in vitro and in vivo. Repeated vaccination with R9-PTD-OVA-transduced DC in (OVA-expressing) tumor-bearing mice induced enhanced antitumor immunity, and elicited complete rejection of tumors when DC was co-injected with adjuvants. This vaccination strategy may be clinically applicable, and offers theoretical and practical advantages to those that are in current use.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,2127 @@
+{
+  "version": "6.9",
+  "hitCount": 5,
+  "request": {
+    "queryString": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"adjuvant activity\" OR \"vaccine adjuvant\" OR \"immune activation\" OR immunostimulation OR \"vaccine response\" OR \"vaccine-induced immunity\")",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "42695476",
+        "source": "MED",
+        "pmid": "42695476",
+        "doi": "10.1002/adma.74905",
+        "title": "A Poly(lactic Acid)-Porphyrin-Cobalt Vaccine Adjuvant System Elicits Protein- or Peptide-Specific Humoral and Cellular Immunity.",
+        "authorString": "Lu L, Deng D, Sun J, Geng Y, Wang R, Deng Z, Liu L, Shi X, Lovell JF, Yang M, Jin H.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Lu L",
+              "lastName": "Lu",
+              "firstName": "Lisen",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-5895-6871"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "NHC Key Laboratory of Tropical Disease Control, School of Life Sciences and Medical Technology, Hainan Medical University, Haikou, Hainan, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Deng D",
+              "lastName": "Deng",
+              "firstName": "Deqiang",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-3686-0402"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "NHC Key Laboratory of Tropical Disease Control, School of Life Sciences and Medical Technology, Hainan Medical University, Haikou, Hainan, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sun J",
+              "lastName": "Sun",
+              "firstName": "Jinfeng",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Polymer Ecomaterials, Changchun Institute of Applied Chemistry, Chinese Academy of Sciences, Changchun, P. R. China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Geng Y",
+              "lastName": "Geng",
+              "firstName": "Yuanyuan",
+              "initials": "Y",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-0100-9988"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "College of Biomedicine and Health and College of Life Science and Technology, Huazhong Agricultural University, Wuhan, P. R. China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang R",
+              "lastName": "Wang",
+              "firstName": "Ruohan",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "College of Biomedicine and Health and College of Life Science and Technology, Huazhong Agricultural University, Wuhan, P. R. China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Deng Z",
+              "lastName": "Deng",
+              "firstName": "Zihan",
+              "initials": "Z",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "College of Biomedicine and Health and College of Life Science and Technology, Huazhong Agricultural University, Wuhan, P. R. China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liu L",
+              "lastName": "Liu",
+              "firstName": "Li",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "College of Biomedicine and Health and College of Life Science and Technology, Huazhong Agricultural University, Wuhan, P. R. China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Shi X",
+              "lastName": "Shi",
+              "firstName": "Xiujuan",
+              "initials": "X",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "College of Biomedicine and Health and College of Life Science and Technology, Huazhong Agricultural University, Wuhan, P. R. China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lovell JF",
+              "lastName": "Lovell",
+              "firstName": "Jonathan F",
+              "initials": "JF",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9052-884X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University At Buffalo, State University of New York, Buffalo, New York, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang M",
+              "lastName": "Yang",
+              "firstName": "Muyang",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-7340-1188"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "NHC Key Laboratory of Tropical Disease Control, School of Life Sciences and Medical Technology, Hainan Medical University, Haikou, Hainan, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jin H",
+              "lastName": "Jin",
+              "firstName": "Honglin",
+              "initials": "H",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4398-9539"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "NHC Key Laboratory of Tropical Disease Control, School of Life Sciences and Medical Technology, Hainan Medical University, Haikou, Hainan, China."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4398-9539"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9052-884X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-0100-9988"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-5895-6871"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-7340-1188"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-3686-0402"
+            }
+          ]
+        },
+        "journalInfo": {
+          "journalIssueId": 4251636,
+          "dateOfPublication": "2026 Sep",
+          "monthOfPublication": 9,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "Adv Mater",
+            "title": "Advanced materials (Deerfield Beach, Fla.)",
+            "essn": "1521-4095",
+            "issn": "0935-9648",
+            "nlmid": "9885358",
+            "isoabbreviation": "Adv Mater"
+          },
+          "printPublicationDate": "2026-09-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "e74905",
+        "abstractText": "There is growing interest in vaccine adjuvant systems that are scalable, adaptable, and capable of stimulating humoral and cellular immune responses with recombinant protein or synthetic peptide immunogens. In this study, we introduced a \"plug-and-play\" nanoadjuvant system consisting of poly(lactic acid)-porphyrin-cobalt ion co-formulated with immunostimulatory saponin QS-21 (PPCoQ). PPCoQ facilitated subunit vaccine assembly by coordinating antigens' polyhistidine tags with immobilized cobalt (Co<sup>2+</sup>) within a porphyrin-modified poly(lactic acid). Using the receptor-binding domain (RBD) of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) as a model antigen, the resulting nanovaccine, PPCoQ-RBD, induced high levels of anti-RBD antibodies in transgenic mice expressing human ACE2. Following viral challenge, immunized mice achieved a 99.7% clearance rate of the SARS-CoV-2 Omicron variant, demonstrating strong humoral and cellular immune responses. Additionally, PPCoQ-RBD was compatible with nebulization-based inhalation, which enhanced mucosal immunity, increased IgA antibody titers, and promoted the formation of abundant tissue-resident memory T cells. A model T cell epitope (OVA) was formulated to evaluate cellular responses, generating PPCoQ-OVA, which significantly inhibited B16-OVA tumor growth. The PPCoQ vaccine adjuvant system is easy to produce and supports efficient antigen loading, lymph node targeting, lysosomal escape, and biocompatibility, and has broad prospects for application and clinical translation.",
+        "affiliation": "NHC Key Laboratory of Tropical Disease Control, School of Life Sciences and Medical Technology, Hainan Medical University, Haikou, Hainan, China.",
+        "publicationStatus": "aheadofprint",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Special Fund for Technological Innovation of Hubei",
+              "grantId": "2020BHB021",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "22307043",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "82102900",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "82473363",
+              "orderIn": 0
+            },
+            {
+              "agency": "Youth Fund of the Natural Science Foundation of Hubei Province",
+              "grantId": "2023AFb423",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "82402465",
+              "orderIn": 0
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "subunit vaccine",
+            "Cancer Immunotherapy",
+            "Cellular And Humoral Immune Responses",
+            "Poly(lactic Acid)‐porphyrin‐cobalt Ion Nanoadjuvant",
+            "Prevention Of Pathogenic Microbial Infection"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/adma.74905"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "N",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCreation": "2026-09-04",
+        "dateOfRevision": "2026-09-04",
+        "electronicPublicationDate": "2026-09-04",
+        "firstPublicationDate": "2026-09-04",
+        "firstIndexDate": "2026-09-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "40202129",
+        "source": "MED",
+        "pmid": "40202129",
+        "doi": "10.1021/acsnano.4c08515",
+        "title": "Catch-to-Amplify Nanoparticles with Bacteria Surface for Sequential Mucosal Immune Activation for Acute Myeloid Leukemia Therapy.",
+        "authorString": "Xin X, Wu D, Zhao P, Li Y, Qin H, Dai J, Zhou Y, Lyu Y, Yang Y, Zhu Y, Shi H, Yang L, Yin L.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Xin X",
+              "lastName": "Xin",
+              "firstName": "Xiaofei",
+              "initials": "X",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7618-0808"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  },
+                  {
+                    "affiliation": "NMPA Key Laboratory for Research and Evaluation of Pharmaceutical Preparations and Excipients, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wu D",
+              "lastName": "Wu",
+              "firstName": "Di",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhao P",
+              "lastName": "Zhao",
+              "firstName": "Pengbo",
+              "initials": "P",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li Y",
+              "lastName": "Li",
+              "firstName": "Yuanyuan",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Qin H",
+              "lastName": "Qin",
+              "firstName": "Huanyu",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dai J",
+              "lastName": "Dai",
+              "firstName": "Jinyu",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhou Y",
+              "lastName": "Zhou",
+              "firstName": "Yong",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lyu Y",
+              "lastName": "Lyu",
+              "firstName": "Yifu",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang Y",
+              "lastName": "Yang",
+              "firstName": "Yang",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhu Y",
+              "lastName": "Zhu",
+              "firstName": "Ying",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Shi H",
+              "lastName": "Shi",
+              "firstName": "Hang",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Zhongda Hospital, School of Medicine, Southeast University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang L",
+              "lastName": "Yang",
+              "firstName": "Lei",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5107-2416"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  },
+                  {
+                    "affiliation": "NMPA Key Laboratory for Research and Evaluation of Pharmaceutical Preparations and Excipients, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yin L",
+              "lastName": "Yin",
+              "firstName": "Lifang",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2825-3136"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China."
+                  },
+                  {
+                    "affiliation": "NMPA Key Laboratory for Research and Evaluation of Pharmaceutical Preparations and Excipients, China Pharmaceutical University, Nanjing 210009, China."
+                  },
+                  {
+                    "affiliation": "Key Laboratory of Drug Quality Control and Pharmacovigilance, China Pharmaceutical University, Nanjing 210009, China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Natural Medicine, China Pharmaceutical University, Nanjing 210009, China."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5107-2416"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2825-3136"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7618-0808"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "15",
+          "volume": "19",
+          "journalIssueId": 3931772,
+          "dateOfPublication": "2025 Apr",
+          "monthOfPublication": 4,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "ACS Nano",
+            "title": "ACS nano",
+            "essn": "1936-086X",
+            "issn": "1936-0851",
+            "nlmid": "101313589",
+            "isoabbreviation": "ACS Nano"
+          },
+          "printPublicationDate": "2025-04-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "14661-14679",
+        "abstractText": "Mucosal-mediated immune deficiency is associated with immune evasion and poor clinical outcomes in acute myeloid leukemia (AML). Here, we describe the elicitation of mucosal and systemic immune response by oral delivery of MDP-modified PEG-lipid (MDP-PEG-DSPE) and polylactic acid-polyhistidine (PLA-PHis) copolymer constructed nanosystem (mPOD) into Peyer's patches. To protect against gastrointestinal degradation, enteric-soluble capsules are utilized for encapsulating mPOD to promote penetration across intestinal mucus and engender robust Peyer's patch targeting initiated by MDP-PEG-DSPE. Compared with intravenous and intramuscular administration, the oral delivery of MDP-PEG-DSPE and 5'-triphosphate-modified RNA (ppp-RNA) into gut-associated lymphoid tissues reinforces dendritic cell maturation and migration, amplifies mucosal immune response, and boosts the production of secretory immunoglobulin A via retinoic acid-inducible gene I/nucleotide-binding oligomerization domain 2 (RIG-I/NOD2) signaling activation. In the AML murine model, the provoked mucosal immunity positively regulates the systemic cytotoxic immune reactions, which, in turn, eradicate disseminated malignant leukemic cells and provide defense against leukemia attacks.",
+        "affiliation": "Department of Pharmaceutics, China Pharmaceutical University, Nanjing 210009, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "82304410",
+              "orderIn": 0
+            },
+            {
+              "agency": "Natural Science Foundation of Jiangsu Province",
+              "grantId": "BK20221045",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "82473864",
+              "orderIn": 0
+            },
+            {
+              "agency": "?Double First-Class? initiative program in China Pharmaceutical University",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Center of Technology Innovation for Biopharmaceuticals",
+              "orderIn": 0
+            },
+            {
+              "agency": "National College Students Innovation and Entrepreneurship Training Program",
+              "grantId": "202410316037Z",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred C57BL"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polyethylene Glycols",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Immunity, Mucosal",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nanoparticles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Leukemia, Myeloid, Acute",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DT",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PA",
+                    "qualifierName": "pathology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TH",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Acute myeloid leukemia",
+            "Peyer’s Patch",
+            "Mucosal Immune Response",
+            "Oral Adjuvants",
+            "Mucus Penetration",
+            "Pept1-mediated Delivery"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Polyethylene Glycols",
+              "registryNumber": "3WJQ0SDW1A"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1021/acsnano.4c08515"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 3,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2025-04-22",
+        "dateOfCreation": "2025-04-09",
+        "dateOfRevision": "2025-04-22",
+        "electronicPublicationDate": "2025-04-09",
+        "firstPublicationDate": "2025-04-09",
+        "firstIndexDate": "2025-04-09",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "38968676",
+        "source": "MED",
+        "pmid": "38968676",
+        "doi": "10.1016/j.virol.2024.110152",
+        "title": "Displaying alphavirus physicochemical consensus antigens on immunogenic liposomes enhances antibody elicitation in mice.",
+        "authorString": "Huang WC, Baker WS, Lovell JF, Schein CH.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Huang WC",
+              "lastName": "Huang",
+              "firstName": "Wei-Chiao",
+              "initials": "WC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, Buffalo, NY, 14260, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Baker WS",
+              "lastName": "Baker",
+              "firstName": "Wendy S",
+              "initials": "WS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biochemistry and Molecular Biology, UTMB Galveston, 77555, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lovell JF",
+              "lastName": "Lovell",
+              "firstName": "Jonathan F",
+              "initials": "JF",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9052-884X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, Buffalo, NY, 14260, USA. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Schein CH",
+              "lastName": "Schein",
+              "firstName": "Catherine H",
+              "initials": "CH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8290-2109"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biochemistry and Molecular Biology, UTMB Galveston, 77555, USA; Institute for human infections and immunity, UTMB Galveston, 77555, USA. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8290-2109"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9052-884X"
+            }
+          ]
+        },
+        "journalInfo": {
+          "volume": "597",
+          "journalIssueId": 3802573,
+          "dateOfPublication": "2024 Sep",
+          "monthOfPublication": 9,
+          "yearOfPublication": 2024,
+          "journal": {
+            "medlineAbbreviation": "Virology",
+            "title": "Virology",
+            "essn": "1096-0341",
+            "issn": "2514-4138",
+            "nlmid": "0110674",
+            "isoabbreviation": "Virology"
+          },
+          "printPublicationDate": "2024-09-01"
+        },
+        "pubYear": "2024",
+        "pageInfo": "110152",
+        "abstractText": "Cobalt-porphyrin phospholipid displays recombinant protein antigens on liposome surfaces via antigen polyhistidine-tag (His-tag), and when combined with monophosphorylated lipid A and QS-21 yields the \"CPQ\" vaccine adjuvant system. In this proof of principle study, CPQ was used to generate vaccine prototypes that elicited antibodies for two different alphaviruses (AV). Mice were immunized with computationally designed, His-tagged, physicochemical property consensus (PCP<sub>con</sub>) protein antigens representing the variable B-domain of the envelope protein 2 (E2) from the serotype specific Venezuelan Equine Encephalitis Virus (VEEV<sub>con</sub>) or a broad-spectrum AV-antigen termed EVC<sub>con.</sub> The CPQ adjuvant enhanced the antigenicity of both proteins without eliciting detectable anti-His-tag antibodies. Antibodies elicited from mice immunized with antigens admixed with CPQ showed orders-of-magnitude higher levels of antigen-specific IgG compared to alternative control adjuvants. The ELISA results correlated with antiviral activity against VEEV strain TC83 and more weakly to Chikungunya virus 118/25. Thus, display of E.coli-produced His-tagged E2 protein segments on the surface of immunogenic liposomes elicits high levels of antigen-specific and AV neutralizing antibodies in mice with vaccination, while facilitating vaccine preparation and providing dose-sparing potential.",
+        "affiliation": "Department of Biomedical Engineering, University at Buffalo, Buffalo, NY, 14260, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Institutes of Health",
+              "orderIn": 0
+            },
+            {
+              "agency": "State University of New York",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIAID NIH HHS",
+              "acronym": "AI",
+              "grantId": "R01 AI137332",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute of Allergy and Infectious Diseases",
+              "grantId": "R01 AI137332",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred BALB C"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Alphavirus",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Chikungunya virus",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Encephalitis Virus, Venezuelan Equine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunoglobulin G",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "BL",
+                    "qualifierName": "blood"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Viral Envelope Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Viral Vaccines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Adjuvants, Immunologic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Antibodies, Viral",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Antigens, Viral",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Liposomes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antibodies, Neutralizing",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Liposome",
+            "Vaccine",
+            "Alphavirus",
+            "Adjuvant",
+            "Eeev",
+            "Veev"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Viral Vaccines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antibodies, Viral",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Immunoglobulin G",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antigens, Viral",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Liposomes",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Adjuvants, Immunologic",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Viral Envelope Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antibodies, Neutralizing",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.virol.2024.110152"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 2,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2024-07-18",
+        "dateOfCreation": "2024-07-05",
+        "dateOfRevision": "2025-04-17",
+        "electronicPublicationDate": "2024-06-20",
+        "firstPublicationDate": "2024-06-20",
+        "firstIndexDate": "2024-07-07",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "33955746",
+        "source": "MED",
+        "pmid": "33955746",
+        "doi": "10.1021/acsami.1c03709",
+        "title": "Lymph Node Delivery Strategy Enables the Activation of Cytotoxic T Lymphocytes and Natural Killer Cells to Augment Cancer Immunotherapy.",
+        "authorString": "Jiang D, Gao T, Liang S, Mu W, Fu S, Liu Y, Yang R, Zhang Z, Liu Y, Zhang N.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Jiang D",
+              "lastName": "Jiang",
+              "firstName": "Dandan",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gao T",
+              "lastName": "Gao",
+              "firstName": "Tong",
+              "initials": "T",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liang S",
+              "lastName": "Liang",
+              "firstName": "Shuang",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mu W",
+              "lastName": "Mu",
+              "firstName": "Weiwei",
+              "initials": "W",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Fu S",
+              "lastName": "Fu",
+              "firstName": "Shunli",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liu Y",
+              "lastName": "Liu",
+              "firstName": "Yang",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang R",
+              "lastName": "Yang",
+              "firstName": "Rui",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhang Z",
+              "lastName": "Zhang",
+              "firstName": "Zipeng",
+              "initials": "Z",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liu Y",
+              "lastName": "Liu",
+              "firstName": "Yongjun",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhang N",
+              "lastName": "Zhang",
+              "firstName": "Na",
+              "initials": "N",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9097-9587"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9097-9587"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "19",
+          "volume": "13",
+          "journalIssueId": 3172253,
+          "dateOfPublication": "2021 May",
+          "monthOfPublication": 5,
+          "yearOfPublication": 2021,
+          "journal": {
+            "medlineAbbreviation": "ACS Appl Mater Interfaces",
+            "title": "ACS applied materials & interfaces",
+            "essn": "1944-8252",
+            "issn": "1944-8244",
+            "nlmid": "101504991",
+            "isoabbreviation": "ACS Appl Mater Interfaces"
+          },
+          "printPublicationDate": "2021-05-01"
+        },
+        "pubYear": "2021",
+        "pageInfo": "22213-22224",
+        "abstractText": "Lymph nodes are the main sites for immune activation and surveillance. Effective delivery of immunomodulators into lymph nodes to trigger antitumor immunity is essential for cancer treatment. Here, we propose a lymph node delivery strategy to modulate the immune response by activating cytotoxic T lymphocytes (CTLs) and natural killer (NK) cells simultaneously. Novel pH/redox dual-sensitive micelles were prepared using poly(l-histidine)-poly(ethylene glycol) (PLH-PEG) as a skeleton, which can effectively deliver immunomodulators to the lymph nodes due to their suitable particle size. At 48 h after subcutaneous injection, the accumulation efficiency in lymph nodes increased 8.12-fold compared with the control group. Subsequently, Trp2/CpG-coloaded pH/redox dual-sensitive micelles (Trp2/CpG-NPs) acted on antigen-presenting cells, fully promoting CTL activation through dendritic cell antigen cross-presentation and macrophage repolarization. IL-15-loaded pH/redox dual-sensitive micelles (IL-15-NPs) were developed to activate the killing effect of NK cells by interacting with IL-15 receptors. In the tumor-bearing mice model, this lymph node delivery strategy showed significant antitumor efficiency and the tumor inhibition rate reached 93.76%. Meanwhile, the infiltration of CTLs and NK cells in tumor tissues increased, and the immunosuppressive microenvironment was relieved by the repolarization of macrophages from M2-type to M1-type. Overall, this study highlighted the potential of the lymph node delivery strategy for cancer immunotherapy.",
+        "affiliation": "Department of Pharmaceutics, Key Laboratory of Chemical Biology (Ministry of Education), School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, 44 Wenhua Xi Road, Jinan, Shandong 250012, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Key Research and Development Program of Shandong Province",
+              "grantId": "2019GSF108239",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "81974498",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "81773652",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Lymph Nodes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Killer Cells, Natural",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "T-Lymphocytes, Cytotoxic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred C57BL"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neoplasms",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "TH",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunotherapy",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Xenograft Model Antitumor Assays"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Lymphocyte Activation"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Lymph nodes",
+            "Natural killer cells",
+            "Cancer vaccine",
+            "Cytotoxic T lymphocytes",
+            "Cancer Immunotherapy"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1021/acsami.1c03709"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 23,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2021-08-27",
+        "dateOfCreation": "2021-05-06",
+        "dateOfRevision": "2021-08-27",
+        "electronicPublicationDate": "2021-05-06",
+        "firstPublicationDate": "2021-05-06",
+        "firstIndexDate": "2021-05-07",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "30297818",
+        "source": "MED",
+        "pmid": "30297818",
+        "pmcid": "PMC6286227",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6286227"
+          ]
+        },
+        "doi": "10.1038/s41565-018-0271-3",
+        "title": "A malaria vaccine adjuvant based on recombinant antigen binding to liposomes.",
+        "authorString": "Huang WC, Deng B, Lin C, Carter KA, Geng J, Razi A, He X, Chitgupi U, Federizon J, Sun B, Long CA, Ortega J, Dutta S, King CR, Miura K, Lee SM, Lovell JF.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Huang WC",
+              "lastName": "Huang",
+              "firstName": "Wei-Chiao",
+              "initials": "WC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Deng B",
+              "lastName": "Deng",
+              "firstName": "Bingbing",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of Malaria and Vector Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rockville, MD, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lin C",
+              "lastName": "Lin",
+              "firstName": "Cuiyan",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Carter KA",
+              "lastName": "Carter",
+              "firstName": "Kevin A",
+              "initials": "KA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Geng J",
+              "lastName": "Geng",
+              "firstName": "Jumin",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Razi A",
+              "lastName": "Razi",
+              "firstName": "Aida",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1510-6612"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anatomy and Cell Biology, McGill University Montreal, Quebec, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "He X",
+              "lastName": "He",
+              "firstName": "Xuedan",
+              "initials": "X",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2208-7824"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chitgupi U",
+              "lastName": "Chitgupi",
+              "firstName": "Upendra",
+              "initials": "U",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Federizon J",
+              "lastName": "Federizon",
+              "firstName": "Jasmin",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sun B",
+              "lastName": "Sun",
+              "firstName": "Boyang",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Long CA",
+              "lastName": "Long",
+              "firstName": "Carole A",
+              "initials": "CA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of Malaria and Vector Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rockville, MD, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ortega J",
+              "lastName": "Ortega",
+              "firstName": "Joaquin",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anatomy and Cell Biology, McGill University Montreal, Quebec, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dutta S",
+              "lastName": "Dutta",
+              "firstName": "Sheetij",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Walter Reed Army Institute of Research, Silver Spring, MD, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "King CR",
+              "lastName": "King",
+              "firstName": "C Richter",
+              "initials": "CR",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "PATH's Malaria Vaccine Initiative, Washington, DC, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Miura K",
+              "lastName": "Miura",
+              "firstName": "Kazutoyo",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of Malaria and Vector Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rockville, MD, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lee SM",
+              "lastName": "Lee",
+              "firstName": "Shwu-Maan",
+              "initials": "SM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "PATH's Malaria Vaccine Initiative, Washington, DC, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lovell JF",
+              "lastName": "Lovell",
+              "firstName": "Jonathan F",
+              "initials": "JF",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA. [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1510-6612"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2208-7824"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "12",
+          "volume": "13",
+          "journalIssueId": 2758283,
+          "dateOfPublication": "2018 Dec",
+          "monthOfPublication": 12,
+          "yearOfPublication": 2018,
+          "journal": {
+            "medlineAbbreviation": "Nat Nanotechnol",
+            "title": "Nature nanotechnology",
+            "essn": "1748-3395",
+            "issn": "1748-3387",
+            "nlmid": "101283273",
+            "isoabbreviation": "Nat Nanotechnol"
+          },
+          "printPublicationDate": "2018-12-01"
+        },
+        "pubYear": "2018",
+        "pageInfo": "1174-1181",
+        "abstractText": "Pfs25 is a malaria transmission-blocking vaccine antigen candidate, but its apparently limited immunogenicity in humans has hindered clinical development. Here, we show that recombinant, polyhistidine-tagged (his-tagged) Pfs25 can be mixed at the time of immunization with pre-formed liposomes containing cobalt porphyrin-phospholipid, resulting in spontaneous nanoliposome antigen particleization (SNAP). Antigens are stably presented in uniformly orientated display via his-tag insertion in the cobalt porphyrin-phospholipid bilayer, without covalent modification or disruption of antigen conformation. SNAP immunization of mice and rabbits is well tolerated with minimal local reactogenicity, and results in orders-of-magnitude higher functional antibody generation compared with other 'mix-and-inject' adjuvants. Serum-stable antigen binding during transit to draining lymph nodes leads to enhanced antigen uptake by phagocytic antigen-presenting cells, with subsequent generation of long-lived, antigen-specific plasma cells. Seamless multiplexing with four additional his-tagged Plasmodium falciparum polypeptides induces strong and balanced antibody production, illustrating the simplicity of developing multistage particulate vaccines with SNAP immunization.",
+        "affiliation": "Department of Biomedical Engineering, University at Buffalo, State University of New York, Buffalo, NY, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, N.I.H., Intramural",
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIAID NIH HHS",
+              "acronym": "AI",
+              "grantId": "R21 AI122964",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIH HHS",
+              "acronym": "OD",
+              "grantId": "DP5 OD017898",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rabbits"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Plasmodium falciparum",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Malaria, Falciparum",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PC",
+                    "qualifierName": "prevention & control"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protozoan Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Recombinant Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Malaria Vaccines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adjuvants, Immunologic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antigens, Protozoan",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Liposomes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunization"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antibody Formation"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "RAW 264.7 Cells"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Pfs25 protein, Plasmodium falciparum",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Liposomes",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Adjuvants, Immunologic",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Protozoan Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Recombinant Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antigens, Protozoan",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Malaria Vaccines",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://europepmc.org/articles/pmc6286227?pdf=render"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41565-018-0271-3"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6286227"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6286227?pdf=render"
+            }
+          ]
+        },
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "source": "MED",
+              "id": "30297817",
+              "reference": "Nat Nanotechnol. 2018 Dec;13(12):1096-1097. doi: 10.1038/s41565-018-0291-z",
+              "type": "Comment in",
+              "orderIn": 1
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 116,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS1505813",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "uniprot"
+          ]
+        },
+        "dateOfCompletion": "2019-06-24",
+        "dateOfCreation": "2018-10-10",
+        "dateOfRevision": "2019-06-24",
+        "electronicPublicationDate": "2018-10-08",
+        "firstPublicationDate": "2018-10-08",
+        "firstIndexDate": "2018-10-09",
+        "fullTextReceivedDate": "2025-02-03",
+        "embargoDate": "2019-04-08",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

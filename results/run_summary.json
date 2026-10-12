@@ -1,0 +1,39 @@
+{
+  "runtime_version": "submission-runtime-v1",
+  "stage1": {
+    "general_pairwise_scores": {
+      "K": 1,
+      "H": 0,
+      "R": 1
+    },
+    "general_frontier": [
+      "K",
+      "R"
+    ],
+    "kr_general_status": "inconclusive",
+    "project_specific_identity": "K",
+    "selection_basis": "stable_literature_project_fit",
+    "chirality_votes": {
+      "D": 2,
+      "L": 0,
+      "INSUFFICIENT": 0
+    },
+    "chirality_winner": "D",
+    "selected_functional_block": "D-Lys"
+  },
+  "stage2_winners": {
+    "D1": "F",
+    "D2": "L",
+    "D3": "Q"
+  },
+  "frozen_result_regression_check": "PASS",
+  "cross_domain_total_score": false,
+  "outputs": [
+    "results.csv",
+    "stage2_all_rankings.csv",
+    "robustness_summary.csv",
+    "d1_hydropathy_scale_summary.csv",
+    "criterion_ablation.csv",
+    "weight_perturbation.csv"
+  ]
+}

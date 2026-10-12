@@ -1,0 +1,15 @@
+{
+  "version": "6.9",
+  "hitCount": 116,
+  "request": {
+    "queryString": "TITLE_ABS:(polyarginine OR \"poly-L-arginine\" OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(antigen OR protein OR vaccine OR biomacromolecule OR mRNA) AND TITLE_ABS:(delivery OR carrier OR uptake OR presentation)",
+    "resultType": "core",
+    "cursorMark": "AoIIPmzw3CgxNzQ4NTI5NQ==",
+    "pageSize": 84,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "preference": "A",
+  "basis": [
+    "Polyarginine demonstrates direct and robust evidence for antigen delivery to dendritic cells, enhanced MHC class I and II presentation, and CD4+/CD8+ T-cell activation in multiple studies (E025, E044, E043, E027).",
+    "Polyarginine exhibits arginine-specific endosomal leakage and cytosolic penetration that polylysine cannot recapitulate (E032, E033), which is critical for biomacromolecule delivery.",
+    "In vivo antitumor immunity and long-lasting T-cell responses are directly shown for polyarginine-based materials (E044, E027, E043).",
+    "Safety evidence for polyarginine indicates manageable hemolysis and tolerable in vivo profiles, with no significant immunogenicity (E037, E038, E039).",
+    "Polylysine evidence includes complex constructs (e.g., L15K6, HBPL, chiral block copolymers) whose lysine component is not the primary active moiety, whereas polyarginine evidence is largely from the arginine block itself, supporting transferability to the target architecture."
+  ],
+  "supporting_evidence_ids": [
+    "E025",
+    "E044",
+    "E027",
+    "E043",
+    "E047",
+    "E033",
+    "E032",
+    "E037",
+    "E038"
+  ],
+  "counter_evidence_ids": [
+    "E010"
+  ],
+  "uncertainties": [
+    "Polyarginine safety at high concentrations may involve hemolysis and complement activation (E039), though mitigated in whole blood or with heparin.",
+    "Optimal polyarginine length for balancing efficacy and toxicity is not defined for the target amphiphilic binary architecture.",
+    "Polylysine-based materials show superior biocompatibility in some formulations (E014, E016, E018), but lack endosomal escape activity to match polyarginine."
+  ]
+}

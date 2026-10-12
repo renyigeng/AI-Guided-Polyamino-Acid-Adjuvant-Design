@@ -1,0 +1,24 @@
+{
+  "summary": "Polylysine analogs do not recapitulate endosomal leakage activity of polyarginine; polylysine is ineffective for cytosolic penetration in this context.",
+  "relevance_score": 3,
+  "reported_outcomes": [
+    "endosomal escape efficiency",
+    "cytosolic penetration"
+  ],
+  "reported_numeric_results": [
+    "Efficiencies of peptide endocytic uptake increase linearly with the number of arginine residues",
+    "cytosolic penetration displays a threshold behavior"
+  ],
+  "reported_qualitative_findings": [
+    "polyarginine analogs recapitulate leakage activity of dfTAT, but polylysine counterparts do not",
+    "increasing arginine content above threshold further augments delivery efficiencies but also increases toxicity"
+  ],
+  "material_or_molecular_context": "supercharged arginine-rich peptides (dfTAT, polyarginine, polylysine)",
+  "biological_context": "live human cells",
+  "limitations_for_current_question": [
+    "study focuses on arginine-rich peptides, not lysine-based materials",
+    "polylysine results are only negative controls without mechanistic details",
+    "no investigation of endosomal behavior of polylysine alone"
+  ],
+  "supporting_text": "the leakage activity of dfTAT can be recapitulated by polyarginine analogs but not by polylysine counterparts"
+}

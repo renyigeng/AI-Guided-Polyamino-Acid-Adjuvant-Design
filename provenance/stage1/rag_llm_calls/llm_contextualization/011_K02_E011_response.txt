@@ -1,0 +1,24 @@
+{
+  "summary": "Poly-L-lysine dendrimers (G3) are internalized via multiple endocytosis pathways (cholesterol-, dynamin-mediated, macropinocytosis) and trafficked to endosomes and lysosomes in Caco-2 cells; the site of fluorophore conjugation affects uptake and subcellular localization.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "elucidate endocytosis mechanisms and subcellular localization",
+    "impact of fluorophore conjugation on cytotoxicity, uptake, and transepithelial transport"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Uptake highly dependent on cholesterol- and dynamin-mediated endocytosis and macropinocytosis",
+    "Dendrimers were trafficked to endosomes and lysosomes",
+    "Subcellular localization impacted by fluorophore conjugation site",
+    "Internalization and trafficking can be impacted by conjugation"
+  ],
+  "material_or_molecular_context": "Poly-L-lysine (PLL) G3 dendrimers conjugated with Oregon green 514 at either the periphery or the core",
+  "biological_context": "Caco-2 cells (human intestinal epithelial cell line)",
+  "limitations_for_current_question": [
+    "In vitro study in a single cell line (Caco-2)",
+    "Only one dendrimer generation (G3) tested",
+    "Fluorophore conjugation may alter native dendrimer behavior",
+    "No quantitative uptake or trafficking rates reported"
+  ],
+  "supporting_text": "Dendrimers were trafficked to endosomes and lysosomes"
+}

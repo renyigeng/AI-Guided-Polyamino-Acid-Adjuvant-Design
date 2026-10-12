@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: DK01
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 19414757
+DOI: 10.4049/jimmunol.0802928
+
+TITLE:
+Targeted delivery of immunogen to primate m cells with tetragalloyl lysine dendrimer.
+
+ABSTRACT:
+Effective uptake of Ags by specialized M cells of gut-associated lymphoid tissues is an important step in inducing efficient immune responses after oral vaccination. Although stable nontoxic small molecule mimetics of lectins, such as synthetic multivalent polygalloyl derivatives, may have potential in murine M cell targeting, it remains unclear whether synthetic multivalent polygalloyl derivatives effectively target nonhuman and human M cells. In this study, we evaluated the ability of a tetragalloyl derivative, the tetragalloyl-D-lysine dendrimer (TGDK), to target M cells in both in vivo nonhuman primate and in vitro human M-like cell culture models. TGDK was efficiently transported from the lumen of the intestinal tract into rhesus Peyer's patches by M cells and then accumulated in germinal centers. Oral administration of rhesus CCR5-derived cyclopeptide conjugated with TGDK in rhesus macaque resulted in a statistically significant increase in stool IgA response against rhesus CCR5-derived cyclopeptide and induced a neutralizing activity against SIV infection. Furthermore, TGDK was specifically bound to human M-like cells and efficiently transcytosed from the apical side to the basolateral side in the M-like cell model. Thus, the TGDK-mediated vaccine delivery system represents a potential approach for enabling M cell-targeted mucosal vaccines in primates.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

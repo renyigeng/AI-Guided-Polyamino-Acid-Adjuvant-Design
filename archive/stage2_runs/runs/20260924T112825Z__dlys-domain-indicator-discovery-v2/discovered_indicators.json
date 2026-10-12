@@ -1,0 +1,252 @@
+{
+  "domains": [
+    {
+      "domain_id": "D1",
+      "domain_name_zh": "芳香疏水-π作用域",
+      "candidate_codes": [
+        "F",
+        "W",
+        "Y"
+      ],
+      "candidate_names_zh": [
+        "苯丙氨酸",
+        "色氨酸",
+        "酪氨酸"
+      ],
+      "indicators": [
+        {
+          "indicator_id": "I1",
+          "indicator_name": "Side-chain hydrophobicity",
+          "measurement_target": "Hydrophobicity",
+          "scientific_definition": "A standard single-residue hydrophobicity scale value (e.g., Kyte-Doolittle, Eisenberg, or equivalent mature scale) quantifying the free energy or partition tendency of the amino acid side chain in a hydrophobic versus aqueous environment.",
+          "why_relevant_to_dlys_system": "The fixed D-Lys block provides cationic and hydrophilic function. The second block X is intended to provide complementary hydrophobic cohesion. Within the aromatic domain (F, W, Y), higher side-chain hydrophobicity indicates a stronger hydrophobic driving force for self-association or core formation, which complements the hydrophilic D-Lys segment.",
+          "role": "primary_rank",
+          "preferred_direction": "higher",
+          "target_value": null,
+          "basis": "both",
+          "supporting_evidence_ids": [
+            "F:aromatic_pi:FE04",
+            "F:steric_packing:FE04",
+            "W:aromatic_pi:WE04",
+            "W:steric_packing:WE04"
+          ],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "This indicator captures the overall hydrophobic cohesion axis. It is distinct from the hydration/polarity burden indicator (I2) because it measures the driving force for hydrophobic association, not the number of polar hydration sites.",
+          "notes": "The evidence for F and W explicitly mentions steric hindrance and ring stacking as prominent factors, which are related to hydrophobic cohesion. The domain guidance preregisters hydrophobicity as a primary ranking axis with direction 'higher'. No evidence for Y was supplied, but the descriptor is a mature single-residue property applicable to all three candidates."
+        },
+        {
+          "indicator_id": "I2",
+          "indicator_name": "Side-chain hydrogen-bond donor and acceptor site count",
+          "measurement_target": "Hydrogen-bond donor and acceptor site count",
+          "scientific_definition": "The total number of hydrogen-bond donor and acceptor sites on the amino acid side chain, as defined by standard chemical group counts (e.g., OH, NH, C=O, etc.).",
+          "why_relevant_to_dlys_system": "The fixed D-Lys block already provides hydrophilic and cationic character. Additional polar hydrogen-bonding sites on the second block would increase hydration and compete with the desired hydrophobic cohesion. Within the aromatic domain, lower side-chain HBD+HBA site count favors a more hydrophobic core and reduces redundant hydrophilic functionality.",
+          "role": "primary_rank",
+          "preferred_direction": "lower",
+          "target_value": null,
+          "basis": "system_constraint",
+          "supporting_evidence_ids": [],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "This indicator measures the polar hydration burden, which is orthogonal to the hydrophobic cohesion axis (I1). It is not redundant with hydrophobicity because it counts specific polar functional groups rather than overall hydrophobic tendency.",
+          "notes": "The domain guidance explicitly preregisters a non-redundant hydration/polarity burden axis with direction 'lower'. This descriptor is a mature single-residue property. No direct literature evidence was supplied for this specific descriptor, but the system constraint and domain guidance justify its use."
+        }
+      ],
+      "validation_warnings": [],
+      "knowledge_gaps": [
+        "No qualified native-X literature evidence was supplied for tyrosine (Y) in this domain. The descriptors selected are mature single-residue properties applicable to all three candidates, but the evidence base for Y is absent.",
+        "Aromatic ring count, side-chain size/volume, and geometric packing descriptors are mentioned in the domain guidance as validation axes, but no mature single-residue metric with a preregistered monotonic direction was identified. These remain validation_only and are not included as primary_rank indicators.",
+        "No mature single-residue descriptor for 'aromatic interaction strength' or 'pi-stacking propensity' was found that is not a custom composite score; therefore, such broad mechanisms are not translated into primary_rank indicators."
+      ],
+      "notes": [
+        "The domain guidance explicitly states that aromatic ring count is not an automatic monotonic benefit and must be validation_only. Side-chain size/volume also lacks a preregistered direction and is validation_only.",
+        "The two primary_rank indicators are nonredundant: one captures hydrophobic cohesion (higher is better), the other captures polar hydration burden (lower is better). They represent distinct physicochemical properties.",
+        "No numerical weights, composite scores, or candidate rankings are provided. The indicators are intended for comparative screening within the fixed D-Lys design context."
+      ]
+    },
+    {
+      "domain_id": "D2",
+      "domain_name_zh": "非芳香疏水-构象域",
+      "candidate_codes": [
+        "A",
+        "C",
+        "I",
+        "L",
+        "M",
+        "V"
+      ],
+      "candidate_names_zh": [
+        "丙氨酸",
+        "半胱氨酸",
+        "异亮氨酸",
+        "亮氨酸",
+        "甲硫氨酸",
+        "缬氨酸"
+      ],
+      "indicators": [
+        {
+          "indicator_id": "I1",
+          "indicator_name": "single-residue hydrophobicity",
+          "measurement_target": "hydrophobicity",
+          "scientific_definition": "Standard single-residue hydrophobicity scale value for amino acid X, quantifying the free-energy cost or preference for transferring the side chain from water to a nonpolar environment.",
+          "why_relevant_to_dlys_system": "The fixed D-lysine block provides cationic, hydrophilic character. The second block X is intended to provide complementary hydrophobic cohesion. Within the non-aromatic hydrophobic-conformational domain, hydrophobicity is the primary driving force for hydrophobic self-association and is explicitly preregistered as a main ranking axis with direction higher.",
+          "role": "primary_rank",
+          "preferred_direction": "higher",
+          "target_value": null,
+          "basis": "both",
+          "supporting_evidence_ids": [
+            "I:hydrophobic:IE02",
+            "L:hydrophobic:LE01",
+            "L:hydrophobic:LE04",
+            "V:hydrophobic:VE06"
+          ],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "Measures the thermodynamic driving force for hydrophobic association, distinct from side-chain volume (spatial occupancy) and from beta-branching (side-chain geometry).",
+          "notes": "Multiple mature single-residue hydrophobicity scales exist; the exact scale is not specified here. Direction higher is preregistered by the domain guidance. Evidence for C is absent, but evidence quantity is not a candidate score."
+        },
+        {
+          "indicator_id": "I2",
+          "indicator_name": "side-chain volume",
+          "measurement_target": "side_chain_volume",
+          "scientific_definition": "Standard single-residue side-chain volume (e.g., in Å³) for amino acid X, representing the spatial extent of the side chain.",
+          "why_relevant_to_dlys_system": "After fixing the cationic D-lysine block, the second block X can contribute to non-repetitive packing and spatial occupancy. Side-chain volume is a mature descriptor for side-chain scale and is preregistered as a secondary material cohesion/space-filling axis with direction higher, subject to redundancy audit against hydrophobicity.",
+          "role": "primary_rank",
+          "preferred_direction": "higher",
+          "target_value": null,
+          "basis": "both",
+          "supporting_evidence_ids": [
+            "I:steric_packing:IE05"
+          ],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "Measures spatial occupancy of the side chain, distinct from hydrophobicity (thermodynamic driving force) and from beta-branching (geometric branching pattern).",
+          "notes": "Direction higher is preregistered by the domain guidance. Redundancy with hydrophobicity must be audited at the ranking stage. Evidence for C is absent, but evidence quantity is not a candidate score."
+        },
+        {
+          "indicator_id": "I3",
+          "indicator_name": "beta-branching",
+          "measurement_target": "beta_branching",
+          "scientific_definition": "Presence or absence of a branch at the beta-carbon of the amino acid side chain (e.g., I, V, T have beta-branching; L, A, C, M do not).",
+          "why_relevant_to_dlys_system": "Beta-branching is a geometric constraint on side-chain packing and is associated with beta-structure preference. The domain guidance explicitly states that beta-branching is not an automatic benefit and that if it enters primary ranking, the only acceptable direction is absence. This descriptor helps distinguish candidates by side-chain geometry within the non-aromatic domain.",
+          "role": "primary_rank",
+          "preferred_direction": "absence",
+          "target_value": null,
+          "basis": "literature",
+          "supporting_evidence_ids": [
+            "I:steric_packing:IE05",
+            "V:secondary_structure:VE04",
+            "V:secondary_structure:VE06"
+          ],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "Measures side-chain branching geometry, distinct from side-chain volume (spatial size) and hydrophobicity (thermodynamic driving force).",
+          "notes": "Direction absence is mandated by the domain guardrail. This descriptor is binary/categorical at the single-residue level. Evidence for C is absent, but evidence quantity is not a candidate score."
+        }
+      ],
+      "validation_warnings": [],
+      "knowledge_gaps": [
+        "No qualified native-X evidence was supplied for cysteine (C) in this domain; its neutral thiol special chemistry is flagged but not represented by a mature single-residue descriptor in the supplied evidence.",
+        "Mature single-residue descriptors for side-chain flexibility or conformational entropy are not represented in the supplied evidence and are not included as primary_rank indicators.",
+        "Alpha-helix propensity and beta-sheet propensity are competing conformational preferences and are not included as primary_rank indicators per domain guardrails; they remain validation_only/context_dependent.",
+        "The exact hydrophobicity scale and side-chain volume scale are not specified; tool mapping will occur later."
+      ],
+      "notes": [
+        "Domain D2 focuses on non-aromatic hydrophobic-conformational candidates: A, C, I, L, M, V.",
+        "Primary_rank indicators are limited to three nonredundant descriptors: hydrophobicity, side-chain volume, and beta-branching (absence).",
+        "Alpha-helix propensity, beta-sheet propensity, and other conformational preferences are not promoted to primary_rank because they represent competing structural outcomes and the domain guidance does not preregister both as simultaneous same-direction benefits.",
+        "Evidence quantity is not used as a candidate score; candidates with fewer evidence items are not penalized.",
+        "No numerical weights, composite scores, or candidate rankings are provided."
+      ]
+    },
+    {
+      "domain_id": "D3",
+      "domain_name_zh": "极性-氢键-构象相容域",
+      "candidate_codes": [
+        "N",
+        "Q",
+        "S",
+        "T",
+        "D",
+        "E",
+        "G",
+        "P"
+      ],
+      "candidate_names_zh": [
+        "天冬酰胺",
+        "谷氨酰胺",
+        "丝氨酸",
+        "苏氨酸",
+        "天冬氨酸",
+        "谷氨酸",
+        "甘氨酸",
+        "脯氨酸"
+      ],
+      "indicators": [
+        {
+          "indicator_id": "I1",
+          "indicator_name": "Net side-chain charge at pH 7.4",
+          "measurement_target": "net side-chain charge at pH 7.4",
+          "scientific_definition": "The formal net charge of the amino acid side chain at pH 7.4, computed from standard pKa values of ionizable side-chain groups.",
+          "why_relevant_to_dlys_system": "The fixed D-Lys block provides cationic/hydrophilic delivery function. A second-block X with negative side-chain charge (D, E) may electrostatically interact with or partially neutralize the D-Lys cationic character, whereas neutral or positive side chains preserve the fixed cationic function. This descriptor directly quantifies charge compatibility with the D-Lys block.",
+          "role": "primary_rank",
+          "preferred_direction": "closer_to_zero",
+          "target_value": null,
+          "basis": "both",
+          "supporting_evidence_ids": [
+            "T:electrostatic:TE04",
+            "E:secondary_structure:EE03"
+          ],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "Distinct from side-chain amide presence (I2) and side-chain volume (I3); charge is an electrostatic property, not a functional-group class or size metric.",
+          "notes": "Direction is preregistered by domain guardrails. D and E are the only candidates with negative side-chain charge at pH 7.4; all others are neutral or positive. This descriptor is not a ranking of candidates but a charge-compatibility axis."
+        },
+        {
+          "indicator_id": "I2",
+          "indicator_name": "Side-chain amide presence",
+          "measurement_target": "presence of a primary amide group in the side chain",
+          "scientific_definition": "Binary indicator (presence/absence) of a primary carboxamide group (-C(=O)NH2) in the amino acid side chain at physiological pH.",
+          "why_relevant_to_dlys_system": "The domain guidance identifies neutral side-chain amide chemistry (Asn, Gln) as an auditable hydrogen-bonding functional class that is distinct from hydroxyl, thiol, and carboxylate side chains. This descriptor distinguishes amide-containing candidates from other polar candidates without relying on non-discriminative HBD/HBA counts.",
+          "role": "primary_rank",
+          "preferred_direction": "presence",
+          "target_value": null,
+          "basis": "literature",
+          "supporting_evidence_ids": [
+            "Q:hydrogen_bond:QE06",
+            "Q:secondary_structure:QE06"
+          ],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "Distinct from net charge (I1) and side-chain volume (I3); this is a functional-group class descriptor, not an electrostatic or size property.",
+          "notes": "Direction is preregistered by domain guardrails. This descriptor does not pre-select Asn or Gln as a winner; it only distinguishes amide chemistry from other polar chemistries. Simple HBD/HBA counts are not used because they are not discriminative within this candidate set."
+        },
+        {
+          "indicator_id": "I3",
+          "indicator_name": "Side-chain volume",
+          "measurement_target": "side-chain volume",
+          "scientific_definition": "The van der Waals volume of the amino acid side chain, typically reported in Å³, based on standard residue-specific values.",
+          "why_relevant_to_dlys_system": "Within the same or similar polar functional-group background, side-chain volume provides a mature, reproducible measure of side-chain reach and spatial occupancy. This complements the fixed D-Lys block by allowing comparison of interaction reach and steric accessibility among candidates with different side-chain sizes.",
+          "role": "primary_rank",
+          "preferred_direction": "higher",
+          "target_value": null,
+          "basis": "literature",
+          "supporting_evidence_ids": [
+            "Q:chain_length_cooperativity:QE06",
+            "G:chain_length_cooperativity:GE05"
+          ],
+          "quantifiable_single_residue": true,
+          "redundancy_note": "Distinct from net charge (I1) and side-chain amide presence (I2); this is a steric/size property, not an electrostatic or functional-group descriptor.",
+          "notes": "Direction is preregistered by domain guardrails for use as a secondary axis of interaction reach. The guardrail explicitly requires that this descriptor be subjected to criterion ablation and weight-perturbation audits. It is not an automatic benefit; higher side-chain volume is only a preference direction for reach within this domain."
+        }
+      ],
+      "validation_warnings": [],
+      "knowledge_gaps": [
+        "No mature single-residue descriptor for side-chain conformational entropy or backbone conformational freedom is available that would allow a defensible preference direction for G and P within this domain; these remain validation_only/context_dependent.",
+        "Simple HBD/HBA donor/acceptor counts are not discriminative among C/D/E/N/Q/S/T and are therefore not returned as primary_rank descriptors.",
+        "No mature single-residue descriptor for side-chain pKa or ionization state at pH 7.4 is available that would refine the net charge descriptor beyond the standard formal charge calculation.",
+        "The supplied evidence does not provide a quantitative single-residue metric for side-chain hydrogen-bonding capacity that is both mature and discriminative within this candidate set."
+      ],
+      "notes": [
+        "Domain D3 focuses on polar/hydrogen-bonding side chains and conformational boundary candidates (G, P) after fixing D-Lys as the cationic/hydrophilic functional block.",
+        "The three primary_rank descriptors are nonredundant: net charge (electrostatic compatibility), side-chain amide presence (functional-group chemistry), and side-chain volume (steric reach).",
+        "G and P are retained in the candidate set for same-domain comparison but are not assigned primary_rank descriptors for conformational flexibility or rigidity because the domain guardrails explicitly state that 'more flexible/rigid' is not preregistered as a monotonic benefit.",
+        "No candidate is ranked, scored, or selected as a winner. Evidence quantity is not used as a candidate score.",
+        "All primary_rank directions are derived from the preregistered domain guardrails and the fixed D-Lys system constraint."
+      ]
+    }
+  ]
+}

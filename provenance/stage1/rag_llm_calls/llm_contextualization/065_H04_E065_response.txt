@@ -1,0 +1,23 @@
+{
+  "summary": "This study demonstrates that polyhistidine-tagged (His-tag) protein antigens displayed on immunogenic liposomes via cobalt-porphyrin phospholipid, combined with the CPQ adjuvant system (containing monophosphorylated lipid A and QS-21), elicit strong antibody responses in mice. No anti-His-tag antibodies were detected, and IgG levels were orders of magnitude higher compared to control adjuvants. The system shows potential for dose-sparing and neutralizing antibody production against alphaviruses, directly addressing polyhistidine-based vaccine strategies.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Antibody elicitation in mice",
+    "Neutralizing antibody activity against VEEV strain TC83 and Chikungunya virus 118/25"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "No detectable anti-His-tag antibodies",
+    "Orders-of-magnitude higher levels of antigen-specific IgG compared to control adjuvants",
+    "ELISA results correlated with antiviral activity"
+  ],
+  "material_or_molecular_context": "Polyhistidine-tagged (His-tag) physicochemical consensus protein antigens (VEEVcon and EVCcon) displayed on liposomes via cobalt-porphyrin phospholipid; CPQ adjuvant (cobalt-porphyrin phospholipid + monophosphorylated lipid A + QS-21)",
+  "biological_context": "Mouse immunization model; alphavirus (VEEV and Chikungunya) antibody responses",
+  "limitations_for_current_question": [
+    "No direct assessment of dendritic-cell activation or antigen presentation",
+    "Focuses on antibody responses, not T-cell responses or cross-presentation",
+    "No measurement of innate immune activation or adjuvant mechanisms beyond antibody titers",
+    "Study is proof-of-principle in mice only"
+  ],
+  "supporting_text": "Cobalt-porphyrin phospholipid displays recombinant protein antigens on liposome surfaces via antigen polyhistidine-tag"
+}

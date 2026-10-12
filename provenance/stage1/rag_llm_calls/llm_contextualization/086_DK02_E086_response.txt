@@ -1,0 +1,15 @@
+{
+  "summary": "",
+  "relevance_score": 0,
+  "reported_outcomes": [],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [],
+  "material_or_molecular_context": "poly-D-lysine, poly-L-lysine, polyethylenimine, poly-L-ornithine, laminin, fibronectin, Matrigel",
+  "biological_context": "human iPSC-derived NGN2 neurons, primary human astrocytes, neuron/astrocyte co-cultures; neurotoxicity models",
+  "limitations_for_current_question": [
+    "No dendritic cells, antigen presentation, or vaccine-related immune context studied",
+    "Focus is on neural cell culture and electrophysiology, not adjuvant or vaccine responses",
+    "Poly-D-lysine is only used as a surface coating, not as a polypeptide/polymer adjuvant system"
+  ],
+  "supporting_text": ""
+}

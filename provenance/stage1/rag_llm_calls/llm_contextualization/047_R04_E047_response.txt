@@ -1,0 +1,27 @@
+{
+  "summary": "PEG-Q11R9 nanofibers displaying nona-arginine (R9) synergistically enhance CDN-mediated dendritic cell activation in vitro (STING-dependent, monotonic with R9 density) and improve sublingual immunization in vivo, with intermediate R9 levels optimal.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "dendritic cell activation in vitro and in vivo",
+    "antigen trafficking to draining lymph nodes",
+    "sublingual immunization efficacy"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "synergistic effect on DC activation with CDN adjuvants",
+    "STING-dependent enhancement",
+    "increasing R9 concentration monotonically increases DC activation in vitro",
+    "polyvalent display on nanofibers more effective than unassembled R9 peptide",
+    "bell-shaped trend for in vivo DC activation and antigen trafficking with increasing R9",
+    "intermediate R9 levels optimal for sublingual immunization"
+  ],
+  "material_or_molecular_context": "PEG-Q11 nanofibers coassembled with varying densities of nona-arginine (R9) peptide",
+  "biological_context": "in vitro dendritic cells and in vivo sublingual immunization in mice (draining lymph nodes)",
+  "limitations_for_current_question": [
+    "no direct measurement of antigen presentation or cross-presentation",
+    "adjuvant limited to cyclic-dinucleotides (CDNs) only",
+    "study specific to sublingual route; generalizability to other mucosal or systemic routes uncertain",
+    "potential detrimental mucoadhesive interactions at high R9 densities"
+  ],
+  "supporting_text": "PEG-Q11R9 fibers and cyclic-di-GMP or cyclic-di-AMP adjuvants had a synergistic effect on enhancing dendritic cell activation"
+}

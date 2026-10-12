@@ -1,0 +1,30 @@
+{
+  "summary": "PEG-PLL-PLLeu cationic polypeptide micelles enhance dendritic cell maturation, antigen uptake and presentation, and potentiate antibody and CTL responses, serving as a robust vaccine adjuvant.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "dendritic cell maturation",
+    "antigen uptake and presentation",
+    "germinal center formation",
+    "antibody production",
+    "cytotoxic T lymphocyte (CTL) response"
+  ],
+  "reported_numeric_results": [
+    "antibody production increased by 70-90 fold",
+    "loading capacity = 55%"
+  ],
+  "reported_qualitative_findings": [
+    "polypeptide micelle formulations robustly enhanced vaccine-induced antibody production",
+    "capability of inducing dendritic cell maturation",
+    "enhancing antigen uptake and presentation",
+    "promoting germinal center formation",
+    "synergistically augment tumor specific CTL response when co-loaded with PIC"
+  ],
+  "material_or_molecular_context": "poly(ethylene glycol)-b-poly(L-lysine)-b-poly(L-leucine) (PEG-PLL-PLLeu) self-assembled cationic micelles",
+  "biological_context": "subunit vaccine delivery system, likely in vivo (mice) with OVA antigen and possibly tumor model",
+  "limitations_for_current_question": [
+    "does not specifically assess cross-presentation separately",
+    "only tested with OVA as model antigen",
+    "material is a block copolymer containing poly(L-lysine) but also PEG and poly(L-leucine); not pure polylysine"
+  ],
+  "supporting_text": "robustly enhanced vaccine-induced antibody production by 70-90 fold"
+}

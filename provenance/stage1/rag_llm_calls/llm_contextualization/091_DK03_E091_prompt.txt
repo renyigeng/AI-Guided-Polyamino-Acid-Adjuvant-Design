@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?
+
+QUERY ID: DK03
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 3875416
+DOI: 10.1016/0008-8749(85)90255-2
+
+TITLE:
+Tolerance and immunity in antigen-specific B-lymphocyte lines: early receptor binding of either antigen or tolerogen initiates an immune response.
+
+ABSTRACT:
+Studies of the effect of tolerance-inducing compounds on B lymphocytes have been complicated by the fact that it is technically difficult to completely isolate the antigen-specific B cell from the effects of T cells or T-cell factors. We have used our cell lines of nonmalignant dinitrophenyl (DNP)-specific B lymphocytes derived from normal mice, which have no contaminating T cells, to study the effect of DNP-murine IgG2a (DNP-MGG), a tolerogen which is not normally immunogenic, on antigen-specific B lymphocytes. Preincubation with DNP-MGG for 48 hr, both in the presence and absence of T-cell factors from EL-4 supernatant prior to adding the antigen DNP-Ficoll, can induce tolerance in cell line B lymphocytes. The suppression is antigen-specific since preincubation with fluorescein-MGG or unconjugated MGG does not suppress the anti-DNP response. At least a 36-hr incubation is required for tolerance induction in B lymphocytes, but a 6-hr preincubation with DNP-MGG augments the immune response to DNP-Ficoll. Lymphocytes incubated for 6 or 24 hr with DNP-MGG prior to adding EL-4 supernatant and filler cells without DNP-Ficoll exhibited an immune response equal to that elicited by DNP-Ficoll and T-cell factors. A 6-hr pulse with a DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL), a B-cell tolerogen which does not bind to Fc receptors, elicited the same immune response as seen with a 6-hr pulse of DNP-MGG but a 48-hr preincubation with DNP-dGL induced tolerance. Thus, it is likely that the initial binding of the tolerogen to the immunoglobulin receptor on the mature B cell elicits an activation signal similar to that seen with the antigen. The suppressive effect of the tolerogen itself appears to occur at a later stage of the process of the B-cell activation, proliferation, and differentiation.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

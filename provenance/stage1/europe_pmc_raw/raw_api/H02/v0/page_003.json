@@ -1,0 +1,15 @@
+{
+  "version": "6.9",
+  "hitCount": 154,
+  "request": {
+    "queryString": "TITLE_ABS:(polyhistidine OR \"poly-L-histidine\" OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(intracellular OR uptake OR internalization OR endosomal OR endosome)",
+    "resultType": "core",
+    "cursorMark": "AoIIPiOVXCc4MjA2MzYx",
+    "pageSize": 46,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": []
+  }
+}

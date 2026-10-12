@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K02
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 25950742
+DOI: 10.1021/mp500765e
+
+TITLE:
+Internalization and Subcellular Trafficking of Poly-l-lysine Dendrimers Are Impacted by the Site of Fluorophore Conjugation.
+
+ABSTRACT:
+Internalization and intracellular trafficking of dendrimer-drug conjugates play an important role in achieving successful drug delivery. In this study, we aimed to elucidate the endocytosis mechanisms and subcellular localization of poly-l-lysine (PLL) dendrimers in Caco-2 cells. We also investigated the impact of fluorophore conjugation on cytotoxicity, uptake, and transepithelial transport. Oregon green 514 (OG) was conjugated to PLL G3 at either the dendrimer periphery or the core. Chemical inhibitors of clathrin-, caveolin-, cholesterol-, and dynamin-mediated endocytosis pathways and macropinocytosis were employed to establish internalization mechanisms, while colocalization with subcellular markers was used to determine dendrimer trafficking. Cell viability, internalization, and uptake were all influenced by the site of fluorophore conjugation. Uptake was found to be highly dependent on cholesterol- and dynamin-mediated endocytosis as well as macropinocytosis. Dendrimers were trafficked to endosomes and lysosomes, and subcellular localization was impacted by the fluorophore conjugation site. The results of this study indicate that PLL dendrimers exploit multiple pathways for cellular entry, and internalization and trafficking can be impacted by conjugation. Therefore, design of dendrimer-drug conjugates requires careful consideration to achieve successful drug delivery.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

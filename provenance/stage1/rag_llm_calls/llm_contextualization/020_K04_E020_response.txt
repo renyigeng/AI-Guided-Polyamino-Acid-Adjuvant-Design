@@ -1,0 +1,21 @@
+{
+  "summary": "Poly-l-lysine (PLL) complexed with TLR agonists (CpG, polyI:C) forms polyplexes that limit immunostimulant transport and maintain immune cell activation. PLL molecular weight and ratio affect immunostimulant accessibility and polyplex interaction strength. The study focuses on TLR activation and transport in a tumor microenvironment model, not specifically on dendritic-cell activation or antigen presentation.",
+  "relevance_score": 6,
+  "reported_outcomes": [
+    "PLL molecular weight and ratio affect immunostimulant complexation, TLR activation, and transport in a model tumor microenvironment",
+    "Polyplexes can limit immunostimulant transport suggesting injection site retention"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Polyplexes dramatically limit immunostimulant transport",
+    "Molecular weight of PLL and ratio affect accessibility of immunostimulant within polyplex and polyplex interaction strength"
+  ],
+  "material_or_molecular_context": "poly-l-lysine (PLL) complexed with CpG (TLR9 agonist) or polyI:C (TLR3 agonist)",
+  "biological_context": "in vitro model tumor microenvironment; immune cell activation (TLR triggering)",
+  "limitations_for_current_question": [
+    "Does not specifically study dendritic cells or antigen presentation/cross-presentation",
+    "Focused on tumor microenvironment and TLR activation, not vaccine responses or adjuvant activity explicitly",
+    "No direct assessment of vaccine-related immune responses or dendritic cell maturation markers"
+  ],
+  "supporting_text": "polycations like poly-l-lysine (PLL) have been complexed to the anionic CpG or polyI:C with the purpose of improving intracellular delivery and potency"
+}

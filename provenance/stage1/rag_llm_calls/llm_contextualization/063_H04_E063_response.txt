@@ -1,0 +1,30 @@
+{
+  "summary": "Polylactic acid-polyhistidine (PLA-PHis) copolymer in the mPOD nanosystem reinforced dendritic cell maturation and migration, amplified mucosal immune response, and boosted secretory IgA production via RIG-I/NOD2 signaling when orally delivered in an AML murine model.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "elicitation of mucosal and systemic immune response",
+    "dendritic cell maturation and migration",
+    "amplification of mucosal immune response",
+    "production of secretory immunoglobulin A",
+    "systemic cytotoxic immune reactions",
+    "eradication of disseminated malignant leukemic cells",
+    "defense against leukemia attacks"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "oral delivery of mPOD reinforces dendritic cell maturation and migration",
+    "amplifies mucosal immune response",
+    "boosts production of secretory IgA",
+    "provoked mucosal immunity positively regulates systemic cytotoxic immune reactions",
+    "eradicates disseminated malignant leukemic cells",
+    "provides defense against leukemia attacks"
+  ],
+  "material_or_molecular_context": "polylactic acid-polyhistidine (PLA-PHis) copolymer, MDP-modified PEG-lipid (MDP-PEG-DSPE), 5'-triphosphate-modified RNA (ppp-RNA)",
+  "biological_context": "acute myeloid leukemia (AML) murine model, gut-associated lymphoid tissues, Peyer's patches, dendritic cells, mucosal immunity",
+  "limitations_for_current_question": [
+    "Polyhistidine is combined with other materials (PLA, MDP, PEG, RNA); specific contribution of polyhistidine to DC activation is not isolated.",
+    "Study uses a mouse AML model, not directly generalizable to other vaccine or adjuvant contexts.",
+    "Cross-presentation is not explicitly measured or mentioned."
+  ],
+  "supporting_text": "PLA-PHis copolymer ... reinforces dendritic cell maturation and migration"
+}

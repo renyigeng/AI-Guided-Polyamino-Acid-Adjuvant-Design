@@ -1,0 +1,140 @@
+{
+  "schema_version": "3.0.0",
+  "stage1_fixed_functional_block": "D-lysine",
+  "domains": [
+    {
+      "domain_id": "D1",
+      "name_zh": "芳香疏水-π作用域",
+      "candidates": [
+        "F",
+        "W",
+        "Y"
+      ],
+      "design_goal_zh": "固定D-赖氨酸已经承担阳离子、亲水和递送功能后，比较芳香侧链作为第二嵌段时提供互补内聚、芳香相互作用、溶剂化平衡和侧链packing的能力。",
+      "focus_questions_zh": [
+        "哪些可量化的单残基/侧链物化性质能够区分芳香侧链的内聚能力与水相溶剂化倾向？",
+        "哪些可量化性质能够表征芳香侧链的空间占据、packing或界面行为，而不把宽泛的‘π作用’直接当成自制分数？",
+        "哪些性质与固定D-赖氨酸的亲水阳离子功能形成互补，而不是重复它的功能？"
+      ],
+      "interpretation_flags": [],
+      "decision_dimensions_zh": [
+        "疏水内聚：以成熟单残基疏水性指标衡量芳香第二嵌段相对D-Lys亲水段所提供的疏水驱动力；在本域内方向预注册为越高越有利。",
+        "水化/溶剂化：优先使用可直接解释的侧链极性官能团或HBD/HBA位点负担来表征额外水化；在固定D-Lys已经提供亲水功能的前提下，额外极性位点越少越有利于保持芳香疏水核。",
+        "芳香packing背景：芳香环数、侧链尺寸和几何用于解释/验证，不因“更大/更多”自动获得主排名收益。"
+      ],
+      "direction_guardrails_zh": [
+        "F/W/Y都已满足“芳香”这一域定义，因此芳香环数量本身不是自动的单调收益指标；不得设置为“越多越好”的primary_rank，默认validation_only。",
+        "侧链尺寸/体积没有预注册“越大越好”方向；除非新证据明确建立本体系的单调材料收益，否则必须validation_only/context_dependent。",
+        "主排名优先保留一个疏水内聚轴（如hydrophobicity，higher）和一个非重复的水化/极性负担轴（如side-chain HBD+HBA site count，lower）。",
+        "若使用hydration/solution free-energy类指标，必须确认量纲和符号方向，并与hydrophobicity做冗余审计；不得把同一疏水机制重复投票。"
+      ]
+    },
+    {
+      "domain_id": "D2",
+      "name_zh": "非芳香疏水-构象域",
+      "candidates": [
+        "A",
+        "C",
+        "I",
+        "L",
+        "M",
+        "V"
+      ],
+      "design_goal_zh": "固定D-赖氨酸后，比较非芳香候选通过疏水内聚、侧链packing、支化、柔性以及主链/二级结构倾向提供互补材料作用的能力。",
+      "focus_questions_zh": [
+        "哪些可量化性质能够区分非芳香候选的疏水驱动强弱？",
+        "哪些可量化性质能够区分侧链几何、packing、支化和柔性差异？",
+        "哪些成熟的单残基构象/二级结构倾向指标能够反映重复聚肽中的构象偏好，而不直接声称预测完整材料结构？"
+      ],
+      "interpretation_flags": [
+        {
+          "candidate": "C",
+          "flag": "neutral_thiol_special_chemistry"
+        }
+      ],
+      "decision_dimensions_zh": [
+        "疏水内聚：成熟单残基疏水性作为主要驱动力，方向预注册为越高越有利。",
+        "侧链支化/packing：β支化是几何约束而非自动收益。现有研究显示I/V的β支化与β结构偏好相关，而L更偏α螺旋；本项目未预注册“β结构越多越好”，因此若β支化进入主排名，方向只能是absence。",
+        "侧链尺度：成熟的side-chain volume可作为非重复packing/extent轴；在本域中作为次级材料内聚/空间占据轴时可采用higher，但必须与疏水性做相关性审计。",
+        "二级结构倾向：α/β倾向用于解释，不把互相竞争的结构同时作为越高越好的主排名收益。"
+      ],
+      "direction_guardrails_zh": [
+        "Beta-branching不得以presence/higher作为primary_rank收益；若模型提出该方向，必须降级。可接受的主排名方向仅为absence。",
+        "α螺旋倾向和β折叠倾向代表竞争的构象偏好，不能在同一个TOPSIS问题里同时作为“越高越好”的独立收益指标；当前默认validation_only/context_dependent。",
+        "Hydrophobicity若进入primary_rank，方向为higher。Side-chain volume若进入primary_rank，方向为higher，并在排序层做冗余审计。"
+      ]
+    },
+    {
+      "domain_id": "D3",
+      "name_zh": "极性-氢键-构象相容域",
+      "candidates": [
+        "N",
+        "Q",
+        "S",
+        "T",
+        "D",
+        "E",
+        "G",
+        "P"
+      ],
+      "design_goal_zh": "固定D-赖氨酸的阳离子/亲水功能后，比较极性/氢键侧链以及构象边界候选通过电荷相容、官能团化学、侧链可达性和主链构象调节提供互补材料作用的能力。G/P作为构象边界候选保留用于同域比较，不预先删除。",
+      "focus_questions_zh": [
+        "哪些可量化性质能够区分侧链的氢键供体/受体能力、极性和溶剂化差异？",
+        "哪些可量化性质能够区分中性酰胺侧链的相互作用reach/尺度，同时避免把简单HBD/HBA计数重复投票？",
+        "为了保留D-赖氨酸的阳离子功能，哪些成熟的单残基电荷相关量可以评估负电侧链的相容性？",
+        "甘氨酸/脯氨酸等构象边界候选如何作为解释/稳健性背景，而不是因缺少极性官能团被人工预删？"
+      ],
+      "interpretation_flags": [
+        {
+          "candidate": "D",
+          "flag": "negative_sidechain_charge_may_interact_with_D_Lys"
+        },
+        {
+          "candidate": "E",
+          "flag": "negative_sidechain_charge_may_interact_with_D_Lys"
+        },
+        {
+          "candidate": "G",
+          "flag": "minimal_sidechain_high_conformational_freedom"
+        },
+        {
+          "candidate": "P",
+          "flag": "strong_backbone_conformational_constraint"
+        }
+      ],
+      "decision_dimensions_zh": [
+        "电荷相容：固定D-Lys承担阳离子功能，X侧链净电荷在pH 7.4附近越接近0越有利，避免抵消固定阳离子段。",
+        "极性官能团化学：中性侧链酰胺（Asn/Gln）是可审计的氢键化学类别；简单HBD/HBA计数若区分度不足则不作为主排名。",
+        "侧链可达性/尺度：成熟side-chain volume可作为相互作用reach/空间占据的次级轴；方向higher仅用于保留相同框架下的可区分性，并必须接受criterion ablation与权重扰动审计。",
+        "构象边界：G/P保留在候选集合中，但不把“更柔/更刚”预注册为单调收益；相关量默认validation_only/context_dependent。"
+      ],
+      "direction_guardrails_zh": [
+        "Net side-chain charge at pH 7.4作为primary_rank时方向必须closer_to_zero。",
+        "Side-chain amide presence可作为primary_rank/presence，用于区分中性酰胺化学与羟基、硫醇、羧酸侧链；这不是预先指定N或Q中的赢家。",
+        "侧链可达性/尺度若用于primary_rank，应优先选择成熟、可复现的单残基尺寸/体积类量。Side-chain volume可作为primary_rank/higher，用于在相同或相近极性官能团背景下表征侧链reach；最终仍需LOO和权重扰动验证其是否单指标支配。",
+        "Side-chain HBD/HBA donor/acceptor count若无法在C/D/E/N/Q/S/T中产生有效区分，必须validation_only或在排序层因constant_within_domain被丢弃。"
+      ]
+    }
+  ],
+  "candidate_names_zh": {
+    "A": "丙氨酸",
+    "C": "半胱氨酸",
+    "D": "天冬氨酸",
+    "E": "谷氨酸",
+    "F": "苯丙氨酸",
+    "G": "甘氨酸",
+    "I": "异亮氨酸",
+    "L": "亮氨酸",
+    "M": "甲硫氨酸",
+    "N": "天冬酰胺",
+    "P": "脯氨酸",
+    "Q": "谷氨酰胺",
+    "S": "丝氨酸",
+    "T": "苏氨酸",
+    "V": "缬氨酸",
+    "W": "色氨酸",
+    "Y": "酪氨酸"
+  },
+  "all_17_candidates_ranked": true,
+  "domain_membership_source": "human_preregistered_material_mechanism_taxonomy"
+}

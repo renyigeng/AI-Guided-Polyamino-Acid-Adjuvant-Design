@@ -1,0 +1,19 @@
+{
+  "summary": "The abstract discusses self-assembly of histidine-based copolypeptides but provides no data on cytotoxicity, biocompatibility, hemolysis, or safety. It only states a general expectation of innate biocompatibility for peptide nanostructures.",
+  "relevance_score": 2,
+  "reported_outcomes": [
+    "Self-assembly and characterization of pH-sensitive histidine-based block copolypeptides"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Peptide-based nanostructures are proposed as biocompatible and biodegradable, but no experimental evidence is provided for histidine-based materials specifically."
+  ],
+  "material_or_molecular_context": "Histidine-based amphiphilic block copolypeptides with a histidine-rich hydrophobic block",
+  "biological_context": "None; no cells, animals, or immune contexts were studied regarding safety or cytotoxicity.",
+  "limitations_for_current_question": [
+    "No cytotoxicity, hemolysis, or biocompatibility assays reported",
+    "Only self-assembly and physicochemical characterization are described",
+    "Biocompatibility claim is generic, not supported by data in this abstract"
+  ],
+  "supporting_text": "Peptide-based nanostructures have been proposed as a promising solution, given their innate biocompatibility"
+}

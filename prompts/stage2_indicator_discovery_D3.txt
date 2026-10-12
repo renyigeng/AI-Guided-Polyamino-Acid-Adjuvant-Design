@@ -1,0 +1,458 @@
+You are assisting a materials-science screening workflow for polypeptide vaccine-carrier design.
+
+The first-stage functional-block decision is already complete: D-lysine is fixed as the cationic, hydrophilic, functional delivery block. The current task is ONLY to determine which physicochemical descriptors should be used to compare candidate second-block amino acids X within ONE preregistered mechanism domain.
+
+The domain membership is fixed by the research team. Do not reclassify candidates and do not create new domains.
+
+Your scientific task:
+1. Read the supplied qualified native-X literature evidence and the D-Lys system constraints.
+2. Identify measurable physicochemical descriptors that are genuinely useful for distinguishing candidates within THIS domain and are relevant to complementing the fixed D-Lys block.
+3. Prefer 2-5 NONREDUNDANT primary_rank descriptors when the evidence supports them. If fewer than two are scientifically supportable, return fewer and state the gap. Never invent extra descriptors merely to satisfy a downstream multicriteria calculation.
+4. Each primary_rank descriptor must represent ONE property, not a bundle of several properties.
+5. A broad mechanism phrase such as "hydrogen bonding", "aromatic interaction", "hydrophobic assembly", "packing" or "conformational stability" is not by itself a numerical descriptor. Translate the mechanism into a measurable single-residue/side-chain property if a mature descriptor exists; otherwise mark it validation_only.
+6. Use literature evidence to determine what should be compared. A system-level design constraint supplied by the researchers (for example preserving D-Lys cationic function) may also justify a descriptor; mark basis=system_constraint or both when appropriate.
+7. Evidence quantity is NOT a candidate score. Candidates with fewer papers must not be penalized simply for having fewer evidence items.
+8. Do not recommend, rank, score, select, or name a winner among the candidates.
+9. Do not assign numerical weights or construct a composite score.
+10. Do not assume a specific software tool or database. Tool mapping occurs later and is intentionally hidden from you.
+11. Do not invent custom scores such as "pi-stacking score", "assembly potential", "compatibility score", or similar ad-hoc metrics.
+12. This is a decision-oriented descriptor selection task, not a generic property survey. For every descriptor you label primary_rank, you MUST state an actionable preference direction for THIS fixed D-Lys design goal: higher, lower, closer_to_zero, presence, absence, or target.
+13. Do NOT use primary_rank together with context_dependent. If a descriptor is scientifically relevant but no defensible preference direction can be stated, set role=validation_only and preferred_direction=context_dependent instead.
+14. Use the supplied D-Lys system constraint and the preregistered domain design goal to justify the direction. Do not invent a direction merely to satisfy multicriteria ranking; genuinely ambiguous properties must remain validation_only.
+15. Prefer standard single-residue/side-chain property names. Do not replace a broad property with a more specific experimental surrogate (for example logP or a particular partition coefficient) unless that exact quantity is itself justified by the supplied evidence.
+
+16. Follow the human-preregistered decision dimensions and direction guardrails supplied for this domain. They define the materials-design question, not the winner.
+17. A structural descriptor is not automatically a benefit simply because its numeric value is larger. A primary_rank direction must represent suitability for the fixed D-Lys carrier design.
+18. Do not reward mutually competing physical outcomes as simultaneous same-direction benefits (for example alpha-helix propensity and beta-sheet propensity) unless the domain guidance explicitly preregisters both as desirable, which it currently does not.
+19. Prefer descriptors that genuinely vary among the candidates and have mature single-residue definitions. If a proposed count is effectively constant or a property requires a highly context-specific 3D state, keep it validation_only unless the evidence and domain guidance justify otherwise.
+20. Treat the supplied domain direction guardrails as preregistered scientific constraints. Do not reverse them. In particular, a structural feature explicitly described as NOT an automatic benefit must not be returned as presence/higher primary_rank.
+21. When the domain guidance identifies a functional-group class (for example side-chain amide) as a decision axis, prefer the explicit structural descriptor for that group over generic HBD/HBA counts if those counts are not discriminative.
+22. When a domain guidance explicitly distinguishes a ranking axis from a validation axis, preserve that separation. Do not promote ring count, side-chain size, alpha-helix propensity, beta-sheet propensity, or other validation axes unless the domain-specific guardrail explicitly authorizes the direction.
+
+Return STRICT JSON only, matching the supplied schema. Do not add prose outside the JSON.
+
+
+FIXED SYSTEM CONTEXT:
+{
+  "stage1_completed": true,
+  "fixed_functional_block": "D-lysine",
+  "fixed_role": [
+    "cationic",
+    "hydrophilic",
+    "functional_delivery_block"
+  ],
+  "stage2_target": "screen the remaining 17 amino acids as the second block X in C6-X_m-D-Lys_10"
+}
+
+PREREGISTERED DOMAIN AND HUMAN SCIENTIFIC GUIDANCE:
+{
+  "domain_id": "D3",
+  "domain_name_zh": "极性-氢键-构象相容域",
+  "candidate_codes": [
+    "N",
+    "Q",
+    "S",
+    "T",
+    "D",
+    "E",
+    "G",
+    "P"
+  ],
+  "candidate_names_zh": [
+    "天冬酰胺",
+    "谷氨酰胺",
+    "丝氨酸",
+    "苏氨酸",
+    "天冬氨酸",
+    "谷氨酸",
+    "甘氨酸",
+    "脯氨酸"
+  ],
+  "design_goal_zh": "固定D-赖氨酸的阳离子/亲水功能后，比较极性/氢键侧链以及构象边界候选通过电荷相容、官能团化学、侧链可达性和主链构象调节提供互补材料作用的能力。G/P作为构象边界候选保留用于同域比较，不预先删除。",
+  "focus_questions_zh": [
+    "哪些可量化性质能够区分侧链的氢键供体/受体能力、极性和溶剂化差异？",
+    "哪些可量化性质能够区分中性酰胺侧链的相互作用reach/尺度，同时避免把简单HBD/HBA计数重复投票？",
+    "为了保留D-赖氨酸的阳离子功能，哪些成熟的单残基电荷相关量可以评估负电侧链的相容性？",
+    "甘氨酸/脯氨酸等构象边界候选如何作为解释/稳健性背景，而不是因缺少极性官能团被人工预删？"
+  ],
+  "decision_dimensions_zh": [
+    "电荷相容：固定D-Lys承担阳离子功能，X侧链净电荷在pH 7.4附近越接近0越有利，避免抵消固定阳离子段。",
+    "极性官能团化学：中性侧链酰胺（Asn/Gln）是可审计的氢键化学类别；简单HBD/HBA计数若区分度不足则不作为主排名。",
+    "侧链可达性/尺度：成熟side-chain volume可作为相互作用reach/空间占据的次级轴；方向higher仅用于保留相同框架下的可区分性，并必须接受criterion ablation与权重扰动审计。",
+    "构象边界：G/P保留在候选集合中，但不把“更柔/更刚”预注册为单调收益；相关量默认validation_only/context_dependent。"
+  ],
+  "direction_guardrails_zh": [
+    "Net side-chain charge at pH 7.4作为primary_rank时方向必须closer_to_zero。",
+    "Side-chain amide presence可作为primary_rank/presence，用于区分中性酰胺化学与羟基、硫醇、羧酸侧链；这不是预先指定N或Q中的赢家。",
+    "侧链可达性/尺度若用于primary_rank，应优先选择成熟、可复现的单残基尺寸/体积类量。Side-chain volume可作为primary_rank/higher，用于在相同或相近极性官能团背景下表征侧链reach；最终仍需LOO和权重扰动验证其是否单指标支配。",
+    "Side-chain HBD/HBA donor/acceptor count若无法在C/D/E/N/Q/S/T中产生有效区分，必须validation_only或在排序层因constant_within_domain被丢弃。"
+  ],
+  "interpretation_flags": [
+    {
+      "candidate": "D",
+      "flag": "negative_sidechain_charge_may_interact_with_D_Lys"
+    },
+    {
+      "candidate": "E",
+      "flag": "negative_sidechain_charge_may_interact_with_D_Lys"
+    },
+    {
+      "candidate": "G",
+      "flag": "minimal_sidechain_high_conformational_freedom"
+    },
+    {
+      "candidate": "P",
+      "flag": "strong_backbone_conformational_constraint"
+    }
+  ],
+  "evidence_counts_for_audit_only": {
+    "N": 1,
+    "Q": 6,
+    "S": 2,
+    "T": 5,
+    "D": 0,
+    "E": 1,
+    "G": 4,
+    "P": 2
+  }
+}
+
+INDICATOR POLICY:
+{
+  "aim_primary_rank_count": [
+    2,
+    5
+  ],
+  "allow_fewer_if_evidence_insufficient": true,
+  "require_nonredundant": true,
+  "require_single_property_per_indicator": true,
+  "allowed_roles": [
+    "primary_rank",
+    "hard_gate",
+    "tie_break",
+    "validation_only"
+  ],
+  "allowed_directions": [
+    "higher",
+    "lower",
+    "closer_to_zero",
+    "presence",
+    "absence",
+    "target",
+    "context_dependent"
+  ],
+  "allowed_basis": [
+    "literature",
+    "system_constraint",
+    "both"
+  ],
+  "primary_rank_requires_actionable_direction": true,
+  "context_dependent_primary_policy": "downgrade_to_validation_only"
+}
+
+QUALIFIED NATIVE-X EVIDENCE:
+[
+  {
+    "item_id": "N:secondary_structure:NE05",
+    "candidate": "N",
+    "candidate_name_zh": "天冬酰胺",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "possible involvement of α-sheet in aggregates",
+    "evidence_summary": "分子动力学模拟支持α-sheet作为稳定的二级结构存在于聚天冬酰胺聚集体中",
+    "title": "The α-sheet: a missing-in-action secondary structure?",
+    "abstract": "The α-sheet has been speculated to play a role as a toxic conformer in amyloid diseases. However, except for relatively short fragments, its detection has remained elusive. Here, we present molecular dynamics simulations that support the existence of the α-sheet as a stable, metastable, or long-lived secondary structure in polyglutamine and, to a lesser extent, in polyasparagine aggregates.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "Q:secondary_structure:QE03",
+    "candidate": "Q",
+    "candidate_name_zh": "谷氨酰胺",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "beta-sheet formation drives aggregation nucleation; disorder-to-order transition essential for fibrillation",
+    "evidence_summary": "QE03 discusses polyQ secondary structure influence on aggregation and fibril morphology; QE05 explicitly states monomeric polyQ converts to beta-sheeted state that nucleates aggregation; QE06 describes disorder-to-beta-sheet transition as necessary for nucleation.",
+    "title": "The structural plasticity of polyglutamine repeats.",
+    "abstract": "From yeast to humans, polyglutamine (polyQ) repeat tracts are found frequently in the proteome and are particularly prominent in the activation domains of transcription factors. PolyQ is a polymorphic motif that modulates functional protein-protein interactions and aberrant self-assembly. Expansion of the polyQ repeated sequences beyond critical physiological repeat length thresholds triggers self-assembly and is linked to severe pathological implications. This review provides an overview of the current knowledge on the structures of polyQ tracts in the soluble and aggregated states and discusses the influence of neighboring regions on polyQ secondary structure, aggregation, and fibril morphologies. The influence of the genetic context of the polyQ-encoding trinucleotides is briefly discussed as a challenge for future endeavors in this field.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "Q:secondary_structure:QE05",
+    "candidate": "Q",
+    "candidate_name_zh": "谷氨酰胺",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "beta-sheet formation drives aggregation nucleation; disorder-to-order transition essential for fibrillation",
+    "evidence_summary": "QE03 discusses polyQ secondary structure influence on aggregation and fibril morphology; QE05 explicitly states monomeric polyQ converts to beta-sheeted state that nucleates aggregation; QE06 describes disorder-to-beta-sheet transition as necessary for nucleation.",
+    "title": "Thermodynamics of beta-sheet formation in polyglutamine.",
+    "abstract": "The role of beta-sheets in the early stages of protein aggregation, specifically amyloid formation, remains unclear. Interpretations of kinetic data have led to a specific model for the role of beta-sheets in polyglutamine aggregation. According to this model, monomeric polyglutamine, which is intrinsically disordered, goes through a rare conversion into an ordered, metastable, beta-sheeted state that nucleates aggregation. It has also been proposed that the probability of forming the critical nucleus, a specific beta-sheet conformation for the monomer, increases with increasing chain length. Here, we test this model using molecular simulations. We quantified free energy profiles in terms of beta-content for monomeric polyglutamine as a function of chain length. In accord with estimates from experimental data, the free energy penalties for forming beta-rich states are in the 10-20 kcal/mol range. However, the length dependence of these free energy penalties does not mirror interpretations of kinetic data. In addition, although homodimerization of disordered molecules is spontaneous, the imposition of conformational restraints on polyglutamine molecules does not enhance the spontaneity of intermolecular associations. Our data lead to the proposal that beta-sheet formation is an attribute of peptide-rich phases such as high molecular weight aggregates rather than monomers or oligomers.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "Q:secondary_structure:QE06",
+    "candidate": "Q",
+    "candidate_name_zh": "谷氨酰胺",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "beta-sheet formation drives aggregation nucleation; disorder-to-order transition essential for fibrillation",
+    "evidence_summary": "QE03 discusses polyQ secondary structure influence on aggregation and fibril morphology; QE05 explicitly states monomeric polyQ converts to beta-sheeted state that nucleates aggregation; QE06 describes disorder-to-beta-sheet transition as necessary for nucleation.",
+    "title": "Characterizing the conformational ensemble of monomeric polyglutamine.",
+    "abstract": "Studies of synthetic polyglutamine peptides in vitro have established that polyglutamine peptides aggregate via a classic nucleation and growth mechanism. Chen and colleagues [Proc Natl Acad Sci U S A 2002;99:11884-11889] have found that monomeric polyglutamine, which is a disordered statistical coil in solution, is the critical nucleus for aggregation. Therefore, nucleation of beta-sheet-rich aggregates requires an initial disorder to order transition, which is a highly unfavorable thermodynamic reaction. The questions of interest to us are as follows: What are the statistical fluctuations that drive beta-sheet formation in monomeric polyglutamine? How do these fluctuations vary with chain length? And why is this process thermodynamically unfavorable, that is, why is monomeric polyglutamine disordered? To answer these questions we use multiple molecular dynamics simulations to provide quantitative characterization of conformational ensembles for two short polyglutamine peptides. We find that the ensemble for polyglutamine is indeed disordered. However, the disorder is inherently different from that of denatured proteins and the average compactness and magnitude of conformational fluctuations increase with chain length. Most importantly, the effective concentration of sidechain primary amides around backbone units is inherently high and peptide units are solvated either by hydrogen bonds to sidechains or surrounding water molecules. Due to the multiplicity of backbone solvation modes the probability associated with any specific backbone conformation is small, resulting in a conformational entropy bottleneck which makes beta-sheet formation in monomeric polyglutamine thermodynamically unfavorable.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "Q:chain_length_cooperativity:QE05",
+    "candidate": "Q",
+    "candidate_name_zh": "谷氨酰胺",
+    "interaction_type": "chain_length_cooperativity",
+    "support_level": "explicit",
+    "role_summary": "chain length modulates aggregation propensity and conformational fluctuations",
+    "evidence_summary": "QE05 reports that probability of forming beta-sheet critical nucleus increases with chain length; QE06 shows average compactness and conformational fluctuations increase with chain length.",
+    "title": "Thermodynamics of beta-sheet formation in polyglutamine.",
+    "abstract": "The role of beta-sheets in the early stages of protein aggregation, specifically amyloid formation, remains unclear. Interpretations of kinetic data have led to a specific model for the role of beta-sheets in polyglutamine aggregation. According to this model, monomeric polyglutamine, which is intrinsically disordered, goes through a rare conversion into an ordered, metastable, beta-sheeted state that nucleates aggregation. It has also been proposed that the probability of forming the critical nucleus, a specific beta-sheet conformation for the monomer, increases with increasing chain length. Here, we test this model using molecular simulations. We quantified free energy profiles in terms of beta-content for monomeric polyglutamine as a function of chain length. In accord with estimates from experimental data, the free energy penalties for forming beta-rich states are in the 10-20 kcal/mol range. However, the length dependence of these free energy penalties does not mirror interpretations of kinetic data. In addition, although homodimerization of disordered molecules is spontaneous, the imposition of conformational restraints on polyglutamine molecules does not enhance the spontaneity of intermolecular associations. Our data lead to the proposal that beta-sheet formation is an attribute of peptide-rich phases such as high molecular weight aggregates rather than monomers or oligomers.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "Q:chain_length_cooperativity:QE06",
+    "candidate": "Q",
+    "candidate_name_zh": "谷氨酰胺",
+    "interaction_type": "chain_length_cooperativity",
+    "support_level": "explicit",
+    "role_summary": "chain length modulates aggregation propensity and conformational fluctuations",
+    "evidence_summary": "QE05 reports that probability of forming beta-sheet critical nucleus increases with chain length; QE06 shows average compactness and conformational fluctuations increase with chain length.",
+    "title": "Characterizing the conformational ensemble of monomeric polyglutamine.",
+    "abstract": "Studies of synthetic polyglutamine peptides in vitro have established that polyglutamine peptides aggregate via a classic nucleation and growth mechanism. Chen and colleagues [Proc Natl Acad Sci U S A 2002;99:11884-11889] have found that monomeric polyglutamine, which is a disordered statistical coil in solution, is the critical nucleus for aggregation. Therefore, nucleation of beta-sheet-rich aggregates requires an initial disorder to order transition, which is a highly unfavorable thermodynamic reaction. The questions of interest to us are as follows: What are the statistical fluctuations that drive beta-sheet formation in monomeric polyglutamine? How do these fluctuations vary with chain length? And why is this process thermodynamically unfavorable, that is, why is monomeric polyglutamine disordered? To answer these questions we use multiple molecular dynamics simulations to provide quantitative characterization of conformational ensembles for two short polyglutamine peptides. We find that the ensemble for polyglutamine is indeed disordered. However, the disorder is inherently different from that of denatured proteins and the average compactness and magnitude of conformational fluctuations increase with chain length. Most importantly, the effective concentration of sidechain primary amides around backbone units is inherently high and peptide units are solvated either by hydrogen bonds to sidechains or surrounding water molecules. Due to the multiplicity of backbone solvation modes the probability associated with any specific backbone conformation is small, resulting in a conformational entropy bottleneck which makes beta-sheet formation in monomeric polyglutamine thermodynamically unfavorable.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "Q:hydrogen_bond:QE06",
+    "candidate": "Q",
+    "candidate_name_zh": "谷氨酰胺",
+    "interaction_type": "hydrogen_bond",
+    "support_level": "explicit",
+    "role_summary": "sidechain-backbone and water-backbone hydrogen bonding solvates peptide units, contributing to conformational entropy bottleneck",
+    "evidence_summary": "QE06 states that peptide units are solvated by hydrogen bonds to sidechains or water, and high effective concentration of sidechain amides around backbone leads to multiple solvation modes that create conformational entropy penalty.",
+    "title": "Characterizing the conformational ensemble of monomeric polyglutamine.",
+    "abstract": "Studies of synthetic polyglutamine peptides in vitro have established that polyglutamine peptides aggregate via a classic nucleation and growth mechanism. Chen and colleagues [Proc Natl Acad Sci U S A 2002;99:11884-11889] have found that monomeric polyglutamine, which is a disordered statistical coil in solution, is the critical nucleus for aggregation. Therefore, nucleation of beta-sheet-rich aggregates requires an initial disorder to order transition, which is a highly unfavorable thermodynamic reaction. The questions of interest to us are as follows: What are the statistical fluctuations that drive beta-sheet formation in monomeric polyglutamine? How do these fluctuations vary with chain length? And why is this process thermodynamically unfavorable, that is, why is monomeric polyglutamine disordered? To answer these questions we use multiple molecular dynamics simulations to provide quantitative characterization of conformational ensembles for two short polyglutamine peptides. We find that the ensemble for polyglutamine is indeed disordered. However, the disorder is inherently different from that of denatured proteins and the average compactness and magnitude of conformational fluctuations increase with chain length. Most importantly, the effective concentration of sidechain primary amides around backbone units is inherently high and peptide units are solvated either by hydrogen bonds to sidechains or surrounding water molecules. Due to the multiplicity of backbone solvation modes the probability associated with any specific backbone conformation is small, resulting in a conformational entropy bottleneck which makes beta-sheet formation in monomeric polyglutamine thermodynamically unfavorable.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "S:other:SE04",
+    "candidate": "S",
+    "candidate_name_zh": "丝氨酸",
+    "interaction_type": "other",
+    "support_level": "explicit",
+    "role_summary": "self-assembly and direct interaction with tau",
+    "evidence_summary": "Purified polyserine self-assembles and directly interacts with monomeric and fibrillar tau; self-assembly stimulates tau aggregation and recruitment of RNA accelerates tau fibrillization.",
+    "title": "Polyserine-tau interactions modulate tau fibrillization",
+    "abstract": "Tau aggregates are the defining feature of multiple neurodegenerative diseases and contribute to the pathology of disease. However, the molecules affecting tau aggregation in cells are unclear. We previously determined that polyserine-rich domain containing proteins enrich in tau aggregates, assemble into puncta that can serve as sites of tau aggregation, and exacerbate tau aggregation in cells and mice. Herein, we show that polyserine domains are sufficient to define assemblies as sites of tau aggregation, in part, through localization of tau seeds. Purified polyserine self-assembles and directly interacts with monomeric and fibrillar tau. Moreover, polyserine-tau assemblies recruit RNA, leading to faster rates of tau fibrillization in vitro . Using polyserine variants, we found that enrichment in tau aggregates and stimulation of tau aggregation are separable functions of polyserine domains, with polyserine self-assembly stimulating tau aggregation. Together, our results show that polyserine self-assembles and directly interacts with tau to form preferred sites of tau aggregation.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "S:secondary_structure:SE06",
+    "candidate": "S",
+    "candidate_name_zh": "丝氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "supported_inference",
+    "role_summary": "conformational preferences via simulations",
+    "evidence_summary": "PRIME20 simulations show polyserine has distinct folding temperatures and typical secondary structures compared to other homopeptides, suggesting inherent secondary structure tendencies.",
+    "title": "Thermodynamics and Conformations of Single Polyalanine, Polyserine, and Polyglutamine Chains within the PRIME20 Model.",
+    "abstract": "Understanding the conformational behavior of proteins has been a long-standing challenge to which computer simulations could contribute significantly. This concerns the folding behavior of proteins as well as the conformational statistics of intrinsically disordered proteins. A well-converged sampling of the conformational statistics over a broad range of control parameters is computationally extremely challenging and best addressed by coarse-grained modeling, for example, with an intermediate resolution model like the PRIME20 model. A comprehensive understanding of the thermodynamics and conformational statistics of individual protein chains is, however, not only a goal in itself but also a prerequisite for a better understanding of their aggregation tendency into oligomers and further into amyloid fibrils. We present here an extensive comparison of the ability of the PRIME20 model (in its documented variants in the literature) to faithfully reproduce the thermodynamics and statistics of three homopeptides having very different folding temperatures and different typical secondary structures.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "T:hydrogen_bond:TE02",
+    "candidate": "T",
+    "candidate_name_zh": "苏氨酸",
+    "interaction_type": "hydrogen_bond",
+    "support_level": "explicit",
+    "role_summary": "drives self-assembly and hydrogelation via intermolecular interactions between sheetlike PLT segments",
+    "evidence_summary": "TE02 explicitly reports intermolecular hydrogen bonding interactions between sheetlike poly(L-threonine) segments as a key factor in fibril packing and gel formation.",
+    "title": "Self-Assembly and Hydrogelation of Coil–Sheet Poly( l -lysine)-block-poly( l -threonine) Block Copolypeptides",
+    "abstract": "This study reports the self-assembly and hydrogelation of coil–sheet poly( l -lysine)- block -poly( l -threonine) (PLL- b -PLT) block copolypeptides. Our experiments showed that the PLL- b -PLT block copolypeptides with degrees of polymerization (DPs) between 30 and 60 can self-assemble to form fibrils due to the packing of sheetlike PLT at low polymer concentrations; moreover, further increasing the polymer concentration can result in the formation of transparent hydrogels due to fibril entanglements. The hydrogelation was determined by the orientation and packing of the fibril assemblies, which aremainly dictated by the balance between the intermolecular hydrogen bonding interactions and charge repulsion exerted respectively by sheetlike PLT and positively charged, coil PLL segments. The noncovalent interactions can be manipulated by varying the polypeptide chain length and composition, which would result in these block copolypeptides exhibiting different critical gelation concentrations (CGCs), gel molecular assemblies, and mechanical properties.",
+    "qualification": "direct",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "T:electrostatic:TE04",
+    "candidate": "T",
+    "candidate_name_zh": "苏氨酸",
+    "interaction_type": "electrostatic",
+    "support_level": "supported_inference",
+    "role_summary": "negative charges of polythreonine may interact with calcium ions to accelerate nucleation",
+    "evidence_summary": "TE04 suggests that negative charges on polythreonine (though low-charge) may interact with calcium ions, accelerating calcium carbonate formation; this is a supported inference.",
+    "title": "Threonine and Polythreonine Accelerate Calcium Carbonate Formation",
+    "abstract": "Acidic macromolecules are considered to be critical to calcium carbonate formation in organisms and have been chosen as a model chemical for modifying biomineralization. Here, this view is challenged, and it is found that low-charge amino acid threonine (Thr) and its polymer poly-Thr can accelerate calcium carbonate formation by increasing nucleation. In contrast to aspartic acid (Asp) and poly-Asp, Thr and poly-Thr did not affect the morphology of product crystals but accelerated the formation of crystal nucleation rapidly. This effect may be partially attributed to the negative charges of these chemicals that interact with calcium. This finding provides novel insights into the mechanisms of biomineralization that involve diverse chemistry control not limited to acidic macromolecules and may inspire the synthesis of calcium carbonate in a short time.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "T:secondary_structure:TE02",
+    "candidate": "T",
+    "candidate_name_zh": "苏氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "sheetlike conformation of PLT drives fibril packing and beta-sheet formation leads to water insolubility",
+    "evidence_summary": "TE02 explicitly describes sheetlike packing of PLT in fibrils; TE05 explicitly reports that high free OH threonine induces water-insoluble beta-sheet formation.",
+    "title": "Self-Assembly and Hydrogelation of Coil–Sheet Poly( l -lysine)-block-poly( l -threonine) Block Copolypeptides",
+    "abstract": "This study reports the self-assembly and hydrogelation of coil–sheet poly( l -lysine)- block -poly( l -threonine) (PLL- b -PLT) block copolypeptides. Our experiments showed that the PLL- b -PLT block copolypeptides with degrees of polymerization (DPs) between 30 and 60 can self-assemble to form fibrils due to the packing of sheetlike PLT at low polymer concentrations; moreover, further increasing the polymer concentration can result in the formation of transparent hydrogels due to fibril entanglements. The hydrogelation was determined by the orientation and packing of the fibril assemblies, which aremainly dictated by the balance between the intermolecular hydrogen bonding interactions and charge repulsion exerted respectively by sheetlike PLT and positively charged, coil PLL segments. The noncovalent interactions can be manipulated by varying the polypeptide chain length and composition, which would result in these block copolypeptides exhibiting different critical gelation concentrations (CGCs), gel molecular assemblies, and mechanical properties.",
+    "qualification": "direct",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "T:secondary_structure:TE05",
+    "candidate": "T",
+    "candidate_name_zh": "苏氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "sheetlike conformation of PLT drives fibril packing and beta-sheet formation leads to water insolubility",
+    "evidence_summary": "TE02 explicitly describes sheetlike packing of PLT in fibrils; TE05 explicitly reports that high free OH threonine induces water-insoluble beta-sheet formation.",
+    "title": "Biomimetic Glycosylated Polythreonines by N-Carboxyanhydride Polymerization",
+    "abstract": "Glycosylated threonine (Thr) is a structural motif found in seemingly disparate natural proteins from deep-sea collagen to mucins. Synthetic mimics of these important proteins are of great interest in biomedicine. Such materials also provide ready access to probe the contributions of individual amino acids to protein structure in a controlled and tunable manner. N -Carboxyanhydride (NCA) polymerization is one major route to such biomimetic polypeptides. However, challenges in the preparation and polymerization of Thr NCAs have impeded obtaining such structures. Here, we present optimized routes to several glycosylated and acetylated Thr NCAs of high analytical purity. Transition metal catalysis produced tunable homo-, statistical, and block-polypeptides with predictable chain lengths and low dispersities. We conducted structural work to examine their aqueous conformations and found that a high content of free OH Thr induces the formation of water-insoluble β-sheets. However, glycosylation appears to induce a polyproline II-type helical conformation, which sheds light on the role of glyco-Thr in rigid proteins such as mucins and collagen.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "T:secondary_structure:TE03",
+    "candidate": "T",
+    "candidate_name_zh": "苏氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "supported_inference",
+    "role_summary": "amyloid-like fiber formation implies beta-sheet secondary structure",
+    "evidence_summary": "TE03 reports that polythreonine forms amyloid-like fibers, which supports inference of beta-sheet structure despite lacking explicit beta-sheet statement.",
+    "title": "Polyamino acids take amyloid form",
+    "abstract": "![][1] Although lacking a specific side–chain pattern, polythreonine forms amyloid-like fibers. Dobson/EMBO The folding of a polypeptide is a tug-of-war with bonds within the main chain fighting against interactions between the side chains, according to new results from Marcus Fa",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "E:secondary_structure:EE03",
+    "candidate": "E",
+    "candidate_name_zh": "谷氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "supported_inference",
+    "role_summary": "conformational state (collapsed globule vs extended random coil) determines amyloid morphology",
+    "evidence_summary": "EE03 reports that collapsed globule produces spherulites while extended random coil forms disordered fibril bundles, implicating secondary structure influence on assembly",
+    "title": "Collapsed state of polyglutamic acid results in amyloid spherulite formation",
+    "abstract": "Self-assembly of proteins and peptides into amyloid fibrils involves multiple distinct intermediates and late-stage fibrillar polymorphs. Understanding the conditions and mechanisms that promote the formation of one type of intermediate and polymorph over the other represents a fundamental challenge. Answers to this question are also of immediate biomedical relevance since different amyloid aggregate species have been shown to have distinct pathogenic potencies. One amyloid polymorph that has received comparatively little attention are amyloid spherulites. Here we report that self-assembly of the intrinsically disordered polymer poly(L-glutamic) acid (PLE) can generate amyloid spherulites. We characterize spherulite growth kinetics, as well as the morphological, optical and tinctorial features of this amyloid polymorph previously unreported for PLE. We find that PLE spherulites share both tinctorial and structural characteristics with their amyloid fibril counterparts. Differences in PLE's molecular weight, polydispersity or chemistry could not explain the selective propensity toward either fibril or spherulite formation. Instead, we provide evidence that PLE polymers can exist in either a collapsed globule or an extended random coil conformation. The collapsed globule consistently produces spherulites while the extended coil assembles into disordered fibril bundles. This results suggests that these 2 PLE conformers directly affect the morphology of the resulting macroscopic amyloid assembly.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "G:hydrogen_bond:GE04",
+    "candidate": "G",
+    "candidate_name_zh": "甘氨酸",
+    "interaction_type": "hydrogen_bond",
+    "support_level": "explicit",
+    "role_summary": "polyglycine II formation via inter-helix hydrogen bond network",
+    "evidence_summary": "Oligoglycines form polyglycine II structure where peptide helices establish a hydrogen bond network with six neighbors",
+    "title": "Oligoglycines: Materials with unlimited potential for nanotechnologies",
+    "abstract": "Peptides are the most promising molecules for nanotechnologies. Stable derivatives suitable for supramolecular design can be synthesized even from the simplest amino acid, glycine. Oligoglycines are able to form an unusual (noncanonical) structure, so-called polyglycine II, where peptide helices 3 1 (ϕ = −76.9°, ψ = 145.3°) form a network of hydrogen bonds with six neighbors. The arrangement of linear oligoglycine in branched so-called di-, tri-, and tetraantennary peptides gives rise to a new class of molecules, which are distinguished by their simplicity, on the one hand, and by ample opportunities for self-assembly into complex supramolecular structures, on the other hand. This article summarizes the reports of synthesis of symmetrical antennary oligoglycines, studies of their self-assembly in plane atomic smooth layers and vesicles, and conditions of the assembly and disassembly of the polyglycine II structure in an aqueous medium. Structural features and peculiarities of assembly of the similar supramolecular structures on the surface of mica are described. The possible control of this process for preparing nanopatterns is demonstrated. Prospects are discussed for using this new class of materials in nanodesign. The concept of creating a new type of antiviral agents, supramolecular compounds whose formation from a precursor is promoted by the virus itself, is proposed.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "G:secondary_structure:GE04",
+    "candidate": "G",
+    "candidate_name_zh": "甘氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "adoption of noncanonical polyglycine II helical conformation",
+    "evidence_summary": "Oligoglycines adopt unusual polyglycine II (3_1 helix) conformation",
+    "title": "Oligoglycines: Materials with unlimited potential for nanotechnologies",
+    "abstract": "Peptides are the most promising molecules for nanotechnologies. Stable derivatives suitable for supramolecular design can be synthesized even from the simplest amino acid, glycine. Oligoglycines are able to form an unusual (noncanonical) structure, so-called polyglycine II, where peptide helices 3 1 (ϕ = −76.9°, ψ = 145.3°) form a network of hydrogen bonds with six neighbors. The arrangement of linear oligoglycine in branched so-called di-, tri-, and tetraantennary peptides gives rise to a new class of molecules, which are distinguished by their simplicity, on the one hand, and by ample opportunities for self-assembly into complex supramolecular structures, on the other hand. This article summarizes the reports of synthesis of symmetrical antennary oligoglycines, studies of their self-assembly in plane atomic smooth layers and vesicles, and conditions of the assembly and disassembly of the polyglycine II structure in an aqueous medium. Structural features and peculiarities of assembly of the similar supramolecular structures on the surface of mica are described. The possible control of this process for preparing nanopatterns is demonstrated. Prospects are discussed for using this new class of materials in nanodesign. The concept of creating a new type of antiviral agents, supramolecular compounds whose formation from a precursor is promoted by the virus itself, is proposed.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "G:secondary_structure:GE05",
+    "candidate": "G",
+    "candidate_name_zh": "甘氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "supported_inference",
+    "role_summary": "strong preference for elongated conformation in short polyglycine segments",
+    "evidence_summary": "Polyglycine segments in solution adopt an extended conformation intermediate between beta strand and alpha helix",
+    "title": "Conformational preference of polyglycine in solution to elongated structure.",
+    "abstract": "Do polypeptide chains ever behave like a random coil? In this report we demonstrate that glycine, the residue with the fewest backbone restrictions, exhibits a strong preference for an extended conformation in solution when polymerized in short segments of polyglycine. A model peptide system comprised of two unique tripeptide units, between which 1 to 18 glycine residues are inserted, is characterized by NMR and by small-angle X-ray scattering (SAXS). The residual dipolar coupling (RDC) values of the two tripeptide units are insensitive to changes in number of intervening glycines, suggesting that extension of the linker does not alter the average angular relationship between the tripeptides. Polyglycine segments longer than nine residues form insoluble aggregates. SAXS measurements using synchrotron radiation provide direct evidence that polyglycine peptides adopt elongated conformations. In particular, the construct with a linker with six glycines showed a scattering profile indicative of a monomeric state with a radius of gyration and the maximum dimension of 9.1 A and approximately 34 A, respectively. The ensemble averaged global structure of this 12-mer peptide can best be approximated by a cylinder with a radius of 4 A and a length of approximately 33 A, making it intermediate in extension between a beta strand and an alpha helix.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "G:chain_length_cooperativity:GE05",
+    "candidate": "G",
+    "candidate_name_zh": "甘氨酸",
+    "interaction_type": "chain_length_cooperativity",
+    "support_level": "explicit",
+    "role_summary": "aggregation triggered by chain length beyond nine residues",
+    "evidence_summary": "Polyglycine segments longer than nine residues form insoluble aggregates; shorter segments remain monomeric in solution",
+    "title": "Conformational preference of polyglycine in solution to elongated structure.",
+    "abstract": "Do polypeptide chains ever behave like a random coil? In this report we demonstrate that glycine, the residue with the fewest backbone restrictions, exhibits a strong preference for an extended conformation in solution when polymerized in short segments of polyglycine. A model peptide system comprised of two unique tripeptide units, between which 1 to 18 glycine residues are inserted, is characterized by NMR and by small-angle X-ray scattering (SAXS). The residual dipolar coupling (RDC) values of the two tripeptide units are insensitive to changes in number of intervening glycines, suggesting that extension of the linker does not alter the average angular relationship between the tripeptides. Polyglycine segments longer than nine residues form insoluble aggregates. SAXS measurements using synchrotron radiation provide direct evidence that polyglycine peptides adopt elongated conformations. In particular, the construct with a linker with six glycines showed a scattering profile indicative of a monomeric state with a radius of gyration and the maximum dimension of 9.1 A and approximately 34 A, respectively. The ensemble averaged global structure of this 12-mer peptide can best be approximated by a cylinder with a radius of 4 A and a length of approximately 33 A, making it intermediate in extension between a beta strand and an alpha helix.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "P:secondary_structure:PE03",
+    "candidate": "P",
+    "candidate_name_zh": "脯氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "Conformational transitions drive LCST-type phase separation",
+    "evidence_summary": "PE03 explicitly states that intrinsic thermoresponsive behavior arises from conformational transitions, leading to Lower Critical Solution Temperature (LCST)-type phase separation with hysteresis.",
+    "title": "Polyproline: A Synthetic Polypeptide With Unique Properties.",
+    "abstract": "Polyproline is a unique polypeptide defined by its unusual conformational rigidity and physicochemical behavior. Addressing long-standing challenges in its synthesis and characterization, this mini-review highlights recent advances in the ring-opening polymerization of proline N-carboxyanhydride (NCA), enabling the controlled and scalable preparation of well-defined polyproline architectures. These developments have unlocked diverse applications in advanced materials, including systems that exploit intrinsic thermoresponsive behavior arising from conformational transitions, leading to Lower Critical Solution Temperature (LCST)-type phase separation with pronounced hysteresis. Emerging applications span smart 3D printed hydrogels, nanoparticles, membrane-active materials, and polyproline-based conjugates, where polyproline serves as a biocompatible alternative to poly(ethylene glycol) (PEG). Collectively, these advances position polyproline as a promising platform in biomaterials, offering benefits such as enhanced stability, reduced immunogenicity, and expanded functional versatility.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "P:solvation_dispersion:PE03",
+    "candidate": "P",
+    "candidate_name_zh": "脯氨酸",
+    "interaction_type": "solvation_dispersion",
+    "support_level": "explicit",
+    "role_summary": "Solvation changes associated with conformational transitions cause phase separation",
+    "evidence_summary": "PE03 explicitly reports LCST-type phase separation with hysteresis, implicating solvation/dispersion effects linked to conformational transitions.",
+    "title": "Polyproline: A Synthetic Polypeptide With Unique Properties.",
+    "abstract": "Polyproline is a unique polypeptide defined by its unusual conformational rigidity and physicochemical behavior. Addressing long-standing challenges in its synthesis and characterization, this mini-review highlights recent advances in the ring-opening polymerization of proline N-carboxyanhydride (NCA), enabling the controlled and scalable preparation of well-defined polyproline architectures. These developments have unlocked diverse applications in advanced materials, including systems that exploit intrinsic thermoresponsive behavior arising from conformational transitions, leading to Lower Critical Solution Temperature (LCST)-type phase separation with pronounced hysteresis. Emerging applications span smart 3D printed hydrogels, nanoparticles, membrane-active materials, and polyproline-based conjugates, where polyproline serves as a biocompatible alternative to poly(ethylene glycol) (PEG). Collectively, these advances position polyproline as a promising platform in biomaterials, offering benefits such as enhanced stability, reduced immunogenicity, and expanded functional versatility.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  }
+]
+
+RETURN SCHEMA:
+{
+  "domain_id": "D3",
+  "indicators": [
+    {
+      "indicator_id": "I1",
+      "indicator_name": "one concise measurable physicochemical descriptor",
+      "measurement_target": "standard scientific property name; one property only",
+      "scientific_definition": "what is measured",
+      "why_relevant_to_dlys_system": "why it helps compare candidates in this domain after fixing D-Lys",
+      "role": "primary_rank/hard_gate/tie_break/validation_only",
+      "preferred_direction": "higher/lower/closer_to_zero/presence/absence/target/context_dependent",
+      "target_value": null,
+      "basis": "literature/system_constraint/both",
+      "supporting_evidence_ids": [
+        "item_id from supplied evidence when applicable"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "why this is distinct from other returned indicators",
+      "notes": "scope/limitations"
+    }
+  ],
+  "knowledge_gaps": [
+    "scientific gaps or unavailable mature single-residue metrics"
+  ],
+  "notes": [
+    "domain-level notes"
+  ]
+}

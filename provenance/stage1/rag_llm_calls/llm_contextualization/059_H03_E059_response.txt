@@ -1,0 +1,31 @@
+{
+  "summary": "The study reports that polyhistidine-PEG conjugates exhibit low cytotoxicity to macrophages in vitro, indicating potential safety for gene delivery applications. However, no direct data on hemolysis or broader biocompatibility is provided.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "cytotoxicity",
+    "DNA complexation capacity",
+    "hydrodynamic diameter",
+    "zeta potential",
+    "transfection efficiency",
+    "DNase I protection"
+  ],
+  "reported_numeric_results": [
+    "hydrodynamic diameters <150 nm",
+    "negative zeta potentials"
+  ],
+  "reported_qualitative_findings": [
+    "low cytotoxicity to macrophages cultured in vitro",
+    "transfection efficiency approximately equivalent to DNA:polylysine complexes",
+    "PEG content influenced hydrodynamic diameter",
+    "comb-shaped conjugates showed direct relationship between PEG content and complex size"
+  ],
+  "material_or_molecular_context": "polyhistidine-PEG conjugates (comb-shaped and linear A-B block copolymers) complexed with plasmid DNA",
+  "biological_context": "macrophages cultured in vitro",
+  "limitations_for_current_question": [
+    "no hemolysis data reported",
+    "only one cell type (macrophages) tested in vitro",
+    "no in vivo safety or biocompatibility data",
+    "does not assess histidine-based materials without PEG"
+  ],
+  "supporting_text": "all conjugates showed low cytotoxicity to macrophages cultured in vitro"
+}

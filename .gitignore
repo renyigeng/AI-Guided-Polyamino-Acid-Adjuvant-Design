@@ -1,0 +1,41 @@
+# Python virtual environments and generated caches
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Packaging and coverage artifacts
+build/
+dist/
+*.egg-info/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local credentials (example configuration files remain visible)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Editor / operating-system temporary files and unrelated backups
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+*.bak
+
+# Keep scientific inputs, results, provenance, archives, notebooks,
+# figures and _migration environment snapshots under version control.

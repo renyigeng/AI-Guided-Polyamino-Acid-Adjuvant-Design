@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: K01
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 42641913
+DOI: 10.1016/j.neuroscience.2026.08.042
+
+TITLE:
+K16ApoE-mediated delivery across the blood-brain barrier: mechanisms, applications, and translational challenges.
+
+ABSTRACT:
+The blood-brain barrier (BBB) supporting the health of the central nervous system does this by limiting molecular exchange between circulation and brain tissue, although unfortunately this same restriction prevents therapeutically relevant macromolecules from entering the brain. Consequently, a number of protein-based therapies with success in peripheral tissues including enzymes, antibodies and biologics are unsuccessful in treating neurological disorders. The most recently described example is K16ApoE, a synthetic peptide that combines a polylysine-associated moiety with the receptor binding domain of apolipoprotein E (apoE), suggested to facilitate systemic delivery of large biomolecules across the BBB. Here, we review evidence that co-administration of K16ApoE with therapeutic proteins can mediate high concentrations of this protein in brain tissue, which can yield significant substrate clearance (pathological storage) and profound neurologic improvement and survival benefits in animal models of late-infantile neuronal ceroid lipofuscinosis (LINCL; CLN2 disease). In addition to applications in lysosomal storage disorders, the peptide has shown efficacy in promoting delivery of chemotherapeutic agents, antibodies and biologics related to brain tumors and neurodegenerative diseases. However, broad limitations persist including dose-dependent toxicity or nonspecific BBB permeability and immunogenicity as well high levels of uncertainty in referencing animal findings to humans. This review provides an integrated critical perspective on K16ApoE by connecting its proposed delivery mechanisms with therapeutic efficacy, toxicity, and translational barriers. In particular, we examine the unresolved balance between receptor-associated endothelial transport and transient BBB modulation and propose a mechanism-safety-translation framework to guide the rational development of K16ApoE and related peptide shuttles.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

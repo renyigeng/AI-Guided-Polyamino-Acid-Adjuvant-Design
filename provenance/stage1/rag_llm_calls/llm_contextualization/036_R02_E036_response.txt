@@ -1,0 +1,19 @@
+{
+  "summary": "Polyarginine segments in block copolypeptides drive vesicular self-assembly and enable efficient intracellular delivery of the vesicles.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "vesicular assembly",
+    "intracellular delivery"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "polyarginine segments both direct structure for vesicle formation and provide functionality for efficient intracellular delivery"
+  ],
+  "material_or_molecular_context": "block copolypeptides composed of polyarginine and polyleucine segments",
+  "biological_context": "not specified (intracellular delivery mentioned without specific cell type)",
+  "limitations_for_current_question": [
+    "abstract does not detail mechanism of cellular uptake or endosomal escape",
+    "no quantitative data on internalization efficiency or kinetics"
+  ],
+  "supporting_text": "polyarginine segments provide functionality for efficient intracellular delivery"
+}

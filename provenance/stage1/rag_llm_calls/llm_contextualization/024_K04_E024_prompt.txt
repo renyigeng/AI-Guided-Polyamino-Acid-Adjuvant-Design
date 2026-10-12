@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K04
+CANDIDATE HINT: K
+CHIRALITY HINT: L
+PMID: 32131585
+DOI: 10.1021/acsami.9b21075
+
+TITLE:
+Enhanced Immunostimulatory Activity of a Cytosine-Phosphate-Guanosine Immunomodulator by the Assembly of Polymer DNA Wires and Spheres.
+
+ABSTRACT:
+Unmethylated cytosine-phosphate-guanosine (CpG) oligodeoxynucleotides are immunostimulatory nucleic acids wildly utilized as adjuvants or for vaccines to treat diseases. However, there is a lack of simple and efficient vectors for CpG oligodeoxynucleotide delivery with long-lasting immune stimulation. Herein, self-assembled polymer wires consisting of CpG motifs by hybridization chain reaction were constructed with excellent biocompatibility and immunostimulatory activity. The designed polymer DNA wires acted as programmable multivalent immunoadjuvants and triggered immune response, stimulated pro-inflammatory cytokine secretion, and induced the apoptosis of cancer cells. More strikingly, polymer nanospheres assembled from the polymer DNA wires and cationic poly-l-lysine further improved cellular uptake and continuously stimulate the lysosomal Toll-like receptor 9 of immune cells, thereby remarkably enhancing the activation of immune cells. These results demonstrated that self-assembled polymer DNA nanoassemblies with multivalent CpG could trigger strong immune response and further induce cancer cell death.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

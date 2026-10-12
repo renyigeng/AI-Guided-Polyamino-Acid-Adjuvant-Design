@@ -1,0 +1,23 @@
+{
+  "summary": "Poly-L-lysine/hyodeoxycholic acid nanoparticles (PLL-HDCA NPs) were evaluated for cytotoxicity, hemolysis, and safety. Cytotoxicity and hemolysis tests showed minimal impact on human cells and significantly reduced hemolysis compared to PLL alone. Skin irritation tests confirmed safety for external application, directly addressing the query's focus on biocompatibility and safety of lysine-based materials.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "cytotoxicity tests",
+    "hemolysis evaluations",
+    "skin irritation test"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "minimal impact on human cells",
+    "significantly reduced hemolysis rates compared to PLL alone",
+    "confirmed safety for external application"
+  ],
+  "material_or_molecular_context": "Poly-L-lysine/hyodeoxycholic acid nanoparticles (PLL-HDCA NPs)",
+  "biological_context": "Human cells (in vitro cytotoxicity and hemolysis), mouse models (in vivo hemorrhage, wound healing, skin irritation)",
+  "limitations_for_current_question": [
+    "Cell types used in cytotoxicity tests not specified",
+    "Exact hemolysis reduction percentage not provided",
+    "Only topical application safety assessed; systemic safety not addressed"
+  ],
+  "supporting_text": "Cytotoxicity and hemolysis tests indicated minimal impact on human cells and significantly reduced hemolysis rates compared to PLL alone."
+}

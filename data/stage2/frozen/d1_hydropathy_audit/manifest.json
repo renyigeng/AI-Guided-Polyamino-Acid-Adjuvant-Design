@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "created_at_utc": "2026-09-24T12:25:22.397336+00:00",
+  "status": "completed",
+  "reference_scale": "KyteDoolittle",
+  "candidates": [
+    "F",
+    "W",
+    "Y"
+  ],
+  "role": "sensitivity_diagnostic_only",
+  "used_to_tune_primary_selector": false,
+  "n_scales": 42
+}

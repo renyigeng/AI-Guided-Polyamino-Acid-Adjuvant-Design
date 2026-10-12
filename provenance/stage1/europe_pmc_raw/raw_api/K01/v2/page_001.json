@@ -1,0 +1,15 @@
+{
+  "version": "6.9",
+  "hitCount": 0,
+  "request": {
+    "queryString": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"mRNA delivery\" OR \"protein delivery\") AND TITLE_ABS:(\"polymer carrier\" OR \"nanoparticle carrier\")",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": []
+  }
+}

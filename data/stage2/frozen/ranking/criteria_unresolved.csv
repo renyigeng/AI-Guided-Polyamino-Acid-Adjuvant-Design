@@ -1,0 +1,2 @@
+domain_id,domain_name_zh,indicator_id,indicator_name,measurement_target,role,preferred_direction,mapping_status,mapping_reason,registry_key,tool,tool_id,used_in_topsis,exclusion_reason,used_in_primary_decision
+D1,芳香疏水-π作用域,I2,Side-chain hydrogen-bond donor and acceptor site count,Hydrogen-bond donor and acceptor site count,primary_rank,lower,unresolved,no_safe_registry_alias_match,,,,False,no_safe_registry_alias_match,False

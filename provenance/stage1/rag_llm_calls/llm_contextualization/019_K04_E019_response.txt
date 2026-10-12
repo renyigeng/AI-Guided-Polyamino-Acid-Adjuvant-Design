@@ -1,0 +1,30 @@
+{
+  "summary": "The polyleucine–polylysine conjugate L15K6 enhances antigen uptake by dendritic cells, promotes DC maturation (CD40, CD80/86, MHC-II), upregulates TLR4, activates NF-κB, and induces robust antibody responses when co-delivered with antigens, including outperforming alum. This directly addresses lysine-based polypeptide adjuvant activity and dendritic-cell activation.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "antigen uptake by dendritic cells",
+    "antigen-presenting cell maturation",
+    "Toll-like receptor 4 upregulation",
+    "NF-κB pathway activation",
+    "antigen-specific IgG response",
+    "antibacterial activity against Group A Streptococcus"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "markedly enhances antigen uptake by dendritic cells",
+    "promotes antigen-presenting cell maturation (CD40, CD80/86, and MHC-II)",
+    "upregulates Toll-like receptor expression, particularly TLR4",
+    "robust NF-κB pathway activation",
+    "induces robust antigen-specific IgG response with highly potent antibacterial activity",
+    "single immunization outperforms alum adjuvant in eliciting high levels of BSA-specific IgG"
+  ],
+  "material_or_molecular_context": "L15K6: a conjugate of 15-mer polyleucine and hexa-lysine (K6) that self-assembles into nanoparticles",
+  "biological_context": "dendritic cells in vitro; immune responses in vivo (implied by immunization with antigens such as Group A Streptococcus peptides, ovalbumin, and BSA; antibacterial activity tested in vitro)",
+  "limitations_for_current_question": [
+    "The polylysine component is only a hexa-lysine unit conjugated to a dominant polyleucine chain; results may not generalize to other lysine-based polymers or pure polylysine.",
+    "Cross-presentation (MHC-I pathway) is not explicitly addressed; only MHC-II and DC maturation markers reported.",
+    "In vivo model details (species, route, dose) are not specified in the abstract.",
+    "No direct comparison with other lysine-based adjuvants or pure polylysine controls."
+  ],
+  "supporting_text": "L15K6 markedly enhances antigen uptake by dendritic cells, promotes antigen-presenting cell maturation"
+}

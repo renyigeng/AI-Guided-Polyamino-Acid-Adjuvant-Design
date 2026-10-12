@@ -1,0 +1,26 @@
+{
+  "summary": "This simulation study shows that polyarginine (R8) peptides penetrate the membrane via a water pore, and conjugation to small nanoparticles with appropriate linker lengths improves translocation efficiency by prolonging water pore lifetime and attracting negative lipids. Overlong linkers reduce efficiency and may cause toxicity.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "translocation efficiency",
+    "transmembrane efficiency",
+    "potential cytotoxicity"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Transmembrane efficiency is improved by conjugating to small nanoparticles with proper linkers",
+    "Extension of the lifetime of the water pore by the nanoparticles",
+    "Outward diffusion of negative lipids in the asymmetric membrane",
+    "Overlong linkers decrease efficiency and may cause cytotoxicity"
+  ],
+  "material_or_molecular_context": "polyarginine (R8) peptides conjugated to small nanoparticles with linkers of varying length",
+  "biological_context": "simulated asymmetric lipid membrane (coarse-grained molecular dynamics)",
+  "limitations_for_current_question": [
+    "Computational study, not experimental validation",
+    "Focuses on direct penetration, not endocytosis or endosomal pathways",
+    "Uses model membranes, not specific cell types",
+    "Cargo is nanoparticles; transferability to other cargoes is unclear",
+    "No direct assessment of endosomal behavior"
+  ],
+  "supporting_text": "polyarginine (R8) peptides penetrate the membrane through a water pore"
+}

@@ -1,0 +1,36 @@
+{
+  "preference": "A",
+  "basis": [
+    "Polyarginine (R9-PTD) directly delivers protein antigen (OVA) to dendritic cells, enhancing MHC class I and II presentation and activating CD4+ and CD8+ T cells in vitro and in vivo (E025, E044).",
+    "Poly-L-arginine synergizes with CpG-ODN to induce potent and prolonged peptide-specific T-cell responses lasting at least 372 days, with inhibition of systemic pro-inflammatory cytokine release (E027, E045).",
+    "Polyarginine (R9) nanofibers enhance dendritic cell activation with cyclic-dinucleotide adjuvants in a STING-dependent manner, supporting vaccine adjuvant function (E047).",
+    "Supercharged arginine-rich peptides (including polyarginine analogs) induce late endosome leakage and cytosolic penetration in human cells, while polylysine does not, indicating arginine-specific endosomolytic behavior (E032).",
+    "Polyarginine-coated nanovectors are safe and tolerable in vivo, outperforming PEI in hemocompatibility and organ toxicity (E037).",
+    "R18D (D-enantiomer of polyarginine-18) shows no significant mast cell degranulation or hemolysis ex vivo (E038).",
+    "Polyhistidine evidence is largely indirect: used as a tag for antigen loading on liposomes or in copolymers, not as the primary functional block for delivery or immune activation (E061, E062, E065).",
+    "Although polyhistidine shows pH-dependent endosomal escape, its immune activation evidence often comes from systems combining histidine with other components (e.g., PLH-PEG, PLA-PHis) rather than polyhistidine alone (E064, E063).",
+    "Polyarginine evidence is more directly transferable to a poly(amino acid) functional block in an amphiphilic binary polymer, with multiple studies using polyarginine peptides as the active delivery and immune-stimulating moiety."
+  ],
+  "supporting_evidence_ids": [
+    "E025",
+    "E027",
+    "E032",
+    "E033",
+    "E037",
+    "E038",
+    "E039",
+    "E043",
+    "E044",
+    "E045",
+    "E047"
+  ],
+  "counter_evidence_ids": [
+    "E038",
+    "E039"
+  ],
+  "uncertainties": [
+    "Polyarginine length and context (e.g., R9, R18) may not fully represent behavior when incorporated as a longer block in an amphiphilic binary polymer.",
+    "Hemolysis and complement activation observed for R15 at high concentrations (E039) raise some safety concerns, though mitigated in whole blood or when complexed.",
+    "Polyhistidine's pH-sensitive endosomal escape could be complementary, but the supplied evidence does not justify a preference for His as the primary functional block over Arg."
+  ]
+}

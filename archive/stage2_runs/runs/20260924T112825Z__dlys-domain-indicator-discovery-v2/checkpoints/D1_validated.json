@@ -1,0 +1,62 @@
+{
+  "domain_id": "D1",
+  "domain_name_zh": "芳香疏水-π作用域",
+  "candidate_codes": [
+    "F",
+    "W",
+    "Y"
+  ],
+  "candidate_names_zh": [
+    "苯丙氨酸",
+    "色氨酸",
+    "酪氨酸"
+  ],
+  "indicators": [
+    {
+      "indicator_id": "I1",
+      "indicator_name": "Side-chain hydrophobicity",
+      "measurement_target": "Hydrophobicity",
+      "scientific_definition": "A standard single-residue hydrophobicity scale value (e.g., Kyte-Doolittle, Eisenberg, or equivalent mature scale) quantifying the free energy or partition tendency of the amino acid side chain in a hydrophobic versus aqueous environment.",
+      "why_relevant_to_dlys_system": "The fixed D-Lys block provides cationic and hydrophilic function. The second block X is intended to provide complementary hydrophobic cohesion. Within the aromatic domain (F, W, Y), higher side-chain hydrophobicity indicates a stronger hydrophobic driving force for self-association or core formation, which complements the hydrophilic D-Lys segment.",
+      "role": "primary_rank",
+      "preferred_direction": "higher",
+      "target_value": null,
+      "basis": "both",
+      "supporting_evidence_ids": [
+        "F:aromatic_pi:FE04",
+        "F:steric_packing:FE04",
+        "W:aromatic_pi:WE04",
+        "W:steric_packing:WE04"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "This indicator captures the overall hydrophobic cohesion axis. It is distinct from the hydration/polarity burden indicator (I2) because it measures the driving force for hydrophobic association, not the number of polar hydration sites.",
+      "notes": "The evidence for F and W explicitly mentions steric hindrance and ring stacking as prominent factors, which are related to hydrophobic cohesion. The domain guidance preregisters hydrophobicity as a primary ranking axis with direction 'higher'. No evidence for Y was supplied, but the descriptor is a mature single-residue property applicable to all three candidates."
+    },
+    {
+      "indicator_id": "I2",
+      "indicator_name": "Side-chain hydrogen-bond donor and acceptor site count",
+      "measurement_target": "Hydrogen-bond donor and acceptor site count",
+      "scientific_definition": "The total number of hydrogen-bond donor and acceptor sites on the amino acid side chain, as defined by standard chemical group counts (e.g., OH, NH, C=O, etc.).",
+      "why_relevant_to_dlys_system": "The fixed D-Lys block already provides hydrophilic and cationic character. Additional polar hydrogen-bonding sites on the second block would increase hydration and compete with the desired hydrophobic cohesion. Within the aromatic domain, lower side-chain HBD+HBA site count favors a more hydrophobic core and reduces redundant hydrophilic functionality.",
+      "role": "primary_rank",
+      "preferred_direction": "lower",
+      "target_value": null,
+      "basis": "system_constraint",
+      "supporting_evidence_ids": [],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "This indicator measures the polar hydration burden, which is orthogonal to the hydrophobic cohesion axis (I1). It is not redundant with hydrophobicity because it counts specific polar functional groups rather than overall hydrophobic tendency.",
+      "notes": "The domain guidance explicitly preregisters a non-redundant hydration/polarity burden axis with direction 'lower'. This descriptor is a mature single-residue property. No direct literature evidence was supplied for this specific descriptor, but the system constraint and domain guidance justify its use."
+    }
+  ],
+  "validation_warnings": [],
+  "knowledge_gaps": [
+    "No qualified native-X literature evidence was supplied for tyrosine (Y) in this domain. The descriptors selected are mature single-residue properties applicable to all three candidates, but the evidence base for Y is absent.",
+    "Aromatic ring count, side-chain size/volume, and geometric packing descriptors are mentioned in the domain guidance as validation axes, but no mature single-residue metric with a preregistered monotonic direction was identified. These remain validation_only and are not included as primary_rank indicators.",
+    "No mature single-residue descriptor for 'aromatic interaction strength' or 'pi-stacking propensity' was found that is not a custom composite score; therefore, such broad mechanisms are not translated into primary_rank indicators."
+  ],
+  "notes": [
+    "The domain guidance explicitly states that aromatic ring count is not an automatic monotonic benefit and must be validation_only. Side-chain size/volume also lacks a preregistered direction and is validation_only.",
+    "The two primary_rank indicators are nonredundant: one captures hydrophobic cohesion (higher is better), the other captures polar hydration burden (lower is better). They represent distinct physicochemical properties.",
+    "No numerical weights, composite scores, or candidate rankings are provided. The indicators are intended for comparative screening within the fixed D-Lys design context."
+  ]
+}

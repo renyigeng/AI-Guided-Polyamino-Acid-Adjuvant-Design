@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H03
+CANDIDATE HINT: H
+CHIRALITY HINT: 
+PMID: 25308242
+DOI: 10.1021/bm5010756
+
+TITLE:
+Poly(l-histidine) based triblock copolymers: pH induced reassembly of copolymer micelles and mechanism underlying endolysosomal escape for intracellular delivery.
+
+ABSTRACT:
+Various poly(l-histidine) based amphiphilic copolymers have been developed for intracellular drug delivery due to the pH responsive properties and the escape from endolysosomal pathway. However, the pH induced reassembly of copolymer micelles and the assumed endolysosome membrane rupture during the copolymer facilitated endolysosomal escape have never been elucidated. To address these issues, a series of poly(ethylene glycol)-poly(d,l-lactide)-poly(l-histidine) (mPEG-PLA-PHis) with different degrees of polymerization of PLA and PHis block were synthesized. The self-assembly and reassembly behaviors of the copolymers were characterized using transmission electron microscopy (TEM), (1)H NMR, fluorescence probe technique, and dynamic light scattering (DLS). The copolymers self-assembled into micelles with PLA and unprotonated PHis blocks as hydrophobic core and PEG as hydrophilic shell at neutral pH. The changes in TEM images, (1)H NMR spectrum of PHis peak, pyrene fluorescene spectrum, and particle size as well as size distribution over the pH range from pH 8.5 to 4.5 suggest that the copolymer micelles reassembled into micelles with PLA as hydrophobic core and protonated PHis and PEG as hydrophilic shell under acidic environment. The pH induced reassembly triggered the incoporated doxorubicin (DOX) release, as indicated by the in vitro accelerated drug release and enhanced cytotoxicity. The integrity of endolysosome membrane during the copolymer facilitated DOX endolysosomal escape was observed by confocal laser scan microscopy (CLSM) and further evaluated by hemolysis test and calculation of the critical size of endolysosomal membrane. The results indicate that the endolysosomal membrane remained intact during the copolymer facilitated endolysosomal escape of DOX. It is more reasonable to ascribe the PHis based copolymer facilitation endolysosomal escape to the "proton sponge" hypothesis without rupturing the endolysosomal membrane.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

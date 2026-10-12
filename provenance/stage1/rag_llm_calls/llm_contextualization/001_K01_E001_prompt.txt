@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: K01
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 42590857
+DOI: 10.1002/adhm.71571
+
+TITLE:
+Hyperbranched Polylysine-Based Lipopolyplexes Enable Efficient mRNA Delivery With Long-Term Storage Stability.
+
+ABSTRACT:
+Clinical translation of messenger RNA (mRNA) therapeutics is often hampered by the poor storage stability of lipid-based delivery vectors. Many lipopolyplex (LPP) delivery systems struggle to achieve efficient nucleic acid release through the membrane fusion pathway. Herein, we developed a novel ternary lipopolyplex (LPP) platform of lipid/HBPL/mRNA LPPs by incorporating hyperbranched poly-L-lysine (HBPL) as a functional polymeric core. The highly branched architecture of HBPL enabled a unique balance between high mRNA encapsulation efficiency, efficient intracellular release, and exceptional colloidal stability, thereby overcoming a key limitation of conventional lipid nanoparticles. This platform primarily promoted cellular uptake through a membrane fusion mechanism in vitro, thereby achieving highly efficient cytoplasmic delivery, while the HBPL core enabled superior mRNA release compared to its linear ε-Polylysine (ε-PLL, hereafter referred to as PLL)-based counterpart. These attributes collectively yielded high transfection efficiency across multiple cell lines, significantly enhanced dendritic cell (DC) maturation, and superior biocompatibility over a commercial transfection reagent. Efficient mRNA delivery to the lungs and spleen was also confirmed in vivo, with protein expression sustained even after 1 month of storage. By successfully integrating long-term stability with high delivery efficiency, this HBPL-based LPP platform represents a highly promising candidate for advancing mRNA therapeutics and vaccines.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R02
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 17143266
+DOI: 10.1038/nmat1794
+
+TITLE:
+Polyarginine segments in block copolypeptides drive both vesicular assembly and intracellular delivery.
+
+ABSTRACT:
+Polymeric vesicles are a relatively new class of nanoscale self-assembled materials that show great promise as robust encapsulants. Compared with liposomes, use of polymeric building blocks for membrane formation allows increased stability, stimuli responsiveness and chemical diversity, which may prove advantageous for drug-delivery applications . A major drawback of most polymeric vesicles is the lack of biofunctionality, which restricts their ability to interact with cells and tissues. We have prepared vesicles composed of polyarginine and polyleucine segments that are stable in media, can entrap water soluble species, and can be processed to different sizes and prepared in large quantities. The remarkable feature of these materials is that the polyarginine segments both direct structure for vesicle formation and provide functionality for efficient intracellular delivery of the vesicles. This unique synergy between nanoscale self-assembly and inherent peptide functionality provides a new approach for design of multifunctional materials for drug delivery.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

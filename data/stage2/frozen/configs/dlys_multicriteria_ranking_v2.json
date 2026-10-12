@@ -1,0 +1,126 @@
+{
+  "schema_version": "3.0.0",
+  "module": "dlys_multicriteria_ranking_v2",
+  "method": "target-blind metric mapping + preregistered direction guardrails + D1 ordinal-redundancy audit + adaptive primary decision (equal-weight PyMCDM TOPSIS when >=2 qualified nonredundant criteria; preregistered single-axis ranking only when explicitly allowed) + Borda/ablation/weight/Pareto diagnostics where applicable",
+  "dependencies": {
+    "pymcdm": "1.4.0",
+    "aaindex": "1.3.2"
+  },
+  "ranking_policy": {
+    "minimum_primary_criteria": 2,
+    "equal_weights": true,
+    "hard_gates_exclude_candidates": false,
+    "deduplicate_same_registry_key": true,
+    "drop_constant_criteria": true,
+    "context_dependent_not_ranked": true,
+    "validation_only_not_ranked": true,
+    "tie_break_not_in_topsis": true,
+    "no_cross_domain_total_score": true,
+    "no_llm_numeric_weights": true,
+    "correlation_does_not_auto_drop_due_small_domain_n": true,
+    "enforce_domain_metric_direction_policy": true,
+    "weight_perturbation_fraction": 0.2,
+    "weight_perturbation_mode": "one_criterion_at_a_time_up_down_then_renormalize",
+    "primary_decision_method": "adaptive: TOPSIS for >=2 qualified nonredundant criteria; preregistered single-axis rank only for explicitly allowed fallback domains",
+    "borda_role": "diagnostic_only",
+    "criterion_ablation_role": "mechanism_dependence_diagnostic_not_pass_fail",
+    "report_topsis_margin": true,
+    "report_pareto_dominance": true,
+    "suppress_pymcdm_dominance_warnings_after_explicit_diagnostics": true,
+    "drop_exact_rank_redundant_criteria_domains": [
+      "D1"
+    ],
+    "metric_priority_by_domain": {
+      "D1": [
+        "hydropathy",
+        "hbond_site_count",
+        "aqueous_solution_free_energy",
+        "polarity"
+      ],
+      "D2": [
+        "hydropathy",
+        "beta_branching",
+        "sidechain_volume"
+      ],
+      "D3": [
+        "net_sidechain_charge_pH7_4",
+        "absolute_sidechain_charge_pH7_4",
+        "sidechain_amide",
+        "sidechain_volume"
+      ]
+    },
+    "single_criterion_fallback": {
+      "enabled": true,
+      "domains": {
+        "D1": {
+          "allowed_registry_keys": [
+            "hydropathy"
+          ],
+          "method_label": "preregistered_single_axis_rank",
+          "reason": "After deterministic mapping and D1 ordinal-redundancy audit, only the preregistered hydropathy axis remains independently decision-informative. Do not fabricate a second criterion solely to force TOPSIS."
+        }
+      }
+    }
+  },
+  "claims_boundary": [
+    "Stage 1 already selected D-lysine; this module ranks the remaining 17 X candidates within three human-preregistered comparison domains defined by the frozen taxonomy contract.",
+    "The LLM is upstream only: it discovers domain-relevant physicochemical indicators from qualified evidence and system constraints. It never assigns candidates to domains, ranks candidates, or assigns numerical weights.",
+    "Metric mapping is deterministic and local. Unresolved concepts are excluded rather than converted into ad-hoc custom scores.",
+    "When a domain retains at least two qualified nonredundant primary_rank criteria, all receive equal TOPSIS weight and TOPSIS is the primary decision method. D1 may use a preregistered single-axis hydropathy fallback only if qualification/redundancy auditing leaves hydropathy as the sole independent decision axis; this avoids fabricating a second criterion merely to force MCDA.",
+    "Borda/rank-sum is an independent ordinal diagnostic only for genuine multicriteria domains. It is not presented as an independent check for a one-criterion fallback, where it would be mathematically redundant.",
+    "Criterion-ablation (formerly LOO) asks whether the conclusion depends on retaining each physical mechanism axis. It is a mechanism-dependence diagnostic, not a pass/fail test.",
+    "The deterministic ±20% one-criterion-at-a-time weight perturbation check tests local robustness around equal weights for multicriteria domains and never tunes weights; it is not applicable to a one-criterion fallback.",
+    "Pareto dominance and TOPSIS winner margin are reported explicitly so library warnings do not substitute for interpretation.",
+    "All 17 candidates remain in their frozen domain decision matrix; hard_gate suggestions are audit-only and do not silently remove candidates.",
+    "Post-hoc reference targets are loaded only after rankings are computed and cannot affect discovery, mapping, weights, taxonomy, or ranking.",
+    "Short-peptide AP, CPP, CamSol, generic immune scores, and molecular dynamics do not enter final V3 stage-2 ranking."
+  ],
+  "domain_metric_direction_policy": {
+    "D1": {
+      "hydropathy": [
+        "higher"
+      ],
+      "hbond_site_count": [
+        "lower"
+      ],
+      "aqueous_solution_free_energy": [
+        "lower"
+      ],
+      "aromatic_ring_count": [],
+      "sidechain_volume": [],
+      "polarity": [
+        "lower"
+      ]
+    },
+    "D2": {
+      "hydropathy": [
+        "higher"
+      ],
+      "beta_branching": [
+        "absence"
+      ],
+      "sidechain_volume": [
+        "higher"
+      ],
+      "alpha_helix_propensity": [],
+      "beta_sheet_propensity": []
+    },
+    "D3": {
+      "net_sidechain_charge_pH7_4": [
+        "closer_to_zero"
+      ],
+      "absolute_sidechain_charge_pH7_4": [
+        "lower"
+      ],
+      "sidechain_amide": [
+        "presence"
+      ],
+      "sidechain_volume": [
+        "higher"
+      ],
+      "hbond_donor_count": [],
+      "hbond_acceptor_count": []
+    }
+  },
+  "taxonomy_contract": "configs/dlys_stage2_taxonomy_v3.json"
+}

@@ -1,0 +1,30 @@
+{
+  "preference": "INSUFFICIENT",
+  "basis": [
+    "Polyhistidine (His) shows strong evidence for endosomal escape and pH-sensitive intracellular delivery (E049, E052, E058), which is a mechanistic advantage for vaccine delivery, but its direct dendritic-cell activation evidence often relies on hybrid or tag-based systems (E062, E064) and is less direct than lysine’s.",
+    "Polylysine (Lys) shows robust and direct dendritic-cell maturation, cross-presentation, and adaptive immune activation (E019, E022), and evidence for mRNA/antigen delivery (E001), but its endosomal escape capacity is weak (E010) and some forms exhibit cytotoxicity (E013).",
+    "Safety evidence for both is generally favorable (His: E059; Lys: E014, E015, E016, E018), but both have limitations or negative data (Lys: E013; His: no negative safety identified but limited systemic data).",
+    "Transferability to a poly(amino acid) functional block is comparable for both amino acids, but histidine offers unique pH-responsiveness, while lysine offers strong cationic charge for nucleic acid binding; the trade-off is not resolved by the supplied evidence.",
+    "The evidence does not consistently favor one candidate across all decision dimensions, and direct head-to-head comparisons are absent, making a stable preference unjustified."
+  ],
+  "supporting_evidence_ids": [
+    "E049",
+    "E052",
+    "E058",
+    "E064",
+    "E019",
+    "E022",
+    "E001"
+  ],
+  "counter_evidence_ids": [
+    "E010",
+    "E013",
+    "E062"
+  ],
+  "uncertainties": [
+    "The degree to which polyhistidine's endosomal escape translates to improved vaccine efficacy compared to polylysine's stronger DC activation is unknown without direct comparative studies.",
+    "Polylysine's cytotoxicity in some forms (E013) may not be representative of all lysine-based materials; conversely, polyhistidine's safety in complex in vivo vaccine models is underreported.",
+    "Most immune evidence for polyhistidine uses it as a tag or in multi-component systems, making it difficult to isolate its contribution from other components.",
+    "The lack of studies directly comparing histidine- and lysine-based polymers in identical vaccine formulations prevents a definitive conclusion."
+  ]
+}

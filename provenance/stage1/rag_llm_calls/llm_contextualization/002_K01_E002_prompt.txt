@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: K01
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 41700543
+DOI: 10.1002/smll.202511459
+
+TITLE:
+Development of a Novel Polyleucine-Based Immunopotentiator for Subunit Vaccines Against Group A Streptococcus.
+
+ABSTRACT:
+Mixture-based vaccine formulations offer distinct advantages by eliminating the need for chemical conjugation or complex encapsulations, thereby streamlining preparation, enhancing versatility, and reducing cost and production time. In this study, we report the design of a novel polypeptide-based self-assembling adjuvant where a water insoluble 15-mer polyleucine (L<sub>15</sub>) is coupled with a polylysine unit (K<sub>6</sub>). As a nano adjuvant, L<sub>15</sub>K<sub>6</sub> markedly enhances antigen uptake by dendritic cells, promotes antigen-presenting cell maturation (CD40, CD80/86, and MHC-II), and upregulates Toll-like receptor expression, particularly Toll-like receptor 4 in dendritic cells. Bulk RNA sequencing further reveals robust NF-κB pathway activation by L<sub>15</sub>K<sub>6</sub>. When co-delivered with peptide or protein antigens derived from Group A Streptococcus, L<sub>15</sub>K<sub>6</sub> induces robust antigen-specific IgG response with highly potent antibacterial activity against two clinical Group A Streptococcus strains in vitro. Beyond antigens derived from Group A Streptococcus, L<sub>15</sub>K<sub>6</sub> also enhances immune responses against model protein antigens such as ovalbumin and bovine serum albumin, highlighting its broad applicability. Notably, a single immunization with L<sub>15</sub>K<sub>6</sub> outperforms alum adjuvant in eliciting high levels of bovine serum albumin-specific IgG. These findings establish L<sub>15</sub>K<sub>6</sub> as a simple yet powerful immunopotentiator with significant promise for the development of broadly applicable subunit vaccines.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

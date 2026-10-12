@@ -1,0 +1,4 @@
+feature_a,feature_b,spearman_rho
+KF2,sidechain_heavy_atom_count,0.9839396601936323
+sidechain_heteroatom_count,sidechain_HBD_reference,0.8609243600286576
+sidechain_heteroatom_count,sidechain_HBA_reference,0.8609243600286576

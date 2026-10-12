@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R03
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 22721724
+DOI: 10.1016/j.biomaterials.2012.05.067
+
+TITLE:
+Self-assembly nanomicelles based on cationic mPEG-PLA-b-Polyarginine(R15) triblock copolymer for siRNA delivery.
+
+ABSTRACT:
+Due to the absence of safe and effective carriers for in vivo delivery, the applications of small interference RNA (siRNA) in clinic for therapeutic purposes have been limited. In this study, a biodegradable amphiphilic tri-block copolymer (mPEG(2000)-PLA(3000)-b-R(15)) composed of monomethoxy poly(ethylene glycol), poly(d,l-lactide) and polyarginine was synthesized and further self-assembled to cationic polymeric nanomicelles for in vivo siRNA delivery, with an average diameter of 54.30 ± 3.48 nm and a zeta potential of approximately 34.8 ± 1.77 mV. The chemical structures of the copolymers were well characterized by (1)H NMR spectroscopy and FT-IR spectra. In vitro cytotoxicity and hemolysis assays demonstrated that the polymeric nanomicelles showed greater cell viability and haemocompatibility than those of polyethyleneimine (PEI) or R(15) peptide. In vitro experiments demonstrated that EGFR targeted siRNA formulated in micelleplexes exhibited approximately 65% inhibition of EGFR expression on MCF-7 cells in a sequence-specific manner, which was comparable to Lipofectamine™ 2000. The results of intravenous administration showed Micelleplex/EGFR-siRNA significantly inhibited tumor growth in nude mice xenografted MCF-7 tumors, with a remarkable inhibition of EGFR expression. Furthermore, no positive activation of the innate immune responses and no significant body weight loss was observed during treatment suggested that this polymeric micelle delivery system is non-toxic. In conclusion, the present nanomicelles based on cationic mPEG(2000)-PLA(3000)-b-R(15) copolymer would be a safe and efficient nanocarrier for in vivo delivery of therapeutic siRNA.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

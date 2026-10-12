@@ -1,0 +1,27 @@
+{
+  "summary": "This study directly compares L-lysine (P_L-K) and D-lysine (P_D-K) chiral polypeptide nanoparticles as nanoadjuvants. P_D-K-OVA outperformed P_L-K-OVA in inducing dendritic cell maturation, antigen cross-presentation, and adaptive immune response, leading to superior tumor inhibition in a melanoma model.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "dendritic cell maturation",
+    "antigen cross-presentation",
+    "adaptive immune response",
+    "tumor prevention and therapy (B16-OVA melanoma)"
+  ],
+  "reported_numeric_results": [
+    "P_D-K-OVA achieved a tumor inhibition rate of 94.9%",
+    "P_D-K-OVA combined with anti-PD-1 antibody achieved 97.0% tumor inhibition"
+  ],
+  "reported_qualitative_findings": [
+    "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to P_L-K-OVA.",
+    "P_D-K-OVA effectively prevented and treated OVA-expressed B16-OVA melanoma."
+  ],
+  "material_or_molecular_context": "Chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K)",
+  "biological_context": "Mouse dendritic cells (in vitro), B16-OVA melanoma model (in vivo)",
+  "limitations_for_current_question": [
+    "Only tested with OVA as model antigen; not generalized to other antigens.",
+    "Single tumor model (B16-OVA); no other cancer or infectious disease models.",
+    "No direct human cell or in vivo human data provided.",
+    "Only two chiral variants compared; other chiral forms or enantiomers not examined."
+  ],
+  "supporting_text": "Compared to P_L-K-OVA, P_D-K-OVA more robustly induced dendritic cell maturation"
+}

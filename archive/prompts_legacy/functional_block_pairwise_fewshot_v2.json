@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.0",
+  "purpose": "Candidate-neutral in-context demonstrations for pairwise evidence synthesis. Synthetic examples only; never scientific evidence.",
+  "demonstrations": [
+    {
+      "id": "PAIR_DEMO_01",
+      "task": "Choose which of two anonymous functional materials is better supported for a vaccine-delivery role.",
+      "candidate_A": [
+        "Direct target-cell experiment reports delivery of the intended biomacromolecule and preserved viability.",
+        "A second experiment reports target-relevant immune activation."
+      ],
+      "candidate_B": [
+        "Several studies report strong generic cellular uptake.",
+        "No supplied study measures the target immune endpoint."
+      ],
+      "ideal": {
+        "preference": "A",
+        "reason": "Target-relevant efficacy and immune evidence are more informative for the stated task than generic uptake alone.",
+        "must_not_do": ["Do not compare candidates by paper count alone.", "Do not invent missing measurements."]
+      }
+    },
+    {
+      "id": "PAIR_DEMO_02",
+      "task": "Compare two anonymous materials when evidence is mixed.",
+      "candidate_A": [
+        "One study reports target-relevant efficacy, but no safety result is supplied."
+      ],
+      "candidate_B": [
+        "One study reports moderate target-relevant efficacy and another reports a substantial toxicity trade-off."
+      ],
+      "ideal": {
+        "preference": "INSUFFICIENT",
+        "reason": "The supplied evidence does not justify a stable preference without over-interpreting missing safety information or the toxicity trade-off.",
+        "must_not_do": ["Do not force a winner.", "State the unresolved uncertainty."]
+      }
+    }
+  ]
+}

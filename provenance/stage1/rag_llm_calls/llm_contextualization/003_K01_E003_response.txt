@@ -1,0 +1,30 @@
+{
+  "summary": "This study reports a cationic polypeptide micelle system based on PEG-PLL-PLLeu (containing poly(L-lysine) block) for antigen delivery. It encapsulates OVA with high loading capacity and significantly enhances antibody production by 70-90 fold, promotes dendritic cell maturation, antigen uptake/presentation, and germinal center formation. Co-delivery with TLR3 agonist PIC also augments CTL response.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Antibody production enhancement",
+    "CD8 T cell response",
+    "Dendritic cell maturation",
+    "Antigen uptake and presentation",
+    "Germinal center formation",
+    "Cytotoxic-T-lymphocyte (CTL) response"
+  ],
+  "reported_numeric_results": [
+    "OVA loading capacity = 55%",
+    "Antibody production enhanced by 70-90 fold"
+  ],
+  "reported_qualitative_findings": [
+    "Polypeptide micelles spontaneously encapsulated OVA antigens with great stability",
+    "Enhanced vaccine-induced antibody production",
+    "Co-delivery of OVA and PIC synergistically augmented CTL response",
+    "Polypeptide micelles could be a robust adjuvant to enhance vaccine-induced immune responses"
+  ],
+  "material_or_molecular_context": "PEG-PLL-PLLeu (poly(ethylene glycol)-b-poly(L-lysine)-b-poly(L-leucine)) hybrid polypeptide micelles",
+  "biological_context": "In vitro dendritic cell assays and in vivo murine model (implied by vaccine studies)",
+  "limitations_for_current_question": [
+    "Uses OVA as model antigen, not mRNA or other biomacromolecules directly",
+    "Co-formulated with TLR3 agonist PIC; not tested as standalone delivery for mRNA or protein vaccines",
+    "No direct evidence for polylysine-only materials; study uses block copolymer with PEG and leucine blocks"
+  ],
+  "supporting_text": "polypeptide micelle-based antigen delivery system … robust adjuvant to enhance vaccine-induced immune responses"
+}

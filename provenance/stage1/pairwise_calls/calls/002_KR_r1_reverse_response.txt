@@ -1,0 +1,28 @@
+{
+  "preference": "A",
+  "basis": [
+    "Arginine (R) shows arginine-specific endosomolytic activity enabling cytosolic penetration, which is critical for cross-presentation and is not recapitulated by lysine (K) (E032).",
+    "Polyarginine directly delivers protein antigen to dendritic cells, enhances MHC class I/II presentation, and elicits potent CD4+/CD8+ T-cell responses and antitumor immunity (E044, E025).",
+    "Polyarginine synergizes with adjuvants to induce prolonged T-cell responses lasting over 372 days and inhibits systemic cytokine release (E027).",
+    "Safety evidence for polyarginine is consistently favorable, with low hemolysis, no significant mast cell degranulation, and good in vivo tolerability across multiple studies (E037, E038, E039).",
+    "The guanidinium group of arginine provides stronger and more pH-stable cationic charge, enhancing membrane interactions and endosomal escape, which is advantageous for a functional block in an amphiphilic poly(amino acid) (E032, E033)."
+  ],
+  "supporting_evidence_ids": [
+    "E032",
+    "E044",
+    "E025",
+    "E027",
+    "E037",
+    "E038",
+    "E039",
+    "E033"
+  ],
+  "counter_evidence_ids": [
+    "E013"
+  ],
+  "uncertainties": [
+    "Most arginine evidence uses specific chain lengths (e.g., R9, R18) or conjugates; performance may vary in different poly(amino acid) architectures.",
+    "Lysine evidence includes strong immune activation and mRNA delivery (E001, E019, E022), but these often involve complex copolymers (e.g., HBPL, L15K6) rather than pure polylysine blocks, limiting direct comparability.",
+    "The direct comparison study (E010) suggests similar transcription efficiency for polylysine and polyarginine polyplexes, but endosomal escape remains rate-limiting for both, though arginine-specific leakage activity (E032) is a decisive advantage."
+  ]
+}

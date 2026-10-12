@@ -1,0 +1,9 @@
+{
+  "runtime_utc": "20260920T145718Z",
+  "output": "prompts\\functional_block_icl_prompt_v1.txt",
+  "prompt_sha256": "c119db48769e403bcd293423a59c1d1392542787544ceb49d4ff6148abfcb3c3",
+  "config": "configs/functional_block_icl_v1.json",
+  "evidence": "data/processed/functional_block_evidence_pack_v1.json",
+  "demos": "prompts/functional_block_few_shot_v1.json",
+  "target": "prompts/functional_block_target_query_v1.txt"
+}

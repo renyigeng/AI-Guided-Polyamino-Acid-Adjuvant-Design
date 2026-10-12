@@ -1,0 +1,29 @@
+{
+  "summary": "",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "hemolysis and thrombogenicity assays",
+    "cell viability with human endothelial cells",
+    "in vivo cytokine levels (IL-1β, IL-6) after intravenous injection in mice",
+    "drug delivery efficacy in hindlimb-ischemia mouse model"
+  ],
+  "reported_numeric_results": [
+    "dimensions of 35-500 nm",
+    "35-nm NDs used for conjugation"
+  ],
+  "reported_qualitative_findings": [
+    "excellent hemocompatibility with negligible hemolytic and thrombogenic activities",
+    "non-cytotoxic to human primary endothelial cells",
+    "no significant elevation of IL-1β and IL-6 in mice",
+    "polyarginine-conjugated NDs useful as drug delivery vehicle for heparin"
+  ],
+  "material_or_molecular_context": "oxidized monocrystalline nanodiamonds (HPHT-NDs), with some experiments using polyarginine-conjugated NDs",
+  "biological_context": "human primary endothelial cells in vitro; mice (intravenous injection, hindlimb-ischemia model) in vivo",
+  "limitations_for_current_question": [
+    "the study focuses on nanodiamonds, not on polyarginine or arginine-based polypeptide materials per se",
+    "polyarginine is only used as a surface conjugate, its own cytotoxicity, biocompatibility, or hemolysis is not evaluated",
+    "no direct comparison of polyarginine vs. other materials",
+    "results cannot be directly transferred to standalone polyarginine materials"
+  ],
+  "supporting_text": "35-nm NDs after covalent conjugation with polyarginine are useful as a drug delivery vehicle"
+}

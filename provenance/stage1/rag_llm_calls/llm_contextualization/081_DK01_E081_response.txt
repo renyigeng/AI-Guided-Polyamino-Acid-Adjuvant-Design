@@ -1,0 +1,26 @@
+{
+  "summary": "This study investigates a D-lysine-containing polymer (DNP-dGL) as a B-cell tolerogen, showing that short (6-hr) exposure activates DNP-specific B cells similarly to antigen, while prolonged (48-hr) exposure induces tolerance. The findings are relevant to immune modulation by D-lysine-containing polymers but do not address dendritic cells, antigen presentation, or adjuvant effects directly.",
+  "relevance_score": 4,
+  "reported_outcomes": [
+    "B cell activation",
+    "B cell tolerance"
+  ],
+  "reported_numeric_results": [
+    "at least a 36-hr incubation is required for tolerance induction",
+    "6-hr preincubation augments immune response"
+  ],
+  "reported_qualitative_findings": [
+    "Preincubation with DNP-MGG for 48 hr induces tolerance in cell line B lymphocytes",
+    "6-hr preincubation with DNP-MGG augments the immune response to DNP-Ficoll",
+    "A 6-hr pulse with DNP-dGL elicits the same immune response as DNP-MGG but a 48-hr preincubation induces tolerance"
+  ],
+  "material_or_molecular_context": "DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL)",
+  "biological_context": "DNP-specific B lymphocyte cell lines from normal mice, in vitro, with T-cell factors from EL-4 supernatant",
+  "limitations_for_current_question": [
+    "Does not study dendritic cells or antigen-presenting cells",
+    "Does not address vaccine or adjuvant effects",
+    "Polymer is conjugated with DNP hapten, limiting generalization to other D-lysine systems",
+    "Only B cell responses, not broader immune activation"
+  ],
+  "supporting_text": "A 6-hr pulse with a DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL) elicited the same immune response"
+}

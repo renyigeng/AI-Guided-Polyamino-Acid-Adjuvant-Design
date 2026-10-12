@@ -1,0 +1,31 @@
+{
+  "preference": "A",
+  "basis": [
+    "Direct evidence for biomacromolecule delivery and dendritic cell maturation: hyperbranched poly-L-lysine lipopolyplex enabled mRNA delivery with enhanced DC maturation (E001); polyleucine-polylysine conjugate L15K6 promoted DC maturation, TLR4 upregulation, and robust antibody responses outperforming alum (E019, E002).",
+    "Strong immune activation with antigen cross-presentation and tumor inhibition: chiral poly(L-phenylalanine)-block-poly(lysine) nanoparticles induced DC maturation, cross-presentation, and adaptive immunity achieving 94.9% tumor inhibition in melanoma model (E022).",
+    "Favorable safety profile across multiple formulations: polylysine-based materials showed no hemolysis or organ toxicity (E014), minimal cytotoxicity and reduced hemolysis (E015), low hemolysis <5% and high viability >80% (E016), and excellent biocompatibility for blood-contacting applications (E018), despite toxicity concerns for a specific star-arranged PLL at bactericidal concentrations (E013).",
+    "Cellular uptake and endosomal behavior evidenced: poly(L-lysine) polyplex endosomal escape characterized as rate-limiting step (E010); PLL dendrimers internalized via multiple endocytosis pathways and trafficked to endosomes/lysosomes (E011); review confirms efficient electrostatic internalization (E007).",
+    "Direct transferability to poly(amino acid) functional block: lysine is a natural amino acid and polylysine is a well-studied poly(amino acid); multiple studies directly use polylysine or lysine-based polypeptides as the functional block in vaccine-relevant systems (E001, E019, E022)."
+  ],
+  "supporting_evidence_ids": [
+    "E001",
+    "E019",
+    "E022",
+    "E014",
+    "E015",
+    "E016",
+    "E018",
+    "E010",
+    "E011",
+    "E007",
+    "E002"
+  ],
+  "counter_evidence_ids": [
+    "E013"
+  ],
+  "uncertainties": [
+    "Polylysine-based materials show some cytotoxicity at high doses in a specific star-arranged form (E013), but general safety is favorable in other formulations.",
+    "Endosomal escape evidence for lysine is less direct than for histidine; histidine has stronger mechanistic evidence for pH-triggered endosomal disruption (e.g., E049, E058).",
+    "Strength of evidence for histidine in immune activation often comes from complex formulations where polyhistidine is a tag or component rather than the primary functional block, making direct attribution uncertain."
+  ]
+}

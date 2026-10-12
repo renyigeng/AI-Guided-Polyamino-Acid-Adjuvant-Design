@@ -1,0 +1,69 @@
+{
+  "version": "1.1",
+  "project_goal": "Design an amphiphilic binary poly(amino acid) system for tumor-vaccine antigen delivery.",
+  "architecture": {
+    "type": "amphiphilic_binary_block_polypeptide",
+    "template": "P(L-X)-b-P(D-Lys) after Stage 1 functional-block identity and Lys-chirality resolution",
+    "B_role": "basic/cationic functional block for antigen/protein interaction and immune-relevant material behavior",
+    "X_role": "assembly/material-property block selected from the 17 remaining canonical amino-acid identities; V1 does not vary X chirality"
+  },
+  "candidate_universe": {
+    "source": "20 canonical amino-acid identities",
+    "functional_identity_candidates": [
+      "K",
+      "R",
+      "H"
+    ],
+    "assembly_identity_candidates": "all 17 canonical identities excluding K/R/H",
+    "combination_boundary": "The chemistry identity space is constrained by role. V1 does not allow arbitrary 20x20 pairing.",
+    "chirality_boundary": "Only Lys chirality is resolved after functional identity selection. The 17 X candidates are treated in their natural L form; Arg/His chirality is not explored in V1."
+  },
+  "preselected_candidates": [
+    {
+      "code": "K",
+      "name": "Lysine",
+      "side_chain": "epsilon-amino group",
+      "chemical_basis": "basic, hydrophilic and predominantly cationic near physiological pH"
+    },
+    {
+      "code": "R",
+      "name": "Arginine",
+      "side_chain": "guanidinium group",
+      "chemical_basis": "strongly basic, hydrophilic and strongly cationic over the physiological pH range"
+    },
+    {
+      "code": "H",
+      "name": "Histidine",
+      "side_chain": "imidazole group",
+      "chemical_basis": "hydrophilic, weakly basic and pH-responsive, with increased protonation under acidic conditions"
+    }
+  ],
+  "important_constraints": [
+    "Preselection does not rank K, R or H.",
+    "Functional identity is selected from K/R/H using traceable literature evidence.",
+    "After Lys is selected, only Lys chirality is resolved; D-Lys is then frozen for downstream V1 evaluation.",
+    "No other amino-acid chirality is explored in V1.",
+    "The assembly/material-property block X is selected only from the 17 canonical identities excluding K/R/H.",
+    "Known K-F / K-L / K-Q experimental outcomes must not be used to tune AP/CPP/solubility model features, thresholds or ranking rules."
+  ],
+  "icl_decision_dimensions": [
+    "antigen_or_protein_interaction",
+    "aqueous_compatibility",
+    "cellular_uptake",
+    "intracellular_and_endosomal_behavior",
+    "safety_and_cytotoxicity_risk",
+    "polypeptide_synthetic_feasibility",
+    "strength_of_direct_experimental_evidence"
+  ],
+  "module": "functional_block_selection",
+  "current_module": {
+    "target": "B then Lys chirality",
+    "goal": "Select K/R/H functional identity; if K is selected, resolve L-Lys vs D-Lys and freeze D-Lys before X screening.",
+    "deferred_to_assembly_block_module": "Evaluate the 17 natural-L X identities with low-fidelity priors/proxies and direct physicochemical descriptors."
+  },
+  "expected_output": {
+    "primary_hydrophilic_block": "one candidate if evidence supports a primary choice",
+    "alternative_hydrophilic_blocks": "zero to two alternatives",
+    "uncertainties": "explicit unresolved issues"
+  }
+}

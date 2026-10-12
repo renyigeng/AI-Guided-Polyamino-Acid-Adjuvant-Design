@@ -1,0 +1,32 @@
+{
+  "summary": "This hydrogel study directly assesses ε-polylysine biocompatibility via hemolysis and cytotoxicity assays, reporting low hemolysis (<5%) and high cell viability (>80%), with in vivo wound healing acceleration.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "biocompatibility assessment via hemolysis and cytotoxicity assays",
+    "in vivo wound healing efficacy in full-thickness skin defect model"
+  ],
+  "reported_numeric_results": [
+    "maximum swelling ratio 65.6%",
+    "low hemolysis rates <5%",
+    "high cell viability >80%",
+    "86% wound healing rate within 7 days vs 67% control",
+    "complete biodegradation within 21 days"
+  ],
+  "reported_qualitative_findings": [
+    "hydrogel is biocompatible",
+    "promotes wound healing by inhibiting inflammatory response",
+    "reduces IL-6 levels",
+    "enhances angiogenesis",
+    "accelerates collagen deposition",
+    "does not induce significant inflammatory response in vivo"
+  ],
+  "material_or_molecular_context": "PGA-PL composite hydrogel: γ-polyglutamic acid (γ-PGA) crosslinked with ε-polylysine (ε-PL) via Schiff base reaction",
+  "biological_context": "in vitro hemolysis assay (blood), in vitro cytotoxicity assay (cell culture), in vivo full-thickness skin defect model in Sprague Dawley rats",
+  "limitations_for_current_question": [
+    "only ε-polylysine form studied, not other lysine-based materials or polylysine variants",
+    "no direct comparison to polylysine alone (only in hydrogel composite)",
+    "no long-term systemic safety or biodistribution data",
+    "cytotoxicity only reported as >80% viability, no IC50 or detailed dose-response"
+  ],
+  "supporting_text": "low hemolysis rates (<5%) and high cell viability (>80%)"
+}

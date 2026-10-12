@@ -1,0 +1,886 @@
+You are comparing two candidate functional amino-acid material identities using ONLY retrieved scientific evidence supplied in the prompt. This is an in-context pairwise comparison, not an absolute scoring task. Do not use paper count as a quality score. Do not use MedCPT or RAG relevance scores as biological effect sizes. Preserve negative or conflicting evidence and uncertainty. If the supplied evidence does not justify a preference, choose INSUFFICIENT. Return valid JSON only.
+
+The following synthetic demonstrations teach comparison behavior only and are NOT scientific evidence:
+{
+  "schema_version": "2.0",
+  "purpose": "Candidate-neutral in-context demonstrations for pairwise evidence synthesis. Synthetic examples only; never scientific evidence.",
+  "demonstrations": [
+    {
+      "id": "PAIR_DEMO_01",
+      "task": "Choose which of two anonymous functional materials is better supported for a vaccine-delivery role.",
+      "candidate_A": [
+        "Direct target-cell experiment reports delivery of the intended biomacromolecule and preserved viability.",
+        "A second experiment reports target-relevant immune activation."
+      ],
+      "candidate_B": [
+        "Several studies report strong generic cellular uptake.",
+        "No supplied study measures the target immune endpoint."
+      ],
+      "ideal": {
+        "preference": "A",
+        "reason": "Target-relevant efficacy and immune evidence are more informative for the stated task than generic uptake alone.",
+        "must_not_do": [
+          "Do not compare candidates by paper count alone.",
+          "Do not invent missing measurements."
+        ]
+      }
+    },
+    {
+      "id": "PAIR_DEMO_02",
+      "task": "Compare two anonymous materials when evidence is mixed.",
+      "candidate_A": [
+        "One study reports target-relevant efficacy, but no safety result is supplied."
+      ],
+      "candidate_B": [
+        "One study reports moderate target-relevant efficacy and another reports a substantial toxicity trade-off."
+      ],
+      "ideal": {
+        "preference": "INSUFFICIENT",
+        "reason": "The supplied evidence does not justify a stable preference without over-interpreting missing safety information or the toxicity trade-off.",
+        "must_not_do": [
+          "Do not force a winner.",
+          "State the unresolved uncertainty."
+        ]
+      }
+    }
+  ]
+}
+
+CURRENT DESIGN GOAL:
+Select the better-supported cationic/functional block identity for an amphiphilic binary poly(amino acid) tumor-vaccine material, considering target-relevant delivery, dendritic-cell/immune evidence, intracellular/endosomal behavior, safety trade-offs, and transferability to the target architecture.
+
+DECISION DIMENSIONS:
+[
+  "direct antigen/protein/biomacromolecule delivery relevance",
+  "dendritic-cell maturation, antigen-presentation or immune-activation relevance",
+  "cellular uptake and intracellular/endosomal behavior",
+  "safety and cytotoxicity trade-offs",
+  "transferability to a poly(amino acid) functional block",
+  "strength/directness of evidence"
+]
+
+CANDIDATE A = Lys (K)
+[
+  {
+    "evidence_id": "E001",
+    "query_id": "K01",
+    "question": "What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+    "summary": "This study developed a ternary lipopolyplex (LPP) platform using hyperbranched poly-L-lysine (HBPL) for mRNA delivery, demonstrating high transfection efficiency, enhanced dendritic cell maturation, efficient in vivo delivery to lungs and spleen, and sustained protein expression after one month of storage, highlighting the potential of HBPL-based LPPs for mRNA therapeutics and vaccines.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "mRNA encapsulation efficiency",
+      "intracellular release efficiency",
+      "colloidal stability",
+      "transfection efficiency across multiple cell lines",
+      "dendritic cell maturation",
+      "biocompatibility",
+      "in vivo mRNA delivery to lungs and spleen",
+      "protein expression persistence after storage"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "HBPL enabled a unique balance between high mRNA encapsulation efficiency, efficient intracellular release, and exceptional colloidal stability",
+      "Platform had higher transfection efficiency compared to linear ε-PLL-based counterpart",
+      "Enhanced dendritic cell maturation",
+      "Superior biocompatibility over a commercial transfection reagent",
+      "Efficient mRNA delivery to lungs and spleen with sustained protein expression after 1 month of storage"
+    ],
+    "material_or_molecular_context": "Hyperbranched poly-L-lysine (HBPL) as part of a ternary lipopolyplex (LPP) with lipid and mRNA",
+    "biological_context": "Multiple cell lines (in vitro), dendritic cells (in vitro and ex vivo), and mouse model (in vivo: lungs and spleen)",
+    "limitations": [
+      "Only tested for mRNA delivery, not directly for other biomacromolecules (e.g., proteins, antigens, or vaccines)",
+      "No explicit comparison to other polylysine variants beyond linear ε-PLL",
+      "Abstract does not report quantitative numeric results (e.g., transfection percentages or expression levels)",
+      "In vivo data limited to lung and spleen expression; no immune response or vaccine efficacy data"
+    ],
+    "title": "Hyperbranched Polylysine-Based Lipopolyplexes Enable Efficient mRNA Delivery With Long-Term Storage Stability.",
+    "pmid": "42590857",
+    "doi": "10.1002/adhm.71571",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E019",
+    "query_id": "K04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?",
+    "summary": "The polyleucine–polylysine conjugate L15K6 enhances antigen uptake by dendritic cells, promotes DC maturation (CD40, CD80/86, MHC-II), upregulates TLR4, activates NF-κB, and induces robust antibody responses when co-delivered with antigens, including outperforming alum. This directly addresses lysine-based polypeptide adjuvant activity and dendritic-cell activation.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "antigen uptake by dendritic cells",
+      "antigen-presenting cell maturation",
+      "Toll-like receptor 4 upregulation",
+      "NF-κB pathway activation",
+      "antigen-specific IgG response",
+      "antibacterial activity against Group A Streptococcus"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "markedly enhances antigen uptake by dendritic cells",
+      "promotes antigen-presenting cell maturation (CD40, CD80/86, and MHC-II)",
+      "upregulates Toll-like receptor expression, particularly TLR4",
+      "robust NF-κB pathway activation",
+      "induces robust antigen-specific IgG response with highly potent antibacterial activity",
+      "single immunization outperforms alum adjuvant in eliciting high levels of BSA-specific IgG"
+    ],
+    "material_or_molecular_context": "L15K6: a conjugate of 15-mer polyleucine and hexa-lysine (K6) that self-assembles into nanoparticles",
+    "biological_context": "dendritic cells in vitro; immune responses in vivo (implied by immunization with antigens such as Group A Streptococcus peptides, ovalbumin, and BSA; antibacterial activity tested in vitro)",
+    "limitations": [
+      "The polylysine component is only a hexa-lysine unit conjugated to a dominant polyleucine chain; results may not generalize to other lysine-based polymers or pure polylysine.",
+      "Cross-presentation (MHC-I pathway) is not explicitly addressed; only MHC-II and DC maturation markers reported.",
+      "In vivo model details (species, route, dose) are not specified in the abstract.",
+      "No direct comparison with other lysine-based adjuvants or pure polylysine controls."
+    ],
+    "title": "Development of a Novel Polyleucine-Based Immunopotentiator for Subunit Vaccines Against Group A Streptococcus.",
+    "pmid": "41700543",
+    "doi": "10.1002/smll.202511459",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E014",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "Polylysine-based copolymer PPDD showed no detectable hemolysis or organ toxicity in biosafety assays, was biocompatible, and improved survival and reduced inflammation in sepsis models.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "survival rate",
+      "cytokine levels (TNF-α, IL-6, IL-10, CRP)",
+      "hemolysis",
+      "organ toxicity"
+    ],
+    "reported_numeric_results": [
+      "Day-14 survival 80% in PPDD-treated group vs 20% in septic controls",
+      "TNF-α reduced by 38.1%",
+      "IL-6 reduced by 46.0%",
+      "IL-10 reduced by 76.7%",
+      "CRP reduced by 32.9%"
+    ],
+    "reported_qualitative_findings": [
+      "No detectable hemolysis or organ toxicity",
+      "Biocompatible",
+      "PPDD disassembles and reconfigures from spherical to ellipsoidal in acidic environment"
+    ],
+    "material_or_molecular_context": "Polylysine (PLL)-based copolymer self-assembly (PPDD) composed of PEG-PLL conjugated with DCFH-DA",
+    "biological_context": "In vitro and in vivo sepsis mouse model (implied)",
+    "limitations": [
+      "Specific cytotoxicity data on normal cells not reported",
+      "Safety assessment limited to hemolysis and organ toxicity; other cytotoxicity endpoints not mentioned",
+      "Material is a complex copolymer, not pure polylysine"
+    ],
+    "title": "Polylysine-based copolymer self-assemblies featuring acidity-activated structural transformation perceives and relieves sepsis.",
+    "pmid": "41159133",
+    "doi": "10.1093/rb/rbaf100",
+    "medcpt_rank": 2
+  },
+  {
+    "evidence_id": "E015",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "Poly-L-lysine/hyodeoxycholic acid nanoparticles (PLL-HDCA NPs) were evaluated for cytotoxicity, hemolysis, and safety. Cytotoxicity and hemolysis tests showed minimal impact on human cells and significantly reduced hemolysis compared to PLL alone. Skin irritation tests confirmed safety for external application, directly addressing the query's focus on biocompatibility and safety of lysine-based materials.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "cytotoxicity tests",
+      "hemolysis evaluations",
+      "skin irritation test"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "minimal impact on human cells",
+      "significantly reduced hemolysis rates compared to PLL alone",
+      "confirmed safety for external application"
+    ],
+    "material_or_molecular_context": "Poly-L-lysine/hyodeoxycholic acid nanoparticles (PLL-HDCA NPs)",
+    "biological_context": "Human cells (in vitro cytotoxicity and hemolysis), mouse models (in vivo hemorrhage, wound healing, skin irritation)",
+    "limitations": [
+      "Cell types used in cytotoxicity tests not specified",
+      "Exact hemolysis reduction percentage not provided",
+      "Only topical application safety assessed; systemic safety not addressed"
+    ],
+    "title": "Computer-Aided Construction and Evaluation of Poly-L-Lysine/Hyodeoxycholic Acid Nanoparticles for Hemorrhage and Infection Therapy.",
+    "pmid": "39861658",
+    "doi": "10.3390/pharmaceutics17010007",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E010",
+    "query_id": "K02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study compared poly(L-lysine) (PK) and poly(L-arginine) (PR) polyplexes to identify the rate-limiting step in gene transfection. By using microinjection to bypass natural uptake, they quantified intranuclear transcription efficiency and endosomal escape. They found that endosomal escape is the rate-limiting step, independent of the buffering effect, and that transcription efficiency is similar for PK and PR but decreases with molecular weight.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "intranuclear transcription efficiency",
+      "nuclear transport of polyplex",
+      "endosomal escape",
+      "cellular uptake"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "intranuclear transcription efficiency is the same in PR and PK and decreases rapidly with increasing molecular weight",
+      "transcription efficiency strongly suppressed at high molecular weight",
+      "rate-limiting step is buffering effect-independent endosomal escape",
+      "cellular uptake and in vitro transfection with or without chloroquine were considered"
+    ],
+    "material_or_molecular_context": "poly(L-lysine) (PK) and poly(L-arginine) (PR) with different molecular weights",
+    "biological_context": "living cells (microinjection technique applied to cultured cells, cell type not specified)",
+    "limitations": [
+      "microinjection technique bypasses natural endocytic uptake and internalization pathways",
+      "focus is on polyplexed pDNA, not free polylysine or lysine-based materials",
+      "cell type not specified, limiting generalizability",
+      "direct comparison with polyarginine may obscure behavior specific to polylysine alone"
+    ],
+    "title": "Quantitative comparison between poly(L-arginine) and poly(L-lysine) at each step of polyplex-based gene transfection using a microinjection technique.",
+    "pmid": "27877476",
+    "doi": "10.1088/1468-6996/13/1/015009",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E016",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "This hydrogel study directly assesses ε-polylysine biocompatibility via hemolysis and cytotoxicity assays, reporting low hemolysis (<5%) and high cell viability (>80%), with in vivo wound healing acceleration.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "biocompatibility assessment via hemolysis and cytotoxicity assays",
+      "in vivo wound healing efficacy in full-thickness skin defect model"
+    ],
+    "reported_numeric_results": [
+      "maximum swelling ratio 65.6%",
+      "low hemolysis rates <5%",
+      "high cell viability >80%",
+      "86% wound healing rate within 7 days vs 67% control",
+      "complete biodegradation within 21 days"
+    ],
+    "reported_qualitative_findings": [
+      "hydrogel is biocompatible",
+      "promotes wound healing by inhibiting inflammatory response",
+      "reduces IL-6 levels",
+      "enhances angiogenesis",
+      "accelerates collagen deposition",
+      "does not induce significant inflammatory response in vivo"
+    ],
+    "material_or_molecular_context": "PGA-PL composite hydrogel: γ-polyglutamic acid (γ-PGA) crosslinked with ε-polylysine (ε-PL) via Schiff base reaction",
+    "biological_context": "in vitro hemolysis assay (blood), in vitro cytotoxicity assay (cell culture), in vivo full-thickness skin defect model in Sprague Dawley rats",
+    "limitations": [
+      "only ε-polylysine form studied, not other lysine-based materials or polylysine variants",
+      "no direct comparison to polylysine alone (only in hydrogel composite)",
+      "no long-term systemic safety or biodistribution data",
+      "cytotoxicity only reported as >80% viability, no IC50 or detailed dose-response"
+    ],
+    "title": "A Poly-γ-Glutamic Acid/ε-Polylysine Hydrogel: Synthesis, Characterization, and Its Role in Accelerated Wound Healing.",
+    "pmid": "40277663",
+    "doi": "10.3390/gels11040226",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E022",
+    "query_id": "K04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study demonstrates that chiral polypeptide nanoparticles (P_D-K and P_L-K) composed of poly(L-phenylalanine)-block-poly(lysine) act as nanoadjuvants, with the D-lysine variant P_D-K more potently inducing dendritic cell maturation, antigen cross-presentation, and adaptive immune responses compared to the L-lysine counterpart. The nanovaccine P_D-K-OVA showed high efficacy in preventing and treating B16-OVA melanoma, achieving tumor inhibition rates of up to 94.9% alone and 97.0% with anti-PD-1 therapy.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell maturation",
+      "antigen cross-presentation",
+      "adaptive immune response",
+      "tumor prevention and treatment in B16-OVA melanoma model"
+    ],
+    "reported_numeric_results": [
+      "loading efficiencies of almost 100%",
+      "nanoparticle diameter of about 30 nm",
+      "tumor inhibition rate of 94.9%",
+      "tumor inhibition rate of 97.0% when combined with anti-PD-1 antibody"
+    ],
+    "reported_qualitative_findings": [
+      "Compared to P_L-K-OVA, P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response.",
+      "P_D-K-OVA effectively prevented and treated the OVA-expressed B16-OVA melanoma model."
+    ],
+    "material_or_molecular_context": "Chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K), self-assembled into nanoparticles mixed with OVA antigen.",
+    "biological_context": "In vitro dendritic cell maturation; in vivo B16-OVA melanoma model in mice; combined with anti-PD-1 antibody.",
+    "limitations": [
+      "Only tested with OVA as model antigen, not with other antigens or in other tumor models.",
+      "Direct comparisons with other lysine-based adjuvants or formulations not provided.",
+      "Mechanistic details on cross-presentation pathways are not fully elaborated in the abstract."
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E011",
+    "query_id": "K02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?",
+    "summary": "Poly-L-lysine dendrimers (G3) are internalized via multiple endocytosis pathways (cholesterol-, dynamin-mediated, macropinocytosis) and trafficked to endosomes and lysosomes in Caco-2 cells; the site of fluorophore conjugation affects uptake and subcellular localization.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "elucidate endocytosis mechanisms and subcellular localization",
+      "impact of fluorophore conjugation on cytotoxicity, uptake, and transepithelial transport"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "Uptake highly dependent on cholesterol- and dynamin-mediated endocytosis and macropinocytosis",
+      "Dendrimers were trafficked to endosomes and lysosomes",
+      "Subcellular localization impacted by fluorophore conjugation site",
+      "Internalization and trafficking can be impacted by conjugation"
+    ],
+    "material_or_molecular_context": "Poly-L-lysine (PLL) G3 dendrimers conjugated with Oregon green 514 at either the periphery or the core",
+    "biological_context": "Caco-2 cells (human intestinal epithelial cell line)",
+    "limitations": [
+      "In vitro study in a single cell line (Caco-2)",
+      "Only one dendrimer generation (G3) tested",
+      "Fluorophore conjugation may alter native dendrimer behavior",
+      "No quantitative uptake or trafficking rates reported"
+    ],
+    "title": "Internalization and Subcellular Trafficking of Poly-l-lysine Dendrimers Are Impacted by the Site of Fluorophore Conjugation.",
+    "pmid": "25950742",
+    "doi": "10.1021/mp500765e",
+    "medcpt_rank": 5
+  },
+  {
+    "evidence_id": "E018",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study on l-lysine-derived zwitterionic brushes (p(LysAA)) reports excellent biocompatibility: relative cell growth rates over 90%, hemolysis rate below 1%, intradermal reaction scores less than 1.0, and antithrombotic efficacy in vitro and in vivo, directly addressing safety endpoints for lysine-based polypeptide materials.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "relative cell growth rates",
+      "hemolysis rate",
+      "intradermal reaction scores",
+      "platelet and red blood cell adhesion",
+      "thrombus formation in rabbit model"
+    ],
+    "reported_numeric_results": [
+      "relative cell growth rates of over 90%",
+      "hemolysis rate of below 1%",
+      "intradermal reaction scores of less than 1.0"
+    ],
+    "reported_qualitative_findings": [
+      "excellent biocompatibility",
+      "effectively suppressed fouling by proteins, bacteria, platelets, and red blood cells",
+      "antithrombotic efficacy both in vitro and in vivo",
+      "no obvious clotting after 1 h circulation in rabbit arterio-jugular vein shunt model"
+    ],
+    "material_or_molecular_context": "poly(ε-acryloyl l-lysine) (p(LysAA)) zwitterionic brushes; l‑lysine-derived, not polylysine itself but lysine-based",
+    "biological_context": "in vitro cell culture (likely L929 or similar for cell growth), rabbit arterio-jugular vein shunt model for thrombosis, intradermal reaction in rabbits",
+    "limitations": [
+      "Material is a specific zwitterionic brush (p(LysAA)) rather than free polylysine, limiting direct extrapolation to other lysine-based polypeptides",
+      "Only one lysine-based form tested; no comparison to other polypeptide materials",
+      "Safety data are from catheter-specific application; general toxicity (e.g., systemic) not reported",
+      "No long-term cytotoxicity or hemocompatibility data provided"
+    ],
+    "title": "A Facile, Scalable, and Universal Strategy to Construct Densely Packed l-Lysine-Derived Zwitterionic Brushes for Blood-Contacting Catheters.",
+    "pmid": "41273302",
+    "doi": "10.1021/acsami.5c21251",
+    "medcpt_rank": 6
+  },
+  {
+    "evidence_id": "E007",
+    "query_id": "K02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?",
+    "summary": "This review confirms that polylysine is efficiently internalized via electrostatic interaction with cells, enabling intracellular delivery, and that modifying contrast agents with polylysine improves cellular uptake. It provides contextual support for intracellular uptake of lysine-based materials.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "intracellular delivery of therapeutic agents",
+      "improved cellular uptake of contrast agents"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "polylysine is efficiently internalized via electrostatic interaction with cells",
+      "conjugation with functional groups imparts stimuli-responsive traits for enhanced delivery",
+      "modifying contrast agents with polylysine increases cellular uptake and stability"
+    ],
+    "material_or_molecular_context": "polylysine and lysine-based polymers, residues, and peptides",
+    "biological_context": "cells (general; no specific cell type or in vivo model mentioned in abstract)",
+    "limitations": [
+      "Review article: does not provide primary experimental data on endosomal behavior or detailed uptake mechanisms",
+      "Abstract does not specify endosomal escape or trafficking; focus is on overall internalization and delivery"
+    ],
+    "title": "Advanced Delivery Systems Based on Lysine or Lysine Polymers.",
+    "pmid": "34519501",
+    "doi": "10.1021/acs.molpharmaceut.1c00474",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E013",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study evaluates a star-arranged poly-l-lysine antimicrobial polymer (16-PLL₁₀) for antimicrobial activity and toxicity. At bactericidal concentrations, 16-PLL₁₀ was toxic to human keratinocytes and caused hemolysis. Chemical modifications (TFA, PEGylation) only moderately reduced cytotoxicity and hemolysis. The material is relevant to safety concerns but shows limited selectivity for further development.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Minimum bactericidal concentration determination",
+      "Human keratinocyte viability assay",
+      "Human erythrocyte haemolysis assay"
+    ],
+    "reported_numeric_results": [
+      "Minimum bactericidal concentration of 16-PLL₁₀ ranged from 1.25 µM to ≥25 µM",
+      "At 2.5 µM, 16-PLL₁₀ was broadly bactericidal against ESKAPE strains/wound isolates",
+      "Log-reduction in c.f.u. per ml after 1 h ranged from 0.3 (E. cloacae) to 5.6 (K. pneumoniae)"
+    ],
+    "reported_qualitative_findings": [
+      "At bactericidal concentrations, 16-PLL₁₀ was toxic to human keratinocyte and erythrocytes",
+      "Conjugates (TFA-16-PLL₁₀ and PEGylated 16-PLL₁₀) only moderately reduced cytotoxicity and haemolysis",
+      "Due to poor selectivity indices, further development of 16-PLL₁₀ is unlikely warranted"
+    ],
+    "material_or_molecular_context": "Star-arranged poly-L-lysine-based 16-armed antimicrobial peptide polymer (16-PLL₁₀) and its TFA and PEGylated conjugates",
+    "biological_context": "Human keratinocytes, human erythrocytes, clinical wound isolates of ESKAPE pathogens",
+    "limitations": [
+      "In vitro only; no in vivo safety data",
+      "Specific to star-arranged PLL, not general polylysine",
+      "Modifications did not fully resolve toxicity",
+      "Hemolysis and cytotoxicity tested only at bactericidal concentrations"
+    ],
+    "title": "Antimicrobial spectrum against wound pathogens and cytotoxicity of star-arranged poly-l-lysine-based antimicrobial peptide polymers.",
+    "pmid": "39268705",
+    "doi": "10.1099/jmm.0.001886",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E002",
+    "query_id": "K01",
+    "question": "What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+    "summary": "L15K6, a polyleucine-polylysine nano adjuvant, enhances antigen uptake, dendritic cell maturation, and TLR4 signaling, inducing strong antibody responses against GAS and model antigens, outperforming alum.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "antigen uptake by dendritic cells",
+      "antigen-presenting cell maturation (CD40, CD80/86, MHC-II)",
+      "Toll-like receptor 4 expression upregulation",
+      "NF-κB pathway activation",
+      "antigen-specific IgG response with antibacterial activity",
+      "immune responses against ovalbumin and bovine serum albumin"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "markedly enhances antigen uptake by dendritic cells",
+      "promotes antigen-presenting cell maturation",
+      "upregulates Toll-like receptor expression, particularly TLR4",
+      "robust NF-κB pathway activation",
+      "induces robust antigen-specific IgG with potent antibacterial activity",
+      "enhances immune responses against model antigens",
+      "a single immunization outperforms alum adjuvant in eliciting BSA-specific IgG"
+    ],
+    "material_or_molecular_context": "L15K6: 15-mer polyleucine coupled with a polylysine unit (K6)",
+    "biological_context": "dendritic cells; Group A Streptococcus (clinical strains); ovalbumin and bovine serum albumin as model antigens; in vitro antibacterial activity; in vivo single immunization",
+    "limitations": [
+      "The study focuses on protein/peptide antigens, not mRNA or other biomacromolecules",
+      "Specific to L15K6 construct, not general polylysine materials",
+      "No direct comparison with other polylysine-based delivery systems",
+      "Abstract does not specify delivery mechanism (e.g., encapsulation, conjugation) beyond co-delivery"
+    ],
+    "title": "Development of a Novel Polyleucine-Based Immunopotentiator for Subunit Vaccines Against Group A Streptococcus.",
+    "pmid": "41700543",
+    "doi": "10.1002/smll.202511459",
+    "medcpt_rank": 2
+  }
+]
+
+CANDIDATE B = Arg (R)
+[
+  {
+    "evidence_id": "E037",
+    "query_id": "R03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?",
+    "summary": "Polyarginine coated magnetic nanovectors were evaluated for in vivo safety and compared to PEI-coated ones; pArg coating was found safe and tolerable, while PEI caused severe hemoincompatibility and organ damage.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "In vivo safety evaluation of polyarginine coated magnetic nanovectors",
+      "Comparison of polyarginine vs. PEI coatings for hemoincompatibility and organ toxicity"
+    ],
+    "reported_numeric_results": [
+      "NP-pArg-siRNA was 3-fold more potent in siRNA delivery",
+      "NP-pArg-siRNA was 1.8-fold more effective in gene silencing",
+      "Hydrodynamic sizes: 21 nm (NP-pArg-siRNA) and 22 nm (NP-PEI-siRNA)",
+      "Zeta potentials: +2.1 mV (pArg) and +29.8 mV (PEI)"
+    ],
+    "reported_qualitative_findings": [
+      "PEI coated nanovectors elicited severe hemoincompatibility and damage to liver and spleen",
+      "pArg coated nanovectors were found to be safe and tolerable",
+      "Polycationic coatings of pArg were more effective and safer than PEI coatings"
+    ],
+    "material_or_molecular_context": "Poly-l-arginine (pArg) coated superparamagnetic iron oxide nanoparticles (12 nm core) covalently functionalized with siRNA (NP-pArg-siRNA); compared to PEI coated nanovectors",
+    "biological_context": "Rat C6 glioblastoma cells (in vitro); in vivo evaluation in rats (spleen, liver uptake; histopathological and hemopathological assays)",
+    "limitations": [
+      "Only one type of polyarginine coating (pArg) on magnetic nanovectors was tested; other arginine-based polypeptides or free polyarginine not evaluated",
+      "Safety was assessed in context of siRNA delivery nanovectors, not as standalone material",
+      "No direct cytotoxicity data for polyarginine alone without nanoparticle carrier"
+    ],
+    "title": "In vivo safety evaluation of polyarginine coated magnetic nanovectors.",
+    "pmid": "24099143",
+    "doi": "10.1021/mp4005468",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E038",
+    "query_id": "R03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?",
+    "summary": "This study evaluated safety of poly-arginine-18 (R18 and R18D) in ex vivo models of mast cell degranulation and hemolysis. Neither R18 nor R18D induced significant mast cell degranulation up to 16 µM. R18 caused modest hemolysis at 16 µM only without plasma; R18D caused none. Results suggest low risk of anaphylactoid reactions or hemolysis for R18D.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "mast cell degranulation measured by β-hexosaminidase release",
+      "red blood cell hemolysis measured by hemoglobin absorbance"
+    ],
+    "reported_numeric_results": [
+      "maximum peptide concentration of 16 μM",
+      "only R18 induced a modest, but significant degree of hemolysis at the 16 μM concentration"
+    ],
+    "reported_qualitative_findings": [
+      "R18 and R18D did not induce significant mast cell degranulation in both untreated and IgE-sensitized HCMCs",
+      "R18D did not induce hemolysis",
+      "TAT-NR2B9c and protamine did not induce significant mast cell degranulation",
+      "R18 induced hemolysis only in the absence of plasma"
+    ],
+    "material_or_molecular_context": "poly-arginine-18 (R18: 18-mer of L-arginine) and its D-enantiomer R18D",
+    "biological_context": "primary human cultured mast cells (HCMCs) and red blood cells (RBCs) ex vivo, with and without 2% plasma and IgE sensitization",
+    "limitations": [
+      "Ex vivo models only, not in vivo",
+      "Tested only up to 16 µM; higher concentrations may differ",
+      "Hemolysis observed only in one condition (without plasma) for R18, not R18D",
+      "Does not assess other cytotoxicity or biocompatibility endpoints beyond degranulation and hemolysis"
+    ],
+    "title": "Assessment of the safety of the cationic arginine-rich peptides (CARPs) poly-arginine-18 (R18 and R18D) in <i>ex vivo</i> models of mast cell degranulation and red blood cell hemolysis.",
+    "pmid": "35812346",
+    "doi": "10.1016/j.bbrep.2022.101305",
+    "medcpt_rank": 2
+  },
+  {
+    "evidence_id": "E044",
+    "query_id": "R04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyarginine or arginine-based polypeptide materials?",
+    "summary": "Polyarginine (R9) PTD delivers antigen to dendritic cells more efficiently than other PTDs, leading to enhanced MHC class I and II presentation, CD4+ and CD8+ T-cell activation, and superior antitumor immunity in mice, especially when combined with adjuvants.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "antigen delivery to dendritic cells",
+      "presentation onto MHC class I and II",
+      "CD4+ and CD8+ T-cell activation in vitro and in vivo",
+      "antitumor immunity in tumor-bearing mice"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "R9-PTD-containing OVA transduced DCs most efficiently",
+      "transduction efficacy correlated with extent of Ag-specific CD4+ and CD8+ T-cell activation",
+      "repeated vaccination with R9-PTD-OVA-transduced DCs induced enhanced antitumor immunity",
+      "complete rejection of tumors when DC was co-injected with adjuvants"
+    ],
+    "material_or_molecular_context": "polyarginine (R9) protein transduction domain (PTD) fused to ovalbumin (OVA)",
+    "biological_context": "dendritic cells in vitro and in vivo, mouse model with OVA-expressing tumors",
+    "limitations": [
+      "study used only OVA as model antigen",
+      "complete tumor rejection required co-injection with adjuvants",
+      "cross-presentation not explicitly examined",
+      "results are in murine models and may not directly translate to humans"
+    ],
+    "title": "Polyarginine-mediated protein delivery to dendritic cells presents antigen more efficiently onto MHC class I and class II and elicits superior antitumor immunity.",
+    "pmid": "16645583",
+    "doi": "10.1038/sj.jid.5700335",
+    "medcpt_rank": 2
+  },
+  {
+    "evidence_id": "E027",
+    "query_id": "R01",
+    "question": "What evidence is most relevant to polyarginine or arginine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+    "summary": "Poly-L-arginine (pR) synergizes with CpG-ODN to enhance and prolong peptide-specific immune responses, and prevents systemic release of pro-inflammatory cytokines induced by CpG-ODN alone. This demonstrates pR as a key component in synthetic vaccines for antigen delivery.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "enhanced peptide-specific immune responses",
+      "prolonged T cell responses lasting at least 372 days after a single injection",
+      "inhibition of systemic release of pro-inflammatory cytokines"
+    ],
+    "reported_numeric_results": [
+      "at least 372 days"
+    ],
+    "reported_qualitative_findings": [
+      "combined application of CpG-ODN and pR results in strongly enhanced peptide-specific immune responses compared to either modulator alone",
+      "high numbers of antigen-specific T cells can be observed even after only one injection for a remarkably long period",
+      "potentially harmful systemic release of pro-inflammatory cytokines induced upon injection of CpG-ODN is inhibited"
+    ],
+    "material_or_molecular_context": "poly-L-arginine (pR) combined with oligodeoxynucleotides containing CpG-motifs (CpG-ODN) and antigenic peptides",
+    "biological_context": "antigen presenting cells (APCs) and in vivo immune responses (likely murine model)",
+    "limitations": [
+      "focused on peptide antigens, not directly on protein, mRNA, or other biomacromolecules",
+      "requires combination with CpG-ODN as adjuvant, not polyarginine alone",
+      "no direct comparison to other polyarginine variants or delivery systems",
+      "species and translational details not explicitly stated"
+    ],
+    "title": "Poly-L-arginine synergizes with oligodeoxynucleotides containing CpG-motifs (CpG-ODN) for enhanced and prolonged immune responses and prevents the CpG-ODN-induced systemic release of pro-inflammatory cytokines.",
+    "pmid": "12297395",
+    "doi": "10.1016/s0264-410x(02)00343-2",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E033",
+    "query_id": "R02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyarginine or arginine-based polypeptide materials?",
+    "summary": "Nonaarginine (R9) internalizes into mammalian cells exclusively via endocytosis, requiring binding to cell surface heparan sulfate, with subsequent release from endocytic vesicles. In live cells, R9 is confined to endocytic vesicles, contradicting earlier fixation-artifact claims of cytosolic/nucleolar localization.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "elucidate the pathway for PTD internalization",
+      "demonstrate that PTD internalization occurs via endocytosis rather than direct plasma membrane crossing"
+    ],
+    "reported_numeric_results": [
+      "K(d) = 109 nM (affinity of R9 for heparin)"
+    ],
+    "reported_qualitative_findings": [
+      "R9 is observed only in endocytic vesicles of live cells",
+      "R9 does not enter living cells deficient in heparan sulfate",
+      "R9 promotes leakage of liposomes but only at high peptide:lipid ratios",
+      "PTD-mediated delivery involves binding to cell surface HS, uptake by endocytosis, release upon HS degradation, and leakage from endocytic vesicles"
+    ],
+    "material_or_molecular_context": "nonaarginine (R9) – a cationic polyarginine peptide used as a protein transduction domain",
+    "biological_context": "mammalian cells (including heparan sulfate-deficient cells) and liposomes",
+    "limitations": [
+      "Only nonaarginine (R9) was studied; shorter or longer polyarginine chains may behave differently",
+      "Liposome leakage observed only at high peptide:lipid ratios, limiting direct physiological relevance",
+      "No direct measurement of endosomal escape efficiency or intracellular trafficking kinetics"
+    ],
+    "title": "Pathway for polyarginine entry into mammalian cells.",
+    "pmid": "14992581",
+    "doi": "10.1021/bi035933x",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E047",
+    "query_id": "R04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyarginine or arginine-based polypeptide materials?",
+    "summary": "PEG-Q11R9 nanofibers displaying nona-arginine (R9) synergistically enhance CDN-mediated dendritic cell activation in vitro (STING-dependent, monotonic with R9 density) and improve sublingual immunization in vivo, with intermediate R9 levels optimal.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell activation in vitro and in vivo",
+      "antigen trafficking to draining lymph nodes",
+      "sublingual immunization efficacy"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "synergistic effect on DC activation with CDN adjuvants",
+      "STING-dependent enhancement",
+      "increasing R9 concentration monotonically increases DC activation in vitro",
+      "polyvalent display on nanofibers more effective than unassembled R9 peptide",
+      "bell-shaped trend for in vivo DC activation and antigen trafficking with increasing R9",
+      "intermediate R9 levels optimal for sublingual immunization"
+    ],
+    "material_or_molecular_context": "PEG-Q11 nanofibers coassembled with varying densities of nona-arginine (R9) peptide",
+    "biological_context": "in vitro dendritic cells and in vivo sublingual immunization in mice (draining lymph nodes)",
+    "limitations": [
+      "no direct measurement of antigen presentation or cross-presentation",
+      "adjuvant limited to cyclic-dinucleotides (CDNs) only",
+      "study specific to sublingual route; generalizability to other mucosal or systemic routes uncertain",
+      "potential detrimental mucoadhesive interactions at high R9 densities"
+    ],
+    "title": "Titrating Polyarginine into Nanofibers Enhances Cyclic-Dinucleotide Adjuvanticity <i>in Vitro</i> and after Sublingual Immunization.",
+    "pmid": "33775089",
+    "doi": "10.1021/acsbiomaterials.0c01429",
+    "medcpt_rank": 5
+  },
+  {
+    "evidence_id": "E025",
+    "query_id": "R01",
+    "question": "What evidence is most relevant to polyarginine or arginine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+    "summary": "Polyarginine (R9) protein transduction domain efficiently delivers protein antigen (OVA) to dendritic cells (DCs), resulting in enhanced MHC class I and II presentation, potent CD4+ and CD8+ T-cell activation, and superior antitumor immunity in a mouse tumor model.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Antigen presentation onto MHC class I and II",
+      "Activation of CD8+ and CD4+ T cells",
+      "Antitumor immunity and tumor regression",
+      "Complete rejection of tumors with adjuvant co-injection"
+    ],
+    "reported_numeric_results": [
+      "polyarginine (R9)-PTD (noted as most efficacious)"
+    ],
+    "reported_qualitative_findings": [
+      "R9-PTD-containing OVA transduced DCs most efficiently among tested PTDs",
+      "Transduction efficacy correlated with extent of Ag-specific CD4+ and CD8+ T-cell activation in vitro and in vivo",
+      "Repeated vaccination with R9-PTD-OVA-transduced DC induced enhanced antitumor immunity",
+      "Complete rejection of tumors when DC was co-injected with adjuvants"
+    ],
+    "material_or_molecular_context": "Recombinant fusion Ovalbumin (OVA) containing polyarginine (R9) protein transduction domain (PTD)",
+    "biological_context": "Dendritic cells (DCs) in vitro and in vivo mouse model with OVA-expressing tumors",
+    "limitations": [
+      "Only tested with OVA protein antigen; not directly with mRNA or other biomacromolecules",
+      "Antitumor immunity required adjuvants for complete rejection",
+      "Study limited to mouse model and dendritic cell delivery",
+      "No direct comparison with other arginine-based polypeptide materials beyond R9-PTD"
+    ],
+    "title": "Polyarginine-mediated protein delivery to dendritic cells presents antigen more efficiently onto MHC class I and class II and elicits superior antitumor immunity.",
+    "pmid": "16645583",
+    "doi": "10.1038/sj.jid.5700335",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E043",
+    "query_id": "R04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyarginine or arginine-based polypeptide materials?",
+    "summary": "Poly-L-arginine mixed with peptide antigens induces infiltration of MHC class II+ cells (including dendritic cells) at injection sites, loading of APCs with antigen, and potent long-lasting systemic T-cell responses without inducing antibodies against the polymer.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "induction of potent and long-lasting T-cell responses against cancer antigens",
+      "no antibody responses against poly-L-arginine"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "large numbers of antigen-specific T cells are induced after vaccination with poly-L-arginine and peptide antigens",
+      "APCs mediate the generation of T lymphocytes",
+      "MHC class II+ cells infiltrate injection sites and are loaded with large amounts of antigen under the influence of poly-L-arginine",
+      "antigen-charged APCs detected in draining lymph nodes",
+      "antigen-specific T cell responses are systemic and detectable more than 4 months after the last vaccination",
+      "no antibody responses against poly-L-arginine even after repeat injections"
+    ],
+    "material_or_molecular_context": "poly-L-arginine (cationic poly-amino acid)",
+    "biological_context": "in vivo in animal models (presumably mice) after subcutaneous injection; tumor antigen-derived peptide antigens; draining lymph nodes; MHC class II+ cells (APCs, including dendritic cells)",
+    "limitations": [
+      "does not explicitly measure dendritic cell activation markers or cross-presentation",
+      "does not discriminate between dendritic cells and other APCs in the infiltration and antigen loading",
+      "does not provide detailed mechanism of immune activation or adjuvant activity beyond T-cell induction",
+      "only tested poly-L-arginine (not other arginine-based polypeptides or polyarginine variants)",
+      "no direct comparison to other adjuvants or materials"
+    ],
+    "title": "Vaccination with poly-L-arginine as immunostimulant for peptide vaccines: induction of potent and long-lasting T-cell responses against cancer antigens.",
+    "pmid": "11888923",
+    "doi": "",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E032",
+    "query_id": "R02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyarginine or arginine-based polypeptide materials?",
+    "summary": "This study demonstrates that supercharged arginine-rich peptides (polyarginine analogs of dfTAT) induce late endosome leakage and enhance cytosolic penetration in live human cells. Endocytic uptake efficiency increases linearly with arginine number, while cytosolic penetration shows a threshold effect requiring a minimum number of arginines. Polylysine analogs do not recapitulate this activity, indicating arginine-specific endosomolytic behavior.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Endosomal leakage activity",
+      "Endocytic uptake efficiency",
+      "Cytosolic penetration efficiency",
+      "Toxicity of delivery agents"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "Leakage activity of dfTAT can be recapitulated by polyarginine analogs but not by polylysine counterparts.",
+      "Efficiencies of peptide endocytic uptake increase linearly with the number of arginine residues.",
+      "Peptide cytosolic penetration displays a threshold behavior requiring a minimum number of arginines.",
+      "Increasing arginine content above threshold augments delivery efficiencies but also increases toxicity.",
+      "There is a narrow arginine-content window for optimally active endosomolytic agents."
+    ],
+    "material_or_molecular_context": "Supercharged arginine-rich peptides (polyarginine analogs of dfTAT); polylysine counterparts used for comparison",
+    "biological_context": "Live human cells",
+    "limitations": [
+      "Study uses specific dfTAT peptide analogs; generalizability to other arginine-based polypeptides may vary.",
+      "The exact numerical threshold for arginine number is not specified in the abstract.",
+      "Cell type specific effects are not detailed; only 'live human cells' are mentioned.",
+      "Toxicity is only qualitatively discussed without specific metrics."
+    ],
+    "title": "Unlocking Endosomal Entrapment with Supercharged Arginine-Rich Peptides.",
+    "pmid": "29065262",
+    "doi": "10.1021/acs.bioconjchem.7b00560",
+    "medcpt_rank": 2
+  },
+  {
+    "evidence_id": "E039",
+    "query_id": "R03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?",
+    "summary": "R15, a synthetic polyarginine peptide (15 arginines), was evaluated for safety in vitro and in vivo as a potential heparin reversal agent. It induced erythrocyte aggregation, thickened fibrin fibers, activated complement, and caused anticoagulation in a concentration-dependent manner, but these effects were mitigated in whole blood or when complexed with heparin. R15 degraded rapidly in rat plasma, was nonimmunogenic, and showed no significant renal dysfunction at therapeutic doses, in contrast to protamine sulfate. The study supports the safety of R15 for heparin reversal but does not directly assess general cytotoxicity or hemolysis.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "erythrocyte aggregation",
+      "fibrin fiber thickness",
+      "complement activation",
+      "anticoagulation",
+      "degradation in rat plasma",
+      "immunogenicity",
+      "renal function (creatinine levels)"
+    ],
+    "reported_numeric_results": [
+      "900 U·kg^-1 body weight (single intravenous injection dose for creatinine study)"
+    ],
+    "reported_qualitative_findings": [
+      "R15 and PS both induce erythrocyte aggregation, thicken fibrin fibers, activate complement, and cause anticoagulation in a concentration-dependent manner",
+      "These influences weakened in whole blood or in live animals and were avoided when R15 was in a complex with UFH",
+      "Dramatically enhanced complement activation with excess UFH in UFH-PS complexes, slight increase in UFH-R15 complexes",
+      "R15 degraded within 2 h in rat plasma in vitro, whereas PS was not degraded",
+      "Enhanced creatinine after single injection of PS or R15 suggests possible abnormal renal function",
+      "UFH-PS complex exhibited obvious immunogenicity; UFH-R15 complex did not",
+      "R15 is nonimmunogenic and potentially safe at therapeutic dose to reverse UFH effects"
+    ],
+    "material_or_molecular_context": "R15, a linear synthetic polyarginine peptide composed of 15 L-arginine residues",
+    "biological_context": "In vitro: human erythrocytes, fibrin, complement system, rat plasma. In vivo: rats (intravenous injection), assessment of immunogenicity and renal function.",
+    "limitations": [
+      "Study focused on heparin reversal context, not general cytotoxicity or hemolysis as primary endpoints",
+      "Only 15-mer polyarginine tested; different chain lengths may behave differently",
+      "No direct measurement of cell viability or hemolysis percentage",
+      "Erythrocyte aggregation and complement activation are related to hemocompatibility but not directly cytotoxicity"
+    ],
+    "title": "In vitro and in vivo safety studies indicate that R15, a synthetic polyarginine peptide, could safely reverse the effects of unfractionated heparin.",
+    "pmid": "34184429",
+    "doi": "10.1002/2211-5463.13240",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E045",
+    "query_id": "R04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyarginine or arginine-based polypeptide materials?",
+    "summary": "Poly-L-arginine synergizes with CpG-ODN to enhance and prolong peptide-specific T cell responses and inhibits CpG-ODN-induced systemic pro-inflammatory cytokine release, relevant to vaccine adjuvant activity.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Enhanced peptide-specific immune responses",
+      "Prolonged antigen-specific T cell persistence (at least 372 days after single injection)",
+      "Inhibition of CpG-ODN-induced systemic pro-inflammatory cytokines"
+    ],
+    "reported_numeric_results": [
+      "at least 372 days of T cell persistence after a single injection"
+    ],
+    "reported_qualitative_findings": [
+      "Poly-L-arginine synergizes with CpG-ODN for enhanced and prolonged immune responses",
+      "Combined application of CpG-ODN and pR prevents the CpG-ODN-induced systemic release of pro-inflammatory cytokines"
+    ],
+    "material_or_molecular_context": "Poly-L-arginine (pR) combined with CpG-ODN and antigenic peptides",
+    "biological_context": "In vivo immune responses in mice; antigen presenting cells (APCs) uptake",
+    "limitations": [
+      "Polyarginine used only in combination with CpG-ODN, not alone",
+      "No direct dendritic cell activation or cross-presentation data",
+      "Mechanism of APC uptake mentioned but not detailed for dendritic cells specifically"
+    ],
+    "title": "Poly-L-arginine synergizes with oligodeoxynucleotides containing CpG-motifs (CpG-ODN) for enhanced and prolonged immune responses and prevents the CpG-ODN-induced systemic release of pro-inflammatory cytokines.",
+    "pmid": "12297395",
+    "doi": "10.1016/s0264-410x(02)00343-2",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E028",
+    "query_id": "R01",
+    "question": "What evidence is most relevant to polyarginine or arginine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+    "summary": "Polyarginine (11R) protein transduction domain enables efficient in vivo delivery of proteins and bioactive compounds across plasma membranes, with subcellular targeting and broad tissue distribution.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "protein transduction across plasma membrane",
+      "subcellular localization control (nuclei, mitochondria, post-synaptic density)",
+      "in vivo delivery to brain, heart, skeletal muscle, liver, pancreas, lymphocytes"
+    ],
+    "reported_numeric_results": [
+      "most efficient with 11-arginine (11R)"
+    ],
+    "reported_qualitative_findings": [
+      "very efficient method applicable to cultured cells, tissue slices, and whole animals",
+      "useful strategy in post-genomic era for cancer cells and neuroscience"
+    ],
+    "material_or_molecular_context": "polyarginine (11R) protein transduction domain (PTD)",
+    "biological_context": "eukaryotic cells, tissue slices, whole animal models (brain, heart, skeletal muscle, liver, pancreas, lymphocytes)",
+    "limitations": [
+      "focus is on protein delivery; vaccine, mRNA, or antigen delivery not explicitly addressed",
+      "mini-review, not primary experimental data on immune responses",
+      "efficiency for biomacromolecules other than proteins not specified"
+    ],
+    "title": "Protein Therapy: in vivo protein transduction by polyarginine (11R) PTD and subcellular targeting delivery.",
+    "pmid": "12678854",
+    "doi": "10.2174/1389203033487270",
+    "medcpt_rank": 4
+  }
+]
+
+Choose A, B, or INSUFFICIENT. Do not assign a 0-100 immune score. Cite evidence IDs in the output. Return JSON in this schema:
+{
+  "preference": "A|B|INSUFFICIENT",
+  "basis": [
+    "short evidence-grounded reasons"
+  ],
+  "supporting_evidence_ids": [
+    "E001"
+  ],
+  "counter_evidence_ids": [
+    "E002"
+  ],
+  "uncertainties": [
+    "..."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "summary": "Poly-L-arginine synergizes with CpG-ODN to enhance and prolong peptide-specific T cell responses and inhibits CpG-ODN-induced systemic pro-inflammatory cytokine release, relevant to vaccine adjuvant activity.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Enhanced peptide-specific immune responses",
+    "Prolonged antigen-specific T cell persistence (at least 372 days after single injection)",
+    "Inhibition of CpG-ODN-induced systemic pro-inflammatory cytokines"
+  ],
+  "reported_numeric_results": [
+    "at least 372 days of T cell persistence after a single injection"
+  ],
+  "reported_qualitative_findings": [
+    "Poly-L-arginine synergizes with CpG-ODN for enhanced and prolonged immune responses",
+    "Combined application of CpG-ODN and pR prevents the CpG-ODN-induced systemic release of pro-inflammatory cytokines"
+  ],
+  "material_or_molecular_context": "Poly-L-arginine (pR) combined with CpG-ODN and antigenic peptides",
+  "biological_context": "In vivo immune responses in mice; antigen presenting cells (APCs) uptake",
+  "limitations_for_current_question": [
+    "Polyarginine used only in combination with CpG-ODN, not alone",
+    "No direct dendritic cell activation or cross-presentation data",
+    "Mechanism of APC uptake mentioned but not detailed for dendritic cells specifically"
+  ],
+  "supporting_text": "poly-L-arginine synergizes with oligodeoxynucleotides containing CpG-motifs for enhanced and prolonged immune responses"
+}

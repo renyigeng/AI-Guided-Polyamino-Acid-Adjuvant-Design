@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "status": "v1_scientific_freeze",
+  "candidate_set": [
+    "K",
+    "R",
+    "H"
+  ],
+  "design_context": "Hydrophilic/functional block B in an amphiphilic binary poly(amino acid) system P(X)-b-P(B) for tumor-vaccine antigen delivery.",
+  "decision_dimensions": [
+    "direct antigen/protein/biomacromolecule delivery relevance",
+    "dendritic-cell maturation, antigen-presentation or immune-activation relevance",
+    "cellular uptake and intracellular/endosomal behavior",
+    "safety and cytotoxicity trade-offs",
+    "transferability to a poly(amino acid) functional block",
+    "strength/directness of evidence"
+  ],
+  "rules": [
+    "Use only supplied evidence cards for candidate-specific claims.",
+    "Do not use knowledge of the team's experimental final candidate as a label during K/R/H identity selection.",
+    "Do not equate number of retrieved papers with candidate quality.",
+    "Do not force a winner if evidence is insufficient.",
+    "Explicitly distinguish direct evidence from transferability/inference.",
+    "Treat NCA synthesis evidence as common feasibility unless candidate-specific synthesis evidence is supplied.",
+    "Chirality is outside this K/R/H identity-selection prompt. If K is selected, Lys chirality is resolved in a separate evidence step; no other amino-acid chirality is explored in V1."
+  ],
+  "run_recommendation": {
+    "temperature": "0 or lowest deterministic setting when exposed by provider",
+    "repeat_runs": 3,
+    "note": "For ChatGPT UI or providers that do not expose temperature, record temperature as not_exposed."
+  },
+  "module": "functional_block_icl_selection",
+  "version": "1.1"
+}

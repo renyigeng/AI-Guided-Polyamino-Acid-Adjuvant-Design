@@ -1,0 +1,887 @@
+You are comparing two candidate functional amino-acid material identities using ONLY retrieved scientific evidence supplied in the prompt. This is an in-context pairwise comparison, not an absolute scoring task. Do not use paper count as a quality score. Do not use MedCPT or RAG relevance scores as biological effect sizes. Preserve negative or conflicting evidence and uncertainty. If the supplied evidence does not justify a preference, choose INSUFFICIENT. Return valid JSON only.
+
+The following synthetic demonstrations teach comparison behavior only and are NOT scientific evidence:
+{
+  "schema_version": "2.0",
+  "purpose": "Candidate-neutral in-context demonstrations for pairwise evidence synthesis. Synthetic examples only; never scientific evidence.",
+  "demonstrations": [
+    {
+      "id": "PAIR_DEMO_01",
+      "task": "Choose which of two anonymous functional materials is better supported for a vaccine-delivery role.",
+      "candidate_A": [
+        "Direct target-cell experiment reports delivery of the intended biomacromolecule and preserved viability.",
+        "A second experiment reports target-relevant immune activation."
+      ],
+      "candidate_B": [
+        "Several studies report strong generic cellular uptake.",
+        "No supplied study measures the target immune endpoint."
+      ],
+      "ideal": {
+        "preference": "A",
+        "reason": "Target-relevant efficacy and immune evidence are more informative for the stated task than generic uptake alone.",
+        "must_not_do": [
+          "Do not compare candidates by paper count alone.",
+          "Do not invent missing measurements."
+        ]
+      }
+    },
+    {
+      "id": "PAIR_DEMO_02",
+      "task": "Compare two anonymous materials when evidence is mixed.",
+      "candidate_A": [
+        "One study reports target-relevant efficacy, but no safety result is supplied."
+      ],
+      "candidate_B": [
+        "One study reports moderate target-relevant efficacy and another reports a substantial toxicity trade-off."
+      ],
+      "ideal": {
+        "preference": "INSUFFICIENT",
+        "reason": "The supplied evidence does not justify a stable preference without over-interpreting missing safety information or the toxicity trade-off.",
+        "must_not_do": [
+          "Do not force a winner.",
+          "State the unresolved uncertainty."
+        ]
+      }
+    }
+  ]
+}
+
+CURRENT DESIGN GOAL:
+Select the better-supported cationic/functional block identity for an amphiphilic binary poly(amino acid) tumor-vaccine material, considering target-relevant delivery, dendritic-cell/immune evidence, intracellular/endosomal behavior, safety trade-offs, and transferability to the target architecture.
+
+DECISION DIMENSIONS:
+[
+  "direct antigen/protein/biomacromolecule delivery relevance",
+  "dendritic-cell maturation, antigen-presentation or immune-activation relevance",
+  "cellular uptake and intracellular/endosomal behavior",
+  "safety and cytotoxicity trade-offs",
+  "transferability to a poly(amino acid) functional block",
+  "strength/directness of evidence"
+]
+
+CANDIDATE A = His (H)
+[
+  {
+    "evidence_id": "E049",
+    "query_id": "H02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "Polyhistidine peptides (PHPs), especially H16, are internalized efficiently via macropinocytosis in a charge-independent manner, localize to lysosome and Golgi, and show partial escape to cytoplasm. H16 achieves up to 14.6-fold higher uptake than octa-arginine and accumulates in tumor tissue for up to 132 h in vivo.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "Cellular uptake and internalization of polyhistidine peptides",
+      "Localization in lysosome and Golgi apparatus",
+      "Endosomal escape from macropinosome to cytoplasm",
+      "In vivo tumor accumulation and retention"
+    ],
+    "reported_numeric_results": [
+      "H16 showed up to 14.6-fold higher cell-penetrating capacity relative to octa-arginine against HT1080 cells",
+      "H16 peptide accumulates in tumor tissue and is retained up to 132 h following injection"
+    ],
+    "reported_qualitative_findings": [
+      "Cellular uptake of PHPs increased with chain length, reaching maximum at H16",
+      "Uptake is positive charge-independent",
+      "Main uptake mechanism is macropinocytosis",
+      "H16 localizes in lysosome and Golgi apparatus",
+      "A proportion of H16 escapes from macropinosome to cytoplasm",
+      "H16 functions as a His-tag and protein transduction domain"
+    ],
+    "material_or_molecular_context": "Polyhistidine peptides (PHPs), specifically H16 (16-mer, HHHHHHHHHHHHHHHH-NH2) and shorter variants, with or without GFP fusion",
+    "biological_context": "HT1080 human fibrosarcoma cells (in vitro); HT1080 tumor-bearing mice (in vivo)",
+    "limitations": [
+      "Only one cell line tested in vitro; different cell types may behave differently",
+      "Endosomal escape mechanism is inferred only from functional cytotoxicity assay, not directly visualized",
+      "Study focuses on H16; shorter polyhistidine lengths not fully characterized for uptake or endosomal behavior",
+      "No comparison with other polyhistidine materials (e.g., copolymers, nanoparticles) beyond linear peptides"
+    ],
+    "title": "Cellular uptake and in vivo distribution of polyhistidine peptides.",
+    "pmid": "25980622",
+    "doi": "10.1016/j.jconrel.2015.05.268",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E050",
+    "query_id": "H02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "Lipo-poly(L-histidine) hybrid materials conjugated with IR820 dye exhibit pH-sensitivity, efficient intracellular delivery of doxorubicin, and intrinsic targetability to cancer cells. The abstract explicitly reports active internalization, endosomal-triggered release, and drug escape from endosomes, supporting relevance to intracellular uptake and endosomal behavior of histidine-based polypeptide materials.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "intracellular delivery of doxorubicin",
+      "suppression of MCF-7 tumors in vitro and in vivo"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "pH-sensitivity",
+      "efficient intracellular delivery",
+      "intrinsic targetability to cancer cells",
+      "good stability under physiological conditions",
+      "combined mechanisms of EPR effect, active internalization, endosomal-triggered release, drug escape from endosomes, and long blood circulation time"
+    ],
+    "material_or_molecular_context": "lipo-poly(L-histidine) hybrid materials conjugated with IR820 dye",
+    "biological_context": "MCF-7 breast cancer cells and tumor model",
+    "limitations": [
+      "Material is a hybrid (lipo + poly(L-histidine) + IR820), not pure polyhistidine or histidine-based polypeptide",
+      "Results are specific to MCF-7 cancer cells; generalizability to other cell types or systems is not shown"
+    ],
+    "title": "Lipo-poly(L-histidine) hybrid materials with pH-sensitivity, intracellular delivery efficiency, and intrinsic targetability to cancer cells.",
+    "pmid": "24596253",
+    "doi": "10.1002/marc.201300892",
+    "medcpt_rank": 2
+  },
+  {
+    "evidence_id": "E062",
+    "query_id": "H04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "This article describes PLGA-porphyrin-cobalt nanoadjuvant (PPCoQ) that uses polyhistidine tags to load antigens, eliciting strong humoral and cellular immunity in vaccines. It directly addresses the adjuvant activity and vaccine responses of polyhistidine-tagged antigens.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Anti-RBD antibody induction in transgenic mice",
+      "99.7% clearance of SARS-CoV-2 Omicron variant after challenge",
+      "Enhanced mucosal immunity and IgA antibody titers after nebulization",
+      "Formation of tissue-resident memory T cells",
+      "Significant inhibition of B16-OVA tumor growth with OVA epitope"
+    ],
+    "reported_numeric_results": [
+      "99.7% clearance rate of the SARS-CoV-2 Omicron variant"
+    ],
+    "reported_qualitative_findings": [
+      "Strong humoral and cellular immune responses",
+      "Enhanced mucosal immunity",
+      "Increased IgA antibody titers",
+      "Promoted formation of abundant tissue-resident memory T cells"
+    ],
+    "material_or_molecular_context": "Poly(lactic acid)-porphyrin-cobalt ion (PPCoQ) co-formulated with QS-21, coordinating polyhistidine-tagged antigens via immobilized cobalt",
+    "biological_context": "Transgenic mice expressing human ACE2 (viral challenge), B16-OVA tumor model",
+    "limitations": [
+      "Does not specifically address dendritic cell activation or cross-presentation; only in vivo immune outcomes",
+      "Polyhistidine is used solely as an antigen tag, not as the adjuvant material itself",
+      "No isolated dendritic cell experiments",
+      "Cobalt toxicity or biocompatibility not discussed for DC function"
+    ],
+    "title": "A Poly(lactic Acid)-Porphyrin-Cobalt Vaccine Adjuvant System Elicits Protein- or Peptide-Specific Humoral and Cellular Immunity.",
+    "pmid": "42695476",
+    "doi": "10.1002/adma.74905",
+    "medcpt_rank": 2
+  },
+  {
+    "evidence_id": "E057",
+    "query_id": "H03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "Grafting polyhistidine or monomeric histidine onto poly(L-lysine) reduces cytotoxicity; polyhistidine graft (PLL-g-PHis) exhibits high pH-dependent hemolytic activity and influences cellular uptake. Polymeric histidine arrangement impacts hemolysis and cytotoxicity.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "hemolytic activity",
+      "cytotoxicity",
+      "cellular uptake",
+      "internalization",
+      "transfection efficiency",
+      "subcellular localization"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "PLL-g-PHis showed strong fluorescence in the nucleus after internalization",
+      "high hemolytic activity upon pH changes was observed from PLL-g-PHis",
+      "mHis or PHis grafting reduced the cytotoxicity of PLL",
+      "polymeric histidine arrangement demonstrates ability to escape the endosome and trigger rapid release",
+      "PLL-g-PHis/pDNA had highest YOYO1-pDNA intensity inside the nucleus and lowest lysotracker staining among polymers"
+    ],
+    "material_or_molecular_context": "poly(L-lysine) grafted with poly(L-histidine) (PLL-g-PHis) and with mono-L-histidine (PLL-g-mHis)",
+    "biological_context": "in vitro cellular studies (cell lines unspecified in abstract) for gene transfection",
+    "limitations": [
+      "Study primarily addresses gene transfection efficiency; hemolysis and cytotoxicity are secondary outcomes",
+      "No quantitative hemolysis percentages reported",
+      "Cytotoxicity reduction is stated qualitatively without numeric values",
+      "No in vivo safety or biocompatibility data",
+      "Materials are histidine-grafted PLL, not pure polyhistidine or histidine-based polypeptides alone"
+    ],
+    "title": "Role of polymeric endosomolytic agents in gene transfection: a comparative study of poly(L-lysine) grafted with monomeric L-histidine analogue and poly(L-histidine).",
+    "pmid": "25144273",
+    "doi": "10.1021/bm500843r",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E052",
+    "query_id": "H02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "This study demonstrates that poly(histidine-arginine)6 (H6R6) modification of chitosan nanoparticles enhances endosomal escape via the histidine component, facilitating siRNA release into the cytoplasm, and also improves cellular internalization via the arginine component. The H6R6-modified nanoparticles showed higher transfection efficiency and better endosomal escape compared to unmodified chitosan nanoparticles in vitro, and effectively inhibited tumor growth and metastasis in vivo.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "transfection efficiency",
+      "endosomal escape capacity",
+      "inhibition of tumor cell growth and metastases in vivo",
+      "improved survival ratio"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "H6R6-modified CS nanoparticles showed higher transfection efficiency and better endosomal escape capacity compared to ungroomed CS nanoparticle in vitro",
+      "H6R6-modified CS nanoparticles effectively inhibited tumor cell growth and metastases in vivo and significantly improved survival ratio"
+    ],
+    "material_or_molecular_context": "poly(histidine-arginine)6-modified chitosan nanoparticle (H6R6-CS)",
+    "biological_context": "in vitro cancer cell models and in vivo breast tumor metastasis model",
+    "limitations": [
+      "The material is a copolymer of histidine and arginine, not pure polyhistidine or a histidine-only polypeptide",
+      "The cell-penetrating and endosomal escape functionalities are combination contributions, not solely from histidine",
+      "Specific to siRNA delivery and breast cancer context; may not generalize to other cargos or cell types",
+      "Endosomal escape is attributed to histidine but not isolated from the arginine component in this study",
+      "No direct measurement of intracellular uptake kinetics or mechanisms for polyhistidine alone"
+    ],
+    "title": "siRNA-loaded poly(histidine-arginine)<sub>6</sub>-modified chitosan nanoparticle with enhanced cell-penetrating and endosomal escape capacities for suppressing breast tumor metastasis.",
+    "pmid": "28458542",
+    "doi": "10.2147/ijn.s129436",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E058",
+    "query_id": "H03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "This study investigates poly(l-histidine) based triblock copolymers (mPEG-PLA-PHis) for intracellular drug delivery. The copolymers self-assemble into micelles and undergo pH-induced reassembly, triggering accelerated drug release and enhanced cytotoxicity. Hemolysis tests indicate that the endolysosomal membrane remains intact during copolymer-facilitated endolysosomal escape, supporting a 'proton sponge' mechanism without membrane rupture. This provides evidence on cytotoxicity and hemolysis relevant to polyhistidine-based materials' biocompatibility and safety.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Cytotoxicity (enhanced DOX release and cytotoxicity)",
+      "Hemolysis test for endolysosomal membrane integrity"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "Enhanced cytotoxicity attributed to pH-induced drug release",
+      "Endolysosomal membrane remained intact during copolymer-facilitated escape",
+      "Proton sponge hypothesis supported as mechanism without membrane rupture"
+    ],
+    "material_or_molecular_context": "Poly(ethylene glycol)-poly(d,l-lactide)-poly(l-histidine) (mPEG-PLA-PHis) triblock copolymers with varying degrees of polymerization of PLA and PHis blocks",
+    "biological_context": "In vitro cell models (confocal microscopy) and hemolysis test on red blood cells for endolysosomal membrane integrity",
+    "limitations": [
+      "The study uses a triblock copolymer, not polyhistidine alone; results may not directly apply to pure polyhistidine materials",
+      "Cytotoxicity and hemolysis are tested in the context of drug-loaded micelles, not the material as a standalone biomaterial",
+      "No direct assessment of systemic biocompatibility or in vivo safety",
+      "Hemolysis test is used specifically to evaluate endolysosomal escape mechanism, not as a general hemocompatibility assay"
+    ],
+    "title": "Poly(l-histidine) based triblock copolymers: pH induced reassembly of copolymer micelles and mechanism underlying endolysosomal escape for intracellular delivery.",
+    "pmid": "25308242",
+    "doi": "10.1021/bm5010756",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E064",
+    "query_id": "H04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "This study uses poly(l-histidine)-poly(ethylene glycol) (PLH-PEG) pH/redox dual-sensitive micelles to deliver immunomodulators to lymph nodes, demonstrating dendritic cell antigen cross-presentation and CTL activation, along with NK cell activation and macrophage repolarization, in a tumor-bearing mouse model.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "activation of cytotoxic T lymphocytes (CTLs) and natural killer (NK) cells",
+      "dendritic cell antigen cross-presentation",
+      "macrophage repolarization from M2-type to M1-type",
+      "antitumor efficiency with tumor inhibition"
+    ],
+    "reported_numeric_results": [
+      "accumulation efficiency in lymph nodes increased 8.12-fold compared with the control group at 48 h after subcutaneous injection",
+      "tumor inhibition rate reached 93.76%"
+    ],
+    "reported_qualitative_findings": [
+      "pH/redox dual-sensitive micelles can effectively deliver immunomodulators to the lymph nodes due to their suitable particle size",
+      "Trp2/CpG-coloaded pH/redox dual-sensitive micelles fully promoted CTL activation through dendritic cell antigen cross-presentation and macrophage repolarization",
+      "IL-15-loaded pH/redox dual-sensitive micelles activated the killing effect of NK cells by interacting with IL-15 receptors",
+      "the immunosuppressive microenvironment was relieved by the repolarization of macrophages from M2-type to M1-type"
+    ],
+    "material_or_molecular_context": "poly(l-histidine)-poly(ethylene glycol) (PLH-PEG) based pH/redox dual-sensitive micelles",
+    "biological_context": "tumor-bearing mice model; lymph nodes; dendritic cells; macrophages; cytotoxic T lymphocytes; natural killer cells",
+    "limitations": [
+      "The study does not isolate the contribution of the polyhistidine backbone from the cargo (Trp2/CpG and IL-15) or the PEG component",
+      "Results are from a mouse model and may not directly translate to human vaccine responses",
+      "No direct comparison to other adjuvants or materials for dendritic cell activation"
+    ],
+    "title": "Lymph Node Delivery Strategy Enables the Activation of Cytotoxic T Lymphocytes and Natural Killer Cells to Augment Cancer Immunotherapy.",
+    "pmid": "33955746",
+    "doi": "10.1021/acsami.1c03709",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E065",
+    "query_id": "H04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "This study demonstrates that polyhistidine-tagged (His-tag) protein antigens displayed on immunogenic liposomes via cobalt-porphyrin phospholipid, combined with the CPQ adjuvant system (containing monophosphorylated lipid A and QS-21), elicit strong antibody responses in mice. No anti-His-tag antibodies were detected, and IgG levels were orders of magnitude higher compared to control adjuvants. The system shows potential for dose-sparing and neutralizing antibody production against alphaviruses, directly addressing polyhistidine-based vaccine strategies.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Antibody elicitation in mice",
+      "Neutralizing antibody activity against VEEV strain TC83 and Chikungunya virus 118/25"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "No detectable anti-His-tag antibodies",
+      "Orders-of-magnitude higher levels of antigen-specific IgG compared to control adjuvants",
+      "ELISA results correlated with antiviral activity"
+    ],
+    "material_or_molecular_context": "Polyhistidine-tagged (His-tag) physicochemical consensus protein antigens (VEEVcon and EVCcon) displayed on liposomes via cobalt-porphyrin phospholipid; CPQ adjuvant (cobalt-porphyrin phospholipid + monophosphorylated lipid A + QS-21)",
+    "biological_context": "Mouse immunization model; alphavirus (VEEV and Chikungunya) antibody responses",
+    "limitations": [
+      "No direct assessment of dendritic-cell activation or antigen presentation",
+      "Focuses on antibody responses, not T-cell responses or cross-presentation",
+      "No measurement of innate immune activation or adjuvant mechanisms beyond antibody titers",
+      "Study is proof-of-principle in mice only"
+    ],
+    "title": "Displaying alphavirus physicochemical consensus antigens on immunogenic liposomes enhances antibody elicitation in mice.",
+    "pmid": "38968676",
+    "doi": "10.1016/j.virol.2024.110152",
+    "medcpt_rank": 5
+  },
+  {
+    "evidence_id": "E061",
+    "query_id": "H04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "This study shows that polyhistidine-tagged Pfs25 antigen binds to cobalt porphyrin-phospholipid liposomes (SNAP), enhancing immunogenicity by promoting antigen uptake by phagocytic antigen-presenting cells and generating strong antibody responses in mice and rabbits. This demonstrates adjuvant activity and vaccine response improvement via his-tag-mediated antigen display.",
+    "relevance_score": 8,
+    "reported_outcomes": [
+      "Functional antibody generation",
+      "Antigen uptake by phagocytic antigen-presenting cells",
+      "Long-lived antigen-specific plasma cell generation",
+      "Multiplexed antibody production with multiple his-tagged polypeptides"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "Orders-of-magnitude higher functional antibody generation compared to other 'mix-and-inject' adjuvants",
+      "Serum-stable antigen binding during transit to draining lymph nodes",
+      "Enhanced antigen uptake by phagocytic antigen-presenting cells",
+      "Long-lived antigen-specific plasma cells",
+      "Strong and balanced antibody production with multiplexing"
+    ],
+    "material_or_molecular_context": "Polyhistidine-tagged recombinant Pfs25 and other his-tagged Plasmodium falciparum polypeptides; liposomes containing cobalt porphyrin-phospholipid",
+    "biological_context": "Mice and rabbits immunized subcutaneously",
+    "limitations": [
+      "Does not directly assess dendritic cell activation or cross-presentation",
+      "Focused on antibody responses rather than T cell responses",
+      "No direct measurement of innate immune activation markers"
+    ],
+    "title": "A malaria vaccine adjuvant based on recombinant antigen binding to liposomes.",
+    "pmid": "30297818",
+    "doi": "10.1038/s41565-018-0271-3",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E063",
+    "query_id": "H04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "Polylactic acid-polyhistidine (PLA-PHis) copolymer in the mPOD nanosystem reinforced dendritic cell maturation and migration, amplified mucosal immune response, and boosted secretory IgA production via RIG-I/NOD2 signaling when orally delivered in an AML murine model.",
+    "relevance_score": 8,
+    "reported_outcomes": [
+      "elicitation of mucosal and systemic immune response",
+      "dendritic cell maturation and migration",
+      "amplification of mucosal immune response",
+      "production of secretory immunoglobulin A",
+      "systemic cytotoxic immune reactions",
+      "eradication of disseminated malignant leukemic cells",
+      "defense against leukemia attacks"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "oral delivery of mPOD reinforces dendritic cell maturation and migration",
+      "amplifies mucosal immune response",
+      "boosts production of secretory IgA",
+      "provoked mucosal immunity positively regulates systemic cytotoxic immune reactions",
+      "eradicates disseminated malignant leukemic cells",
+      "provides defense against leukemia attacks"
+    ],
+    "material_or_molecular_context": "polylactic acid-polyhistidine (PLA-PHis) copolymer, MDP-modified PEG-lipid (MDP-PEG-DSPE), 5'-triphosphate-modified RNA (ppp-RNA)",
+    "biological_context": "acute myeloid leukemia (AML) murine model, gut-associated lymphoid tissues, Peyer's patches, dendritic cells, mucosal immunity",
+    "limitations": [
+      "Polyhistidine is combined with other materials (PLA, MDP, PEG, RNA); specific contribution of polyhistidine to DC activation is not isolated.",
+      "Study uses a mouse AML model, not directly generalizable to other vaccine or adjuvant contexts.",
+      "Cross-presentation is not explicitly measured or mentioned."
+    ],
+    "title": "Catch-to-Amplify Nanoparticles with Bacteria Surface for Sequential Mucosal Immune Activation for Acute Myeloid Leukemia Therapy.",
+    "pmid": "40202129",
+    "doi": "10.1021/acsnano.4c08515",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E053",
+    "query_id": "H02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "This study presents a universal strategy using polyhistidine tags for affinity-based assembly of peptides on plasmonic nanoparticles, enabling intracellular delivery with light-activated endosomal escape. The polyhistidine tag provides robust attachment, and laser treatment triggers endosome disruption for cytosolic activity, demonstrating spatiotemporal control.",
+    "relevance_score": 8,
+    "reported_outcomes": [
+      "intracellular delivery of peptide cargo",
+      "endosomal escape upon laser irradiation",
+      "cytosolic activity (mitochondrial disruption, apoptosis)"
+    ],
+    "reported_numeric_results": [
+      "10^5-fold improved response to peptide activity over the free peptide"
+    ],
+    "reported_qualitative_findings": [
+      "unprecedented spatiotemporal control over peptide release and endosome barrier breach",
+      "modularity of cargo and internalization peptide attachment via polyhistidine-NTA affinity and biotin-streptavidin"
+    ],
+    "material_or_molecular_context": "plasmonic gold nanoparticles functionalized with thiol-labeled affinity scaffolds, polyhistidine-tagged peptides, and cell-penetrating peptides",
+    "biological_context": "intracellular delivery; endosomal barrier; mitochondrial membrane disruption and apoptotic cell death (likely in cancer cells)",
+    "limitations": [
+      "polyhistidine is used as a tag for surface attachment, not as the primary cell-penetrating or endosomal escape agent",
+      "endosomal escape is triggered by near-infrared laser, not by histidine-based material properties alone",
+      "study focuses on light-controlled release, not passive uptake or intrinsic endosomal behavior of polyhistidine"
+    ],
+    "title": "Affinity-Based Assembly of Peptides on Plasmonic Nanoparticles Delivered Intracellularly with Light Activated Control.",
+    "pmid": "28525708",
+    "doi": "10.1021/acs.bioconjchem.7b00276",
+    "medcpt_rank": 5
+  },
+  {
+    "evidence_id": "E059",
+    "query_id": "H03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?",
+    "summary": "The study reports that polyhistidine-PEG conjugates exhibit low cytotoxicity to macrophages in vitro, indicating potential safety for gene delivery applications. However, no direct data on hemolysis or broader biocompatibility is provided.",
+    "relevance_score": 8,
+    "reported_outcomes": [
+      "cytotoxicity",
+      "DNA complexation capacity",
+      "hydrodynamic diameter",
+      "zeta potential",
+      "transfection efficiency",
+      "DNase I protection"
+    ],
+    "reported_numeric_results": [
+      "hydrodynamic diameters <150 nm"
+    ],
+    "reported_qualitative_findings": [
+      "low cytotoxicity to macrophages cultured in vitro",
+      "transfection efficiency approximately equivalent to DNA:polylysine complexes",
+      "PEG content influenced hydrodynamic diameter",
+      "comb-shaped conjugates showed direct relationship between PEG content and complex size",
+      "negative zeta potentials"
+    ],
+    "material_or_molecular_context": "polyhistidine-PEG conjugates (comb-shaped and linear A-B block copolymers) complexed with plasmid DNA",
+    "biological_context": "macrophages cultured in vitro",
+    "limitations": [
+      "no hemolysis data reported",
+      "only one cell type (macrophages) tested in vitro",
+      "no in vivo safety or biocompatibility data",
+      "does not assess histidine-based materials without PEG"
+    ],
+    "title": "Polyhistidine-PEG:DNA nanocomposites for gene delivery.",
+    "pmid": "12922153",
+    "doi": "10.1016/s0142-9612(03)00341-7",
+    "medcpt_rank": 5
+  }
+]
+
+CANDIDATE B = Lys (K)
+[
+  {
+    "evidence_id": "E001",
+    "query_id": "K01",
+    "question": "What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+    "summary": "This study developed a ternary lipopolyplex (LPP) platform using hyperbranched poly-L-lysine (HBPL) for mRNA delivery, demonstrating high transfection efficiency, enhanced dendritic cell maturation, efficient in vivo delivery to lungs and spleen, and sustained protein expression after one month of storage, highlighting the potential of HBPL-based LPPs for mRNA therapeutics and vaccines.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "mRNA encapsulation efficiency",
+      "intracellular release efficiency",
+      "colloidal stability",
+      "transfection efficiency across multiple cell lines",
+      "dendritic cell maturation",
+      "biocompatibility",
+      "in vivo mRNA delivery to lungs and spleen",
+      "protein expression persistence after storage"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "HBPL enabled a unique balance between high mRNA encapsulation efficiency, efficient intracellular release, and exceptional colloidal stability",
+      "Platform had higher transfection efficiency compared to linear ε-PLL-based counterpart",
+      "Enhanced dendritic cell maturation",
+      "Superior biocompatibility over a commercial transfection reagent",
+      "Efficient mRNA delivery to lungs and spleen with sustained protein expression after 1 month of storage"
+    ],
+    "material_or_molecular_context": "Hyperbranched poly-L-lysine (HBPL) as part of a ternary lipopolyplex (LPP) with lipid and mRNA",
+    "biological_context": "Multiple cell lines (in vitro), dendritic cells (in vitro and ex vivo), and mouse model (in vivo: lungs and spleen)",
+    "limitations": [
+      "Only tested for mRNA delivery, not directly for other biomacromolecules (e.g., proteins, antigens, or vaccines)",
+      "No explicit comparison to other polylysine variants beyond linear ε-PLL",
+      "Abstract does not report quantitative numeric results (e.g., transfection percentages or expression levels)",
+      "In vivo data limited to lung and spleen expression; no immune response or vaccine efficacy data"
+    ],
+    "title": "Hyperbranched Polylysine-Based Lipopolyplexes Enable Efficient mRNA Delivery With Long-Term Storage Stability.",
+    "pmid": "42590857",
+    "doi": "10.1002/adhm.71571",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E019",
+    "query_id": "K04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?",
+    "summary": "The polyleucine–polylysine conjugate L15K6 enhances antigen uptake by dendritic cells, promotes DC maturation (CD40, CD80/86, MHC-II), upregulates TLR4, activates NF-κB, and induces robust antibody responses when co-delivered with antigens, including outperforming alum. This directly addresses lysine-based polypeptide adjuvant activity and dendritic-cell activation.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "antigen uptake by dendritic cells",
+      "antigen-presenting cell maturation",
+      "Toll-like receptor 4 upregulation",
+      "NF-κB pathway activation",
+      "antigen-specific IgG response",
+      "antibacterial activity against Group A Streptococcus"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "markedly enhances antigen uptake by dendritic cells",
+      "promotes antigen-presenting cell maturation (CD40, CD80/86, and MHC-II)",
+      "upregulates Toll-like receptor expression, particularly TLR4",
+      "robust NF-κB pathway activation",
+      "induces robust antigen-specific IgG response with highly potent antibacterial activity",
+      "single immunization outperforms alum adjuvant in eliciting high levels of BSA-specific IgG"
+    ],
+    "material_or_molecular_context": "L15K6: a conjugate of 15-mer polyleucine and hexa-lysine (K6) that self-assembles into nanoparticles",
+    "biological_context": "dendritic cells in vitro; immune responses in vivo (implied by immunization with antigens such as Group A Streptococcus peptides, ovalbumin, and BSA; antibacterial activity tested in vitro)",
+    "limitations": [
+      "The polylysine component is only a hexa-lysine unit conjugated to a dominant polyleucine chain; results may not generalize to other lysine-based polymers or pure polylysine.",
+      "Cross-presentation (MHC-I pathway) is not explicitly addressed; only MHC-II and DC maturation markers reported.",
+      "In vivo model details (species, route, dose) are not specified in the abstract.",
+      "No direct comparison with other lysine-based adjuvants or pure polylysine controls."
+    ],
+    "title": "Development of a Novel Polyleucine-Based Immunopotentiator for Subunit Vaccines Against Group A Streptococcus.",
+    "pmid": "41700543",
+    "doi": "10.1002/smll.202511459",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E014",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "Polylysine-based copolymer PPDD showed no detectable hemolysis or organ toxicity in biosafety assays, was biocompatible, and improved survival and reduced inflammation in sepsis models.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "survival rate",
+      "cytokine levels (TNF-α, IL-6, IL-10, CRP)",
+      "hemolysis",
+      "organ toxicity"
+    ],
+    "reported_numeric_results": [
+      "Day-14 survival 80% in PPDD-treated group vs 20% in septic controls",
+      "TNF-α reduced by 38.1%",
+      "IL-6 reduced by 46.0%",
+      "IL-10 reduced by 76.7%",
+      "CRP reduced by 32.9%"
+    ],
+    "reported_qualitative_findings": [
+      "No detectable hemolysis or organ toxicity",
+      "Biocompatible",
+      "PPDD disassembles and reconfigures from spherical to ellipsoidal in acidic environment"
+    ],
+    "material_or_molecular_context": "Polylysine (PLL)-based copolymer self-assembly (PPDD) composed of PEG-PLL conjugated with DCFH-DA",
+    "biological_context": "In vitro and in vivo sepsis mouse model (implied)",
+    "limitations": [
+      "Specific cytotoxicity data on normal cells not reported",
+      "Safety assessment limited to hemolysis and organ toxicity; other cytotoxicity endpoints not mentioned",
+      "Material is a complex copolymer, not pure polylysine"
+    ],
+    "title": "Polylysine-based copolymer self-assemblies featuring acidity-activated structural transformation perceives and relieves sepsis.",
+    "pmid": "41159133",
+    "doi": "10.1093/rb/rbaf100",
+    "medcpt_rank": 2
+  },
+  {
+    "evidence_id": "E015",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "Poly-L-lysine/hyodeoxycholic acid nanoparticles (PLL-HDCA NPs) were evaluated for cytotoxicity, hemolysis, and safety. Cytotoxicity and hemolysis tests showed minimal impact on human cells and significantly reduced hemolysis compared to PLL alone. Skin irritation tests confirmed safety for external application, directly addressing the query's focus on biocompatibility and safety of lysine-based materials.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "cytotoxicity tests",
+      "hemolysis evaluations",
+      "skin irritation test"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "minimal impact on human cells",
+      "significantly reduced hemolysis rates compared to PLL alone",
+      "confirmed safety for external application"
+    ],
+    "material_or_molecular_context": "Poly-L-lysine/hyodeoxycholic acid nanoparticles (PLL-HDCA NPs)",
+    "biological_context": "Human cells (in vitro cytotoxicity and hemolysis), mouse models (in vivo hemorrhage, wound healing, skin irritation)",
+    "limitations": [
+      "Cell types used in cytotoxicity tests not specified",
+      "Exact hemolysis reduction percentage not provided",
+      "Only topical application safety assessed; systemic safety not addressed"
+    ],
+    "title": "Computer-Aided Construction and Evaluation of Poly-L-Lysine/Hyodeoxycholic Acid Nanoparticles for Hemorrhage and Infection Therapy.",
+    "pmid": "39861658",
+    "doi": "10.3390/pharmaceutics17010007",
+    "medcpt_rank": 3
+  },
+  {
+    "evidence_id": "E010",
+    "query_id": "K02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study compared poly(L-lysine) (PK) and poly(L-arginine) (PR) polyplexes to identify the rate-limiting step in gene transfection. By using microinjection to bypass natural uptake, they quantified intranuclear transcription efficiency and endosomal escape. They found that endosomal escape is the rate-limiting step, independent of the buffering effect, and that transcription efficiency is similar for PK and PR but decreases with molecular weight.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "intranuclear transcription efficiency",
+      "nuclear transport of polyplex",
+      "endosomal escape",
+      "cellular uptake"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "intranuclear transcription efficiency is the same in PR and PK and decreases rapidly with increasing molecular weight",
+      "transcription efficiency strongly suppressed at high molecular weight",
+      "rate-limiting step is buffering effect-independent endosomal escape",
+      "cellular uptake and in vitro transfection with or without chloroquine were considered"
+    ],
+    "material_or_molecular_context": "poly(L-lysine) (PK) and poly(L-arginine) (PR) with different molecular weights",
+    "biological_context": "living cells (microinjection technique applied to cultured cells, cell type not specified)",
+    "limitations": [
+      "microinjection technique bypasses natural endocytic uptake and internalization pathways",
+      "focus is on polyplexed pDNA, not free polylysine or lysine-based materials",
+      "cell type not specified, limiting generalizability",
+      "direct comparison with polyarginine may obscure behavior specific to polylysine alone"
+    ],
+    "title": "Quantitative comparison between poly(L-arginine) and poly(L-lysine) at each step of polyplex-based gene transfection using a microinjection technique.",
+    "pmid": "27877476",
+    "doi": "10.1088/1468-6996/13/1/015009",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E016",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "This hydrogel study directly assesses ε-polylysine biocompatibility via hemolysis and cytotoxicity assays, reporting low hemolysis (<5%) and high cell viability (>80%), with in vivo wound healing acceleration.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "biocompatibility assessment via hemolysis and cytotoxicity assays",
+      "in vivo wound healing efficacy in full-thickness skin defect model"
+    ],
+    "reported_numeric_results": [
+      "maximum swelling ratio 65.6%",
+      "low hemolysis rates <5%",
+      "high cell viability >80%",
+      "86% wound healing rate within 7 days vs 67% control",
+      "complete biodegradation within 21 days"
+    ],
+    "reported_qualitative_findings": [
+      "hydrogel is biocompatible",
+      "promotes wound healing by inhibiting inflammatory response",
+      "reduces IL-6 levels",
+      "enhances angiogenesis",
+      "accelerates collagen deposition",
+      "does not induce significant inflammatory response in vivo"
+    ],
+    "material_or_molecular_context": "PGA-PL composite hydrogel: γ-polyglutamic acid (γ-PGA) crosslinked with ε-polylysine (ε-PL) via Schiff base reaction",
+    "biological_context": "in vitro hemolysis assay (blood), in vitro cytotoxicity assay (cell culture), in vivo full-thickness skin defect model in Sprague Dawley rats",
+    "limitations": [
+      "only ε-polylysine form studied, not other lysine-based materials or polylysine variants",
+      "no direct comparison to polylysine alone (only in hydrogel composite)",
+      "no long-term systemic safety or biodistribution data",
+      "cytotoxicity only reported as >80% viability, no IC50 or detailed dose-response"
+    ],
+    "title": "A Poly-γ-Glutamic Acid/ε-Polylysine Hydrogel: Synthesis, Characterization, and Its Role in Accelerated Wound Healing.",
+    "pmid": "40277663",
+    "doi": "10.3390/gels11040226",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E022",
+    "query_id": "K04",
+    "question": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study demonstrates that chiral polypeptide nanoparticles (P_D-K and P_L-K) composed of poly(L-phenylalanine)-block-poly(lysine) act as nanoadjuvants, with the D-lysine variant P_D-K more potently inducing dendritic cell maturation, antigen cross-presentation, and adaptive immune responses compared to the L-lysine counterpart. The nanovaccine P_D-K-OVA showed high efficacy in preventing and treating B16-OVA melanoma, achieving tumor inhibition rates of up to 94.9% alone and 97.0% with anti-PD-1 therapy.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell maturation",
+      "antigen cross-presentation",
+      "adaptive immune response",
+      "tumor prevention and treatment in B16-OVA melanoma model"
+    ],
+    "reported_numeric_results": [
+      "loading efficiencies of almost 100%",
+      "nanoparticle diameter of about 30 nm",
+      "tumor inhibition rate of 94.9%",
+      "tumor inhibition rate of 97.0% when combined with anti-PD-1 antibody"
+    ],
+    "reported_qualitative_findings": [
+      "Compared to P_L-K-OVA, P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response.",
+      "P_D-K-OVA effectively prevented and treated the OVA-expressed B16-OVA melanoma model."
+    ],
+    "material_or_molecular_context": "Chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K), self-assembled into nanoparticles mixed with OVA antigen.",
+    "biological_context": "In vitro dendritic cell maturation; in vivo B16-OVA melanoma model in mice; combined with anti-PD-1 antibody.",
+    "limitations": [
+      "Only tested with OVA as model antigen, not with other antigens or in other tumor models.",
+      "Direct comparisons with other lysine-based adjuvants or formulations not provided.",
+      "Mechanistic details on cross-presentation pathways are not fully elaborated in the abstract."
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 4
+  },
+  {
+    "evidence_id": "E011",
+    "query_id": "K02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?",
+    "summary": "Poly-L-lysine dendrimers (G3) are internalized via multiple endocytosis pathways (cholesterol-, dynamin-mediated, macropinocytosis) and trafficked to endosomes and lysosomes in Caco-2 cells; the site of fluorophore conjugation affects uptake and subcellular localization.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "elucidate endocytosis mechanisms and subcellular localization",
+      "impact of fluorophore conjugation on cytotoxicity, uptake, and transepithelial transport"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "Uptake highly dependent on cholesterol- and dynamin-mediated endocytosis and macropinocytosis",
+      "Dendrimers were trafficked to endosomes and lysosomes",
+      "Subcellular localization impacted by fluorophore conjugation site",
+      "Internalization and trafficking can be impacted by conjugation"
+    ],
+    "material_or_molecular_context": "Poly-L-lysine (PLL) G3 dendrimers conjugated with Oregon green 514 at either the periphery or the core",
+    "biological_context": "Caco-2 cells (human intestinal epithelial cell line)",
+    "limitations": [
+      "In vitro study in a single cell line (Caco-2)",
+      "Only one dendrimer generation (G3) tested",
+      "Fluorophore conjugation may alter native dendrimer behavior",
+      "No quantitative uptake or trafficking rates reported"
+    ],
+    "title": "Internalization and Subcellular Trafficking of Poly-l-lysine Dendrimers Are Impacted by the Site of Fluorophore Conjugation.",
+    "pmid": "25950742",
+    "doi": "10.1021/mp500765e",
+    "medcpt_rank": 5
+  },
+  {
+    "evidence_id": "E018",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study on l-lysine-derived zwitterionic brushes (p(LysAA)) reports excellent biocompatibility: relative cell growth rates over 90%, hemolysis rate below 1%, intradermal reaction scores less than 1.0, and antithrombotic efficacy in vitro and in vivo, directly addressing safety endpoints for lysine-based polypeptide materials.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "relative cell growth rates",
+      "hemolysis rate",
+      "intradermal reaction scores",
+      "platelet and red blood cell adhesion",
+      "thrombus formation in rabbit model"
+    ],
+    "reported_numeric_results": [
+      "relative cell growth rates of over 90%",
+      "hemolysis rate of below 1%",
+      "intradermal reaction scores of less than 1.0"
+    ],
+    "reported_qualitative_findings": [
+      "excellent biocompatibility",
+      "effectively suppressed fouling by proteins, bacteria, platelets, and red blood cells",
+      "antithrombotic efficacy both in vitro and in vivo",
+      "no obvious clotting after 1 h circulation in rabbit arterio-jugular vein shunt model"
+    ],
+    "material_or_molecular_context": "poly(ε-acryloyl l-lysine) (p(LysAA)) zwitterionic brushes; l‑lysine-derived, not polylysine itself but lysine-based",
+    "biological_context": "in vitro cell culture (likely L929 or similar for cell growth), rabbit arterio-jugular vein shunt model for thrombosis, intradermal reaction in rabbits",
+    "limitations": [
+      "Material is a specific zwitterionic brush (p(LysAA)) rather than free polylysine, limiting direct extrapolation to other lysine-based polypeptides",
+      "Only one lysine-based form tested; no comparison to other polypeptide materials",
+      "Safety data are from catheter-specific application; general toxicity (e.g., systemic) not reported",
+      "No long-term cytotoxicity or hemocompatibility data provided"
+    ],
+    "title": "A Facile, Scalable, and Universal Strategy to Construct Densely Packed l-Lysine-Derived Zwitterionic Brushes for Blood-Contacting Catheters.",
+    "pmid": "41273302",
+    "doi": "10.1021/acsami.5c21251",
+    "medcpt_rank": 6
+  },
+  {
+    "evidence_id": "E007",
+    "query_id": "K02",
+    "question": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?",
+    "summary": "This review confirms that polylysine is efficiently internalized via electrostatic interaction with cells, enabling intracellular delivery, and that modifying contrast agents with polylysine improves cellular uptake. It provides contextual support for intracellular uptake of lysine-based materials.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "intracellular delivery of therapeutic agents",
+      "improved cellular uptake of contrast agents"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "polylysine is efficiently internalized via electrostatic interaction with cells",
+      "conjugation with functional groups imparts stimuli-responsive traits for enhanced delivery",
+      "modifying contrast agents with polylysine increases cellular uptake and stability"
+    ],
+    "material_or_molecular_context": "polylysine and lysine-based polymers, residues, and peptides",
+    "biological_context": "cells (general; no specific cell type or in vivo model mentioned in abstract)",
+    "limitations": [
+      "Review article: does not provide primary experimental data on endosomal behavior or detailed uptake mechanisms",
+      "Abstract does not specify endosomal escape or trafficking; focus is on overall internalization and delivery"
+    ],
+    "title": "Advanced Delivery Systems Based on Lysine or Lysine Polymers.",
+    "pmid": "34519501",
+    "doi": "10.1021/acs.molpharmaceut.1c00474",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E013",
+    "query_id": "K03",
+    "question": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+    "summary": "This study evaluates a star-arranged poly-l-lysine antimicrobial polymer (16-PLL₁₀) for antimicrobial activity and toxicity. At bactericidal concentrations, 16-PLL₁₀ was toxic to human keratinocytes and caused hemolysis. Chemical modifications (TFA, PEGylation) only moderately reduced cytotoxicity and hemolysis. The material is relevant to safety concerns but shows limited selectivity for further development.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Minimum bactericidal concentration determination",
+      "Human keratinocyte viability assay",
+      "Human erythrocyte haemolysis assay"
+    ],
+    "reported_numeric_results": [
+      "Minimum bactericidal concentration of 16-PLL₁₀ ranged from 1.25 µM to ≥25 µM",
+      "At 2.5 µM, 16-PLL₁₀ was broadly bactericidal against ESKAPE strains/wound isolates",
+      "Log-reduction in c.f.u. per ml after 1 h ranged from 0.3 (E. cloacae) to 5.6 (K. pneumoniae)"
+    ],
+    "reported_qualitative_findings": [
+      "At bactericidal concentrations, 16-PLL₁₀ was toxic to human keratinocyte and erythrocytes",
+      "Conjugates (TFA-16-PLL₁₀ and PEGylated 16-PLL₁₀) only moderately reduced cytotoxicity and haemolysis",
+      "Due to poor selectivity indices, further development of 16-PLL₁₀ is unlikely warranted"
+    ],
+    "material_or_molecular_context": "Star-arranged poly-L-lysine-based 16-armed antimicrobial peptide polymer (16-PLL₁₀) and its TFA and PEGylated conjugates",
+    "biological_context": "Human keratinocytes, human erythrocytes, clinical wound isolates of ESKAPE pathogens",
+    "limitations": [
+      "In vitro only; no in vivo safety data",
+      "Specific to star-arranged PLL, not general polylysine",
+      "Modifications did not fully resolve toxicity",
+      "Hemolysis and cytotoxicity tested only at bactericidal concentrations"
+    ],
+    "title": "Antimicrobial spectrum against wound pathogens and cytotoxicity of star-arranged poly-l-lysine-based antimicrobial peptide polymers.",
+    "pmid": "39268705",
+    "doi": "10.1099/jmm.0.001886",
+    "medcpt_rank": 1
+  },
+  {
+    "evidence_id": "E002",
+    "query_id": "K01",
+    "question": "What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+    "summary": "L15K6, a polyleucine-polylysine nano adjuvant, enhances antigen uptake, dendritic cell maturation, and TLR4 signaling, inducing strong antibody responses against GAS and model antigens, outperforming alum.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "antigen uptake by dendritic cells",
+      "antigen-presenting cell maturation (CD40, CD80/86, MHC-II)",
+      "Toll-like receptor 4 expression upregulation",
+      "NF-κB pathway activation",
+      "antigen-specific IgG response with antibacterial activity",
+      "immune responses against ovalbumin and bovine serum albumin"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "markedly enhances antigen uptake by dendritic cells",
+      "promotes antigen-presenting cell maturation",
+      "upregulates Toll-like receptor expression, particularly TLR4",
+      "robust NF-κB pathway activation",
+      "induces robust antigen-specific IgG with potent antibacterial activity",
+      "enhances immune responses against model antigens",
+      "a single immunization outperforms alum adjuvant in eliciting BSA-specific IgG"
+    ],
+    "material_or_molecular_context": "L15K6: 15-mer polyleucine coupled with a polylysine unit (K6)",
+    "biological_context": "dendritic cells; Group A Streptococcus (clinical strains); ovalbumin and bovine serum albumin as model antigens; in vitro antibacterial activity; in vivo single immunization",
+    "limitations": [
+      "The study focuses on protein/peptide antigens, not mRNA or other biomacromolecules",
+      "Specific to L15K6 construct, not general polylysine materials",
+      "No direct comparison with other polylysine-based delivery systems",
+      "Abstract does not specify delivery mechanism (e.g., encapsulation, conjugation) beyond co-delivery"
+    ],
+    "title": "Development of a Novel Polyleucine-Based Immunopotentiator for Subunit Vaccines Against Group A Streptococcus.",
+    "pmid": "41700543",
+    "doi": "10.1002/smll.202511459",
+    "medcpt_rank": 2
+  }
+]
+
+Choose A, B, or INSUFFICIENT. Do not assign a 0-100 immune score. Cite evidence IDs in the output. Return JSON in this schema:
+{
+  "preference": "A|B|INSUFFICIENT",
+  "basis": [
+    "short evidence-grounded reasons"
+  ],
+  "supporting_evidence_ids": [
+    "E001"
+  ],
+  "counter_evidence_ids": [
+    "E002"
+  ],
+  "uncertainties": [
+    "..."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "summary": "This study presents a universal strategy using polyhistidine tags for affinity-based assembly of peptides on plasmonic nanoparticles, enabling intracellular delivery with light-activated endosomal escape. The polyhistidine tag provides robust attachment, and laser treatment triggers endosome disruption for cytosolic activity, demonstrating spatiotemporal control.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "intracellular delivery of peptide cargo",
+    "endosomal escape upon laser irradiation",
+    "cytosolic activity (mitochondrial disruption, apoptosis)"
+  ],
+  "reported_numeric_results": [
+    "10^5-fold improved response to peptide activity over the free peptide"
+  ],
+  "reported_qualitative_findings": [
+    "unprecedented spatiotemporal control over peptide release and endosome barrier breach",
+    "modularity of cargo and internalization peptide attachment via polyhistidine-NTA affinity and biotin-streptavidin"
+  ],
+  "material_or_molecular_context": "plasmonic gold nanoparticles functionalized with thiol-labeled affinity scaffolds, polyhistidine-tagged peptides, and cell-penetrating peptides",
+  "biological_context": "intracellular delivery; endosomal barrier; mitochondrial membrane disruption and apoptotic cell death (likely in cancer cells)",
+  "limitations_for_current_question": [
+    "polyhistidine is used as a tag for surface attachment, not as the primary cell-penetrating or endosomal escape agent",
+    "endosomal escape is triggered by near-infrared laser, not by histidine-based material properties alone",
+    "study focuses on light-controlled release, not passive uptake or intrinsic endosomal behavior of polyhistidine"
+  ],
+  "supporting_text": "breaches the endosome barrier for cytosolic activity"
+}

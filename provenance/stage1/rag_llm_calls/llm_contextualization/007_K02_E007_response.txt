@@ -1,0 +1,21 @@
+{
+  "summary": "This review confirms that polylysine is efficiently internalized via electrostatic interaction with cells, enabling intracellular delivery, and that modifying contrast agents with polylysine improves cellular uptake. It provides contextual support for intracellular uptake of lysine-based materials.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "intracellular delivery of therapeutic agents",
+    "improved cellular uptake of contrast agents"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "polylysine is efficiently internalized via electrostatic interaction with cells",
+    "conjugation with functional groups imparts stimuli-responsive traits for enhanced delivery",
+    "modifying contrast agents with polylysine increases cellular uptake and stability"
+  ],
+  "material_or_molecular_context": "polylysine and lysine-based polymers, residues, and peptides",
+  "biological_context": "cells (general; no specific cell type or in vivo model mentioned in abstract)",
+  "limitations_for_current_question": [
+    "Review article: does not provide primary experimental data on endosomal behavior or detailed uptake mechanisms",
+    "Abstract does not specify endosomal escape or trafficking; focus is on overall internalization and delivery"
+  ],
+  "supporting_text": "polylysine polymer electrostatically interacts with cells and is efficiently internalized"
+}

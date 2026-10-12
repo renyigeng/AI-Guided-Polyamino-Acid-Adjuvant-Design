@@ -1,0 +1,25 @@
+{
+  "summary": "D-lysine-containing polypeptide nanoparticles (P_D-K) more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to L-lysine analogue. P_D-K-OVA nanovaccine achieved 94.9% tumor inhibition in B16-OVA melanoma model (97.0% with anti-PD-1).",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "dendritic cell maturation",
+    "antigen cross-presentation",
+    "adaptive immune response",
+    "cancer prevention and therapy in B16-OVA melanoma model"
+  ],
+  "reported_numeric_results": [
+    "tumor inhibition rate of 94.9%",
+    "tumor inhibition rate of 97.0% when combined with anti-PD-1 antibody"
+  ],
+  "reported_qualitative_findings": [
+    "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to P_L-K-OVA"
+  ],
+  "material_or_molecular_context": "chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K) and poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K)",
+  "biological_context": "dendritic cells (in vitro?), adaptive immune response, B16-OVA melanoma model in mice",
+  "limitations_for_current_question": [
+    "Only tested with OVA as model antigen; generalizability to other antigens not shown",
+    "Only one cancer model (B16-OVA); not tested for infectious disease vaccine responses",
+    "No direct comparison to other established adjuvants (e.g., alum, MF59)"
+  ],
+  "supporting_text": "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation"
+}

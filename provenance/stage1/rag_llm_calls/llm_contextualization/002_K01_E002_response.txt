@@ -1,0 +1,31 @@
+{
+  "summary": "L15K6, a polyleucine-polylysine nano adjuvant, enhances antigen uptake, dendritic cell maturation, and TLR4 signaling, inducing strong antibody responses against GAS and model antigens, outperforming alum.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "antigen uptake by dendritic cells",
+    "antigen-presenting cell maturation (CD40, CD80/86, MHC-II)",
+    "Toll-like receptor 4 expression upregulation",
+    "NF-κB pathway activation",
+    "antigen-specific IgG response with antibacterial activity",
+    "immune responses against ovalbumin and bovine serum albumin"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "markedly enhances antigen uptake by dendritic cells",
+    "promotes antigen-presenting cell maturation",
+    "upregulates Toll-like receptor expression, particularly TLR4",
+    "robust NF-κB pathway activation",
+    "induces robust antigen-specific IgG with potent antibacterial activity",
+    "enhances immune responses against model antigens",
+    "a single immunization outperforms alum adjuvant in eliciting BSA-specific IgG"
+  ],
+  "material_or_molecular_context": "L15K6: 15-mer polyleucine coupled with a polylysine unit (K6)",
+  "biological_context": "dendritic cells; Group A Streptococcus (clinical strains); ovalbumin and bovine serum albumin as model antigens; in vitro antibacterial activity; in vivo single immunization",
+  "limitations_for_current_question": [
+    "The study focuses on protein/peptide antigens, not mRNA or other biomacromolecules",
+    "Specific to L15K6 construct, not general polylysine materials",
+    "No direct comparison with other polylysine-based delivery systems",
+    "Abstract does not specify delivery mechanism (e.g., encapsulation, conjugation) beyond co-delivery"
+  ],
+  "supporting_text": "L15K6 markedly enhances antigen uptake by dendritic cells"
+}

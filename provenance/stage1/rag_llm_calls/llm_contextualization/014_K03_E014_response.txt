@@ -1,0 +1,30 @@
+{
+  "summary": "Polylysine-based copolymer PPDD showed no detectable hemolysis or organ toxicity in biosafety assays, was biocompatible, and improved survival and reduced inflammation in sepsis models.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "survival rate",
+    "cytokine levels (TNF-α, IL-6, IL-10, CRP)",
+    "hemolysis",
+    "organ toxicity"
+  ],
+  "reported_numeric_results": [
+    "Day-14 survival 80% in PPDD-treated group vs 20% in septic controls",
+    "TNF-α reduced by 38.1%",
+    "IL-6 reduced by 46.0%",
+    "IL-10 reduced by 76.7%",
+    "CRP reduced by 32.9%"
+  ],
+  "reported_qualitative_findings": [
+    "No detectable hemolysis or organ toxicity",
+    "Biocompatible",
+    "PPDD disassembles and reconfigures from spherical to ellipsoidal in acidic environment"
+  ],
+  "material_or_molecular_context": "Polylysine (PLL)-based copolymer self-assembly (PPDD) composed of PEG-PLL conjugated with DCFH-DA",
+  "biological_context": "In vitro and in vivo sepsis mouse model (implied)",
+  "limitations_for_current_question": [
+    "Specific cytotoxicity data on normal cells not reported",
+    "Safety assessment limited to hemolysis and organ toxicity; other cytotoxicity endpoints not mentioned",
+    "Material is a complex copolymer, not pure polylysine"
+  ],
+  "supporting_text": "comprehensive biosafety assay revealed no detectable hemolysis or organ toxicity"
+}

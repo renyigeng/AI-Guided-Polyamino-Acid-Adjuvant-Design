@@ -1,0 +1,27 @@
+{
+  "summary": "This study evaluated safety of poly-arginine-18 (R18 and R18D) in ex vivo models of mast cell degranulation and hemolysis. Neither R18 nor R18D induced significant mast cell degranulation up to 16 µM. R18 caused modest hemolysis at 16 µM only without plasma; R18D caused none. Results suggest low risk of anaphylactoid reactions or hemolysis for R18D.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "mast cell degranulation measured by β-hexosaminidase release",
+    "red blood cell hemolysis measured by hemoglobin absorbance"
+  ],
+  "reported_numeric_results": [
+    "maximum peptide concentration of 16 μM",
+    "only R18 induced a modest, but significant degree of hemolysis at the 16 μM concentration"
+  ],
+  "reported_qualitative_findings": [
+    "R18 and R18D did not induce significant mast cell degranulation in both untreated and IgE-sensitized HCMCs",
+    "R18D did not induce hemolysis",
+    "TAT-NR2B9c and protamine did not induce significant mast cell degranulation",
+    "R18 induced hemolysis only in the absence of plasma"
+  ],
+  "material_or_molecular_context": "poly-arginine-18 (R18: 18-mer of L-arginine) and its D-enantiomer R18D",
+  "biological_context": "primary human cultured mast cells (HCMCs) and red blood cells (RBCs) ex vivo, with and without 2% plasma and IgE sensitization",
+  "limitations_for_current_question": [
+    "Ex vivo models only, not in vivo",
+    "Tested only up to 16 µM; higher concentrations may differ",
+    "Hemolysis observed only in one condition (without plasma) for R18, not R18D",
+    "Does not assess other cytotoxicity or biocompatibility endpoints beyond degranulation and hemolysis"
+  ],
+  "supporting_text": "R18 and R18D did not induce significant mast cell degranulation... only R18 induced a modest... hemolysis at 16 μM in absence of plasma"
+}

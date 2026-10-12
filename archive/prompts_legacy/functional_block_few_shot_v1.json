@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "important_note": "These are expert-authored synthetic demonstrations used only to teach evidence-handling behavior. They are not scientific evidence and contain no K/R/H candidate labels.",
+  "demonstrations": [
+    {
+      "id": "DEMO01",
+      "task": "Select a functional material candidate from A, B, and C for intracellular delivery.",
+      "evidence": [
+        {
+          "candidate": "A",
+          "evidence": "Direct target-cell study shows delivery of the intended biomacromolecule, preserved function, and high cell viability."
+        },
+        {
+          "candidate": "B",
+          "evidence": "Mechanistic surrogate study shows strong uptake, but cargo and biological system differ from the target."
+        },
+        {
+          "candidate": "C",
+          "evidence": "Strong uptake is reported, but the same study reports substantial dose-dependent toxicity."
+        }
+      ],
+      "ideal_output": {
+        "primary_candidate": "A",
+        "confidence": "moderate",
+        "alternatives": [
+          "B"
+        ],
+        "decision_basis": "A has the most direct target-relevant efficacy plus safety evidence. B is mechanistically promising but less transferable. C is penalized by a documented safety trade-off.",
+        "uncertainties": [
+          "No head-to-head comparison under identical conditions."
+        ],
+        "evidence_handling": "Direct target-relevant evidence outranks surrogate mechanistic evidence; negative safety evidence must be retained."
+      }
+    },
+    {
+      "id": "DEMO02",
+      "task": "Select a material candidate from D, E, and F when evidence is incomplete.",
+      "evidence": [
+        {
+          "candidate": "D",
+          "evidence": "One small direct study reports efficacy but does not report safety."
+        },
+        {
+          "candidate": "E",
+          "evidence": "Several mechanistic studies support the desired mechanism, but none test the target cargo."
+        },
+        {
+          "candidate": "F",
+          "evidence": "One study reports modest efficacy and another reports conflicting behavior."
+        }
+      ],
+      "ideal_output": {
+        "primary_candidate": null,
+        "confidence": "low",
+        "alternatives": [
+          "D",
+          "E"
+        ],
+        "decision_basis": "Evidence is insufficient to justify a primary choice without over-extrapolation.",
+        "uncertainties": [
+          "Safety for D is unknown.",
+          "Target-cargo transferability for E is unknown.",
+          "Evidence for F is conflicting."
+        ],
+        "evidence_handling": "Do not force a winner when directness, safety, or consistency is inadequate."
+      }
+    }
+  ]
+}

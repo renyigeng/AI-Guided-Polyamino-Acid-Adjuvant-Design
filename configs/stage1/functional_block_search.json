@@ -1,0 +1,215 @@
+{
+  "version": "1.4.1",
+  "revision": {
+    "previous_version": "1.4",
+    "reason": "Patch 04.1: make retrieval targets explicit, repair brittle LLM query-expansion schema handling, and add a separate D-Lys-enriched chirality discovery lane while keeping final chirality comparison anchored to direct L-vs-D evidence."
+  },
+  "database": {
+    "name": "Europe PMC",
+    "api": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "format": "json",
+    "result_type": "core",
+    "synonym_expansion": false,
+    "sort": "relevance",
+    "page_size": 100
+  },
+  "retrieval_policy": {
+    "record_runtime_timestamp": true,
+    "save_raw_api_response": true,
+    "save_exact_query": true,
+    "save_total_hit_count": true,
+    "save_all_retrieved_metadata": true,
+    "no_manual_query_edit_after_results_are_seen": true,
+    "max_results_per_query": 200,
+    "multi_query_candidate_dimensions": true,
+    "query_expansion_plan_required_for_multi_query_mode": true
+  },
+  "background_queries": [
+    {
+      "id": "BG01",
+      "purpose": "Amphiphilic polypeptide or poly(amino acid) systems relevant to antigen, vaccine or protein delivery",
+      "query": "TITLE_ABS:(polypeptide OR \"poly(amino acid)\" OR polyaminoacid) AND TITLE_ABS:(antigen OR vaccine OR protein OR biomacromolecule) AND TITLE_ABS:(delivery OR carrier OR nanoparticle OR adjuvant)"
+    },
+    {
+      "id": "BG02",
+      "purpose": "Cationic/basic polypeptide functions relevant to cellular or biomacromolecule delivery",
+      "query": "TITLE_ABS:(\"cationic polypeptide\" OR \"cationic polymer\" OR \"basic polypeptide\") AND TITLE_ABS:(uptake OR intracellular OR endosomal OR delivery OR antigen)"
+    }
+  ],
+  "candidate_search_template": {
+    "policy": "K, R and H must use identical evidence dimensions and identical non-candidate search terms.",
+    "evidence_dimensions": [
+      "direct_delivery",
+      "intracellular_endosomal",
+      "immune_activation_dc",
+      "safety"
+    ],
+    "multi_query_policy": "Generate dimension-level variants without candidate names, then render the same variants for K/R/H. Preserve the canonical query as v0; do not tune a candidate after seeing retrieval results."
+  },
+  "candidate_queries": [
+    {
+      "id": "K01",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "purpose": "Direct antigen/protein/vaccine delivery evidence",
+      "query": "TITLE_ABS:(polylysine OR \"poly-L-lysine\" OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(antigen OR protein OR vaccine OR biomacromolecule OR mRNA) AND TITLE_ABS:(delivery OR carrier OR uptake OR presentation)"
+    },
+    {
+      "id": "K02",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "purpose": "Intracellular and endosomal evidence",
+      "query": "TITLE_ABS:(polylysine OR \"poly-L-lysine\" OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(intracellular OR uptake OR internalization OR endosomal OR endosome)"
+    },
+    {
+      "id": "K03",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "purpose": "Safety and cytotoxicity evidence",
+      "query": "TITLE_ABS:(polylysine OR \"poly-L-lysine\" OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(cytotoxicity OR toxicity OR biocompatibility OR hemolysis)"
+    },
+    {
+      "id": "K04",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "purpose": "Dendritic-cell and immune-activation evidence",
+      "query": "TITLE_ABS:(polylysine OR \"poly-L-lysine\" OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(dendritic OR \"antigen presentation\" OR \"cross-presentation\" OR immune OR immunotherapy OR adjuvant OR vaccine)"
+    },
+    {
+      "id": "R01",
+      "candidate": "R",
+      "candidate_name": "Arginine",
+      "purpose": "Direct antigen/protein/vaccine delivery evidence",
+      "query": "TITLE_ABS:(polyarginine OR \"poly-L-arginine\" OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(antigen OR protein OR vaccine OR biomacromolecule OR mRNA) AND TITLE_ABS:(delivery OR carrier OR uptake OR presentation)"
+    },
+    {
+      "id": "R02",
+      "candidate": "R",
+      "candidate_name": "Arginine",
+      "purpose": "Intracellular and endosomal evidence",
+      "query": "TITLE_ABS:(polyarginine OR \"poly-L-arginine\" OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(intracellular OR uptake OR internalization OR endosomal OR endosome)"
+    },
+    {
+      "id": "R03",
+      "candidate": "R",
+      "candidate_name": "Arginine",
+      "purpose": "Safety and cytotoxicity evidence",
+      "query": "TITLE_ABS:(polyarginine OR \"poly-L-arginine\" OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(cytotoxicity OR toxicity OR biocompatibility OR hemolysis)"
+    },
+    {
+      "id": "R04",
+      "candidate": "R",
+      "candidate_name": "Arginine",
+      "purpose": "Dendritic-cell and immune-activation evidence",
+      "query": "TITLE_ABS:(polyarginine OR \"poly-L-arginine\" OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(dendritic OR \"antigen presentation\" OR \"cross-presentation\" OR immune OR immunotherapy OR adjuvant OR vaccine)"
+    },
+    {
+      "id": "H01",
+      "candidate": "H",
+      "candidate_name": "Histidine",
+      "purpose": "Direct antigen/protein/vaccine delivery evidence",
+      "query": "TITLE_ABS:(polyhistidine OR \"poly-L-histidine\" OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(antigen OR protein OR vaccine OR biomacromolecule OR mRNA) AND TITLE_ABS:(delivery OR carrier OR uptake OR presentation)"
+    },
+    {
+      "id": "H02",
+      "candidate": "H",
+      "candidate_name": "Histidine",
+      "purpose": "Intracellular and endosomal evidence",
+      "query": "TITLE_ABS:(polyhistidine OR \"poly-L-histidine\" OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(intracellular OR uptake OR internalization OR endosomal OR endosome)"
+    },
+    {
+      "id": "H03",
+      "candidate": "H",
+      "candidate_name": "Histidine",
+      "purpose": "Safety and cytotoxicity evidence",
+      "query": "TITLE_ABS:(polyhistidine OR \"poly-L-histidine\" OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(cytotoxicity OR toxicity OR biocompatibility OR hemolysis)"
+    },
+    {
+      "id": "H04",
+      "candidate": "H",
+      "candidate_name": "Histidine",
+      "purpose": "Dendritic-cell and immune-activation evidence",
+      "query": "TITLE_ABS:(polyhistidine OR \"poly-L-histidine\" OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(dendritic OR \"antigen presentation\" OR \"cross-presentation\" OR immune OR immunotherapy OR adjuvant OR vaccine)"
+    }
+  ],
+  "lys_chirality_queries": [
+    {
+      "id": "LK01",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "chirality": "L",
+      "purpose": "L-Lys polypeptide/nanoparticle immune evidence",
+      "query": "TITLE_ABS:(\"L-lysine\" OR \"poly-L-lysine\" OR \"poly(L-lysine)\") AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant OR vaccine OR adjuvant) AND TITLE_ABS:(dendritic OR immune OR immunotherapy OR \"antigen presentation\" OR \"cross-presentation\")",
+      "evidence_role": "L_context_control"
+    },
+    {
+      "id": "DK01",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "chirality": "D",
+      "purpose": "D-Lys polypeptide/nanoparticle immune evidence",
+      "query": "TITLE_ABS:(\"D-lysine\" OR \"poly-D-lysine\" OR \"poly(D-lysine)\") AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant OR vaccine OR adjuvant) AND TITLE_ABS:(dendritic OR immune OR immunotherapy OR \"antigen presentation\" OR \"cross-presentation\")",
+      "evidence_role": "D_enrichment"
+    },
+    {
+      "id": "KD02",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "chirality": "L_vs_D",
+      "purpose": "Direct L-Lys versus D-Lys comparison in immune polypeptide/nanoadjuvant systems",
+      "query": "TITLE_ABS:(lysine AND (chiral OR chirality OR stereochemistry OR stereochemical)) AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant OR vaccine OR adjuvant) AND TITLE_ABS:(immune OR dendritic OR \"antigen presentation\" OR immunotherapy)",
+      "evidence_role": "direct_comparison"
+    },
+    {
+      "id": "DK02",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "chirality": "D",
+      "evidence_role": "D_enrichment",
+      "purpose": "D-Lys-focused dendritic-cell, antigen-presentation and vaccine/adjuvant evidence",
+      "query": "TITLE_ABS:(\"D-lysine\" OR \"poly-D-lysine\" OR \"poly(D-lysine)\") AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant) AND TITLE_ABS:(dendritic OR maturation OR \"antigen presentation\" OR \"cross-presentation\" OR adjuvant OR vaccine)"
+    },
+    {
+      "id": "DK03",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "chirality": "D",
+      "evidence_role": "D_enrichment",
+      "purpose": "D-Lys-focused adaptive immune and antitumor response evidence in material systems",
+      "query": "TITLE_ABS:(\"D-lysine\" OR \"poly-D-lysine\" OR \"poly(D-lysine)\") AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant) AND TITLE_ABS:(\"adaptive immune\" OR \"T cell\" OR \"T-cell\" OR antibody OR antitumor OR immunotherapy)"
+    },
+    {
+      "id": "KD03",
+      "candidate": "K",
+      "candidate_name": "Lysine",
+      "chirality": "L_vs_D",
+      "evidence_role": "direct_comparison",
+      "purpose": "Explicit L-Lys and D-Lys co-mentioned comparison in immune polypeptide/nanoparticle systems",
+      "query": "TITLE_ABS:((\"D-lysine\" OR \"poly-D-lysine\" OR \"poly(D-lysine)\") AND (\"L-lysine\" OR \"poly-L-lysine\" OR \"poly(L-lysine)\")) AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant OR vaccine OR adjuvant) AND TITLE_ABS:(immune OR dendritic OR \"antigen presentation\" OR \"cross-presentation\" OR immunotherapy)"
+    }
+  ],
+  "synthetic_feasibility_queries": [
+    {
+      "id": "SYN01",
+      "purpose": "NCA polymerization evidence for polypeptide synthesis",
+      "query": "TITLE_ABS:(\"N-carboxyanhydride\" OR \"NCA polymerization\") AND TITLE_ABS:(polypeptide OR \"poly(amino acid)\" OR polymerization)"
+    }
+  ],
+  "screening_policy": {
+    "retrieval_is_not_final_evidence": true,
+    "candidate_ranking_is_forbidden_during_retrieval": true,
+    "manual_screening_must_record_include_or_exclude_and_reason": true,
+    "same_screening_criteria_apply_to_K_R_H": true,
+    "experimental_final_candidate_must_not_be_used_as_a_screening_label": true,
+    "lys_chirality_scope": "Only Lys chirality is resolved after K/R/H identity selection. Arg, His and the 17 assembly-block amino acids are not subjected to D/L search in V1."
+  },
+  "module": "functional_block_literature_retrieval",
+  "chirality_retrieval_policy": {
+    "activate_only_after_identity_selected_as_K": true,
+    "d_lys_enriched_discovery": true,
+    "d_lys_enrichment_purpose": "Increase recall for D-Lys immune-material evidence and mechanisms; enrichment alone must not be interpreted as proof that D-Lys is superior to L-Lys.",
+    "direct_L_vs_D_comparison_is_primary_for_chirality_decision": true,
+    "L_context_control_is_retained": true,
+    "no_other_amino_acid_chirality_search": true
+  }
+}

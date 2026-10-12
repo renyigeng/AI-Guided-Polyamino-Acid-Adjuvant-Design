@@ -1,0 +1,27 @@
+{
+  "summary": "This study demonstrates that star-shaped poly(l-lysine) (star-PLL) polypeptides efficiently deliver pDNA into mesenchymal stem cells (MSCs) through a clathrin-independent mechanism, confirmed by live cell imaging and uptake studies. A star-PLL with 64 arms and five l-lysine subunits per arm showed 1000-fold higher transgene expression than linear poly(l-lysine) and comparable expression to PEI with lower cytotoxicity.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Intracellular delivery of pDNA to MSCs",
+    "Transgene expression (reporter and therapeutic genes BMP-2 and VEGF)",
+    "Cytotoxicity assessment"
+  ],
+  "reported_numeric_results": [
+    "1000-fold increase in transgene expression compared to linear poly(l-lysine)",
+    "Transgene expression comparable to polyethylenimine (PEI) using lower pDNA dose"
+  ],
+  "reported_qualitative_findings": [
+    "Intracellular delivery is rapid and likely proceeds via a clathrin-independent mechanism",
+    "star-PLL vectors self-assemble with pDNA to form stable cationic nanomedicines",
+    "Lower cytotoxicity compared to PEI",
+    "Efficient nonviral gene delivery platform for MSCs"
+  ],
+  "material_or_molecular_context": "Star-shaped poly(l-lysine) polypeptides (star-PLL) with varying number (e.g., 64 arms) and length (5 l-lysine subunits per arm) of poly(l-lysine) arms",
+  "biological_context": "Mesenchymal stem cells (MSCs) in tissue engineering context",
+  "limitations_for_current_question": [
+    "Endosomal escape mechanism not explicitly studied; only clathrin-independent uptake reported",
+    "No direct quantification of intracellular polylysine behavior beyond pDNA delivery",
+    "Focus on transfection efficiency rather than detailed endosomal trafficking"
+  ],
+  "supporting_text": "intracellular delivery of pDNA by star-PLLs to MSCs is a rapid process... likely via a clathrin-independent mechanism."
+}

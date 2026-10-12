@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: LK01
+CANDIDATE HINT: K
+CHIRALITY HINT: L
+PMID: 26014442
+DOI: 10.1002/anie.201501380
+
+TITLE:
+Multivalent Polymer Nanocomplex Targeting Endosomal Receptor of Immune Cells for Enhanced Antitumor and Systemic Memory Response.
+
+ABSTRACT:
+We have designed and synthesized linear polymer-based nanoconjugates and nanocomplexes bearing multivalent immunostimulatory ligands and also demonstrated that the synthetic multivalent nanocomplexes led to an enhanced stimulation of immune cells in vitro and antitumor and systemic immune memory response in vivo. We have developed hyaluronic acid (HA)-based multivalent nanoconjugates and nanocomplexes for enhanced immunostimulation through the combination of multivalent immune adjuvants with CpG ODNs (as a TLR9 ligand) and cationic poly(L-lysine) (PLL; for the enhancement of cellular uptake). The multivalent HA-CpG nanoconjugate efficiently stimulated the antigen-presenting cells and the multivalent PLL/HA-CpG nanocomplex also led to an enhanced cellular uptake as well as continuous stimulation of endosomal TLR9. The mice vaccinated with dendritic cells treated with the multivalent nanocomplex exhibited tumor growth inhibition as well as a strong antitumor memory response.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

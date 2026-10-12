@@ -1,0 +1,31 @@
+{
+  "summary": "PEG-PLL-PLLeu micelles (L-lysine-containing) self-assemble, encapsulate OVA antigen, enhance dendritic cell maturation, antigen uptake/presentation, germinal center formation, and boost antibody production 70-90 fold. Co-delivery with TLR3 agonist PIC synergistically augments CTL response. Directly supports L-lysine polypeptide systems as vaccine adjuvants.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "antibody production",
+    "dendritic cell maturation",
+    "antigen uptake and presentation",
+    "germinal center formation",
+    "cytotoxic T-lymphocyte (CTL) response"
+  ],
+  "reported_numeric_results": [
+    "loading capacity (LC=55%)",
+    "antibody production enhanced by 70-90 fold"
+  ],
+  "reported_qualitative_findings": [
+    "polypeptide micelle formulations robustly enhanced vaccine-induced antibody production",
+    "capability of inducing dendritic cell maturation",
+    "enhancing antigen uptake and presentation",
+    "promoting germinal center formation",
+    "co-delivery with PIC synergistically augmented CTL response"
+  ],
+  "material_or_molecular_context": "PEG-PLL-PLLeu (poly(ethylene glycol)-b-poly(L-lysine)-b-poly(L-leucine)) hybrid polypeptides forming self-assembled cationic micelles",
+  "biological_context": "subunit vaccine model using OVA antigen; dendritic cells, germinal centers, CTL response; mouse model (implied by tumor-specific CTL)",
+  "limitations_for_current_question": [
+    "only tested with OVA as model antigen; generalizability to other antigens unknown",
+    "co-delivery only with PIC (TLR3 agonist); synergy with other adjuvants not assessed",
+    "in vivo efficacy only in tumor model; human translation not demonstrated",
+    "no direct comparison to other L-lysine-based systems or non-cationic carriers"
+  ],
+  "supporting_text": "robustly enhanced vaccine-induced antibody production by 70-90 fold"
+}

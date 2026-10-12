@@ -1,0 +1,347 @@
+You are assisting a materials-science screening workflow for polypeptide vaccine-carrier design.
+
+The first-stage functional-block decision is already complete: D-lysine is fixed as the cationic, hydrophilic, functional delivery block. The current task is ONLY to determine which physicochemical descriptors should be used to compare candidate second-block amino acids X within ONE preregistered mechanism domain.
+
+The domain membership is fixed by the research team. Do not reclassify candidates and do not create new domains.
+
+Your scientific task:
+1. Read the supplied qualified native-X literature evidence and the D-Lys system constraints.
+2. Identify measurable physicochemical descriptors that are genuinely useful for distinguishing candidates within THIS domain and are relevant to complementing the fixed D-Lys block.
+3. Prefer 2-5 NONREDUNDANT primary_rank descriptors when the evidence supports them. If fewer than two are scientifically supportable, return fewer and state the gap. Never invent extra descriptors merely to satisfy a downstream multicriteria calculation.
+4. Each primary_rank descriptor must represent ONE property, not a bundle of several properties.
+5. A broad mechanism phrase such as "hydrogen bonding", "aromatic interaction", "hydrophobic assembly", "packing" or "conformational stability" is not by itself a numerical descriptor. Translate the mechanism into a measurable single-residue/side-chain property if a mature descriptor exists; otherwise mark it validation_only.
+6. Use literature evidence to determine what should be compared. A system-level design constraint supplied by the researchers (for example preserving D-Lys cationic function) may also justify a descriptor; mark basis=system_constraint or both when appropriate.
+7. Evidence quantity is NOT a candidate score. Candidates with fewer papers must not be penalized simply for having fewer evidence items.
+8. Do not recommend, rank, score, select, or name a winner among the candidates.
+9. Do not assign numerical weights or construct a composite score.
+10. Do not assume a specific software tool or database. Tool mapping occurs later and is intentionally hidden from you.
+11. Do not invent custom scores such as "pi-stacking score", "assembly potential", "compatibility score", or similar ad-hoc metrics.
+12. This is a decision-oriented descriptor selection task, not a generic property survey. For every descriptor you label primary_rank, you MUST state an actionable preference direction for THIS fixed D-Lys design goal: higher, lower, closer_to_zero, presence, absence, or target.
+13. Do NOT use primary_rank together with context_dependent. If a descriptor is scientifically relevant but no defensible preference direction can be stated, set role=validation_only and preferred_direction=context_dependent instead.
+14. Use the supplied D-Lys system constraint and the preregistered domain design goal to justify the direction. Do not invent a direction merely to satisfy multicriteria ranking; genuinely ambiguous properties must remain validation_only.
+15. Prefer standard single-residue/side-chain property names. Do not replace a broad property with a more specific experimental surrogate (for example logP or a particular partition coefficient) unless that exact quantity is itself justified by the supplied evidence.
+
+16. Follow the human-preregistered decision dimensions and direction guardrails supplied for this domain. They define the materials-design question, not the winner.
+17. A structural descriptor is not automatically a benefit simply because its numeric value is larger. A primary_rank direction must represent suitability for the fixed D-Lys carrier design.
+18. Do not reward mutually competing physical outcomes as simultaneous same-direction benefits (for example alpha-helix propensity and beta-sheet propensity) unless the domain guidance explicitly preregisters both as desirable, which it currently does not.
+19. Prefer descriptors that genuinely vary among the candidates and have mature single-residue definitions. If a proposed count is effectively constant or a property requires a highly context-specific 3D state, keep it validation_only unless the evidence and domain guidance justify otherwise.
+20. Treat the supplied domain direction guardrails as preregistered scientific constraints. Do not reverse them. In particular, a structural feature explicitly described as NOT an automatic benefit must not be returned as presence/higher primary_rank.
+21. When the domain guidance identifies a functional-group class (for example side-chain amide) as a decision axis, prefer the explicit structural descriptor for that group over generic HBD/HBA counts if those counts are not discriminative.
+22. When a domain guidance explicitly distinguishes a ranking axis from a validation axis, preserve that separation. Do not promote ring count, side-chain size, alpha-helix propensity, beta-sheet propensity, or other validation axes unless the domain-specific guardrail explicitly authorizes the direction.
+
+Return STRICT JSON only, matching the supplied schema. Do not add prose outside the JSON.
+
+
+FIXED SYSTEM CONTEXT:
+{
+  "stage1_completed": true,
+  "fixed_functional_block": "D-lysine",
+  "fixed_role": [
+    "cationic",
+    "hydrophilic",
+    "functional_delivery_block"
+  ],
+  "stage2_target": "screen the remaining 17 amino acids as the second block X in C6-X_m-D-Lys_10"
+}
+
+PREREGISTERED DOMAIN AND HUMAN SCIENTIFIC GUIDANCE:
+{
+  "domain_id": "D2",
+  "domain_name_zh": "非芳香疏水-构象域",
+  "candidate_codes": [
+    "A",
+    "C",
+    "I",
+    "L",
+    "M",
+    "V"
+  ],
+  "candidate_names_zh": [
+    "丙氨酸",
+    "半胱氨酸",
+    "异亮氨酸",
+    "亮氨酸",
+    "甲硫氨酸",
+    "缬氨酸"
+  ],
+  "design_goal_zh": "固定D-赖氨酸后，比较非芳香候选通过疏水内聚、侧链packing、支化、柔性以及主链/二级结构倾向提供互补材料作用的能力。",
+  "focus_questions_zh": [
+    "哪些可量化性质能够区分非芳香候选的疏水驱动强弱？",
+    "哪些可量化性质能够区分侧链几何、packing、支化和柔性差异？",
+    "哪些成熟的单残基构象/二级结构倾向指标能够反映重复聚肽中的构象偏好，而不直接声称预测完整材料结构？"
+  ],
+  "decision_dimensions_zh": [
+    "疏水内聚：成熟单残基疏水性作为主要驱动力，方向预注册为越高越有利。",
+    "侧链支化/packing：β支化是几何约束而非自动收益。现有研究显示I/V的β支化与β结构偏好相关，而L更偏α螺旋；本项目未预注册“β结构越多越好”，因此若β支化进入主排名，方向只能是absence。",
+    "侧链尺度：成熟的side-chain volume可作为非重复packing/extent轴；在本域中作为次级材料内聚/空间占据轴时可采用higher，但必须与疏水性做相关性审计。",
+    "二级结构倾向：α/β倾向用于解释，不把互相竞争的结构同时作为越高越好的主排名收益。"
+  ],
+  "direction_guardrails_zh": [
+    "Beta-branching不得以presence/higher作为primary_rank收益；若模型提出该方向，必须降级。可接受的主排名方向仅为absence。",
+    "α螺旋倾向和β折叠倾向代表竞争的构象偏好，不能在同一个TOPSIS问题里同时作为“越高越好”的独立收益指标；当前默认validation_only/context_dependent。",
+    "Hydrophobicity若进入primary_rank，方向为higher。Side-chain volume若进入primary_rank，方向为higher，并在排序层做冗余审计。"
+  ],
+  "interpretation_flags": [
+    {
+      "candidate": "C",
+      "flag": "neutral_thiol_special_chemistry"
+    }
+  ],
+  "evidence_counts_for_audit_only": {
+    "A": 4,
+    "C": 0,
+    "I": 2,
+    "L": 4,
+    "M": 1,
+    "V": 3
+  }
+}
+
+INDICATOR POLICY:
+{
+  "aim_primary_rank_count": [
+    2,
+    5
+  ],
+  "allow_fewer_if_evidence_insufficient": true,
+  "require_nonredundant": true,
+  "require_single_property_per_indicator": true,
+  "allowed_roles": [
+    "primary_rank",
+    "hard_gate",
+    "tie_break",
+    "validation_only"
+  ],
+  "allowed_directions": [
+    "higher",
+    "lower",
+    "closer_to_zero",
+    "presence",
+    "absence",
+    "target",
+    "context_dependent"
+  ],
+  "allowed_basis": [
+    "literature",
+    "system_constraint",
+    "both"
+  ],
+  "primary_rank_requires_actionable_direction": true,
+  "context_dependent_primary_policy": "downgrade_to_validation_only"
+}
+
+QUALIFIED NATIVE-X EVIDENCE:
+[
+  {
+    "item_id": "A:secondary_structure:AE05",
+    "candidate": "A",
+    "candidate_name_zh": "丙氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "α-helix to β-sheet transition drives conformational and assembly behavior",
+    "evidence_summary": "AE05 reports kinetically trapped α-helical conformation converts to β-sheets at high temperature or in superheated water; AE06 DFT calculations show isolated chains favor α-helices while β-sheets become more stable with increasing strand number, controlling folding/aggregation.",
+    "title": "Poly(alanine): Structure and Stability of the D and L-Enantiomers.",
+    "abstract": "High-performance, biobased materials can potentially be manufactured from polymerized α-amino acids (α-polypeptides). This paper reports on the synthesis, structure, and properties of both polyalanine enantiomers (PLAla and PDAla). The molecular structure of the polypeptide chains, their molecular weight, and polydispersity were investigated by (1)H NMR, MALDI-TOF, and size-exclusion chromatography. The secondary structure and crystalline order were probed via Fourier transform infrared spectroscopy, circular dichroism, and (synchrotron) wide-angle X-ray diffraction. The phase behavior and thermal stability were assessed by differential scanning calorimetry and thermogravimetric analysis. The kinetically trapped PAla chain conformation in the solid state, after synthesis or solvent treatments, is the α-helical shape. Upon heating, crystals from the α-helices convert into more stable crystals from β-sheets at a temperature higher than 210 °C. This temperature is close to where polymer degradation sets in. The β-sheet crystals combine melting with thermal degradation at temperatures above 330 °C. In the presence of superheated water, the conversion from α-helices to β-sheets happens at lower temperatures, allowing for a conversion without degradation.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "A:secondary_structure:AE06",
+    "candidate": "A",
+    "candidate_name_zh": "丙氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "α-helix to β-sheet transition drives conformational and assembly behavior",
+    "evidence_summary": "AE05 reports kinetically trapped α-helical conformation converts to β-sheets at high temperature or in superheated water; AE06 DFT calculations show isolated chains favor α-helices while β-sheets become more stable with increasing strand number, controlling folding/aggregation.",
+    "title": "From Infinite Helices to β Sheets: Structural Insights from Electronic Structure Calculations.",
+    "abstract": "Protein folding and aggregation are governed by the balance between helical and sheet conformations, yet their intrinsic energetics remain elusive. Here, we employ periodic density functional theory (DFT) to characterize the conformational landscape of polyalanine in the gas phase and aqueous environments at 0 K. Infinite one- and two-dimensional models capture the full extent of intrastrand and interstrand hydrogen bonding, overcoming the limitations of capped oligomers. Our results show that α-helices are favored in isolated chains, but β sheets gain substantial stability with increasing strand number due to the full hydrogen-bond saturation, ultimately competing with or exceeding helices in the infinite-sheet limit. Solvation reduces energy barriers for helix-to-sheet transitions, facilitating structural rearrangements relevant to folding and misfolding pathways. These findings rationalize why β sheets prevail in supramolecular assemblies, such as amyloids and fibrous proteins, and establish periodic DFT as a powerful tool to probe the intrinsic stability of protein secondary structures in condensed-phase environments.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "A:hydrogen_bond:AE06",
+    "candidate": "A",
+    "candidate_name_zh": "丙氨酸",
+    "interaction_type": "hydrogen_bond",
+    "support_level": "explicit",
+    "role_summary": "interstrand hydrogen bonding stabilizes β-sheet assemblies",
+    "evidence_summary": "AE06 explicitly states β-sheets gain stability due to full hydrogen-bond saturation, competing with helices.",
+    "title": "From Infinite Helices to β Sheets: Structural Insights from Electronic Structure Calculations.",
+    "abstract": "Protein folding and aggregation are governed by the balance between helical and sheet conformations, yet their intrinsic energetics remain elusive. Here, we employ periodic density functional theory (DFT) to characterize the conformational landscape of polyalanine in the gas phase and aqueous environments at 0 K. Infinite one- and two-dimensional models capture the full extent of intrastrand and interstrand hydrogen bonding, overcoming the limitations of capped oligomers. Our results show that α-helices are favored in isolated chains, but β sheets gain substantial stability with increasing strand number due to the full hydrogen-bond saturation, ultimately competing with or exceeding helices in the infinite-sheet limit. Solvation reduces energy barriers for helix-to-sheet transitions, facilitating structural rearrangements relevant to folding and misfolding pathways. These findings rationalize why β sheets prevail in supramolecular assemblies, such as amyloids and fibrous proteins, and establish periodic DFT as a powerful tool to probe the intrinsic stability of protein secondary structures in condensed-phase environments.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "A:solvation_dispersion:AE06",
+    "candidate": "A",
+    "candidate_name_zh": "丙氨酸",
+    "interaction_type": "solvation_dispersion",
+    "support_level": "explicit",
+    "role_summary": "water solvation reduces energy barriers for helix-to-sheet transition",
+    "evidence_summary": "AE06 states solvation reduces energy barriers facilitating structural rearrangements.",
+    "title": "From Infinite Helices to β Sheets: Structural Insights from Electronic Structure Calculations.",
+    "abstract": "Protein folding and aggregation are governed by the balance between helical and sheet conformations, yet their intrinsic energetics remain elusive. Here, we employ periodic density functional theory (DFT) to characterize the conformational landscape of polyalanine in the gas phase and aqueous environments at 0 K. Infinite one- and two-dimensional models capture the full extent of intrastrand and interstrand hydrogen bonding, overcoming the limitations of capped oligomers. Our results show that α-helices are favored in isolated chains, but β sheets gain substantial stability with increasing strand number due to the full hydrogen-bond saturation, ultimately competing with or exceeding helices in the infinite-sheet limit. Solvation reduces energy barriers for helix-to-sheet transitions, facilitating structural rearrangements relevant to folding and misfolding pathways. These findings rationalize why β sheets prevail in supramolecular assemblies, such as amyloids and fibrous proteins, and establish periodic DFT as a powerful tool to probe the intrinsic stability of protein secondary structures in condensed-phase environments.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "I:hydrophobic:IE02",
+    "candidate": "I",
+    "candidate_name_zh": "异亮氨酸",
+    "interaction_type": "hydrophobic",
+    "support_level": "supported_inference",
+    "role_summary": "amphiphilic copolymers imply hydrophobic interactions drive polyplex formation",
+    "evidence_summary": "Abstract states poly(lysine-co-isoleucine) forms amphiphilic copolymers and produces polyplexes with mRNA, implying hydrophobic interactions from isoleucine contribute to assembly.",
+    "title": "Random Copolymers of Lysine and Isoleucine for Efficient mRNA Delivery",
+    "abstract": "Messenger RNA (mRNA) is currently of great interest as a new category of therapeutic agent, which could be used for prevention or treatment of various diseases. For this mRNA requires effective delivery systems that will protect it from degradation, as well as allow cellular uptake and mRNA release. Random poly(lysine-co-isoleucine) polypeptides were synthesized and investigated as possible carriers for mRNA delivery. The polypeptides obtained under lysine:isoleucine monomer ratio equal to 80/20 were shown to give polyplexes with smaller size, positive ζ-potential and more than 90% encapsulation efficacy. The phase inversion method was proposed as best way for encapsulation of mRNA into polyplexes, which are based on obtained amphiphilic copolymers. These copolymers showed efficacy in protection of bound mRNA towards ribonuclease and lower toxicity as compared to lysine homopolymer. The poly(lysine-co-isoleucine) polypeptides showed greater than poly(ethyleneimine) efficacy as vectors for transfection of cells with green fluorescent protein and firefly luciferase encoding mRNAs. This allows us to consider obtained copolymers as promising candidates for mRNA delivery applications.",
+    "qualification": "direct",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "I:steric_packing:IE05",
+    "candidate": "I",
+    "candidate_name_zh": "异亮氨酸",
+    "interaction_type": "steric_packing",
+    "support_level": "supported_inference",
+    "role_summary": "side-chain steric hindrance influences globular conformation",
+    "evidence_summary": "Abstract reports globular conformations for polyisoleucine and identifies steric hindrance as one of three primary interaction types influencing conformation of polyamino acids, including polyisoleucine.",
+    "title": "Intrinsic Size Parameters for Val, Ile, Leu, Gln, Thr, Phe, and Trp Residues from Ion Mobility Measurements of Polyamino Acid Ions",
+    "abstract": "The conformations of singly charged ions of eight polyamino acids of varying length [polyalanine (3−23 residues), polyglutamine (2−8 residues), polyisoleucine (2−6 residues), polyleucine (2−9 residues), polyphenylalanine (2−7 residues), polythreonine (8−14 residues), polytryptophan (2−9 residues), and polyvaline (2−7 residues)] have been studied by ion mobility methods and molecular modeling simulations. The average amino acid contributions to cross section for 4−9 residue homopolymers agree with intrinsic size parameters for these residues derived from data for tryptic digest peptides [ J. Phys. Chem. B 1999, 103, 1203]. Some variations in residue sizes with changes in oligomer length are apparent for small oligomers and those with polar and aromatic ring side chains. Molecular modeling simulations reveal that all of these homopolymers have roughly spherical (globular) structures. Conformations appear to be influenced by three primary types of interactions: (1) self-solvation of the charge site by backbone carbonyls, a characteristic of all oligomer types; (2) steric hindrance of side chains (leading to efficient ring stacking), a prominent factor for the polyphenylalanine and polytryptophan systems; and (3) hydrogen bonding involving side chains, backbone carbonyls, and the charged residue, apparent in the polyglutamine and polythreonine systems.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "L:hydrophobic:LE01",
+    "candidate": "L",
+    "candidate_name_zh": "亮氨酸",
+    "interaction_type": "hydrophobic",
+    "support_level": "explicit",
+    "role_summary": "drives packing of α-helical oligoleucine segments into lamellar structure and stabilizes collapsed conformations favoring β-sheets",
+    "evidence_summary": "LE01: hydrophobic α-helical oligoleucine segments pack in lamellar structure for hydrogel formation; LE04: hydrophobic interactions favor β-sheet in collapsed polyleucine conformations",
+    "title": "Hydrogel Formation in Amphiphilic Triblock Copolypeptides",
+    "abstract": "We report the synthesis of a variety of polylysine-b-polyleucine-b-polylysine, KmLnKo triblock copolypeptides and compare their gel forming properties to diblock copolypeptides. The architecture of the KmLnKo triblock copolypeptides forces the hydrophobic α-helical oligoleucine segments to pack perpendicular to extended fibrils in lamellar structure, and the similarity in properties between diblock and triblock copolymers supports the hypothesis that both systems assemble in a similar manner. The triblock architecture, however, allows preparation of samples with greater gel strength and better salt tolerance than diblock samples at similar concentrations. We have found that block architecture provides a means for fine adjustment of hydrogel properties beyond variation of polypeptide composition, concentration, and chain length.",
+    "qualification": "direct",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "L:hydrophobic:LE04",
+    "candidate": "L",
+    "candidate_name_zh": "亮氨酸",
+    "interaction_type": "hydrophobic",
+    "support_level": "explicit",
+    "role_summary": "drives packing of α-helical oligoleucine segments into lamellar structure and stabilizes collapsed conformations favoring β-sheets",
+    "evidence_summary": "LE01: hydrophobic α-helical oligoleucine segments pack in lamellar structure for hydrogel formation; LE04: hydrophobic interactions favor β-sheet in collapsed polyleucine conformations",
+    "title": "Hydrophobic interactions in the formation of secondary structures in small peptides",
+    "abstract": "Effects of the attractive and repulsive parts of hydrophobic interactions on $\\ensuremath{\\alpha}$ helices and $\\ensuremath{\\beta}$ sheets in small peptides are investigated using a simple atomic potential. Typically, a physical spatial range of attraction tends to favor $\\ensuremath{\\beta}$ sheets, but $\\ensuremath{\\alpha}$ helices would be favored if the attractive range were more extended. We also found that desolvation barriers favor $\\ensuremath{\\beta}$ sheets in collapsed conformations of polyalanine, polyvaline, polyleucine, and three fragments of amyloid peptides tested in this study. Our results provide insight into the multifaceted role of hydrophobicity in secondary structure formation, including the $\\ensuremath{\\alpha}$ to $\\ensuremath{\\beta}$ transitions in certain amyloid peptides.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "L:secondary_structure:LE01",
+    "candidate": "L",
+    "candidate_name_zh": "亮氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "α-helical conformation in oligoleucine segments directs lamellar packing; hydrophobic desolvation can promote β-sheet formation",
+    "evidence_summary": "LE01: α-helical oligoleucine segments; LE04: β-sheet formation in collapsed polyleucine",
+    "title": "Hydrogel Formation in Amphiphilic Triblock Copolypeptides",
+    "abstract": "We report the synthesis of a variety of polylysine-b-polyleucine-b-polylysine, KmLnKo triblock copolypeptides and compare their gel forming properties to diblock copolypeptides. The architecture of the KmLnKo triblock copolypeptides forces the hydrophobic α-helical oligoleucine segments to pack perpendicular to extended fibrils in lamellar structure, and the similarity in properties between diblock and triblock copolymers supports the hypothesis that both systems assemble in a similar manner. The triblock architecture, however, allows preparation of samples with greater gel strength and better salt tolerance than diblock samples at similar concentrations. We have found that block architecture provides a means for fine adjustment of hydrogel properties beyond variation of polypeptide composition, concentration, and chain length.",
+    "qualification": "direct",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "L:secondary_structure:LE04",
+    "candidate": "L",
+    "candidate_name_zh": "亮氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "α-helical conformation in oligoleucine segments directs lamellar packing; hydrophobic desolvation can promote β-sheet formation",
+    "evidence_summary": "LE01: α-helical oligoleucine segments; LE04: β-sheet formation in collapsed polyleucine",
+    "title": "Hydrophobic interactions in the formation of secondary structures in small peptides",
+    "abstract": "Effects of the attractive and repulsive parts of hydrophobic interactions on $\\ensuremath{\\alpha}$ helices and $\\ensuremath{\\beta}$ sheets in small peptides are investigated using a simple atomic potential. Typically, a physical spatial range of attraction tends to favor $\\ensuremath{\\beta}$ sheets, but $\\ensuremath{\\alpha}$ helices would be favored if the attractive range were more extended. We also found that desolvation barriers favor $\\ensuremath{\\beta}$ sheets in collapsed conformations of polyalanine, polyvaline, polyleucine, and three fragments of amyloid peptides tested in this study. Our results provide insight into the multifaceted role of hydrophobicity in secondary structure formation, including the $\\ensuremath{\\alpha}$ to $\\ensuremath{\\beta}$ transitions in certain amyloid peptides.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "M:secondary_structure:ME06",
+    "candidate": "M",
+    "candidate_name_zh": "甲硫氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "helical rod-like conformation in solution",
+    "evidence_summary": "Viscosity, light-scattering, and NMR show poly-L-methionine adopts a helical rod-like form with dimensions similar to helical poly-γ-benzyl-L-glutamate; random coil in trifluoroacetic acid is charged and fits Mark-Houwink equation.",
+    "title": "Conformation of Poly-L-methionine in Solution",
+    "abstract": "A study of poly-L-methionine by viscosity, light-scattering, and NMR spectroscopy shows 1) that the helical rodhke form of the polypeptide has approximately the same dimensions as helical poly-γ-benzyl-L-glutamate, and 2) that the random coil form in trifluoroacetic acid is charged and fits the same Mark-Houwink equation as does poly-γ-benzyl-L-glutamate in dichloroacetic acid. The relationships between NMR Line widths and degree of polymerization is given for three different polypeptides.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "V:hydrophobic:VE06",
+    "candidate": "V",
+    "candidate_name_zh": "缬氨酸",
+    "interaction_type": "hydrophobic",
+    "support_level": "explicit",
+    "role_summary": "drives collapse and beta-sheet formation in polyvaline aggregates",
+    "evidence_summary": "VE06 explicitly states desolvation barriers and hydrophobic interactions favor beta sheets in collapsed conformations of polyvaline",
+    "title": "Hydrophobic interactions in the formation of secondary structures in small peptides",
+    "abstract": "Effects of the attractive and repulsive parts of hydrophobic interactions on $\\ensuremath{\\alpha}$ helices and $\\ensuremath{\\beta}$ sheets in small peptides are investigated using a simple atomic potential. Typically, a physical spatial range of attraction tends to favor $\\ensuremath{\\beta}$ sheets, but $\\ensuremath{\\alpha}$ helices would be favored if the attractive range were more extended. We also found that desolvation barriers favor $\\ensuremath{\\beta}$ sheets in collapsed conformations of polyalanine, polyvaline, polyleucine, and three fragments of amyloid peptides tested in this study. Our results provide insight into the multifaceted role of hydrophobicity in secondary structure formation, including the $\\ensuremath{\\alpha}$ to $\\ensuremath{\\beta}$ transitions in certain amyloid peptides.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "V:secondary_structure:VE04",
+    "candidate": "V",
+    "candidate_name_zh": "缬氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "beta-sheet formation is central to nucleation pathway",
+    "evidence_summary": "VE04 explicitly describes antiparallel and parallel beta-sheets in nucleation; VE06 explicitly links hydrophobic interactions to beta-sheet preference in polyvaline",
+    "title": "Multidimensional view of amyloid fibril nucleation in atomistic detail.",
+    "abstract": "Starting from a disordered aggregate, we have simulated the formation of ordered amyloid-like beta structures in a system formed by 18 polyvaline chains in explicit solvent, employing molecular dynamics accelerated by bias-exchange metadynamics. We exploited 8 different collective variables to compute the free energy of hundreds of putative aggregate structures, with variable content of parallel and antiparallel β-sheets and different packing among the sheets. This allowed characterizing in detail a possible nucleation pathway for the formation of amyloid fibrils: first the system forms a relatively large ordered nucleus of antiparallel β-sheets, and then a few parallel sheets start appearing. The relevant nucleation process culminates at this point: when a sufficient number of parallel sheets is formed, the free energy starts to decrease toward a new minimum in which this structure is predominant. The complex nucleation pathway we found cannot be described within classical nucleation theory, namely employing a unique simple reaction coordinate like the total content of β-sheets.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "V:secondary_structure:VE06",
+    "candidate": "V",
+    "candidate_name_zh": "缬氨酸",
+    "interaction_type": "secondary_structure",
+    "support_level": "explicit",
+    "role_summary": "beta-sheet formation is central to nucleation pathway",
+    "evidence_summary": "VE04 explicitly describes antiparallel and parallel beta-sheets in nucleation; VE06 explicitly links hydrophobic interactions to beta-sheet preference in polyvaline",
+    "title": "Hydrophobic interactions in the formation of secondary structures in small peptides",
+    "abstract": "Effects of the attractive and repulsive parts of hydrophobic interactions on $\\ensuremath{\\alpha}$ helices and $\\ensuremath{\\beta}$ sheets in small peptides are investigated using a simple atomic potential. Typically, a physical spatial range of attraction tends to favor $\\ensuremath{\\beta}$ sheets, but $\\ensuremath{\\alpha}$ helices would be favored if the attractive range were more extended. We also found that desolvation barriers favor $\\ensuremath{\\beta}$ sheets in collapsed conformations of polyalanine, polyvaline, polyleucine, and three fragments of amyloid peptides tested in this study. Our results provide insight into the multifaceted role of hydrophobicity in secondary structure formation, including the $\\ensuremath{\\alpha}$ to $\\ensuremath{\\beta}$ transitions in certain amyloid peptides.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  }
+]
+
+RETURN SCHEMA:
+{
+  "domain_id": "D2",
+  "indicators": [
+    {
+      "indicator_id": "I1",
+      "indicator_name": "one concise measurable physicochemical descriptor",
+      "measurement_target": "standard scientific property name; one property only",
+      "scientific_definition": "what is measured",
+      "why_relevant_to_dlys_system": "why it helps compare candidates in this domain after fixing D-Lys",
+      "role": "primary_rank/hard_gate/tie_break/validation_only",
+      "preferred_direction": "higher/lower/closer_to_zero/presence/absence/target/context_dependent",
+      "target_value": null,
+      "basis": "literature/system_constraint/both",
+      "supporting_evidence_ids": [
+        "item_id from supplied evidence when applicable"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "why this is distinct from other returned indicators",
+      "notes": "scope/limitations"
+    }
+  ],
+  "knowledge_gaps": [
+    "scientific gaps or unavailable mature single-residue metrics"
+  ],
+  "notes": [
+    "domain-level notes"
+  ]
+}

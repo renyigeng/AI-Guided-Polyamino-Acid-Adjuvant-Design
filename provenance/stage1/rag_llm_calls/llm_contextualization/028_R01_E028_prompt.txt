@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polyarginine or arginine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: R01
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 12678854
+DOI: 10.2174/1389203033487270
+
+TITLE:
+Protein Therapy: in vivo protein transduction by polyarginine (11R) PTD and subcellular targeting delivery.
+
+ABSTRACT:
+Protein Therapy is a newly developed method, which allows proteins, peptides and biologically active compounds to penetrate across the plasma membrane of eukaryotic cells by a polyarginine (most efficiently by 11-arginine, 11R) protein transduction domain. This method enables us to control the localization of targeted substances in subcellular compartments, such as the nuclei, mitochondria and post-synaptic density. The method is very efficient and applicable not only to cultured cells but also to tissue slices and the whole animal. Brain, heart, skeletal muscle, liver, pancreas and lymphocytes are efficient target organs and tissues for Protein Therapy. The method is therefore a very useful strategy in the post-genomic era. In this mini-review, the development of Protein Therapy and its application for cancer cells and neuroscience study will be shown.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

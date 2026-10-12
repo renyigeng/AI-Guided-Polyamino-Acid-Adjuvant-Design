@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R03
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 24099143
+DOI: 10.1021/mp4005468
+
+TITLE:
+In vivo safety evaluation of polyarginine coated magnetic nanovectors.
+
+ABSTRACT:
+Safety and efficacy are of critical importance to any nanomaterial-based diagnostic and therapy. The innocuity and functionality of a nanomaterial in vivo is largely dependent on the physicochemical properties of the material, particularly its surface coating. Here, we evaluated the influence of polycationic coating on the efficacy, clearance organ uptake, and safety of magnetic nanovectors designed for siRNA delivery. Polyethylene glycol (PEG) coated superparamagnetic iron oxide nanoparticles (NPs) of 12 nm in core diameter were modified with a polycationic coating of either poly-l-arginine (pArg) or polyethylenimine (PEI) and further covalently functionalized with siRNA oligonucleotides. The produced NP-pArg-siRNA and NP-PEI-siRNA nanovectors were similar in hydrodynamic size (21 and 22 nm, respectively) but significantly differed in zeta potentials (+2.1 mV and +29.8 mV, respectively). Fluorescence quantification assays revealed that the NP-pArg-siRNA nanovector was 3-fold more potent than NP-PEI-siRNA in delivering siRNA and 1.8-fold more effective in gene silencing when tested in rat C6 glioblastoma cells. In vivo, both nanovector formulations were similarly taken up by the spleen and liver as determined by histopathological and hemopathological assays. However, PEI coated nanovectors elicited severe hemoincompatibility and damage to the liver and spleen, while pArg coated nanovectors were found to be safe and tolerable. Combined, our findings suggest that polycationic coatings of pArg were more effective and safer than commonly used PEI coatings for preparation of nanovectors. The NP-pArg-siRNA nanovector formulation developed here shows great potential for in vivo based biomedical applications.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

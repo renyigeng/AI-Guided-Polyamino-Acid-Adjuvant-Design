@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R02
+CANDIDATE HINT: K;R
+CHIRALITY HINT: 
+PMID: 29065262
+DOI: 10.1021/acs.bioconjchem.7b00560
+
+TITLE:
+Unlocking Endosomal Entrapment with Supercharged Arginine-Rich Peptides.
+
+ABSTRACT:
+Endosomal entrapment is a common bottleneck in various macromolecular delivery approaches. Recently, the polycationic peptide dfTAT was identified as a reagent that induces the efficient leakage of late endosomes and, thereby, enhances the penetration of macromolecules into the cytosol of live human cells. To gain further insights into the features that lead to this activity, the role of peptide sequence was investigated. We establish that the leakage activity of dfTAT can be recapitulated by polyarginine analogs but not by polylysine counterparts. Efficiencies of peptide endocytic uptake increase linearly with the number of arginine residues present. In contrast, peptide cytosolic penetration displays a threshold behavior, indicating that a minimum number of arginines is required to induce endosomal escape. Increasing arginine content above this threshold further augments delivery efficiencies. Yet, it also leads to increasing the toxicity of the delivery agents. Together, these data reveal a relatively narrow arginine-content window for the design of optimally active endosomolytic agents.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

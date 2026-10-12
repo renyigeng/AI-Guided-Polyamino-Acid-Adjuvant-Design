@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K02
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 29590755
+DOI: 10.1021/acs.molpharmaceut.8b00044
+
+TITLE:
+Bioinspired Star-Shaped Poly(l-lysine) Polypeptides: Efficient Polymeric Nanocarriers for the Delivery of DNA to Mesenchymal Stem Cells.
+
+ABSTRACT:
+The field of tissue engineering is increasingly recognizing that gene therapy can be employed for modulating in vivo cellular response thereby guiding tissue regeneration. However, the field lacks a versatile and biocompatible gene delivery platform capable of efficiently delivering transgenes to mesenchymal stem cells (MSCs), a cell type often refractory to transfection. Herein, we describe the extensive and systematic exploration of three architectural variations of star-shaped poly(l-lysine) polypeptide (star-PLL) with varying number and length of poly(l-lysine) arms as potential nonviral gene delivery vectors for MSCs. We demonstrate that star-PLL vectors are capable of self-assembling with pDNA to form stable, cationic nanomedicines. Utilizing high content screening, live cell imaging, and mechanistic uptake studies we confirm the intracellular delivery of pDNA by star-PLLs to MSCs is a rapid process, which likely proceeds via a clathrin-independent mechanism. We identify a star-PLL composition with 64 poly(l-lysine) arms and five l-lysine subunits per arm as a particularly efficient vector that is capable of delivering both reporter genes and the therapeutic transgenes bone morphogenetic protein-2 and vascular endothelial growth factor to MSCs. This composition facilitated a 1000-fold increase in transgene expression in MSCs compared to its linear analogue, linear poly(l-lysine). Furthermore, it demonstrated comparable transgene expression to the widely used vector polyethylenimine using a lower pDNA dose with significantly less cytotoxicity. Overall, this study illustrates the ability of the star-PLL vectors to facilitate efficient, nontoxic nucleic acid delivery to MSCs thereby functioning as an innovative nanomedicine platform for tissue engineering applications.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

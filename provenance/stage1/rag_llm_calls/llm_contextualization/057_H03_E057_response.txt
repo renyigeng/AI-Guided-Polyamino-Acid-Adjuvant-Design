@@ -1,0 +1,30 @@
+{
+  "summary": "Grafting polyhistidine or monomeric histidine onto poly(L-lysine) reduces cytotoxicity; polyhistidine graft (PLL-g-PHis) exhibits high pH-dependent hemolytic activity and influences cellular uptake. Polymeric histidine arrangement impacts hemolysis and cytotoxicity.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "hemolytic activity",
+    "cytotoxicity",
+    "cellular uptake",
+    "internalization",
+    "transfection efficiency",
+    "subcellular localization"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "PLL-g-PHis showed strong fluorescence in the nucleus after internalization",
+    "high hemolytic activity upon pH changes was observed from PLL-g-PHis",
+    "mHis or PHis grafting reduced the cytotoxicity of PLL",
+    "polymeric histidine arrangement demonstrates ability to escape the endosome and trigger rapid release",
+    "PLL-g-PHis/pDNA had highest YOYO1-pDNA intensity inside the nucleus and lowest lysotracker staining among polymers"
+  ],
+  "material_or_molecular_context": "poly(L-lysine) grafted with poly(L-histidine) (PLL-g-PHis) and with mono-L-histidine (PLL-g-mHis)",
+  "biological_context": "in vitro cellular studies (cell lines unspecified in abstract) for gene transfection",
+  "limitations_for_current_question": [
+    "Study primarily addresses gene transfection efficiency; hemolysis and cytotoxicity are secondary outcomes",
+    "No quantitative hemolysis percentages reported",
+    "Cytotoxicity reduction is stated qualitatively without numeric values",
+    "No in vivo safety or biocompatibility data",
+    "Materials are histidine-grafted PLL, not pure polyhistidine or histidine-based polypeptides alone"
+  ],
+  "supporting_text": "mHis or PHis grafting reduced the cytotoxicity of PLL"
+}

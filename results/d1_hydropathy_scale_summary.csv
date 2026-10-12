@@ -1,0 +1,4 @@
+﻿subset,n_scales,F_unique_winner_count,W_unique_winner_count,Y_unique_winner_count,F_unique_winner_fraction,most_common_winner
+all_available_scales,42,26,15,1,0.6190476190476191,F
+moderately_concordant_abs_rho_ge_0.5,37,25,12,0,0.6756756756756757,F
+strongly_concordant_abs_rho_ge_0.7,29,22,7,0,0.7586206896551724,F

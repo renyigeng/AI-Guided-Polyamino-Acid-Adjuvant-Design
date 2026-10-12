@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Post-hoc comparison against known project/experimental reference representatives. These targets must never be exposed to indicator discovery or used by the ranking algorithm.",
+  "not_for_selection": true,
+  "targets": {
+    "D1": "F",
+    "D2": "L",
+    "D3": "Q"
+  }
+}

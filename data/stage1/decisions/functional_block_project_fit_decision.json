@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "stage": "functional_block_project_fit_tiebreak",
+  "created_at_utc": "2026-09-22T08:13:13.716136+00:00",
+  "source_rag_context_run": "E:\\Project\\tiaozhansai\\runs\\20260922T072626Z__functional-block-rag-context",
+  "general_stage1_status": "K_R_not_stably_separated; H comparatively weaker in prior pairwise run",
+  "literature_project_fit_calls": [
+    {
+      "orientation": "forward",
+      "candidate_order": [
+        "K",
+        "R"
+      ],
+      "preference": "K",
+      "response": {
+        "preference": "K",
+        "architecture_fit": {
+          "verdict": "K",
+          "reason": "Evidence for K includes amphiphilic block copolymers (PEG-PLL-PLLeu, L15K6) and polypeptide nanoparticles (chiral poly(phe)-block-poly(lys)), closely matching the target amphiphilic binary poly(amino acid) architecture. R evidence is limited to PTD fusions and nanofibers, lacking direct block copolymer analogues.",
+          "evidence_ids": [
+            "E003",
+            "E022",
+            "E002"
+          ]
+        },
+        "vaccine_mechanism_fit": {
+          "verdict": "K",
+          "reason": "K evidence demonstrates robust dendritic cell maturation, antigen cross-presentation, CTL responses, and in vivo tumor inhibition, often outperforming alum (E002, E022). R evidence shows strong T-cell activation and MHC presentation but lacks explicit cross-presentation and direct adjuvant superiority.",
+          "evidence_ids": [
+            "E002",
+            "E022",
+            "E003"
+          ]
+        },
+        "delivery_safety_balance": {
+          "verdict": "TIE",
+          "reason": "K evidence shows excellent biocompatibility with low hemolysis and high cell viability (E014, E015, E016), while R evidence indicates context-dependent safety (some hemolysis at high doses) but superior endosomal escape (E032). Both have acceptable trade-offs; no clear advantage for this project.",
+          "evidence_ids": [
+            "E014",
+            "E015",
+            "E016",
+            "E037",
+            "E038",
+            "E032"
+          ]
+        },
+        "counter_evidence_ids": [
+          "E032"
+        ],
+        "uncertainties": [
+          "Direct head-to-head comparison of K vs R in the exact project architecture is lacking.",
+          "Endosomal escape advantage of R (E032) may be critical for biomacromolecule delivery but safety concerns are mitigated in specific formulations.",
+          "Cross-presentation evidence for K is robust but limited to OVA model; generalizability to other antigens is assumed."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 12736,
+        "completion_tokens": 2112,
+        "total_tokens": 14848,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1679
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "orientation": "reverse",
+      "candidate_order": [
+        "R",
+        "K"
+      ],
+      "preference": "K",
+      "response": {
+        "preference": "K",
+        "architecture_fit": {
+          "verdict": "K",
+          "reason": "K has direct evidence of block copolymer and nanoparticle architectures (e.g., PEG-PLL-PLLeu, P_L-K block copolymer, hyperbranched PLL in lipopolyplex) that closely match the target amphiphilic binary poly(amino acid) carrier. R evidence primarily uses simple polyarginine chains or fusion proteins, lacking clear block copolymer examples.",
+          "evidence_ids": [
+            "E001",
+            "E002",
+            "E003",
+            "E022",
+            "E021"
+          ]
+        },
+        "vaccine_mechanism_fit": {
+          "verdict": "K",
+          "reason": "K evidence includes robust dendritic cell maturation, antigen cross-presentation, and antitumor efficacy in block copolymer nanoparticle vaccine systems (e.g., P_D-K-OVA, PEG-PLL-PLLeu micelles), directly relevant to the tumor-vaccine carrier. While R also shows strong immune responses, K's systems are more architecturally aligned with the project.",
+          "evidence_ids": [
+            "E001",
+            "E002",
+            "E003",
+            "E022",
+            "E021"
+          ]
+        },
+        "delivery_safety_balance": {
+          "verdict": "TIE",
+          "reason": "R has superior intracellular delivery and endosomal escape evidence (E032, E033) but has some safety concerns (hemolysis, complement activation). K has cleaner safety data (low hemolysis, high cell viability) but less detailed intracellular handling. The balance is even for this criterion.",
+          "evidence_ids": [
+            "E032",
+            "E033",
+            "E025",
+            "E028",
+            "E037",
+            "E038",
+            "E039"
+          ]
+        },
+        "counter_evidence_ids": [],
+        "uncertainties": [
+          "Most evidence for both candidates uses protein/peptide antigens; less direct evidence for mRNA or other biomacromolecules beyond one K study (E001).",
+          "Intracellular handling (endosomal escape) evidence for K is less explicit than for R, which may affect cross-presentation efficiency in vaccine context.",
+          "Safety data for K at the specific chain lengths and architectures used in block copolymers is not fully characterized."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 12736,
+        "completion_tokens": 3770,
+        "total_tokens": 16506,
+        "completion_tokens_details": {
+          "reasoning_tokens": 3296
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ],
+  "literature_project_fit_verdict": "K",
+  "project_context": {
+    "target_system": "amphiphilic binary poly(amino acid) tumor-vaccine carrier",
+    "existing_experimental_platform": "lysine-based (K) cationic block",
+    "role_interchangeability_context": "K and R are regarded by the project team as potentially replaceable cationic blocks; the existing experimental route uses K.",
+    "use_of_context": "This is a project-continuity prior, not literature evidence. It is used only if the literature-based K-vs-R project-fit comparison is tied or insufficient."
+  },
+  "project_specific_identity": "K",
+  "selection_basis": "stable_literature_project_fit",
+  "lys_chirality_evidence_count": 24,
+  "lys_chirality_calls": [
+    {
+      "repeat": 1,
+      "orientation": "forward",
+      "left": "D",
+      "right": "L",
+      "normalized_vote": "D",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Direct head-to-head comparison in polypeptide nanoparticle nanoadjuvants (E093, E096) shows that poly(D-lysine)-containing nanoparticles (P_D-K-OVA) more robustly induce dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to poly(L-lysine)-containing nanoparticles (P_L-K-OVA), achieving 94.9% tumor inhibition in a B16-OVA melanoma model.",
+          "These direct comparisons are in the specified systems (polypeptide, nanoparticle, nanoadjuvant, dendritic-cell, vaccine) and are given highest evidentiary priority per the instructions.",
+          "The conflicting direct comparisons in aluminum oxyhydroxide nanoadjuvants (E094, E097) involve lysine only as a structure-directing agent, not as the primary immune component, and are therefore less directly relevant to lysine chirality in polypeptide/nanoparticle systems."
+        ],
+        "direct_comparison_evidence_ids": [
+          "E093",
+          "E096"
+        ],
+        "supporting_evidence_ids": [
+          "E082",
+          "E088",
+          "E075"
+        ],
+        "uncertainties": [
+          "Direct comparison evidence is limited to a single model antigen (OVA) and one tumor model (B16-OVA melanoma).",
+          "A conflicting direct comparison in aluminum oxyhydroxide nanoadjuvants (E094, E097) shows L-lysine-induced material yields better outcomes, but that system uses lysine only as a chiral inducer, not as the active polymer component.",
+          "No direct L-vs-D lysine comparison in human cells or clinical systems is available."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 14806,
+        "completion_tokens": 1368,
+        "total_tokens": 16174,
+        "completion_tokens_details": {
+          "reasoning_tokens": 997
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "repeat": 1,
+      "orientation": "reverse",
+      "left": "L",
+      "right": "D",
+      "normalized_vote": "D",
+      "response": {
+        "preference": "B",
+        "basis": [
+          "Direct head-to-head comparison in chiral polypeptide nanoparticle nanoadjuvants (E093, E096) shows that D-lysine-containing P_D-K-OVA more robustly induces dendritic cell maturation, antigen cross-presentation, and adaptive immune response than L-lysine-containing P_L-K-OVA, achieving 94.9% tumor inhibition in a melanoma model versus weaker effects for the L-lysine variant.",
+          "This direct comparison is in the most relevant context: polypeptide nanoparticles as nanoadjuvants for vaccines, directly addressing dendritic cells and antigen presentation.",
+          "Although an indirect comparison in aluminum oxyhydroxide nanoadjuvants (E094, E097) shows L-lysine-derived material outperforms D-lysine-derived material, that system uses lysine only as a structure-directing agent, not as a polymeric component, and is less directly applicable to the query's specified polypeptide and nanoparticle systems."
+        ],
+        "direct_comparison_evidence_ids": [
+          "E093",
+          "E096"
+        ],
+        "supporting_evidence_ids": [
+          "E082",
+          "E088",
+          "E075",
+          "E089",
+          "E074"
+        ],
+        "uncertainties": [
+          "The two direct comparisons (polypeptide nanoparticles vs. aluminum oxyhydroxide nanoadjuvants) give opposite preferences; the aluminum oxyhydroxide study suggests L-lysine-associated material may be better in that specific mineral-adjuvant context, but its relevance to polypeptide/nanoparticle vaccine systems is limited.",
+          "All direct comparisons involve lysine in polymeric or templating contexts, not free lysine.",
+          "Evidence is limited to a single model antigen (OVA) and a single tumor model (B16-OVA) in the most relevant direct comparison.",
+          "No human in vivo data are available for either chirality."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 14806,
+        "completion_tokens": 1408,
+        "total_tokens": 16214,
+        "completion_tokens_details": {
+          "reasoning_tokens": 994
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    }
+  ],
+  "lys_chirality_result": {
+    "pair": [
+      "D",
+      "L"
+    ],
+    "votes": {
+      "D": 2,
+      "L": 0,
+      "INSUFFICIENT": 0
+    },
+    "winner": "D",
+    "status": "resolved"
+  },
+  "selected_functional_block": "D-Lys",
+  "scientific_boundaries": {
+    "does_not_claim_K_universally_superior_to_R": true,
+    "project_continuity_is_not_literature_evidence": true,
+    "project_continuity_used_only_on_literature_tie": true,
+    "medcpt_score_is_relevance_only": true,
+    "rag_relevance_score_is_relevance_only": true,
+    "paper_count_is_not_candidate_quality": true
+  },
+  "llm": {
+    "api_key_env_used": "TIAOZHANSAI_LLM_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "timeout_seconds": 120,
+    "retries": 3
+  }
+}

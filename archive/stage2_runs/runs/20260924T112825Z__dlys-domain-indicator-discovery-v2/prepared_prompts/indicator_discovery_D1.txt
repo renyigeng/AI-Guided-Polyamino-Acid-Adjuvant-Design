@@ -1,0 +1,203 @@
+You are assisting a materials-science screening workflow for polypeptide vaccine-carrier design.
+
+The first-stage functional-block decision is already complete: D-lysine is fixed as the cationic, hydrophilic, functional delivery block. The current task is ONLY to determine which physicochemical descriptors should be used to compare candidate second-block amino acids X within ONE preregistered mechanism domain.
+
+The domain membership is fixed by the research team. Do not reclassify candidates and do not create new domains.
+
+Your scientific task:
+1. Read the supplied qualified native-X literature evidence and the D-Lys system constraints.
+2. Identify measurable physicochemical descriptors that are genuinely useful for distinguishing candidates within THIS domain and are relevant to complementing the fixed D-Lys block.
+3. Prefer 2-5 NONREDUNDANT primary_rank descriptors when the evidence supports them. If fewer than two are scientifically supportable, return fewer and state the gap. Never invent extra descriptors merely to satisfy a downstream multicriteria calculation.
+4. Each primary_rank descriptor must represent ONE property, not a bundle of several properties.
+5. A broad mechanism phrase such as "hydrogen bonding", "aromatic interaction", "hydrophobic assembly", "packing" or "conformational stability" is not by itself a numerical descriptor. Translate the mechanism into a measurable single-residue/side-chain property if a mature descriptor exists; otherwise mark it validation_only.
+6. Use literature evidence to determine what should be compared. A system-level design constraint supplied by the researchers (for example preserving D-Lys cationic function) may also justify a descriptor; mark basis=system_constraint or both when appropriate.
+7. Evidence quantity is NOT a candidate score. Candidates with fewer papers must not be penalized simply for having fewer evidence items.
+8. Do not recommend, rank, score, select, or name a winner among the candidates.
+9. Do not assign numerical weights or construct a composite score.
+10. Do not assume a specific software tool or database. Tool mapping occurs later and is intentionally hidden from you.
+11. Do not invent custom scores such as "pi-stacking score", "assembly potential", "compatibility score", or similar ad-hoc metrics.
+12. This is a decision-oriented descriptor selection task, not a generic property survey. For every descriptor you label primary_rank, you MUST state an actionable preference direction for THIS fixed D-Lys design goal: higher, lower, closer_to_zero, presence, absence, or target.
+13. Do NOT use primary_rank together with context_dependent. If a descriptor is scientifically relevant but no defensible preference direction can be stated, set role=validation_only and preferred_direction=context_dependent instead.
+14. Use the supplied D-Lys system constraint and the preregistered domain design goal to justify the direction. Do not invent a direction merely to satisfy multicriteria ranking; genuinely ambiguous properties must remain validation_only.
+15. Prefer standard single-residue/side-chain property names. Do not replace a broad property with a more specific experimental surrogate (for example logP or a particular partition coefficient) unless that exact quantity is itself justified by the supplied evidence.
+
+16. Follow the human-preregistered decision dimensions and direction guardrails supplied for this domain. They define the materials-design question, not the winner.
+17. A structural descriptor is not automatically a benefit simply because its numeric value is larger. A primary_rank direction must represent suitability for the fixed D-Lys carrier design.
+18. Do not reward mutually competing physical outcomes as simultaneous same-direction benefits (for example alpha-helix propensity and beta-sheet propensity) unless the domain guidance explicitly preregisters both as desirable, which it currently does not.
+19. Prefer descriptors that genuinely vary among the candidates and have mature single-residue definitions. If a proposed count is effectively constant or a property requires a highly context-specific 3D state, keep it validation_only unless the evidence and domain guidance justify otherwise.
+20. Treat the supplied domain direction guardrails as preregistered scientific constraints. Do not reverse them. In particular, a structural feature explicitly described as NOT an automatic benefit must not be returned as presence/higher primary_rank.
+21. When the domain guidance identifies a functional-group class (for example side-chain amide) as a decision axis, prefer the explicit structural descriptor for that group over generic HBD/HBA counts if those counts are not discriminative.
+22. When a domain guidance explicitly distinguishes a ranking axis from a validation axis, preserve that separation. Do not promote ring count, side-chain size, alpha-helix propensity, beta-sheet propensity, or other validation axes unless the domain-specific guardrail explicitly authorizes the direction.
+
+Return STRICT JSON only, matching the supplied schema. Do not add prose outside the JSON.
+
+
+FIXED SYSTEM CONTEXT:
+{
+  "stage1_completed": true,
+  "fixed_functional_block": "D-lysine",
+  "fixed_role": [
+    "cationic",
+    "hydrophilic",
+    "functional_delivery_block"
+  ],
+  "stage2_target": "screen the remaining 17 amino acids as the second block X in C6-X_m-D-Lys_10"
+}
+
+PREREGISTERED DOMAIN AND HUMAN SCIENTIFIC GUIDANCE:
+{
+  "domain_id": "D1",
+  "domain_name_zh": "芳香疏水-π作用域",
+  "candidate_codes": [
+    "F",
+    "W",
+    "Y"
+  ],
+  "candidate_names_zh": [
+    "苯丙氨酸",
+    "色氨酸",
+    "酪氨酸"
+  ],
+  "design_goal_zh": "固定D-赖氨酸已经承担阳离子、亲水和递送功能后，比较芳香侧链作为第二嵌段时提供互补内聚、芳香相互作用、溶剂化平衡和侧链packing的能力。",
+  "focus_questions_zh": [
+    "哪些可量化的单残基/侧链物化性质能够区分芳香侧链的内聚能力与水相溶剂化倾向？",
+    "哪些可量化性质能够表征芳香侧链的空间占据、packing或界面行为，而不把宽泛的‘π作用’直接当成自制分数？",
+    "哪些性质与固定D-赖氨酸的亲水阳离子功能形成互补，而不是重复它的功能？"
+  ],
+  "decision_dimensions_zh": [
+    "疏水内聚：以成熟单残基疏水性指标衡量芳香第二嵌段相对D-Lys亲水段所提供的疏水驱动力；在本域内方向预注册为越高越有利。",
+    "水化/溶剂化：优先使用可直接解释的侧链极性官能团或HBD/HBA位点负担来表征额外水化；在固定D-Lys已经提供亲水功能的前提下，额外极性位点越少越有利于保持芳香疏水核。",
+    "芳香packing背景：芳香环数、侧链尺寸和几何用于解释/验证，不因“更大/更多”自动获得主排名收益。"
+  ],
+  "direction_guardrails_zh": [
+    "F/W/Y都已满足“芳香”这一域定义，因此芳香环数量本身不是自动的单调收益指标；不得设置为“越多越好”的primary_rank，默认validation_only。",
+    "侧链尺寸/体积没有预注册“越大越好”方向；除非新证据明确建立本体系的单调材料收益，否则必须validation_only/context_dependent。",
+    "主排名优先保留一个疏水内聚轴（如hydrophobicity，higher）和一个非重复的水化/极性负担轴（如side-chain HBD+HBA site count，lower）。",
+    "若使用hydration/solution free-energy类指标，必须确认量纲和符号方向，并与hydrophobicity做冗余审计；不得把同一疏水机制重复投票。"
+  ],
+  "interpretation_flags": [],
+  "evidence_counts_for_audit_only": {
+    "F": 2,
+    "W": 2,
+    "Y": 0
+  }
+}
+
+INDICATOR POLICY:
+{
+  "aim_primary_rank_count": [
+    2,
+    5
+  ],
+  "allow_fewer_if_evidence_insufficient": true,
+  "require_nonredundant": true,
+  "require_single_property_per_indicator": true,
+  "allowed_roles": [
+    "primary_rank",
+    "hard_gate",
+    "tie_break",
+    "validation_only"
+  ],
+  "allowed_directions": [
+    "higher",
+    "lower",
+    "closer_to_zero",
+    "presence",
+    "absence",
+    "target",
+    "context_dependent"
+  ],
+  "allowed_basis": [
+    "literature",
+    "system_constraint",
+    "both"
+  ],
+  "primary_rank_requires_actionable_direction": true,
+  "context_dependent_primary_policy": "downgrade_to_validation_only"
+}
+
+QUALIFIED NATIVE-X EVIDENCE:
+[
+  {
+    "item_id": "F:aromatic_pi:FE04",
+    "candidate": "F",
+    "candidate_name_zh": "苯丙氨酸",
+    "interaction_type": "aromatic_pi",
+    "support_level": "explicit",
+    "role_summary": "side chain ring stacking driven by steric hindrance",
+    "evidence_summary": "steric hindrance of side chains leads to efficient ring stacking in polyphenylalanine systems",
+    "title": "Intrinsic Size Parameters for Val, Ile, Leu, Gln, Thr, Phe, and Trp Residues from Ion Mobility Measurements of Polyamino Acid Ions",
+    "abstract": "The conformations of singly charged ions of eight polyamino acids of varying length [polyalanine (3−23 residues), polyglutamine (2−8 residues), polyisoleucine (2−6 residues), polyleucine (2−9 residues), polyphenylalanine (2−7 residues), polythreonine (8−14 residues), polytryptophan (2−9 residues), and polyvaline (2−7 residues)] have been studied by ion mobility methods and molecular modeling simulations. The average amino acid contributions to cross section for 4−9 residue homopolymers agree with intrinsic size parameters for these residues derived from data for tryptic digest peptides [ J. Phys. Chem. B 1999, 103, 1203]. Some variations in residue sizes with changes in oligomer length are apparent for small oligomers and those with polar and aromatic ring side chains. Molecular modeling simulations reveal that all of these homopolymers have roughly spherical (globular) structures. Conformations appear to be influenced by three primary types of interactions: (1) self-solvation of the charge site by backbone carbonyls, a characteristic of all oligomer types; (2) steric hindrance of side chains (leading to efficient ring stacking), a prominent factor for the polyphenylalanine and polytryptophan systems; and (3) hydrogen bonding involving side chains, backbone carbonyls, and the charged residue, apparent in the polyglutamine and polythreonine systems.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "F:steric_packing:FE04",
+    "candidate": "F",
+    "candidate_name_zh": "苯丙氨酸",
+    "interaction_type": "steric_packing",
+    "support_level": "explicit",
+    "role_summary": "steric hindrance of side chains is a prominent factor for polyphenylalanine",
+    "evidence_summary": "steric hindrance of side chains is explicitly identified as a prominent factor for polyphenylalanine, leading to efficient ring stacking",
+    "title": "Intrinsic Size Parameters for Val, Ile, Leu, Gln, Thr, Phe, and Trp Residues from Ion Mobility Measurements of Polyamino Acid Ions",
+    "abstract": "The conformations of singly charged ions of eight polyamino acids of varying length [polyalanine (3−23 residues), polyglutamine (2−8 residues), polyisoleucine (2−6 residues), polyleucine (2−9 residues), polyphenylalanine (2−7 residues), polythreonine (8−14 residues), polytryptophan (2−9 residues), and polyvaline (2−7 residues)] have been studied by ion mobility methods and molecular modeling simulations. The average amino acid contributions to cross section for 4−9 residue homopolymers agree with intrinsic size parameters for these residues derived from data for tryptic digest peptides [ J. Phys. Chem. B 1999, 103, 1203]. Some variations in residue sizes with changes in oligomer length are apparent for small oligomers and those with polar and aromatic ring side chains. Molecular modeling simulations reveal that all of these homopolymers have roughly spherical (globular) structures. Conformations appear to be influenced by three primary types of interactions: (1) self-solvation of the charge site by backbone carbonyls, a characteristic of all oligomer types; (2) steric hindrance of side chains (leading to efficient ring stacking), a prominent factor for the polyphenylalanine and polytryptophan systems; and (3) hydrogen bonding involving side chains, backbone carbonyls, and the charged residue, apparent in the polyglutamine and polythreonine systems.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "W:aromatic_pi:WE04",
+    "candidate": "W",
+    "candidate_name_zh": "色氨酸",
+    "interaction_type": "aromatic_pi",
+    "support_level": "explicit",
+    "role_summary": "Ring stacking contributes to globular conformation",
+    "evidence_summary": "Explicitly states 'efficient ring stacking' driven by steric hindrance as a prominent factor for polytryptophan conformation",
+    "title": "Intrinsic Size Parameters for Val, Ile, Leu, Gln, Thr, Phe, and Trp Residues from Ion Mobility Measurements of Polyamino Acid Ions",
+    "abstract": "The conformations of singly charged ions of eight polyamino acids of varying length [polyalanine (3−23 residues), polyglutamine (2−8 residues), polyisoleucine (2−6 residues), polyleucine (2−9 residues), polyphenylalanine (2−7 residues), polythreonine (8−14 residues), polytryptophan (2−9 residues), and polyvaline (2−7 residues)] have been studied by ion mobility methods and molecular modeling simulations. The average amino acid contributions to cross section for 4−9 residue homopolymers agree with intrinsic size parameters for these residues derived from data for tryptic digest peptides [ J. Phys. Chem. B 1999, 103, 1203]. Some variations in residue sizes with changes in oligomer length are apparent for small oligomers and those with polar and aromatic ring side chains. Molecular modeling simulations reveal that all of these homopolymers have roughly spherical (globular) structures. Conformations appear to be influenced by three primary types of interactions: (1) self-solvation of the charge site by backbone carbonyls, a characteristic of all oligomer types; (2) steric hindrance of side chains (leading to efficient ring stacking), a prominent factor for the polyphenylalanine and polytryptophan systems; and (3) hydrogen bonding involving side chains, backbone carbonyls, and the charged residue, apparent in the polyglutamine and polythreonine systems.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  },
+  {
+    "item_id": "W:steric_packing:WE04",
+    "candidate": "W",
+    "candidate_name_zh": "色氨酸",
+    "interaction_type": "steric_packing",
+    "support_level": "explicit",
+    "role_summary": "Steric hindrance of side chains drives efficient ring stacking and influences conformation",
+    "evidence_summary": "Explicitly states 'steric hindrance of side chains (leading to efficient ring stacking)' as a primary interaction type for polytryptophan",
+    "title": "Intrinsic Size Parameters for Val, Ile, Leu, Gln, Thr, Phe, and Trp Residues from Ion Mobility Measurements of Polyamino Acid Ions",
+    "abstract": "The conformations of singly charged ions of eight polyamino acids of varying length [polyalanine (3−23 residues), polyglutamine (2−8 residues), polyisoleucine (2−6 residues), polyleucine (2−9 residues), polyphenylalanine (2−7 residues), polythreonine (8−14 residues), polytryptophan (2−9 residues), and polyvaline (2−7 residues)] have been studied by ion mobility methods and molecular modeling simulations. The average amino acid contributions to cross section for 4−9 residue homopolymers agree with intrinsic size parameters for these residues derived from data for tryptic digest peptides [ J. Phys. Chem. B 1999, 103, 1203]. Some variations in residue sizes with changes in oligomer length are apparent for small oligomers and those with polar and aromatic ring side chains. Molecular modeling simulations reveal that all of these homopolymers have roughly spherical (globular) structures. Conformations appear to be influenced by three primary types of interactions: (1) self-solvation of the charge site by backbone carbonyls, a characteristic of all oligomer types; (2) steric hindrance of side chains (leading to efficient ring stacking), a prominent factor for the polyphenylalanine and polytryptophan systems; and (3) hydrogen bonding involving side chains, backbone carbonyls, and the charged residue, apparent in the polyglutamine and polythreonine systems.",
+    "qualification": "intrinsic",
+    "native_x_attribution": "yes"
+  }
+]
+
+RETURN SCHEMA:
+{
+  "domain_id": "D1",
+  "indicators": [
+    {
+      "indicator_id": "I1",
+      "indicator_name": "one concise measurable physicochemical descriptor",
+      "measurement_target": "standard scientific property name; one property only",
+      "scientific_definition": "what is measured",
+      "why_relevant_to_dlys_system": "why it helps compare candidates in this domain after fixing D-Lys",
+      "role": "primary_rank/hard_gate/tie_break/validation_only",
+      "preferred_direction": "higher/lower/closer_to_zero/presence/absence/target/context_dependent",
+      "target_value": null,
+      "basis": "literature/system_constraint/both",
+      "supporting_evidence_ids": [
+        "item_id from supplied evidence when applicable"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "why this is distinct from other returned indicators",
+      "notes": "scope/limitations"
+    }
+  ],
+  "knowledge_gaps": [
+    "scientific gaps or unavailable mature single-residue metrics"
+  ],
+  "notes": [
+    "domain-level notes"
+  ]
+}

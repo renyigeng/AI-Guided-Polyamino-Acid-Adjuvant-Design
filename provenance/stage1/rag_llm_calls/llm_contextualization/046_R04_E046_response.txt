@@ -1,0 +1,29 @@
+{
+  "summary": "Poly-l-arginine and dextran sulfate are used to encapsulate whole cancer cells, forming particles that increase dendritic cell uptake of cell lysate and promote antigen cross-presentation; immunogenicity can be enhanced by a TLR7-agonist.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "encapsulation of whole cancer cells in polyelectrolyte particles",
+    "particle stability and non-release of cell proteins",
+    "nontoxicity in vitro",
+    "increased uptake of cell lysate by dendritic cells",
+    "promotion of antigen cross-presentation by dendritic cells",
+    "enhanced immunogenicity via surface adsorption of TLR7-agonist"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "particles are stable and do not release cell proteins in PBS buffer",
+    "particles are nontoxic",
+    "strongly increase uptake of cell lysate by dendritic cells",
+    "promote antigen cross-presentation",
+    "immunogenicity can be enhanced by surface adsorption of polymer-substituted TLR7-agonist"
+  ],
+  "material_or_molecular_context": "polyelectrolyte particles composed of poly-l-arginine (cationic polypeptide) and dextran sulfate (anionic polysaccharide), enrobing whole cancer cells",
+  "biological_context": "in vitro experiments with dendritic cells and cancer cells",
+  "limitations_for_current_question": [
+    "in vitro data only; no in vivo immune response or vaccine outcome data",
+    "poly-l-arginine is used as part of a composite particle, not as a standalone material",
+    "no direct comparison with other arginine-based polypeptides or polyarginine alone",
+    "cross-presentation assessed in vitro; actual T cell activation not demonstrated"
+  ],
+  "supporting_text": "strongly increase uptake of cell lysate by dendritic cells"
+}

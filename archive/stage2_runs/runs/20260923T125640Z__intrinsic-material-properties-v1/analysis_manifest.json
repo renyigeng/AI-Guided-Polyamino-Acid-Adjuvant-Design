@@ -1,0 +1,92 @@
+{
+  "module": "intrinsic_material_properties_v1",
+  "version": "1.0.1",
+  "created_at_utc": "2026-09-23T12:56:41.008583+00:00",
+  "candidate_count": 17,
+  "candidate17": {
+    "aromatic_hydrophobic": [
+      "F",
+      "W",
+      "Y"
+    ],
+    "nonaromatic_hydrophobic": [
+      "A",
+      "C",
+      "I",
+      "L",
+      "M",
+      "V"
+    ],
+    "polar_interaction_conformational": [
+      "N",
+      "Q",
+      "S",
+      "T",
+      "D",
+      "E",
+      "G",
+      "P"
+    ]
+  },
+  "sources": {
+    "kidera_and_hydropathy": "peptides.py 0.5.0; Kidera et al. 1985 and Kyte-Doolittle 1982 tables exposed by the package",
+    "nominal_sidechain_charge": "peptides.py Henderson-Hasselbalch charge; computed as charge(GGXGG)-charge(GGGGG) at pH 7.4 to cancel terminal contributions",
+    "standard_structure": "RDKit Chem.MolFromFASTA(residue, flavor=0), which constructs standard L-amino-acid peptide chemistry from IUPAC one-letter codes",
+    "sidechain_definition": "RDKit PDB residue atom names; backbone atoms N/CA/C/O/OXT are excluded automatically",
+    "structural_features": "RDKit aromaticity/ring perception and Lipinski donor/acceptor SMARTS; small functional-group flags are substructure matches restricted to side-chain atoms"
+  },
+  "peptides_settings": {
+    "version": "0.5.0",
+    "hydropathy_scale": "KyteDoolittle",
+    "charge_pH": 7.4,
+    "pka_scale": "Lehninger",
+    "internal_charge_flank": "GG"
+  },
+  "redundancy": {
+    "continuous_features": [
+      "KF1",
+      "KF2",
+      "KF3",
+      "KF4",
+      "KF5",
+      "KF6",
+      "KF7",
+      "KF8",
+      "KF9",
+      "KF10",
+      "kyte_doolittle",
+      "nominal_sidechain_charge_pH7_4",
+      "sidechain_heavy_atom_count",
+      "sidechain_heteroatom_count",
+      "sidechain_aromatic_atom_count",
+      "sidechain_HBD_reference",
+      "sidechain_HBA_reference"
+    ],
+    "flag_abs_spearman_at_or_above": 0.85,
+    "note": "Redundancy flags are descriptive only. They do not automatically delete features or set MCDA weights."
+  },
+  "method_freeze": [
+    "D-Lys is fixed upstream; this table describes only the second-block candidate X.",
+    "The 17 candidates remain in the three pre-frozen mechanism domains; no clustering is performed.",
+    "No final candidate ranking, TOPSIS score, Pareto score, or learned weight is produced in this module.",
+    "Kidera factors represent a continuous physicochemical space; their signs are not interpreted as universally good or bad.",
+    "Kyte-Doolittle hydropathy is retained as one human-readable hydrophobicity axis, not duplicated with multiple hydropathy scales in V1.",
+    "Nominal side-chain charge is an idealized pH 7.4 descriptor, not the measured charge of poly(X) in a material environment.",
+    "HBD/HBA values are reference-structure side-chain counts and are not a pH-specific protonation-state simulation.",
+    "RDKit whole-free-amino-acid MolLogP/TPSA/molecular-weight descriptor panels are deliberately excluded from the core matrix.",
+    "Known F/L/Q experimental outcomes are not used to select fields, tune thresholds, or assign weights.",
+    "Side-chain branch distance is nullable by design when no SP3 side-chain branch point exists; NA is not imputed to zero."
+  ],
+  "packages": {
+    "peptides": "0.5.0",
+    "rdkit": "2026.3.6",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  },
+  "config_sha256": "295ac6088fe3e5118f8e42b17f426de22c7c5f63af047096142c9308e27c55ba",
+  "outputs": {
+    "intrinsic_table": "intrinsic_properties_candidate17.csv",
+    "spearman_matrix": "continuous_feature_spearman.csv",
+    "redundancy_flags": "continuous_feature_redundancy_flags.csv"
+  }
+}

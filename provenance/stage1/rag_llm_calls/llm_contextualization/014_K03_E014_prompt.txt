@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K03
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 41159133
+DOI: 10.1093/rb/rbaf100
+
+TITLE:
+Polylysine-based copolymer self-assemblies featuring acidity-activated structural transformation perceives and relieves sepsis.
+
+ABSTRACT:
+Sepsis, a systemic inflammatory response syndrome, causes severe immune dysfunction and is associated with high mortality because of the lack of effective clinical interventions. To address the pathogenesis of sepsis, such as bacterial infection and the exacerbation of inflammation and oxidative stress, an acidity-activated polylysine (PLL)-based copolymer self-assembly (PPDD) was developed. This material was synthesized by conjugating polyethylene glycol-modified PLL (PEG-PLL) with 2,7-dichlorofluorescein diacetate (DCFH-DA). PPDD, with its PLL-derived antibacterial and antioxidant properties, can scavenge reactive oxygen species (ROS), mitigate inflammation and eliminate bacteria. These combined actions help alleviate the symptoms of sepsis and improve survival rates. <i>In vitro</i> and <i>in vivo</i> experiments confirmed that this approach can rapidly neutralize ROS, significantly reduce pro-inflammatory cytokine cascades and effectively clear bacteria, thereby improving physiological stability and survival rates. Notably, Day-14 survival reached 80% in the PPDD-treated group compared with 20% in septic controls. More significantly, when the PPDD copolymer self-assembles into the acidic sepsis microenvironment, it disassembles and reconfigures from a spherical to an ellipsoidal structure. This acidity-activated structural transformation exposes more bioactive components for ROS scavenging, which is beneficial for removing oxidative stress, killing bacteria, reducing inflammation and alleviating sepsis. Following PPDD administration, systemic levels of TNF-α, IL-6, IL-10 and CRP were reduced by 38.1%, 46.0%, 76.7% and 32.9%, respectively, confirming its robust anti-inflammatory effect. Additionally, the conjugated DCFH-DA, a cell-permeable fluorescent probe, enables monitoring of oxidative stress and tracing the evolution of sepsis, especially after treatment. A comprehensive biosafety assay revealed no detectable hemolysis or organ toxicity, substantiating the translational potential of this platform. Our biocompatible and acidic sepsis environment-responsive PPDD paves a solid foundation for the clinical diagnosis and treatment of sepsis.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

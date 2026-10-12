@@ -1,0 +1,26 @@
+{
+  "summary": "This article describes a lipoMAP system using alternating chiralities of palmitoyl lysines (D and L) but does not provide direct comparative evidence between L-lysine and D-lysine in the requested systems. The alternating chirality was chosen based on molecular modeling to mimic phosphatidylcholine, not from functional comparisons.",
+  "relevance_score": 1,
+  "reported_outcomes": [
+    "Development of lipophilic multiple antigen peptide (lipoMAP) system with built-in lipophilic adjuvant",
+    "Elicitation of cytotoxic T-lymphocytes (CTLs)",
+    "Structure-function study with eight models using an 18-residue HIV-1 gp120 peptide"
+  ],
+  "reported_numeric_results": [
+    "Three palmitic acids elicited humoral responses in oil-based emulsion and liposomes but not in water or alum",
+    "Two palmitoyl lysines (PL) best incorporated in liposomes and elicited significant immune response and CTLs"
+  ],
+  "reported_qualitative_findings": [
+    "Alternating D and L Lys(Pal) was found via molecular modeling to best mimic phosphatidylcholine",
+    "L-Ser-L-Ser linker crucial; replacement with L-Ser-D-Ser led to marked decrease in immune response",
+    "Underlipidated (one PL) or overlipidated (four PLs) constructs were ineffective"
+  ],
+  "material_or_molecular_context": "lipoMAP constructs with tetravalent core, β-alanyl-lysine branching, Ser-Ser linker, and palmitoyl lysines with alternating chirality",
+  "biological_context": "HIV-1 gp120 peptide antigens; immune responses (humoral and CTL) in mouse models (implied by adjuvant studies)",
+  "limitations_for_current_question": [
+    "No direct comparison of L-lysine vs D-lysine; both are used together in alternating fashion",
+    "Does not address differences in polypeptide, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, antigen-presentation, or immunotherapy systems",
+    "Molecular modeling statement is not experimental comparative data"
+  ],
+  "supporting_text": "Alternating palmitoyl lysine (PL) was introduced because D and L Lys (Pal) was found via molecular modeling to best mimic phosphatidylcholine"
+}

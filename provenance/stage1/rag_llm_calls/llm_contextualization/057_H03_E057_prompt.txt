@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H03
+CANDIDATE HINT: K;H
+CHIRALITY HINT: 
+PMID: 25144273
+DOI: 10.1021/bm500843r
+
+TITLE:
+Role of polymeric endosomolytic agents in gene transfection: a comparative study of poly(L-lysine) grafted with monomeric L-histidine analogue and poly(L-histidine).
+
+ABSTRACT:
+Endosomal entrapment is one of the main barriers that must be overcome for efficient gene expression along with cell internalization, DNA release, and nuclear import. Introducing pH-sensitive ionizable groups into the polycationic polymers to increase gene transfer efficiency has proven to be a useful method; however, a comparative study of introducing equal numbers of ionizable groups in both polymer and monomer forms, has not been reported. In this study, we prepared two types of histidine-grafted poly(L-lysine) (PLL), a stacking form of poly(L-histidine) (PLL-g-PHis) and a mono-L-histidine (PLL-g-mHis) with the same number of imidazole groups. These two types of histidine-grafted PLL, PLL-g-PHis and PLL-g-mHis, showed profound differences in hemolytic activity, cellular uptake, internalization, and transfection efficiency. Cy3-labeled PLL-g-PHis showed strong fluorescence in the nucleus after internalization, and high hemolytic activity upon pH changes was also observed from PLL-g-PHis. The arrangement of imidazole groups from PHis also provided higher gene expression than mHis due to its ability to escape the endosome. mHis or PHis grafting reduced the cytotoxicity of PLL and changed the rate of cellular uptake by changing the quantity of free ε-amines available for gene condensation. The subcellular localization of PLL-g-PHis/pDNA measured by YOYO1-pDNA intensity was highest inside the nucleus, while the lysotracker, which stains the acidic compartments was lowest among these polymers. Thus, the polymeric histidine arrangement demonstrate the ability to escape the endosome and trigger rapid release of polyplexes into the cytosol, resulting in a greater amount of pDNA available for translocation to the nucleus and enhanced gene expression.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

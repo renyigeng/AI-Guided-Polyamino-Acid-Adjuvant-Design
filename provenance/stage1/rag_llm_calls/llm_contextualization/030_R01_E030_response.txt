@@ -1,0 +1,22 @@
+{
+  "summary": "This article describes IC31 and IC30, vaccine adjuvants based on peptide delivery systems. IC30 is poly-L-arginine, which when combined with TLR9 agonist oligodeoxynucleotides (forming IC31) synergistically enhances immune responses. This is relevant to arginine-based polypeptide materials for vaccine adjuvant delivery.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "vaccine-induced immune response",
+    "protection",
+    "type 1-driven immunity"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Combining oligodeoxynucleotides with poly-L-arginine dramatically improves and synergizes with the adjuvant action of TLR9 agonists",
+    "IC31 has a promising profile in both preclinical and clinical trials"
+  ],
+  "material_or_molecular_context": "poly-L-arginine (IC30) combined with TLR9 agonist oligodeoxynucleotides (IC31)",
+  "biological_context": "vaccine settings, preclinical and clinical trials",
+  "limitations_for_current_question": [
+    "Does not assess delivery of mRNA or specific biomacromolecules (only adjuvant effect)",
+    "Focuses on combination with TLR9 agonist, not polyarginine alone as a delivery system",
+    "No direct mention of antigen, protein, or vaccine delivery mechanisms"
+  ],
+  "supporting_text": "poly-L-arginine (IC30) dramatically improves and synergizes with the adjuvant action"
+}

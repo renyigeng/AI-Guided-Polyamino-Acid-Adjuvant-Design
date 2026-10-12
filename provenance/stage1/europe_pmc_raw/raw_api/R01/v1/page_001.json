@@ -1,0 +1,489 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"vaccine delivery\" OR \"antigen delivery\") AND TITLE_ABS:(\"cellular uptake\" OR \"antigen presentation\")",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "29725329",
+        "source": "MED",
+        "pmid": "29725329",
+        "pmcid": "PMC5916973",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5916973"
+          ]
+        },
+        "doi": "10.3389/fimmu.2018.00791",
+        "title": "Polymeric Nanocapsules for Vaccine Delivery: Influence of the Polymeric Shell on the Interaction With the Immune System.",
+        "authorString": "Peleteiro M, Presas E, González-Aramundiz JV, Sánchez-Correa B, Simón-Vázquez R, Csaba N, Alonso MJ, González-Fernández Á.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Peleteiro M",
+              "lastName": "Peleteiro",
+              "firstName": "Mercedes",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1752-1331"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Inmunología, Centro de Investigaciones Biomédicas (CINBIO) (Centro Singular de Investigación de Galicia), Instituto de Investigación Sanitaria Galicia Sur, Universidade de Vigo, Vigo, Spain."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Presas E",
+              "lastName": "Presas",
+              "firstName": "Elena",
+              "initials": "E",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmacy and Pharmaceutical Technology, School of Pharmacy, University of Santiago de Compostela, Santiago de Compostela, Spain."
+                  },
+                  {
+                    "affiliation": "Center for Research in Molecular Medicine and Chronic Diseases (CIMUS), University of Santiago de Compostela, Santiago de Compostela, Spain."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "González-Aramundiz JV",
+              "lastName": "González-Aramundiz",
+              "firstName": "Jose Vicente",
+              "initials": "JV",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7856-9211"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Research in Molecular Medicine and Chronic Diseases (CIMUS), University of Santiago de Compostela, Santiago de Compostela, Spain."
+                  },
+                  {
+                    "affiliation": "Departamento de Farmacia, Facultad de Química, Pontificia Universidad Católica de Chile, Santiago, Chile."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sánchez-Correa B",
+              "lastName": "Sánchez-Correa",
+              "firstName": "Beatriz",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Inmunología, Centro de Investigaciones Biomédicas (CINBIO) (Centro Singular de Investigación de Galicia), Instituto de Investigación Sanitaria Galicia Sur, Universidade de Vigo, Vigo, Spain."
+                  },
+                  {
+                    "affiliation": "Immunology Unit, University of Extremadura, Cáceres, Spain."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Simón-Vázquez R",
+              "lastName": "Simón-Vázquez",
+              "firstName": "Rosana",
+              "initials": "R",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8963-6547"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Inmunología, Centro de Investigaciones Biomédicas (CINBIO) (Centro Singular de Investigación de Galicia), Instituto de Investigación Sanitaria Galicia Sur, Universidade de Vigo, Vigo, Spain."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Csaba N",
+              "lastName": "Csaba",
+              "firstName": "Noemi",
+              "initials": "N",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6187-7717"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmacy and Pharmaceutical Technology, School of Pharmacy, University of Santiago de Compostela, Santiago de Compostela, Spain."
+                  },
+                  {
+                    "affiliation": "Center for Research in Molecular Medicine and Chronic Diseases (CIMUS), University of Santiago de Compostela, Santiago de Compostela, Spain."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Alonso MJ",
+              "lastName": "Alonso",
+              "firstName": "María J",
+              "initials": "MJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmacy and Pharmaceutical Technology, School of Pharmacy, University of Santiago de Compostela, Santiago de Compostela, Spain."
+                  },
+                  {
+                    "affiliation": "Center for Research in Molecular Medicine and Chronic Diseases (CIMUS), University of Santiago de Compostela, Santiago de Compostela, Spain."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "González-Fernández Á",
+              "lastName": "González-Fernández",
+              "firstName": "África",
+              "initials": "Á",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9226-4825"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Inmunología, Centro de Investigaciones Biomédicas (CINBIO) (Centro Singular de Investigación de Galicia), Instituto de Investigación Sanitaria Galicia Sur, Universidade de Vigo, Vigo, Spain."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7856-9211"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8963-6547"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6187-7717"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9226-4825"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1752-1331"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3812-7413"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "9",
+          "journalIssueId": 2647771,
+          "dateOfPublication": "2018 ",
+          "monthOfPublication": 0,
+          "yearOfPublication": 2018,
+          "journal": {
+            "medlineAbbreviation": "Front Immunol",
+            "title": "Frontiers in immunology",
+            "essn": "1664-3224",
+            "issn": "1664-3224",
+            "isoabbreviation": "Front Immunol",
+            "nlmid": "101560960"
+          },
+          "printPublicationDate": "2018-01-01"
+        },
+        "pubYear": "2018",
+        "pageInfo": "791",
+        "abstractText": "The use of biomaterials and nanosystems in antigen delivery has played a major role in the development of novel vaccine formulations in the last few decades. In an effort to gain a deeper understanding of the interactions between these systems and immunocompetent cells, we describe here a systematic <i>in vitro</i> and <i>in vivo</i> study on three types of polymeric nanocapsules (NCs). These carriers, which contained protamine (PR), polyarginine (PARG), or chitosan (CS) in the external shell, and their corresponding nanoemulsion were prepared, and their main physicochemical properties were characterized. The particles had a mean particle size in the range 250-450 nm and a positive zeta potential (~30-40 mV). The interaction of the nanosystems with different components of the immune system were investigated by measuring cellular uptake, reactive oxygen species production, activation of the complement cascade, cytokine secretion profile, and MAP kinases/nuclear factor κB activation. The results of these <i>in vitro</i> cell experiments showed that the NC formulations that included the arginine-rich polymers (PR and PARG) showed a superior ability to trigger different immune processes. Considering this finding, protamine and polyarginine nanocapsules (PR and PARG NCs) were selected to assess the association of the recombinant hepatitis B surface antigen (rHBsAg) as a model antigen to evaluate their ability to produce a protective immune response in mice. In this case, the results showed that PR NCs elicited higher IgG levels than PARG NCs and that this IgG response was a combination of anti-rHBsAg IgG1/IgG2a. This work highlights the potential of PR NCs for antigen delivery as an alternative to other positively charged nanocarriers.",
+        "affiliation": "Inmunología, Centro de Investigaciones Biomédicas (CINBIO) (Centro Singular de Investigación de Galicia), Instituto de Investigación Sanitaria Galicia Sur, Universidade de Vigo, Vigo, Spain.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Ministerio de Economía y Competitividad",
+              "grantId": "SAF2011-30337-C02-02 and BIO2014-53091-C3-1-R",
+              "orderIn": 0
+            },
+            {
+              "agency": "European Regional Development Fund",
+              "orderIn": 0
+            },
+            {
+              "agency": "Consellería de Cultura, Educación e Ordenación Universitaria, Xunta de Galicia",
+              "grantId": "ED431C 2016041",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protamines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Vaccines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adjuvants, Immunologic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hepatitis B Surface Antigens",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Carriers",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nanocapsules",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Hepatitis B",
+            "Antigen",
+            "Vaccination",
+            "Adjuvant",
+            "rHBsAg",
+            "Nanocapsules",
+            "Nanovaccines"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Vaccines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Hepatitis B Surface Antigens",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Protamines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Adjuvants, Immunologic",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Drug Carriers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Nanocapsules",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2018.00791/pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fimmu.2018.00791"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC5916973"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC5916973?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 32,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2019-06-07",
+        "dateOfCreation": "2018-05-05",
+        "dateOfRevision": "2019-06-07",
+        "electronicPublicationDate": "2018-04-19",
+        "firstPublicationDate": "2018-04-19",
+        "firstIndexDate": "2018-05-05",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

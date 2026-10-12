@@ -1,0 +1,24 @@
+{
+  "summary": "L-lysine-directed chiral AlOOH nanoadjuvants enhance dendritic cell antigen uptake, accelerate lymph node trafficking, and boost antibody titers in HPV and HBsAg vaccination models, demonstrating chirality-controlled adjuvanticity.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "antigen uptake by dendritic cells in vitro",
+    "antigen-specific antibody titers in HPV and HBsAg vaccination models",
+    "antigen release from injection site and trafficking into lymph nodes"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "l-AlOOH exhibits lower adsorption coefficient for HPV 18 L1 VLPs compared to d-AlOOH",
+    "l-AlOOH facilitates accelerated antigen release and lymph node trafficking",
+    "l-AlOOH significantly enhances antigen uptake by dendritic cells compared to achiral and d-AlOOH",
+    "l-AlOOH boosts antigen-specific antibody titers, indicating chirality-controlled humoral immunity"
+  ],
+  "material_or_molecular_context": "Chiral aluminum oxyhydroxide (AlOOH) nanoadjuvants prepared using L- or D-lysine hydrochloride as structure-directing agents",
+  "biological_context": "In vitro dendritic cells; in vivo mouse models vaccinated with HPV type 18 L1 VLPs or hepatitis B surface antigen",
+  "limitations_for_current_question": [
+    "L-lysine is used only as a structure-directing agent, not as an active immune component; no L-lysine-containing polypeptide, polymer, or nanoparticle system per se",
+    "Chirality effect is attributed to AlOOH, not to L-lysine itself",
+    "No direct comparison with L-lysine alone or L-lysine-based polymers/nanoparticles"
+  ],
+  "supporting_text": "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH."
+}

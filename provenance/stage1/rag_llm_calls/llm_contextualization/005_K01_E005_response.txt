@@ -1,0 +1,21 @@
+{
+  "summary": "This study compares hyperbranched polylysine with linear and dendritic polylysine for DNA delivery, finding hyperbranched polylysine superior in transfection efficiency and protein production in CHO cells, with mechanistic insights into uptake and trafficking.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "eGFP and IgG production in transient gene expression experiments with CHO DG44 cells"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Protein production generally increased with increasing molecular weight",
+    "At comparable molecular weight, hyperbranched analogs were superior to dendritic and linear polylysines",
+    "Hyperbranched polylysine can be produced at low costs, in large quantities, and is partially biodegradable"
+  ],
+  "material_or_molecular_context": "Polylysine variants: linear, dendritic, and hyperbranched polylysine",
+  "biological_context": "CHO DG44 cells (in vitro)",
+  "limitations_for_current_question": [
+    "Study focuses on DNA delivery, not directly on antigen, protein, vaccine, or mRNA delivery",
+    "In vitro only; no in vivo or immune context",
+    "No direct comparison to other delivery systems for vaccines or mRNA"
+  ],
+  "supporting_text": "hyperbranched polylysine is an interesting, alternative synthetic gene carrier"
+}

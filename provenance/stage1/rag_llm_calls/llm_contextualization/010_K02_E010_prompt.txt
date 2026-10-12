@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K02
+CANDIDATE HINT: K;R
+CHIRALITY HINT: 
+PMID: 27877476
+DOI: 10.1088/1468-6996/13/1/015009
+
+TITLE:
+Quantitative comparison between poly(L-arginine) and poly(L-lysine) at each step of polyplex-based gene transfection using a microinjection technique.
+
+ABSTRACT:
+Among the well-studied polypeptide-type gene carriers, transfection efficiency is empirically known to be higher for poly(L-arginine) (PR) than poly(L-lysine) (PK). The big difference between PR and PK should be determined at one of the intracellular trafficking steps based on the different charge densities, structures or PKa values. However, the endosomal escape and the intranuclear transcription efficiency in living cells have not been clarified yet. In this study, a novel method for quantifying the intranuclear transcription efficiency and the nuclear transport of the polyplex is established based on the nuclear and the cytosolic microinjection technique, and the results for PK and PR with different molecular weights (MWs) are compared in living cells. The intranuclear transcription efficiency is the same in PR and PK and it decreases rapidly with increasing MW, in spite of the commonly measured transfection efficiency. The transcription efficiency is strongly suppressed at high MW and strongly correlates with the polyplex forming ability expressed as a critical ratio of the number of polypeptide cationic groups to the number of pDNA anionic groups. When considered with the results of the cellular uptake and <i>in vitro</i> transfection with or without chloroquine, the rate-limiting step for their gene transfer is the buffering effect-independent endosomal escape.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

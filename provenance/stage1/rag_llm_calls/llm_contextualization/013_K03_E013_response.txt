@@ -1,0 +1,28 @@
+{
+  "summary": "This study evaluates a star-arranged poly-l-lysine antimicrobial polymer (16-PLL₁₀) for antimicrobial activity and toxicity. At bactericidal concentrations, 16-PLL₁₀ was toxic to human keratinocytes and caused hemolysis. Chemical modifications (TFA, PEGylation) only moderately reduced cytotoxicity and hemolysis. The material is relevant to safety concerns but shows limited selectivity for further development.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Minimum bactericidal concentration determination",
+    "Human keratinocyte viability assay",
+    "Human erythrocyte haemolysis assay"
+  ],
+  "reported_numeric_results": [
+    "Minimum bactericidal concentration of 16-PLL₁₀ ranged from 1.25 µM to ≥25 µM",
+    "At 2.5 µM, 16-PLL₁₀ was broadly bactericidal against ESKAPE strains/wound isolates",
+    "Log-reduction in c.f.u. per ml after 1 h ranged from 0.3 (E. cloacae) to 5.6 (K. pneumoniae)"
+  ],
+  "reported_qualitative_findings": [
+    "At bactericidal concentrations, 16-PLL₁₀ was toxic to human keratinocyte and erythrocytes",
+    "Conjugates (TFA-16-PLL₁₀ and PEGylated 16-PLL₁₀) only moderately reduced cytotoxicity and haemolysis",
+    "Due to poor selectivity indices, further development of 16-PLL₁₀ is unlikely warranted"
+  ],
+  "material_or_molecular_context": "Star-arranged poly-L-lysine-based 16-armed antimicrobial peptide polymer (16-PLL₁₀) and its TFA and PEGylated conjugates",
+  "biological_context": "Human keratinocytes, human erythrocytes, clinical wound isolates of ESKAPE pathogens",
+  "limitations_for_current_question": [
+    "In vitro only; no in vivo safety data",
+    "Specific to star-arranged PLL, not general polylysine",
+    "Modifications did not fully resolve toxicity",
+    "Hemolysis and cytotoxicity tested only at bactericidal concentrations"
+  ],
+  "supporting_text": "At bactericidal concentrations, 16-PLL₁₀ was toxic to human keratinocyte and erythrocytes"
+}

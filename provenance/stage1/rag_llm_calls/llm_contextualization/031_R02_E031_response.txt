@@ -1,0 +1,19 @@
+{
+  "summary": "This commentary discusses key chemical and biological aspects of cationic peptide internalization, including polyarginine, and its physiological relevance for facilitating entry into mammalian cells.",
+  "relevance_score": 5,
+  "reported_outcomes": [
+    "Discussion of key chemical and biological aspects of cationic peptide internalization"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Facilitating entry of molecules into mammalian cells is of great interest",
+    "Natural protein transduction domains and artificial ones, including polyarginine, provide a means to achieve this goal"
+  ],
+  "material_or_molecular_context": "cationic peptides, including polyarginine",
+  "biological_context": "mammalian cells (general, not specified)",
+  "limitations_for_current_question": [
+    "This is a commentary/review, not original experimental data on uptake mechanisms or endosomal behavior",
+    "Lacks specific experimental conditions, cell types, or quantitative measurements of internalization"
+  ],
+  "supporting_text": "Natural protein transduction domains and artificial ones, including polyarginine, provide a means to achieve this goal."
+}

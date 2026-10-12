@@ -1,0 +1,852 @@
+[
+  {
+    "evidence_id": "E093",
+    "query_id": "KD02",
+    "question": "What direct comparative evidence is most relevant to differences between L-lysine and D-lysine in polypeptide, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, antigen-presentation, or immunotherapy systems?",
+    "summary": "This study directly compares L-lysine (P_L-K) and D-lysine (P_D-K) chiral polypeptide nanoparticles as nanoadjuvants. P_D-K-OVA outperformed P_L-K-OVA in inducing dendritic cell maturation, antigen cross-presentation, and adaptive immune response, leading to superior tumor inhibition in a melanoma model.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell maturation",
+      "antigen cross-presentation",
+      "adaptive immune response",
+      "tumor prevention and therapy (B16-OVA melanoma)"
+    ],
+    "reported_numeric_results": [
+      "P_D-K-OVA achieved a tumor inhibition rate of 94.9%",
+      "P_D-K-OVA combined with anti-PD-1 antibody achieved 97.0% tumor inhibition"
+    ],
+    "reported_qualitative_findings": [
+      "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to P_L-K-OVA.",
+      "P_D-K-OVA effectively prevented and treated OVA-expressed B16-OVA melanoma."
+    ],
+    "material_or_molecular_context": "Chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K)",
+    "biological_context": "Mouse dendritic cells (in vitro), B16-OVA melanoma model (in vivo)",
+    "limitations": [
+      "Only tested with OVA as model antigen; not generalized to other antigens.",
+      "Single tumor model (B16-OVA); no other cancer or infectious disease models.",
+      "No direct human cell or in vivo human data provided.",
+      "Only two chiral variants compared; other chiral forms or enantiomers not examined."
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 1,
+    "chirality_evidence_role": "direct_L_vs_D_comparison",
+    "chirality_role_priority": 3
+  },
+  {
+    "evidence_id": "E096",
+    "query_id": "KD03",
+    "question": "What direct evidence explicitly compares or co-evaluates D-lysine and L-lysine in immune polypeptide, polymer, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, or antigen-presentation systems?",
+    "summary": "This study directly compares poly(D-lysine)-based (P_D-K) and poly(L-lysine)-based (P_L-K) nanoadjuvants in nanovaccines for cancer immunotherapy. P_D-K-OVA more effectively induced dendritic cell maturation, antigen cross-presentation, and adaptive immune responses than P_L-K-OVA, leading to superior tumor prevention and therapy in a B16-OVA melanoma model.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell maturation",
+      "antigen cross-presentation",
+      "adaptive immune response",
+      "cancer prevention and therapy in B16-OVA melanoma model"
+    ],
+    "reported_numeric_results": [
+      "loading efficiencies of almost 100%",
+      "tumor inhibition rate of 94.9%",
+      "tumor inhibition rate of 97.0% by combining with anti-PD-1 antibody"
+    ],
+    "reported_qualitative_findings": [
+      "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to P_L-K-OVA",
+      "P_D-K-OVA effectively prevented and treated the OVA-expressed B16-OVA melanoma model"
+    ],
+    "material_or_molecular_context": "chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K), self-assembled into ~30 nm nanoparticles",
+    "biological_context": "dendritic cells, OVA-specific adaptive immunity, B16-OVA melanoma mouse model",
+    "limitations": [
+      "Compares D- vs L-lysine only in the context of block copolymers with poly(L-phenylalanine), not as free amino acids or in other polymer architectures",
+      "Uses only one model antigen (OVA) and one tumor model (B16-OVA melanoma)",
+      "Does not address D/L-lysine effects in other immune systems (e.g., human cells or other antigen presentation contexts)"
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 1,
+    "chirality_evidence_role": "direct_L_vs_D_comparison",
+    "chirality_role_priority": 3
+  },
+  {
+    "evidence_id": "E094",
+    "query_id": "KD02",
+    "question": "What direct comparative evidence is most relevant to differences between L-lysine and D-lysine in polypeptide, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, antigen-presentation, or immunotherapy systems?",
+    "summary": "L-lysine induces chiral AlOOH with stronger interaction with aluminum, lower aspect ratio, lower adsorption coefficient for HPV VLP (due to chirality mismatch), faster antigen release and lymph node trafficking, higher dendritic cell uptake, and higher antibody titers compared to D-lysine-induced AlOOH.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "antigen adsorption coefficient",
+      "antigen release rate",
+      "lymph node trafficking",
+      "dendritic cell uptake",
+      "antigen-specific antibody titers"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "l-AlOOH exhibits a lower adsorption coefficient for HPV 18 L1 VLPs compared to d-AlOOH, attributed to chirality mismatch.",
+      "l-AlOOH facilitates accelerated antigen release from the injection site and trafficking into the lymph nodes.",
+      "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH.",
+      "In HPV and HBsAg vaccination models, l-AlOOH boosts antigen-specific antibody titers, indicating chirality-controlled humoral immunity."
+    ],
+    "material_or_molecular_context": "chiral aluminum oxyhydroxide nanoadjuvants (l-/d-AlOOH) synthesized using L- or D-lysine hydrochloride as structure-directing agents",
+    "biological_context": "human papillomavirus (HPV) type 18 L1 virus-like particles, hepatitis B surface antigen (HBsAg) vaccination models; in vitro dendritic cells; in vivo injection site and lymph nodes",
+    "limitations": [
+      "Lysine is used as a structure-directing agent, not as the final material; free lysine is not directly studied.",
+      "Comparisons are between L-AlOOH and D-AlOOH, not between L-lysine and D-lysine as molecules.",
+      "Study is specific to aluminum oxyhydroxide nanoadjuvants, not generalizable to polypeptide, nanoparticle, or immunotherapy systems without similar chirality engineering."
+    ],
+    "title": "Chiral-Structured Aluminum Oxyhydroxide Nanoadjuvants for Prophylactic Vaccines.",
+    "pmid": "41293927",
+    "doi": "10.1021/acsami.5c17645",
+    "medcpt_rank": 2,
+    "chirality_evidence_role": "direct_L_vs_D_comparison",
+    "chirality_role_priority": 3
+  },
+  {
+    "evidence_id": "E097",
+    "query_id": "KD03",
+    "question": "What direct evidence explicitly compares or co-evaluates D-lysine and L-lysine in immune polypeptide, polymer, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, or antigen-presentation systems?",
+    "summary": "This study compares aluminum oxyhydroxide nanoadjuvants prepared with L-lysine (l-AlOOH) and D-lysine (d-AlOOH) as structure-directing agents, showing that l-AlOOH has lower adsorption coefficient for HPV VLP antigen, faster antigen release and lymph node trafficking, and significantly enhances antigen uptake by dendritic cells compared to d-AlOOH, leading to higher antibody titers in vaccination models.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "adsorption coefficient",
+      "antigen release from injection site",
+      "trafficking into lymph nodes",
+      "antigen uptake by dendritic cells in vitro",
+      "antigen-specific antibody titers in HPV and HBsAg vaccination models"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "l-AlOOH exhibits a lower adsorption coefficient for HPV VLP antigen",
+      "l-AlOOH facilitates accelerated antigen release from injection site and trafficking into lymph nodes",
+      "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH",
+      "l-AlOOH boosts antigen-specific antibody titers"
+    ],
+    "material_or_molecular_context": "Chiral aluminum oxyhydroxide nanoadjuvants (l-AlOOH and d-AlOOH) prepared using enantiomeric L-lysine or D-lysine hydrochloride as structure-directing agents.",
+    "biological_context": "In vitro dendritic cells; in vivo HPV and hepatitis B surface antigen vaccination models in mice (implied).",
+    "limitations": [
+      "The L-lysine and D-lysine are used as structure-directing agents for aluminum oxyhydroxide, not as direct immune polypeptide components.",
+      "The comparison is between the resulting chiral materials, not free lysine enantiomers.",
+      "No direct comparison of D-lysine and L-lysine as immune-modulatory molecules themselves."
+    ],
+    "title": "Chiral-Structured Aluminum Oxyhydroxide Nanoadjuvants for Prophylactic Vaccines.",
+    "pmid": "41293927",
+    "doi": "10.1021/acsami.5c17645",
+    "medcpt_rank": 2,
+    "chirality_evidence_role": "direct_L_vs_D_comparison",
+    "chirality_role_priority": 3
+  },
+  {
+    "evidence_id": "E095",
+    "query_id": "KD02",
+    "question": "What direct comparative evidence is most relevant to differences between L-lysine and D-lysine in polypeptide, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, antigen-presentation, or immunotherapy systems?",
+    "summary": "This article describes a lipoMAP system using alternating chiralities of palmitoyl lysines (D and L) but does not provide direct comparative evidence between L-lysine and D-lysine in the requested systems. The alternating chirality was chosen based on molecular modeling to mimic phosphatidylcholine, not from functional comparisons.",
+    "relevance_score": 1,
+    "reported_outcomes": [
+      "Development of lipophilic multiple antigen peptide (lipoMAP) system with built-in lipophilic adjuvant",
+      "Elicitation of cytotoxic T-lymphocytes (CTLs)",
+      "Structure-function study with eight models using an 18-residue HIV-1 gp120 peptide"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "Alternating D and L Lys(Pal) was found via molecular modeling to best mimic phosphatidylcholine",
+      "L-Ser-L-Ser linker crucial; replacement with L-Ser-D-Ser led to marked decrease in immune response",
+      "Underlipidated (one PL) or overlipidated (four PLs) constructs were ineffective",
+      "Three palmitic acids elicited humoral responses in oil-based emulsion and liposomes but not in water or alum",
+      "Two palmitoyl lysines (PL) best incorporated in liposomes and elicited significant immune response and CTLs"
+    ],
+    "material_or_molecular_context": "lipoMAP constructs with tetravalent core, β-alanyl-lysine branching, Ser-Ser linker, and palmitoyl lysines with alternating chirality",
+    "biological_context": "HIV-1 gp120 peptide antigens; immune responses (humoral and CTL) in mouse models (implied by adjuvant studies)",
+    "limitations": [
+      "No direct comparison of L-lysine vs D-lysine; both are used together in alternating fashion",
+      "Does not address differences in polypeptide, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, antigen-presentation, or immunotherapy systems",
+      "Molecular modeling statement is not experimental comparative data"
+    ],
+    "title": "Lipophilic multiple antigen peptide system for peptide immunogen and synthetic vaccine.",
+    "pmid": "7935506",
+    "doi": "10.1016/0161-5890(94)90033-7",
+    "medcpt_rank": 3,
+    "chirality_evidence_role": "direct_L_vs_D_comparison",
+    "chirality_role_priority": 3
+  },
+  {
+    "evidence_id": "E082",
+    "query_id": "DK02",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?",
+    "summary": "D-lysine-containing polypeptide nanoparticles (P_D-K) more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to L-lysine analogue. P_D-K-OVA nanovaccine achieved 94.9% tumor inhibition in B16-OVA melanoma model (97.0% with anti-PD-1).",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell maturation",
+      "antigen cross-presentation",
+      "adaptive immune response",
+      "cancer prevention and therapy in B16-OVA melanoma model"
+    ],
+    "reported_numeric_results": [
+      "tumor inhibition rate of 94.9%",
+      "tumor inhibition rate of 97.0% when combined with anti-PD-1 antibody"
+    ],
+    "reported_qualitative_findings": [
+      "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to P_L-K-OVA"
+    ],
+    "material_or_molecular_context": "chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K) and poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K)",
+    "biological_context": "dendritic cells (in vitro?), adaptive immune response, B16-OVA melanoma model in mice",
+    "limitations": [
+      "Only tested with OVA as model antigen; generalizability to other antigens not shown",
+      "Only one cancer model (B16-OVA); not tested for infectious disease vaccine responses",
+      "No direct comparison to other established adjuvants (e.g., alum, MF59)"
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 1,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E088",
+    "query_id": "DK03",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?",
+    "summary": "D-lysine-containing polypeptide nanoparticles (P_D-K) as nanoadjuvants induce stronger dendritic cell maturation, antigen cross-presentation, and adaptive immunity than L-lysine counterparts, achieving high tumor inhibition in a melanoma model.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell maturation",
+      "antigen cross-presentation",
+      "adaptive immune response",
+      "tumor inhibition in B16-OVA melanoma model"
+    ],
+    "reported_numeric_results": [
+      "tumor inhibition rate of 94.9% with P_D-K-OVA alone",
+      "tumor inhibition rate of 97.0% with P_D-K-OVA plus anti-PD-1",
+      "loading efficiency of almost 100%",
+      "nanoparticle diameter of about 30 nm"
+    ],
+    "reported_qualitative_findings": [
+      "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to P_L-K-OVA",
+      "P_D-K-OVA effectively prevented and treated B16-OVA melanoma"
+    ],
+    "material_or_molecular_context": "chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K) and poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K), used as nanoadjuvants with antigen OVA",
+    "biological_context": "dendritic cell assays and B16-OVA melanoma mouse model, with anti-PD-1 combination immunotherapy",
+    "limitations": [
+      "only one tumor model (B16-OVA melanoma) and one antigen (OVA) tested",
+      "only D-lysine compared; other D-amino acids not evaluated",
+      "no human or in vivo non-melanoma data",
+      "no long-term survival or mechanistic details beyond DC maturation and cross-presentation"
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 1,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E075",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "This study compares chiral polypeptide nanoparticles containing D-lysine (P_D-K) vs L-lysine (P_L-K) as nanoadjuvants. P_D-K-OVA (with D-lysine) more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response, and achieved 94.9% tumor inhibition in B16-OVA melanoma model, rising to 97.0% with anti-PD-1. Directly relevant to D-lysine-containing systems for immune and adjuvant effects.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell maturation",
+      "antigen cross-presentation",
+      "adaptive immune response",
+      "tumor prevention and therapy in B16-OVA melanoma model"
+    ],
+    "reported_numeric_results": [
+      "tumor inhibition rate of 94.9% for P_D-K-OVA",
+      "tumor inhibition rate of 97.0% for P_D-K-OVA combined with anti-PD-1 antibody"
+    ],
+    "reported_qualitative_findings": [
+      "P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response compared to P_L-K-OVA",
+      "P_D-K-OVA effectively prevented and treated the OVA-expressed B16-OVA melanoma model",
+      "chiral polypeptide nanoparticles represent simple, efficient, and extensively applicable nanoadjuvants"
+    ],
+    "material_or_molecular_context": "poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K) and poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) self-assembled nanoparticles; loaded with ovalbumin (OVA) antigen",
+    "biological_context": "dendritic cell maturation, antigen cross-presentation, adaptive immune response; B16-OVA melanoma model in mice",
+    "limitations": [
+      "Only one model antigen (OVA) tested",
+      "Only one tumor model (B16-OVA melanoma)",
+      "Single administration method (mixing with antigen, not encapsulation)"
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 2,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E089",
+    "query_id": "DK03",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?",
+    "summary": "This study directly addresses D-lysine-containing polypeptide adjuvants for anti-tumor immunity. It optimized hydrophobic content in amphiphilic poly(amino acid) copolymers (poly(L-phenylalanine)_m-block-poly(D-lysine)_10) to enhance adaptive immune responses. Increasing phenylalanine ratio improved nanoparticle properties, dendritic cell uptake, TLR4 activation, and antigen presentation, leading to coordinated CD8+ T-cell cytotoxicity and B-cell antibody responses, increased memory T/B cells, high tumor inhibition rates up to 97.81%, and durable protection in mouse models.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "CD8+ T cell cytotoxicity",
+      "B cell-mediated antibody response",
+      "splenic central memory T cells increase",
+      "lymph node memory B cells increase",
+      "tumor inhibition in LLC-OVA therapeutic model",
+      "tumor-free survival in LLC-OVA prevention model",
+      "durable antigen-specific protection after tumor re-challenges",
+      "therapeutic efficacy in CT26 whole-cell-lysate model"
+    ],
+    "reported_numeric_results": [
+      "splenic central memory T cells increased by 1.46-fold",
+      "lymph node memory B cells increased by 2.19-fold",
+      "tumor inhibition rates of 31.62%, 65.35%, and 97.81% for m=5,10,15",
+      "100% tumor-free survival in LLC-OVA prevention model",
+      "54.55% mice remained tumor-free for 644 days after two re-challenges"
+    ],
+    "reported_qualitative_findings": [
+      "coordinated cellular and humoral immune responses",
+      "enhanced dendritic cell uptake, TLR4-mediated activation, and antigen presentation",
+      "rational tuning of hydrophobic moieties is an effective strategy to enhance tumor vaccine efficacy and long-term anti-tumor immune memory"
+    ],
+    "material_or_molecular_context": "poly(L-phenylalanine)_m-block-poly(D-lysine)_10 (m=5,10,15) nanoparticles (F-DK) with varying hydrophobic content",
+    "biological_context": "mouse models: subcutaneous injection, dendritic cells, OVA antigen, OVA-expressing Lewis lung cancer (LLC-OVA) therapeutic and prevention models, CT26 whole-cell-lysate syngeneic tumor model",
+    "limitations": [
+      "only evaluated with OVA as model antigen; generalization to other antigens not shown",
+      "only tested in mouse models; human translation not addressed",
+      "hydrophobic block is L-phenylalanine, not D-amino acid; only the cationic block is D-lysine",
+      "other polymer compositions, chirality combinations, or delivery routes not explored"
+    ],
+    "title": "Increasing hydrophobicity in poly(amino acid) adjuvants elicits potent and durable anti-tumor immunity &lt;i&gt;via&lt;/i&gt; coordinated cellular and humoral responses.",
+    "pmid": "42662463",
+    "doi": "10.1016/j.bioactmat.2026.08.009",
+    "medcpt_rank": 2,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E077",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "This study shows that poly-D-lysine conjugated to β-glucan (G-PL) acts as an adjuvant, enhancing dendritic cell uptake, maturation, Th17 differentiation, DC recruitment, lymph node activation, and anti-tumor immunity in cancer vaccine models.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "dendritic cell uptake of tumour components",
+      "dendritic cell maturation",
+      "non-pathogenic Th17 differentiation",
+      "dendritic cell recruitment at injection sites",
+      "activation of draining lymph nodes",
+      "elevated plasma levels of IL-12, TNF-α, and IFN-γ",
+      "prolonged survival in therapeutic and preventive models",
+      "increased intratumoral CD8+/CD4+ T cell ratios",
+      "increased intratumoral M1 macrophages",
+      "increased intratumoral neutrophils",
+      "Dectin-1 downregulation in dendritic cells"
+    ],
+    "reported_numeric_results": [
+      "G-PL (≤ 500 μg/mL) rapidly adhered to cell membranes without cytotoxicity"
+    ],
+    "reported_qualitative_findings": [
+      "ICC@G-PL recruited DCs at injection sites and activated draining lymph nodes",
+      "The vaccine elevated plasma levels of IL-12, TNF-α, and IFN-γ",
+      "The vaccine prolonged survival in both therapeutic and preventive models",
+      "Increased intratumoral CD8+/CD4+ T cell ratios, M1 macrophages, and neutrophils",
+      "Dectin-1 downregulation in DCs correlated with Th17-driven anti-tumour responses"
+    ],
+    "material_or_molecular_context": "poly-D-lysine conjugated to modified yeast β-glucan (G-PL)",
+    "biological_context": "mouse glioblastoma (GL261), colon cancer, and melanoma models; dendritic cells in vitro and in vivo",
+    "limitations": [
+      "Poly-D-lysine is conjugated to β-glucan, not tested alone as free polymer",
+      "No direct comparison with L-lysine or other chirality variants",
+      "Results are specific to cancer vaccine context, not general adjuvant use",
+      "No dose-response data for poly-D-lysine content"
+    ],
+    "title": "A novel whole cancer cell vaccine based on modified β-glucan elicits robust anti-tumor immunity.",
+    "pmid": "41510149",
+    "doi": "10.7150/thno.121911",
+    "medcpt_rank": 4,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E074",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "This article demonstrates that poly(D-lysine)-based amphiphilic block copolymers with varying hydrophobic L-phenylalanine content enhance dendritic cell uptake, TLR4 activation, and antigen presentation, leading to potent and durable antitumor immunity in mice. The optimized system (F15-DK10/OVA) elicited robust CD8+ T cell cytotoxicity and antibody responses, with 97.81% tumor inhibition and 100% tumor-free survival in prevention models, and durable protection after rechallenge.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Dendritic cell uptake",
+      "TLR4-mediated activation",
+      "Antigen presentation",
+      "CD8+ T cell cytotoxicity",
+      "B cell-mediated antibody response",
+      "Splenic central memory T cells",
+      "Lymph node memory B cells",
+      "Tumor inhibition in LLC-OVA therapeutic model",
+      "Tumor-free survival in LLC-OVA prevention model",
+      "Durable protection after tumor rechallenge",
+      "Efficacy in CT26 whole-cell-lysate model"
+    ],
+    "reported_numeric_results": [
+      "splenic central memory T cells and lymph node memory B cells increased by 1.46- and 2.19-fold",
+      "vaccines with increasing phenylalanine achieved tumor inhibition rates of 31.62%, 65.35%, and 97.81%",
+      "F15-DK10/OVA achieved 100% tumor-free survival in the LLC-OVA prevention model",
+      "54.55% of mice remained tumor-free for 644 days after two tumor re-challenges"
+    ],
+    "reported_qualitative_findings": [
+      "Increasing phenylalanine ratio induced coordinated changes in nanoparticle size, surface charge, and structural rigidity",
+      "enhancing dendritic cell uptake, TLR4-mediated activation, and antigen presentation",
+      "triggered robust CD8+ T cell cytotoxicity and strong B cell-mediated antibody response",
+      "durable antigen-specific protection in this model",
+      "rational tuning of hydrophobic moieties in poly(amino acid) is an effective strategy to enhance tumor vaccine efficacy and long-term anti-tumor immune memory"
+    ],
+    "material_or_molecular_context": "poly(L-phenylalanine)m-block-poly(D-lysine)10 copolymers (m = 5, 10, or 15); the D-lysine block is fixed at 10 residues, while the hydrophobic L-phenylalanine block length varies.",
+    "biological_context": "Bone marrow-derived dendritic cells (in vitro), TLR4 pathway, subcutaneous injection in mice, OVA-expressing Lewis lung cancer (LLC-OVA) model (therapeutic and prevention), CT26 whole-cell-lysate model; outcomes measured in spleen and lymph nodes.",
+    "limitations": [
+      "Only mouse models; human relevance not directly assessed.",
+      "D-lysine block length was fixed at 10; effects of varying D-lysine length or chirality are not studied.",
+      "Only two antigens tested (OVA and CT26 whole-cell lysate); generalizability to other antigens unknown.",
+      "Hydrophobic block is L-phenylalanine; no comparison to other hydrophobic residues or D-configured hydrophobic blocks.",
+      "The specific role of D-lysine vs. L-lysine in immune activation is not isolated; the study focuses on hydrophobicity, not chirality per se."
+    ],
+    "title": "Increasing hydrophobicity in poly(amino acid) adjuvants elicits potent and durable anti-tumor immunity &lt;i&gt;via&lt;/i&gt; coordinated cellular and humoral responses.",
+    "pmid": "42662463",
+    "doi": "10.1016/j.bioactmat.2026.08.009",
+    "medcpt_rank": 1,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E083",
+    "query_id": "DK02",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?",
+    "summary": "The study demonstrates that increasing the hydrophobic segment (L-phenylalanine) in amphiphilic poly(L-phenylalanine)-block-poly(D-lysine)10 copolymers enhances dendritic cell uptake, TLR4-mediated activation, and antigen presentation, leading to potent and durable anti-tumor immunity with both cellular and humoral responses. These findings are directly relevant to D-lysine-containing polymer systems for vaccine adjuvant applications.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Dendritic cell uptake and activation",
+      "Antigen presentation",
+      "CD8+ T cell cytotoxicity",
+      "B cell-mediated antibody response",
+      "Central memory T cell and memory B cell increase",
+      "Tumor inhibition in therapeutic and prevention models",
+      "Long-term tumor-free survival after re-challenges"
+    ],
+    "reported_numeric_results": [
+      "F15-DK10/OVA increased splenic central memory T cells by 1.46-fold and lymph node memory B cells by 2.19-fold compared to free OVA",
+      "Tumor inhibition rates: 31.62%, 65.35%, and 97.81% for increasing phenylalanine content in LLC-OVA therapeutic model",
+      "F15-DK10/OVA achieved 100% tumor-free survival in LLC-OVA prevention model",
+      "After two tumor re-challenges, 54.55% of mice remained tumor-free for 644 days"
+    ],
+    "reported_qualitative_findings": [
+      "Increasing hydrophobic content in poly(amino acid) adjuvants enhances coordinated cellular and humoral immunity",
+      "Robust CD8+ T cell cytotoxicity and strong B cell antibody response were observed",
+      "Rational tuning of hydrophobic moieties is an effective strategy to enhance tumor vaccine efficacy and long-term immune memory"
+    ],
+    "material_or_molecular_context": "Amphiphilic block copolymers poly(L-phenylalanine)m-block-poly(D-lysine)10 (Fm-DK10) with m = 5, 10, 15; D-lysine is the cationic block",
+    "biological_context": "In vitro: dendritic cells. In vivo: C57BL/6 mice immunized with OVA-loaded nanoparticles; LLC-OVA and CT26 syngeneic tumor models",
+    "limitations": [
+      "Only OVA as model antigen; generalizability to other antigens not shown",
+      "Only one hydrophobic block (L-phenylalanine) varied; other hydrophobic blocks not tested",
+      "D-lysine length fixed at 10; effect of varying D-lysine block length not examined",
+      "No direct comparison with L-lysine or other chiralities",
+      "Explicit cross-presentation not stated, only antigen presentation"
+    ],
+    "title": "Increasing hydrophobicity in poly(amino acid) adjuvants elicits potent and durable anti-tumor immunity &lt;i&gt;via&lt;/i&gt; coordinated cellular and humoral responses.",
+    "pmid": "42662463",
+    "doi": "10.1016/j.bioactmat.2026.08.009",
+    "medcpt_rank": 2,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E079",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "Tetragalloyl-D-lysine dendrimer (TGDK) targets primate M cells for oral vaccine delivery, inducing stool IgA and neutralizing activity against SIV, and is transcytosed by human M-like cells.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "M cell targeting and transcytosis in nonhuman primate and human M-like cells",
+      "Stool IgA response against rhesus CCR5-derived cyclopeptide",
+      "Neutralizing activity against SIV infection"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "TGDK was efficiently transported from intestinal lumen into rhesus Peyer's patches by M cells and accumulated in germinal centers",
+      "Oral administration of TGDK-conjugated cyclopeptide resulted in a statistically significant increase in stool IgA",
+      "TGDK specifically bound to human M-like cells and was efficiently transcytosed from apical to basolateral side"
+    ],
+    "material_or_molecular_context": "tetragalloyl-D-lysine dendrimer (TGDK)",
+    "biological_context": "nonhuman primate (rhesus macaque) in vivo and human M-like cell culture in vitro",
+    "limitations": [
+      "Study focuses on M cell targeting, not directly on dendritic cells, antigen presentation, or adjuvant effects",
+      "No explicit comparison of D-lysine dendrimer to other chiralities or non-dendrimer systems",
+      "Does not assess dendritic cell activation or maturation directly"
+    ],
+    "title": "Targeted delivery of immunogen to primate m cells with tetragalloyl lysine dendrimer.",
+    "pmid": "19414757",
+    "doi": "10.4049/jimmunol.0802928",
+    "medcpt_rank": 6,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E091",
+    "query_id": "DK03",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?",
+    "summary": "DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL) acts as a B-cell tolerogen: a 6-hr pulse elicits an immune response comparable to antigen, while 48-hr preincubation induces tolerance in DNP-specific B-cell lines.",
+    "relevance_score": 8,
+    "reported_outcomes": [
+      "immune response in B-cell lines",
+      "tolerance induction in B-cell lines"
+    ],
+    "reported_numeric_results": [
+      "6-hr preincubation with DNP-MGG augments immune response",
+      "at least a 36-hr incubation required for tolerance induction",
+      "6-hr pulse with DNP-dGL elicits the same immune response as DNP-MGG"
+    ],
+    "reported_qualitative_findings": [
+      "Initial binding of tolerogen to Ig receptor elicits an activation signal similar to antigen",
+      "Suppressive effect of tolerogen occurs at a later stage of B-cell activation, proliferation, and differentiation"
+    ],
+    "material_or_molecular_context": "DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL)",
+    "biological_context": "Nonmalignant dinitrophenyl (DNP)-specific B lymphocyte cell lines derived from normal mice, without contaminating T cells",
+    "limitations": [
+      "In vitro cell line study, not in vivo",
+      "Uses DNP as a hapten, not directly a therapeutic vaccine or nanoadjuvant",
+      "Focus on B-cell tolerance/immunity, not directly on T-cell, antibody, or antitumor outcomes",
+      "Polymer composed of D-glutamic acid and D-lysine, not pure D-lysine polymer or nanoparticle system"
+    ],
+    "title": "Tolerance and immunity in antigen-specific B-lymphocyte lines: early receptor binding of either antigen or tolerogen initiates an immune response.",
+    "pmid": "3875416",
+    "doi": "10.1016/0008-8749(85)90255-2",
+    "medcpt_rank": 4,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E078",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "The D-lysine-containing tetrapeptide D-LysAsnProTyr (I) robustly stimulates B-cell proliferation in vitro and expands B-cells in vivo, modestly stimulates CTLs, and shows enhanced stability as a bursin mimetic, suggesting potential as a vaccine adjuvant.",
+    "relevance_score": 8,
+    "reported_outcomes": [
+      "in vitro stimulation of mitogen-activated B-cell proliferation",
+      "in vitro stimulation of cytotoxic T lymphocytes (CTLs)",
+      "in vivo expansion of B-cells in C57BL/6 mice"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "robust stimulation of mitogen activated B-cell proliferation",
+      "modest to significant stimulation of CTLs",
+      "enhanced physiological stability compared to bursin",
+      "potential as a vaccine adjuvant"
+    ],
+    "material_or_molecular_context": "D-LysAsnProTyr tetrapeptide (D-lysine-L-asparaginyl-L-prolyl-L-tyrosine)",
+    "biological_context": "in vitro mitogen-activated B-cells and CTLs; in vivo C57BL/6 mouse model",
+    "limitations": [
+      "Does not address dendritic cells or antigen-presentation pathways",
+      "Single tetrapeptide, not a polymer or nanoparticle system",
+      "No direct vaccine efficacy or adjuvant testing data provided",
+      "Relevance to D-lysine-containing systems beyond this specific sequence is unclear"
+    ],
+    "title": "D-LysAsnProTyr tetrapeptide: a novel B-cell stimulant and stabilized bursin mimetic.",
+    "pmid": "10699337",
+    "doi": "10.1016/s0264-410x(99)00374-6",
+    "medcpt_rank": 5,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E084",
+    "query_id": "DK02",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?",
+    "summary": "This study describes PLGA microspheres coated with poly-D-lysine that adsorb glioma cell antigens for anti-tumour vaccination. Epitope integrity was preserved, and the system was proposed as an adjuvant matrix for antigen presenting cells, but direct evidence for dendritic cell maturation or cross-presentation is absent.",
+    "relevance_score": 6,
+    "reported_outcomes": [
+      "adsorption of tumour antigens onto PDL-coated PLGA microspheres",
+      "preservation of epitope integrity after loading",
+      "potential as injectable adjuvant matrices presenting tumour antigens to antigen presenting cells"
+    ],
+    "reported_numeric_results": [
+      "Only a panel (34%) of the proteins isolated from both cell fractions adsorbed onto PDL-coated PLGA microspheres."
+    ],
+    "reported_qualitative_findings": [
+      "The integrity of the epitopes after loading was preserved",
+      "the particulate systems not only serve as injectable adjuvant matrices presenting tumour antigens to antigen presenting cells, but also as potential reservoirs for controlled delivery of active immunostimulant molecules"
+    ],
+    "material_or_molecular_context": "poly(D,L-lactide-co-glycolide) (PLGA) microspheres coated with poly-D-lysine (PDL)",
+    "biological_context": "glioma cell fractions (plasma membranes and cell lysates); in vitro adsorption and epitope characterization",
+    "limitations": [
+      "No direct assessment of dendritic cell maturation or cross-presentation",
+      "No in vivo immune response data",
+      "No comparison with L-lysine systems",
+      "Only 34% of proteins adsorbed",
+      "No quantification of immune activation"
+    ],
+    "title": "Development of new polymer-based particulate systems for anti-glioma vaccination.",
+    "pmid": "16386390",
+    "doi": "10.1016/j.ijpharm.2005.10.046",
+    "medcpt_rank": 3,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E090",
+    "query_id": "DK03",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?",
+    "summary": "This study used a co-polymer of D-glutamic acid and D-lysine to generate TNP-reactive helper T cells, which prevented tolerance in effector T cells against syngeneic tumor cells. The D-lysine-containing polymer was employed as a non-immunogenic carrier to induce helper T cell activity that circumvented tolerance, demonstrating a role for helper T cells in adaptive anti-tumor immunity.",
+    "relevance_score": 6,
+    "reported_outcomes": [
+      "Prevention of tolerance induction in effector T cells against syngeneic tumor",
+      "Role of helper T cells in circumventing tolerance"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "Intravenous inoculation with TNP-modified tumor cells induced tolerance in unprimed mice",
+      "Tolerance was prevented in mice with generated TNP-reactive helper T cell activity"
+    ],
+    "material_or_molecular_context": "Co-polymer of D-glutamic acid and D-lysine, conjugated to TNP hapten",
+    "biological_context": "C3H/He mice, X5563 plasmacytoma, TNP-modified tumor cells, in vivo tolerance model",
+    "limitations": [
+      "Not a nanoparticle or nanoadjuvant system",
+      "Uses hapten-carrier system with TNP, not directly applicable to general D-lysine-containing adjuvants",
+      "Study from 1982; may not reflect modern immunotherapy contexts",
+      "No direct measurement of adaptive immune outcomes like antibody titers or T-cell responses beyond tolerance"
+    ],
+    "title": "Effect of helper T cells on prevention of tolerance induction in effector T cells responsible for syngeneic tumor immunity.",
+    "pmid": "6219908",
+    "doi": "",
+    "medcpt_rank": 3,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E076",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "This article studies chiral aluminum oxyhydroxide (l-/d-AlOOH) nanoadjuvants synthesized using l- or d-lysine hydrochloride as structure-directing agents. It compares l-AlOOH and d-AlOOH in vaccine models, finding that l-AlOOH enhances antigen uptake by dendritic cells and boosts antibody responses, while d-AlOOH shows comparatively lower performance. However, the work focuses on the chirality of the AlOOH adjuvant rather than on D-lysine-containing polypeptide, polymer, or nanoparticle systems per se.",
+    "relevance_score": 4,
+    "reported_outcomes": [
+      "antigen-specific antibody titers in HPV and HBsAg vaccination models",
+      "antigen uptake by dendritic cells in vitro",
+      "antigen release from injection site and trafficking into lymph nodes"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "l-AlOOH facilitates accelerated antigen release from the injection site and trafficking into the lymph nodes",
+      "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH",
+      "l-AlOOH boosts antigen-specific antibody titers, indicating chirality-controlled humoral immunity",
+      "d-lysine-induced AlOOH shows lower adsorption coefficient for HPV antigen due to chirality mismatch"
+    ],
+    "material_or_molecular_context": "chiral aluminum oxyhydroxide (l-AlOOH and d-AlOOH) nanoadjuvants, with l- or d-lysine hydrochloride as structure-directing agents (not D-lysine-containing polypeptide/polymer/nanoparticle systems)",
+    "biological_context": "in vitro dendritic cells; in vivo mouse models with HPV type 18 L1 virus-like particles (VLPs) and hepatitis B surface antigen (HBsAg) vaccination",
+    "limitations": [
+      "Does not directly study D-lysine-containing polypeptide, polymer, or nanoparticle systems; uses d-lysine only as a chiral inducer in aluminum oxyhydroxide.",
+      "The primary focus is on the chirality of the AlOOH adjuvant, not on the immune effects of D-lysine itself.",
+      "No explicit comparison of D-lysine versus L-lysine as free molecules or in polymer form.",
+      "Results are specific to aluminum oxyhydroxide and may not transfer to other D-lysine-containing materials."
+    ],
+    "title": "Chiral-Structured Aluminum Oxyhydroxide Nanoadjuvants for Prophylactic Vaccines.",
+    "pmid": "41293927",
+    "doi": "10.1021/acsami.5c17645",
+    "medcpt_rank": 3,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E081",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "This study investigates a D-lysine-containing polymer (DNP-dGL) as a B-cell tolerogen, showing that short (6-hr) exposure activates DNP-specific B cells similarly to antigen, while prolonged (48-hr) exposure induces tolerance. The findings are relevant to immune modulation by D-lysine-containing polymers but do not address dendritic cells, antigen presentation, or adjuvant effects directly.",
+    "relevance_score": 4,
+    "reported_outcomes": [
+      "B cell activation",
+      "B cell tolerance"
+    ],
+    "reported_numeric_results": [
+      "at least a 36-hr incubation is required for tolerance induction",
+      "6-hr preincubation augments immune response"
+    ],
+    "reported_qualitative_findings": [
+      "Preincubation with DNP-MGG for 48 hr induces tolerance in cell line B lymphocytes",
+      "6-hr preincubation with DNP-MGG augments the immune response to DNP-Ficoll",
+      "A 6-hr pulse with DNP-dGL elicits the same immune response as DNP-MGG but a 48-hr preincubation induces tolerance"
+    ],
+    "material_or_molecular_context": "DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL)",
+    "biological_context": "DNP-specific B lymphocyte cell lines from normal mice, in vitro, with T-cell factors from EL-4 supernatant",
+    "limitations": [
+      "Does not study dendritic cells or antigen-presenting cells",
+      "Does not address vaccine or adjuvant effects",
+      "Polymer is conjugated with DNP hapten, limiting generalization to other D-lysine systems",
+      "Only B cell responses, not broader immune activation"
+    ],
+    "title": "Tolerance and immunity in antigen-specific B-lymphocyte lines: early receptor binding of either antigen or tolerogen initiates an immune response.",
+    "pmid": "3875416",
+    "doi": "10.1016/0008-8749(85)90255-2",
+    "medcpt_rank": 8,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E092",
+    "query_id": "DK03",
+    "question": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?",
+    "summary": "This study investigates alginate polylysine microcapsules as immune barriers for islet transplantation, comparing poly-L-lysine (PLL) and poly-D-lysine (PDL) membranes. It measures permeability to cytokines (TNF, IL-1β) and immunoglobulins (IgG). All capsules were impermeable to IgG; PLL-membranes (but not PDL) allowed transferrin passage; IL-1β penetrated all capsules; high-G capsules could exclude TNF. The study provides evidence that PDL-based membranes differ in permeability from PLL, relevant to immune barrier function, but does not directly assess adaptive immune outcomes or immunotherapy.",
+    "relevance_score": 3,
+    "reported_outcomes": [
+      "Permeability of microcapsules to IgG, transferrin, TNF, IL-1β, and insulin"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "All capsules were impermeable to IgG.",
+      "Capsules made with PLL-, but not PDL-membranes were permeable for transferrin.",
+      "IL-1β penetrated all capsule types.",
+      "High-G capsules could be made impermeable to TNF while allowing transferrin to pass."
+    ],
+    "material_or_molecular_context": "Alginate polylysine microcapsules with poly-D-lysine (PDL) and poly-L-lysine (PLL) coatings",
+    "biological_context": "Pancreatic islet transplantation; mouse islets of Langerhans; cytokines (TNF, IL-1β) and immunoglobulins (IgG)",
+    "limitations": [
+      "Does not directly measure adaptive immune outcomes (e.g., T-cell activation, antibody titers) or antitumor/immunotherapy effects.",
+      "Focuses on microcapsule permeability rather than nanoparticle/nanoadjuvant systems.",
+      "D-lysine is part of a bulk microcapsule membrane, not a polymer or nanoparticle designed for immune modulation.",
+      "Context is islet transplantation for diabetes, not cancer immunotherapy."
+    ],
+    "title": "Alginate polylysine microcapsules as immune barrier: permeability of cytokines and immunoglobulins over the capsule membrane.",
+    "pmid": "9258512",
+    "doi": "10.1177/096368979700600405",
+    "medcpt_rank": 5,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E080",
+    "query_id": "DK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "A non-immunogenic co-polymer of D-glutamic acid and D-lysine was used as a TNP-conjugate carrier to generate TNP-reactive helper T cell activity in mice, which prevented tolerance induction in effector T cells against syngeneic tumor cells.",
+    "relevance_score": 2,
+    "reported_outcomes": [
+      "Prevention of tolerance induction in effector T cells"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "TNP-reactive helper T cells generated by immunization with TNP-conjugated D-glutamic acid/D-lysine copolymer prevented iv tolerance induced by TNP-modified tumor cells"
+    ],
+    "material_or_molecular_context": "Non-immunogenic co-polymer of D-glutamic acid and D-lysine conjugated with TNP hapten",
+    "biological_context": "C3H/He mice, syngeneic X5563 plasmacytoma tumor model",
+    "limitations": [
+      "Does not address dendritic cells, antigen presentation, or vaccine/adjuvant effects",
+      "Polymer is used solely as a non-immunogenic carrier, not as an active immune modulator",
+      "No nanoparticle or polypeptide system evaluated; only a co-polymer of D-amino acids",
+      "Relevance to D-lysine systems is indirect and limited to a single carrier use"
+    ],
+    "title": "Effect of helper T cells on prevention of tolerance induction in effector T cells responsible for syngeneic tumor immunity.",
+    "pmid": "6219908",
+    "doi": "",
+    "medcpt_rank": 7,
+    "chirality_evidence_role": "D_Lys_enriched_discovery",
+    "chirality_role_priority": 2
+  },
+  {
+    "evidence_id": "E066",
+    "query_id": "LK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "PEG-PLL-PLLeu micelles (L-lysine-containing) self-assemble, encapsulate OVA antigen, enhance dendritic cell maturation, antigen uptake/presentation, germinal center formation, and boost antibody production 70-90 fold. Co-delivery with TLR3 agonist PIC synergistically augments CTL response. Directly supports L-lysine polypeptide systems as vaccine adjuvants.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "antibody production",
+      "dendritic cell maturation",
+      "antigen uptake and presentation",
+      "germinal center formation",
+      "cytotoxic T-lymphocyte (CTL) response"
+    ],
+    "reported_numeric_results": [
+      "loading capacity (LC=55%)",
+      "antibody production enhanced by 70-90 fold"
+    ],
+    "reported_qualitative_findings": [
+      "polypeptide micelle formulations robustly enhanced vaccine-induced antibody production",
+      "capability of inducing dendritic cell maturation",
+      "enhancing antigen uptake and presentation",
+      "promoting germinal center formation",
+      "co-delivery with PIC synergistically augmented CTL response"
+    ],
+    "material_or_molecular_context": "PEG-PLL-PLLeu (poly(ethylene glycol)-b-poly(L-lysine)-b-poly(L-leucine)) hybrid polypeptides forming self-assembled cationic micelles",
+    "biological_context": "subunit vaccine model using OVA antigen; dendritic cells, germinal centers, CTL response; mouse model (implied by tumor-specific CTL)",
+    "limitations": [
+      "only tested with OVA as model antigen; generalizability to other antigens unknown",
+      "co-delivery only with PIC (TLR3 agonist); synergy with other adjuvants not assessed",
+      "in vivo efficacy only in tumor model; human translation not demonstrated",
+      "no direct comparison to other L-lysine-based systems or non-cationic carriers"
+    ],
+    "title": "Cationic polypeptide micelle-based antigen delivery system: a simple and robust adjuvant to improve vaccine efficacy.",
+    "pmid": "23742880",
+    "doi": "10.1016/j.jconrel.2013.05.027",
+    "medcpt_rank": 1,
+    "chirality_evidence_role": "L_Lys_context_control",
+    "chirality_role_priority": 1
+  },
+  {
+    "evidence_id": "E073",
+    "query_id": "LK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "This paper describes a water-soluble conjugated polymer brush made of poly(l-lysine) (PLL) and poly(p-phenyleneethynylene) (PPE) used as an antigen delivery system for dendritic cell (DC) vaccines. The PPE-PLL brush efficiently loads ovalbumin (OVA) as a model antigen, delivers it to DCs, induces DC maturation, cytokine release, and in vivo antitumor immune responses, effectively inhibiting tumor development. The study directly addresses the use of a L-lysine-containing polymer in a DC vaccine context, demonstrating immune activation and antigen-presentation effects.",
+    "relevance_score": 10,
+    "reported_outcomes": [
+      "Antigen loading and delivery to dendritic cells",
+      "Dendritic cell maturation and cytokine release",
+      "In vivo immune response induction (cytokine levels in serum)",
+      "Tumor-suppressor activity (inhibition of tumor development)"
+    ],
+    "reported_numeric_results": [],
+    "reported_qualitative_findings": [
+      "PPE-PLL exhibited excellent water solubility and outstanding antigen-loading capacity",
+      "Strong immune responses were induced after injection of antigen-pulsed DCs",
+      "Cytokine levels in serum were significantly increased",
+      "The DC vaccine effectively inhibited tumor development"
+    ],
+    "material_or_molecular_context": "Conjugated polymer brush (WSCPB) composed of poly(l-lysine) (PLL) side chains and poly(p-phenyleneethynylene) (PPE) rigid backbone",
+    "biological_context": "Dendritic cells (in vitro and in vivo); mouse model for tumor inhibition; model antigen ovalbumin (OVA)",
+    "limitations": [
+      "The L-lysine component is part of a polymer brush with a conjugated backbone, not studied as a free amino acid or simple polypeptide",
+      "No direct comparison of L-lysine versus other amino acids or polymers",
+      "OVA is a model antigen; relevance to other antigens or adjuvants may differ",
+      "The abstract does not provide mechanistic insight into how the L-lysine moiety specifically contributes to immune activation",
+      "No quantitative immune activation or efficacy data reported in the abstract"
+    ],
+    "title": "Conjugated Polymer Brush Based on Poly(l-lysine) with Efficient Ovalbumin Delivery for Dendritic Cell Vaccine.",
+    "pmid": "34996259",
+    "doi": "10.1021/acsabm.8b00496",
+    "medcpt_rank": 8,
+    "chirality_evidence_role": "L_Lys_context_control",
+    "chirality_role_priority": 1
+  },
+  {
+    "evidence_id": "E067",
+    "query_id": "LK01",
+    "question": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+    "summary": "This study investigates L-lysine-containing chiral polypeptide nanoparticles (P_L-K and P_D-K) as nanoadjuvants for cancer nanovaccines. The D-lysine variant (P_D-K) more effectively induced dendritic cell maturation, antigen cross-presentation, and adaptive immunity, achieving 94.9% tumor inhibition in a B16-OVA melanoma model. The L-lysine variant (P_L-K) was also tested and showed weaker effects, directly addressing the query.",
+    "relevance_score": 9,
+    "reported_outcomes": [
+      "Dendritic cell maturation",
+      "Antigen cross-presentation",
+      "Adaptive immune response",
+      "Tumor prevention and therapy"
+    ],
+    "reported_numeric_results": [
+      "loading efficiencies of almost 100%",
+      "tumor inhibition rate of 94.9%",
+      "97.0% by combining with anti-PD-1 antibody"
+    ],
+    "reported_qualitative_findings": [
+      "Compared to P_L-K-OVA, P_D-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response",
+      "effectively prevented and treated the OVA-expressed B16-OVA melanoma model"
+    ],
+    "material_or_molecular_context": "Chiral polypeptide nanoparticles: poly(L-phenylalanine)-block-poly(L-lysine) (P_L-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P_D-K)",
+    "biological_context": "Dendritic cell maturation, antigen cross-presentation, adaptive immune response in vitro and in vivo; B16-OVA melanoma model in mice",
+    "limitations": [
+      "The D-lysine variant showed superior efficacy; the L-lysine variant was studied but with weaker effects",
+      "Only tested with OVA as model antigen",
+      "Results are for cancer vaccine context, not directly generalizable to infectious disease vaccines or other adjuvants"
+    ],
+    "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+    "pmid": "36732117",
+    "doi": "10.1016/j.scib.2023.01.024",
+    "medcpt_rank": 2,
+    "chirality_evidence_role": "L_Lys_context_control",
+    "chirality_role_priority": 1
+  }
+]

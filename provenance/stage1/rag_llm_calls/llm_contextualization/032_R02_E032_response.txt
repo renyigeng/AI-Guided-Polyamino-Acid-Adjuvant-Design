@@ -1,0 +1,27 @@
+{
+  "summary": "This study demonstrates that supercharged arginine-rich peptides (polyarginine analogs of dfTAT) induce late endosome leakage and enhance cytosolic penetration in live human cells. Endocytic uptake efficiency increases linearly with arginine number, while cytosolic penetration shows a threshold effect requiring a minimum number of arginines. Polylysine analogs do not recapitulate this activity, indicating arginine-specific endosomolytic behavior.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Endosomal leakage activity",
+    "Endocytic uptake efficiency",
+    "Cytosolic penetration efficiency",
+    "Toxicity of delivery agents"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Leakage activity of dfTAT can be recapitulated by polyarginine analogs but not by polylysine counterparts.",
+    "Efficiencies of peptide endocytic uptake increase linearly with the number of arginine residues.",
+    "Peptide cytosolic penetration displays a threshold behavior requiring a minimum number of arginines.",
+    "Increasing arginine content above threshold augments delivery efficiencies but also increases toxicity.",
+    "There is a narrow arginine-content window for optimally active endosomolytic agents."
+  ],
+  "material_or_molecular_context": "Supercharged arginine-rich peptides (polyarginine analogs of dfTAT); polylysine counterparts used for comparison",
+  "biological_context": "Live human cells",
+  "limitations_for_current_question": [
+    "Study uses specific dfTAT peptide analogs; generalizability to other arginine-based polypeptides may vary.",
+    "The exact numerical threshold for arginine number is not specified in the abstract.",
+    "Cell type specific effects are not detailed; only 'live human cells' are mentioned.",
+    "Toxicity is only qualitatively discussed without specific metrics."
+  ],
+  "supporting_text": "the leakage activity of dfTAT can be recapitulated by polyarginine analogs but not by polylysine counterparts"
+}

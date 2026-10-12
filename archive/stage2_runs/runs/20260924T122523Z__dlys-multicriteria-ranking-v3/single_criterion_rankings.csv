@@ -1,0 +1,4 @@
+domain_id,domain_name_zh,candidate,candidate_name_zh,primary_score,primary_rank,criterion_registry_key,criterion_name
+D1,芳香疏水-π作用域,F,苯丙氨酸,1.0,1.0,hydropathy,Side-chain hydrophobicity
+D1,芳香疏水-π作用域,W,色氨酸,0.09756097560975611,2.0,hydropathy,Side-chain hydrophobicity
+D1,芳香疏水-π作用域,Y,酪氨酸,0.0,3.0,hydropathy,Side-chain hydrophobicity

@@ -1,0 +1,27 @@
+{
+  "preference": "A",
+  "basis": [
+    "E022 provides direct evidence that a poly(L-lysine)-block-poly(L-phenylalanine) nanovaccine achieves high tumor inhibition (94.9%) and induces dendritic cell maturation and cross-presentation, directly matching the target amphiphilic binary poly(amino acid) tumor-vaccine architecture.",
+    "E001 shows hyperbranched poly-L-lysine enables efficient mRNA delivery with dendritic cell maturation and sustained expression, supporting vaccine-relevant delivery capability.",
+    "E019 demonstrates that a lysine-containing conjugate (L15K6) promotes dendritic cell maturation (CD40, CD80/86, MHC-II) and strong antibody responses, including outperforming alum adjuvant.",
+    "Multiple safety studies (E014, E015, E016, E018) report low hemolysis, high cell viability, and minimal organ toxicity for various polylysine-based materials.",
+    "While polyarginine (Candidate B) shows an endosomal escape advantage (E032), the evidence largely comes from short peptide constructs rather than poly(amino acid) block copolymers, and less directly supports transferability to the target polymer architecture compared to the polylysine block copolymer in E022."
+  ],
+  "supporting_evidence_ids": [
+    "E022",
+    "E001",
+    "E019",
+    "E014",
+    "E015",
+    "E016",
+    "E018"
+  ],
+  "counter_evidence_ids": [
+    "E013"
+  ],
+  "uncertainties": [
+    "Direct head-to-head comparison of polylysine and polyarginine in the same tumor-vaccine block copolymer system is absent.",
+    "Long-term in vivo safety and efficacy data for the specific polylysine block architecture beyond the OVA model (E022) are limited.",
+    "The endosomal escape advantage specific to polyarginine (E032) may become important in certain cytosolic delivery contexts, but its translation to a block copolymer vaccine formulation remains unproven."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "summary": "Poly-L-arginine (pR) synergizes with CpG-ODN to enhance and prolong peptide-specific immune responses, and prevents systemic release of pro-inflammatory cytokines induced by CpG-ODN alone. This demonstrates pR as a key component in synthetic vaccines for antigen delivery.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "enhanced peptide-specific immune responses",
+    "prolonged T cell responses lasting at least 372 days after a single injection",
+    "inhibition of systemic release of pro-inflammatory cytokines"
+  ],
+  "reported_numeric_results": [
+    "at least 372 days"
+  ],
+  "reported_qualitative_findings": [
+    "combined application of CpG-ODN and pR results in strongly enhanced peptide-specific immune responses compared to either modulator alone",
+    "high numbers of antigen-specific T cells can be observed even after only one injection for a remarkably long period",
+    "potentially harmful systemic release of pro-inflammatory cytokines induced upon injection of CpG-ODN is inhibited"
+  ],
+  "material_or_molecular_context": "poly-L-arginine (pR) combined with oligodeoxynucleotides containing CpG-motifs (CpG-ODN) and antigenic peptides",
+  "biological_context": "antigen presenting cells (APCs) and in vivo immune responses (likely murine model)",
+  "limitations_for_current_question": [
+    "focused on peptide antigens, not directly on protein, mRNA, or other biomacromolecules",
+    "requires combination with CpG-ODN as adjuvant, not polyarginine alone",
+    "no direct comparison to other polyarginine variants or delivery systems",
+    "species and translational details not explicitly stated"
+  ],
+  "supporting_text": "Poly-L-arginine synergizes with oligodeoxynucleotides containing CpG-motifs (CpG-ODN) for enhanced and prolonged immune responses"
+}

@@ -1,0 +1,35 @@
+{
+  "summary": "This study directly addresses D-lysine-containing polypeptide adjuvants for anti-tumor immunity. It optimized hydrophobic content in amphiphilic poly(amino acid) copolymers (poly(L-phenylalanine)_m-block-poly(D-lysine)_10) to enhance adaptive immune responses. Increasing phenylalanine ratio improved nanoparticle properties, dendritic cell uptake, TLR4 activation, and antigen presentation, leading to coordinated CD8+ T-cell cytotoxicity and B-cell antibody responses, increased memory T/B cells, high tumor inhibition rates up to 97.81%, and durable protection in mouse models.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "CD8+ T cell cytotoxicity",
+    "B cell-mediated antibody response",
+    "splenic central memory T cells increase",
+    "lymph node memory B cells increase",
+    "tumor inhibition in LLC-OVA therapeutic model",
+    "tumor-free survival in LLC-OVA prevention model",
+    "durable antigen-specific protection after tumor re-challenges",
+    "therapeutic efficacy in CT26 whole-cell-lysate model"
+  ],
+  "reported_numeric_results": [
+    "splenic central memory T cells increased by 1.46-fold",
+    "lymph node memory B cells increased by 2.19-fold",
+    "tumor inhibition rates of 31.62%, 65.35%, and 97.81% for m=5,10,15",
+    "100% tumor-free survival in LLC-OVA prevention model",
+    "54.55% mice remained tumor-free for 644 days after two re-challenges"
+  ],
+  "reported_qualitative_findings": [
+    "coordinated cellular and humoral immune responses",
+    "enhanced dendritic cell uptake, TLR4-mediated activation, and antigen presentation",
+    "rational tuning of hydrophobic moieties is an effective strategy to enhance tumor vaccine efficacy and long-term anti-tumor immune memory"
+  ],
+  "material_or_molecular_context": "poly(L-phenylalanine)_m-block-poly(D-lysine)_10 (m=5,10,15) nanoparticles (F-DK) with varying hydrophobic content",
+  "biological_context": "mouse models: subcutaneous injection, dendritic cells, OVA antigen, OVA-expressing Lewis lung cancer (LLC-OVA) therapeutic and prevention models, CT26 whole-cell-lysate syngeneic tumor model",
+  "limitations_for_current_question": [
+    "only evaluated with OVA as model antigen; generalization to other antigens not shown",
+    "only tested in mouse models; human translation not addressed",
+    "hydrophobic block is L-phenylalanine, not D-amino acid; only the cationic block is D-lysine",
+    "other polymer compositions, chirality combinations, or delivery routes not explored"
+  ],
+  "supporting_text": "F15-DK10/OVA triggered robust CD8+ T cell cytotoxicity and strong B cell-mediated antibody response."
+}

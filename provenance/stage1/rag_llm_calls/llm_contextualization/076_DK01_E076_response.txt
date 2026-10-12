@@ -1,0 +1,25 @@
+{
+  "summary": "This article studies chiral aluminum oxyhydroxide (l-/d-AlOOH) nanoadjuvants synthesized using l- or d-lysine hydrochloride as structure-directing agents. It compares l-AlOOH and d-AlOOH in vaccine models, finding that l-AlOOH enhances antigen uptake by dendritic cells and boosts antibody responses, while d-AlOOH shows comparatively lower performance. However, the work focuses on the chirality of the AlOOH adjuvant rather than on D-lysine-containing polypeptide, polymer, or nanoparticle systems per se.",
+  "relevance_score": 4,
+  "reported_outcomes": [
+    "antigen-specific antibody titers in HPV and HBsAg vaccination models",
+    "antigen uptake by dendritic cells in vitro",
+    "antigen release from injection site and trafficking into lymph nodes"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "l-AlOOH facilitates accelerated antigen release from the injection site and trafficking into the lymph nodes",
+    "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH",
+    "l-AlOOH boosts antigen-specific antibody titers, indicating chirality-controlled humoral immunity",
+    "d-lysine-induced AlOOH shows lower adsorption coefficient for HPV antigen due to chirality mismatch"
+  ],
+  "material_or_molecular_context": "chiral aluminum oxyhydroxide (l-AlOOH and d-AlOOH) nanoadjuvants, with l- or d-lysine hydrochloride as structure-directing agents (not D-lysine-containing polypeptide/polymer/nanoparticle systems)",
+  "biological_context": "in vitro dendritic cells; in vivo mouse models with HPV type 18 L1 virus-like particles (VLPs) and hepatitis B surface antigen (HBsAg) vaccination",
+  "limitations_for_current_question": [
+    "Does not directly study D-lysine-containing polypeptide, polymer, or nanoparticle systems; uses d-lysine only as a chiral inducer in aluminum oxyhydroxide.",
+    "The primary focus is on the chirality of the AlOOH adjuvant, not on the immune effects of D-lysine itself.",
+    "No explicit comparison of D-lysine versus L-lysine as free molecules or in polymer form.",
+    "Results are specific to aluminum oxyhydroxide and may not transfer to other D-lysine-containing materials."
+  ],
+  "supporting_text": "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH."
+}

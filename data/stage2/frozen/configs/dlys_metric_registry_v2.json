@@ -1,0 +1,359 @@
+{
+  "schema_version": "2.3.0",
+  "registry_name": "dlys_single_residue_mature_metric_registry_v2",
+  "mapping_policy": {
+    "deterministic_only": true,
+    "llm_mapping": false,
+    "match_fields": [
+      "measurement_target",
+      "indicator_name"
+    ],
+    "ambiguous_multiple_matches": "unresolved",
+    "no_fuzzy_embedding_mapping": true,
+    "no_ad_hoc_custom_scores": true,
+    "do_not_substitute_specific_measurements": [
+      {
+        "terms": [
+          "rotatable bond",
+          "rotatable bonds"
+        ],
+        "reason": "specific_rotatable_bond_metric_not_registered"
+      },
+      {
+        "terms": [
+          "logp",
+          "partition coefficient"
+        ],
+        "reason": "specific_partition_coefficient_metric_not_registered"
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "registry_key": "hydropathy",
+      "family": "hydrophobicity",
+      "tool": "AAindex",
+      "tool_id": "KYTJ820101",
+      "label": "Kyte-Doolittle hydropathy",
+      "aliases": [
+        "hydropathy",
+        "hydrophobicity",
+        "kyte doolittle hydropathy",
+        "side chain hydrophobicity",
+        "sidechain hydrophobicity"
+      ]
+    },
+    {
+      "registry_key": "aqueous_solution_free_energy",
+      "family": "polarity_solvation",
+      "tool": "AAindex",
+      "tool_id": "CHAM820102",
+      "label": "free energy of solution in water (Charton-Charton)",
+      "aliases": [
+        "free energy of solution in water",
+        "aqueous solution free energy",
+        "hydration free energy",
+        "side chain hydration free energy",
+        "sidechain hydration free energy",
+        "side chain solvation free energy",
+        "sidechain solvation free energy"
+      ]
+    },
+    {
+      "registry_key": "polarity",
+      "family": "polarity_solvation",
+      "tool": "AAindex",
+      "tool_id": "GRAR740102",
+      "label": "Grantham polarity",
+      "aliases": [
+        "polarity",
+        "grantham polarity",
+        "side chain polarity",
+        "sidechain polarity"
+      ]
+    },
+    {
+      "registry_key": "sidechain_volume",
+      "family": "steric_size",
+      "tool": "AAindex",
+      "tool_id": "KRIW790103",
+      "label": "side-chain volume",
+      "aliases": [
+        "side chain volume",
+        "sidechain volume",
+        "steric volume",
+        "side chain steric size",
+        "sidechain steric size",
+        "side chain size",
+        "sidechain size",
+        "van der waals volume",
+        "side chain van der waals volume",
+        "sidechain van der waals volume",
+        "residue van der waals volume"
+      ]
+    },
+    {
+      "registry_key": "flexibility",
+      "family": "conformation",
+      "tool": "AAindex",
+      "tool_id": "BHAR880101",
+      "label": "average flexibility index",
+      "aliases": [
+        "flexibility",
+        "average flexibility",
+        "residue flexibility"
+      ]
+    },
+    {
+      "registry_key": "alpha_helix_propensity",
+      "family": "secondary_structure",
+      "tool": "AAindex",
+      "tool_id": "CHOP780201",
+      "label": "Chou-Fasman alpha-helix propensity",
+      "aliases": [
+        "alpha helix propensity",
+        "alpha helical propensity",
+        "helix propensity",
+        "alpha helix tendency",
+        "alpha helical tendency"
+      ]
+    },
+    {
+      "registry_key": "beta_sheet_propensity",
+      "family": "secondary_structure",
+      "tool": "AAindex",
+      "tool_id": "CHOP780202",
+      "label": "Chou-Fasman beta-sheet propensity",
+      "aliases": [
+        "beta sheet propensity",
+        "beta strand propensity",
+        "beta sheet tendency",
+        "beta strand tendency"
+      ]
+    },
+    {
+      "registry_key": "aromatic_ring_count",
+      "family": "aromaticity",
+      "tool": "RDKit",
+      "tool_id": "sidechain_aromatic_ring_count",
+      "label": "side-chain aromatic ring count",
+      "aliases": [
+        "aromatic ring count",
+        "side chain aromatic ring count",
+        "sidechain aromatic ring count",
+        "aromaticity"
+      ]
+    },
+    {
+      "registry_key": "sidechain_ring_count",
+      "family": "ring_geometry",
+      "tool": "RDKit",
+      "tool_id": "sidechain_ring_count",
+      "label": "side-chain ring count",
+      "aliases": [
+        "side chain ring count",
+        "sidechain ring count",
+        "ring count"
+      ]
+    },
+    {
+      "registry_key": "hbond_donor_count",
+      "family": "hydrogen_bonding",
+      "tool": "RDKit",
+      "tool_id": "sidechain_HBD_reference",
+      "label": "side-chain hydrogen-bond donor count",
+      "aliases": [
+        "hydrogen bond donor count",
+        "h bond donor count",
+        "hbd count",
+        "side chain hbd",
+        "sidechain hbd"
+      ]
+    },
+    {
+      "registry_key": "hbond_acceptor_count",
+      "family": "hydrogen_bonding",
+      "tool": "RDKit",
+      "tool_id": "sidechain_HBA_reference",
+      "label": "side-chain hydrogen-bond acceptor count",
+      "aliases": [
+        "hydrogen bond acceptor count",
+        "h bond acceptor count",
+        "hba count",
+        "side chain hba",
+        "sidechain hba"
+      ]
+    },
+    {
+      "registry_key": "hbond_site_count",
+      "family": "hydrogen_bonding",
+      "tool": "RDKit",
+      "tool_id": "sidechain_HBD_plus_HBA",
+      "label": "total side-chain HBD+HBA site count",
+      "aliases": [
+        "total hydrogen bond sites",
+        "hydrogen bond site count",
+        "hbd plus hba",
+        "hbond donor acceptor count",
+        "hydrogen bond donor acceptor capacity",
+        "number of hydrogen bond donors and acceptors in the side chain",
+        "side chain hydrogen bond donor acceptor count",
+        "sidechain hydrogen bond donor acceptor count",
+        "hydrogen bond donor acceptor count",
+        "hbd hba count"
+      ]
+    },
+    {
+      "registry_key": "sidechain_heavy_atom_count",
+      "family": "sidechain_extent",
+      "tool": "RDKit",
+      "tool_id": "sidechain_heavy_atom_count",
+      "label": "side-chain heavy atom count",
+      "aliases": [
+        "side chain heavy atom count",
+        "sidechain heavy atom count"
+      ]
+    },
+    {
+      "registry_key": "sidechain_heteroatom_count",
+      "family": "sidechain_heteroatoms",
+      "tool": "RDKit",
+      "tool_id": "sidechain_heteroatom_count",
+      "label": "side-chain heteroatom count",
+      "aliases": [
+        "side chain heteroatom count",
+        "sidechain heteroatom count",
+        "heteroatom count"
+      ]
+    },
+    {
+      "registry_key": "sidechain_amide",
+      "family": "functional_group",
+      "tool": "RDKit",
+      "tool_id": "has_sidechain_amide",
+      "label": "side-chain amide presence",
+      "aliases": [
+        "side chain amide",
+        "sidechain amide",
+        "amide presence",
+        "amide group presence"
+      ]
+    },
+    {
+      "registry_key": "sidechain_hydroxyl",
+      "family": "functional_group",
+      "tool": "RDKit",
+      "tool_id": "has_sidechain_hydroxyl",
+      "label": "side-chain hydroxyl presence",
+      "aliases": [
+        "side chain hydroxyl",
+        "sidechain hydroxyl",
+        "hydroxyl presence",
+        "hydroxyl group presence"
+      ]
+    },
+    {
+      "registry_key": "sidechain_carboxyl",
+      "family": "functional_group",
+      "tool": "RDKit",
+      "tool_id": "has_sidechain_carboxylic_acid",
+      "label": "side-chain carboxylic acid presence",
+      "aliases": [
+        "side chain carboxyl",
+        "sidechain carboxyl",
+        "carboxyl presence",
+        "carboxylic acid presence"
+      ]
+    },
+    {
+      "registry_key": "sidechain_thiol",
+      "family": "functional_group",
+      "tool": "RDKit",
+      "tool_id": "has_sidechain_thiol",
+      "label": "side-chain thiol presence",
+      "aliases": [
+        "side chain thiol",
+        "sidechain thiol",
+        "thiol presence",
+        "thiol group presence"
+      ]
+    },
+    {
+      "registry_key": "sidechain_thioether",
+      "family": "functional_group",
+      "tool": "RDKit",
+      "tool_id": "has_sidechain_thioether",
+      "label": "side-chain thioether presence",
+      "aliases": [
+        "side chain thioether",
+        "sidechain thioether",
+        "thioether presence"
+      ]
+    },
+    {
+      "registry_key": "beta_branching",
+      "family": "branching_geometry",
+      "tool": "RDKit",
+      "tool_id": "beta_branched",
+      "label": "beta-branching flag",
+      "aliases": [
+        "beta branching",
+        "beta branched",
+        "beta branch",
+        "side chain beta branching",
+        "sidechain beta branching"
+      ]
+    },
+    {
+      "registry_key": "backbone_sidechain_ring",
+      "family": "conformational_constraint",
+      "tool": "RDKit",
+      "tool_id": "backbone_sidechain_ring",
+      "label": "backbone-side-chain ring flag",
+      "aliases": [
+        "backbone side chain ring",
+        "backbone sidechain ring",
+        "cyclic backbone constraint",
+        "proline ring constraint"
+      ]
+    },
+    {
+      "registry_key": "net_sidechain_charge_pH7_4",
+      "family": "charge",
+      "tool": "peptides.py",
+      "tool_id": "nominal_sidechain_charge_pH7_4",
+      "label": "nominal side-chain charge at pH 7.4",
+      "aliases": [
+        "net side chain charge",
+        "net sidechain charge",
+        "side chain charge at ph 7.4",
+        "sidechain charge at ph 7.4",
+        "net charge at ph 7.4",
+        "side chain net charge",
+        "formal charge",
+        "side chain formal charge",
+        "sidechain formal charge",
+        "formal charge at physiological ph",
+        "side chain formal charge at physiological ph",
+        "sidechain formal charge at physiological ph",
+        "net formal charge of the amino acid side chain at ph 7.4",
+        "side chain formal charge at ph 7.4",
+        "sidechain formal charge at ph 7.4"
+      ]
+    },
+    {
+      "registry_key": "absolute_sidechain_charge_pH7_4",
+      "family": "charge",
+      "tool": "peptides.py",
+      "tool_id": "absolute_nominal_sidechain_charge_pH7_4",
+      "label": "absolute nominal side-chain charge magnitude at pH 7.4",
+      "aliases": [
+        "absolute side chain charge",
+        "absolute sidechain charge",
+        "side chain charge magnitude",
+        "sidechain charge magnitude",
+        "absolute charge magnitude"
+      ]
+    }
+  ]
+}

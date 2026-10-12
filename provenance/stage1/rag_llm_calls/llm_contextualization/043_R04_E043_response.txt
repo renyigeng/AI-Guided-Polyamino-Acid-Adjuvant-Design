@@ -1,0 +1,27 @@
+{
+  "summary": "Poly-L-arginine mixed with peptide antigens induces infiltration of MHC class II+ cells (including dendritic cells) at injection sites, loading of APCs with antigen, and potent long-lasting systemic T-cell responses without inducing antibodies against the polymer.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "induction of potent and long-lasting T-cell responses against cancer antigens",
+    "no antibody responses against poly-L-arginine"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "large numbers of antigen-specific T cells are induced after vaccination with poly-L-arginine and peptide antigens",
+    "APCs mediate the generation of T lymphocytes",
+    "MHC class II+ cells infiltrate injection sites and are loaded with large amounts of antigen under the influence of poly-L-arginine",
+    "antigen-charged APCs detected in draining lymph nodes",
+    "antigen-specific T cell responses are systemic and detectable more than 4 months after the last vaccination",
+    "no antibody responses against poly-L-arginine even after repeat injections"
+  ],
+  "material_or_molecular_context": "poly-L-arginine (cationic poly-amino acid)",
+  "biological_context": "in vivo in animal models (presumably mice) after subcutaneous injection; tumor antigen-derived peptide antigens; draining lymph nodes; MHC class II+ cells (APCs, including dendritic cells)",
+  "limitations_for_current_question": [
+    "does not explicitly measure dendritic cell activation markers or cross-presentation",
+    "does not discriminate between dendritic cells and other APCs in the infiltration and antigen loading",
+    "does not provide detailed mechanism of immune activation or adjuvant activity beyond T-cell induction",
+    "only tested poly-L-arginine (not other arginine-based polypeptides or polyarginine variants)",
+    "no direct comparison to other adjuvants or materials"
+  ],
+  "supporting_text": "after s.c. injection, MHC class II(+) cells infiltrate injection sites and are loaded with large amounts of antigen in vivo under the influence of poly-L-arginine"
+}

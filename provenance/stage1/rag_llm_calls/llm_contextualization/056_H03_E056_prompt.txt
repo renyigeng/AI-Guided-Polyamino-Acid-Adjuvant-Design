@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H03
+CANDIDATE HINT: R;H
+CHIRALITY HINT: 
+PMID: 34646819
+DOI: 10.3389/fbioe.2021.744657
+
+TITLE:
+Micelles Based on Lysine, Histidine, or Arginine: Designing Structures for Enhanced Drug Delivery.
+
+ABSTRACT:
+Natural amino acids and their derivatives are excellent building blocks of polymers for various biomedical applications owing to the non-toxicity, biocompatibility, and ease of multifunctionalization. In the present review, we summarized the common approaches to designing and constructing functional polymeric micelles based on basic amino acids including lysine, histidine, and arginine and highlighted their applications as drug carriers for cancer therapy. Different polypeptide architectures including linear polypeptides and dendrimers were developed for efficient drug loading and delivery. Besides, polylysine- and polyhistidine-based micelles could enable pH-responsive drug release, and polyarginine can realize enhanced membrane penetration and gas therapy by generating metabolites of nitric oxide (NO). It is worth mentioning that according to the structural or functional characteristics of basic amino acids and their derivatives, key points for designing functional micelles with excellent drug delivery efficiency are importantly elaborated in order to pave the way for exploring micelles based on basic amino acids.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

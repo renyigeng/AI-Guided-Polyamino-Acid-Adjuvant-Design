@@ -1,0 +1,13 @@
+﻿domain_id,perturbed_indicator_id,perturbed_indicator_name,perturbation,fraction,weights,baseline_winner,new_winner,winner_changed,baseline_winner_rank_after_perturbation
+D2,I1,single-residue hydrophobicity,down,0.2,0.28571429|0.35714286|0.35714286,L,L,False,1.0
+D2,I1,single-residue hydrophobicity,up,0.2,0.37500000|0.31250000|0.31250000,L,L,False,1.0
+D2,I2,side-chain volume,down,0.2,0.35714286|0.28571429|0.35714286,L,L,False,1.0
+D2,I2,side-chain volume,up,0.2,0.31250000|0.37500000|0.31250000,L,L,False,1.0
+D2,I3,beta-branching,down,0.2,0.35714286|0.35714286|0.28571429,L,L,False,1.0
+D2,I3,beta-branching,up,0.2,0.31250000|0.31250000|0.37500000,L,L,False,1.0
+D3,I1,Net side-chain charge at pH 7.4,down,0.2,0.28571429|0.35714286|0.35714286,Q,Q,False,1.0
+D3,I1,Net side-chain charge at pH 7.4,up,0.2,0.37500000|0.31250000|0.31250000,Q,Q,False,1.0
+D3,I2,Side-chain amide presence,down,0.2,0.35714286|0.28571429|0.35714286,Q,Q,False,1.0
+D3,I2,Side-chain amide presence,up,0.2,0.31250000|0.37500000|0.31250000,Q,Q,False,1.0
+D3,I3,Side-chain volume,down,0.2,0.35714286|0.35714286|0.28571429,Q,Q,False,1.0
+D3,I3,Side-chain volume,up,0.2,0.31250000|0.31250000|0.37500000,Q,Q,False,1.0

@@ -1,0 +1,23 @@
+{
+  "summary": "This study investigates alginate polylysine microcapsules as immune barriers for islet transplantation, comparing poly-L-lysine (PLL) and poly-D-lysine (PDL) membranes. It measures permeability to cytokines (TNF, IL-1β) and immunoglobulins (IgG). All capsules were impermeable to IgG; PLL-membranes (but not PDL) allowed transferrin passage; IL-1β penetrated all capsules; high-G capsules could exclude TNF. The study provides evidence that PDL-based membranes differ in permeability from PLL, relevant to immune barrier function, but does not directly assess adaptive immune outcomes or immunotherapy.",
+  "relevance_score": 3,
+  "reported_outcomes": [
+    "Permeability of microcapsules to IgG, transferrin, TNF, IL-1β, and insulin"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "All capsules were impermeable to IgG.",
+    "Capsules made with PLL-, but not PDL-membranes were permeable for transferrin.",
+    "IL-1β penetrated all capsule types.",
+    "High-G capsules could be made impermeable to TNF while allowing transferrin to pass."
+  ],
+  "material_or_molecular_context": "Alginate polylysine microcapsules with poly-D-lysine (PDL) and poly-L-lysine (PLL) coatings",
+  "biological_context": "Pancreatic islet transplantation; mouse islets of Langerhans; cytokines (TNF, IL-1β) and immunoglobulins (IgG)",
+  "limitations_for_current_question": [
+    "Does not directly measure adaptive immune outcomes (e.g., T-cell activation, antibody titers) or antitumor/immunotherapy effects.",
+    "Focuses on microcapsule permeability rather than nanoparticle/nanoadjuvant systems.",
+    "D-lysine is part of a bulk microcapsule membrane, not a polymer or nanoparticle designed for immune modulation.",
+    "Context is islet transplantation for diabetes, not cancer immunotherapy."
+  ],
+  "supporting_text": "Capsules made with a PLL-, but not PDL-membranes were permeable for transferrin."
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.1",
+  "status": "stage1_rag_contextualization_and_pairwise_icl",
+  "api": {
+    "api_key_env": [
+      "TIAOZHANSAI_LLM_API_KEY",
+      "DASHSCOPE_API_KEY",
+      "OPENAI_API_KEY"
+    ],
+    "base_url_env": "TIAOZHANSAI_LLM_BASE_URL",
+    "model_env": "TIAOZHANSAI_LLM_MODEL",
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "timeout_seconds": 120,
+    "retries": 3
+  },
+  "contextualization": {
+    "one_query_document_pair_per_call": true,
+    "save_raw_response": true,
+    "save_usage": true,
+    "relevance_score_purpose": "RAG evidence relevance only; never interpret as immune activation strength"
+  },
+  "decision": {
+    "candidate_set": ["K", "R", "H"],
+    "pairwise_order_reversal": true,
+    "allow_inconclusive_identity": true,
+    "lys_chirality_only": true,
+    "other_amino_acid_chirality_forbidden": true
+  }
+}

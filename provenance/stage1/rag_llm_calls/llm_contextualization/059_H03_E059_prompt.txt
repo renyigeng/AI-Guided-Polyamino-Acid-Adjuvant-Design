@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H03
+CANDIDATE HINT: H
+CHIRALITY HINT: 
+PMID: 12922153
+DOI: 10.1016/s0142-9612(03)00341-7
+
+TITLE:
+Polyhistidine-PEG:DNA nanocomposites for gene delivery.
+
+ABSTRACT:
+Complexation of plasmid DNA with polycations is a popular method by which to transfer therapeutic nucleic acid sequences to cells. One caveat of the approach is that the positive zeta potential of the complexes facilitates interaction with blood constituents, leading to serum protein adsorption and complement activation. As a countermeasure, investigators have developed polycations combined with polyethylene glycol (PEG) to create complexes with reduced protein adsorption potential. We have designed and synthesized PEG-polyhistidine conjugates to evaluate the material class as potential gene delivery vehicles. Two conjugate architectures (comb-shaped and linear A-B block copolymers) were synthesized and formulated with plasmid DNA. The complexes were characterized with respect to DNA complexation capacity, hydrodynamic diameter, zeta potential, in vitro cytotoxicity and transfection capacity in a model cell line. PEG content of the conjugate significantly influenced the hydrodynamic diameter of the DNA:conjugate composite in aqueous solution. For comb-shaped conjugates steric hindrance attributed to PEG led to a direct relationship between the PEG content and the complex size. Both architectures could condensed plasmid DNA into complexes with hydrodynamic diameters <150 nm. Complexation of DNA with the polyhistidine-PEG conjugates resulted in nanocomposites with negative zeta potentials that retarded DNase I-mediated hydrolysis, and all conjugates showed low cytotoxicity to macrophages cultured in vitro. The transfection efficiency was approximately equivalent to DNA:polylysine complexes. The formulation characteristics and low cytotoxicity suggest that polyhistidine-PEG conjugates may be useful for gene delivery.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

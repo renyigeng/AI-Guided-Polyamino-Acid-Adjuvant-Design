@@ -1,0 +1,31 @@
+{
+  "preference": "B",
+  "basis": [
+    "Multiple studies directly demonstrate that polyarginine (e.g., R9) delivers protein antigens to dendritic cells and enhances MHC class I/II presentation and T-cell activation, which is central to a tumor-vaccine function (E025, E044).",
+    "Poly-L-arginine alone induces APC infiltration and long-lasting T-cell responses without inducing anti-polymer antibodies (E043), and synergizes with adjuvants for prolonged immunity over 372 days (E027, E045).",
+    "Arginine-rich peptides show arginine-specific endosomal leakage and cytosolic penetration, supporting intracellular delivery of vaccine components (E032), and polyarginine-coated nanovectors are safe in vivo (E037, E038, E039).",
+    "In contrast, polyhistidine evidence often relies on His-tag systems or hybrid materials, with less direct demonstration of the polymer itself as the functional vaccine block (e.g., E062, E064, E065).",
+    "Safety trade-offs for polyhistidine include hemolytic activity (E057), while polyarginine shows better overall safety in the supplied evidence (E037, E038)."
+  ],
+  "supporting_evidence_ids": [
+    "E025",
+    "E044",
+    "E043",
+    "E027",
+    "E045",
+    "E032",
+    "E047",
+    "E037",
+    "E038",
+    "E039"
+  ],
+  "counter_evidence_ids": [
+    "E057",
+    "E032"
+  ],
+  "uncertainties": [
+    "Polyarginine immune responses often require co-adjuvants (CpG, CDNs), and its efficacy as a standalone vaccine material is not fully isolated.",
+    "Polyhistidine's pH-sensitive endosomal escape is attractive, but its direct antigen-delivery and DC-activation evidence in pure poly(amino acid) form is weaker.",
+    "Transferability to a binary amphiphilic block copolymer is inferred from homopolymer data; direct comparative experiments in the target architecture are absent for both candidates."
+  ]
+}

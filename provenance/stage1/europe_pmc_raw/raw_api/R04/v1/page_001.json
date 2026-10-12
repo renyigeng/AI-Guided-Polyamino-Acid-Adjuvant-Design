@@ -1,0 +1,1788 @@
+{
+  "version": "6.9",
+  "hitCount": 5,
+  "request": {
+    "queryString": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"dendritic cell activation\" OR \"DC activation\" OR \"antigen presentation\" OR cross-presentation OR \"dendritic cell maturation\" OR \"DC maturation\")",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "41270217",
+        "source": "MED",
+        "pmid": "41270217",
+        "pmcid": "PMC12806509",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12806509"
+          ]
+        },
+        "doi": "10.1002/advs.202510500",
+        "title": "Targeting the SOX9/TIMP1 Axis with iRGD-Conjugated Nanoplatform Enhances Dendritic Cell Function and Photodynamic Immunotherapy in Gastric Cancer.",
+        "authorString": "Zhong B, Zhang Y, Wang H, Guo L.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Zhong B",
+              "lastName": "Zhong",
+              "firstName": "Banghua",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Hospital of China Medical University, Shenyang, 110001, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhang Y",
+              "lastName": "Zhang",
+              "firstName": "Yijie",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Hepatobiliary and Organ Transplantation, The First Affiliated Hospital of China Medical University, Shenyang, 110001, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang H",
+              "lastName": "Wang",
+              "firstName": "Honghu",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Surgical Oncology, The First Affiliated Hospital of China Medical University, Shenyang, 110001, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Guo L",
+              "lastName": "Guo",
+              "firstName": "Lili",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0006-3393-0601"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology, The First Hospital of China Medical University, Shenyang, 110001, China."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0009-0006-3393-0601"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "3",
+          "volume": "13",
+          "journalIssueId": 4092209,
+          "dateOfPublication": "2026 Jan",
+          "monthOfPublication": 1,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "Adv Sci (Weinh)",
+            "title": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+            "essn": "2198-3844",
+            "issn": "2198-3844",
+            "nlmid": "101664569",
+            "isoabbreviation": "Adv Sci (Weinh)"
+          },
+          "printPublicationDate": "2026-01-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "e10500",
+        "abstractText": "Gastric cancer (GC) remains a therapeutic challenge due to its immunosuppressive microenvironment. This study reveals that the SOX9/TIMP1/FAK/PI3K axis impedes dendritic cell (DC) maturation and antitumor immunity in GC, using integrated single-cell RNA sequencing (scRNA-seq) and spatial transcriptomics (ST-seq) analysis. Irgd-conjugated poly(lactic-co-glycolic acid) (PLGA) nanoparticles (NPs) co-loaded with small interfering RNA targeting SOX9 (si-SOX9), the photosensitizer chlorin e6 (Ce6), and L-arginine (L-Arg) (termed iRGD NPs@si-SOX9/CL) are developed to simultaneously disrupt this immunosuppressive axis and amplify photodynamic therapy (PDT). In vitro, these NPs enhance cellular uptake and lysosomal escape, suppressing SOX9 expression and generating reactive oxygen species (ROS) and nitric oxide (NO) upon near-infrared (NIR) irradiation. This dual action significantly inhibits GC cell proliferation, migration, and invasion while promoting DC maturation (evidenced by elevated CD80/CD86 expression) and CD8⁺ T-cell activation. In vivo, iRGD modification boosts tumor accumulation of NPs, and NP-mediated PDT synergized with SOX9 silencing to suppress tumor growth in GC xenografts. Mechanistically, NPs@si-SOX9/CL blocks SOX9-driven transcriptional activation of TIMP1, reversing FAK/PI3K signaling and restoring DC function. Consequently, tumor-infiltrating mature DCs and cytotoxic T lymphocytes increase significantly, reshaping the immunosuppressive niche. This nanoplatform offers a promising strategy to augment GC immunotherapy by precisely targeting tumor-intrinsic immunosuppression and potentiating PDT efficacy.",
+        "affiliation": "Department of Gastrointestinal Surgery, The First Hospital of China Medical University, Shenyang, 110001, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Dendritic Cells",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Stomach Neoplasms",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DT",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TH",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Chlorophyllides"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Oligopeptides"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Tissue Inhibitor of Metalloproteinase-1",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunotherapy",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Photochemotherapy",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nanoparticles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "SOX9 Transcription Factor",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Photodynamic therapy",
+            "Dendritic Cell Maturation",
+            "Targeted Nanoparticles",
+            "Sox9/timp1 Signaling Axis",
+            "Gastric Cancer Immunotherapy"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Oligopeptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Chlorophyllides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Tissue Inhibitor of Metalloproteinase-1",
+              "registryNumber": "0"
+            },
+            {
+              "name": "SOX9 Transcription Factor",
+              "registryNumber": "0"
+            },
+            {
+              "name": "SOX9 protein, human",
+              "registryNumber": "0"
+            },
+            {
+              "name": "arginyl-glycyl-aspartic acid",
+              "registryNumber": "78VO7F77PN"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/advs.202510500"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12806509"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12806509?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 2,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "Y",
+        "dbCrossReferenceList": {
+          "dbName": [
+            "EMBL"
+          ]
+        },
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo",
+            "cellosaurus",
+            "gen",
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2026-01-15",
+        "dateOfCreation": "2025-11-21",
+        "dateOfRevision": "2026-01-27",
+        "electronicPublicationDate": "2025-11-21",
+        "firstPublicationDate": "2025-11-21",
+        "firstIndexDate": "2025-11-21",
+        "fullTextReceivedDate": "2026-01-16",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "38649894",
+        "source": "MED",
+        "pmid": "38649894",
+        "pmcid": "PMC11036690",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11036690"
+          ]
+        },
+        "doi": "10.1186/s12967-024-05195-7",
+        "title": "Arginine-linked HPV-associated E7 displaying bacteria-derived outer membrane vesicles as a potent antigen-specific cancer vaccine.",
+        "authorString": "Wang S, Chen CC, Hu MH, Cheng M, Tu HF, Tsai YC, Yang JM, Wu TC, Huang CH, Hung CF.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Wang S",
+              "lastName": "Wang",
+              "firstName": "Suyang",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0002-9139-1723"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chen CC",
+              "lastName": "Chen",
+              "firstName": "Chao-Cheng",
+              "initials": "CC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2685-6766"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hu MH",
+              "lastName": "Hu",
+              "firstName": "Ming-Hung",
+              "initials": "MH",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Cheng M",
+              "lastName": "Cheng",
+              "firstName": "Michelle",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tu HF",
+              "lastName": "Tu",
+              "firstName": "Hsin-Fang",
+              "initials": "HF",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tsai YC",
+              "lastName": "Tsai",
+              "firstName": "Ya-Chea",
+              "initials": "YC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang JM",
+              "lastName": "Yang",
+              "firstName": "Jr-Ming",
+              "initials": "JM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wu TC",
+              "lastName": "Wu",
+              "firstName": "T C",
+              "initials": "TC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1623-4584"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  },
+                  {
+                    "affiliation": "Department of Oncology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  },
+                  {
+                    "affiliation": "Department of Obstetrics and Gynecology, Johns Hopkins University School of Medicine, Baltimore, MD, USA."
+                  },
+                  {
+                    "affiliation": "Molecular Microbiology and Immunology, Johns Hopkins University School of Medicine, Baltimore, MD, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Huang CH",
+              "lastName": "Huang",
+              "firstName": "Chuan-Hsiang",
+              "initials": "CH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9993-8004"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hung CF",
+              "lastName": "Hung",
+              "firstName": "Chien-Fu",
+              "initials": "CF",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9170-7797"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA. [email removed for public release]."
+                  },
+                  {
+                    "affiliation": "Department of Oncology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA. [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9170-7797"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9993-8004"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1623-4584"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2685-6766"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0002-9139-1723"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "22",
+          "journalIssueId": 3748752,
+          "dateOfPublication": "2024 Apr",
+          "monthOfPublication": 4,
+          "yearOfPublication": 2024,
+          "journal": {
+            "medlineAbbreviation": "J Transl Med",
+            "title": "Journal of translational medicine",
+            "essn": "1479-5876",
+            "issn": "1479-5876",
+            "nlmid": "101190741",
+            "isoabbreviation": "J Transl Med"
+          },
+          "printPublicationDate": "2024-04-01"
+        },
+        "pubYear": "2024",
+        "pageInfo": "378",
+        "abstractText": "<h4>Background</h4>Bacteria-based cancer therapy have demonstrated innovative strategies to combat tumors. Recent studies have focused on gram-negative bacterial outer membrane vesicles (OMVs) as a novel cancer immunotherapy strategy due to its intrinsic properties as a versatile carrier.<h4>Method</h4>Here, we developed an Human Papillomavirus (HPV)-associated E7 antigen displaying Salmonella-derived OMV vaccine, utilizing a Poly(L-arginine) cell penetrating peptide (CPP) to enhance HPV16 E7 (aa49-67) H-2 Db and OMV affinity, termed SOMV-9RE7.<h4>Results</h4>Due to OMV's intrinsic immunogenic properties, SOMV-9RE7 effectively activates adaptive immunity through antigen-presenting cell uptake and antigen cross-presentation. Vaccination of engineered OMVs shows immediate tumor suppression and recruitment of infiltrating tumor-reactive immune cells.<h4>Conclusion</h4>The simplicity of the arginine coating strategy boasts the versatility of immuno-stimulating OMVs that can be broadly implemented to personalized bacterial immunotherapeutic applications.",
+        "affiliation": "Department of Pathology, Johns Hopkins University School of Medicine, 1550 Orleans Street, CRB II 307, Baltimore, MD, 21287, USA.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Cancer Institute",
+              "grantId": "P50CA098252",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Cancer Institute",
+              "grantId": "R21DE029910-01",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "P50 CA098252",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Cancer Institute",
+              "grantId": "R21CA256020",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "R21CA256020",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "1R21CA234516-01A1",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "R01CA237067",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Cancer Institute",
+              "grantId": "R01CA237067",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "R21DE029910-01",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Cancer Institute",
+              "grantId": "1R21CA234516-01A1",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "P50CA098252",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "R21 CA234516",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred C57BL"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Arginine"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Cancer Vaccines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Papillomavirus E7 Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Bacterial Outer Membrane",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Cancer vaccine",
+            "Tumor infiltrating lymphocytes",
+            "Antigen Display",
+            "Tumor Antigen-specific T Cell",
+            "Bacteria Outer Membrane Vesicle"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "oncogene protein E7, human papillomavirus type 16",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Cancer Vaccines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Papillomavirus E7 Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Arginine",
+              "registryNumber": "94ZLA3W45F"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://translational-medicine.biomedcentral.com/counter/pdf/10.1186/s12967-024-05195-7"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s12967-024-05195-7"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11036690"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11036690?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 10,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "N",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2024-04-24",
+        "dateOfCreation": "2024-04-22",
+        "dateOfRevision": "2025-07-24",
+        "electronicPublicationDate": "2024-04-22",
+        "firstPublicationDate": "2024-04-22",
+        "firstIndexDate": "2024-04-23",
+        "fullTextReceivedDate": "2024-04-25",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "40480413",
+        "source": "MED",
+        "pmid": "40480413",
+        "doi": "10.1016/j.actbio.2025.05.063",
+        "title": "Self-propelled smart nanomotors for enhanced mild photothermal therapy of tumors through autophagy modulation.",
+        "authorString": "Mei L, Liu H, Ding Q, Xie Y, Shen X, Chen H, Wang K, Li M, He Q.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Mei L",
+              "lastName": "Mei",
+              "firstName": "Ling",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2762-2235"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liu H",
+              "lastName": "Liu",
+              "firstName": "Haowei",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ding Q",
+              "lastName": "Ding",
+              "firstName": "Qihang",
+              "initials": "Q",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2665-9036"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry, Korea University, Seoul, 02841, South Korea. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Xie Y",
+              "lastName": "Xie",
+              "firstName": "Yuxin",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Shen X",
+              "lastName": "Shen",
+              "firstName": "Xue",
+              "initials": "X",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chen H",
+              "lastName": "Chen",
+              "firstName": "Haiyan",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang K",
+              "lastName": "Wang",
+              "firstName": "Kaixi",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li M",
+              "lastName": "Li",
+              "firstName": "Man",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Drug-Targeting and Drug Delivery System of the Education Ministry and Sichuan Province, Sichuan Engineering Laboratory for Plant-Sourced Drug and Sichuan Research Centre for Drug Precision Industrial Technology, West China School of Pharmacy, Sichuan University, Chengdu 610041, China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "He Q",
+              "lastName": "He",
+              "firstName": "Qin",
+              "initials": "Q",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1741-9900"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Drug-Targeting and Drug Delivery System of the Education Ministry and Sichuan Province, Sichuan Engineering Laboratory for Plant-Sourced Drug and Sichuan Research Centre for Drug Precision Industrial Technology, West China School of Pharmacy, Sichuan University, Chengdu 610041, China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2665-9036"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2762-2235"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1741-9900"
+            }
+          ]
+        },
+        "journalInfo": {
+          "volume": "201",
+          "journalIssueId": 3976183,
+          "dateOfPublication": "2025 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "Acta Biomater",
+            "title": "Acta biomaterialia",
+            "essn": "1878-7568",
+            "issn": "1742-7061",
+            "nlmid": "101233144",
+            "isoabbreviation": "Acta Biomater"
+          },
+          "printPublicationDate": "2025-07-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "574-590",
+        "abstractText": "Mild photothermal therapy (mPTT) holds significant potential as a minimally invasive strategy for tumor ablation. However, its clinical translation remains constrained by the uneven intratumoral distribution of photothermal agents and the induction of autophagy pathways. These limitations frequently culminate in suboptimal therapeutic efficacy, facilitating immune evasion by residual tumor cells and thereby elevating the risk of recurrence and metastasis. Here, we report the development of nitric oxide-driven nanomotors (L-Arg-CaP@PDA-CQ) constructed by encapsulating L-arginine within calcium phosphate nanoparticles, functionalized with poly-dopamine shells and loaded with chloroquine, an autophagy inhibitor. These self-propelled nanomotors demonstrated the ability to evade lysosomal phagocytosis, penetrate vascular barriers, and enhance intratumoral accumulation. Autophagy inhibition sensitized melanoma cells to mPTT, while the combination of chloroquine with mPTT induced reactive oxygen species generation and mitochondrial disruption. Furthermore, mPTT facilitated immunogenic cell death, and chloroquine-mediated inhibition of autophagosome degradation enhanced tumor antigen presentation, stimulating robust T-cell infiltration and immune activation. This dual mechanism significantly suppressed tumor recurrence and metastasis. The proposed nanomotors provide a synergistic paradigm for augmenting mPTT and activating antitumor immunity, highlighting their translational potential in clinical oncology. STATEMENT OF SIGNIFICANCE: Mild photothermal therapy (mPTT) is a promising cancer treatment modality that operates at lower temperatures to minimize damage to healthy tissues while promoting antitumor immune responses. However, its efficacy can be limited by the activation of autophagy in tumor cells, which supports tumor survival. In addition, the hypoxic microenvironment of melanoma tumors often restricts drug penetration, further complicating treatment. To address these challenges, we have designed self-propelled smart nanomotors that can actively penetrate acidic tumor tissues and deliver drugs to the tumor site.These nanomotors modulate autophagy to enhance the sensitivity of melanoma cells to mPTT, leading to efficient tumor cell ablation. When combined with chloroquine, this approach generates large amounts of reactive oxygen species and causes mitochondrial damage, while promoting T-cell infiltration through the release of damage-associated molecular patterns (DAMPs). This strategy not only enhances the therapeutic efficacy of mPTT but also holds significant potential for clinical translation in the treatment of melanoma.",
+        "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Chengdu University",
+              "grantId": "2081922007",
+              "orderIn": 0
+            },
+            {
+              "agency": "China Scholarship Council",
+              "grantId": "202106270027",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Reactive Oxygen Species",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Indoles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Chloroquine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polymers",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Autophagy",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nanoparticles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TU",
+                    "qualifierName": "therapeutic use"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Photothermal Therapy"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Near infrared",
+            "Autophagy",
+            "Immunogenic Cell Death",
+            "Nanomotor",
+            "Mild Photothermal Therapy"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Polymers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Indoles",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Reactive Oxygen Species",
+              "registryNumber": "0"
+            },
+            {
+              "name": "polydopamine",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Chloroquine",
+              "registryNumber": "886U3H6UFF"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.actbio.2025.05.063"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 8,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2025-07-10",
+        "dateOfCreation": "2025-06-06",
+        "dateOfRevision": "2026-05-17",
+        "electronicPublicationDate": "2025-06-04",
+        "firstPublicationDate": "2025-06-04",
+        "firstIndexDate": "2025-06-11",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "33775089",
+        "source": "MED",
+        "pmid": "33775089",
+        "pmcid": "PMC8822437",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8822437"
+          ]
+        },
+        "doi": "10.1021/acsbiomaterials.0c01429",
+        "title": "Titrating Polyarginine into Nanofibers Enhances Cyclic-Dinucleotide Adjuvanticity <i>in Vitro</i> and after Sublingual Immunization.",
+        "authorString": "Kelly SH, Cossette BJ, Varadhan AK, Wu Y, Collier JH.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Kelly SH",
+              "lastName": "Kelly",
+              "firstName": "Sean H",
+              "initials": "SH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8590-3839"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Biomedical Engineering Department, Duke University, Durham, North Carolina 27708, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Cossette BJ",
+              "lastName": "Cossette",
+              "firstName": "Benjamin J",
+              "initials": "BJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Biomedical Engineering Department, Duke University, Durham, North Carolina 27708, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Varadhan AK",
+              "lastName": "Varadhan",
+              "firstName": "Ajay K",
+              "initials": "AK",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Biomedical Engineering Department, Duke University, Durham, North Carolina 27708, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wu Y",
+              "lastName": "Wu",
+              "firstName": "Yaoying",
+              "initials": "Y",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0570-2493"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Biomedical Engineering Department, Duke University, Durham, North Carolina 27708, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Collier JH",
+              "lastName": "Collier",
+              "firstName": "Joel H",
+              "initials": "JH",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3536-4827"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Biomedical Engineering Department, Duke University, Durham, North Carolina 27708, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8590-3839"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0570-2493"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3536-4827"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "5",
+          "volume": "7",
+          "journalIssueId": 3167410,
+          "dateOfPublication": "2021 May",
+          "monthOfPublication": 5,
+          "yearOfPublication": 2021,
+          "journal": {
+            "medlineAbbreviation": "ACS Biomater Sci Eng",
+            "title": "ACS biomaterials science & engineering",
+            "essn": "2373-9878",
+            "issn": "2373-9878",
+            "nlmid": "101654670",
+            "isoabbreviation": "ACS Biomater Sci Eng"
+          },
+          "printPublicationDate": "2021-05-01"
+        },
+        "pubYear": "2021",
+        "pageInfo": "1876-1888",
+        "abstractText": "Effective sublingual peptide immunization requires overcoming challenges of both delivery and immunogenicity. Mucosal adjuvants, such as cyclic-dinucleotides (CDN), can promote sublingual immune responses but must be codelivered with the antigen to the epithelium for maximum effect. We designed peptide-polymer nanofibers (PEG-Q11) displaying nona-arginine (R9) at a high density to promote complexation with CDNs <i>via</i> bidentate hydrogen-bonding with arginine side chains. We coassembled PEG-Q11 and PEG-Q11R9 peptides to titrate the concentration of R9 within nanofibers. <i>In vitro</i>, PEG-Q11R9 fibers and cyclic-di-GMP or cyclic-di-AMP adjuvants had a synergistic effect on enhancing dendritic cell activation that was STING-dependent and increased monotonically with increasing R9 concentration. The polyvalent display of R9 on assembled nanofibers was significantly more effective at promoting CDN-mediated DC activation <i>in vitro</i> than mixing nanofibers with an equimolar concentration of unassembled R9 peptide. The sublingual administration of nanofibers revealed a bell-shaped trend between increasing R9 concentration and enhancements to antigen trafficking and the activation of DCs in the draining lymph nodes. Intermediate levels of R9 within sublingually administered PEG-Q11 fibers were optimal for immunization, suggesting a balance between polyarginine's ability to sequester CDNs along the nanofiber and its potentially detrimental mucoadhesive interactions. These findings present a potentially generalizable biomaterial strategy for enhancing the potency of CDN adjuvants and reveal important design considerations for the nascent field of sublingual biomaterial immunization.",
+        "affiliation": "Biomedical Engineering Department, Duke University, Durham, North Carolina 27708, United States.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Institute of Biomedical Imaging and Bioengineering",
+              "grantId": "5R01EB009701",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIBIB NIH HHS",
+              "acronym": "EB",
+              "grantId": "R01 EB009701",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation",
+              "grantId": "ECCS-2025064",
+              "orderIn": 0
+            },
+            {
+              "agency": "North Carolina Biotechnology Center",
+              "grantId": "2017-IDG-1018",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunization"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Administration, Sublingual"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nanofibers"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Vaccine",
+            "Adjuvant",
+            "Biomaterials",
+            "Sublingual",
+            "Sting",
+            "Polyarginine"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Unpaywall",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8822437"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1021/acsbiomaterials.0c01429"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC8822437"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC8822437?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1021/acsbiomaterials.0c01429"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 18,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS1771584",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen"
+          ]
+        },
+        "dateOfCompletion": "2021-05-19",
+        "dateOfCreation": "2021-03-29",
+        "dateOfRevision": "2022-05-12",
+        "electronicPublicationDate": "2021-03-27",
+        "firstPublicationDate": "2021-03-27",
+        "firstIndexDate": "2021-03-30",
+        "fullTextReceivedDate": "2025-02-04",
+        "embargoDate": "2022-05-10",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "28638786",
+        "source": "MED",
+        "pmid": "28638786",
+        "pmcid": "PMC5473321",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5473321"
+          ]
+        },
+        "doi": "10.1002/advs.201700050",
+        "title": "Polyelectrolyte-Enrobed Cancer Cells in View of Personalized Immune-Therapy.",
+        "authorString": "Lybaert L, Ryu KA, De Rycke R, Chon AC, De Wever O, Vermaelen KY, Esser-Kahn A, De Geest BG.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Lybaert L",
+              "lastName": "Lybaert",
+              "firstName": "Lien",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4187-9854"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics Ghent University 9000 Ghent Belgium."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ryu KA",
+              "lastName": "Ryu",
+              "firstName": "Keun Ah",
+              "initials": "KA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry University of California 92618 Irvine CA USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "De Rycke R",
+              "lastName": "De Rycke",
+              "firstName": "Riet",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "VIB Inflammation Research Center and Department of Biomedical Molecular Biology Ghent University 9052 Ghent Belgium."
+                  },
+                  {
+                    "affiliation": "Department of Plant Systems Biology VIB and Department of Plant Biotechnology and Bioinformatics Ghent University 9052 Gent Belgium."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chon AC",
+              "lastName": "Chon",
+              "firstName": "Alfred C",
+              "initials": "AC",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry University of California 92618 Irvine CA USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "De Wever O",
+              "lastName": "De Wever",
+              "firstName": "Olivier",
+              "initials": "O",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of Experimental Cancer Research Ghent University 9000 Ghent Belgium."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Vermaelen KY",
+              "lastName": "Vermaelen",
+              "firstName": "Karim Y",
+              "initials": "KY",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Tumor Immunology Laboratory Department of Respiratory Medicine Ghent University Hospital 9000 Ghent Belgium."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Esser-Kahn A",
+              "lastName": "Esser-Kahn",
+              "firstName": "Aaron",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry University of California 92618 Irvine CA USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "De Geest BG",
+              "lastName": "De Geest",
+              "firstName": "Bruno G",
+              "initials": "BG",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics Ghent University 9000 Ghent Belgium."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4187-9854"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "6",
+          "volume": "4",
+          "journalIssueId": 2570276,
+          "dateOfPublication": "2017 Jun",
+          "monthOfPublication": 6,
+          "yearOfPublication": 2017,
+          "journal": {
+            "medlineAbbreviation": "Adv Sci (Weinh)",
+            "title": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+            "essn": "2198-3844",
+            "issn": "2198-3844",
+            "nlmid": "101664569",
+            "isoabbreviation": "Adv Sci (Weinh)"
+          },
+          "printPublicationDate": "2017-06-01"
+        },
+        "pubYear": "2017",
+        "pageInfo": "1700050",
+        "abstractText": "Targeting the immune system with a personalized vaccine containing cues derived from the patient's malignancy might be a promising approach in the fight against cancer. It includes neo-antigens as well as nonmutated tumor antigens, preferentially leading to an immune response that is directed to a broader range of epitopes compared to strategies involving a single antigen. Here, this paper reports on an elegant method to encapsulate whole cancer cells into polyelectrolyte particles. Porous and nonaggregated microparticles containing dead cancer cells are obtained by admixing mannitol and live cancer cells with oppositely charged polyelectrolytes, dextran sulfate (anionic polysaccharide), and poly-l-arginine (cationic polypeptide) prior to atomization into a hot air stream. It shows that the polyelectrolyte-enrobed cancer cells, upon redispersion in phosphate buffered saline buffer, are stable and do not release cell proteins in the supernatant. In vitro experiments reveal that the particles are nontoxic and strongly increase uptake of cell lysate by dendritic cells. In vitro assessment of antigen presentation by dendritic cells reveal the potential of the polyelectrolyte-enrobed cancer cells as promotors of antigen cross-presentation. Finally, it is demonstrated that the immunogenicity can be enhanced by surface adsorption of a polymer-substituted TLR7-agonist.",
+        "affiliation": "Department of Pharmaceutics Ghent University 9000 Ghent Belgium.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Fonds Wetenschappelijk Onderzoek",
+              "orderIn": 0
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Immunotherapy",
+            "Dendritic cells",
+            "Microparticles",
+            "Polyelectrolytes"
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/advs.201700050"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC5473321"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC5473321?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 18,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "N",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCreation": "2017-06-23",
+        "dateOfRevision": "2021-01-09",
+        "electronicPublicationDate": "2017-05-02",
+        "firstPublicationDate": "2017-05-02",
+        "firstIndexDate": "2017-06-22",
+        "fullTextReceivedDate": "2025-02-03",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "summary": "This study investigates poly(l-histidine) based triblock copolymers (mPEG-PLA-PHis) for intracellular drug delivery. The copolymers self-assemble into micelles and undergo pH-induced reassembly, triggering accelerated drug release and enhanced cytotoxicity. Hemolysis tests indicate that the endolysosomal membrane remains intact during copolymer-facilitated endolysosomal escape, supporting a 'proton sponge' mechanism without membrane rupture. This provides evidence on cytotoxicity and hemolysis relevant to polyhistidine-based materials' biocompatibility and safety.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Cytotoxicity (enhanced DOX release and cytotoxicity)",
+    "Hemolysis test for endolysosomal membrane integrity"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Enhanced cytotoxicity attributed to pH-induced drug release",
+    "Endolysosomal membrane remained intact during copolymer-facilitated escape",
+    "Proton sponge hypothesis supported as mechanism without membrane rupture"
+  ],
+  "material_or_molecular_context": "Poly(ethylene glycol)-poly(d,l-lactide)-poly(l-histidine) (mPEG-PLA-PHis) triblock copolymers with varying degrees of polymerization of PLA and PHis blocks",
+  "biological_context": "In vitro cell models (confocal microscopy) and hemolysis test on red blood cells for endolysosomal membrane integrity",
+  "limitations_for_current_question": [
+    "The study uses a triblock copolymer, not polyhistidine alone; results may not directly apply to pure polyhistidine materials",
+    "Cytotoxicity and hemolysis are tested in the context of drug-loaded micelles, not the material as a standalone biomaterial",
+    "No direct assessment of systemic biocompatibility or in vivo safety",
+    "Hemolysis test is used specifically to evaluate endolysosomal escape mechanism, not as a general hemocompatibility assay"
+  ],
+  "supporting_text": "the endolysosomal membrane remained intact during the copolymer facilitated endolysosomal escape of DOX"
+}

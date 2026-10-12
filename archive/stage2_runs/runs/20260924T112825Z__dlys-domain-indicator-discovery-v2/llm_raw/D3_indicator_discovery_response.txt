@@ -1,0 +1,72 @@
+{
+  "domain_id": "D3",
+  "indicators": [
+    {
+      "indicator_id": "I1",
+      "indicator_name": "Net side-chain charge at pH 7.4",
+      "measurement_target": "net side-chain charge at pH 7.4",
+      "scientific_definition": "The formal net charge of the amino acid side chain at pH 7.4, computed from standard pKa values of ionizable side-chain groups.",
+      "why_relevant_to_dlys_system": "The fixed D-Lys block provides cationic/hydrophilic delivery function. A second-block X with negative side-chain charge (D, E) may electrostatically interact with or partially neutralize the D-Lys cationic character, whereas neutral or positive side chains preserve the fixed cationic function. This descriptor directly quantifies charge compatibility with the D-Lys block.",
+      "role": "primary_rank",
+      "preferred_direction": "closer_to_zero",
+      "target_value": null,
+      "basis": "both",
+      "supporting_evidence_ids": [
+        "T:electrostatic:TE04",
+        "E:secondary_structure:EE03"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "Distinct from side-chain amide presence (I2) and side-chain volume (I3); charge is an electrostatic property, not a functional-group class or size metric.",
+      "notes": "Direction is preregistered by domain guardrails. D and E are the only candidates with negative side-chain charge at pH 7.4; all others are neutral or positive. This descriptor is not a ranking of candidates but a charge-compatibility axis."
+    },
+    {
+      "indicator_id": "I2",
+      "indicator_name": "Side-chain amide presence",
+      "measurement_target": "presence of a primary amide group in the side chain",
+      "scientific_definition": "Binary indicator (presence/absence) of a primary carboxamide group (-C(=O)NH2) in the amino acid side chain at physiological pH.",
+      "why_relevant_to_dlys_system": "The domain guidance identifies neutral side-chain amide chemistry (Asn, Gln) as an auditable hydrogen-bonding functional class that is distinct from hydroxyl, thiol, and carboxylate side chains. This descriptor distinguishes amide-containing candidates from other polar candidates without relying on non-discriminative HBD/HBA counts.",
+      "role": "primary_rank",
+      "preferred_direction": "presence",
+      "target_value": null,
+      "basis": "literature",
+      "supporting_evidence_ids": [
+        "Q:hydrogen_bond:QE06",
+        "Q:secondary_structure:QE06"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "Distinct from net charge (I1) and side-chain volume (I3); this is a functional-group class descriptor, not an electrostatic or size property.",
+      "notes": "Direction is preregistered by domain guardrails. This descriptor does not pre-select Asn or Gln as a winner; it only distinguishes amide chemistry from other polar chemistries. Simple HBD/HBA counts are not used because they are not discriminative within this candidate set."
+    },
+    {
+      "indicator_id": "I3",
+      "indicator_name": "Side-chain volume",
+      "measurement_target": "side-chain volume",
+      "scientific_definition": "The van der Waals volume of the amino acid side chain, typically reported in Å³, based on standard residue-specific values.",
+      "why_relevant_to_dlys_system": "Within the same or similar polar functional-group background, side-chain volume provides a mature, reproducible measure of side-chain reach and spatial occupancy. This complements the fixed D-Lys block by allowing comparison of interaction reach and steric accessibility among candidates with different side-chain sizes.",
+      "role": "primary_rank",
+      "preferred_direction": "higher",
+      "target_value": null,
+      "basis": "literature",
+      "supporting_evidence_ids": [
+        "Q:chain_length_cooperativity:QE06",
+        "G:chain_length_cooperativity:GE05"
+      ],
+      "quantifiable_single_residue": true,
+      "redundancy_note": "Distinct from net charge (I1) and side-chain amide presence (I2); this is a steric/size property, not an electrostatic or functional-group descriptor.",
+      "notes": "Direction is preregistered by domain guardrails for use as a secondary axis of interaction reach. The guardrail explicitly requires that this descriptor be subjected to criterion ablation and weight-perturbation audits. It is not an automatic benefit; higher side-chain volume is only a preference direction for reach within this domain."
+    }
+  ],
+  "knowledge_gaps": [
+    "No mature single-residue descriptor for side-chain conformational entropy or backbone conformational freedom is available that would allow a defensible preference direction for G and P within this domain; these remain validation_only/context_dependent.",
+    "Simple HBD/HBA donor/acceptor counts are not discriminative among C/D/E/N/Q/S/T and are therefore not returned as primary_rank descriptors.",
+    "No mature single-residue descriptor for side-chain pKa or ionization state at pH 7.4 is available that would refine the net charge descriptor beyond the standard formal charge calculation.",
+    "The supplied evidence does not provide a quantitative single-residue metric for side-chain hydrogen-bonding capacity that is both mature and discriminative within this candidate set."
+  ],
+  "notes": [
+    "Domain D3 focuses on polar/hydrogen-bonding side chains and conformational boundary candidates (G, P) after fixing D-Lys as the cationic/hydrophilic functional block.",
+    "The three primary_rank descriptors are nonredundant: net charge (electrostatic compatibility), side-chain amide presence (functional-group chemistry), and side-chain volume (steric reach).",
+    "G and P are retained in the candidate set for same-domain comparison but are not assigned primary_rank descriptors for conformational flexibility or rigidity because the domain guardrails explicitly state that 'more flexible/rigid' is not preregistered as a monotonic benefit.",
+    "No candidate is ranked, scored, or selected as a winner. Evidence quantity is not used as a candidate score.",
+    "All primary_rank directions are derived from the preregistered domain guardrails and the fixed D-Lys system constraint."
+  ]
+}

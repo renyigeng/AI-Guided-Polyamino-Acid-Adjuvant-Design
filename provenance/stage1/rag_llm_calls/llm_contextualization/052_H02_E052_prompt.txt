@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H02
+CANDIDATE HINT: R;H
+CHIRALITY HINT: 
+PMID: 28458542
+DOI: 10.2147/ijn.s129436
+
+TITLE:
+siRNA-loaded poly(histidine-arginine)<sub>6</sub>-modified chitosan nanoparticle with enhanced cell-penetrating and endosomal escape capacities for suppressing breast tumor metastasis.
+
+ABSTRACT:
+An ideal carrier that delivers small interfering RNA (siRNA) should be designed based on two criteria: cellular-mediated internalization and endosomal escape. Poly(histidine-arginine)<sub>6</sub>(H6R6) peptide was introduced into chitosan (CS) to create a new CS derivative for siRNA delivery, 6-polyarginine (R6) as cell-penetrating peptides facilitated nanoparticle cellular internalization has been proved in our previous research, and 6-polyhistidine (H6) mediated the nanoparticle endosome escape resulted in the siRNA rapid releasing into tumor cytoplasm. H6R6-modified CS nanoparticles showed higher transfection efficiency and better endosomal escape capacity compared to ungroomed CS nanoparticle in vitro. Noticeably, H6R6-modified CS nanoparticles effectively inhibited tumor cell growth and metastases in vivo and significantly improved survival ratio. Therefore, we concluded that H6R6-modified CS copolymer can act as an ideal carrier for siRNA delivery and as a promising candidate in breast cancer therapy.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

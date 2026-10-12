@@ -1,0 +1,311 @@
+SYSTEM / METHOD CONSTRAINTS
+{
+  "schema_version": "1.0",
+  "status": "rapid_v1_for_handoff",
+  "candidate_set": [
+    "K",
+    "R",
+    "H"
+  ],
+  "design_context": "Hydrophilic/functional block B in an amphiphilic binary poly(amino acid) system P(X)-b-P(B) for tumor-vaccine antigen delivery.",
+  "decision_dimensions": [
+    "direct antigen/protein/biomacromolecule delivery relevance",
+    "dendritic-cell or immune relevance",
+    "cellular uptake and intracellular/endosomal behavior",
+    "safety and cytotoxicity trade-offs",
+    "transferability to a poly(amino acid) functional block",
+    "strength/directness of evidence"
+  ],
+  "rules": [
+    "Use only supplied evidence cards for candidate-specific claims.",
+    "Do not use knowledge of the team's experimental final candidate as a label.",
+    "Do not equate number of retrieved papers with candidate quality.",
+    "Do not force a winner if evidence is insufficient.",
+    "Explicitly distinguish direct evidence from transferability/inference.",
+    "Treat NCA synthesis evidence as common feasibility unless candidate-specific synthesis evidence is supplied."
+  ],
+  "run_recommendation": {
+    "temperature": "0 or lowest deterministic setting when exposed by provider",
+    "repeat_runs": 3,
+    "note": "For ChatGPT UI or providers that do not expose temperature, record temperature as not_exposed."
+  },
+  "module": "functional_block_icl_selection"
+}
+
+=====
+
+FEW-SHOT DEMONSTRATIONS
+{
+  "schema_version": "1.0",
+  "important_note": "These are expert-authored synthetic demonstrations used only to teach evidence-handling behavior. They are not scientific evidence and contain no K/R/H candidate labels.",
+  "demonstrations": [
+    {
+      "id": "DEMO01",
+      "task": "Select a functional material candidate from A, B, and C for intracellular delivery.",
+      "evidence": [
+        {
+          "candidate": "A",
+          "evidence": "Direct target-cell study shows delivery of the intended biomacromolecule, preserved function, and high cell viability."
+        },
+        {
+          "candidate": "B",
+          "evidence": "Mechanistic surrogate study shows strong uptake, but cargo and biological system differ from the target."
+        },
+        {
+          "candidate": "C",
+          "evidence": "Strong uptake is reported, but the same study reports substantial dose-dependent toxicity."
+        }
+      ],
+      "ideal_output": {
+        "primary_candidate": "A",
+        "confidence": "moderate",
+        "alternatives": [
+          "B"
+        ],
+        "decision_basis": "A has the most direct target-relevant efficacy plus safety evidence. B is mechanistically promising but less transferable. C is penalized by a documented safety trade-off.",
+        "uncertainties": [
+          "No head-to-head comparison under identical conditions."
+        ],
+        "evidence_handling": "Direct target-relevant evidence outranks surrogate mechanistic evidence; negative safety evidence must be retained."
+      }
+    },
+    {
+      "id": "DEMO02",
+      "task": "Select a material candidate from D, E, and F when evidence is incomplete.",
+      "evidence": [
+        {
+          "candidate": "D",
+          "evidence": "One small direct study reports efficacy but does not report safety."
+        },
+        {
+          "candidate": "E",
+          "evidence": "Several mechanistic studies support the desired mechanism, but none test the target cargo."
+        },
+        {
+          "candidate": "F",
+          "evidence": "One study reports modest efficacy and another reports conflicting behavior."
+        }
+      ],
+      "ideal_output": {
+        "primary_candidate": null,
+        "confidence": "low",
+        "alternatives": [
+          "D",
+          "E"
+        ],
+        "decision_basis": "Evidence is insufficient to justify a primary choice without over-extrapolation.",
+        "uncertainties": [
+          "Safety for D is unknown.",
+          "Target-cargo transferability for E is unknown.",
+          "Evidence for F is conflicting."
+        ],
+        "evidence_handling": "Do not force a winner when directness, safety, or consistency is inadequate."
+      }
+    }
+  ]
+}
+
+=====
+
+EVIDENCE PACK
+{
+  "schema_version": "1.0",
+  "status": "rapid_v1_for_handoff",
+  "source_fast_worklist": "runs/20260920T141809Z__step1-fast-triage/fast_worklist.csv",
+  "selection_principle": "Two core evidence records per K/R/H, plus two target-context records and one common synthesis record. Evidence summaries are restricted to claims supported by the supplied abstracts. This is not a systematic review and should be expanded by the senior collaborator if needed.",
+  "evidence": [
+    {
+      "evidence_id": "E01",
+      "source_row_index": 0,
+      "candidate": "K",
+      "role": "candidate_core",
+      "evidence_dimension": "direct_delivery;immune_relevance;safety",
+      "evidence_direction": "SUPPORTIVE",
+      "title": "Hyperbranched Polylysine-Based Lipopolyplexes Enable Efficient mRNA Delivery With Long-Term Storage Stability.",
+      "pmid": "42590857",
+      "doi": "10.1002/adhm.71571",
+      "pub_year": "2026",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "Hyperbranched poly-L-lysine served as a functional polymeric core in an mRNA lipopolyplex. The abstract reports efficient intracellular/cytoplasmic release, high transfection, enhanced dendritic-cell maturation, better biocompatibility than a commercial reagent, and in-vivo lung/spleen delivery. Limitation: hyperbranched LPP architecture is not the same as a linear block polypeptide.",
+      "abstract_text": "Clinical translation of messenger RNA (mRNA) therapeutics is often hampered by the poor storage stability of lipid-based delivery vectors. Many lipopolyplex (LPP) delivery systems struggle to achieve efficient nucleic acid release through the membrane fusion pathway. Herein, we developed a novel ternary lipopolyplex (LPP) platform of lipid/HBPL/mRNA LPPs by incorporating hyperbranched poly-L-lysine (HBPL) as a functional polymeric core. The highly branched architecture of HBPL enabled a unique balance between high mRNA encapsulation efficiency, efficient intracellular release, and exceptional colloidal stability, thereby overcoming a key limitation of conventional lipid nanoparticles. This platform primarily promoted cellular uptake through a membrane fusion mechanism in vitro, thereby achieving highly efficient cytoplasmic delivery, while the HBPL core enabled superior mRNA release compared to its linear ε-Polylysine (ε-PLL, hereafter referred to as PLL)-based counterpart. These attributes collectively yielded high transfection efficiency across multiple cell lines, significantly enhanced dendritic cell (DC) maturation, and superior biocompatibility over a commercial transfection reagent. Efficient mRNA delivery to the lungs and spleen was also confirmed in vivo, with protein expression sustained even after 1 month of storage. By successfully integrating long-term stability with high delivery efficiency, this HBPL-based LPP platform represents a highly promising candidate for advancing mRNA therapeutics and vaccines.",
+      "matched_queries": "K01;K03",
+      "best_retrieval_rank": "1",
+      "selection_reason": "Direct K evidence: hyperbranched poly-L-lysine is a functional core for mRNA delivery; abstract reports intracellular release, cytoplasmic delivery, dendritic-cell maturation, biocompatibility, and in-vivo delivery."
+    },
+    {
+      "evidence_id": "E02",
+      "source_row_index": 1,
+      "candidate": "K",
+      "role": "candidate_core",
+      "evidence_dimension": "protein_delivery;intracellular_delivery;safety",
+      "evidence_direction": "SUPPORTIVE",
+      "title": "Intracellular Delivery of Full-Length Antibodies via Poly-l-lysine-Coated PEG-PLGA Polymersomes Enables Noninvasive Pulmonary Immunotherapy.",
+      "pmid": "42503719",
+      "doi": "10.1021/acs.molpharmaceut.5c01891",
+      "pub_year": "2026",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "Poly-L-lysine coating increased full-length antibody encapsulation to about 80%, produced a mildly positive surface, preserved >96% cell viability, enabled intracellular antibody delivery and in-vivo lung delivery without detectable acute cytotoxicity. Limitation: PLL is a coating on PEG-PLGA polymersomes.",
+      "abstract_text": "The intracellular delivery of full-length antibodies offers substantial therapeutic potential but remains limited by poor cellular uptake, extracellular degradation, and inefficient encapsulation strategies. Here, we report a noninvasive, scalable, and biocompatible nanocarrier platform based on poly-l-lysine (PLL)-coated polyethylene glycol-block-poly(lactic-co-glycolic acid) (PEG-PLGA) polymersomes for efficient intracellular antibody delivery. Coating polymersomes with 30 kDa ε-poly-l-lysine increased antibody encapsulation efficiency to ∼ 80%. It enabled precise modulation of surface charge to a mildly positive ζ-potential (∼+4.5 mV), while maintaining nanoscale dimensions (hydrodynamic diameter ≈ 420 ± 30 nm). The resulting formulation exhibited excellent biocompatibility, preserving >96% cell viability in primary human pulmonary fibroblasts. Importantly, PLL-coated polymersomes facilitated efficient intracellular delivery of full-length antibodies and preserved their biological function, as demonstrated by robust suppression of NOD-like receptor family pyrin domain-containing 3 (NLRP3)-dependent IL-1β signaling. Upon pulmonary administration via aerosolization, polymersomes delivered the antibody efficiently to lung-resident cells in vivo without detectable acute cytotoxicity. To our knowledge, this work represents the first demonstration of PLL-coated PEG-PLGA polymersomes enabling intracellular delivery of full-length antibodies both in vitro and in vivo, establishing a versatile nanoplatform for lung-targeted intracellular antibody therapeutics.",
+      "matched_queries": "K01;K02;K03",
+      "best_retrieval_rank": "1",
+      "selection_reason": "Direct K evidence for intracellular protein delivery with explicit viability and in-vivo safety observations; relevant to biomacromolecule delivery although architecture is PLL-coated polymersomes rather than a binary block polypeptide."
+    },
+    {
+      "evidence_id": "E03",
+      "source_row_index": 4,
+      "candidate": "R",
+      "role": "candidate_core",
+      "evidence_dimension": "protein_model;cellular_uptake;safety",
+      "evidence_direction": "SUPPORTIVE",
+      "title": "Dextran/poly-L-arginine multi-layered CaCO3-based nanosystem for vascular drug delivery.",
+      "pmid": "33577822",
+      "doi": "10.1016/j.ijbiomac.2021.02.058",
+      "pub_year": "2021",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "Poly-L-arginine was used as a homo-poly-amino-acid layer in a CaCO3 carrier containing model protein BSA. The abstract reports assessment of cellular uptake, biocompatibility, inflammatory response and hemocompatibility without a reported pro-inflammatory penalty. Limitation: cardiovascular carrier context, not vaccine delivery.",
+      "abstract_text": "The development of heterogeneous drug delivery systems leads to innovative strategies for targeted therapy of common pathologies, such as cancer, immunological and neurological disorders. Nowadays, it is possible to choose among a great variety of nanoparticles on the basis of the needs they have to satisfy. However, a candidate for the treatment of cardiovascular pathologies is still missing. In this context, a targeted therapy implies the conceptualization of nanoparticles that take active part in the treatment of vascular pathologies. The aim of this work was to provide a method to produce multi-layered calcium carbonate (CaCO3) nanoparticles encapsulating a model protein, bovine serum albumin, with model antibodies on their surface. CaCO3 nanoparticles were produced by the combination of complex coacervation and mineralization and were engineered using layer-by-layer technique with a polysaccharide, dextran sulfate, and a homo-poly-amino acid, poly-L-arginine. Morphology, biocompatibility, cellular uptake, influence on cell expression of the inflammatory marker matrix metalloproteinase-9, and hemocompatibility of the nanoparticles were studied. The presence of the dextran/poly-L-arginine layers did not negatively affect the nanoparticle overall characteristics and they did not trigger proinflammatory response in vitro. Taking together all the obtained results, we consider the proposed CaCO3 nanoparticles as a promising tool in cardiovascular field.",
+      "matched_queries": "R01;R03",
+      "best_retrieval_rank": "12",
+      "selection_reason": "Direct R material evidence: poly-L-arginine is a homo-poly-amino-acid layer in a carrier containing model protein BSA; abstract evaluates cellular uptake, biocompatibility, inflammatory response and hemocompatibility."
+    },
+    {
+      "evidence_id": "E04",
+      "source_row_index": 5,
+      "candidate": "R",
+      "role": "candidate_core",
+      "evidence_dimension": "nucleic_acid_delivery;intracellular_endosomal",
+      "evidence_direction": "SUPPORTIVE_WITH_TRANSFERABILITY_LIMIT",
+      "title": "RNAi in Spodoptera frugiperda Sf9 Cells via Nanomaterial Mediated Delivery of dsRNA: A Comparison of Poly-l-arginine Polyplexes and Poly-l-arginine-Functionalized Au Nanoparticles.",
+      "pmid": "32412742",
+      "doi": "10.1021/acsami.0c06234",
+      "pub_year": "2020",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "Poly-L-arginine polyplexes and PLR-functionalized nanoparticles delivered dsRNA. Nanoscaled PLR polyplexes achieved 58% gene knockdown, and the study explicitly examined endosomal entry/barrier behavior. Limitation: insect Sf9 cells and nucleic-acid rather than antigen cargo.",
+      "abstract_text": "This work focused on the delivery of dsRNA either complexed with poly-l-arginine (PLR-polyplex) or loaded onto poly-l-arginine functionalized 20 nm Au nanoparticles (PLR/Au NPs). RNA interference (RNAi) of a luciferase gene expressed in Spodopteria frugiperda Sf9 stable cell line (Sf9_LUC) was used as a model system. The binding affinity of dsRNA with two modes of functionalization of Au NPs was investigated: the electrostatic binding of PLR on citrate stabilized Au NPs (e-PLR/Au NPs) via the layer-by-layer method or the covalent-linking reaction of the polymer with NHS groups on the Au NPs surface (c-PLR/Au NPs) with excess groups quenched with either hydroxylamine (c-PLR/Au/Hyd NPs) or bovine serum albumin (c-PLR/Au/BSA NPs). The formation of PLR-polyplex particles resulting from the complexation of PLR and dsRNA were revealed by transmission electron microscope (TEM), scanning transmission electron microscope (STEM), and elemental mapping by energy dispersive X-ray spectroscopy (EDS). Luciferase gene knockdown was evaluated after exposure of Sf9 cells for 72 h to 600 ng of dsRNA. Gene knockdown (GK) was found to be more efficient by exposing Sf9 cells to nanoscaled (size 1 μm) PLR-polyplex (20% GK) or covalent PLR/Au/Hyd (7% GK) particles. The replacement of hydroxylamine by bovine serum albumin as ligand has significantly enhanced the efficiency of GK (31% GK). Investigation of endosomal escape, a key physiological barrier for dsRNA delivery, with CypHer5E labeled dsRNA showed the good ability for the dsRNA conjugated to the different nanosystems to enter the cells compared to the unconjugated one. This study provides valuable information concerning the required properties of materials used for dsRNA delivery in lepidopteran cells such as nanoparticle size, stability in the cell culture media, the polymer molecular weight and binding strength to the nanoparticle, and the nature of ligands on the surface.",
+      "matched_queries": "R02",
+      "best_retrieval_rank": "5",
+      "selection_reason": "Direct R evidence for dsRNA complexation/delivery; abstract reports gene knockdown and explicitly investigates endosomal entry/barrier. Transferability is limited because the model is an insect cell line."
+    },
+    {
+      "evidence_id": "E05",
+      "source_row_index": 9,
+      "candidate": "H",
+      "role": "candidate_core",
+      "evidence_dimension": "endosomal_escape;intracellular_delivery;safety",
+      "evidence_direction": "SUPPORTIVE",
+      "title": "Efficient Delivery of Globotriaosylceramide Synthase siRNA using Polyhistidine-Incorporated Lipid Nanoparticles.",
+      "pmid": "36728673",
+      "doi": "10.1002/mabi.202200423",
+      "pub_year": "2023",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "Polyhistidine-incorporated LNPs were designed as a biocompatible endosome-escape strategy for siRNA. The abstract reports strong diffuse intracellular fluorescence consistent with endosomal escape and 6-fold improved gene silencing, with excellent A549-cell biocompatibility. Limitation: polyhistidine is incorporated into an LNP rather than used as the sole hydrophilic block.",
+      "abstract_text": "In this study, a novel polyhistidine-incorporated lipid nanoparticle (pHis/LNP) is developed for the delivery of therapeutic globotriaosylceramide (Gb3) synthase siRNAs using a microfluidic device with pHis as a biocompatible method of endosome escape. To inhibit the expression of Gb3 synthase, six siRNAs against Gb3 synthase are designed and an optimal siRNA sequence is selected. Selected Gb3 synthase siRNA is incorporated into pHis/LNP to prepare a spherical siRNA pHis/LNP with a size of 62.5 ± 1.9 nm and surface charge of -13.3 ± 4.2 mV. The pHis/LNP successfully protects siRNAs from degradation in 50% serum condition for 72 h. Prepared pHis/LNP exhibits superior stability for 20 days and excellent biocompatibility for A549 cells. After treatment with fluorescence-labeled LNPs, dotted fluorescent signals are co-localized with Lysotracker in cells with LNPs, whereas strong and diffused fluorescence intensity is observed in cells with pHis/LNPs probably due to successful endosomal escape. The extent of Gb3 synthase gene silencing by siRNA pHis/LNP is greatly improved (6.0-fold) compared to that by siRNA/LNP. Taken together, considering that the fabricated siRNA pHis/LNP exhibits excellent biocompatibility and superior gene silencing activity over conventional LNP, these particles can be utilized for the delivery of a wide range of therapeutic siRNAs.",
+      "matched_queries": "H02;H03",
+      "best_retrieval_rank": "4",
+      "selection_reason": "Strong H mechanism evidence: polyhistidine-incorporated LNPs are presented as a biocompatible endosome-escape strategy; abstract reports diffuse intracellular signal consistent with endosomal escape and 6-fold improved gene silencing."
+    },
+    {
+      "evidence_id": "E06",
+      "source_row_index": 11,
+      "candidate": "H",
+      "role": "candidate_core",
+      "evidence_dimension": "cytoplasmic_delivery;endocytosis;safety",
+      "evidence_direction": "SUPPORTIVE",
+      "title": "Dual-Modality Poly-l-histidine Nanoparticles to Deliver Peptide Nucleic Acids and Paclitaxel for In Vivo Cancer Therapy.",
+      "pmid": "34524806",
+      "doi": "10.1021/acsami.1c11981",
+      "pub_year": "2021",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "PLGA/poly-L-histidine nanoparticles were developed for enhanced cytoplasmic delivery with minimal toxicity. The abstract reports clathrin-mediated endocytosis, in-vitro/in-vivo delivery efficacy and no toxicity in the reported mouse model. Limitation: cancer drug/nucleic-acid delivery rather than vaccine antigen delivery.",
+      "abstract_text": "Cationic polymeric nanoformulations have been explored to increase the transfection efficiency of small molecules and nucleic acid-based drugs. However, an excessive positive charge density often leads to severe cell and tissue-based toxicity that restricts the clinical translation of cationic polymeric nanoformulations. Herein, we investigate a series of cationic poly(lactic-co-glycolic acid) (PLGA)-histidine-based nanoformulations for enhanced cytoplasmic delivery with minimal toxicity. PLGA/poly-l-histidine nanoparticles show promising physico-biochemical features and transfection efficiency in a series of in vitro and cell culture-based studies. Further, the use of acetone/dichloromethane as a solvent mixture during the formulation process significantly improves the morphology and size distribution of PLGA/poly-l-histidine nanoparticles. PLGA/poly-l-histidine nanoformulations undergo clathrin-mediated endocytosis. A contrast-matched small-angle neutron scattering experiment confirmed poly-l-histidine's distribution on the PLGA nanoformulations. PLGA/poly-l-histidine formulations containing paclitaxel as a small molecule-based drug and peptide nucleic acids targeting microRNA-155 as nucleic acid analog are efficacious in in vitro and in vivo studies. PLGA/poly-l-histidine NPs significantly decrease tumor growth in PNA-155 (∼6 fold) and paclitaxel (∼6.5 fold) treatment groups in a lymphoma cell line derived xenograft mice model without inducing any toxicity. Hence, PLGA/poly-l-histidine nanoformulations exhibit substantial transfection efficiency and are safe to deliver reagents ranging from small molecules to synthetic nucleic acid analogs and can serve as a novel platform for drug delivery.",
+      "matched_queries": "H03",
+      "best_retrieval_rank": "7",
+      "selection_reason": "Strong H delivery/safety evidence: PLGA/poly-L-histidine nanoparticles show cytoplasmic delivery/transfection, clathrin-mediated endocytosis, in-vivo efficacy and no detected toxicity in the reported model."
+    },
+    {
+      "evidence_id": "E07",
+      "source_row_index": 13,
+      "candidate": "BACKGROUND",
+      "role": "background",
+      "evidence_dimension": "antigen_delivery;dendritic_cells;endolysosomal_escape;immune_response",
+      "evidence_direction": "CONTEXT",
+      "title": "Glycopolypeptide Coordinated Nanovaccine: Fabrication, Characterization, and Antitumor Immune Response.",
+      "pmid": "39974696",
+      "doi": "10.1021/cbe.4c00083",
+      "pub_year": "2024",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "A pH-sensitive glycopolypeptide nanovaccine delivered OVA to dendritic cells, escaped endolysosomes, promoted DC maturation and CD8+ responses, and inhibited tumor growth. This establishes target-context relevance for polypeptide-based antigen delivery, but it does not compare K/R/H.",
+      "abstract_text": "Cancer nanovaccine is a frontier immunotherapy strategy, in which the delivery carrier can protect antigen and adjuvant from degradation, increase blood circulation half-life, and improve antigen permeability and presentation, thus enhancing the security and potency of nanovaccine. To address the barriers of antigen delivery, we design and fabricate a kind of intracellular pH-sensitive glycopolypeptide coordinated nanovaccine (OVA-HPGM-Mn) with ∼30% loading capacity of ovalbumin (OVA). The nanovaccine OVA-HPGM-Mn could specifically deliver antigen to dendritic cells (DCs) and effectively escape from endolysosomes to cytoplasm after 6 h of incubation, while the blank counterpart HPGM-Mn acted as an adjuvant to promote DCs maturation and increase the percentage of maturated cells to 26.5% from 11.8% in vitro. Furthermore, the mannosylated polypeptide nanovaccine prolonged the retention time of OVA for 72 h to facilitate 29.5% DCs maturation in lymph nodes, activated 48.8% CD8+T cells in spleen, increased the CD8+/CD4+T cell ratio twice to 1.06, and upregulated the levels of pro-inflammatory cytokines including TNF-α, IFN-γ, and IL-6, thus inhibiting the tumor growth of ∼80%. Consequently, this work provides a versatile strategy for the fabrication of glycosylated polypeptide coordinated nanomaterials for antigen delivery and cancer immunotherapy.",
+      "matched_queries": "BG01",
+      "best_retrieval_rank": "2",
+      "selection_reason": "Strong polypeptide nanovaccine context: OVA delivery to dendritic cells, endolysosomal escape, DC maturation, CD8+ responses and antitumor activity are explicitly reported."
+    },
+    {
+      "evidence_id": "E08",
+      "source_row_index": 14,
+      "candidate": "BACKGROUND",
+      "role": "background",
+      "evidence_dimension": "cationic_charge;safety;endolysosomal_behavior",
+      "evidence_direction": "CONSTRAINT",
+      "title": "Intracellular Delivery of Mitochondria-Targeting Cationic Polypeptides by pH-Responsive Nanoparticles to Induce Immunogenic Cell Death.",
+      "pmid": "41051371",
+      "doi": "10.1021/acs.biomac.5c01088",
+      "pub_year": "2025",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "A cationic-polypeptide cancer system highlights a general trade-off: positive charge can aid intracellular function but can also cause poor selectivity and inherent toxicity. Charge shielding and pH-responsive release improved the biosafety profile. This is a design constraint, not candidate-specific evidence.",
+      "abstract_text": "Targeted induction of mitochondrial dysfunction by cationic polypeptides represents a promising strategy for inducing immunogenic cell death (ICD). Nevertheless, cationic polypeptides face challenges in systemic application due to poor tumor selectivity and inherent toxicity caused by their positive charges. Herein, a pH-responsive nanoparticle (CA-NP) is prepared through electrostatic self-assembly of a mitochondria-targeting cationic polypeptide (MTP) and an acid-sensitive anionic polypeptide. CA-NPs effectively shield the positive charges and improve the intratumoral accumulation of MTP. Upon cellular uptake, the pH-responsive CA-NPs can dissociate within acidic endolysosomes to release MTP. Following endolysosomal escape, the liberated MTP selectively localizes to mitochondria, causing mitochondrial damage and stimulating intracellular reactive oxygen species generation, which ultimately induces ICD. Consequently, CA-NPs substantially enhance the biosafety profile of MTP while effectively suppressing tumor growth through mitochondrial disruption and systemic antitumor immune activation. Together, these findings position pH-responsive CA-NPs as a promising therapeutic platform that could improve both the precision and the safety of cationic polypeptide-based cancer immunotherapy.",
+      "matched_queries": "BG02",
+      "best_retrieval_rank": "1",
+      "selection_reason": "Important design constraint: abstract explicitly states poor selectivity and inherent toxicity caused by positive charge of cationic polypeptides; charge shielding/pH response improves biosafety while retaining intracellular function."
+    },
+    {
+      "evidence_id": "E09",
+      "source_row_index": 16,
+      "candidate": "BACKGROUND",
+      "role": "synthesis",
+      "evidence_dimension": "NCA_polymerization;synthesis_feasibility",
+      "evidence_direction": "COMMON_FEASIBILITY",
+      "title": "Open-vessel polymerization of N-carboxyanhydride (NCA) for polypeptide synthesis.",
+      "pmid": "39379616",
+      "doi": "10.1038/s41596-024-01062-3",
+      "pub_year": "2025",
+      "journal_title": "",
+      "summary_grounded_in_abstract": "A Nature Protocols article describes NCA ring-opening polymerization as a classical, widely used route to synthetic polypeptides and notes primary-amine initiation and adaptation to different amino-acid NCAs. This supports common synthesis feasibility but does not distinguish K/R/H.",
+      "abstract_text": "Synthetic polypeptides, also known as poly(α-amino acids), have the same polyamide backbone structures as natural proteins and peptides. As an important class of biomaterials, polypeptides have been widely used because of their biocompatibility, bioactivity and biodegradability. Ring-opening polymerization of N-carboxyanhydride (NCA) is a classical and widely used method for the synthesis of polypeptides. The dominantly used primary amine-initiated NCA polymerization can yield well-defined polymers and complex macromolecular architectures, but the reaction is slow and sensitive to moisture, making it necessary to use anhydrous solvents and a glovebox. One solution is to use lithium hexamethyldisilazide (LiHMDS) as the initiator, as described in this protocol. LiHMDS-initiated NCA polymerization is less sensitive to moisture and can be carried out in an open vessel outside the glovebox. It is also very fast; the reaction can be complete within 5 min to produce 30-mer polypeptides. In this protocol, poly(γ-benzyl-L-glutamate) is prepared as an example, but the protocol can easily be adapted to the synthesis of other polypeptides by generating NCAs from different amino acids, making it particularly suitable for the efficient parallel synthesis of polypeptide libraries. We provide detailed procedures for NCA synthesis and purification, the method of polymer end-group modification and measurement of polymerization kinetics and reactivity ratio. The procedure for synthesis of monomers and polymerization to form polypeptides requires <1 d. The superfast and open-vessel NCA polymerization method described here will probably enable a wide range of applications in the synthesis and functional study of polypeptide biomaterials.",
+      "matched_queries": "SYN01",
+      "best_retrieval_rank": "1",
+      "selection_reason": "General synthesis feasibility evidence: NCA ring-opening polymerization is described as a classical and widely used route to synthetic polypeptides, including primary-amine initiation and adaptation to different amino-acid NCAs."
+    }
+  ]
+}
+
+=====
+
+TARGET QUERY
+You are evaluating the hydrophilic/functional amino-acid block B for an amphiphilic binary poly(amino acid) tumor-vaccine delivery system P(X)-b-P(B).
+
+The chemically preselected candidates are K (lysine), R (arginine), and H (histidine). Compare them only from the supplied evidence pack. The experimental final candidate used by the team is intentionally not provided as a label and must not be inferred from prior knowledge.
+
+Evaluate:
+1. direct relevance to antigen/protein/biomacromolecule delivery;
+2. dendritic-cell or immune relevance;
+3. cellular uptake and intracellular/endosomal behavior;
+4. safety/cytotoxicity trade-offs of cationic materials;
+5. how directly each cited architecture transfers to a poly(amino acid) functional block;
+6. evidence quality and unresolved uncertainty.
+
+Do not rank candidates by paper count. Do not treat background/synthesis evidence as candidate-specific. Do not invent evidence outside the cards. A primary candidate may be selected only if the evidence supports it; otherwise return null.
+
+Return JSON only with this schema:
+{
+  "primary_candidate": {"code": "K|R|H|null", "confidence": "low|moderate|high", "rationale": ["..."]},
+  "alternative_candidates": [{"code": "K|R|H", "role": "...", "rationale": ["..."]}],
+  "candidate_assessments": {
+    "K": {"strengths": ["..."], "limitations": ["..."], "evidence_ids": ["..."]},
+    "R": {"strengths": ["..."], "limitations": ["..."], "evidence_ids": ["..."]},
+    "H": {"strengths": ["..."], "limitations": ["..."], "evidence_ids": ["..."]}
+  },
+  "decision_basis": ["..."],
+  "uncertainties": ["..."],
+  "prohibited_overclaims": ["..."]
+}

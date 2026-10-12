@@ -1,0 +1,36 @@
+{
+  "summary": "This study shows that poly-D-lysine conjugated to β-glucan (G-PL) acts as an adjuvant, enhancing dendritic cell uptake, maturation, Th17 differentiation, DC recruitment, lymph node activation, and anti-tumor immunity in cancer vaccine models.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "dendritic cell uptake of tumour components",
+    "dendritic cell maturation",
+    "non-pathogenic Th17 differentiation",
+    "dendritic cell recruitment at injection sites",
+    "activation of draining lymph nodes",
+    "elevated plasma levels of IL-12, TNF-α, and IFN-γ",
+    "prolonged survival in therapeutic and preventive models",
+    "increased intratumoral CD8+/CD4+ T cell ratios",
+    "increased intratumoral M1 macrophages",
+    "increased intratumoral neutrophils",
+    "Dectin-1 downregulation in dendritic cells"
+  ],
+  "reported_numeric_results": [
+    "G-PL (≤ 500 μg/mL) rapidly adhered to cell membranes without cytotoxicity"
+  ],
+  "reported_qualitative_findings": [
+    "ICC@G-PL recruited DCs at injection sites and activated draining lymph nodes",
+    "The vaccine elevated plasma levels of IL-12, TNF-α, and IFN-γ",
+    "The vaccine prolonged survival in both therapeutic and preventive models",
+    "Increased intratumoral CD8+/CD4+ T cell ratios, M1 macrophages, and neutrophils",
+    "Dectin-1 downregulation in DCs correlated with Th17-driven anti-tumour responses"
+  ],
+  "material_or_molecular_context": "poly-D-lysine conjugated to modified yeast β-glucan (G-PL)",
+  "biological_context": "mouse glioblastoma (GL261), colon cancer, and melanoma models; dendritic cells in vitro and in vivo",
+  "limitations_for_current_question": [
+    "Poly-D-lysine is conjugated to β-glucan, not tested alone as free polymer",
+    "No direct comparison with L-lysine or other chirality variants",
+    "Results are specific to cancer vaccine context, not general adjuvant use",
+    "No dose-response data for poly-D-lysine content"
+  ],
+  "supporting_text": "conjugate adjuvant (G-PL) by coupling modified yeast β-glucan with poly-D-lysine"
+}

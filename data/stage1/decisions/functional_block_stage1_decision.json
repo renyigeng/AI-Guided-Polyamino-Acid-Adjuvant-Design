@@ -1,0 +1,1017 @@
+{
+  "schema_version": "2.0",
+  "stage": "functional_block_stage1_rag_pairwise_icl",
+  "created_at_utc": "2026-09-22T07:58:09.714221+00:00",
+  "source_rag_context_run": "E:\\Project\\tiaozhansai\\runs\\20260922T072626Z__functional-block-rag-context",
+  "pipeline": {
+    "retrieval": "Europe PMC",
+    "semantic_reranking": "ncbi/MedCPT-Cross-Encoder",
+    "augmentation": "PaperQA2-style query-specific contextual summaries from retrieved abstracts",
+    "generation": "LLM pairwise evidence synthesis",
+    "in_context_learning": true,
+    "pairwise_method": "Pairwise Ranking Prompting-inspired comparison with order reversal"
+  },
+  "candidate_evidence_counts": {
+    "K": 12,
+    "R": 12,
+    "H": 12
+  },
+  "pairwise_calls": [
+    {
+      "pair": [
+        "K",
+        "R"
+      ],
+      "repeat": 1,
+      "orientation": "forward",
+      "left": "K",
+      "right": "R",
+      "normalized_vote": "K",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "E022 provides direct evidence that a poly(L-lysine)-block-poly(L-phenylalanine) nanovaccine achieves high tumor inhibition (94.9%) and induces dendritic cell maturation and cross-presentation, directly matching the target amphiphilic binary poly(amino acid) tumor-vaccine architecture.",
+          "E001 shows hyperbranched poly-L-lysine enables efficient mRNA delivery with dendritic cell maturation and sustained expression, supporting vaccine-relevant delivery capability.",
+          "E019 demonstrates that a lysine-containing conjugate (L15K6) promotes dendritic cell maturation (CD40, CD80/86, MHC-II) and strong antibody responses, including outperforming alum adjuvant.",
+          "Multiple safety studies (E014, E015, E016, E018) report low hemolysis, high cell viability, and minimal organ toxicity for various polylysine-based materials.",
+          "While polyarginine (Candidate B) shows an endosomal escape advantage (E032), the evidence largely comes from short peptide constructs rather than poly(amino acid) block copolymers, and less directly supports transferability to the target polymer architecture compared to the polylysine block copolymer in E022."
+        ],
+        "supporting_evidence_ids": [
+          "E022",
+          "E001",
+          "E019",
+          "E014",
+          "E015",
+          "E016",
+          "E018"
+        ],
+        "counter_evidence_ids": [
+          "E013"
+        ],
+        "uncertainties": [
+          "Direct head-to-head comparison of polylysine and polyarginine in the same tumor-vaccine block copolymer system is absent.",
+          "Long-term in vivo safety and efficacy data for the specific polylysine block architecture beyond the OVA model (E022) are limited.",
+          "The endosomal escape advantage specific to polyarginine (E032) may become important in certain cytosolic delivery contexts, but its translation to a block copolymer vaccine formulation remains unproven."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13164,
+        "completion_tokens": 3138,
+        "total_tokens": 16302,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2711
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "R"
+      ],
+      "repeat": 1,
+      "orientation": "reverse",
+      "left": "R",
+      "right": "K",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Arginine (R) shows arginine-specific endosomolytic activity enabling cytosolic penetration, which is critical for cross-presentation and is not recapitulated by lysine (K) (E032).",
+          "Polyarginine directly delivers protein antigen to dendritic cells, enhances MHC class I/II presentation, and elicits potent CD4+/CD8+ T-cell responses and antitumor immunity (E044, E025).",
+          "Polyarginine synergizes with adjuvants to induce prolonged T-cell responses lasting over 372 days and inhibits systemic cytokine release (E027).",
+          "Safety evidence for polyarginine is consistently favorable, with low hemolysis, no significant mast cell degranulation, and good in vivo tolerability across multiple studies (E037, E038, E039).",
+          "The guanidinium group of arginine provides stronger and more pH-stable cationic charge, enhancing membrane interactions and endosomal escape, which is advantageous for a functional block in an amphiphilic poly(amino acid) (E032, E033)."
+        ],
+        "supporting_evidence_ids": [
+          "E032",
+          "E044",
+          "E025",
+          "E027",
+          "E037",
+          "E038",
+          "E039",
+          "E033"
+        ],
+        "counter_evidence_ids": [
+          "E013"
+        ],
+        "uncertainties": [
+          "Most arginine evidence uses specific chain lengths (e.g., R9, R18) or conjugates; performance may vary in different poly(amino acid) architectures.",
+          "Lysine evidence includes strong immune activation and mRNA delivery (E001, E019, E022), but these often involve complex copolymers (e.g., HBPL, L15K6) rather than pure polylysine blocks, limiting direct comparability.",
+          "The direct comparison study (E010) suggests similar transcription efficiency for polylysine and polyarginine polyplexes, but endosomal escape remains rate-limiting for both, though arginine-specific leakage activity (E032) is a decisive advantage."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13164,
+        "completion_tokens": 3114,
+        "total_tokens": 16278,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2656
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "R"
+      ],
+      "repeat": 2,
+      "orientation": "forward",
+      "left": "K",
+      "right": "R",
+      "normalized_vote": "K",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Direct evidence of an amphiphilic diblock poly(amino acid) nanovaccine (poly(L-phenylalanine)-block-poly(lysine); E022) achieving dendritic-cell maturation, antigen cross-presentation, and 94.9% tumor inhibition, which is highly transferable to the target architecture.",
+          "Multiple studies demonstrate antigen/mRNA delivery (E001, E019) and dendritic-cell activation (E001, E019, E022), providing strong immune-activation evidence for lysine-based materials.",
+          "Favorable safety profile across diverse lysine-based formulations (E014, E015, E016, E018), with only one counter-example in a star-arranged form (E013).",
+          "Arginine lacks direct evidence in an amphiphilic poly(amino acid) block copolymer for tumor-vaccine delivery; its endosomal-escape advantage (E032) does not overcome the absence of architecture-matched immune efficacy data."
+        ],
+        "supporting_evidence_ids": [
+          "E022",
+          "E001",
+          "E019",
+          "E014",
+          "E015",
+          "E016"
+        ],
+        "counter_evidence_ids": [
+          "E013"
+        ],
+        "uncertainties": [
+          "The relative endosomal-escape efficiency of lysine-based materials compared to arginine-based materials in the target diblock architecture remains unquantified.",
+          "Generalizability of the antitumor efficacy from the OVA model (E022) to other tumor antigens is not confirmed.",
+          "In vivo safety at therapeutic doses for the specific diblock poly(amino acid) is not directly assessed; extrapolation from other lysine-based materials may not fully capture toxicity trade-offs."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13164,
+        "completion_tokens": 3321,
+        "total_tokens": 16485,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2943
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "R"
+      ],
+      "repeat": 2,
+      "orientation": "reverse",
+      "left": "R",
+      "right": "K",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Arg demonstrates direct antigen delivery to dendritic cells with enhanced MHC class I/II presentation and robust CD4+/CD8+ T-cell activation, leading to antitumor immunity in vivo (E044, E025).",
+          "Polyarginine synergizes with adjuvants to produce prolonged T-cell responses lasting over a year and inhibits systemic pro-inflammatory cytokine release (E027, E043).",
+          "Arg shows arginine-specific endosomal leakage activity (E032) and endocytic uptake via heparan sulfate binding (E033), which are critical for cytosolic antigen delivery.",
+          "Safety evidence for Arg is favorable: polyarginine coatings were safe in vivo (E037), R18D showed no hemolysis (E038), and R15 was nonimmunogenic with manageable complement activation (E039).",
+          "In direct comparisons, polyarginine outperformed polylysine in endosomal escape and cytosolic penetration (E032, E010), supporting a mechanistic advantage for vaccine delivery."
+        ],
+        "supporting_evidence_ids": [
+          "E044",
+          "E025",
+          "E027",
+          "E043",
+          "E032",
+          "E033",
+          "E037",
+          "E038",
+          "E039"
+        ],
+        "counter_evidence_ids": [],
+        "uncertainties": [
+          "Most Arg evidence uses specific constructs (R9, R15, R18) rather than a binary block copolymer; transferability to the target amphiphilic poly(amino acid) architecture is inferred but not directly tested.",
+          "Safety data are from ex vivo or short-term in vivo models; long-term biocompatibility in tumor-vaccine context remains unaddressed.",
+          "Some immune activation evidence (E027, E045) requires co-administration with adjuvants (CpG-ODN), so standalone adjuvant activity of Arg is less certain."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13164,
+        "completion_tokens": 1833,
+        "total_tokens": 14997,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1424
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "R"
+      ],
+      "repeat": 3,
+      "orientation": "forward",
+      "left": "K",
+      "right": "R",
+      "normalized_vote": "K",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Candidate A (Lys) includes direct evidence of an amphiphilic binary poly(amino acid) material (poly(L-phenylalanine)-block-poly(L-lysine)) achieving strong DC maturation, antigen cross-presentation, and high tumor inhibition rate (94.9%) in a melanoma model (E022); this architecture precisely matches the target design.",
+          "Candidate A also shows multiple examples of antigen/protein delivery, DC activation, and immune responses in polylysine-containing block or conjugate systems (E001, E002, E019), providing convergent support for the intended tumor-vaccine role.",
+          "Candidate B (Arg) has strong evidence for arginine-specific endosomal leakage (E032) and T-cell activation (E044, E043), but lacks direct evidence of a binary poly(amino acid) block architecture; the endosomal advantage may not translate to the target amphiphilic system without direct testing.",
+          "Safety evidence for both candidates is mixed, but Candidate A includes several reports of low hemolysis and biocompatibility in lysine-based materials (E014, E015, E016, E018), and the key vaccine-active material (E022) was effective in vivo without reported toxicity.",
+          "The decision dimensions of direct delivery relevance, DC-targeted immune activation, and architectural transferability are more strongly and directly supported by Candidate A evidence."
+        ],
+        "supporting_evidence_ids": [
+          "E022",
+          "E001",
+          "E002",
+          "E019",
+          "E014",
+          "E016",
+          "E010",
+          "E011"
+        ],
+        "counter_evidence_ids": [
+          "E013",
+          "E032"
+        ],
+        "uncertainties": [
+          "The endosomal escape advantage of polyarginine (E032) is not tested in the target amphiphilic binary poly(amino acid) architecture; polylysine-based systems have shown sufficient cytosolic delivery for cross-presentation (E022).",
+          "Safety of the specific poly(L-phenylalanine)-block-poly(L-lysine) material (E022) in a tumor vaccine setting is not detailed in the abstract, but in vivo tumor inhibition implies tolerability.",
+          "Most arginine evidence uses short oligoarginine (R9) or homopolymers, not amphiphilic block copolymers; architectural transferability remains unvalidated."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13164,
+        "completion_tokens": 3060,
+        "total_tokens": 16224,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2549
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "R"
+      ],
+      "repeat": 3,
+      "orientation": "reverse",
+      "left": "R",
+      "right": "K",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Polyarginine demonstrates direct and robust evidence for antigen delivery to dendritic cells, enhanced MHC class I and II presentation, and CD4+/CD8+ T-cell activation in multiple studies (E025, E044, E043, E027).",
+          "Polyarginine exhibits arginine-specific endosomal leakage and cytosolic penetration that polylysine cannot recapitulate (E032, E033), which is critical for biomacromolecule delivery.",
+          "In vivo antitumor immunity and long-lasting T-cell responses are directly shown for polyarginine-based materials (E044, E027, E043).",
+          "Safety evidence for polyarginine indicates manageable hemolysis and tolerable in vivo profiles, with no significant immunogenicity (E037, E038, E039).",
+          "Polylysine evidence includes complex constructs (e.g., L15K6, HBPL, chiral block copolymers) whose lysine component is not the primary active moiety, whereas polyarginine evidence is largely from the arginine block itself, supporting transferability to the target architecture."
+        ],
+        "supporting_evidence_ids": [
+          "E025",
+          "E044",
+          "E027",
+          "E043",
+          "E047",
+          "E033",
+          "E032",
+          "E037",
+          "E038"
+        ],
+        "counter_evidence_ids": [
+          "E010"
+        ],
+        "uncertainties": [
+          "Polyarginine safety at high concentrations may involve hemolysis and complement activation (E039), though mitigated in whole blood or with heparin.",
+          "Optimal polyarginine length for balancing efficacy and toxicity is not defined for the target amphiphilic binary architecture.",
+          "Polylysine-based materials show superior biocompatibility in some formulations (E014, E016, E018), but lack endosomal escape activity to match polyarginine."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13164,
+        "completion_tokens": 2005,
+        "total_tokens": 15169,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1598
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "H"
+      ],
+      "repeat": 1,
+      "orientation": "forward",
+      "left": "K",
+      "right": "H",
+      "normalized_vote": "K",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Direct evidence for biomacromolecule delivery and dendritic cell maturation: hyperbranched poly-L-lysine lipopolyplex enabled mRNA delivery with enhanced DC maturation (E001); polyleucine-polylysine conjugate L15K6 promoted DC maturation, TLR4 upregulation, and robust antibody responses outperforming alum (E019, E002).",
+          "Strong immune activation with antigen cross-presentation and tumor inhibition: chiral poly(L-phenylalanine)-block-poly(lysine) nanoparticles induced DC maturation, cross-presentation, and adaptive immunity achieving 94.9% tumor inhibition in melanoma model (E022).",
+          "Favorable safety profile across multiple formulations: polylysine-based materials showed no hemolysis or organ toxicity (E014), minimal cytotoxicity and reduced hemolysis (E015), low hemolysis <5% and high viability >80% (E016), and excellent biocompatibility for blood-contacting applications (E018), despite toxicity concerns for a specific star-arranged PLL at bactericidal concentrations (E013).",
+          "Cellular uptake and endosomal behavior evidenced: poly(L-lysine) polyplex endosomal escape characterized as rate-limiting step (E010); PLL dendrimers internalized via multiple endocytosis pathways and trafficked to endosomes/lysosomes (E011); review confirms efficient electrostatic internalization (E007).",
+          "Direct transferability to poly(amino acid) functional block: lysine is a natural amino acid and polylysine is a well-studied poly(amino acid); multiple studies directly use polylysine or lysine-based polypeptides as the functional block in vaccine-relevant systems (E001, E019, E022)."
+        ],
+        "supporting_evidence_ids": [
+          "E001",
+          "E019",
+          "E022",
+          "E014",
+          "E015",
+          "E016",
+          "E018",
+          "E010",
+          "E011",
+          "E007",
+          "E002"
+        ],
+        "counter_evidence_ids": [
+          "E013"
+        ],
+        "uncertainties": [
+          "Polylysine-based materials show some cytotoxicity at high doses in a specific star-arranged form (E013), but general safety is favorable in other formulations.",
+          "Endosomal escape evidence for lysine is less direct than for histidine; histidine has stronger mechanistic evidence for pH-triggered endosomal disruption (e.g., E049, E058).",
+          "Strength of evidence for histidine in immune activation often comes from complex formulations where polyhistidine is a tag or component rather than the primary functional block, making direct attribution uncertain."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13036,
+        "completion_tokens": 2647,
+        "total_tokens": 15683,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2075
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "H"
+      ],
+      "repeat": 1,
+      "orientation": "reverse",
+      "left": "H",
+      "right": "K",
+      "normalized_vote": "K",
+      "response": {
+        "preference": "B",
+        "basis": [
+          "Hyperbranched poly-L-lysine (HBPL) in lipopolyplexes directly enables mRNA delivery and dendritic cell maturation (E001), which is a core design goal for tumor vaccines.",
+          "Polyleucine–polylysine conjugate L15K6 enhances antigen uptake, DC maturation (CD40, CD80/86, MHC-II), and triggers TLR4/NF-κB activation, inducing robust antibody responses outperforming alum (E019).",
+          "Chiral poly(L-phenylalanine)-block-poly(lysine) nanoparticles potently induce DC maturation, antigen cross-presentation, and achieve 94.9% tumor inhibition in a melanoma model (E022), directly relevant to the target amphiphilic binary architecture.",
+          "Multiple studies demonstrate that polylysine-based materials can be formulated with low hemolysis and high cell viability (E014, E016, E018), though unmodified high-MW polylysine shows toxicity (E013).",
+          "Polylysine shows efficient cellular uptake via multiple endocytosis pathways and is trafficked to endosomes (E010, E011), providing a mechanistic basis for intracellular delivery."
+        ],
+        "supporting_evidence_ids": [
+          "E001",
+          "E019",
+          "E022",
+          "E014",
+          "E016",
+          "E018",
+          "E010",
+          "E011"
+        ],
+        "counter_evidence_ids": [
+          "E013"
+        ],
+        "uncertainties": [
+          "The safety of polylysine in the target architecture remains a concern because unmodified star-arranged poly-L-lysine (16-PLL10) causes cytotoxicity and hemolysis (E013); safe formulations rely on copolymerization or grafting.",
+          "The contribution of polyhistidine to DC activation in its supporting evidence (E063, E064) is not isolated from other copolymer components (PLA, PEG), making direct attribution uncertain.",
+          "Polylysine evidence for endosomal escape is less direct than for polyhistidine; polyhistidine studies (E057, E058) show active proton-sponge endosomal escape without membrane rupture, whereas polylysine endosomal escape is described as rate-limiting (E010)."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13036,
+        "completion_tokens": 3564,
+        "total_tokens": 16600,
+        "completion_tokens_details": {
+          "reasoning_tokens": 3085
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "H"
+      ],
+      "repeat": 2,
+      "orientation": "forward",
+      "left": "K",
+      "right": "H",
+      "normalized_vote": "K",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Candidate A (Lys) has direct vaccine-relevant evidence: hyperbranched poly-L-lysine mediates mRNA delivery with dendritic cell maturation and in vivo expression (E001), a polyleucine-polylysine conjugate enhances antigen uptake, DC maturation, TLR4/NF-κB activation, and outperforms alum (E019), and chiral poly(lysine) block nanoparticles induce DC maturation, antigen cross-presentation, and achieve 94.9% tumor inhibition in a melanoma model (E022).",
+          "Candidate A shows strong safety profiles in multiple systems: no hemolysis or organ toxicity (E014), reduced hemolysis compared to PLL alone (E015), and low hemolysis (<5%) with high cell viability (>80%) in hydrogel form (E016).",
+          "Candidate B (His) has strong endosomal escape evidence (E049, E057, E058) and some immune activation (E064, E063), but the immune-relevant evidence often uses polyhistidine as a tag or in complex copolymers where its individual contribution is not isolated, and direct vaccine-efficacy data are less robust than for Lys."
+        ],
+        "supporting_evidence_ids": [
+          "E001",
+          "E019",
+          "E022",
+          "E014",
+          "E015",
+          "E016"
+        ],
+        "counter_evidence_ids": [
+          "E013"
+        ],
+        "uncertainties": [
+          "Most lysine evidence uses modified or copolymer forms (HBPL, L15K6, P_D-K), not simple polylysine, so transferability to the specific target amphiphilic binary poly(amino acid) architecture is not fully demonstrated.",
+          "One lysine study (star-arranged PLL, E013) shows significant cytotoxicity and hemolysis at bactericidal concentrations, though this is a specific architecture.",
+          "Histidine-based materials have well-documented pH-dependent endosomal escape, which could be advantageous for vaccine delivery, but direct immune activation and in vivo tumor vaccine data for a pure polyhistidine functional block are lacking in the supplied evidence.",
+          "The evidence does not include direct head-to-head comparisons of lysine vs. histidine functional blocks in the same delivery context."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13036,
+        "completion_tokens": 2459,
+        "total_tokens": 15495,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1990
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "H"
+      ],
+      "repeat": 2,
+      "orientation": "reverse",
+      "left": "H",
+      "right": "K",
+      "normalized_vote": null,
+      "response": {
+        "preference": "INSUFFICIENT",
+        "basis": [
+          "Polyhistidine (His) shows strong evidence for endosomal escape and pH-sensitive intracellular delivery (E049, E052, E058), which is a mechanistic advantage for vaccine delivery, but its direct dendritic-cell activation evidence often relies on hybrid or tag-based systems (E062, E064) and is less direct than lysine’s.",
+          "Polylysine (Lys) shows robust and direct dendritic-cell maturation, cross-presentation, and adaptive immune activation (E019, E022), and evidence for mRNA/antigen delivery (E001), but its endosomal escape capacity is weak (E010) and some forms exhibit cytotoxicity (E013).",
+          "Safety evidence for both is generally favorable (His: E059; Lys: E014, E015, E016, E018), but both have limitations or negative data (Lys: E013; His: no negative safety identified but limited systemic data).",
+          "Transferability to a poly(amino acid) functional block is comparable for both amino acids, but histidine offers unique pH-responsiveness, while lysine offers strong cationic charge for nucleic acid binding; the trade-off is not resolved by the supplied evidence.",
+          "The evidence does not consistently favor one candidate across all decision dimensions, and direct head-to-head comparisons are absent, making a stable preference unjustified."
+        ],
+        "supporting_evidence_ids": [
+          "E049",
+          "E052",
+          "E058",
+          "E064",
+          "E019",
+          "E022",
+          "E001"
+        ],
+        "counter_evidence_ids": [
+          "E010",
+          "E013",
+          "E062"
+        ],
+        "uncertainties": [
+          "The degree to which polyhistidine's endosomal escape translates to improved vaccine efficacy compared to polylysine's stronger DC activation is unknown without direct comparative studies.",
+          "Polylysine's cytotoxicity in some forms (E013) may not be representative of all lysine-based materials; conversely, polyhistidine's safety in complex in vivo vaccine models is underreported.",
+          "Most immune evidence for polyhistidine uses it as a tag or in multi-component systems, making it difficult to isolate its contribution from other components.",
+          "The lack of studies directly comparing histidine- and lysine-based polymers in identical vaccine formulations prevents a definitive conclusion."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13036,
+        "completion_tokens": 3574,
+        "total_tokens": 16610,
+        "completion_tokens_details": {
+          "reasoning_tokens": 3064
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "H"
+      ],
+      "repeat": 3,
+      "orientation": "forward",
+      "left": "K",
+      "right": "H",
+      "normalized_vote": "K",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Direct antigen/protein delivery relevance: multiple studies show lysine-based materials deliver mRNA (E001), protein antigens (E019, E002), and self-assembled nanovaccines (E022) with strong in vivo efficacy.",
+          "Dendritic-cell and immune activation: E001, E019, and E022 each report dendritic cell maturation, cross-presentation, and antigen-specific immune responses, including tumor inhibition (94.9% in E022).",
+          "Safety evidence is more comprehensive for lysine, with several studies reporting low hemolysis and cytotoxicity (E014, E015, E016, E018), despite some toxicity in star-configurations (E013).",
+          "For a tumor-vaccine functional block, direct vaccine-relevant immune outcomes are more informative than endosomal escape alone."
+        ],
+        "supporting_evidence_ids": [
+          "E001",
+          "E019",
+          "E022",
+          "E002",
+          "E010"
+        ],
+        "counter_evidence_ids": [
+          "E013",
+          "E057"
+        ],
+        "uncertainties": [
+          "Lysine-based materials show variable cytotoxicity depending on architecture (e.g., linear vs hyperbranched vs star); optimal formulation for the binary amphiphilic design is not specified.",
+          "Histidine's endosomal escape advantage (E049) could complement the vaccine design, but no supplied histidine evidence demonstrates comparable DC activation or vaccine efficacy in a poly(amino acid) functional block context.",
+          "Direct transferability of either candidate to the exact binary amphiphilic poly(amino acid) architecture is inferred from existing block copolymer examples (E022 for lysine, E064 for histidine) but not proven."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13036,
+        "completion_tokens": 2371,
+        "total_tokens": 15407,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1993
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "K",
+        "H"
+      ],
+      "repeat": 3,
+      "orientation": "reverse",
+      "left": "H",
+      "right": "K",
+      "normalized_vote": "H",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Polyhistidine provides strong endosomal escape via the proton-sponge mechanism and pH-responsive membrane disruption, which is critical for cytosolic antigen delivery and cross-presentation. Multiple studies directly demonstrate efficient cellular uptake, endosomal escape, and subsequent immune activation (E049, E050, E052, E057, E058, E064).",
+          "Evidence from polyhistidine-based block copolymers shows reinforced dendritic cell maturation, antigen cross-presentation, and cytotoxic T lymphocyte activation in tumor models (E063, E064), directly supporting the target vaccine function.",
+          "Polylysine-based materials have a well-documented limitation in endosomal escape, which is identified as the rate-limiting step for transfection even when internalization is efficient (E010). Although lysine-based constructs achieve strong immune responses, they often require additional help (e.g., chloroquine, other components) or are combined with hydrophobic blocks that may compensate, making the intrinsic lysine block less reliable for endosomal escape.",
+          "Both candidates have safety trade-offs, but polyhistidine shows low cytotoxicity in PEGylated forms (E059) and a proton-sponge mechanism that avoids membrane rupture (E058), whereas polylysine can be hemolytic and cytotoxic at higher concentrations (E013) and requires extensive modification to improve biocompatibility."
+        ],
+        "supporting_evidence_ids": [
+          "E049",
+          "E050",
+          "E052",
+          "E057",
+          "E058",
+          "E059",
+          "E062",
+          "E063",
+          "E064"
+        ],
+        "counter_evidence_ids": [
+          "E010",
+          "E013"
+        ],
+        "uncertainties": [
+          "Polyhistidine evidence for immune activation often combines it with other materials (e.g., PEG, PLA, cobalt porphyrin), so its independent contribution in a simple binary amphiphilic poly(amino acid) may be less established.",
+          "Polylysine-based nanovaccines (e.g., chiral polypeptide nanoparticles) show very high tumor inhibition rates and DC activation, but the role of the lysine block versus the hydrophobic block in facilitating endosomal escape and immune responses is not isolated.",
+          "Safety and biocompatibility data for both candidates are largely from modified or hybrid forms; pure polyhistidine or polylysine blocks at high molecular weights may have different toxicity profiles.",
+          "Most studies are in mice; transferability to human vaccine contexts remains unclear."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13036,
+        "completion_tokens": 2397,
+        "total_tokens": 15433,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1871
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "R",
+        "H"
+      ],
+      "repeat": 1,
+      "orientation": "forward",
+      "left": "R",
+      "right": "H",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Polyarginine (R9-PTD) directly delivers protein antigen (OVA) to dendritic cells, enhancing MHC class I and II presentation and activating CD4+ and CD8+ T cells in vitro and in vivo (E025, E044).",
+          "Poly-L-arginine synergizes with CpG-ODN to induce potent and prolonged peptide-specific T-cell responses lasting at least 372 days, with inhibition of systemic pro-inflammatory cytokine release (E027, E045).",
+          "Polyarginine (R9) nanofibers enhance dendritic cell activation with cyclic-dinucleotide adjuvants in a STING-dependent manner, supporting vaccine adjuvant function (E047).",
+          "Supercharged arginine-rich peptides (including polyarginine analogs) induce late endosome leakage and cytosolic penetration in human cells, while polylysine does not, indicating arginine-specific endosomolytic behavior (E032).",
+          "Polyarginine-coated nanovectors are safe and tolerable in vivo, outperforming PEI in hemocompatibility and organ toxicity (E037).",
+          "R18D (D-enantiomer of polyarginine-18) shows no significant mast cell degranulation or hemolysis ex vivo (E038).",
+          "Polyhistidine evidence is largely indirect: used as a tag for antigen loading on liposomes or in copolymers, not as the primary functional block for delivery or immune activation (E061, E062, E065).",
+          "Although polyhistidine shows pH-dependent endosomal escape, its immune activation evidence often comes from systems combining histidine with other components (e.g., PLH-PEG, PLA-PHis) rather than polyhistidine alone (E064, E063).",
+          "Polyarginine evidence is more directly transferable to a poly(amino acid) functional block in an amphiphilic binary polymer, with multiple studies using polyarginine peptides as the active delivery and immune-stimulating moiety."
+        ],
+        "supporting_evidence_ids": [
+          "E025",
+          "E027",
+          "E032",
+          "E033",
+          "E037",
+          "E038",
+          "E039",
+          "E043",
+          "E044",
+          "E045",
+          "E047"
+        ],
+        "counter_evidence_ids": [
+          "E038",
+          "E039"
+        ],
+        "uncertainties": [
+          "Polyarginine length and context (e.g., R9, R18) may not fully represent behavior when incorporated as a longer block in an amphiphilic binary polymer.",
+          "Hemolysis and complement activation observed for R15 at high concentrations (E039) raise some safety concerns, though mitigated in whole blood or when complexed.",
+          "Polyhistidine's pH-sensitive endosomal escape could be complementary, but the supplied evidence does not justify a preference for His as the primary functional block over Arg."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13133,
+        "completion_tokens": 1855,
+        "total_tokens": 14988,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1234
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12288
+        }
+      }
+    },
+    {
+      "pair": [
+        "R",
+        "H"
+      ],
+      "repeat": 1,
+      "orientation": "reverse",
+      "left": "H",
+      "right": "R",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "B",
+        "basis": [
+          "Multiple studies directly demonstrate that polyarginine (e.g., R9) delivers protein antigens to dendritic cells and enhances MHC class I/II presentation and T-cell activation, which is central to a tumor-vaccine function (E025, E044).",
+          "Poly-L-arginine alone induces APC infiltration and long-lasting T-cell responses without inducing anti-polymer antibodies (E043), and synergizes with adjuvants for prolonged immunity over 372 days (E027, E045).",
+          "Arginine-rich peptides show arginine-specific endosomal leakage and cytosolic penetration, supporting intracellular delivery of vaccine components (E032), and polyarginine-coated nanovectors are safe in vivo (E037, E038, E039).",
+          "In contrast, polyhistidine evidence often relies on His-tag systems or hybrid materials, with less direct demonstration of the polymer itself as the functional vaccine block (e.g., E062, E064, E065).",
+          "Safety trade-offs for polyhistidine include hemolytic activity (E057), while polyarginine shows better overall safety in the supplied evidence (E037, E038)."
+        ],
+        "supporting_evidence_ids": [
+          "E025",
+          "E044",
+          "E043",
+          "E027",
+          "E045",
+          "E032",
+          "E047",
+          "E037",
+          "E038",
+          "E039"
+        ],
+        "counter_evidence_ids": [
+          "E057",
+          "E032"
+        ],
+        "uncertainties": [
+          "Polyarginine immune responses often require co-adjuvants (CpG, CDNs), and its efficacy as a standalone vaccine material is not fully isolated.",
+          "Polyhistidine's pH-sensitive endosomal escape is attractive, but its direct antigen-delivery and DC-activation evidence in pure poly(amino acid) form is weaker.",
+          "Transferability to a binary amphiphilic block copolymer is inferred from homopolymer data; direct comparative experiments in the target architecture are absent for both candidates."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13133,
+        "completion_tokens": 2350,
+        "total_tokens": 15483,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1901
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12288
+        }
+      }
+    },
+    {
+      "pair": [
+        "R",
+        "H"
+      ],
+      "repeat": 2,
+      "orientation": "forward",
+      "left": "R",
+      "right": "H",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Candidate A (Arg) has direct evidence of antigen delivery to dendritic cells and enhanced MHC class I/II presentation, leading to potent CD4+ and CD8+ T-cell activation and antitumor immunity (E044, E025, E043).",
+          "Multiple studies show polyarginine synergizes with adjuvants to prolong T-cell responses and inhibit systemic cytokine release, directly supporting vaccine function (E027, E045).",
+          "Endosomal escape and uptake mechanisms for polyarginine are well-characterized, including endocytosis-dependent entry and late endosome leakage (E033, E032), with arginine-specific activity not mimicked by other polycations.",
+          "Safety evidence for polyarginine is favorable: in vivo studies show tolerability and reduced toxicity compared to PEI (E037), and ex vivo hemolysis/mast cell degranulation are low or condition-dependent (E038, E039).",
+          "Candidate B (His) evidence for tumor-vaccine-relevant immune activation is less direct: most immune data come from hybrid materials (PLH-PEG, PLA-PHis) rather than pure polyhistidine, and pure polyhistidine studies focus on uptake or endosomal behavior without demonstrating T-cell activation or antigen presentation (E049, E050, E058, E064)."
+        ],
+        "supporting_evidence_ids": [
+          "E044",
+          "E025",
+          "E043",
+          "E027",
+          "E045",
+          "E033",
+          "E032",
+          "E037",
+          "E038",
+          "E039"
+        ],
+        "counter_evidence_ids": [
+          "E038"
+        ],
+        "uncertainties": [
+          "Some polyarginine studies require combination with adjuvants (e.g., CpG-ODN) for full effect, and the benefit of polyarginine alone may be synergistic rather than independent (E027, E045).",
+          "Polyhistidine-based studies showing immune activation often use copolymers or tag-based systems, making it unclear if pure polyhistidine would provide equivalent vaccine activity as a functional block (E064, E063).",
+          "The hemolysis risk for polyarginine (R18) at high concentration without plasma is noted but is context-dependent and not observed for D-enantiomer or in plasma (E038)."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13133,
+        "completion_tokens": 2337,
+        "total_tokens": 15470,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1830
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "R",
+        "H"
+      ],
+      "repeat": 2,
+      "orientation": "reverse",
+      "left": "H",
+      "right": "R",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "B",
+        "basis": [
+          "Direct evidence shows polyarginine (R9) delivers protein antigen to dendritic cells and enhances MHC class I/II presentation, leading to potent CD4+/CD8+ T-cell activation and antitumor immunity (E044, E025).",
+          "Poly-L-arginine synergizes with CpG-ODN to induce long-lasting T-cell responses (≥372 days) and inhibits systemic pro-inflammatory cytokines, demonstrating robust adjuvant activity (E027, E045).",
+          "Polyarginine nanofibers with R9 enhance STING-dependent dendritic cell activation in vitro and improve sublingual immunization in vivo (E047).",
+          "Poly-L-arginine vaccination induces infiltration of MHC class II+ antigen-presenting cells, including dendritic cells, and long-lasting systemic T-cell responses without anti-polymer antibodies (E043).",
+          "Safety evidence for polyarginine is provided by in vivo studies showing tolerability, low hemolysis, and low mast cell degranulation (E037, E038, E039)."
+        ],
+        "supporting_evidence_ids": [
+          "E044",
+          "E025",
+          "E027",
+          "E045",
+          "E047",
+          "E043",
+          "E037",
+          "E038",
+          "E039"
+        ],
+        "counter_evidence_ids": [
+          "E033"
+        ],
+        "uncertainties": [
+          "Polyarginine endosomal escape is disputed: E033 shows R9 remains in endocytic vesicles in live cells, while E032 supports late endosome leakage, creating ambiguity about cytosolic delivery mechanism.",
+          "Antigen delivery evidence for polyhistidine often relies on his-tag as an anchoring motif (e.g., E061, E062, E065), not as the primary functional delivery block, limiting directness for the intended amphiphilic binary poly(amino acid) architecture.",
+          "The strongest dendritic-cell evidence for polyhistidine (E064) involves a complex triblock copolymer with cargo immunomodulators, making it difficult to attribute immune activation solely to the histidine block.",
+          "Transferability from R9 protein transduction domain fusions to an amphiphilic binary poly(amino acid) copolymer is not directly tested."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13133,
+        "completion_tokens": 2783,
+        "total_tokens": 15916,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2304
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "R",
+        "H"
+      ],
+      "repeat": 3,
+      "orientation": "forward",
+      "left": "R",
+      "right": "H",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "A",
+        "basis": [
+          "Candidate A (Arg) has direct evidence for antigen delivery to dendritic cells using R9-PTD, enhancing MHC class I/II presentation and T-cell activation (E044, E025).",
+          "Poly-L-arginine synergizes with adjuvants to induce potent, long-lasting T-cell responses and inhibits systemic pro-inflammatory cytokine release (E027, E045).",
+          "Arg induces DC infiltration, antigen loading, and immune activation in vivo (E043).",
+          "Arg shows specific endosomal leakage and cytosolic penetration that is arginine-dependent (E032).",
+          "Safety data indicate low hemolysis and in vivo tolerability for polyarginine coatings and R18D (E037, E038).",
+          "Candidate B (His) often relies on polyhistidine as a tag rather than as the primary functional block, and its DC activation and immune outcomes are frequently mediated by other components (E062, E065, E061).",
+          "While His shows some endosomal escape and uptake, the evidence is less direct for vaccine-relevant antigen delivery and DC activation compared to Arg."
+        ],
+        "supporting_evidence_ids": [
+          "E044",
+          "E025",
+          "E027",
+          "E045",
+          "E043",
+          "E032",
+          "E033",
+          "E047",
+          "E037",
+          "E038"
+        ],
+        "counter_evidence_ids": [
+          "E032",
+          "E038"
+        ],
+        "uncertainties": [
+          "The threshold of arginine content for optimal activity vs toxicity is unclear from the supplied evidence.",
+          "Transferability to the specific binary poly(amino acid) architecture is not directly tested for either candidate."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13133,
+        "completion_tokens": 2493,
+        "total_tokens": 15626,
+        "completion_tokens_details": {
+          "reasoning_tokens": 2115
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    },
+    {
+      "pair": [
+        "R",
+        "H"
+      ],
+      "repeat": 3,
+      "orientation": "reverse",
+      "left": "H",
+      "right": "R",
+      "normalized_vote": "R",
+      "response": {
+        "preference": "B",
+        "basis": [
+          "Polyarginine (R9/R18) provides more direct evidence for dendritic-cell antigen delivery, MHC I/II presentation, and potent antitumor T-cell responses in vaccine contexts (E044, E025, E043).",
+          "Polyarginine synergizes with adjuvants (CpG-ODN, CDNs) to produce prolonged, systemic T-cell immunity lasting >372 days (E027, E045, E047).",
+          "Arginine-specific endosomal leakage activity is demonstrated, with a clear structure-activity relationship for cytosolic delivery (E032, E033).",
+          "Safety profiles for polyarginine are explicitly assessed in relevant ex vivo and in vivo models, showing tolerability and low hemolysis/immunogenicity (E037, E038, E039).",
+          "His evidence often relies on polyhistidine as a tag or in hybrid systems, with less direct demonstration of intrinsic immune activation or antigen presentation by the poly(amino acid) block alone."
+        ],
+        "supporting_evidence_ids": [
+          "E025",
+          "E027",
+          "E032",
+          "E033",
+          "E037",
+          "E038",
+          "E039",
+          "E043",
+          "E044",
+          "E045",
+          "E047"
+        ],
+        "counter_evidence_ids": [],
+        "uncertainties": [
+          "Polyarginine's endosomolytic activity and safety have a narrow arginine-content window; the optimal block length for the target architecture is not specified in the supplied evidence.",
+          "His-based materials show pH-dependent endosomal escape and in vivo antitumor immune responses, but these outcomes are often achieved in combination with other components (e.g., PEG, cargo), making the intrinsic contribution of polyhistidine less certain.",
+          "Transferability to an amphiphilic binary poly(amino acid) block is plausible for both, but direct comparisons within the same architecture are missing."
+        ]
+      },
+      "usage": {
+        "prompt_tokens": 13133,
+        "completion_tokens": 2174,
+        "total_tokens": 15307,
+        "completion_tokens_details": {
+          "reasoning_tokens": 1752
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 12800
+        }
+      }
+    }
+  ],
+  "pairwise_results": [
+    {
+      "pair": [
+        "K",
+        "R"
+      ],
+      "votes": {
+        "K": 3,
+        "R": 3,
+        "INSUFFICIENT": 0
+      },
+      "winner": null,
+      "status": "inconclusive"
+    },
+    {
+      "pair": [
+        "K",
+        "H"
+      ],
+      "votes": {
+        "K": 4,
+        "H": 1,
+        "INSUFFICIENT": 1
+      },
+      "winner": "K",
+      "status": "resolved"
+    },
+    {
+      "pair": [
+        "R",
+        "H"
+      ],
+      "votes": {
+        "R": 6,
+        "H": 0,
+        "INSUFFICIENT": 0
+      },
+      "winner": "R",
+      "status": "resolved"
+    }
+  ],
+  "functional_block_identity": null,
+  "lys_chirality_evidence_count": 24,
+  "lys_chirality_calls": [],
+  "lys_chirality_result": {
+    "pair": [
+      "D",
+      "L"
+    ],
+    "votes": {
+      "D": 0,
+      "L": 0,
+      "INSUFFICIENT": 0
+    },
+    "winner": null,
+    "status": "not_run_identity_not_K"
+  },
+  "functional_block_chirality": "NOT_DISCUSSSED",
+  "selected_functional_block": null,
+  "llm": {
+    "api_key_env_used": "TIAOZHANSAI_LLM_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "timeout_seconds": 120,
+    "retries": 3
+  },
+  "repeats": 3,
+  "scientific_boundaries": {
+    "no_custom_immune_0_100_score": true,
+    "medcpt_score_is_relevance_only": true,
+    "rag_relevance_score_is_relevance_only": true,
+    "paper_count_is_not_candidate_quality": true,
+    "other_amino_acid_chirality_not_evaluated": true,
+    "abstract_only_stage": true,
+    "key_claims_require_full_text_confirmation_before_manuscript": true
+  }
+}

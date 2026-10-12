@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K03
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 40277663
+DOI: 10.3390/gels11040226
+
+TITLE:
+A Poly-γ-Glutamic Acid/ε-Polylysine Hydrogel: Synthesis, Characterization, and Its Role in Accelerated Wound Healing.
+
+ABSTRACT:
+Wound healing is a complex biological process involving inflammation, proliferation, and remodeling phases. Effective healing is essential for maintaining skin integrity, driving the need for advanced materials like hydrogels, known for their high water retention and tunable mechanical properties. In this study, we synthesized a biocompatible composite hydrogel composed of γ-polyglutamic acid (γ-PGA) and ε-polylysine (ε-PL) through a Schiff base reaction, forming a stable crosslinked network. Its physicochemical properties, including rheological behavior and swelling capacity, were systematically evaluated. Biocompatibility was assessed via in vitro hemolysis and cytotoxicity assays, and in vivo testing was performed using a full-thickness skin defect model in Sprague Dawley (SD) rats to evaluate wound-healing efficacy. The PGA-PL hydrogel demonstrated excellent physicochemical properties, with a maximum swelling ratio of 65.6%, and biocompatibility as evidenced by low hemolysis rates (<5%) and high cell viability (>80%). It promoted wound healing by inhibiting the inflammatory response, reducing levels of the inflammatory cytokine IL-6, enhancing angiogenesis, and accelerating collagen deposition. The hydrogel showed complete biodegradation within 21 days in vivo without inducing a significant inflammatory response and significantly accelerated wound healing, achieving an 86% healing rate within 7 days compared to 67% in the control group. The PGA-PL composite hydrogel exhibits excellent mechanical strength and biocompatibility, and its effective wound-healing capabilities lay the groundwork for future development and optimization in various tissue engineering applications.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

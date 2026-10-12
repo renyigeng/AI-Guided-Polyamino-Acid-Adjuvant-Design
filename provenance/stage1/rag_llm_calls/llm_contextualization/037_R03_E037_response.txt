@@ -1,0 +1,27 @@
+{
+  "summary": "Polyarginine coated magnetic nanovectors were evaluated for in vivo safety and compared to PEI-coated ones; pArg coating was found safe and tolerable, while PEI caused severe hemoincompatibility and organ damage.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "In vivo safety evaluation of polyarginine coated magnetic nanovectors",
+    "Comparison of polyarginine vs. PEI coatings for hemoincompatibility and organ toxicity"
+  ],
+  "reported_numeric_results": [
+    "NP-pArg-siRNA was 3-fold more potent in siRNA delivery",
+    "NP-pArg-siRNA was 1.8-fold more effective in gene silencing",
+    "Hydrodynamic sizes: 21 nm (NP-pArg-siRNA) and 22 nm (NP-PEI-siRNA)",
+    "Zeta potentials: +2.1 mV (pArg) and +29.8 mV (PEI)"
+  ],
+  "reported_qualitative_findings": [
+    "PEI coated nanovectors elicited severe hemoincompatibility and damage to liver and spleen",
+    "pArg coated nanovectors were found to be safe and tolerable",
+    "Polycationic coatings of pArg were more effective and safer than PEI coatings"
+  ],
+  "material_or_molecular_context": "Poly-l-arginine (pArg) coated superparamagnetic iron oxide nanoparticles (12 nm core) covalently functionalized with siRNA (NP-pArg-siRNA); compared to PEI coated nanovectors",
+  "biological_context": "Rat C6 glioblastoma cells (in vitro); in vivo evaluation in rats (spleen, liver uptake; histopathological and hemopathological assays)",
+  "limitations_for_current_question": [
+    "Only one type of polyarginine coating (pArg) on magnetic nanovectors was tested; other arginine-based polypeptides or free polyarginine not evaluated",
+    "Safety was assessed in context of siRNA delivery nanovectors, not as standalone material",
+    "No direct cytotoxicity data for polyarginine alone without nanoparticle carrier"
+  ],
+  "supporting_text": "pArg coated nanovectors were found to be safe and tolerable"
+}

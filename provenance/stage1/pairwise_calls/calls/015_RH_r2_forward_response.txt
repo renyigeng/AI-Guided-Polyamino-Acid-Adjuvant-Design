@@ -1,0 +1,30 @@
+{
+  "preference": "A",
+  "basis": [
+    "Candidate A (Arg) has direct evidence of antigen delivery to dendritic cells and enhanced MHC class I/II presentation, leading to potent CD4+ and CD8+ T-cell activation and antitumor immunity (E044, E025, E043).",
+    "Multiple studies show polyarginine synergizes with adjuvants to prolong T-cell responses and inhibit systemic cytokine release, directly supporting vaccine function (E027, E045).",
+    "Endosomal escape and uptake mechanisms for polyarginine are well-characterized, including endocytosis-dependent entry and late endosome leakage (E033, E032), with arginine-specific activity not mimicked by other polycations.",
+    "Safety evidence for polyarginine is favorable: in vivo studies show tolerability and reduced toxicity compared to PEI (E037), and ex vivo hemolysis/mast cell degranulation are low or condition-dependent (E038, E039).",
+    "Candidate B (His) evidence for tumor-vaccine-relevant immune activation is less direct: most immune data come from hybrid materials (PLH-PEG, PLA-PHis) rather than pure polyhistidine, and pure polyhistidine studies focus on uptake or endosomal behavior without demonstrating T-cell activation or antigen presentation (E049, E050, E058, E064)."
+  ],
+  "supporting_evidence_ids": [
+    "E044",
+    "E025",
+    "E043",
+    "E027",
+    "E045",
+    "E033",
+    "E032",
+    "E037",
+    "E038",
+    "E039"
+  ],
+  "counter_evidence_ids": [
+    "E038"
+  ],
+  "uncertainties": [
+    "Some polyarginine studies require combination with adjuvants (e.g., CpG-ODN) for full effect, and the benefit of polyarginine alone may be synergistic rather than independent (E027, E045).",
+    "Polyhistidine-based studies showing immune activation often use copolymers or tag-based systems, making it unclear if pure polyhistidine would provide equivalent vaccine activity as a functional block (E064, E063).",
+    "The hemolysis risk for polyarginine (R18) at high concentration without plasma is noted but is context-dependent and not observed for D-enantiomer or in plasma (E038)."
+  ]
+}

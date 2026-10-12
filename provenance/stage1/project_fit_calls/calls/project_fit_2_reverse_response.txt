@@ -1,0 +1,24 @@
+{
+  "preference": "K",
+  "architecture_fit": {
+    "verdict": "K",
+    "reason": "K has direct evidence of block copolymer and nanoparticle architectures (e.g., PEG-PLL-PLLeu, P_L-K block copolymer, hyperbranched PLL in lipopolyplex) that closely match the target amphiphilic binary poly(amino acid) carrier. R evidence primarily uses simple polyarginine chains or fusion proteins, lacking clear block copolymer examples.",
+    "evidence_ids": ["E001", "E002", "E003", "E022", "E021"]
+  },
+  "vaccine_mechanism_fit": {
+    "verdict": "K",
+    "reason": "K evidence includes robust dendritic cell maturation, antigen cross-presentation, and antitumor efficacy in block copolymer nanoparticle vaccine systems (e.g., P_D-K-OVA, PEG-PLL-PLLeu micelles), directly relevant to the tumor-vaccine carrier. While R also shows strong immune responses, K's systems are more architecturally aligned with the project.",
+    "evidence_ids": ["E001", "E002", "E003", "E022", "E021"]
+  },
+  "delivery_safety_balance": {
+    "verdict": "TIE",
+    "reason": "R has superior intracellular delivery and endosomal escape evidence (E032, E033) but has some safety concerns (hemolysis, complement activation). K has cleaner safety data (low hemolysis, high cell viability) but less detailed intracellular handling. The balance is even for this criterion.",
+    "evidence_ids": ["E032", "E033", "E025", "E028", "E037", "E038", "E039"]
+  },
+  "counter_evidence_ids": [],
+  "uncertainties": [
+    "Most evidence for both candidates uses protein/peptide antigens; less direct evidence for mRNA or other biomacromolecules beyond one K study (E001).",
+    "Intracellular handling (endosomal escape) evidence for K is less explicit than for R, which may affect cross-presentation efficiency in vaccine context.",
+    "Safety data for K at the specific chain lengths and architectures used in block copolymers is not fully characterized."
+  ]
+}

@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: K01
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 23379996
+DOI: 10.1016/j.jconrel.2013.01.019
+
+TITLE:
+DNA delivery with hyperbranched polylysine: a comparative study with linear and dendritic polylysine.
+
+ABSTRACT:
+PEI and polylysine are among the most investigated synthetic polymeric carriers for DNA delivery. Apart from their practical use, these 2 classes of polymers are also of interest from a fundamental point of view as they both can be prepared in different architectures (linear and branched/dendritic) and in a wide range of molecular weights, which is attractive to establish basic structure-activity relationships. This manuscript reports the results of an extensive study on the influence of molecular weight and architecture of a library of polylysine variants that includes linear, dendritic and hyperbranched polylysine. Hyperbranched polylysine is a new polylysine-based carrier that is structurally related to dendritic polylysine but possesses a randomly branched structure. Hyperbranched polylysine is attractive as it can be prepared in a one-step process on a large scale. The performance of these 3 classes of polylysine analogs was evaluated by assessing eGFP and IgG production in transient gene expression experiments with CHO DG44 cells, which revealed that protein production generally increased with increasing molecular weight and that at comparable molecular weight, the hyperbranched analogs were superior as compared to the dendritic and linear polylysines. To understand the differences between the gene delivery properties of the hyperbranched polylysine analogs on the one hand and the dendritic and linear polylysines on the other hand, the uptake and trafficking of the corresponding polyplexes were investigated. These experiments allowed us to identify (i) polyplex-external cell membrane binding, (ii) free, unbound polylysine coexisting with polyplexes as well as (iii) polymer buffer capacity as three possible factors that may contribute to the superior transfection properties of the hyperbranched polylysines as compared to their linear and dendritic analogs. Altogether, the results of this study indicate that hyperbranched polylysine is an interesting, alternative synthetic gene carrier. Hyperbranched polylysine can be produced at low costs and in large quantities, is partially biodegradable, which may help to prevent cumulative cytotoxicity, and possesses transfection properties that can approach those of PEI.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

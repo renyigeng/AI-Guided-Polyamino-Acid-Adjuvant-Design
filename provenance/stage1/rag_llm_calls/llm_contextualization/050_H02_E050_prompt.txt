@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H02
+CANDIDATE HINT: H
+CHIRALITY HINT: 
+PMID: 24596253
+DOI: 10.1002/marc.201300892
+
+TITLE:
+Lipo-poly(L-histidine) hybrid materials with pH-sensitivity, intracellular delivery efficiency, and intrinsic targetability to cancer cells.
+
+ABSTRACT:
+Biocompatible lipo-histidine hybrid materials conjugated with IR820 dye show pH-sensitivity, efficient intracellular delivery of doxorubicin (Dox), and intrinsic targetability to cancer cells. These new materials form highly uniform Dox-loaded nanosized vesicles via a self-assembly process showing good stability under physiological conditions. The Dox-loaded micelles are effective for suppressing MCF-7 tumors, as demonstrated in vitro and in vivo. The combined mechanisms of the EPR effect, active internalization, endosomal-triggered release, and drug escape from endosomes, and a long blood circulation time, clearly prove that the IR820 lipopeptide DDS is a safe theranostic agent for imaging-guided cancer therapy.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

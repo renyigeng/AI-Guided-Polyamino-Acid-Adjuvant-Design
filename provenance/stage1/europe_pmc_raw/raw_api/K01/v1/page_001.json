@@ -1,0 +1,796 @@
+{
+  "version": "6.9",
+  "hitCount": 2,
+  "request": {
+    "queryString": "TITLE_ABS:(polylysine OR poly-L-lysine OR \"lysine-based polypeptide\" OR \"lysine polypeptide\") AND TITLE_ABS:(\"vaccine delivery\" OR \"antigen delivery\") AND TITLE_ABS:(\"cellular uptake\" OR \"antigen presentation\")",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "30071482",
+        "source": "MED",
+        "pmid": "30071482",
+        "doi": "10.1016/j.colsurfb.2018.07.058",
+        "title": "Preparation of self-assembled nanoparticles of ε-polylysine-sodium alginate: A sustained-release carrier for antigen delivery.",
+        "authorString": "Yuan J, Guo L, Wang S, Liu D, Qin X, Zheng L, Tian C, Han X, Chen R, Yin R.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Yuan J",
+              "lastName": "Yuan",
+              "firstName": "Jing",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Guo L",
+              "lastName": "Guo",
+              "firstName": "Lu",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang S",
+              "lastName": "Wang",
+              "firstName": "Sijia",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liu D",
+              "lastName": "Liu",
+              "firstName": "Dan",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmacy, The Fourth Affiliated Hospital of China Medical University, Shenyang, 110032, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Qin X",
+              "lastName": "Qin",
+              "firstName": "Xia",
+              "initials": "X",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zheng L",
+              "lastName": "Zheng",
+              "firstName": "Lili",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tian C",
+              "lastName": "Tian",
+              "firstName": "Chunlian",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Han X",
+              "lastName": "Han",
+              "firstName": "Xiaohu",
+              "initials": "X",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chen R",
+              "lastName": "Chen",
+              "firstName": "Ran",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yin R",
+              "lastName": "Yin",
+              "firstName": "Ronghuan",
+              "initials": "R",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "volume": "171",
+          "journalIssueId": 2736166,
+          "dateOfPublication": "2018 Nov",
+          "monthOfPublication": 11,
+          "yearOfPublication": 2018,
+          "journal": {
+            "medlineAbbreviation": "Colloids Surf B Biointerfaces",
+            "title": "Colloids and surfaces. B, Biointerfaces",
+            "essn": "1873-4367",
+            "issn": "0927-7765",
+            "nlmid": "9315133",
+            "isoabbreviation": "Colloids Surf B Biointerfaces"
+          },
+          "printPublicationDate": "2018-11-01"
+        },
+        "pubYear": "2018",
+        "pageInfo": "406-412",
+        "abstractText": "Low immunogenicity prohibits the widespread use of subunit vaccine against infectious diseases and cancers. Hence, a new generation of adjuvants and delivery systems is indispensable for more potent antigen-specific immune responses. Predominantly, nanoparticles formulated from biodegradable polymers are being widely explored as carriers of novel vaccines owing to their outstanding natural properties. We fabricated a model antigen - bovine serum albumin (BSA) encapsulated ε-polylysine (ε-PL) - sodium alginate (SA) nanoparticles (PSNPs), which were self-assembled by ionotropic complexation method, a very simple and mild process, as a result of the electrostatic interaction between oppositely charged polyelectrolyte complexes (PEC). After the preparation, various in vitro parameters were characterized. Scanning electron microscope and dynamic light scattering were employed to study the morphology, size, zeta potential and optimize formulation. Forming mechanism of PSNPS was analyzed and verified by infrared absorption spectra and thermal analysis. Delivery behavior of PSNPs was assessed via release study, cytotoxicity measurement and cellular uptake. BSA-PSNPs with a mean particle diameter 133.2 ± 0.5 nm, narrow size distribution and negatively charged surface had been synthesized successfully by this method. The results of in vitro studies demonstrated that the nanosuspension was able to prevent burst release of loaded BSA and presented sustained-release behavior. It was no cytotoxicity by the bio-assessment using macrophage cells, and was observed significantly higher uptake compared with BSA free solution. Herein, ε-polylysine - sodium alginate nanoparticles had been found to be a potential candidate for vaccine delivery.",
+        "affiliation": "Key Laboratory of Zoonosis of Liaoning Province, College of Animal Science & Veterinary Medicine, Shenyang Agricultural University, Shenyang, 110866, PR China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Doctoral Scientific Research Foundation of Liaoning Province",
+              "grantId": "201501064",
+              "orderIn": 0
+            },
+            {
+              "agency": "Talent Scientific Research Foundation of Shenyang Agricultural University",
+              "grantId": "880415024",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "31602104",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cells, Cultured"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Macrophages"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cattle"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Alginates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polylysine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Serum Albumin, Bovine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antigens",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Carriers",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Drug Delivery Systems"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Particle Size"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Surface Properties"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nanoparticles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "RAW 264.7 Cells"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Nanoparticles",
+            "Electrostatic self-assembly",
+            "Sodium alginate",
+            "ε-polylysine",
+            "Raw 264.7",
+            "Formulation Optimization",
+            "Vaccine Delivery System"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Antigens",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Alginates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Polylysine",
+              "registryNumber": "25104-18-1"
+            },
+            {
+              "name": "Drug Carriers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Serum Albumin, Bovine",
+              "registryNumber": "27432CM55Q"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.colsurfb.2018.07.058"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 40,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2018-12-21",
+        "dateOfCreation": "2018-08-03",
+        "dateOfRevision": "2018-12-21",
+        "electronicPublicationDate": "2018-07-25",
+        "firstPublicationDate": "2018-07-25",
+        "firstIndexDate": "2018-08-03",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "12480323",
+        "source": "MED",
+        "pmid": "12480323",
+        "doi": "10.1016/s0168-3659(02)00281-x",
+        "title": "Effects of cellulose derivatives and poly(ethylene oxide)-poly(propylene oxide) tri-block copolymers (Pluronic)surfactants) on the properties of alginate based microspheres and their interactions with phagocytic cells.",
+        "authorString": "Kidane A, Guimond P, Rob Ju TC, Sanchez M, Gibson J, North A, HogenEsch H, Bowersock TL.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Kidane A",
+              "lastName": "Kidane",
+              "firstName": "Argaw",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pharmacia Corporation, Animal Health, 7923-190-353, 7000 Portage Road, Kalamazoo, MI 49001-0199, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Guimond P",
+              "lastName": "Guimond",
+              "firstName": "Paul",
+              "initials": "P"
+            },
+            {
+              "fullName": "Rob Ju TC",
+              "lastName": "Rob Ju",
+              "firstName": "Tzu-chi",
+              "initials": "TC"
+            },
+            {
+              "fullName": "Sanchez M",
+              "lastName": "Sanchez",
+              "firstName": "Margaret",
+              "initials": "M"
+            },
+            {
+              "fullName": "Gibson J",
+              "lastName": "Gibson",
+              "firstName": "Janet",
+              "initials": "J"
+            },
+            {
+              "fullName": "North A",
+              "lastName": "North",
+              "firstName": "Adam",
+              "initials": "A"
+            },
+            {
+              "fullName": "HogenEsch H",
+              "lastName": "HogenEsch",
+              "firstName": "Harm",
+              "initials": "H",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2738-9189"
+              }
+            },
+            {
+              "fullName": "Bowersock TL",
+              "lastName": "Bowersock",
+              "firstName": "Terry L",
+              "initials": "TL"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2738-9189"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1-3",
+          "volume": "85",
+          "journalIssueId": 1142761,
+          "dateOfPublication": "2002 Dec",
+          "monthOfPublication": 12,
+          "yearOfPublication": 2002,
+          "journal": {
+            "medlineAbbreviation": "J Control Release",
+            "title": "Journal of controlled release : official journal of the Controlled Release Society",
+            "essn": "1873-4995",
+            "issn": "0168-3659",
+            "nlmid": "8607908",
+            "isoabbreviation": "J Control Release"
+          },
+          "printPublicationDate": "2002-12-01"
+        },
+        "pubYear": "2002",
+        "pageInfo": "181-189",
+        "abstractText": "The goal of this study was to examine the phagocytosis of alginate based microspheres with different surface properties. Favorable interaction with macrophages is critical for uptake subsequent processing of the microspheres used for oral vaccine delivery. We examined the effects of size of alginate microspheres and hydrophobicity on cellular uptake. We also examined the toxicity of formulation components to phagocytic cells. Alginate microspheres were made by the emulsion-cross-linking technique. Five different formulations of microspheres were evaluated for size, hydrophobicity, cellular uptake and toxicity to macrophages. The formulations examined were: alginate alone (A), alginate with methylcellulose (AA) AA with Pluronic L61 (AA61), alginate with hydroxypropyl methylcellulose (AK3), and AK3 with Pluronic (L61 (AK3 61). Microspheres with without poly-L-lysine (PLL) coating were tested. The mean volume sizes of A, AA, AA61, AK3, AK3 61 microspheres (MS) were 11, 10.5, 3.8, 8.7 and 3.9 mocrom, respectively. After coating them with PLL the mean volume sizes were 10.4, 10, 3.7, 8.8 and 3.5 microm, respectively. Hydrophobicity of the microspheres was evaluated by measuring contact angle on a glass slide coated with the microspheres. The contact angles measured using a goniometer on A, AA, AA61, AK3, AK3 61 MS were 20, 34.8, 71, 29 and 80 degrees, respectively whereas those MS coated with PLL were 49.7, 55.8, 91, 48.25 and 84.4 degrees, respectively. Cellular uptake studies using flow cytometery revealed that AA61 MS coated with PLL were phagocytosed most often by mouse macrophages. There was no statistically significant difference in cellular uptake among those MS without PLL coating. Toxicity to macrophages was shown to depend on the ratio of microspheres to cells. These studies suggest that formulation can dramatically affect the physical characteristics of alginate MS in ways that can affect how they will interact with cells in the body when administered as a vaccine delivery system.",
+        "affiliation": "Pharmacia Corporation, Animal Health, 7923-190-353, 7000 Portage Road, Kalamazoo, MI 49001-0199, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cells, Cultured"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "U937 Cells"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phagocytes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cattle"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polyethylene Glycols",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Poloxamer",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Propylene Glycols",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cellulose",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AA",
+                    "qualifierName": "analogs & derivatives"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Alginates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Surface-Active Agents",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PK",
+                    "qualifierName": "pharmacokinetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Microspheres"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phagocytosis",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "PEO-PPO-PEO",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Alginates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Cellulose",
+              "registryNumber": "9004-34-6"
+            },
+            {
+              "name": "Propylene Glycols",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Surface-Active Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Poloxamer",
+              "registryNumber": "106392-12-5"
+            },
+            {
+              "name": "Polyethylene Glycols",
+              "registryNumber": "3WJQ0SDW1A"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/s0168-3659(02)00281-x"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 14,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2003-06-10",
+        "dateOfCreation": "2002-12-14",
+        "dateOfRevision": "2019-09-16",
+        "firstPublicationDate": "2002-12-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

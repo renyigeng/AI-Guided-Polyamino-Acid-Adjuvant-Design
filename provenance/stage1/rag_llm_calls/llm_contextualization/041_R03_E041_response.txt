@@ -1,0 +1,30 @@
+{
+  "summary": "The mPEG-PLA-b-polyarginine(R15) nanomicelles showed low cytotoxicity and good hemocompatibility in vitro, exceeded PEI and R15 peptide, and no innate immune activation or body weight loss in vivo, indicating safety for siRNA delivery.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "In vitro cytotoxicity",
+    "In vitro hemolysis",
+    "In vivo immune response",
+    "In vivo body weight change"
+  ],
+  "reported_numeric_results": [
+    "average diameter 54.30 ± 3.48 nm",
+    "zeta potential approximately 34.8 ± 1.77 mV",
+    "approximately 65% inhibition of EGFR expression"
+  ],
+  "reported_qualitative_findings": [
+    "Polymeric nanomicelles showed greater cell viability than PEI or R15 peptide",
+    "Polymeric nanomicelles showed better haemocompatibility than PEI or R15 peptide",
+    "No positive activation of innate immune responses during treatment",
+    "No significant body weight loss during treatment, suggesting non-toxicity"
+  ],
+  "material_or_molecular_context": "Cationic mPEG(2000)-PLA(3000)-b-polyarginine(R15) triblock copolymer self-assembled into nanomicelles",
+  "biological_context": "MCF-7 human breast cancer cells (in vitro); nude mice xenografted MCF-7 tumors (in vivo); innate immune response assessment",
+  "limitations_for_current_question": [
+    "The material is a block copolymer with PEG and PLA, not pure polyarginine",
+    "Only one polyarginine length (R15) tested",
+    "Only one in vitro cell line and one in vivo tumor model used",
+    "No direct comparison to other arginine-based polypeptides"
+  ],
+  "supporting_text": "In vitro cytotoxicity and hemolysis assays demonstrated greater cell viability and haemocompatibility"
+}

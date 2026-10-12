@@ -1,0 +1,25 @@
+{
+  "summary": "The patent describes biocompatible endosomolytic agents including polyhistidine but does not provide specific cytotoxicity, hemolysis, or safety data. It asserts biocompatibility and biodegradability without experimental evidence.",
+  "relevance_score": 3,
+  "reported_outcomes": [
+    "biocompatibility",
+    "endosomolytic activity",
+    "biodegradability"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "endosomolytic agents are biocompatible",
+    "endosomolytic agents are biodegradable",
+    "polyhistidine acts as a proton sponge"
+  ],
+  "material_or_molecular_context": "polyhistidine, histidine, polylysine, imidazole-containing compounds (e.g., vinylimidazole, histamine)",
+  "biological_context": "cells (endosome disruption for intracellular delivery)",
+  "limitations_for_current_question": [
+    "no cytotoxicity data provided",
+    "no hemolysis data provided",
+    "no safety assessment reported",
+    "biocompatibility is claimed but not substantiated with experimental results",
+    "abstract lacks quantitative or comparative evidence relevant to the question"
+  ],
+  "supporting_text": "biocompatible endosomolytic agents comprised of biomolecules such as histidine, polyhistidine"
+}

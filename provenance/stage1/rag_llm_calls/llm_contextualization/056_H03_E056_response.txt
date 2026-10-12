@@ -1,0 +1,20 @@
+{
+  "summary": "This review discusses polyhistidine-based micelles for drug delivery, noting inherent non-toxicity and biocompatibility of natural amino acids, but does not provide specific cytotoxicity, hemolysis, or safety data for histidine-based materials.",
+  "relevance_score": 3,
+  "reported_outcomes": [
+    "review of micelle design for drug delivery"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "natural amino acids are non-toxic and biocompatible",
+    "polyhistidine-based micelles enable pH-responsive drug release"
+  ],
+  "material_or_molecular_context": "polymeric micelles based on histidine (and lysine, arginine)",
+  "biological_context": "cancer therapy (drug carriers)",
+  "limitations_for_current_question": [
+    "no direct cytotoxicity or hemolysis assays reported",
+    "no safety or biocompatibility quantification",
+    "review focuses on drug delivery, not safety endpoints"
+  ],
+  "supporting_text": "natural amino acids ... non-toxicity, biocompatibility"
+}

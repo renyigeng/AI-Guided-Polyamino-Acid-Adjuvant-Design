@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K03
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 37950916
+DOI: 10.1002/mabi.202300388
+
+TITLE:
+Hyperbranched Poly-L-Lysine-Based Water-Insoluble Complexes as Antibacterial Agents with Efficient Antibacterial Activity And Cytocompatibility.
+
+ABSTRACT:
+Despite the advances in technology, bacterial infection associated with biomedical devices is still one of the most challenging issues in clinical practice. Incorporation of antimicrobial agents is regarded as an efficient way to combat medical device associated infectious. However, most of antimicrobial agents have high toxicity to host cells. Thus, fabrication of novel antimicrobial agents that simultaneously fulfill the requirements of antibacterial activity as well as biocompatibility is urgently needed. Herein, a series of water-insoluble antibacterial complexes based on hyperbranched poly-L-lysine (HBPL) and four different surfactants through non-covalent interactions are developed. Such kinds of surfactants have great effects on the antibacterial property of poly(ɛ-caprolactone) (PCL) films that incorporate with the HBPL-based complexes. The results reveal that the PCL films that doped with HBPL/phosphate ester surfactant complexes showed the highest bacterial killing efficiency. Moreover, the cytocompatibility of the composite films is also investigated. Hemolysis experiments indicate that all the films  had low hemolytic activities. Considering the excellent antimicrobial and cytocompatibility properties, this work believes that the optimized complexes have great potential to be used as antimicrobial agents in biomedical field.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

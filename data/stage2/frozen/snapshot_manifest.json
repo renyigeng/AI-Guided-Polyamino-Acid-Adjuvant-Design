@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "created_at_utc": "2026-09-24T12:25:25.240397+00:00",
+  "source_final_run": "20260924T122523Z__dlys-stage2-final-v3",
+  "source_discovery_run": "20260924T112825Z__dlys-domain-indicator-discovery-v2",
+  "source_ranking_run": "20260924T122523Z__dlys-multicriteria-ranking-v3",
+  "source_intrinsic_csv": "intrinsic_properties_candidate17.csv",
+  "contains_live_api_credentials": false,
+  "purpose": "frozen deterministic inputs/outputs for notebook and recording",
+  "copied": {
+    "discovery": [
+      "domain_taxonomy.json",
+      "discovered_indicators.csv",
+      "indicator_evidence.csv",
+      "indicator_validation_warnings.csv",
+      "summary.md",
+      "manifest.json"
+    ],
+    "ranking": [
+      "criteria_used.csv",
+      "criteria_unresolved.csv",
+      "decision_matrix_long.csv",
+      "decision_matrix_wide.csv",
+      "topsis_rankings.csv",
+      "single_criterion_rankings.csv",
+      "borda_rankings.csv",
+      "criterion_individual_ranks.csv",
+      "ranking_agreement.csv",
+      "leave_one_criterion_out.csv",
+      "weight_perturbation_sensitivity.csv",
+      "pareto_dominance.csv",
+      "decision_diagnostics.csv",
+      "selected_representatives.csv",
+      "summary.md",
+      "manifest.json"
+    ],
+    "final": [
+      "final_candidates.csv",
+      "final_diagnostics.csv",
+      "criteria_used.csv",
+      "criteria_unresolved.csv",
+      "criterion_individual_ranks.csv",
+      "leave_one_criterion_out.csv",
+      "weight_perturbation_sensitivity.csv",
+      "pareto_dominance.csv",
+      "ranking_agreement.csv",
+      "final_report.md",
+      "pipeline_manifest.json"
+    ],
+    "d1_hydropathy_audit": [
+      "hydropathy_scale_results.csv",
+      "hydropathy_scale_summary.csv",
+      "summary.md",
+      "manifest.json"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: LK01
+CANDIDATE HINT: K
+CHIRALITY HINT: L
+PMID: 34996259
+DOI: 10.1021/acsabm.8b00496
+
+TITLE:
+Conjugated Polymer Brush Based on Poly(l-lysine) with Efficient Ovalbumin Delivery for Dendritic Cell Vaccine.
+
+ABSTRACT:
+Dendritic cell (DC)-based vaccines consist of antigens and antigen-presenting cells, such as DCs, that can induce antitumor immune response and extend the lives of patients. In this research, a water-soluble conjugated polymer brush (WSCPB) made of poly(l-lysine) (PLL) and poly(p-phenyleneethynylene) (PPE) was applied to an antigen delivery system for the development of a DC vaccine. We synthesized the WSCPB with a lower proportion of the rigid PPE polymer backbone and a large amount of PLL side chains. The rigid backbone retained a stable optical performance within the experimental range, which enabled the visualization of the payload and cellular imaging as a reporter. Because of the unique brushlike structure, PPE-PLL exhibited not only excellent water solubility but also outstanding antigen-loading capacity. Ovalbumin (OVA), a model antigen in different research, could be adsorbed onto PPE-PLL and then taken up by DCs. Subsequently, DC maturation and cytokine release would be induced by the antigen. In vivo, strong immune responses were induced after the injection of antigen-pulsed DCs, and the level of cytokines in the serum was significantly increased. In addition, the study of the in vivo tumor-suppressor activity of these antigen-pulsed DCs revealed that the DC vaccine induced strong immune responses and thereby effectively inhibited tumor development.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?
+
+QUERY ID: K02
+CANDIDATE HINT: K
+CHIRALITY HINT: 
+PMID: 28276242
+DOI: 10.1021/acscombsci.6b00133
+
+TITLE:
+Cellular Uptake Mechanism of Cationic Branched Polypeptides with Poly[l-Lys] Backbone.
+
+ABSTRACT:
+Cationic macromolecular carriers can be effective carriers for small molecular compounds, drugs, epitopes, or nucleic acids. Polylysine-based polymeric branched polypeptides have been systematically studied on the level of cells and organisms as well. In the present study, we report our findings on the cellular uptake characteristics of nine structurally related polylysine-based polypeptides with cationic side chains composed of (i) single amino acid (poly[Lys(X<sub>i</sub>)], X<sub>i</sub>K) or (ii) oligo[dl-alanine] (poly[Lys(dl-Ala<sub>m</sub>)], AK) or (iii) oligo[dl-alanine] with an additional amino acid (X) at the terminal position (poly[Lys(X<sub>i</sub>-dl-Ala<sub>m</sub>)] (XAK)) or (iv) at the position next to the polylysine backbone (poly[Lys(dl-Ala<sub>m</sub>-X<sub>i</sub>)] (AXK)). In vitro cytotoxicity and cellular uptake were characterized on HT-29 human colon carcinoma and HepG2 human hepatocarcinoma cell lines. Data indicate that the polycationic polypeptides studied are essentially nontoxic in the concentration range studied, and their uptake is very much dependent on the side chain structure (length, identity of amino acid X, and distance between the terminal positive charges) and also on the cell lines. Our findings in uptake inhibition studies suggest that predominantly macropinocytosis and caveole/lipid raft mediated endocytosis are involved. The efficacy of their internalization is markedly influenced by the hydrophobicity and charge properties of the amino acid X. Interestingly, the uptake properties of the these polypeptides show certain similarities to the entry pathways of several cell penetrating peptides.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

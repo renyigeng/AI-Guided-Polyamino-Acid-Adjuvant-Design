@@ -1,0 +1,24 @@
+{
+  "summary": "This study uses polyarginine/cysteine-tagged antigens linked to papillomavirus VLPs to induce CD8+ T cell responses via cross-priming, which involves dendritic cell cross-presentation. The polyarginine tag enables reversible disulfide linkage, and the VLP provides self-adjuvant activity through TLR3/7-dependent mechanisms. Results show robust T cell responses and efficacy in a prostate cancer model, but the polyarginine's role is as a tag, not a standalone immunomodulator.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "Induction of CD8+ T cell responses in peripheral blood and tumor tissues",
+    "Treatment efficacy in a murine prostate cancer model",
+    "Dependence on particle size, reversible antigen linkage, and TLR3/7 signaling"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "Polyionic VLP vaccines induce robust CD8+ T cell responses in peripheral blood and tumor tissues",
+    "A prostate cancer polyionic VLP vaccine was more efficacious than other vaccines and immunotherapies",
+    "Immunogenicity of polyionic VLP vaccines is dependent on particle size, reversible linkage of the antigen to the VLP, and an interferon type 1 and TLR3/7-dependent mechanism"
+  ],
+  "material_or_molecular_context": "Bovine papillomavirus L1 protein VLP engineered with a polyglutamic acid/cysteine motif in the HI loop, linked to polyarginine/cysteine-tagged antigens",
+  "biological_context": "In vivo murine prostate cancer model; dendritic cell cross-priming for CD8+ T cell and tissue-resident memory T cell induction",
+  "limitations_for_current_question": [
+    "Polyarginine is used as a tag on antigens, not as the primary material; its effects are context-dependent on the VLP scaffold",
+    "The VLP itself provides intrinsic immunostimulatory activity, so the polyarginine contribution cannot be isolated",
+    "No direct comparison of polyarginine alone or as a soluble polypeptide",
+    "Study focuses on papillomavirus VLPs, so generalizability to other arginine-based polypeptide materials is unknown"
+  ],
+  "supporting_text": "Polyarginine/cysteine-tagged antigens are linked to the VLP by a reversible disulfide bond."
+}

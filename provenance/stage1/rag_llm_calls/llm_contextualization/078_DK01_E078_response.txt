@@ -1,0 +1,25 @@
+{
+  "summary": "The D-lysine-containing tetrapeptide D-LysAsnProTyr (I) robustly stimulates B-cell proliferation in vitro and expands B-cells in vivo, modestly stimulates CTLs, and shows enhanced stability as a bursin mimetic, suggesting potential as a vaccine adjuvant.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "in vitro stimulation of mitogen-activated B-cell proliferation",
+    "in vitro stimulation of cytotoxic T lymphocytes (CTLs)",
+    "in vivo expansion of B-cells in C57BL/6 mice"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "robust stimulation of mitogen activated B-cell proliferation",
+    "modest to significant stimulation of CTLs",
+    "enhanced physiological stability compared to bursin",
+    "potential as a vaccine adjuvant"
+  ],
+  "material_or_molecular_context": "D-LysAsnProTyr tetrapeptide (D-lysine-L-asparaginyl-L-prolyl-L-tyrosine)",
+  "biological_context": "in vitro mitogen-activated B-cells and CTLs; in vivo C57BL/6 mouse model",
+  "limitations_for_current_question": [
+    "Does not address dendritic cells or antigen-presentation pathways",
+    "Single tetrapeptide, not a polymer or nanoparticle system",
+    "No direct vaccine efficacy or adjuvant testing data provided",
+    "Relevance to D-lysine-containing systems beyond this specific sequence is unclear"
+  ],
+  "supporting_text": "robust stimulation of mitogen activated B-cell proliferation"
+}

@@ -1,0 +1,3203 @@
+{
+  "version": "6.9",
+  "hitCount": 9,
+  "request": {
+    "queryString": "TITLE_ABS:(polyarginine OR poly-L-arginine OR \"arginine-based polypeptide\" OR \"arginine polypeptide\") AND TITLE_ABS:(\"adjuvant activity\" OR \"vaccine adjuvant\" OR \"immune activation\" OR immunostimulation OR \"vaccine response\" OR \"vaccine-induced immunity\")",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "42108938",
+        "source": "MED",
+        "pmid": "42108938",
+        "doi": "10.1039/d5tb02800k",
+        "title": "Natural antimicrobial polymeric coatings for contamination resistant wound dressings: biocompatibility and &lt;i&gt;in vivo&lt;/i&gt; efficacy against MRSA.",
+        "authorString": "Diarrassouba A, Magne L, Calligaro C, Rekiki A, Mercer D, Gaudin A, Canourgues N, Welsch J, Vigué A, Kettel MJ, Karl M, Lavalle P, Vrana NE, Hathroubi S.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Diarrassouba A",
+              "lastName": "Diarrassouba",
+              "firstName": "Adjara",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "SPARTHA Medical SAS Microbiology R&D laboratory, CRBS 1 rue Eugène Boeckel, 67000, Strasbourg, France. [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Magne L",
+              "lastName": "Magne",
+              "firstName": "Lea",
+              "initials": "L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "SPARTHA Medical SAS Microbiology R&D laboratory, CRBS 1 rue Eugène Boeckel, 67000, Strasbourg, France. [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Calligaro C",
+              "lastName": "Calligaro",
+              "firstName": "Cynthia",
+              "initials": "C",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1730-3695"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "SPARTHA Medical SAS Microbiology R&D laboratory, CRBS 1 rue Eugène Boeckel, 67000, Strasbourg, France. [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Rekiki A",
+              "lastName": "Rekiki",
+              "firstName": "Abdessalem",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-0415-2691"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bioaster, Building F. Jacob, 28 rue du Docteur Roux, 75015 Paris, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mercer D",
+              "lastName": "Mercer",
+              "firstName": "Derry",
+              "initials": "D",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bioaster, 40 avenue Tony Garnier, 69007 Lyon, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gaudin A",
+              "lastName": "Gaudin",
+              "firstName": "Aurore",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5672-433X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bioaster, Building F. Jacob, 28 rue du Docteur Roux, 75015 Paris, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Canourgues N",
+              "lastName": "Canourgues",
+              "firstName": "Naomi",
+              "initials": "N",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bioaster, Building F. Jacob, 28 rue du Docteur Roux, 75015 Paris, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Welsch J",
+              "lastName": "Welsch",
+              "firstName": "Jeremy",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bioaster, 40 avenue Tony Garnier, 69007 Lyon, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Vigué A",
+              "lastName": "Vigué",
+              "firstName": "Annabelle",
+              "initials": "A",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Paul Hartmann SAS, Lièpvre, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Kettel MJ",
+              "lastName": "Kettel",
+              "firstName": "Markus J",
+              "initials": "MJ",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-1842-8821"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Paul Hartmann AG, Heidenheim, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Karl M",
+              "lastName": "Karl",
+              "firstName": "Michael",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Paul Hartmann AG, Heidenheim, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lavalle P",
+              "lastName": "Lavalle",
+              "firstName": "Philippe",
+              "initials": "P",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8798-912X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "INSERM/Université de Strasbourg, UMR_S 1121 CRBS, 1 rue Eugène Boeckel, 67000 Strasbourg, France."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Vrana NE",
+              "lastName": "Vrana",
+              "firstName": "Nihal Engin",
+              "initials": "NE",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5398-6710"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "SPARTHA Medical SAS Microbiology R&D laboratory, CRBS 1 rue Eugène Boeckel, 67000, Strasbourg, France. [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hathroubi S",
+              "lastName": "Hathroubi",
+              "firstName": "Skander",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5917-2785"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "SPARTHA Medical SAS Microbiology R&D laboratory, CRBS 1 rue Eugène Boeckel, 67000, Strasbourg, France. [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5672-433X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8798-912X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1730-3695"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5398-6710"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5917-2785"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-0415-2691"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-1842-8821"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "19",
+          "volume": "14",
+          "journalIssueId": 4200466,
+          "dateOfPublication": "2026 May",
+          "monthOfPublication": 5,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "J Mater Chem B",
+            "title": "Journal of materials chemistry. B",
+            "essn": "2050-7518",
+            "issn": "2050-750X",
+            "nlmid": "101598493",
+            "isoabbreviation": "J Mater Chem B"
+          },
+          "printPublicationDate": "2026-05-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "5890-5901",
+        "abstractText": "The growing threat of antimicrobial resistance and complications from chronic wound infections have amplified the demand for natural, bioactive wound care solutions that can both prevent infection and modulate inflammation. Although there are different antimicrobial coating solutions, their incorporation into complex medical devices is challenging. Here, we demonstrate the successful translation of poly-L-arginine (PAR) and hyaluronic acid (HA) antimicrobial coatings into fully assembled multilayer wound dressing prototypes, enabling evaluation under clinically relevant conditions that closely mimic commercial superabsorbent dressings. To demonstrate its efficacy, in this study, we evaluated and compared three wound dressing prototypes: (i) the unmodified multilayer absorbent dressing, (ii) a prototype featuring a bioactive coating composed of alternating layers of PAR and HA applied to the wound contact layer, and (iii) the same coated version covered with a perforated silicone barrier layer. Antibacterial assays on the coated wound contact layers confirmed potent <i>in vitro</i> activity, achieving complete eradication of bacterial colonies compared to uncoated controls. To assess the safety, we first conducted <i>in vitro</i> cytotoxicity tests using Balb 3T3 mouse fibroblast cells, demonstrating that the PAR/HA coating was non-cytotoxic and well tolerated by mammalian cells. We then evaluated the <i>in vivo</i> antimicrobial efficacy and employed a murine wound model infected with methicillin-resistant <i>Staphylococcus aureus</i> (MRSA). The coated wound dressing significantly reduced bacterial burden in the wound bed, achieving a 5.39-log reduction compared to the un-coated control. The silicone-covered prototype also showed a moderate but significant antimicrobial effect (1.69-log reduction). Bioluminescence imaging and CFU analysis confirmed the efficacy of both dressings, with minimal bacterial attachment to the wound contact layer (WCL). The coatings did not interfere with the exudate extraction, wound contact control and wound protection functions of the full prototypes. These findings demonstrate that the bioactive coating effectively limits bacterial proliferation and dampens biofilm formation, with the coated dressing showing the most potent effects. This work supports the therapeutic potential of antimicrobial, self-assembling biopolymer coated dressings as a prophylactic strategy to prevent biofilm-associated infections and excessive immune activation in acute wound settings.",
+        "affiliation": "SPARTHA Medical SAS Microbiology R&D laboratory, CRBS 1 rue Eugène Boeckel, 67000, Strasbourg, France. [email removed for public release].",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "HORIZON EUROPE European Innovation Council",
+              "grantId": "190184905",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "BALB 3T3 Cells"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Polymers",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hyaluronic Acid",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Coated Materials, Biocompatible",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Anti-Bacterial Agents",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Microbial Sensitivity Tests"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Bandages"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Wound Healing",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Surface Properties"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Methicillin-Resistant Staphylococcus aureus",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Polymers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Anti-Bacterial Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Hyaluronic Acid",
+              "registryNumber": "9004-61-9"
+            },
+            {
+              "name": "Coated Materials, Biocompatible",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1039/d5tb02800k"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 1,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2026-07-16",
+        "dateOfCreation": "2026-05-11",
+        "dateOfRevision": "2026-07-16",
+        "electronicPublicationDate": "2026-05-20",
+        "firstPublicationDate": "2026-05-20",
+        "firstIndexDate": "2026-05-13",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "40480413",
+        "source": "MED",
+        "pmid": "40480413",
+        "doi": "10.1016/j.actbio.2025.05.063",
+        "title": "Self-propelled smart nanomotors for enhanced mild photothermal therapy of tumors through autophagy modulation.",
+        "authorString": "Mei L, Liu H, Ding Q, Xie Y, Shen X, Chen H, Wang K, Li M, He Q.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Mei L",
+              "lastName": "Mei",
+              "firstName": "Ling",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2762-2235"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liu H",
+              "lastName": "Liu",
+              "firstName": "Haowei",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ding Q",
+              "lastName": "Ding",
+              "firstName": "Qihang",
+              "initials": "Q",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2665-9036"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry, Korea University, Seoul, 02841, South Korea. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Xie Y",
+              "lastName": "Xie",
+              "firstName": "Yuxin",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Shen X",
+              "lastName": "Shen",
+              "firstName": "Xue",
+              "initials": "X",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chen H",
+              "lastName": "Chen",
+              "firstName": "Haiyan",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang K",
+              "lastName": "Wang",
+              "firstName": "Kaixi",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li M",
+              "lastName": "Li",
+              "firstName": "Man",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Drug-Targeting and Drug Delivery System of the Education Ministry and Sichuan Province, Sichuan Engineering Laboratory for Plant-Sourced Drug and Sichuan Research Centre for Drug Precision Industrial Technology, West China School of Pharmacy, Sichuan University, Chengdu 610041, China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "He Q",
+              "lastName": "He",
+              "firstName": "Qin",
+              "initials": "Q",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1741-9900"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Key Laboratory of Drug-Targeting and Drug Delivery System of the Education Ministry and Sichuan Province, Sichuan Engineering Laboratory for Plant-Sourced Drug and Sichuan Research Centre for Drug Precision Industrial Technology, West China School of Pharmacy, Sichuan University, Chengdu 610041, China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2665-9036"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2762-2235"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1741-9900"
+            }
+          ]
+        },
+        "journalInfo": {
+          "volume": "201",
+          "journalIssueId": 3976183,
+          "dateOfPublication": "2025 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2025,
+          "journal": {
+            "medlineAbbreviation": "Acta Biomater",
+            "title": "Acta biomaterialia",
+            "essn": "1878-7568",
+            "issn": "1742-7061",
+            "nlmid": "101233144",
+            "isoabbreviation": "Acta Biomater"
+          },
+          "printPublicationDate": "2025-07-01"
+        },
+        "pubYear": "2025",
+        "pageInfo": "574-590",
+        "abstractText": "Mild photothermal therapy (mPTT) holds significant potential as a minimally invasive strategy for tumor ablation. However, its clinical translation remains constrained by the uneven intratumoral distribution of photothermal agents and the induction of autophagy pathways. These limitations frequently culminate in suboptimal therapeutic efficacy, facilitating immune evasion by residual tumor cells and thereby elevating the risk of recurrence and metastasis. Here, we report the development of nitric oxide-driven nanomotors (L-Arg-CaP@PDA-CQ) constructed by encapsulating L-arginine within calcium phosphate nanoparticles, functionalized with poly-dopamine shells and loaded with chloroquine, an autophagy inhibitor. These self-propelled nanomotors demonstrated the ability to evade lysosomal phagocytosis, penetrate vascular barriers, and enhance intratumoral accumulation. Autophagy inhibition sensitized melanoma cells to mPTT, while the combination of chloroquine with mPTT induced reactive oxygen species generation and mitochondrial disruption. Furthermore, mPTT facilitated immunogenic cell death, and chloroquine-mediated inhibition of autophagosome degradation enhanced tumor antigen presentation, stimulating robust T-cell infiltration and immune activation. This dual mechanism significantly suppressed tumor recurrence and metastasis. The proposed nanomotors provide a synergistic paradigm for augmenting mPTT and activating antitumor immunity, highlighting their translational potential in clinical oncology. STATEMENT OF SIGNIFICANCE: Mild photothermal therapy (mPTT) is a promising cancer treatment modality that operates at lower temperatures to minimize damage to healthy tissues while promoting antitumor immune responses. However, its efficacy can be limited by the activation of autophagy in tumor cells, which supports tumor survival. In addition, the hypoxic microenvironment of melanoma tumors often restricts drug penetration, further complicating treatment. To address these challenges, we have designed self-propelled smart nanomotors that can actively penetrate acidic tumor tissues and deliver drugs to the tumor site.These nanomotors modulate autophagy to enhance the sensitivity of melanoma cells to mPTT, leading to efficient tumor cell ablation. When combined with chloroquine, this approach generates large amounts of reactive oxygen species and causes mitochondrial damage, while promoting T-cell infiltration through the release of damage-associated molecular patterns (DAMPs). This strategy not only enhances the therapeutic efficacy of mPTT but also holds significant potential for clinical translation in the treatment of melanoma.",
+        "affiliation": "Engineering Research Center for Pharmaceuticals and Equipments of Sichuan Province, Sichuan Industrial Institute of Antibiotics, School of Pharmacy, Chengdu University, Chengdu 610106, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Chengdu University",
+              "grantId": "2081922007",
+              "orderIn": 0
+            },
+            {
+              "agency": "China Scholarship Council",
+              "grantId": "202106270027",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Reactive Oxygen Species",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Indoles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Chloroquine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polymers",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Autophagy",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nanoparticles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TU",
+                    "qualifierName": "therapeutic use"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Photothermal Therapy"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Near infrared",
+            "Autophagy",
+            "Immunogenic Cell Death",
+            "Nanomotor",
+            "Mild Photothermal Therapy"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Polymers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Indoles",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Reactive Oxygen Species",
+              "registryNumber": "0"
+            },
+            {
+              "name": "polydopamine",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Chloroquine",
+              "registryNumber": "886U3H6UFF"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.actbio.2025.05.063"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 8,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2025-07-10",
+        "dateOfCreation": "2025-06-06",
+        "dateOfRevision": "2026-05-17",
+        "electronicPublicationDate": "2025-06-04",
+        "firstPublicationDate": "2025-06-04",
+        "firstIndexDate": "2025-06-11",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "37207796",
+        "source": "MED",
+        "pmid": "37207796",
+        "doi": "10.1016/j.jconrel.2023.05.024",
+        "title": "Targeting lactate metabolism and immune interaction in breast tumor via protease-triggered delivery.",
+        "authorString": "Zhao P, Wang S, Jiang J, Gao Y, Wang Y, Zhao Y, Zhang J, Zhang M, Huang Y.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Zhao P",
+              "lastName": "Zhao",
+              "firstName": "Pengfei",
+              "initials": "P",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center of Clinical Pharmacology, The Second Affiliated Hospital Zhejiang University School of Medicine, 88 Jiefang Rd, Hangzhou 310009, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang S",
+              "lastName": "Wang",
+              "firstName": "Shuang",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, 501 Haike Rd, Shanghai 201203, China; University of Chinese Academy of Sciences, Beijing 100049, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Jiang J",
+              "lastName": "Jiang",
+              "firstName": "Jizong",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Shanghai Engineering Research Center of Organ Repair, School of Medicine, Shanghai University, 99 Shangda Rd, Shanghai 200444, China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gao Y",
+              "lastName": "Gao",
+              "firstName": "Yanrong",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, 501 Haike Rd, Shanghai 201203, China; University of Chinese Academy of Sciences, Beijing 100049, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang Y",
+              "lastName": "Wang",
+              "firstName": "Yuewei",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, 501 Haike Rd, Shanghai 201203, China; University of Chinese Academy of Sciences, Beijing 100049, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhao Y",
+              "lastName": "Zhao",
+              "firstName": "Yuge",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, 501 Haike Rd, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhang J",
+              "lastName": "Zhang",
+              "firstName": "Jiaxin",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, 501 Haike Rd, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhang M",
+              "lastName": "Zhang",
+              "firstName": "Meng",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmacy, Women's Hospital, Zhejiang University School of Medicine, 1 Xueshi Rd, Hangzhou 310006, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Huang Y",
+              "lastName": "Huang",
+              "firstName": "Yongzhuo",
+              "initials": "Y",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7067-8915"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, 501 Haike Rd, Shanghai 201203, China; University of Chinese Academy of Sciences, Beijing 100049, China; Zhongshan Institute for Drug Discovery, The Institutes of Drug Discovery and Development, Chinese Academy of Sciences, Zhongshan 528437, China; NMPA Key Laboratory for Quality Research and Evaluation of Pharmaceutical Excipients, Shanghai 201203, China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7067-8915"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0004-7686-2376"
+            }
+          ]
+        },
+        "journalInfo": {
+          "volume": "358",
+          "journalIssueId": 3588335,
+          "dateOfPublication": "2023 Jun",
+          "monthOfPublication": 6,
+          "yearOfPublication": 2023,
+          "journal": {
+            "medlineAbbreviation": "J Control Release",
+            "title": "Journal of controlled release : official journal of the Controlled Release Society",
+            "essn": "1873-4995",
+            "issn": "0168-3659",
+            "nlmid": "8607908",
+            "isoabbreviation": "J Control Release"
+          },
+          "printPublicationDate": "2023-06-01"
+        },
+        "pubYear": "2023",
+        "pageInfo": "706-717",
+        "abstractText": "Lactate is abundant in cancer tissues due to active glycolysis (aka Warburg effect) and mediates crosstalk between tumor cells and the immune microenvironment (TIME) to promote the progression of breast cancer. Quercetin (QU) is a potent monocarboxylate transporters (MCT) inhibitor, which can reduce lactate production and secretion of tumor cells. Doxorubicin (DOX) can induce immunogenic cell death (ICD), which promotes tumor-specific immune activation. Thus, we propose a combination therapy of QU&DOX to inhibit lactate metabolism and stimulate anti-tumor immunity. To enhance tumor-targeting efficiency, we developed a legumain-activatable liposome system (KC26-Lipo) with modification of KC26 peptide for co-delivery of QU&DOX for modulation of tumor metabolism and TIME in breast cancer. The KC26 peptide is a legumain-responsive, hairpin-structured cell-penetrating peptide (polyarginine) derivative. Legumain is a protease overexpressed in breast tumors, allowing selective activation of the KC26-Lipo to subsequently facilitate intra-tumoral and intracellular penetration. The KC26-Lipo effectively inhibited 4T1 breast cancer tumor growth through chemotherapy and anti-tumor immunity. Besides, inhibition of lactate metabolism suppressed the HIF-1α/VEGF pathway and angiogenesis and repolarized the tumor-associated macrophages (TAM). This work provides a promising breast cancer therapy strategy by regulating lactate metabolism and TIME.",
+        "affiliation": "Center of Clinical Pharmacology, The Second Affiliated Hospital Zhejiang University School of Medicine, 88 Jiefang Rd, Hangzhou 310009, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Guangdong Science and Technology Department",
+              "grantId": "2019B090904008",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Key Research and Development Program of China",
+              "grantId": "2021YFC2400600",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "81925035",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "82204282",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "81803736",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Key Research and Development Program of China",
+              "grantId": "2021YFE0103100",
+              "orderIn": 0
+            },
+            {
+              "agency": "Zhongshan Science and Technology Bureau",
+              "grantId": "LJ2021001",
+              "orderIn": 0
+            },
+            {
+              "agency": "Zhongshan Science and Technology Bureau",
+              "grantId": "CXTD2022011",
+              "orderIn": 0
+            },
+            {
+              "agency": "Chinese Academy of Sciences",
+              "orderIn": 0
+            },
+            {
+              "agency": "Chinese Pharmaceutical Association",
+              "grantId": "CPAYLJ201901",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Breast Neoplasms",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DT",
+                    "qualifierName": "drug therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Mammary Neoplasms, Animal"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Lactates"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Doxorubicin"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptide Hydrolases"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Liposomes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TU",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Tumor Microenvironment"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Quercetin",
+            "Lactate",
+            "Legumain",
+            "Immunometabolism",
+            "Tumor Immune Microenvironment (Time)"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Peptide Hydrolases",
+              "registryNumber": "EC 3.4.-"
+            },
+            {
+              "name": "Lactates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Liposomes",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Doxorubicin",
+              "registryNumber": "80168379AG"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.jconrel.2023.05.024"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 49,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2023-06-14",
+        "dateOfCreation": "2023-05-19",
+        "dateOfRevision": "2023-06-14",
+        "electronicPublicationDate": "2023-05-25",
+        "firstPublicationDate": "2023-05-25",
+        "firstIndexDate": "2023-05-21",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "24323884",
+        "source": "MED",
+        "pmid": "24323884",
+        "pmcid": "PMC4116740",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4116740"
+          ]
+        },
+        "doi": "10.1002/smll.201302887",
+        "title": "Polyarginine induces an antitumor immune response through binding to toll-like receptor 4.",
+        "authorString": "Yang Y, Wolfram J, Fang X, Shen H, Ferrari M.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Yang Y",
+              "lastName": "Yang",
+              "firstName": "Yong",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nanomedicine, The Methodist Hospital Research Institute, 6670 Bertner Ave, Houston, TX, 77030, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wolfram J",
+              "lastName": "Wolfram",
+              "firstName": "Joy",
+              "initials": "J",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0579-9897"
+              }
+            },
+            {
+              "fullName": "Fang X",
+              "lastName": "Fang",
+              "firstName": "Xiaohong",
+              "initials": "X"
+            },
+            {
+              "fullName": "Shen H",
+              "lastName": "Shen",
+              "firstName": "Haifa",
+              "initials": "H"
+            },
+            {
+              "fullName": "Ferrari M",
+              "lastName": "Ferrari",
+              "firstName": "Mauro",
+              "initials": "M"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0579-9897"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "7",
+          "volume": "10",
+          "journalIssueId": 2146672,
+          "dateOfPublication": "2014 Apr",
+          "monthOfPublication": 4,
+          "yearOfPublication": 2014,
+          "journal": {
+            "medlineAbbreviation": "Small",
+            "title": "Small (Weinheim an der Bergstrasse, Germany)",
+            "essn": "1613-6829",
+            "issn": "1613-6810",
+            "nlmid": "101235338",
+            "isoabbreviation": "Small"
+          },
+          "printPublicationDate": "2014-04-01"
+        },
+        "pubYear": "2014",
+        "pageInfo": "1250-1254",
+        "abstractText": "A novel function of polyarginine as an activator of the immune system is reported. Single-molecule fluorescence imaging and single-molecule force measurements demonstrate that polyarginine binds specifically to the toll-like receptor 4 (TLR4), inducing receptor dimerization and activation. Moreover, polyarginine induced immune activation inhibits tumor growth. These results suggest the potential use of polyarginine for cancer immunotherapy.",
+        "affiliation": "Department of Nanomedicine, The Methodist Hospital Research Institute, 6670 Bertner Ave, Houston, TX, 77030, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Research Support, U.S. Gov't, Non-P.H.S.",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "U54 CA143837",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "U54 CA151668",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "U54CA151668",
+              "orderIn": 0
+            },
+            {
+              "agency": "NCI NIH HHS",
+              "acronym": "CA",
+              "grantId": "U54CA143837",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred C57BL"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neoplasms",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PA",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Disease Models, Animal"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Interferons",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "RNA, Messenger",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antineoplastic Agents",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cytokines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunity",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Binding",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Fluorescence"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Thermodynamics"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Toll-Like Receptor 4",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DF",
+                    "qualifierName": "deficiency"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Cancer Immunotherapy",
+            "Single-molecule Fluorescence Imaging",
+            "Polyarginine",
+            "Single-molecule Force Measurement"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyarginine",
+              "registryNumber": "25212-18-4"
+            },
+            {
+              "name": "Antineoplastic Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "RNA, Messenger",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Interferons",
+              "registryNumber": "9008-11-1"
+            },
+            {
+              "name": "Cytokines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Toll-Like Receptor 4",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/smll.201302887"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4116740"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4116740?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/smll.201302887"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 16,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS607033",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2015-10-06",
+        "dateOfCreation": "2013-12-11",
+        "dateOfRevision": "2024-03-21",
+        "electronicPublicationDate": "2013-12-10",
+        "firstPublicationDate": "2013-12-10",
+        "firstIndexDate": "2013-12-11",
+        "fullTextReceivedDate": "2025-02-05",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "21817197",
+        "source": "MED",
+        "pmid": "21817197",
+        "doi": "10.3851/imp1822",
+        "title": "Delivery with polycations extends the immunostimulant Ribomunyl into a potent antiviral Toll-like receptor 7/8 agonist.",
+        "authorString": "Herberhold S, Coch C, Zillinger T, Hommertgen B, Busch N, Schuberth C, Hartmann E, Wimmenauer V, Hagmann CA, Lüdenbach B, Schlee M, Bootz F, Hartmann G, Barchet W.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Herberhold S",
+              "lastName": "Herberhold",
+              "firstName": "Stephan",
+              "initials": "S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Chemistry and Clinical Pharmacology, University Hospital of Bonn, Bonn, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Coch C",
+              "lastName": "Coch",
+              "firstName": "Christoph",
+              "initials": "C"
+            },
+            {
+              "fullName": "Zillinger T",
+              "lastName": "Zillinger",
+              "firstName": "Thomas",
+              "initials": "T",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0866-4835"
+              }
+            },
+            {
+              "fullName": "Hommertgen B",
+              "lastName": "Hommertgen",
+              "firstName": "Benjamin",
+              "initials": "B"
+            },
+            {
+              "fullName": "Busch N",
+              "lastName": "Busch",
+              "firstName": "Nicolas",
+              "initials": "N"
+            },
+            {
+              "fullName": "Schuberth C",
+              "lastName": "Schuberth",
+              "firstName": "Christine",
+              "initials": "C"
+            },
+            {
+              "fullName": "Hartmann E",
+              "lastName": "Hartmann",
+              "firstName": "Evelyn",
+              "initials": "E"
+            },
+            {
+              "fullName": "Wimmenauer V",
+              "lastName": "Wimmenauer",
+              "firstName": "Vera",
+              "initials": "V"
+            },
+            {
+              "fullName": "Hagmann CA",
+              "lastName": "Hagmann",
+              "firstName": "Cristina Amparo",
+              "initials": "CA"
+            },
+            {
+              "fullName": "Lüdenbach B",
+              "lastName": "Lüdenbach",
+              "firstName": "Bastian",
+              "initials": "B"
+            },
+            {
+              "fullName": "Schlee M",
+              "lastName": "Schlee",
+              "firstName": "Martin",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3671-7639"
+              }
+            },
+            {
+              "fullName": "Bootz F",
+              "lastName": "Bootz",
+              "firstName": "Friedrich",
+              "initials": "F"
+            },
+            {
+              "fullName": "Hartmann G",
+              "lastName": "Hartmann",
+              "firstName": "Gunther",
+              "initials": "G"
+            },
+            {
+              "fullName": "Barchet W",
+              "lastName": "Barchet",
+              "firstName": "Winfried",
+              "initials": "W",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6745-6606"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0866-4835"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6745-6606"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1021-2018"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3671-7639"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "5",
+          "volume": "16",
+          "journalIssueId": 1853771,
+          "dateOfPublication": "2011 ",
+          "monthOfPublication": 0,
+          "yearOfPublication": 2011,
+          "journal": {
+            "medlineAbbreviation": "Antivir Ther",
+            "title": "Antiviral therapy",
+            "essn": "2040-2058",
+            "issn": "1359-6535",
+            "nlmid": "9815705",
+            "isoabbreviation": "Antivir Ther"
+          },
+          "printPublicationDate": "2011-01-01"
+        },
+        "pubYear": "2011",
+        "pageInfo": "751-758",
+        "abstractText": "<h4>Background</h4>Upper respiratory tract infection is a frequent cause of morbidity worldwide. Although the course of infection is usually mild, it is responsible for enormous social and economic costs. Immunostimulation with bacterial extracts consisting of ribosomal RNA and proteoglycans, such as Ribomunyl, was introduced into the clinic in the 1980s as a new treatment concept, but did not achieve widespread application. Ribomunyl has been proposed to activate innate immunity, but the contribution of its RNA content as well as its antiviral potential has not been studied.<h4>Methods</h4>Peripheral blood mononuclear cells from healthy donors and immune cells from adenoids were incubated with Ribomunyl either by itself or formulated in a complex with cationic polypeptides such as poly-l-arginine or protamine, and induction of cytokines was quantified by ELISA.<h4>Results</h4>Ribomunyl in complex with either poly-l-arginine or protamine, but not on its own, was able to strongly induce interferon-α (P<0.01) and interleukin-12 (P<0.01) in peripheral blood mononuclear cells, whereas induced tumour necrosis factor-α and interleukin-6 levels were independent of the formulation. Comparable results were obtained in immune cells from adenoids, suggesting efficacy also in virus-affected tissue. Cell sorting, RNase digests and selective receptor expression show that the RNA in Ribomunyl acts as an agonist of Toll-like receptor (TLR)7 and TLR8.<h4>Conclusions</h4>Ribomunyl is, in principle, able to potently induce antiviral interferon-α and interleukin-12 via TLR7 and TLR8, respectively, but only when formulated in a complex with cationic polypeptides.",
+        "affiliation": "Department of Clinical Chemistry and Clinical Pharmacology, University Hospital of Bonn, Bonn, Germany.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adenoids",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Leukocytes, Mononuclear",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Respiratory Tract Infections",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DT",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PA",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polyamines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Arginine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adjuvants, Immunologic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TU",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antigens, Bacterial",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TU",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cytokines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antiviral Agents",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "TU",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunization",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Compounding"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Dose-Response Relationship, Drug"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Toll-Like Receptor 7",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AG",
+                    "qualifierName": "agonists"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Toll-Like Receptor 8",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AG",
+                    "qualifierName": "agonists"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "HEK293 Cells"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Molecular Targeted Therapy"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polyelectrolytes"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Ribomunyl",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antiviral Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antigens, Bacterial",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Polyamines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Adjuvants, Immunologic",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Cytokines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Toll-Like Receptor 7",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Toll-Like Receptor 8",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Arginine",
+              "registryNumber": "94ZLA3W45F"
+            },
+            {
+              "name": "Polyelectrolytes",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3851/IMP1822"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 3,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2012-02-01",
+        "dateOfCreation": "2011-08-06",
+        "dateOfRevision": "2026-01-28",
+        "firstPublicationDate": "2011-01-01",
+        "firstIndexDate": "2011-08-06",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "17931154",
+        "source": "MED",
+        "pmid": "17931154",
+        "doi": "10.1586/14760584.6.5.741",
+        "title": "IC31 and IC30, novel types of vaccine adjuvant based on peptide delivery systems.",
+        "authorString": "Lingnau K, Riedl K, von Gabain A.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Lingnau K",
+              "lastName": "Lingnau",
+              "firstName": "Karen",
+              "initials": "K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Intercell AG, Campus Vienna Biocenter 6, 1030 Vienna, Austria. [email removed for public release]"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Riedl K",
+              "lastName": "Riedl",
+              "firstName": "Karin",
+              "initials": "K"
+            },
+            {
+              "fullName": "von Gabain A",
+              "lastName": "von Gabain",
+              "firstName": "Alexander",
+              "initials": "A"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "5",
+          "volume": "6",
+          "journalIssueId": 1474370,
+          "dateOfPublication": "2007 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2007,
+          "journal": {
+            "medlineAbbreviation": "Expert Rev Vaccines",
+            "title": "Expert review of vaccines",
+            "essn": "1744-8395",
+            "issn": "1476-0584",
+            "nlmid": "101155475",
+            "isoabbreviation": "Expert Rev Vaccines"
+          },
+          "printPublicationDate": "2007-10-01"
+        },
+        "pubYear": "2007",
+        "pageInfo": "741-746",
+        "abstractText": "Toll-like receptor (TLR) agonists have a proven potential to become the adjuvants of the next generation when admixed and formulated with all kinds of vaccine compositions. The quality and magnitude of a vaccine-induced immune response is often strongly facilitated by TLR agonists, with the result that protection is increased and expanded toward type 1-driven immunity. DNA oligodeoxynucleotides bind to TLR9 and have been tested in a variety of vaccine settings with encouraging results. Combining oligodeoxynucleotides with poly-L-arginine (IC30) or certain artificial antimicrobial peptides dramatically improves and synergizes with the adjuvant action of TLR9 agonists, a notion that has prompted the development of IC31, an adjuvant with a promising profile in both preclinical and clinical trials.",
+        "affiliation": "Intercell AG, Campus Vienna Biocenter 6, 1030 Vienna, Austria. [email removed for public release]",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Vaccines, Subunit",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adjuvants, Immunologic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Drug Delivery Systems",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "TD",
+                    "qualifierName": "trends"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antibody Formation",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Adjuvants, Immunologic",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Vaccines, Subunit",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1586/14760584.6.5.741"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 39,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2007-11-28",
+        "dateOfCreation": "2007-10-13",
+        "dateOfRevision": "2007-10-12",
+        "firstPublicationDate": "2007-10-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "21424158",
+        "source": "MED",
+        "pmid": "21424158",
+        "doi": "10.1007/s11095-011-0411-z",
+        "title": "Lyophilization of protein-loaded polyelectrolyte microcapsules.",
+        "authorString": "De Temmerman ML, Rejman J, Grooten J, De Beer T, Vervaet C, Demeester J, De Smedt SC.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "De Temmerman ML",
+              "lastName": "De Temmerman",
+              "firstName": "Marie-Luce",
+              "initials": "ML",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of General Biochemistry and Physical Pharmacy, Faculty of Pharmaceutical Sciences, Ghent University, Ghent, Belgium."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Rejman J",
+              "lastName": "Rejman",
+              "firstName": "Joanna",
+              "initials": "J"
+            },
+            {
+              "fullName": "Grooten J",
+              "lastName": "Grooten",
+              "firstName": "Johan",
+              "initials": "J"
+            },
+            {
+              "fullName": "De Beer T",
+              "lastName": "De Beer",
+              "firstName": "Thomas",
+              "initials": "T"
+            },
+            {
+              "fullName": "Vervaet C",
+              "lastName": "Vervaet",
+              "firstName": "Chris",
+              "initials": "C"
+            },
+            {
+              "fullName": "Demeester J",
+              "lastName": "Demeester",
+              "firstName": "Jo",
+              "initials": "J"
+            },
+            {
+              "fullName": "De Smedt SC",
+              "lastName": "De Smedt",
+              "firstName": "Stefaan C",
+              "initials": "SC",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8653-2598"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8653-2598"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "7",
+          "volume": "28",
+          "journalIssueId": 1838648,
+          "dateOfPublication": "2011 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2011,
+          "journal": {
+            "medlineAbbreviation": "Pharm Res",
+            "title": "Pharmaceutical research",
+            "essn": "1573-904X",
+            "issn": "0724-8741",
+            "nlmid": "8406521",
+            "isoabbreviation": "Pharm Res"
+          },
+          "printPublicationDate": "2011-07-01"
+        },
+        "pubYear": "2011",
+        "pageInfo": "1765-1773",
+        "abstractText": "<h4>Purpose</h4>To evaluate if lyophilization can be used to obtain a dry formulation of polyelectrolyte microcapsules, which have emerged as a new class of microparticles for the encapsulation and delivery of biomacromolecules.<h4>Methods</h4>Microcapsules composed of dextran sulfate and poly-L-arginine were obtained by coating CaCO(3) microparticles by means of the layer-by-layer technique. Microcapsules were lyophilized using different stabilizers; intactness was checked by CLSM and SEM. Horseradish peroxidase was encapsulated as model enzyme and retained activity after freeze-drying was determined using a fluorescence assay. Ovalbumin was encapsulated as model antigen; immunogenicity after lyophilization was evaluated in vitro by a T-cell proliferation assay and in vivo by measuring the antibody titer in mice.<h4>Results</h4>The results clearly demonstrate the necessity of using polyols in the formulation to prevent rupture of the microcapsules and to preserve the activity of encapsulated enzymes. Lyophilized microcapsules appeared as a promising adjuvant for antigen delivery, as both in vitro as in vivo assays showed higher immune activation compared to free antigen.<h4>Conclusions</h4>Lyophilization is a promising strategy towards improved stability of protein-loaded microcapsules.",
+        "affiliation": "Laboratory of General Biochemistry and Physical Pharmacy, Faculty of Pharmaceutical Sciences, Ghent University, Ghent, Belgium.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred C57BL"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polyamines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Ovalbumin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Capsules",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Microscopy, Confocal"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Enzyme-Linked Immunosorbent Assay"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Freeze Drying"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Models, Biological"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polyelectrolytes"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Ovalbumin",
+              "registryNumber": "9006-59-1"
+            },
+            {
+              "name": "Capsules",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Polyamines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Polyelectrolytes",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://biblio.ugent.be/publication/2029613/file/2029629"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s11095-011-0411-z"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 5,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2011-11-22",
+        "dateOfCreation": "2011-03-23",
+        "dateOfRevision": "2026-01-28",
+        "electronicPublicationDate": "2011-03-18",
+        "firstPublicationDate": "2011-03-18",
+        "firstIndexDate": "2011-03-23",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "33418636",
+        "source": "MED",
+        "pmid": "33418636",
+        "doi": "10.1021/acsbiomaterials.5b00456",
+        "title": "A Cationic Micelle Complex Improves CD8+ T Cell Responses in Vaccination Against Unmodified Protein Antigen.",
+        "authorString": "Brubaker CE, Panagiotou V, Demurtas D, Bonner DK, Swartz MA, Hubbell JA.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Brubaker CE",
+              "lastName": "Brubaker",
+              "firstName": "Carrie E",
+              "initials": "CE"
+            },
+            {
+              "fullName": "Panagiotou V",
+              "lastName": "Panagiotou",
+              "firstName": "Vasiliki",
+              "initials": "V"
+            },
+            {
+              "fullName": "Demurtas D",
+              "lastName": "Demurtas",
+              "firstName": "Davide",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3998-6108"
+              }
+            },
+            {
+              "fullName": "Bonner DK",
+              "lastName": "Bonner",
+              "firstName": "Daniel K",
+              "initials": "DK"
+            },
+            {
+              "fullName": "Swartz MA",
+              "lastName": "Swartz",
+              "firstName": "Melody A",
+              "initials": "MA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Molecular Engineering, University of Chicago, Chicago, Illinois 60637, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hubbell JA",
+              "lastName": "Hubbell",
+              "firstName": "Jeffrey A",
+              "initials": "JA",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0276-5456"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Molecular Engineering, University of Chicago, Chicago, Illinois 60637, United States."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3998-6108"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0276-5456"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "2",
+          "volume": "2",
+          "journalIssueId": 2375548,
+          "dateOfPublication": "2016 Feb",
+          "monthOfPublication": 2,
+          "yearOfPublication": 2016,
+          "journal": {
+            "medlineAbbreviation": "ACS Biomater Sci Eng",
+            "title": "ACS biomaterials science & engineering",
+            "essn": "2373-9878",
+            "issn": "2373-9878",
+            "nlmid": "101654670",
+            "isoabbreviation": "ACS Biomater Sci Eng"
+          },
+          "printPublicationDate": "2016-02-01"
+        },
+        "pubYear": "2016",
+        "pageInfo": "231-240",
+        "abstractText": "Nanoscale carrier platforms promote immune responses to vaccination by facilitating delivery of vaccine components to immunologically relevant sites. The technique is particularly valuable for subunit vaccination, in which coadministration of immunostimulatory adjuvant is known to enhance immune responses to protein antigen. The fabrication of polymer-based nanoparticle vaccines commonly requires covalent attachment of vaccine components to the carrier surface. In contrast, we here describe a cationic micelle vaccination platform in which antigen and adjuvant loading is mediated by noncovalent molecular encapsulation and electrostatic complexation. Cationic micelles were generated through self-assembly of a polyarginine-conjugated poly(ethylene glycol)-<i>b</i>-poly(propylene sulfide) (PEG-PPS) diblock copolymer amphiphile, with or without encapsulation of monophosphoryl lipid A (MPLA), an amphiphilic experimental vaccine adjuvant. Micelle complexes were subsequently formed by complexation of ovalbumin (OVA) and CpG-B oligodeoxynucleotide (a second experimental adjuvant) to the cationic micelles. In a 35-day study in mouse, micelle-mediated codelivery of OVA antigen and CpG-B enhanced cellular and humoral responses to vaccination. These outcomes were highlighted in spleen and lymph node CD8<sup>+</sup> T cells, with significantly increased populations of IFNγ<sup>+</sup>, TNFα<sup>+</sup>, and polyfunctional IFNγ<sup>+</sup> TNFα<sup>+</sup> cells. Elevated cytokine production is a hallmark of robust cytotoxic T lymphocyte (CTL) responses sought in next-generation vaccine technologies. Increased production of OVA-specific IgG1, IgG2c, and IgG3 also confirmed micelle enhancement of humoral responses. In a subsequent 35-day study, we explored micelle-mediated vaccination against OVA antigen coadministered with MPLA and CpG-B adjuvants. A synergistic effect of adjuvant coadministration was observed in micelle-free vaccination but not in groups immunized with micelle complexes. This outcome underlines the advantage of the micelle carrier: we achieved optimal cellular and humoral responses to vaccination by use of this nanoparticle platform with a single adjuvant. In particular, enhanced CTL responses support future development of the cationic micelle platform in experimental cancer vaccines and for vaccination against reticent viral pathogens.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "European Research Council",
+              "acronym": "ERC_",
+              "orderIn": 0
+            },
+            {
+              "agency": "Whitaker International Fellows and Scholars Program",
+              "orderIn": 0
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Self-assembly",
+            "CTL response",
+            "subunit vaccine",
+            "Micelle",
+            "Antigen Delivery"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1021/acsbiomaterials.5b00456"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 15,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCreation": "2021-01-09",
+        "dateOfRevision": "2021-01-11",
+        "electronicPublicationDate": "2016-01-11",
+        "firstPublicationDate": "2016-01-11",
+        "firstIndexDate": "2021-01-09",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "8598485",
+        "source": "MED",
+        "pmid": "8598485",
+        "doi": "10.4049/jimmunol.156.1.350",
+        "title": "Peroxynitrite-mediated DNA strand breakage activates poly-adenosine diphosphate ribosyl synthetase and causes cellular energy depletion in macrophages stimulated with bacterial lipopolysaccharide.",
+        "authorString": "Zingarelli B, O'Connor M, Wong H, Salzman AL, Szabó C.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Zingarelli B",
+              "lastName": "Zingarelli",
+              "firstName": "B",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Critical Care, Children's Hospital Medical Center, Cincinnati, OH 45229, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "O'Connor M",
+              "lastName": "O'Connor",
+              "firstName": "M",
+              "initials": "M"
+            },
+            {
+              "fullName": "Wong H",
+              "lastName": "Wong",
+              "firstName": "H",
+              "initials": "H"
+            },
+            {
+              "fullName": "Salzman AL",
+              "lastName": "Salzman",
+              "firstName": "A L",
+              "initials": "AL"
+            },
+            {
+              "fullName": "Szabó C",
+              "lastName": "Szabó",
+              "firstName": "C",
+              "initials": "C"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "156",
+          "journalIssueId": 909491,
+          "dateOfPublication": "1996 Jan",
+          "monthOfPublication": 1,
+          "yearOfPublication": 1996,
+          "journal": {
+            "medlineAbbreviation": "J Immunol",
+            "title": "Journal of immunology (Baltimore, Md. : 1950)",
+            "essn": "1550-6606",
+            "issn": "0022-1767",
+            "nlmid": "2985117R",
+            "isoabbreviation": "J Immunol"
+          },
+          "printPublicationDate": "1996-01-01"
+        },
+        "pubYear": "1996",
+        "pageInfo": "350-358",
+        "abstractText": "The inducible isoform of nitric oxide (NO) synthase produces large quantities of NO, a cytotoxic free radical. Recent studies show that treatment with exogenous NO produces DNA strand breaks, activating the nuclear repair enzyme poly(ADP)ribosyltransferase (PARS), which results in ADP ribosylation, NAD+ consumption, and exhaustion of intracellular energy stores. Here we have characterized the cytotoxic effect of endogenous NO and peroxynitrite, a reactive oxidant formed from NO and superoxide. Immunostimulation of J774.2 macrophages with endotoxin resulted in the generation of superoxide (within 1 h) and NO (after 8 h). NO production paralleled an increase in peroxynitrite formation and DNA strand breakage, and a decrease in intracellular NAD+ content and mitochondrial respiration. Inhibition of NO synthase by NG-methyl-L-arginine or S-methyl-isothiourea or inhibition of PARS activity by 3-aminobenzamide or nicotinamide prevented the decrease in mitochondrial respiration and the depletion of NAD+. A similar pattern of free radical formation and cytotoxicity was observed in peritoneal macrophages from endotoxemic rats (formation of NO, superoxide, peroxynitrite, and DNA strand breaks). In vivo treatment with 3-aminobenzamide preserved mitochondrial respiration, NAD+, and ATP. Our data suggest that inflammatory cell injury involved DNA strand breakage and PARS, triggering an energy-consuming, futile repair cycle leading to cellular energy depletion. The active species responsible for the development of DNA strand breaks is peroxynitrite, rather than NO, since exogenous peroxynitrite, but not NO, induces DNA strand breaks. Inhibition of PARS may improve cellular energy homeostasis in patho-physiologic conditions associated with peroxynitrite generation.",
+        "affiliation": "Division of Critical Care, Children's Hospital Medical Center, Cincinnati, OH 45229, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Macrophages, Peritoneal",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats, Wistar"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "DNA Damage",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nitrates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hydrogen Peroxide",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Superoxides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nitric Oxide",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "BI",
+                    "qualifierName": "biosynthesis"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rhodamines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "RNA Ligase (ATP)",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AI",
+                    "qualifierName": "antagonists & inhibitors"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Lipopolysaccharides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adenosine Diphosphate Ribose",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "BI",
+                    "qualifierName": "biosynthesis"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Macrophage Activation",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Enzyme Activation",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Energy Metabolism",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Oxidation-Reduction"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nitric Oxide Synthase",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AI",
+                    "qualifierName": "antagonists & inhibitors"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "peroxynitric acid",
+              "registryNumber": "26404-66-0"
+            },
+            {
+              "name": "Nitrates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Lipopolysaccharides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Superoxides",
+              "registryNumber": "11062-77-4"
+            },
+            {
+              "name": "Rhodamines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Adenosine Diphosphate Ribose",
+              "registryNumber": "20762-30-5"
+            },
+            {
+              "name": "RNA Ligase (ATP)",
+              "registryNumber": "EC 6.5.1.3"
+            },
+            {
+              "name": "Nitric Oxide Synthase",
+              "registryNumber": "EC 1.14.13.39"
+            },
+            {
+              "name": "Nitric Oxide",
+              "registryNumber": "31C4KY9ESH"
+            },
+            {
+              "name": "Hydrogen Peroxide",
+              "registryNumber": "BBX060AN9V"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "OpenAlex",
+              "url": "https://doi.org/10.4049/jimmunol.156.1.350"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "abs",
+              "site": "www.jimmunol.org",
+              "url": "http://www.jimmunol.org/cgi/content/abstract/156/1/350"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 221,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1996-04-23",
+        "dateOfCreation": "1996-01-01",
+        "dateOfRevision": "2013-11-21",
+        "firstPublicationDate": "1996-01-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

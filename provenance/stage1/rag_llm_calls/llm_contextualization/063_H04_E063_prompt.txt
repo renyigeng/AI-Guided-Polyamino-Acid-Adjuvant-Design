@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H04
+CANDIDATE HINT: H
+CHIRALITY HINT: 
+PMID: 40202129
+DOI: 10.1021/acsnano.4c08515
+
+TITLE:
+Catch-to-Amplify Nanoparticles with Bacteria Surface for Sequential Mucosal Immune Activation for Acute Myeloid Leukemia Therapy.
+
+ABSTRACT:
+Mucosal-mediated immune deficiency is associated with immune evasion and poor clinical outcomes in acute myeloid leukemia (AML). Here, we describe the elicitation of mucosal and systemic immune response by oral delivery of MDP-modified PEG-lipid (MDP-PEG-DSPE) and polylactic acid-polyhistidine (PLA-PHis) copolymer constructed nanosystem (mPOD) into Peyer's patches. To protect against gastrointestinal degradation, enteric-soluble capsules are utilized for encapsulating mPOD to promote penetration across intestinal mucus and engender robust Peyer's patch targeting initiated by MDP-PEG-DSPE. Compared with intravenous and intramuscular administration, the oral delivery of MDP-PEG-DSPE and 5'-triphosphate-modified RNA (ppp-RNA) into gut-associated lymphoid tissues reinforces dendritic cell maturation and migration, amplifies mucosal immune response, and boosts the production of secretory immunoglobulin A via retinoic acid-inducible gene I/nucleotide-binding oligomerization domain 2 (RIG-I/NOD2) signaling activation. In the AML murine model, the provoked mucosal immunity positively regulates the systemic cytotoxic immune reactions, which, in turn, eradicate disseminated malignant leukemic cells and provide defense against leukemia attacks.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R03
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 34184429
+DOI: 10.1002/2211-5463.13240
+
+TITLE:
+In vitro and in vivo safety studies indicate that R15, a synthetic polyarginine peptide, could safely reverse the effects of unfractionated heparin.
+
+ABSTRACT:
+Unfractionated heparin (UFH) is an anionic glycosaminoglycan that is widely used to prevent blood clotting. However, in certain cases, unwanted side effects can require it to be neutralized. Protamine sulfate (PS), a basic peptide rich in arginine, is the only approved antagonist for UFH neutralization. Many adverse reactions occur with the clinical application of PS, including systemic hypotension, pulmonary hypertension, and anaphylaxis. We previously described R15, a linear peptide composed of 15 arginine molecules, as a potential UFH antagonist. In this study, the in-depth safety of R15 was explored to reveal its merits and associated risks in comparison with PS. In vitro safety studies investigated the interactions of R15 with erythrocytes, fibrin, complement, and rat plasma. In vivo safety studies explored potential toxicity and immunogenicity of R15 and the UFH-R15 complex. Results showed that both PS and R15 can induce erythrocyte aggregation, thicken fibrin fibers, activate complement, and cause anticoagulation in a concentration-dependent manner. However, those influences weakened in whole blood or in live animals and were avoided when R15 was in a complex with UFH. We found dramatically enhanced complement activation when there was excess UFH in analyses involving UFH-PS complexes, and a slight increase in those involving UFH-R15 complexes. Within 2 h, R15 was degraded in rat plasma in vitro, whereas PS was not. Enhanced creatinine was found after a single intravenous injection of PS or R15 (900 U·kg<sup>-1</sup> , body weight), suggesting possible abnormal renal function. The UFH-PS complex, but not the UFH-R15 complex, exhibited obvious immunogenicity. In conclusion, R15 is nonimmunogenic and potentially safe at a therapeutic dose to reverse the effects of UFH.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,24 @@
+{
+  "summary": "This study investigates intracellular trafficking of PCL-R15/siRNA nanoplexes, revealing that caveolae-mediated and clathrin-mediated endocytosis are major internalization routes. Internalized nanoplexes are transported through digestive routes and trapped in lysosomes, which is a bottleneck for siRNA delivery. FRET assay confirmed intracellular siRNA release.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "cellular trafficking mechanisms of PCL-R15/siRNA nanoplexes",
+    "internalization routes for the nanoplexes",
+    "intracellular release of siRNA from nanoplexes",
+    "lysosomal trapping of internalized nanoplexes"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "caveolae-mediated endocytosis and clathrin-mediated endocytosis were major routes for internalization",
+    "internalized PCL-R15/siRNA nanoplexes were transported through digestive routes and trapped in lysosomes",
+    "introduction of PCL moiety resulted in stronger interactions with cells and enhanced transfection efficiency compared to R15/siRNA complexes"
+  ],
+  "material_or_molecular_context": "PCL-R15 diblock polymer (PCL conjugated to R15 peptide) forming nanoplexes with siRNA",
+  "biological_context": "cells (in vitro; specific cell type not stated)",
+  "limitations_for_current_question": [
+    "Study focuses on siRNA delivery nanoplexes, not free polyarginine or pure arginine-based materials",
+    "Specific cell line not disclosed",
+    "No direct comparison of different arginine lengths or chiralities"
+  ],
+  "supporting_text": "Caveolae-mediated endocytosis and clathrin-mediated endocytosis were major routes for the internalization of PCL-R15/siRNA nanoplexes."
+}

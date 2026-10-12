@@ -1,0 +1,26 @@
+{
+  "summary": "This study compares aluminum oxyhydroxide nanoadjuvants prepared with L-lysine (l-AlOOH) and D-lysine (d-AlOOH) as structure-directing agents, showing that l-AlOOH has lower adsorption coefficient for HPV VLP antigen, faster antigen release and lymph node trafficking, and significantly enhances antigen uptake by dendritic cells compared to d-AlOOH, leading to higher antibody titers in vaccination models.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "adsorption coefficient",
+    "antigen release from injection site",
+    "trafficking into lymph nodes",
+    "antigen uptake by dendritic cells in vitro",
+    "antigen-specific antibody titers in HPV and HBsAg vaccination models"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "l-AlOOH exhibits a lower adsorption coefficient for HPV VLP antigen",
+    "l-AlOOH facilitates accelerated antigen release from injection site and trafficking into lymph nodes",
+    "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH",
+    "l-AlOOH boosts antigen-specific antibody titers"
+  ],
+  "material_or_molecular_context": "Chiral aluminum oxyhydroxide nanoadjuvants (l-AlOOH and d-AlOOH) prepared using enantiomeric L-lysine or D-lysine hydrochloride as structure-directing agents.",
+  "biological_context": "In vitro dendritic cells; in vivo HPV and hepatitis B surface antigen vaccination models in mice (implied).",
+  "limitations_for_current_question": [
+    "The L-lysine and D-lysine are used as structure-directing agents for aluminum oxyhydroxide, not as direct immune polypeptide components.",
+    "The comparison is between the resulting chiral materials, not free lysine enantiomers.",
+    "No direct comparison of D-lysine and L-lysine as immune-modulatory molecules themselves."
+  ],
+  "supporting_text": "l-AlOOH significantly enhances antigen uptake by dendritic cells in vitro compared with achiral and d-lysine-induced AlOOH."
+}

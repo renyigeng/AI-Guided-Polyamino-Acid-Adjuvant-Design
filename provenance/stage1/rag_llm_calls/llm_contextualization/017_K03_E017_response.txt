@@ -1,0 +1,23 @@
+{
+  "summary": "Hyperbranched poly-L-lysine (HBPL) based water-insoluble complexes were incorporated into PCL films. Hemolysis experiments showed low hemolytic activity, and cytocompatibility was investigated, though no specific numeric results are reported.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "antibacterial activity",
+    "cytocompatibility",
+    "hemolytic activity"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "All films had low hemolytic activities",
+    "HBPL/phosphate ester surfactant complex showed highest bacterial killing efficiency"
+  ],
+  "material_or_molecular_context": "Hyperbranched poly-L-lysine (HBPL) non-covalently complexed with four different surfactants, then incorporated into poly(ɛ-caprolactone) (PCL) films",
+  "biological_context": "Hemolysis experiments (red blood cells); cytocompatibility investigated but no specific cell type mentioned",
+  "limitations_for_current_question": [
+    "No quantitative cytotoxicity or safety data (e.g., IC50) reported",
+    "Cytocompatibility was assessed but without explicit numeric thresholds or cell viability percentages",
+    "Material tested as composite PCL films, not pure HBPL or lysine-based polypeptides alone",
+    "Only hemolysis assay reported for safety; no other biocompatibility tests (e.g., MTT, LDH) mentioned"
+  ],
+  "supporting_text": "Hemolysis experiments indicate that all the films had low hemolytic activities."
+}

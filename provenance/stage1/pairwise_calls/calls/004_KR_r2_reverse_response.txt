@@ -1,0 +1,27 @@
+{
+  "preference": "A",
+  "basis": [
+    "Arg demonstrates direct antigen delivery to dendritic cells with enhanced MHC class I/II presentation and robust CD4+/CD8+ T-cell activation, leading to antitumor immunity in vivo (E044, E025).",
+    "Polyarginine synergizes with adjuvants to produce prolonged T-cell responses lasting over a year and inhibits systemic pro-inflammatory cytokine release (E027, E043).",
+    "Arg shows arginine-specific endosomal leakage activity (E032) and endocytic uptake via heparan sulfate binding (E033), which are critical for cytosolic antigen delivery.",
+    "Safety evidence for Arg is favorable: polyarginine coatings were safe in vivo (E037), R18D showed no hemolysis (E038), and R15 was nonimmunogenic with manageable complement activation (E039).",
+    "In direct comparisons, polyarginine outperformed polylysine in endosomal escape and cytosolic penetration (E032, E010), supporting a mechanistic advantage for vaccine delivery."
+  ],
+  "supporting_evidence_ids": [
+    "E044",
+    "E025",
+    "E027",
+    "E043",
+    "E032",
+    "E033",
+    "E037",
+    "E038",
+    "E039"
+  ],
+  "counter_evidence_ids": [],
+  "uncertainties": [
+    "Most Arg evidence uses specific constructs (R9, R15, R18) rather than a binary block copolymer; transferability to the target amphiphilic poly(amino acid) architecture is inferred but not directly tested.",
+    "Safety data are from ex vivo or short-term in vivo models; long-term biocompatibility in tumor-vaccine context remains unaddressed.",
+    "Some immune activation evidence (E027, E045) requires co-administration with adjuvants (CpG-ODN), so standalone adjuvant activity of Arg is less certain."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "preference": "A",
+  "basis": [
+    "Candidate A (Arg) has direct evidence for antigen delivery to dendritic cells using R9-PTD, enhancing MHC class I/II presentation and T-cell activation (E044, E025).",
+    "Poly-L-arginine synergizes with adjuvants to induce potent, long-lasting T-cell responses and inhibits systemic pro-inflammatory cytokine release (E027, E045).",
+    "Arg induces DC infiltration, antigen loading, and immune activation in vivo (E043).",
+    "Arg shows specific endosomal leakage and cytosolic penetration that is arginine-dependent (E032).",
+    "Safety data indicate low hemolysis and in vivo tolerability for polyarginine coatings and R18D (E037, E038).",
+    "Candidate B (His) often relies on polyhistidine as a tag rather than as the primary functional block, and its DC activation and immune outcomes are frequently mediated by other components (E062, E065, E061).",
+    "While His shows some endosomal escape and uptake, the evidence is less direct for vaccine-relevant antigen delivery and DC activation compared to Arg."
+  ],
+  "supporting_evidence_ids": [
+    "E044",
+    "E025",
+    "E027",
+    "E045",
+    "E043",
+    "E032",
+    "E033",
+    "E047",
+    "E037",
+    "E038"
+  ],
+  "counter_evidence_ids": [
+    "E032",
+    "E038"
+  ],
+  "uncertainties": [
+    "The threshold of arginine content for optimal activity vs toxicity is unclear from the supplied evidence.",
+    "Transferability to the specific binary poly(amino acid) architecture is not directly tested for either candidate."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "summary": "This study compared poly(L-lysine) (PK) and poly(L-arginine) (PR) polyplexes to identify the rate-limiting step in gene transfection. By using microinjection to bypass natural uptake, they quantified intranuclear transcription efficiency and endosomal escape. They found that endosomal escape is the rate-limiting step, independent of the buffering effect, and that transcription efficiency is similar for PK and PR but decreases with molecular weight.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "intranuclear transcription efficiency",
+    "nuclear transport of polyplex",
+    "endosomal escape",
+    "cellular uptake"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "intranuclear transcription efficiency is the same in PR and PK and decreases rapidly with increasing molecular weight",
+    "transcription efficiency strongly suppressed at high molecular weight",
+    "rate-limiting step is buffering effect-independent endosomal escape",
+    "cellular uptake and in vitro transfection with or without chloroquine were considered"
+  ],
+  "material_or_molecular_context": "poly(L-lysine) (PK) and poly(L-arginine) (PR) with different molecular weights",
+  "biological_context": "living cells (microinjection technique applied to cultured cells, cell type not specified)",
+  "limitations_for_current_question": [
+    "microinjection technique bypasses natural endocytic uptake and internalization pathways",
+    "focus is on polyplexed pDNA, not free polylysine or lysine-based materials",
+    "cell type not specified, limiting generalizability",
+    "direct comparison with polyarginine may obscure behavior specific to polylysine alone"
+  ],
+  "supporting_text": "the rate-limiting step for their gene transfer is the buffering effect-independent endosomal escape"
+}

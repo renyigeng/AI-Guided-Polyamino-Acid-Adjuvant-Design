@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?
+
+QUERY ID: DK02
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 
+DOI: 10.1101/2025.06.23.661031
+
+TITLE:
+Dendritic Polyglycerol Amine Substrate Extends the Viability of Mixed Glial Cultures for Repeated Isolation of Immature Oligodendrocyte Lineage Cells
+
+ABSTRACT:
+Primary mixed glial cultures are key tools to isolate and study astrocytes, microglia and oligodendrocytes. Cell-substrate adhesion is critical for neural cell survival and differentiation. Cationic polymers like poly-D-lysine (PDL) are widely used to promote cell adhesion to cell culture substrates, however, PDL is not stable long-term, with cultured cells often detaching (peeling) after 2-3 weeks. Dendritic polyglycerol amine (dPGA) is a synthetic polycationic non-protein polymer biomimetic of poly-lysine that is highly resistant to degradation by cellular proteases. Substrates coated with dPGA promote cell adhesion and improve survival in long-term neuronal cultures. Here we assessed dPGA as a substrate coating to provide long-term support for mixed glial cultures. Oligodendrocyte precursor cells (OPCs) were isolated weekly by differential adhesion from cultures grown in T75 flasks with PDL or dPGA-coated substrates. Following two “shake-off” isolations, the cell layer in most PDL-coated flasks fully detached, rendering these flasks unusable for further culture. In contrast, dPGA-coated flasks consistently yielded cells for six or more sequential isolations over seven weeks in culture. dPGA-coated flasks produced more cells, a greater percentage of O4+ cells, and maintained similar proportions of OPCs and MBP-positive cells as when isolated from a PDL-coated substrate. dPGA is cyto-compatible, functionally superior, easy to use, low cost and a stable alternative to conventional cell substrate coatings. The enhanced long-term stability of mixed glial cultures grown on a dPGA substrate has the capacity to increase cellular yield, reduce animal use, and facilitate studies of oligodendrocyte cell biology.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

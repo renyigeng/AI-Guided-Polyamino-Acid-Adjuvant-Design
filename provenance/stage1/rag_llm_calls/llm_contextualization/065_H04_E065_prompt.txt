@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?
+
+QUERY ID: H04
+CANDIDATE HINT: H
+CHIRALITY HINT: 
+PMID: 38968676
+DOI: 10.1016/j.virol.2024.110152
+
+TITLE:
+Displaying alphavirus physicochemical consensus antigens on immunogenic liposomes enhances antibody elicitation in mice.
+
+ABSTRACT:
+Cobalt-porphyrin phospholipid displays recombinant protein antigens on liposome surfaces via antigen polyhistidine-tag (His-tag), and when combined with monophosphorylated lipid A and QS-21 yields the "CPQ" vaccine adjuvant system. In this proof of principle study, CPQ was used to generate vaccine prototypes that elicited antibodies for two different alphaviruses (AV). Mice were immunized with computationally designed, His-tagged, physicochemical property consensus (PCP<sub>con</sub>) protein antigens representing the variable B-domain of the envelope protein 2 (E2) from the serotype specific Venezuelan Equine Encephalitis Virus (VEEV<sub>con</sub>) or a broad-spectrum AV-antigen termed EVC<sub>con.</sub> The CPQ adjuvant enhanced the antigenicity of both proteins without eliciting detectable anti-His-tag antibodies. Antibodies elicited from mice immunized with antigens admixed with CPQ showed orders-of-magnitude higher levels of antigen-specific IgG compared to alternative control adjuvants. The ELISA results correlated with antiviral activity against VEEV strain TC83 and more weakly to Chikungunya virus 118/25. Thus, display of E.coli-produced His-tagged E2 protein segments on the surface of immunogenic liposomes elicits high levels of antigen-specific and AV neutralizing antibodies in mice with vaccination, while facilitating vaccine preparation and providing dose-sparing potential.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

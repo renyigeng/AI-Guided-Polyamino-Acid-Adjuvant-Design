@@ -1,0 +1,1295 @@
+{
+  "version": "6.9",
+  "hitCount": 5,
+  "request": {
+    "queryString": "TITLE_ABS:(\"D-lysine\" OR \"poly-D-lysine\" OR \"poly(D-lysine)\") AND TITLE_ABS:(polypeptide OR polymer OR nanoparticle OR nanoadjuvant) AND TITLE_ABS:(\"adaptive immune\" OR \"T cell\" OR \"T-cell\" OR antibody OR antitumor OR immunotherapy)",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "42662463",
+        "source": "MED",
+        "pmid": "42662463",
+        "pmcid": "PMC13520902",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13520902"
+          ]
+        },
+        "doi": "10.1016/j.bioactmat.2026.08.009",
+        "title": "Increasing hydrophobicity in poly(amino acid) adjuvants elicits potent and durable anti-tumor immunity &lt;i&gt;via&lt;/i&gt; coordinated cellular and humoral responses.",
+        "authorString": "Qin C, Xin H, Wei Q, Xiao Q, Yang G, Ding J.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Qin C",
+              "lastName": "Qin",
+              "firstName": "Changjuan",
+              "initials": "C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Thoracic Surgery, China-Japan Union Hospital of Jilin University, 126 Xiantai Street, Changchun, 130033, PR China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Polymer Science and Technology, Changchun Institute of Applied Chemistry, Chinese Academy of Science, 5625 Renmin Street, Changchun, 130022, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Xin H",
+              "lastName": "Xin",
+              "firstName": "Hua",
+              "initials": "H",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Thoracic Surgery, China-Japan Union Hospital of Jilin University, 126 Xiantai Street, Changchun, 130033, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wei Q",
+              "lastName": "Wei",
+              "firstName": "Qi",
+              "initials": "Q",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Thoracic Surgery, China-Japan Union Hospital of Jilin University, 126 Xiantai Street, Changchun, 130033, PR China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Polymer Science and Technology, Changchun Institute of Applied Chemistry, Chinese Academy of Science, 5625 Renmin Street, Changchun, 130022, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Xiao Q",
+              "lastName": "Xiao",
+              "firstName": "Qingyang",
+              "initials": "Q",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Polymer Science and Technology, Changchun Institute of Applied Chemistry, Chinese Academy of Science, 5625 Renmin Street, Changchun, 130022, PR China."
+                  },
+                  {
+                    "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, 96 Jinzhai Road, Hefei, 230026, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang G",
+              "lastName": "Yang",
+              "firstName": "Guanqing",
+              "initials": "G",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Polymer Science and Technology, Changchun Institute of Applied Chemistry, Chinese Academy of Science, 5625 Renmin Street, Changchun, 130022, PR China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ding J",
+              "lastName": "Ding",
+              "firstName": "Jianxun",
+              "initials": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Polymer Science and Technology, Changchun Institute of Applied Chemistry, Chinese Academy of Science, 5625 Renmin Street, Changchun, 130022, PR China."
+                  },
+                  {
+                    "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, 96 Jinzhai Road, Hefei, 230026, PR China."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "67",
+          "journalIssueId": 4241772,
+          "dateOfPublication": "2027 Jan",
+          "monthOfPublication": 1,
+          "yearOfPublication": 2027,
+          "journal": {
+            "medlineAbbreviation": "Bioact Mater",
+            "title": "Bioactive materials",
+            "essn": "2452-199X",
+            "issn": "2452-199X",
+            "isoabbreviation": "Bioact Mater",
+            "nlmid": "101685294"
+          },
+          "printPublicationDate": "2027-01-01"
+        },
+        "pubYear": "2027",
+        "pageInfo": "541-559",
+        "abstractText": "The coordinated activation of cellular and humoral immunity is essential for robust anti-tumor efficacy and durable immune memory in tumor vaccination. However, most current strategies are biased toward one immune arm, and the rational adjuvant design that efficiently engages both immune arms remains a challenge. Here, the hydrophobic segment content in an amphiphilic poly(amino acid) was optimized to boost both immune responses. The copolymers, poly(L-phenylalanine)<sub>m</sub>-<i>block</i>-poly(D-lysine)<sub>10</sub> (m = 5, 10, or 15; F-<sub>D</sub>K), were synthesized with identical cationic components and different hydrophobic components. Increasing the phenylalanine ratio induced coordinated changes in nanoparticle size, surface charge, and structural rigidity, thereby enhancing dendritic cell uptake, TLR4-mediated activation, and antigen presentation. After subcutaneous injection into mice, F<sub>15</sub>-<sub>D</sub>K<sub>10</sub>/OVA, with longest chain of poly(L-phenylalanine), triggered robust CD8<sup>+</sup> T cell cytotoxicity and strong B cell-mediated antibody response. Meanwhile, splenic central memory T cells and lymph node memory B cells increased by 1.46- and 2.19-fold, compared with the free ovalbumin (OVA). In the OVA-expressing Lewis lung cancer (LLC-OVA) therapeutic model, vaccines with increasing phenylalanine achieved tumor inhibition rates of 31.62%, 65.35%, and 97.81%. Importantly, F<sub>15</sub>-<sub>D</sub>K<sub>10</sub>/OVA achieved 100% tumor-free survival in the LLC-OVA prevention model. Even after two tumor re-challenges, 54.55% of mice remained tumor-free for 644 days, demonstrating durable antigen-specific protection in this model. A CT26 whole-cell-lysate study provided supporting evidence of therapeutic efficacy in one additional syngeneic tumor model. Within the tumor and antigen systems evaluated here, rational tuning of hydrophobic moieties in poly(amino acid) is an effective strategy to enhance tumor vaccine efficacy and long-term anti-tumor immune memory.",
+        "affiliation": "Department of Thoracic Surgery, China-Japan Union Hospital of Jilin University, 126 Xiantai Street, Changchun, 130033, PR China.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Jilin Scientific and Technological Development Program",
+              "grantId": "20240404010ZP",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "52203200",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "82472144",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "U23A20591",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "52273158",
+              "orderIn": 0
+            },
+            {
+              "agency": "Department of Science and Technology of Jilin Province",
+              "orderIn": 0
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Cellular And Humoral Immunity",
+            "Long-term Immune Memory",
+            "Hydrophobicity Regulation",
+            "Poly(amino Acid) Adjuvant",
+            "Tumor Vaccine Efficacy"
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.bioactmat.2026.08.009"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13520902"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13520902?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 0,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "N",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        },
+        "dateOfCompletion": "2026-08-28",
+        "dateOfCreation": "2026-08-28",
+        "dateOfRevision": "2026-08-29",
+        "electronicPublicationDate": "2026-08-19",
+        "firstPublicationDate": "2026-08-19",
+        "firstIndexDate": "2026-08-30",
+        "fullTextReceivedDate": "2026-09-10",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "36732117",
+        "source": "MED",
+        "pmid": "36732117",
+        "doi": "10.1016/j.scib.2023.01.024",
+        "title": "Chiral polypeptide nanoparticles as nanoadjuvants of nanovaccines for efficient cancer prevention and therapy.",
+        "authorString": "Su Y, Xu W, Wei Q, Ma Y, Ding J, Chen X.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Su Y",
+              "lastName": "Su",
+              "firstName": "Yuanzhen",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, Hefei 230026, China; Key Laboratory of Polymer Ecomaterials, Changchun Institute of Applied Chemistry, Chinese Academy of Sciences, Changchun 130022, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Xu W",
+              "lastName": "Xu",
+              "firstName": "Weiguo",
+              "initials": "W",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, Hefei 230026, China; Key Laboratory of Polymer Ecomaterials, Changchun Institute of Applied Chemistry, Chinese Academy of Sciences, Changchun 130022, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wei Q",
+              "lastName": "Wei",
+              "firstName": "Qi",
+              "initials": "Q",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Thoracic Surgery, China-Japan Union Hospital of Jilin University, Changchun 130033, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ma Y",
+              "lastName": "Ma",
+              "firstName": "Yang",
+              "initials": "Y",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, Hefei 230026, China; Key Laboratory of Polymer Ecomaterials, Changchun Institute of Applied Chemistry, Chinese Academy of Sciences, Changchun 130022, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ding J",
+              "lastName": "Ding",
+              "firstName": "Jianxun",
+              "initials": "J",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5232-8863"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, Hefei 230026, China; Key Laboratory of Polymer Ecomaterials, Changchun Institute of Applied Chemistry, Chinese Academy of Sciences, Changchun 130022, China. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chen X",
+              "lastName": "Chen",
+              "firstName": "Xuesi",
+              "initials": "X",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, Hefei 230026, China; Key Laboratory of Polymer Ecomaterials, Changchun Institute of Applied Chemistry, Chinese Academy of Sciences, Changchun 130022, China."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5232-8863"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "3",
+          "volume": "68",
+          "journalIssueId": 3512521,
+          "dateOfPublication": "2023 Feb",
+          "monthOfPublication": 2,
+          "yearOfPublication": 2023,
+          "journal": {
+            "medlineAbbreviation": "Sci Bull (Beijing)",
+            "title": "Science bulletin",
+            "essn": "2095-9281",
+            "issn": "2095-9273",
+            "isoabbreviation": "Sci Bull (Beijing)",
+            "nlmid": "101655530"
+          },
+          "printPublicationDate": "2023-02-01"
+        },
+        "pubYear": "2023",
+        "pageInfo": "284-294",
+        "abstractText": "The chirality of bioactive molecules is closely related to their functions. D-amino acids commonly distributed in the bacterial cell walls trigger a robust anti-infective immune response. Inspired by that, two kinds of chiral polypeptides, poly(L-phenylalanine)-block-poly(L-lysine) (P<sub>L</sub>-K) and poly(L-phenylalanine)-block-poly(D-lysine) (P<sub>D</sub>-K), were synthesized and used as nanoadjuvants of nanovaccines for cancer prevention and therapy. The amphiphilic polypeptides self-assembled into nanoparticles with a diameter of about 30 nm during ultrasonic-assisted dissolution in phosphate-buffered saline. The nanovaccines P<sub>L</sub>-K-OVA and P<sub>D</sub>-K-OVA were easily prepared by mixing solutions of P<sub>L</sub>-K or P<sub>D</sub>-K and the model antigen chicken ovalbumin (OVA), respectively, with loading efficiencies of almost 100%. Compared to P<sub>L</sub>-K-OVA, P<sub>D</sub>-K-OVA more robustly induced dendritic cell maturation, antigen cross-presentation, and adaptive immune response. More importantly, it effectively prevented and treated the OVA-expressed B16-OVA melanoma model. P<sub>D</sub>-K-OVA achieved a tumor inhibition rate of 94.9% and even 97.0% by combining with anti-PD-1 antibody. Therefore, the chiral polypeptide nanoparticles represent simple, efficient, and extensively applicable nanoadjuvants for various nanovaccines.",
+        "affiliation": "School of Applied Chemistry and Engineering, University of Science and Technology of China, Hefei 230026, China; Key Laboratory of Polymer Ecomaterials, Changchun Institute of Applied Chemistry, Chinese Academy of Sciences, Changchun 130022, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Key Research and Development Program of China",
+              "grantId": "2021YFC2400600",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Key Research and Development Program of China",
+              "grantId": "2021YFC2400604",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Key Research and Development Program of China",
+              "grantId": "2022YFC2603501",
+              "orderIn": 0
+            },
+            {
+              "agency": "Jilin Scientific and Technological Development Program",
+              "grantId": "20210504001GH",
+              "orderIn": 0
+            },
+            {
+              "agency": "Jilin Scientific and Technological Development Program",
+              "grantId": "20200201322JC",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Key Research and Development Program of China",
+              "grantId": "2021YFC2400603",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "52273158",
+              "orderIn": 0
+            },
+            {
+              "agency": "Jilin Scientific and Technological Development Program",
+              "grantId": "20200404182YY",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Key Research and Development Program of China",
+              "grantId": "2022YFC2603500",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "52022095",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "52273159",
+              "orderIn": 0
+            },
+            {
+              "agency": "Youth Innovation Promotion Association of the Chinese Academy of Sciences",
+              "grantId": "2019230",
+              "orderIn": 0
+            },
+            {
+              "agency": "Jilin Scientific and Technological Development Program",
+              "grantId": "20210509005RQ",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "52073280",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "U21A2099",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Melanoma, Experimental"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Peptides",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Ovalbumin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antigens"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Antigen Presentation"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nanoparticles",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Nanovaccine",
+            "Immunoactivation",
+            "Nanoadjuvant",
+            "Cancer Prevention And Treatment",
+            "Chiral Polypeptide"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Antigens",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Ovalbumin",
+              "registryNumber": "9006-59-1"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.scib.2023.01.024"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 46,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2023-02-27",
+        "dateOfCreation": "2023-02-02",
+        "dateOfRevision": "2023-03-07",
+        "electronicPublicationDate": "2023-01-19",
+        "firstPublicationDate": "2023-01-19",
+        "firstIndexDate": "2023-02-03",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "9258512",
+        "source": "MED",
+        "pmid": "9258512",
+        "doi": "10.1177/096368979700600405",
+        "title": "Alginate polylysine microcapsules as immune barrier: permeability of cytokines and immunoglobulins over the capsule membrane.",
+        "authorString": "Kulseng B, Thu B, Espevik T, Skjåk-Braek G.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Kulseng B",
+              "lastName": "Kulseng",
+              "firstName": "B",
+              "initials": "B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Cancer Research and Molecular Biology, Norwegian University of Science and Technology, Trondheim, Norway."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Thu B",
+              "lastName": "Thu",
+              "firstName": "B",
+              "initials": "B"
+            },
+            {
+              "fullName": "Espevik T",
+              "lastName": "Espevik",
+              "firstName": "T",
+              "initials": "T"
+            },
+            {
+              "fullName": "Skjåk-Braek G",
+              "lastName": "Skjåk-Braek",
+              "firstName": "G",
+              "initials": "G"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "4",
+          "volume": "6",
+          "journalIssueId": 1066936,
+          "dateOfPublication": "1997 Jul-Aug",
+          "monthOfPublication": 0,
+          "yearOfPublication": 1997,
+          "journal": {
+            "medlineAbbreviation": "Cell Transplant",
+            "title": "Cell transplantation",
+            "essn": "1555-3892",
+            "issn": "0963-6897",
+            "isoabbreviation": "Cell Transplant",
+            "nlmid": "9208854"
+          },
+          "printPublicationDate": "1997-07-01"
+        },
+        "pubYear": "1997",
+        "pageInfo": "387-394",
+        "abstractText": "Transplantation of pancreatic islets in alginate polylysine microcapsules is a potential useful method for treating type I diabetes. In this study, the permeability for alginate-polylysine microcapsules to cytokines an immunoglobulines has been investigated by a newly developed method. Magnetic monodisperse polymer particles (Dynabeads) coated with antibodies against selected proteins were encapsulated in 0.7 mm alginate polylysine microcapsules. The capsule membrane permeability to IgG (150 kDa), Transferrin (81 kDa), Tumor necrosis factor (TNF, 51 kDa), Interleukin-1 beta (IL-1 beta, 17.5 kDa), and insulin (5.8 kDa) was estimated by measuring the binding of 125I-labeled proteins to the encapsulated antibody coated Dynabeads. Capsules with an inhomogeneous solid gel core were made of alginates with high guluronic or high mannuronic acid content and poly-L (PLL)- or poly-D-lysine (PDL) of concentrations varied from 0.05-0.2%. The various capsules examined were all impermeable to IgG. The capsules made with a PLL-, but not PDL-membranes were permeable for transferrin. IL-1 beta was found to penetrate all of the different capsule types. The high-G capsules, however, could be made impermeable to TNF and still allowed transferrin to pass. The permeability of these capsules to IL-1 beta, but not to TNF was confirmed in an assay where mouse islets of Langerhans were incubated with TNF and IL-1 beta, and comparing the IL-6 for encapsulated and non-encapsulated islets.",
+        "affiliation": "Institute of Cancer Research and Molecular Biology, Norwegian University of Science and Technology, Trondheim, Norway.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Polylysine"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunoglobulins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cytokines",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Membranes, Artificial"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Islets of Langerhans Transplantation",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transplantation, Heterologous"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Biological Transport"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Immunoglobulins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Polylysine",
+              "registryNumber": "25104-18-1"
+            },
+            {
+              "name": "Cytokines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Membranes, Artificial",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1177/096368979700600405"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 59,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1997-09-23",
+        "dateOfCreation": "1997-07-01",
+        "dateOfRevision": "2022-10-11",
+        "firstPublicationDate": "1997-07-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "6219908",
+        "source": "MED",
+        "pmid": "6219908",
+        "title": "Effect of helper T cells on prevention of tolerance induction in effector T cells responsible for syngeneic tumor immunity.",
+        "authorString": "Fujiwara H, Kinouchi T, Tsuchida T, Aoki H, Hamaoka T.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Fujiwara H",
+              "lastName": "Fujiwara",
+              "firstName": "H",
+              "initials": "H"
+            },
+            {
+              "fullName": "Kinouchi T",
+              "lastName": "Kinouchi",
+              "firstName": "T",
+              "initials": "T"
+            },
+            {
+              "fullName": "Tsuchida T",
+              "lastName": "Tsuchida",
+              "firstName": "T",
+              "initials": "T"
+            },
+            {
+              "fullName": "Aoki H",
+              "lastName": "Aoki",
+              "firstName": "H",
+              "initials": "H"
+            },
+            {
+              "fullName": "Hamaoka T",
+              "lastName": "Hamaoka",
+              "firstName": "T",
+              "initials": "T"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "5",
+          "volume": "73",
+          "journalIssueId": 2206539,
+          "dateOfPublication": "1982 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 1982,
+          "journal": {
+            "medlineAbbreviation": "Gan",
+            "title": "Gan",
+            "issn": "0016-450X",
+            "isoabbreviation": "Gan",
+            "nlmid": "0151745"
+          },
+          "printPublicationDate": "1982-10-01"
+        },
+        "pubYear": "1982",
+        "pageInfo": "766-772",
+        "abstractText": "The present study investigates the role of helper T cells in preventing tolerance in effector T cells responsible for syngeneic tumor immunity. Tolerance in T cell-mediated immune responses against X5563 plasmacytoma was induced in syngeneic C3H/He mice by intravenous (iv) administration of 7,000 R X-irradiated X5563 tumor cells. Since the anti-X5563 tumor tolerance was observed irrespective of whether the tumor cells had been modified with trinitrophenyl (TNP) hapten prior to iv inoculation, the ability of TNP-reactive helper T cells to prevent the tolerance induced by iv inoculation of TNP-X5563 tumor cells was examined. TNP-reactive helper T cell activity was generated in C3H/He mice by immunization with TNP-isologous mouse gamma-globulin after inoculation with the TNP-conjugate of a non-immunogenic co-polymer of D-glutamic acid and D-lysine. Intravenous inoculation with TNP-modified X5563 cells induced tolerance in mice not primed with TNP. However, such tolerance was prevented in mice in which TNP-reactive helper T cell activity had been generated. These results indicate that helper T cells play a crucial role in preventing effector T cell tolerance. The mechanisms by which tolerance induction in effector T cells is circumvented are discussed in relation to the generation and delivery of signals required for T cell activation.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Killer Cells, Natural",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "T-Lymphocytes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "T-Lymphocytes, Helper-Inducer",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred C3H"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Plasmacytoma",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neoplasms, Experimental",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Trinitrobenzenes"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Neoplasm Transplantation"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Immune Tolerance"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Trinitrobenzenes",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "N",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1983-05-27",
+        "dateOfCreation": "1982-10-01",
+        "dateOfRevision": "2014-10-03",
+        "firstPublicationDate": "1982-10-01",
+        "firstIndexDate": "2008-12-23",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "3875416",
+        "source": "MED",
+        "pmid": "3875416",
+        "doi": "10.1016/0008-8749(85)90255-2",
+        "title": "Tolerance and immunity in antigen-specific B-lymphocyte lines: early receptor binding of either antigen or tolerogen initiates an immune response.",
+        "authorString": "Aldo-Benson MA, Scheiderer LM.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Aldo-Benson MA",
+              "lastName": "Aldo-Benson",
+              "firstName": "M A",
+              "initials": "MA"
+            },
+            {
+              "fullName": "Scheiderer LM",
+              "lastName": "Scheiderer",
+              "firstName": "L M",
+              "initials": "LM"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "2",
+          "volume": "94",
+          "journalIssueId": 706538,
+          "dateOfPublication": "1985 Sep",
+          "monthOfPublication": 9,
+          "yearOfPublication": 1985,
+          "journal": {
+            "medlineAbbreviation": "Cell Immunol",
+            "title": "Cellular immunology",
+            "essn": "1090-2163",
+            "issn": "0008-8749",
+            "isoabbreviation": "Cell Immunol",
+            "nlmid": "1246405"
+          },
+          "printPublicationDate": "1985-09-01"
+        },
+        "pubYear": "1985",
+        "pageInfo": "312-325",
+        "abstractText": "Studies of the effect of tolerance-inducing compounds on B lymphocytes have been complicated by the fact that it is technically difficult to completely isolate the antigen-specific B cell from the effects of T cells or T-cell factors. We have used our cell lines of nonmalignant dinitrophenyl (DNP)-specific B lymphocytes derived from normal mice, which have no contaminating T cells, to study the effect of DNP-murine IgG2a (DNP-MGG), a tolerogen which is not normally immunogenic, on antigen-specific B lymphocytes. Preincubation with DNP-MGG for 48 hr, both in the presence and absence of T-cell factors from EL-4 supernatant prior to adding the antigen DNP-Ficoll, can induce tolerance in cell line B lymphocytes. The suppression is antigen-specific since preincubation with fluorescein-MGG or unconjugated MGG does not suppress the anti-DNP response. At least a 36-hr incubation is required for tolerance induction in B lymphocytes, but a 6-hr preincubation with DNP-MGG augments the immune response to DNP-Ficoll. Lymphocytes incubated for 6 or 24 hr with DNP-MGG prior to adding EL-4 supernatant and filler cells without DNP-Ficoll exhibited an immune response equal to that elicited by DNP-Ficoll and T-cell factors. A 6-hr pulse with a DNP-conjugated polymer of D-glutamic acid and D-lysine (DNP-dGL), a B-cell tolerogen which does not bind to Fc receptors, elicited the same immune response as seen with a 6-hr pulse of DNP-MGG but a 48-hr preincubation with DNP-dGL induced tolerance. Thus, it is likely that the initial binding of the tolerogen to the immunoglobulin receptor on the mature B cell elicits an activation signal similar to that seen with the antigen. The suppressive effect of the tolerogen itself appears to occur at a later stage of the process of the B-cell activation, proliferation, and differentiation.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIADDK NIH HHS",
+              "acronym": "AM",
+              "grantId": "AM 20582",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIAID NIH HHS",
+              "acronym": "AI",
+              "grantId": "AI 21066",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "B-Lymphocytes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice, Inbred BALB C"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Mice"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nitrobenzenes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Dinitrobenzenes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Ficoll",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AA",
+                    "qualifierName": "analogs & derivatives"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immunoglobulin G",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Receptors, Antigen, B-Cell",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "IM",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Lymphocyte Activation",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Immune Tolerance",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Dose-Response Relationship, Drug"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "DNP-Ficoll",
+              "registryNumber": "0"
+            },
+            {
+              "name": "2,4-dinitrophenyl-IgG",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Nitrobenzenes",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Immunoglobulin G",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Dinitrobenzenes",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Ficoll",
+              "registryNumber": "25702-74-3"
+            },
+            {
+              "name": "Receptors, Antigen, B-Cell",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/0008-8749(85)90255-2"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 8,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1985-10-04",
+        "dateOfCreation": "1985-09-01",
+        "dateOfRevision": "2019-07-20",
+        "firstPublicationDate": "1985-09-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

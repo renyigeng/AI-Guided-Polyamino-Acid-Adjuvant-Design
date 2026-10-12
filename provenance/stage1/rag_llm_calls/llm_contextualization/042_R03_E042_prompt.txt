@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R03
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 28069389
+DOI: 10.1016/j.ijpharm.2017.01.011
+
+TITLE:
+Layer-by-layer assembly of hierarchical nanoarchitectures to enhance the systemic performance of nanoparticle albumin-bound paclitaxel.
+
+ABSTRACT:
+Although protein-bound paclitaxel (PTX, Abraxane<sup>®</sup>) has been established as a standard PTX-based therapy against multiple cancers, its clinical success is limited by unfavorable pharmacokinetics, suboptimal biodistribution, and acute toxicities. In the present study, we aimed to apply the principles of a layer-by-layer (LbL) technique to improve the poor colloidal stability and pharmacokinetic pattern of nanoparticle albumin-bound paclitaxel (nab-PTX). LbL-based nab-PTX was successfully fabricated by the alternate deposition of polyarginine (pARG) and poly(ethylene glycol)-block-poly (L-aspartic acid) (PEG-b-PLD) onto an albumin conjugate. The presence of protective entanglement by polyamino acids prevented the dissociation of nab-PTX and improved its colloidal stability even at a 100-fold dilution. The combined effect of high nanoparticle internalization and controlled release of PTX from LbL-nab-PTX increased its cytotoxicity in MCF-7 and MDA-MB-231 breast cancer cells. LbL-nab-PTX consistently induced apoptosis in approximately 52% and 22% of MCF-7 and MDA-MB-231 cancer cells, respectively. LbL assembly of polypeptides effectively prevented exposure of PTX to the systemic environment and thereby inhibited drug-induced hemolysis. Most importantly, LbL assembly of polypeptides to nab-PTX effectively increased the blood circulation potential of PTX and improved therapeutic efficacy via a significantly higher area under the curve (AUC)<sub>0-∞</sub>. We report for the first time the application of LbL functional architectures for improving the systemic performance of nab-PTX with a view toward its clinical translation for cancer therapy.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

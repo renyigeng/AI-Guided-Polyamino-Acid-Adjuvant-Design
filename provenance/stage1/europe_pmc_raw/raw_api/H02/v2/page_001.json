@@ -1,0 +1,1691 @@
+{
+  "version": "6.9",
+  "hitCount": 5,
+  "request": {
+    "queryString": "TITLE_ABS:(polyhistidine OR poly-L-histidine OR \"histidine-based polypeptide\" OR \"histidine polypeptide\") AND TITLE_ABS:(\"intracellular trafficking\" OR \"subcellular localization\" OR \"endosomal localization\" OR \"endosome accumulation\")",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 100,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "25144273",
+        "source": "MED",
+        "pmid": "25144273",
+        "pmcid": "PMC4195522",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4195522"
+          ]
+        },
+        "doi": "10.1021/bm500843r",
+        "title": "Role of polymeric endosomolytic agents in gene transfection: a comparative study of poly(L-lysine) grafted with monomeric L-histidine analogue and poly(L-histidine).",
+        "authorString": "Hwang HS, Hu J, Na K, Bae YH.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Hwang HS",
+              "lastName": "Hwang",
+              "firstName": "Hee Sook",
+              "initials": "HS",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmaceutics and Pharmaceutical Chemistry, The University of Utah , Skaggs Research Building, Rm 2760, 30S, 2000E, Salt Lake City, Utah 84112, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hu J",
+              "lastName": "Hu",
+              "firstName": "Jun",
+              "initials": "J"
+            },
+            {
+              "fullName": "Na K",
+              "lastName": "Na",
+              "firstName": "Kun",
+              "initials": "K"
+            },
+            {
+              "fullName": "Bae YH",
+              "lastName": "Bae",
+              "firstName": "You Han",
+              "initials": "YH"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0009-0006-9523-4580"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "10",
+          "volume": "15",
+          "journalIssueId": 2210988,
+          "dateOfPublication": "2014 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2014,
+          "journal": {
+            "medlineAbbreviation": "Biomacromolecules",
+            "title": "Biomacromolecules",
+            "essn": "1526-4602",
+            "issn": "1525-7797",
+            "isoabbreviation": "Biomacromolecules",
+            "nlmid": "100892849"
+          },
+          "printPublicationDate": "2014-10-01"
+        },
+        "pubYear": "2014",
+        "pageInfo": "3577-3586",
+        "abstractText": "Endosomal entrapment is one of the main barriers that must be overcome for efficient gene expression along with cell internalization, DNA release, and nuclear import. Introducing pH-sensitive ionizable groups into the polycationic polymers to increase gene transfer efficiency has proven to be a useful method; however, a comparative study of introducing equal numbers of ionizable groups in both polymer and monomer forms, has not been reported. In this study, we prepared two types of histidine-grafted poly(L-lysine) (PLL), a stacking form of poly(L-histidine) (PLL-g-PHis) and a mono-L-histidine (PLL-g-mHis) with the same number of imidazole groups. These two types of histidine-grafted PLL, PLL-g-PHis and PLL-g-mHis, showed profound differences in hemolytic activity, cellular uptake, internalization, and transfection efficiency. Cy3-labeled PLL-g-PHis showed strong fluorescence in the nucleus after internalization, and high hemolytic activity upon pH changes was also observed from PLL-g-PHis. The arrangement of imidazole groups from PHis also provided higher gene expression than mHis due to its ability to escape the endosome. mHis or PHis grafting reduced the cytotoxicity of PLL and changed the rate of cellular uptake by changing the quantity of free ε-amines available for gene condensation. The subcellular localization of PLL-g-PHis/pDNA measured by YOYO1-pDNA intensity was highest inside the nucleus, while the lysotracker, which stains the acidic compartments was lowest among these polymers. Thus, the polymeric histidine arrangement demonstrate the ability to escape the endosome and trigger rapid release of polyplexes into the cytosol, resulting in a greater amount of pDNA available for translocation to the nucleus and enhanced gene expression.",
+        "affiliation": "Department of Pharmaceutics and Pharmaceutical Chemistry, The University of Utah , Skaggs Research Building, Rm 2760, 30S, 2000E, Salt Lake City, Utah 84112, United States.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Comparative Study",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIGMS NIH HHS",
+              "acronym": "GM",
+              "grantId": "GM82866",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIGMS NIH HHS",
+              "acronym": "GM",
+              "grantId": "R01 GM082866",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute of General Medical Sciences",
+              "grantId": "GM82866",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line, Tumor"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hela Cells"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Endosomes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polymers",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Polylysine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Histidine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "DNA",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AD",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transfection",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Survival",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Gene Expression",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Plasmids",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "MCF-7 Cells"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "polyhistidine",
+              "registryNumber": "26062-48-6"
+            },
+            {
+              "name": "Polymers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "DNA",
+              "registryNumber": "9007-49-2"
+            },
+            {
+              "name": "Polylysine",
+              "registryNumber": "25104-18-1"
+            },
+            {
+              "name": "Histidine",
+              "registryNumber": "4QD397987E"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1021/bm500843r"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4195522"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4195522?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 44,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "N",
+        "hasData": "Y",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2015-06-16",
+        "dateOfCreation": "2014-08-22",
+        "dateOfRevision": "2023-11-10",
+        "electronicPublicationDate": "2014-08-28",
+        "firstPublicationDate": "2014-08-28",
+        "firstIndexDate": "2014-08-22",
+        "fullTextReceivedDate": "2020-07-10",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "29968382",
+        "source": "MED",
+        "pmid": "29968382",
+        "pmcid": "PMC10350682",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10350682"
+          ]
+        },
+        "doi": "10.1002/smll.201800543",
+        "title": "Light-Triggered Genome Editing: Cre Recombinase Mediated Gene Editing with Near-Infrared Light.",
+        "authorString": "Morales DP, Morgan EN, McAdams M, Chron AB, Shin JE, Zasadzinski JA, Reich NO.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Morales DP",
+              "lastName": "Morales",
+              "firstName": "Demosthenes P",
+              "initials": "DP",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry and Biochemistry, University of California, Santa Barbara, CA, 93106, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Morgan EN",
+              "lastName": "Morgan",
+              "firstName": "Erin N",
+              "initials": "EN",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0043-889X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry and Biochemistry, University of California, Santa Barbara, CA, 93106, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "McAdams M",
+              "lastName": "McAdams",
+              "firstName": "Meghan",
+              "initials": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry and Biochemistry, University of California, Santa Barbara, CA, 93106, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chron AB",
+              "lastName": "Chron",
+              "firstName": "Amanda B",
+              "initials": "AB",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0006-5488-3509"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry and Biochemistry, University of California, Santa Barbara, CA, 93106, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Shin JE",
+              "lastName": "Shin",
+              "firstName": "Jeong Eun",
+              "initials": "JE",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemical Engineering and Materials Science, University of Minnesota, Minneapolis, MN, 55455, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zasadzinski JA",
+              "lastName": "Zasadzinski",
+              "firstName": "Joseph A",
+              "initials": "JA",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemical Engineering and Materials Science, University of Minnesota, Minneapolis, MN, 55455, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Reich NO",
+              "lastName": "Reich",
+              "firstName": "Norbert O",
+              "initials": "NO",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Chemistry and Biochemistry, University of California, Santa Barbara, CA, 93106, USA."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0043-889X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0006-5488-3509"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "30",
+          "volume": "14",
+          "journalIssueId": 2718141,
+          "dateOfPublication": "2018 Jul",
+          "monthOfPublication": 7,
+          "yearOfPublication": 2018,
+          "journal": {
+            "medlineAbbreviation": "Small",
+            "title": "Small (Weinheim an der Bergstrasse, Germany)",
+            "essn": "1613-6829",
+            "issn": "1613-6810",
+            "isoabbreviation": "Small",
+            "nlmid": "101235338"
+          },
+          "printPublicationDate": "2018-07-01"
+        },
+        "pubYear": "2018",
+        "pageInfo": "e1800543",
+        "abstractText": "A light-activated genome editing platform based on the release of enzymes from a plasmonic nanoparticle carrier when exposed to biocompatible near-infrared light pulses is described. The platform relies on the robust affinity of polyhistidine tags to nitrilotriacetic acid in the presence of copper which is attached to double-stranded nucleic acids self-assembled on the gold nanoparticle surface. A protein fusion of the Cre recombinase containing a TAT internalization peptide sequence to achieve endosomal localization is also employed. High-resolution gene knock-in of a red fluorescent reporter is observed using a commercial two-photon microscope. High-throughput irradiation is described to generate useful quantities of edited cells.",
+        "affiliation": "Department of Chemistry and Biochemistry, University of California, Santa Barbara, CA, 93106, USA.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NCRR NIH HHS",
+              "acronym": "RR",
+              "grantId": "S10 RR022585",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "1S10RR022585‐01A1",
+              "orderIn": 0
+            },
+            {
+              "agency": "NHLBI NIH HHS",
+              "acronym": "HL",
+              "grantId": "R01 HL051177",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIBIB NIH HHS",
+              "acronym": "EB",
+              "grantId": "R01 EB012637",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R01 EB012637",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hela Cells"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Gold",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Integrases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Infrared Rays"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Recombination, Genetic",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Surface Properties"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "tat Gene Products, Human Immunodeficiency Virus"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Gene Editing"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Protein Delivery",
+            "Plasmonics",
+            "Gene Editing",
+            "Spatiotemporal Control",
+            "Near-infrared Light Endosome Escape"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Gold",
+              "registryNumber": "7440-57-5"
+            },
+            {
+              "name": "Integrases",
+              "registryNumber": "EC 2.7.7.-"
+            },
+            {
+              "name": "Cre recombinase",
+              "registryNumber": "EC 2.7.7.-"
+            },
+            {
+              "name": "tat Gene Products, Human Immunodeficiency Virus",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/smll.201800543"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10350682"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10350682?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/smll.201800543"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 15,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "authMan": "Y",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "Y",
+        "manuscriptId": "NIHMS1916878",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2019-09-20",
+        "dateOfCreation": "2018-07-04",
+        "dateOfRevision": "2023-11-06",
+        "electronicPublicationDate": "2018-07-02",
+        "firstPublicationDate": "2018-07-02",
+        "firstIndexDate": "2018-07-04",
+        "fullTextReceivedDate": "2025-02-03",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "34801709",
+        "source": "MED",
+        "pmid": "34801709",
+        "doi": "10.1016/j.cbpb.2021.110698",
+        "title": "Molecular and functional characterization of a SCD 1b from European sea bass (Dicentrarchus labrax L.).",
+        "authorString": "González-Rovira A, Mourente G, Igartuburu JM, Pendon C.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "González-Rovira A",
+              "lastName": "González-Rovira",
+              "firstName": "Almudena",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7796-4364"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departamento de Biomedicina, Biotecnología y Salud Pública, INBIO, Facultad de Ciencias, Universidad de Cádiz, 11519 Puerto Real, Cádiz, Spain. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Mourente G",
+              "lastName": "Mourente",
+              "firstName": "Gabriel",
+              "initials": "G",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departamento de Biología, Facultad de Ciencias del Mar y Ambientales, Universidad de Cádiz, 11519 Puerto Real, Cádiz, Spain. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Igartuburu JM",
+              "lastName": "Igartuburu",
+              "firstName": "José Manuel",
+              "initials": "JM",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departamento de Química Orgánica, INBIO, Facultad de Ciencias, Universidad de Cádiz, 11519 Puerto Real, Cádiz, Spain. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Pendon C",
+              "lastName": "Pendon",
+              "firstName": "Carlos",
+              "initials": "C",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7456-5651"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departamento de Biomedicina, Biotecnología y Salud Pública, INBIO, Facultad de Ciencias, Universidad de Cádiz, 11519 Puerto Real, Cádiz, Spain. Electronic address: [email removed for public release]."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7456-5651"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7796-4364"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "volume": "258",
+          "journalIssueId": 3285094,
+          "dateOfPublication": "2022 Feb-Mar",
+          "monthOfPublication": 0,
+          "yearOfPublication": 2022,
+          "journal": {
+            "medlineAbbreviation": "Comp Biochem Physiol B Biochem Mol Biol",
+            "title": "Comparative biochemistry and physiology. Part B, Biochemistry & molecular biology",
+            "essn": "1879-1107",
+            "issn": "1096-4959",
+            "isoabbreviation": "Comp Biochem Physiol B Biochem Mol Biol",
+            "nlmid": "9516061"
+          },
+          "printPublicationDate": "2022-02-01"
+        },
+        "pubYear": "2022",
+        "pageInfo": "110698",
+        "abstractText": "Fatty acid desaturation is a highly complex and regulated process involving different molecular and genetic actors. Ultimally, the fatty acid desaturase enzymes are responsible for the introduction of double bonds at different positions of specific substrates, resulting in a wide variety of mono- and poly-unsaturated fatty acids. This substrate-specificity makes it possible to meet all the functional needs of the different tissues against a wide variety of internal and external conditions, giving rise to a varied profile of expression and functionality of the different desaturases in the body. Being our main interest to study and characterize at the molecular level the fatty acid desaturation process in fishes, we have focused our effort on characterizing SCD 1b from European sea bass (Dicentrarchus labrax, L.). In this work, we have characterized a tearoyl-CoA Desaturase cDNA that codes a protein of 334 amino acids, which shares the greatest homology to marine fish SCD 1b. Northern blot analysis showed two transcripts of 3.5 kb and 1.4 kb. Two putative cis-acting conserved motifs are localized in the cDNA 5'-end: a polypyrimidine CT dinucleotide repeat tract and two non-palindromic putative NRL-response elements (NREs). The deduced protein presents two Δ9 FADs like domain, three His-rich motifs, a total of nine His residues acting as di‑iron coordination ligands. The SCD 1b 3D protein modelling shows a structure made up primarily of α-helices, four of which could be transmembrane helices. The catalytic region is oriented to the cytosolic side of the Endoplasmic Reticulum membrane, where the 9-histidine residues are arranged coordinated to two non-heme Fe<sup>2+</sup> ions. A new His-containing motif NX<sub>3</sub>H-like includes an Asn residue that participates in the coordination of Fe<sup>2+</sup>1 through a water molecule. The protein has a large pocket with a large opening to the outside. It includes a tunnel in which the substrate-binding site is located. The external shape is reminiscent of a boathook. It shows group specificity, although a greater preference for 18C substrates. The length of the tunnel, delimited by seven amino acids that forms a pocket at the end of the tunnel, the possibility that the substrates adopt different conformations inside the tunnel as well as and the movement of acyl chain inside the tunnel, could explain the high preference for 18C fatty acids and the group specificity of the enzyme. The cDNA encodes a functional SCD enzyme, whose subcellular localization is the Endoplasmic Reticulum, which complements the ole1Δ gene-disrupted gene in DTY-11A Saccharomyces cerevisiae strain and produces an increment of palmitoleic and oleic acids. The scd 1b gene is expressed in all tested tissues, showing the liver and adipose tissue a higher level of expression against the brain, heart, gonad and intestine. Scd 1b expression was always bigger than those of the Δ6 fad gene, being especially significant in adipose tissue and liver. From our data, we conclude that, in contrast to the functional significance of SCD 1b in adipose tissue, liver and heart, Δ6 FAD seems to play a more determining role in the biosynthesis of unsaturated fatty acids in the intestine, brain and gonad in fish.",
+        "affiliation": "Departamento de Biomedicina, Biotecnología y Salud Pública, INBIO, Facultad de Ciencias, Universidad de Cádiz, 11519 Puerto Real, Cádiz, Spain. Electronic address: [email removed for public release].",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Junta de Andalucía",
+              "grantId": "P06-AGR-02129",
+              "orderIn": 0
+            },
+            {
+              "agency": "Universidad de Cádiz",
+              "orderIn": 0
+            },
+            {
+              "agency": "European Commission",
+              "grantId": "DG XIV RAFOA Q5RS-2000-30058",
+              "orderIn": 0
+            },
+            {
+              "agency": "Junta de Andalucía",
+              "grantId": "20DPBBCP20",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Bass",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Stearoyl-CoA Desaturase",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Fish Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cloning, Molecular"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acid Sequence"
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "Molecular cloning",
+            "Substrate specificity",
+            "3D Protein Structure",
+            "Functional Characterization",
+            "Mufas",
+            "Substrate Preference",
+            "Δ6 Fad",
+            "Dicentrarchus Labrax L.",
+            "Scd 1B"
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Fish Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Stearoyl-CoA Desaturase",
+              "registryNumber": "EC 1.14.19.1"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.cbpb.2021.110698"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 2,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2022-01-17",
+        "dateOfCreation": "2021-11-21",
+        "dateOfRevision": "2022-05-31",
+        "electronicPublicationDate": "2021-11-19",
+        "firstPublicationDate": "2021-11-19",
+        "firstIndexDate": "2021-11-30",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "19266028",
+        "source": "MED",
+        "pmid": "19266028",
+        "pmcid": "PMC2644819",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC2644819"
+          ]
+        },
+        "doi": "10.1371/journal.pgen.1000397",
+        "title": "Genome-wide analysis of histidine repeats reveals their role in the localization of human proteins to the nuclear speckles compartment.",
+        "authorString": "Salichs E, Ledda A, Mularoni L, Albà MM, de la Luna S.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Salichs E",
+              "lastName": "Salichs",
+              "firstName": "Eulàlia",
+              "initials": "E",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Genes and Disease Program, Centre de Regulació Genòmica, Barcelona, Spain."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ledda A",
+              "lastName": "Ledda",
+              "firstName": "Alice",
+              "initials": "A"
+            },
+            {
+              "fullName": "Mularoni L",
+              "lastName": "Mularoni",
+              "firstName": "Loris",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7053-7717"
+              }
+            },
+            {
+              "fullName": "Albà MM",
+              "lastName": "Albà",
+              "firstName": "M Mar",
+              "initials": "MM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7963-7375"
+              }
+            },
+            {
+              "fullName": "de la Luna S",
+              "lastName": "de la Luna",
+              "firstName": "Susana",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7765-916X"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7053-7717"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7765-916X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7963-7375"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "3",
+          "volume": "5",
+          "journalIssueId": 1603211,
+          "dateOfPublication": "2009 Mar",
+          "monthOfPublication": 3,
+          "yearOfPublication": 2009,
+          "journal": {
+            "medlineAbbreviation": "PLoS Genet",
+            "title": "PLoS genetics",
+            "essn": "1553-7404",
+            "issn": "1553-7390",
+            "isoabbreviation": "PLoS Genet",
+            "nlmid": "101239074"
+          },
+          "printPublicationDate": "2009-03-01"
+        },
+        "pubYear": "2009",
+        "pageInfo": "e1000397",
+        "abstractText": "Single amino acid repeats are prevalent in eukaryote organisms, although the role of many such sequences is still poorly understood. We have performed a comprehensive analysis of the proteins containing homopolymeric histidine tracts in the human genome and identified 86 human proteins that contain stretches of five or more histidines. Most of them are endowed with DNA- and RNA-related functions, and, in addition, there is an overrepresentation of proteins expressed in the brain and/or nervous system development. An analysis of their subcellular localization shows that 15 of the 22 nuclear proteins identified accumulate in the nuclear subcompartment known as nuclear speckles. This localization is lost when the histidine repeat is deleted, and significantly, closely related paralogous proteins without histidine repeats also fail to localize to nuclear speckles. Hence, the histidine tract appears to be directly involved in targeting proteins to this compartment. The removal of DNA-binding domains or treatment with RNA polymerase II inhibitors induces the re-localization of several polyhistidine-containing proteins from the nucleoplasm to nuclear speckles. These findings highlight the dynamic relationship between sites of transcription and nuclear speckles. Therefore, we define the histidine repeats as a novel targeting signal for nuclear speckles, and we suggest that these repeats are a way of generating evolutionary diversification in gene duplicates. These data contribute to our better understanding of the physiological role of single amino acid repeats in proteins.",
+        "affiliation": "Genes and Disease Program, Centre de Regulació Genòmica, Barcelona, Spain.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Line"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cell Nucleus",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acids"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Histidine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Nuclear Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Sequence Alignment"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Tandem Repeat Sequences"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Transport"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Genome, Human"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Molecular Sequence Data"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Nuclear Localization Signals"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Amino Acids",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Nuclear Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Nuclear Localization Signals",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Histidine",
+              "registryNumber": "4QD397987E"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://journals.plos.org/plosgenetics/article/file?id=10.1371/journal.pgen.1000397&type=printable"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://journals.plos.org/plosgenetics/article/file?id=10.1371/journal.pgen.1000397&type=printable"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pgen.1000397"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC2644819"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC2644819?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 129,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "Y",
+        "dbCrossReferenceList": {
+          "dbName": [
+            "UNIPROT"
+          ]
+        },
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2009-03-16",
+        "dateOfCreation": "2009-03-07",
+        "dateOfRevision": "2021-10-20",
+        "electronicPublicationDate": "2009-03-06",
+        "firstPublicationDate": "2009-03-06",
+        "firstIndexDate": "2009-12-23",
+        "fullTextReceivedDate": "2025-02-02",
+        "hasEvaluations": "N"
+      },
+      {
+        "id": "20942965",
+        "source": "MED",
+        "pmid": "20942965",
+        "pmcid": "PMC3020659",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC3020659"
+          ]
+        },
+        "doi": "10.1186/1471-2180-10-259",
+        "title": "A high-throughput cloning system for reverse genetics in Trypanosoma cruzi.",
+        "authorString": "Batista M, Marchini FK, Celedon PA, Fragoso SP, Probst CM, Preti H, Ozaki LS, Buck GA, Goldenberg S, Krieger MA.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Batista M",
+              "lastName": "Batista",
+              "firstName": "Michel",
+              "initials": "M",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7125-417X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto Carlos Chagas, FIOCRUZ, Curitiba, Parana, Brazil."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Marchini FK",
+              "lastName": "Marchini",
+              "firstName": "Fabricio K",
+              "initials": "FK",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5695-2746"
+              }
+            },
+            {
+              "fullName": "Celedon PA",
+              "lastName": "Celedon",
+              "firstName": "Paola A F",
+              "initials": "PA",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1968-7039"
+              }
+            },
+            {
+              "fullName": "Fragoso SP",
+              "lastName": "Fragoso",
+              "firstName": "Stenio P",
+              "initials": "SP",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0909-7940"
+              }
+            },
+            {
+              "fullName": "Probst CM",
+              "lastName": "Probst",
+              "firstName": "Christian M",
+              "initials": "CM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9993-6375"
+              }
+            },
+            {
+              "fullName": "Preti H",
+              "lastName": "Preti",
+              "firstName": "Henrique",
+              "initials": "H"
+            },
+            {
+              "fullName": "Ozaki LS",
+              "lastName": "Ozaki",
+              "firstName": "Luiz S",
+              "initials": "LS"
+            },
+            {
+              "fullName": "Buck GA",
+              "lastName": "Buck",
+              "firstName": "Gregory A",
+              "initials": "GA"
+            },
+            {
+              "fullName": "Goldenberg S",
+              "lastName": "Goldenberg",
+              "firstName": "Samuel",
+              "initials": "S"
+            },
+            {
+              "fullName": "Krieger MA",
+              "lastName": "Krieger",
+              "firstName": "Marco A",
+              "initials": "MA",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0030-3952"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5695-2746"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7125-417X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9993-6375"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0909-7940"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1968-7039"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0030-3952"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "volume": "10",
+          "journalIssueId": 2468935,
+          "dateOfPublication": "2010 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2010,
+          "journal": {
+            "medlineAbbreviation": "BMC Microbiol",
+            "title": "BMC microbiology",
+            "essn": "1471-2180",
+            "issn": "1471-2180",
+            "isoabbreviation": "BMC Microbiol",
+            "nlmid": "100966981"
+          },
+          "printPublicationDate": "2010-10-01"
+        },
+        "pubYear": "2010",
+        "pageInfo": "259",
+        "abstractText": "<h4>Background</h4>The three trypanosomatids pathogenic to men, Trypanosoma cruzi, Trypanosoma brucei and Leishmania major, are etiological agents of Chagas disease, African sleeping sickness and cutaneous leishmaniasis, respectively. The complete sequencing of these trypanosomatid genomes represented a breakthrough in the understanding of these organisms. Genome sequencing is a step towards solving the parasite biology puzzle, as there are a high percentage of genes encoding proteins without functional annotation. Also, technical limitations in protein expression in heterologous systems reinforce the evident need for the development of a high-throughput reverse genetics platform. Ideally, such platform would lead to efficient cloning and compatibility with various approaches. Thus, we aimed to construct a highly efficient cloning platform compatible with plasmid vectors that are suitable for various approaches.<h4>Results</h4>We constructed a platform with a flexible structure allowing the exchange of various elements, such as promoters, fusion tags, intergenic regions or resistance markers. This platform is based on Gateway® technology, to ensure a fast and efficient cloning system. We obtained plasmid vectors carrying genes for fluorescent proteins (green, cyan or yellow), and sequences for the c-myc epitope, and tandem affinity purification or polyhistidine tags. The vectors were verified by successful subcellular localization of two previously characterized proteins (TcRab7 and PAR 2) and a putative centrin. For the tandem affinity purification tag, the purification of two protein complexes (ribosome and proteasome) was performed.<h4>Conclusions</h4>We constructed plasmids with an efficient cloning system and suitable for use across various applications, such as protein localization and co-localization, protein partner identification and protein expression. This platform also allows vector customization, as the vectors were constructed to enable easy exchange of its elements. The development of this high-throughput platform is a step closer towards large-scale trypanosome applications and initiatives.",
+        "affiliation": "Instituto Carlos Chagas, FIOCRUZ, Curitiba, Parana, Brazil.",
+        "publicationStatus": "epublish",
+        "language": "eng",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Trypanosoma cruzi",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CY",
+                    "qualifierName": "cytology"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protozoan Proteins",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "AN",
+                    "qualifierName": "analysis"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cloning, Molecular",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "MT",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Transfection"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Plasmids"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Molecular Sequence Data"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Protozoan Proteins",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://bmcmicrobiol.biomedcentral.com/counter/pdf/10.1186/1471-2180-10-259"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "BioMedCentral",
+              "url": "http://www.biomedcentral.com/1471-2180/10/259"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "BioMedCentral",
+              "url": "http://www.biomedcentral.com/content/pdf/1471-2180-10-259.pdf"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "abs",
+              "site": "BioMedCentral",
+              "url": "http://www.biomedcentral.com/1471-2180/10/259/abstract"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/1471-2180-10-259"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC3020659"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC3020659?pdf=render"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 32,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "Y",
+        "dbCrossReferenceList": {
+          "dbName": [
+            "EMBL"
+          ]
+        },
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen"
+          ]
+        },
+        "dateOfCompletion": "2010-11-12",
+        "dateOfCreation": "2010-10-15",
+        "dateOfRevision": "2021-10-20",
+        "electronicPublicationDate": "2010-10-13",
+        "firstPublicationDate": "2010-10-13",
+        "firstIndexDate": "2010-11-13",
+        "fullTextReceivedDate": "2025-02-03",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

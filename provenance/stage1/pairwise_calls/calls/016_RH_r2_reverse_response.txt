@@ -1,0 +1,30 @@
+{
+  "preference": "B",
+  "basis": [
+    "Direct evidence shows polyarginine (R9) delivers protein antigen to dendritic cells and enhances MHC class I/II presentation, leading to potent CD4+/CD8+ T-cell activation and antitumor immunity (E044, E025).",
+    "Poly-L-arginine synergizes with CpG-ODN to induce long-lasting T-cell responses (≥372 days) and inhibits systemic pro-inflammatory cytokines, demonstrating robust adjuvant activity (E027, E045).",
+    "Polyarginine nanofibers with R9 enhance STING-dependent dendritic cell activation in vitro and improve sublingual immunization in vivo (E047).",
+    "Poly-L-arginine vaccination induces infiltration of MHC class II+ antigen-presenting cells, including dendritic cells, and long-lasting systemic T-cell responses without anti-polymer antibodies (E043).",
+    "Safety evidence for polyarginine is provided by in vivo studies showing tolerability, low hemolysis, and low mast cell degranulation (E037, E038, E039)."
+  ],
+  "supporting_evidence_ids": [
+    "E044",
+    "E025",
+    "E027",
+    "E045",
+    "E047",
+    "E043",
+    "E037",
+    "E038",
+    "E039"
+  ],
+  "counter_evidence_ids": [
+    "E033"
+  ],
+  "uncertainties": [
+    "Polyarginine endosomal escape is disputed: E033 shows R9 remains in endocytic vesicles in live cells, while E032 supports late endosome leakage, creating ambiguity about cytosolic delivery mechanism.",
+    "Antigen delivery evidence for polyhistidine often relies on his-tag as an anchoring motif (e.g., E061, E062, E065), not as the primary functional delivery block, limiting directness for the intended amphiphilic binary poly(amino acid) architecture.",
+    "The strongest dendritic-cell evidence for polyhistidine (E064) involves a complex triblock copolymer with cargo immunomodulators, making it difficult to attribute immune activation solely to the histidine block.",
+    "Transferability from R9 protein transduction domain fusions to an amphiphilic binary poly(amino acid) copolymer is not directly tested."
+  ]
+}

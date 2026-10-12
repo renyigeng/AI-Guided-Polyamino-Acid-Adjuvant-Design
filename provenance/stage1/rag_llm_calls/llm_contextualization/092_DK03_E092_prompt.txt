@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?
+
+QUERY ID: DK03
+CANDIDATE HINT: K
+CHIRALITY HINT: D
+PMID: 9258512
+DOI: 10.1177/096368979700600405
+
+TITLE:
+Alginate polylysine microcapsules as immune barrier: permeability of cytokines and immunoglobulins over the capsule membrane.
+
+ABSTRACT:
+Transplantation of pancreatic islets in alginate polylysine microcapsules is a potential useful method for treating type I diabetes. In this study, the permeability for alginate-polylysine microcapsules to cytokines an immunoglobulines has been investigated by a newly developed method. Magnetic monodisperse polymer particles (Dynabeads) coated with antibodies against selected proteins were encapsulated in 0.7 mm alginate polylysine microcapsules. The capsule membrane permeability to IgG (150 kDa), Transferrin (81 kDa), Tumor necrosis factor (TNF, 51 kDa), Interleukin-1 beta (IL-1 beta, 17.5 kDa), and insulin (5.8 kDa) was estimated by measuring the binding of 125I-labeled proteins to the encapsulated antibody coated Dynabeads. Capsules with an inhomogeneous solid gel core were made of alginates with high guluronic or high mannuronic acid content and poly-L (PLL)- or poly-D-lysine (PDL) of concentrations varied from 0.05-0.2%. The various capsules examined were all impermeable to IgG. The capsules made with a PLL-, but not PDL-membranes were permeable for transferrin. IL-1 beta was found to penetrate all of the different capsule types. The high-G capsules, however, could be made impermeable to TNF and still allowed transferrin to pass. The permeability of these capsules to IL-1 beta, but not to TNF was confirmed in an assay where mouse islets of Langerhans were incubated with TNF and IL-1 beta, and comparing the IL-6 for encapsulated and non-encapsulated islets.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

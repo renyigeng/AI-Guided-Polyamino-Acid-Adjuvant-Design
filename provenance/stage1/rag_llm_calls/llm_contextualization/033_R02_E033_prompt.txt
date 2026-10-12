@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyarginine or arginine-based polypeptide materials?
+
+QUERY ID: R02
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 14992581
+DOI: 10.1021/bi035933x
+
+TITLE:
+Pathway for polyarginine entry into mammalian cells.
+
+ABSTRACT:
+Cationic peptides known as protein transduction domains (PTDs) provide a means to deliver molecules into mammalian cells. Here, nonaarginine (R(9)), the most efficacious of known PTDs, is used to elucidate the pathway for PTD internalization. Although R(9) is found in the cytosol as well as the nucleolus when cells are fixed, this peptide is observed only in the endocytic vesicles of live cells. Colocalization studies with vesicular markers confirm that PTDs are internalized by endocytosis rather than by crossing the plasma membrane. The inability of R(9) to enter living cells deficient in heparan sulfate (HS) suggests that binding to HS is necessary for PTD internalization. This finding is consistent with the high affinity of R(9) for heparin (K(d) = 109 nM). Finally, R(9) is shown to promote the leakage of liposomes but only at high peptide:lipid ratios. These and other data indicate that the PTD-mediated delivery of molecules into live mammalian cells involves (1) binding to cell surface HS, (2) uptake by endocytosis, (3) release upon HS degradation, and (4) leakage from endocytic vesicles.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

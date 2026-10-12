@@ -1,0 +1,24 @@
+{
+  "summary": "",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "cell adhesion and long-term viability of mixed glial cultures",
+    "repeated isolation of oligodendrocyte precursor cells"
+  ],
+  "reported_numeric_results": [
+    "six or more sequential isolations over seven weeks"
+  ],
+  "reported_qualitative_findings": [
+    "dPGA-coated flasks consistently yielded cells for longer than PDL",
+    "dPGA is cyto-compatible, functionally superior, easy to use, low cost and a stable alternative to PDL"
+  ],
+  "material_or_molecular_context": "dendritic polyglycerol amine (dPGA) and poly-D-lysine (PDL) as cell culture substrates",
+  "biological_context": "mixed glial cultures containing astrocytes, microglia, and oligodendrocytes",
+  "limitations_for_current_question": [
+    "No dendritic cells or immune cells studied",
+    "No vaccine or adjuvant context",
+    "No antigen presentation or cross-presentation endpoints",
+    "No immune activation or maturation readouts"
+  ],
+  "supporting_text": ""
+}

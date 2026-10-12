@@ -1,0 +1,27 @@
+You are evaluating the hydrophilic/functional amino-acid block B for an amphiphilic binary poly(amino acid) tumor-vaccine delivery system P(X)-b-P(B).
+
+The chemically preselected candidates are K (lysine), R (arginine), and H (histidine). Compare them only from the supplied evidence pack. The experimental final candidate used by the team is intentionally not provided as a label and must not be inferred from prior knowledge.
+
+Evaluate:
+1. direct relevance to antigen/protein/biomacromolecule delivery;
+2. dendritic-cell or immune relevance;
+3. cellular uptake and intracellular/endosomal behavior;
+4. safety/cytotoxicity trade-offs of cationic materials;
+5. how directly each cited architecture transfers to a poly(amino acid) functional block;
+6. evidence quality and unresolved uncertainty.
+
+Do not rank candidates by paper count. Do not treat background/synthesis evidence as candidate-specific. Do not invent evidence outside the cards. A primary candidate may be selected only if the evidence supports it; otherwise return null.
+
+Return JSON only with this schema:
+{
+  "primary_candidate": {"code": "K|R|H|null", "confidence": "low|moderate|high", "rationale": ["..."]},
+  "alternative_candidates": [{"code": "K|R|H", "role": "...", "rationale": ["..."]}],
+  "candidate_assessments": {
+    "K": {"strengths": ["..."], "limitations": ["..."], "evidence_ids": ["..."]},
+    "R": {"strengths": ["..."], "limitations": ["..."], "evidence_ids": ["..."]},
+    "H": {"strengths": ["..."], "limitations": ["..."], "evidence_ids": ["..."]}
+  },
+  "decision_basis": ["..."],
+  "uncertainties": ["..."],
+  "prohibited_overclaims": ["..."]
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.1",
+  "status": "candidate_neutral_multi_query_expansion",
+  "generation_policy": {
+    "generated_variants_per_dimension": 2,
+    "preserve_canonical_query_as_v0": true,
+    "candidate_neutral_generation": true,
+    "apply_same_dimension_variants_to_K_R_H": true,
+    "no_manual_edit_after_retrieval_results_seen": true,
+    "no_relevance_or_biological_score_generation": true
+  },
+  "candidate_term_sets": {
+    "K": [
+      "polylysine",
+      "poly-L-lysine",
+      "lysine-based polypeptide",
+      "lysine polypeptide"
+    ],
+    "R": [
+      "polyarginine",
+      "poly-L-arginine",
+      "arginine-based polypeptide",
+      "arginine polypeptide"
+    ],
+    "H": [
+      "polyhistidine",
+      "poly-L-histidine",
+      "histidine-based polypeptide",
+      "histidine polypeptide"
+    ]
+  },
+  "query_id_to_dimension": {
+    "K01": "direct_delivery",
+    "R01": "direct_delivery",
+    "H01": "direct_delivery",
+    "K02": "intracellular_endosomal",
+    "R02": "intracellular_endosomal",
+    "H02": "intracellular_endosomal",
+    "K03": "safety",
+    "R03": "safety",
+    "H03": "safety",
+    "K04": "immune_activation_dc",
+    "R04": "immune_activation_dc",
+    "H04": "immune_activation_dc"
+  },
+  "dimensions": {
+    "direct_delivery": {
+      "description": "Evidence that a polymeric or polypeptide material carries, transports, presents, or enables uptake of antigen, vaccine cargo, proteins, mRNA, or other biomacromolecules.",
+      "required_group_count": 2,
+      "group_labels": [
+        "cargo_or_vaccine_context",
+        "delivery_or_presentation_action"
+      ],
+      "canonical_question": "Does the candidate-containing polypeptide/polymer material deliver, carry, enable uptake of, or present antigen, protein, vaccine cargo, mRNA, or other biomacromolecules?",
+      "target_paper_types": [
+        "polypeptide/polymer/nanoparticle carrier studies for antigen, protein, vaccine cargo or mRNA",
+        "cellular uptake or antigen-presentation studies where the candidate-containing material participates in delivery",
+        "vaccine-delivery or biomacromolecule-delivery studies with explicit material composition"
+      ],
+      "not_the_primary_target": [
+        "free amino-acid metabolism without a candidate-containing material",
+        "papers that only mention the amino acid in sequence tags or unrelated proteins"
+      ]
+    },
+    "intracellular_endosomal": {
+      "description": "Evidence about cellular internalization, intracellular trafficking, endosomal localization, endosomal escape, or endosome-related delivery behavior.",
+      "required_group_count": 1,
+      "group_labels": [
+        "intracellular_or_endosomal_behavior"
+      ],
+      "canonical_question": "Does the candidate-containing material show cellular internalization, intracellular trafficking, endosomal localization, endosomal escape, or related intracellular delivery behavior?",
+      "target_paper_types": [
+        "cellular internalization or uptake studies",
+        "endosomal localization/escape or intracellular trafficking studies",
+        "mechanistic delivery studies of candidate-containing polymers, polypeptides or nanoparticles"
+      ],
+      "not_the_primary_target": [
+        "generic cell biology papers with no candidate-containing material",
+        "sequence tags used only for purification or detection unless the tag materially affects delivery"
+      ]
+    },
+    "safety": {
+      "description": "Evidence about cytotoxicity, toxicity, hemolysis, membrane damage, viability, biocompatibility, or related safety outcomes.",
+      "required_group_count": 1,
+      "group_labels": [
+        "safety_or_cytotoxicity"
+      ],
+      "canonical_question": "What cytotoxicity, hemolysis, membrane damage, viability, biocompatibility, or other safety evidence exists for candidate-containing polypeptide/polymer materials?",
+      "target_paper_types": [
+        "cytotoxicity or viability studies",
+        "hemolysis or membrane-damage studies",
+        "biocompatibility/safety studies of candidate-containing polymers, polypeptides or nanoparticles"
+      ],
+      "not_the_primary_target": [
+        "toxicity of unrelated drugs merely delivered by the material",
+        "clinical toxicity papers with no candidate-containing polymer or polypeptide"
+      ]
+    },
+    "immune_activation_dc": {
+      "description": "Evidence about dendritic-cell activation or maturation, antigen presentation or cross-presentation, adjuvant activity, immune activation, immunotherapy, or vaccine immune responses.",
+      "required_group_count": 1,
+      "group_labels": [
+        "immune_dc_or_vaccine_activity"
+      ],
+      "canonical_question": "Does the candidate-containing material contribute to dendritic-cell activation/maturation, antigen presentation/cross-presentation, adjuvant activity, vaccine responses, or related immune activation?",
+      "target_paper_types": [
+        "dendritic-cell activation or maturation studies",
+        "antigen-presentation or cross-presentation studies",
+        "nanoadjuvant/adjuvant or vaccine immune-response studies",
+        "immunotherapy studies where the candidate-containing material has an interpretable immune role"
+      ],
+      "not_the_primary_target": [
+        "papers where the amino acid appears only as a purification tag or incidental sequence feature",
+        "immune papers where the candidate-containing material has no interpretable role in the intervention"
+      ]
+    }
+  }
+}

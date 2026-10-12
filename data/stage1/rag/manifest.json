@@ -1,0 +1,157 @@
+{
+  "step": "functional_block_rag_contextualization",
+  "version": "1.1",
+  "created_at_utc": "2026-09-22T07:43:13.604957+00:00",
+  "source_run": "E:\\Project\\tiaozhansai\\runs\\20260922T071645Z__functional-block-medcpt-rerank",
+  "source_file": "E:\\Project\\tiaozhansai\\runs\\20260922T071645Z__functional-block-medcpt-rerank\\rag_query_document_pairs.csv",
+  "method": "PaperQA2-style contextual summarization/relevance scoring after MedCPT top-k reranking",
+  "llm": {
+    "api_key_env_used": "TIAOZHANSAI_LLM_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 5000,
+    "timeout_seconds": 120,
+    "retries": 3
+  },
+  "records": 97,
+  "rag": {
+    "retrieval": "Europe PMC",
+    "reranking": "MedCPT Cross-Encoder",
+    "augmentation": "retrieved title/abstract plus query-specific contextual summary",
+    "generation": "LLM contextual evidence generation",
+    "is_rag_pipeline": true
+  },
+  "scientific_boundary": {
+    "relevance_score_is_not_immune_effect": true,
+    "medcpt_score_is_not_immune_effect": true,
+    "abstract_only": true,
+    "numeric_results_require_explicit_numbers": true,
+    "qualitative_findings_are_separate_from_numeric_results": true
+  },
+  "paperqa2_prompt_reference": "Future-House/paper-qa src/paperqa/prompts.py summary_json_system_prompt (method adapted, not copied verbatim)",
+  "rag_config": {
+    "schema_version": "1.2",
+    "status": "stage1_rag_v2_2_visible_targets_and_dlys_enrichment",
+    "method": {
+      "retrieval": "Europe PMC candidate-neutral multi-query lexical retrieval",
+      "semantic_reranker": "ncbi/MedCPT-Cross-Encoder",
+      "contextualization": "PaperQA2-style contextual summarization/relevance scoring",
+      "decision": "candidate-neutral few-shot pairwise comparison with order reversal",
+      "query_expansion": "LLM-generated dimension-level search variants frozen before retrieval and rendered symmetrically for K/R/H"
+    },
+    "medcpt": {
+      "model_id": "ncbi/MedCPT-Cross-Encoder",
+      "max_length": 512,
+      "batch_size": 8,
+      "device": "auto",
+      "selection_policy": "top_k_only_no_score_threshold",
+      "top_k": {
+        "background": 5,
+        "candidate": 6,
+        "lys_chirality": 8,
+        "synthetic_feasibility": 4
+      }
+    },
+    "query_questions": {
+      "BG01": "What published evidence is most relevant to amphiphilic polypeptide or poly(amino acid) systems for antigen, vaccine, protein, or biomacromolecule delivery?",
+      "BG02": "What published evidence is most relevant to cationic or basic polypeptide materials for cellular uptake, intracellular delivery, endosomal behavior, or biomacromolecule delivery?",
+      "K01": "What evidence is most relevant to polylysine or lysine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+      "K02": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polylysine or lysine-based polypeptide materials?",
+      "K03": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polylysine or lysine-based polypeptide materials?",
+      "K04": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polylysine or lysine-based polypeptide materials?",
+      "R01": "What evidence is most relevant to polyarginine or arginine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+      "R02": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyarginine or arginine-based polypeptide materials?",
+      "R03": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyarginine or arginine-based polypeptide materials?",
+      "R04": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyarginine or arginine-based polypeptide materials?",
+      "H01": "What evidence is most relevant to polyhistidine or histidine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?",
+      "H02": "What evidence is most relevant to intracellular uptake, internalization, or endosomal behavior of polyhistidine or histidine-based polypeptide materials?",
+      "H03": "What evidence is most relevant to cytotoxicity, biocompatibility, hemolysis, or safety of polyhistidine or histidine-based polypeptide materials?",
+      "H04": "What evidence is most relevant to dendritic-cell activation, antigen presentation, cross-presentation, immune activation, adjuvant activity, or vaccine responses of polyhistidine or histidine-based polypeptide materials?",
+      "LK01": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+      "DK01": "What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of D-lysine-containing polypeptide, polymer, or nanoparticle systems?",
+      "KD02": "What direct comparative evidence is most relevant to differences between L-lysine and D-lysine in polypeptide, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, antigen-presentation, or immunotherapy systems?",
+      "SYN01": "What evidence is most relevant to N-carboxyanhydride polymerization for synthesis of polypeptides or poly(amino acid)s?",
+      "DK02": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for dendritic-cell maturation, antigen presentation/cross-presentation, adjuvant activity, or vaccine responses?",
+      "DK03": "What evidence is most relevant to D-lysine-containing polypeptide, polymer, nanoparticle, or nanoadjuvant systems for adaptive immune, T-cell, antibody, antitumor, or immunotherapy outcomes?",
+      "KD03": "What direct evidence explicitly compares or co-evaluates D-lysine and L-lysine in immune polypeptide, polymer, nanoparticle, nanoadjuvant, vaccine, dendritic-cell, or antigen-presentation systems?"
+    },
+    "contextualization": {
+      "paperqa2_style": true,
+      "relevance_scale": [
+        0,
+        10
+      ],
+      "relevance_is_not_biological_effect": true,
+      "do_not_apply_relevance_threshold": true,
+      "save_source_title_abstract": true,
+      "save_prompt_and_raw_response": true,
+      "summary_instruction": "Summarize only information from the supplied title/abstract that helps answer the query; retain quantitative results and limitations; return empty summary with relevance_score 0 if not applicable."
+    },
+    "identity_decision": {
+      "candidate_set": [
+        "K",
+        "R",
+        "H"
+      ],
+      "pairwise_pairs": [
+        [
+          "K",
+          "R"
+        ],
+        [
+          "K",
+          "H"
+        ],
+        [
+          "R",
+          "H"
+        ]
+      ],
+      "reverse_order_each_pair": true,
+      "default_repeats": 1,
+      "formal_repeats": 3,
+      "selection_rule": "unique_condorcet_winner_else_inconclusive",
+      "paper_count_is_not_score": true,
+      "medcpt_score_is_not_effect_score": true,
+      "llm_relevance_score_is_not_effect_score": true
+    },
+    "lys_chirality_decision": {
+      "run_only_if_identity_is_K": true,
+      "pair": [
+        "D",
+        "L"
+      ],
+      "reverse_order": true,
+      "default_repeats": 1,
+      "formal_repeats": 3,
+      "selection_rule": "majority_pairwise_preference_else_unknown",
+      "other_amino_acid_chirality_forbidden": true,
+      "D_enriched_discovery_queries": [
+        "DK01",
+        "DK02",
+        "DK03"
+      ],
+      "L_context_control_queries": [
+        "LK01"
+      ],
+      "direct_comparison_queries": [
+        "KD02",
+        "KD03"
+      ],
+      "decision_priority": "Direct L-vs-D comparisons are primary; D-enriched discovery improves recall/context but cannot by itself establish D superiority."
+    },
+    "retrieval_expansion": {
+      "enabled_for_candidate_dimensions": true,
+      "canonical_query_preserved_as_v0": true,
+      "generated_variants_per_dimension_default": 2,
+      "candidate_neutral_generation": true,
+      "same_dimension_variants_for_K_R_H": true,
+      "union_then_deduplicate_before_medcpt": true,
+      "no_manual_candidate_specific_tuning_after_results_seen": true,
+      "no_score_threshold": true,
+      "hyDE_not_used": true,
+      "vector_database_not_required": true
+    }
+  }
+}

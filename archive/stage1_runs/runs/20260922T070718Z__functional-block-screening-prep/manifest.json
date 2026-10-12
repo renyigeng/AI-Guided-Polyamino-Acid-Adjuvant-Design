@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "step": "functional_block_screening_preparation",
+  "runtime_utc": "20260922T070718Z",
+  "git_commit": "4de4e800108178909fa11df828f4b6824a4d27df",
+  "source_retrieval_run": "runs\\20260922T065916Z__functional-block-literature-retrieval",
+  "source_metadata": "runs\\20260922T065916Z__functional-block-literature-retrieval\\retrieved_metadata.csv",
+  "source_metadata_sha256": "9233dd05245168999623f64df35abd849f856cea0bcef5e695eb07de859fb6ef",
+  "source_search_config_sha256": "0a2580e6163e336157d0d24204c87545e33a5a64be39ae69c50582433a53c99e",
+  "input_rows": 2518,
+  "unique_records": 1584,
+  "worklist_records": 112,
+  "worklist_policy": {
+    "candidate_top_n_per_query": 12,
+    "context_top_n_per_query": 8,
+    "chirality_top_n_per_query": 12,
+    "ranking_source": "Europe PMC relevance order within each frozen query variant; scientific RAG selection is performed later by MedCPT",
+    "note": "The worklist is only a screening subset, not the final evidence pool."
+  },
+  "multi_query": {
+    "enabled": true,
+    "union_before_dedup": true,
+    "canonical_query_id_preserved": true,
+    "variant_provenance_field": "matched_query_variants",
+    "expansion_snapshot_copied": true
+  },
+  "deduplication_priority": [
+    "PMID",
+    "DOI",
+    "PMCID",
+    "Europe PMC source:id",
+    "normalized title SHA1 fallback"
+  ],
+  "outputs": {
+    "screening_all": "screening_all.csv",
+    "tonight_worklist": "tonight_worklist.csv"
+  }
+}

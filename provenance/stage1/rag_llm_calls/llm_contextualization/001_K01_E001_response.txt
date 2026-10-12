@@ -1,0 +1,31 @@
+{
+  "summary": "This study developed a ternary lipopolyplex (LPP) platform using hyperbranched poly-L-lysine (HBPL) for mRNA delivery, demonstrating high transfection efficiency, enhanced dendritic cell maturation, efficient in vivo delivery to lungs and spleen, and sustained protein expression after one month of storage, highlighting the potential of HBPL-based LPPs for mRNA therapeutics and vaccines.",
+  "relevance_score": 10,
+  "reported_outcomes": [
+    "mRNA encapsulation efficiency",
+    "intracellular release efficiency",
+    "colloidal stability",
+    "transfection efficiency across multiple cell lines",
+    "dendritic cell maturation",
+    "biocompatibility",
+    "in vivo mRNA delivery to lungs and spleen",
+    "protein expression persistence after storage"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "HBPL enabled a unique balance between high mRNA encapsulation efficiency, efficient intracellular release, and exceptional colloidal stability",
+    "Platform had higher transfection efficiency compared to linear ε-PLL-based counterpart",
+    "Enhanced dendritic cell maturation",
+    "Superior biocompatibility over a commercial transfection reagent",
+    "Efficient mRNA delivery to lungs and spleen with sustained protein expression after 1 month of storage"
+  ],
+  "material_or_molecular_context": "Hyperbranched poly-L-lysine (HBPL) as part of a ternary lipopolyplex (LPP) with lipid and mRNA",
+  "biological_context": "Multiple cell lines (in vitro), dendritic cells (in vitro and ex vivo), and mouse model (in vivo: lungs and spleen)",
+  "limitations_for_current_question": [
+    "Only tested for mRNA delivery, not directly for other biomacromolecules (e.g., proteins, antigens, or vaccines)",
+    "No explicit comparison to other polylysine variants beyond linear ε-PLL",
+    "Abstract does not report quantitative numeric results (e.g., transfection percentages or expression levels)",
+    "In vivo data limited to lung and spleen expression; no immune response or vaccine efficacy data"
+  ],
+  "supporting_text": "HBPL-based LPP platform enables efficient mRNA delivery with long-term storage stability."
+}

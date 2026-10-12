@@ -1,0 +1,29 @@
+{
+  "summary": "This article describes PLGA-porphyrin-cobalt nanoadjuvant (PPCoQ) that uses polyhistidine tags to load antigens, eliciting strong humoral and cellular immunity in vaccines. It directly addresses the adjuvant activity and vaccine responses of polyhistidine-tagged antigens.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Anti-RBD antibody induction in transgenic mice",
+    "99.7% clearance of SARS-CoV-2 Omicron variant after challenge",
+    "Enhanced mucosal immunity and IgA antibody titers after nebulization",
+    "Formation of tissue-resident memory T cells",
+    "Significant inhibition of B16-OVA tumor growth with OVA epitope"
+  ],
+  "reported_numeric_results": [
+    "99.7% clearance rate of the SARS-CoV-2 Omicron variant"
+  ],
+  "reported_qualitative_findings": [
+    "Strong humoral and cellular immune responses",
+    "Enhanced mucosal immunity",
+    "Increased IgA antibody titers",
+    "Promoted formation of abundant tissue-resident memory T cells"
+  ],
+  "material_or_molecular_context": "Poly(lactic acid)-porphyrin-cobalt ion (PPCoQ) co-formulated with QS-21, coordinating polyhistidine-tagged antigens via immobilized cobalt",
+  "biological_context": "Transgenic mice expressing human ACE2 (viral challenge), B16-OVA tumor model",
+  "limitations_for_current_question": [
+    "Does not specifically address dendritic cell activation or cross-presentation; only in vivo immune outcomes",
+    "Polyhistidine is used solely as an antigen tag, not as the adjuvant material itself",
+    "No isolated dendritic cell experiments",
+    "Cobalt toxicity or biocompatibility not discussed for DC function"
+  ],
+  "supporting_text": "coordinating antigens' polyhistidine tags with immobilized cobalt within a porphyrin-modified poly(lactic acid)"
+}

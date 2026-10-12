@@ -1,0 +1,27 @@
+{
+  "summary": "The multifunctional nanoparticle PIC, composed of polylysine, iron oxide, and CpG, increases tumor antigen presentation, M1:M2 macrophage ratio, and type I interferon response when combined with radiation therapy, enhancing in situ vaccination and immune checkpoint blockade response.",
+  "relevance_score": 8,
+  "reported_outcomes": [
+    "tumor response",
+    "overall survival",
+    "activation of tumor-specific immune memory"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "PIC combined with RT and ICB improves tumor response and overall survival",
+    "cure of many mice",
+    "consistent activation of tumor-specific immune memory",
+    "increases tumor antigen presentation",
+    "increases M1:M2 tumor-associated macrophage ratio",
+    "enhances stimulation of type I interferon response"
+  ],
+  "material_or_molecular_context": "polylysine, iron oxide, and CpG nanoparticle (PIC)",
+  "biological_context": "syngeneic immunologically cold murine tumor models",
+  "limitations_for_current_question": [
+    "polylysine is used in a multi-component nanoparticle with CpG and iron oxide, not alone",
+    "effects are reported in combination with radiation therapy and immune checkpoint blockade, not for polylysine alone",
+    "abstract does not separate contributions of polylysine from other components",
+    "study focuses on in situ vaccination effect, not direct dendritic cell activation measurements"
+  ],
+  "supporting_text": "multifunctional nanoparticle composed of polylysine... to increase tumor antigen presentation"
+}

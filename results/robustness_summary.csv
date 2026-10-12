@@ -1,0 +1,4 @@
+﻿domain_id,domain_name_zh,winner,winner_name_zh,method,borda_winner,borda_agrees,criterion_ablation_stable,criterion_ablation_total,weight_perturbation_stable,weight_perturbation_total,margin_to_second
+D1,芳香疏水-π作用域,F,苯丙氨酸,preregistered_single_axis_rank,,,,,,,0.9024390243902439
+D2,非芳香疏水-构象域,L,亮氨酸,TOPSIS,L,True,1.0,3.0,6.0,6.0,0.26479861561231965
+D3,极性-氢键-构象相容域,Q,谷氨酰胺,TOPSIS,Q,True,2.0,3.0,6.0,6.0,0.14633681554684008

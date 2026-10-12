@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to polyarginine or arginine-based polypeptide materials for antigen, protein, vaccine, mRNA, or biomacromolecule delivery?
+
+QUERY ID: R01
+CANDIDATE HINT: R
+CHIRALITY HINT: 
+PMID: 9096380
+DOI: 10.1073/pnas.94.7.3256
+
+TITLE:
+Transloading of tumor antigen-derived peptides into antigen-presenting cells.
+
+ABSTRACT:
+The discovery of a steadily growing number of tumor antigens (TAs) has made generic, cell-free, peptide-based cancer vaccines a possible alternative to cytokine-transfected autologous cellular cancer vaccines. The major drawback of peptide vaccines, however, is the poor immunogenicity of peptides. It is commonly thought that for the induction of an effective anticancer immune response, antigen-presenting cells (APCs) have to display TA-derived peptides to T lymphocytes. Polycationic amino acids have been employed in the past to enhance transport of proteins into cells. In a systematic study, the ability of different cationic polymers to transfer fluorescence-tagged peptides to APCs was investigated. We were able to show that several compounds enhance uptake of fluorescence-labeled peptides by APCs to different degrees. The most efficient compound identified, polyarginine (pArg), enhanced peptide delivery by more than 2 logs as compared with cells treated with peptide alone, whereas polylysine (pLys) treatment resulted in approximately 10-fold increased levels of fluorescence. Augmentation of peptide uptake was concentration-dependent, and the molecular weight of pArg or pLys also influenced peptide delivery. Furthermore, highly negatively charged peptides appear to be delivered with higher efficiency, although neutral peptides were also taken up at enhanced rates. Whereas peptide uptake mediated by pLys appears to be due to an at least transient permeabilization of cell membranes, peptide delivery in the presence of pArg may rely on endocytic processes. TA-derived peptides applied as cancer vaccines in conjunction with polycations afforded antitumor protection in animal models.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}

@@ -1,0 +1,15 @@
+{
+  "summary": "",
+  "relevance_score": 0,
+  "reported_outcomes": [],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [],
+  "material_or_molecular_context": "poly-d-lysine (PDL) cationic polypeptide",
+  "biological_context": "CNS neurons, presynaptic bouton assembly, hippocampal or cortical neurons (implied)",
+  "limitations_for_current_question": [
+    "Study involves neuronal synapse assembly, not dendritic cells or immune system.",
+    "No mention of antigen presentation, adjuvant activity, or vaccine responses.",
+    "Biological context is neurobiology, not immunology."
+  ],
+  "supporting_text": ""
+}

@@ -1,0 +1,23 @@
+{
+  "summary": "Self-assembled polymer DNA nanospheres containing cationic poly-l-lysine enhanced cellular uptake and Toll-like receptor 9 stimulation, leading to improved immune cell activation and cancer cell death. The poly-l-lysine component was critical for nanoparticle formation and delivery efficiency, contributing to enhanced immunostimulatory activity.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "immune cell activation",
+    "pro-inflammatory cytokine secretion",
+    "cancer cell apoptosis",
+    "enhanced cellular uptake"
+  ],
+  "reported_numeric_results": [],
+  "reported_qualitative_findings": [
+    "polymer nanospheres assembled from polymer DNA wires and cationic poly-l-lysine further improved cellular uptake and continuously stimulate the lysosomal Toll-like receptor 9 of immune cells, thereby remarkably enhancing the activation of immune cells.",
+    "self-assembled polymer DNA nanoassemblies with multivalent CpG could trigger strong immune response and further induce cancer cell death."
+  ],
+  "material_or_molecular_context": "self-assembled polymer DNA wires and nanospheres with cationic poly-l-lysine",
+  "biological_context": "immune cells (likely macrophages and dendritic cells), cancer cells, Toll-like receptor 9",
+  "limitations_for_current_question": [
+    "Poly-l-lysine acts as a carrier and not as the primary immunostimulant; the main immune activation is driven by CpG motifs.",
+    "The study does not specifically evaluate dendritic cell activation or antigen presentation.",
+    "The L-lysine component is in the form of poly-l-lysine, not as a monomer or small peptide."
+  ],
+  "supporting_text": "polymer nanospheres assembled from the polymer DNA wires and cationic poly-l-lysine further improved cellular uptake and continuously stimulate the lysosomal Toll-like receptor 9"
+}

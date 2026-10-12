@@ -1,0 +1,25 @@
+{
+  "summary": "Polyarginine (pArg) enhances peptide delivery to antigen-presenting cells by >2 logs, outperforming polylysine. Uptake is concentration- and molecular weight-dependent, with higher efficiency for negatively charged peptides. pArg may act via endocytosis. Tumor antigen peptides with polycations provided antitumor protection in animal models.",
+  "relevance_score": 9,
+  "reported_outcomes": [
+    "Enhanced peptide uptake by APCs",
+    "Antitumor protection in animal models"
+  ],
+  "reported_numeric_results": [
+    "pArg enhanced peptide delivery by more than 2 logs compared to peptide alone",
+    "polylysine treatment resulted in approximately 10-fold increased levels of fluorescence"
+  ],
+  "reported_qualitative_findings": [
+    "pArg more efficient than pLys for peptide delivery",
+    "Highly negatively charged peptides delivered with higher efficiency; neutral peptides also enhanced",
+    "pArg-mediated uptake may rely on endocytic processes, while pLys may involve membrane permeabilization"
+  ],
+  "material_or_molecular_context": "polyarginine (pArg), polylysine (pLys), other cationic polymers",
+  "biological_context": "antigen-presenting cells (APCs) in vitro; tumor antigen-derived peptides; animal models for antitumor protection",
+  "limitations_for_current_question": [
+    "Only tested with peptides, not proteins, mRNA, or larger biomacromolecules",
+    "Focus on tumor antigen peptides, not generic antigen/protein delivery",
+    "Does not address arginine-based polypeptide materials beyond linear pArg (e.g., copolymers, dendrimers)"
+  ],
+  "supporting_text": "polyarginine (pArg) enhanced peptide delivery by more than 2 logs"
+}

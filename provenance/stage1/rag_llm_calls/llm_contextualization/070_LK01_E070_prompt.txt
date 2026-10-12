@@ -1,0 +1,46 @@
+You are performing contextual evidence summarization for a scientific RAG system.
+This step follows the PaperQA2 RCS principle: summarize a retrieved document specifically for the current scientific question, and separately estimate relevance to that question.
+
+Use ONLY the supplied title and abstract. Do not add outside knowledge. Do not infer missing experiments. Do not treat absence of a result as a negative result. Preserve explicit numeric results when stated. Put only results containing actual numeric values in reported_numeric_results; put non-numeric directional/comparative statements in reported_qualitative_findings.
+
+The relevance_score is ONLY query-document relevance for RAG evidence selection. It is NOT an immune activation score, not an effect size, and not a material-quality score.
+
+Return valid JSON only.
+
+Summarize this retrieved article to help answer the CURRENT QUESTION. Do not directly make the final candidate decision. If the article is irrelevant, set summary to an empty string and relevance_score to 0. Otherwise use an integer relevance_score from 1 to 10, following PaperQA2-style contextual relevance scoring.
+
+CURRENT QUESTION:
+What evidence is most relevant to immune, dendritic-cell, antigen-presentation, vaccine, or adjuvant effects of L-lysine-containing polypeptide, polymer, or nanoparticle systems?
+
+QUERY ID: LK01
+CANDIDATE HINT: K
+CHIRALITY HINT: L
+PMID: 21216459
+DOI: 10.1016/j.biomaterials.2010.12.021
+
+TITLE:
+Tuning the immune response of dendritic cells to surface-assembled poly(I:C) on microspheres through synergistic interactions between phagocytic and TLR3 signaling.
+
+ABSTRACT:
+The artificial dsRNA polyriboinosinic acid-polyribocytidylic acid, poly(I:C), is a potent adjuvant candidate for vaccination, as it strongly drives cell-mediated immunity. However, because of its effects on non-immune bystander cells, poly(I:C) administration may bear danger for the development of autoimmune diseases. Thus poly(I:C) should be applied in the lowest dose possible. We investigated microspheres carrying surface-assembled poly(I:C) as a two-in-one adjuvant formulation to stimulate maturation of monocyte-derived dendritic cells (MoDCs). Negatively charged polystyrene microspheres were equipped with a poly(ethylene glycol) corona through electrostatically driven surface assembly of a library of polycationic poly(l-lysine)-graft-poly(ethylene glycol) copolymers, PLL-g-PEG. Stable surface assembly of poly(I:C) was achieved by incubation of polymer-coated microspheres in an aqueous poly(I:C) solution. Surface-assembled poly(I:C) exhibited a strongly enhanced efficacy to stimulate maturation of MoDCs by up to two orders of magnitude, as compared to free poly(I:C). Multiple phagocytosis events were the key factor to enhance the efficacy. The cytokine secretion pattern of MoDCs after exposure to surface-assembled poly(I:C) differed from that of free poly(I:C), while their ability to stimulate T cell proliferation was similar. Overall, phagocytic signaling plays an important role in defining the resulting immune response to such two-in-one adjuvant formulations.
+
+Return JSON in exactly this schema:
+{
+  "summary": "query-specific evidence summary; empty string if not applicable",
+  "relevance_score": 0,
+  "reported_outcomes": [
+    "explicit endpoints/tasks stated in the abstract"
+  ],
+  "reported_numeric_results": [
+    "exact numeric result text containing explicit numbers, if stated"
+  ],
+  "reported_qualitative_findings": [
+    "non-numeric directional or comparative findings explicitly stated"
+  ],
+  "material_or_molecular_context": "what material/molecule was actually studied",
+  "biological_context": "cell/animal/immune context actually studied",
+  "limitations_for_current_question": [
+    "specific transferability or missing-information limitations"
+  ],
+  "supporting_text": "one short evidence-bearing phrase from the abstract, <= 25 words, or empty"
+}
